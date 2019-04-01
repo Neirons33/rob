@@ -1,0 +1,57 @@
+on_actions = {
+	on_puppet = {
+		effect = {
+			if = {
+				limit = {
+					AND = {
+					    ROOT = {
+						    original_tag = CZE
+					    }
+						CZE = { exists = yes }
+						MRV = { exists = yes }
+						SLO = { exists = yes }
+					}
+				}
+				CZE = { set_cosmetic_tag = BOHEMIA }
+			}
+		}
+	}
+
+	#used when puppeting through the occupied territories menu during peace time (or when releasing from non-core but owned territory, f.e. Britain releasing Egypt)
+	#ROOT = nation being released, FROM = overlord
+	on_release_as_puppet = {
+		effect = {
+			if = {
+				limit = {
+					AND = {
+					    ROOT = {
+						    original_tag = CZE
+					    }
+						CZE = { exists = yes }
+						MRV = { exists = yes }
+						SLO = { exists = yes }
+					}
+				}
+				CZE = { set_cosmetic_tag = BOHEMIA }
+			}
+		}
+	}
+	
+	on_subject_free = {
+		effect = {
+			if = {
+				limit = {
+					AND = {
+					    ROOT = {
+						    original_tag = CZE
+					    }
+						CZE = { exists = yes }
+						MRV = { exists = yes }
+						SLO = { exists = yes }
+					}
+				}
+				CZE = { set_cosmetic_tag = BOHEMIA }
+			}
+		}
+	}
+}
