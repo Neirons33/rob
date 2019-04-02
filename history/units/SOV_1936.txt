@@ -129,7 +129,7 @@ division_template = {
 
 
 ##### OOB #####
-units = {
+###units = {
 	##### Severno-Zapadnoe TVD (North West Theatre) -- Archangelsk #####				
 	# 1ya Strelkoviy Korpus			
 	division= {	# "18ya Strelkovaya Diviziya"		
@@ -1788,7 +1788,7 @@ units = {
 }					
 
 ### Air Wings
-air_wings = {
+###air_wings = {
 	# LVO Aviatsya Komandovaniya -- Leningrad
 	195 = { 
 		# 15ya Istrebitel'nye Aviabrigada
@@ -1891,7 +1891,7 @@ air_wings = {
 	#########################
 	## STARTING PRODUCTION ##
 	#########################
-instant_effect = {
+###instant_effect = {
 	
 
 	add_equipment_production = {
