@@ -20,6 +20,12 @@ KAR = "countries/Karelia.txt"
 BGN = "countries/Burgundy.txt"
 RHN = "countries/Rhineland.txt"
 BRT = "countries/Brittany.txt"
+FTT = "countries/Free Territory.txt"
+CAU = "countries/Caucasus.txt"
+CBR = "countries/Communist Belarus.txt"
+DSU = "countries/Democratic Socialist Ukraine.txt"
+DBR = "countries/Democratic Belarus.txt"
+
 
 ##America##
 GRL = "countries/Greenland.txt"
@@ -46,3 +52,5 @@ BNF = "countries/Belgien-Nordfrankreich.txt"
 JVD = "countries/Japanese Vladivostok.txt"
 FER = "countries/Russian Far East Republic.txt"
 WFE = "countries/Far East White Russians.txt"
+RUS = "countries/Southern Russia.txt"
+CRM = "countries/Crimea.txt"
