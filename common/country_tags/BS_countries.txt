@@ -41,3 +41,8 @@ NID = "countries/Niederlande.txt"
 GGO = "countries/Generalgouvernement.txt"
 PBM = "countries/Bohmen un Mahren.txt"
 BNF = "countries/Belgien-Nordfrankreich.txt"
+
+##Russian Far East##
+JVD = "countries/Japanese Vladivostok.txt"
+FER = "countries/Russian Far East Republic.txt"
+WFE = "countries/Far East White Russians.txt"
