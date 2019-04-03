@@ -553,25 +553,37 @@ WFE = {
 	color_ui = rgb { 17 58 23 }
 }
 CAU = {
-	color = rgb { 36 63 36 }
-	color_ui = rgb { 36 63 36 }
+	color = rgb { 44 91 44 }
+	color_ui = rgb { 44 91 44 }
 }
 KAZ = {
 	color = rgb { 130 89 45 }
 	color_ui = rgb { 130 89 45 }
 }
+BRW = {
+	color = rgb { 163 183 163 }
+	color_ui = rgb { 163 183 163 }
+}
+KRW = {
+	color = rgb { 127 132 127 }
+	color_ui = rgb { 127 132 127 }
+}
+JSW = {
+	color = rgb { 145 56 31 }
+	color_ui = rgb { 145 56 31 }
+}
 ##New Countries##
 FLA = {
 	color = rgb { 32 86 98 }
-	color_ui = rgb { 32 86 98 }
+	color_ui = rgb { 32 86 90 }
 }
 WLL = {
-	color = rgb { 207 195 66 }
-	color_ui = rgb { 207 195 66 }
+	color = rgb { 201 195 12 }
+	color_ui = rgb { 201 195 12 }
 }
 FTT = {
-	color = rgb { 39 34 35 }
-	color_ui = rgb { 39 34 35 }
+	color = rgb { 17 17 17 }
+	color_ui = rgb { 17 17 17 }
 }
 CRM = {
 	color = rgb { 193 183 70 }

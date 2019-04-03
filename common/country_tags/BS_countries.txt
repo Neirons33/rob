@@ -54,6 +54,9 @@ FER = "countries/Russian Far East Republic.txt"
 WFE = "countries/Far East White Russians.txt"
 RUS = "countries/Southern Russia.txt"
 CRM = "countries/Crimea.txt"
+BRW = "countries/Bratsk Warlord.txt"
+KRW = "countries/Krasnoyarsk Warlord.txt"
+JSW = "countries/Yenisiek Warlord.txt" 
 
 ##European Russia##
 RDR = "countries/Russian Democratic Republic.txt"
