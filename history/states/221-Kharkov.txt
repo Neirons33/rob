@@ -7,7 +7,7 @@ state={
 	}
 
 	history={
-		owner = FTT
+		owner = DSU
 		victory_points = {
 			418 10 
 		}
@@ -17,8 +17,8 @@ state={
 			air_base = 5
 
 		}
-		add_core_of = FTT
-		add_core_of = UKR
+		add_core_of = DSU
+		
 		1939.1.1 = {
 			buildings = {
 				arms_factory = 2

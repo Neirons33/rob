@@ -4,7 +4,7 @@ state={
 	name="STATE_251"
 
 	history={
-		owner = SOV
+		owner = RDR
 		victory_points = {
 			11225 3 
 		}
@@ -14,7 +14,7 @@ state={
 			air_base = 1
 
 		}
-		add_core_of = SOV
+		add_core_of = RDR
 		1939.1.1 = {
 			buildings = {
 				arms_factory = 3

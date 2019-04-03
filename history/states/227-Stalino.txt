@@ -7,15 +7,14 @@ state={
 	state_category = city
 
 	history={
-		owner = FTT
+		owner = DSU
 		buildings = {
 			infrastructure = 5
 		}
 		victory_points = {
 			6474 10
 		}
-		add_core_of = FTT
-		add_core_of = UKR
+		add_core_of = DSU
 	}
 
 	provinces={

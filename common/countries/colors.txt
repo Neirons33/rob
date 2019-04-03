@@ -530,8 +530,8 @@ DBR = {
 	color_ui = rgb { 206 155 187 }
 }
 CBR = {
-	color = rgb { 209 51 53 }
-	color_ui = rgb { 209 51 53 }
+	color = rgb { 163 34 35 }
+	color_ui = rgb { 163 34 35 }
 }
 DSU = {
 	color = rgb { 204 56 101 }
@@ -580,4 +580,8 @@ CRM = {
 RUS = {
 	color = rgb { 158 72 73 }
 	color_ui = rgb { 158 72 73 }
+}
+RDR = {
+    color = rgb { 73 153 62 }
+	color_ui = rgb { 73 153 62 }
 }

@@ -7,12 +7,12 @@ state={
 	}
 
 	history={
-		owner = GRE
+		owner = ITA
 		buildings = {
 			infrastructure = 3
 
 		}
-		add_core_of = GRE
+		add_core_of = TUR
 
 	}
 
