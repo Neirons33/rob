@@ -57,6 +57,9 @@ CRM = "countries/Crimea.txt"
 BRW = "countries/Bratsk Warlord.txt"
 KRW = "countries/Krasnoyarsk Warlord.txt"
 JSW = "countries/Yenisiek Warlord.txt" 
+CAA = "countries/Caspian Army.txt"
+
 
 ##European Russia##
 RDR = "countries/Russian Democratic Republic.txt"
+TRS = "countries/Turkmenistani Soviets.txt"

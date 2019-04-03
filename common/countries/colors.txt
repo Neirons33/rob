@@ -572,6 +572,15 @@ JSW = {
 	color = rgb { 145 56 31 }
 	color_ui = rgb { 145 56 31 }
 }
+CAA = {
+	color = rgb { 95 101 112 }
+	color_ui = rgb { 95 101 112 }
+}
+TRS = {
+	color = rgb { 145 4 18 }
+	color_ui = rgb { 145 4 18 }
+}
+
 ##New Countries##
 FLA = {
 	color = rgb { 32 86 98 }
