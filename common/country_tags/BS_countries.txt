@@ -63,3 +63,6 @@ CAA = "countries/Caspian Army.txt"
 ##European Russia##
 RDR = "countries/Russian Democratic Republic.txt"
 TRS = "countries/Turkmenistani Soviets.txt"
+MRP = "countries/Mountain Republic.txt"
+CHE = "countries/Checenya.txt"
+DAG = "countries/Dagestan.txt"

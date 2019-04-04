@@ -101,7 +101,7 @@ bookmarks = {
 				SOV_war_with_uk
 			}	
 		}
-
+		
 		"---"={
 			history = "OTHER_GATHERING_STORM_DESC"
 		}

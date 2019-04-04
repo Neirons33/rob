@@ -285,7 +285,7 @@ set_politics = {
 
 	parties = {
 		democratic = { 
-			popularity = 60
+			popularity = 20
 		}
 
 		fascism = {
@@ -293,12 +293,12 @@ set_politics = {
 		}
 		
 		communism = {
-			popularity = 20
+			popularity = 60
 			banned = yes #default is no
 		}
 	}
 	
-	ruling_party = democratic
+	ruling_party = communism
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no
@@ -355,18 +355,18 @@ create_country_leader = {
 #	}
 #}
 #
-#create_country_leader = {
-#	name = "Ernst Thälmann"
-#	desc = "POLITICS_ERNST_THALMANN_DESC"
-#	picture = "Portrait_Germany_Adolf_Hitler.dds"
-#	expire = "1956.1.1"
-#	ideology = stalinism
-#	traits = {
-#		assassination_survivor
-#		stalins_puppet
-#		political_prisoner
-#	}
-#}
+create_country_leader = {
+	name = "Roza Lucksemburg"
+	desc = "POLITICS_ERNST_THALMANN_DESC"
+	picture = "Portriat_GRC_Roza_Luksemburg.tga"
+	expire = "1956.1.1"
+	ideology = stalinism
+	traits = {
+		assassination_survivor
+		stalins_puppet
+		political_prisoner
+	}
+}
 
 add_namespace = {
 	name = "ger_unit_leader"
