@@ -1,0 +1,128 @@
+ideologies = {
+
+national_socialist = {
+ types = {
+  
+  sorelianism = {
+  }
+  german_socialism = {
+  }
+  vlaslovism = {
+  }
+ }
+ 
+ color = { 61 5 10 }
+ ai_fascist = yes
+}
+
+
+socialist = {
+ types = {
+ 
+  marxism_leninism = {
+  }
+  communism = {
+  }
+  socialism = {
+  }
+
+}
+color = { 204 8 25 }
+ai_fascist = yes
+}
+
+
+democratic_socialist = {
+ types = {
+ 
+  anarcho_socialism = {
+  }
+  syndicalism = {
+  }
+  anarchism = {
+  }
+ 
+ }
+ color = { 216 52 66 }
+ ai_fascist = yes
+
+}
+
+
+social_democracy = {
+ types = {
+ 
+ social_democracy = {
+ }
+ 
+ }
+ color = { 239 139 147 }
+ ai_fascist = yes
+ 
+}
+
+social_liberal = {
+ types = {
+ 
+ social_liberalism = {
+ }
+ 
+ }
+ color = { 209 162 52 }
+ ai_fascist = yes
+ 
+}
+
+
+conservative = {
+ types = {
+ 
+ conservative = {
+ }
+ 
+ }
+ color = { 226 200 138 }
+ ai_fascist = yes
+ 
+}
+
+
+
+authoritharian = {
+ types = {
+ 
+ authoritarianism = {
+ }
+ 
+ }
+ color = { 183 177 163 }
+ ai_fascist = yes
+ 
+}
+
+reactionary = {
+ types = {
+ 
+ reactionarism = {
+ }
+ 
+ }
+ color = { 51 49 45 }
+ ai_fascist = yes
+ 
+}
+
+
+pelekist = {
+ types = {
+ 
+ pelekism = {
+ }
+ 
+ }
+ color = { 14 40 104 }
+ ai_fascist = yes
+ 
+}
+
+}
