@@ -58,6 +58,11 @@ BRW = "countries/Bratsk Warlord.txt"
 KRW = "countries/Krasnoyarsk Warlord.txt"
 JSW = "countries/Yenisiek Warlord.txt" 
 CAA = "countries/Caspian Army.txt"
+UGC = "countries/Ugric Confederation.txt"
+LES = "countries/Legion State.txt"
+OMS = "countries/Omsk.txt"
+TOW = "countries/Tomsk.txt"
+BAR = "countries/Barnaul.txt"
 
 
 ##European Russia##

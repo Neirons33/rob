@@ -580,6 +580,27 @@ TRS = {
 	color = rgb { 145 4 18 }
 	color_ui = rgb { 145 4 18 }
 }
+UGC = {
+	color = rgb { 191 186 91 }
+	color_ui = rgb { 191 186 91 }
+}
+LES = {
+	color = rgb { 4 29 96 }
+	color_ui = rgb { 4 29 96 }
+}
+OMS = {
+	color = rgb { 112 23 29 }
+	color_ui = rgb { 112 23 29 }
+}
+TOW = {
+	color = rgb { 64 91 82 }
+	color_ui = rgb { 64 91 82 }
+}
+BAR = {
+	color = rgb { 60 73 59 }
+	color_ui = rgb { 60 73 59 }
+}
+
 
 ##New Countries##
 FLA = {

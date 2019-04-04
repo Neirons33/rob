@@ -1,28 +1,7 @@
-capital = 568
-set_research_slots = 1
 
-set_politics = {
 
-	parties = {
-		democratic = { 
-			popularity = 0
-		}
+graphical_culture = western_european_gfx
+graphical_culture_2d = western_european_2d
+	 
+color = { 127 132 127 }
 
-		fascism = {
-			popularity = 0
-		}
-		
-		communism = {
-			popularity = 0
-		}
-		
-		neutrality = {
-			popularity = 100
-		}
-	}
-	
-	ruling_party = neutrality
-	last_election = "1960.1.1"
-	election_frequency = 50
-	elections_allowed = no
-}
