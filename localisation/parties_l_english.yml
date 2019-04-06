@@ -1,10 +1,54 @@
 ﻿l_english:
+ ###Main Indeologies
+ 
  national_socialist:0 "National Socialism"
+ national_socialist_noun:0 "National Socialist"
+ national_socialist_desc:0 "Socialist Republic"
  socialist:0 "Socialism"
+ socialist_noun:0 "Socialist"
+ socialist_desc:0 "Socialist Republic"
  democratic_socialist:0 "Democratic Socialism"
+ democratic_socialist_noun:0 "Democratic Socialist"
+ democratic_socialist_desc:0 "Socialist Republic"
+ 
  social_democracy:0 "Social Democracy"
+ social_democracy_noun:0 "Social Democrat"
+ social_democracy_desc:0 "Social Democracy"
  social_liberal:0 "Social Liberalism"
+ social_liberal_noun:0 "Social Liberal"
+ social_liberal_desc:0 "Liberal Democracy"
  conservative:0 "Conservatism"
+ conservative_noun:0 "Conservative"
+ conservative_desc:0 "Conservative Democracy"
+ 
  authoritharian:0 "Authoritarianism"
+ authoritharian_noun:0 "Authoritarian"
+ authoritharian_desc:0 "Authoritarian State"
  reactionary:0 "Reactionary"
+ reactionary_noun:0 "Reactionary"
+ reactionary_desc:0 "Reactionary State"
  pelekist:0 "Pelekism"
+ pelekist_noun:0 "Pelekist"
+ pelekist_desc:0 "Pelekist State"
+ 
+ 
+ ###SubIdeologies
+ ##National Socialism
+ sorelianism:0 "Sorelianism"
+ sorelianism_desc:0 "Mainly inspired by French syndicalist thinker George Sorel, Sorelianism aims to destroy the bourgeoisie society through violent means, with a goal of National-Syndicalist state with a focus on the myth and proletarian culture."
+ german_socialism:0 "German Socialism"
+ german_socialism_desc:0 "Continuing the long-running German tradition of anti-Marxist Socialism, it rejects the Marxist notion of class warfare, while aiming to create a truly national state with socialist foundations"
+ vlaslovism:0 "Vlaslovism"
+ vlaslovism_desc:0 "Coined by opponents of Bolshevik general Vlaslov and his ideas, Vlaslovism has become a wide-spread term for socialist and communist groups with strong authoritharian and nationalist tendencies, who believe strong and national state is necesary for proletarian revolution to succed"
+ 
+ ##Socialism
+ marxism_leninism:0 "Marxism-Leninism"
+ marxism_leninism_desc:0 "Adhering to principles laid out by Karl Marx and Friedrich Engels, Marxists-Leninists believe in class struggle, dialectial materialism and the idea of workers owning the means of production, while supporting ideas of Lenin about socialist state, that was created by a vanguard party of the proletariat"
+ left_communism:0 "Left Communism"
+ left_communism_desc:0 "Left Communists, while believing in the ideals of Karl Marx, are heavily opposed to Leninist and Social Democrat ideas about state and policies they've intacted"
+ socialism:0 "Socialism"
+ socialism_desc:0 "Socialists believe in the common owernship over means of production and any kind of resources in general. Socialists do not necessary believe in the abolition of state, sometimes seeing it as a end on itself rather than the means to an end, like Communists"
+ 
+ ##Pelekism
+ pelekism_ideology:0 "Pelekism"
+ pelekism_ideology_desc:0 "Originally definied by Gabrielle D'Annunzio in his work "La Mia Guerra" which he wrote while being imprisioned after an unsuccesful attempt of coup during the end of Great War, Pelekism is strongly influenced by ideas of Volkism and Syndicalism, while being anti-materialist, anti-Marxist and anti-capitalist, aiming to unite the people under a spiritual state, which adheres to "Natural Law", while having an esoteric view of spirituality and religion in general"

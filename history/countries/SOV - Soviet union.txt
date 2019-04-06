@@ -261,68 +261,101 @@ set_convoys = 50
 set_politics = {
 
 	parties = {
-		democratic = { 
-			popularity = 10 #shared between all parties, should add to 100
-		}
-
-		fascism = {
-			popularity = 2
+	
+		national_socialist = { 
+			popularity = 12
 		}
 		
-		communism = {
-			popularity = 88
+        socialist = {
+			popularity = 52
+		}
+		
+		democratic_socialist = {
+			popularity = 34
+		}
+		
+		social_democracy = {
+		    popularity = 2
+		}
+		
+		social_liberal = {
+		    popularity = 0
+		}
+		
+		conservative = {
+		    popularity = 0
+		}
+		
+		authoritharian = {
+		    popularity = 0
+		}
+		
+		reactionary = {
+		    popularity = 0
+		}
+		
+		pelekist = {
+		    popularity = 0
 		}
 	}
 	
-	ruling_party = communism
+	ruling_party = democratic_socialist
 	last_election = "1933.7.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
-create_faction = Comintern
-add_to_faction = SOV
-add_to_faction = MON
-add_to_faction = TAN
+
 
 
 add_ideas = {
-	trotskyite_plot
-	home_of_revolution
+	
 }
 
 create_country_leader = {
-	name = "Joseph Stalin"
-	desc = "POLITICS_JOSEPH_STALIN_DESC"
-	picture = "Portrait_Soviet_Joseph_Stalin.dds"
+	name = "Andrey Andreyevich Vlasov"
+	desc = ""
+	picture = "Vlaslov.dds"
 	expire = "1953.3.1"
-	ideology = stalinism
+	ideology = vlaslovism
 	traits = {
-		
+		#
 	}
 }
 
 create_country_leader = {
-	name = "Konstantin Rodzaevsky"
-	desc = "POLITICS_KONSTANTIN_RODZAEVSKY_DESC"
-	picture = "Portrait_Soviet_Konstantin_Rodzaevsky.dds"
+	name = "Alexy Rykov"
+	desc = ""
+	picture = "AlexyRykov.dds"
 	expire = "1953.3.1"
-	ideology = fascism_ideology
+	ideology = market_socialism
 	traits = {
-		
+		#
 	}
 }
 
 create_country_leader = {
-	name = "Alexander Fyodorovich Kerensky"
-	desc = "POLITICS_ALEXANDER_FYODOROVICH_KERENSKY_DESC"
+	name = "Lev Kamenev"
+	desc = ""
 	picture = "Portrait_Soviet_Generic_1.dds"
 	expire = "1953.3.1"
-	ideology = socialism
+	ideology = marxism_leninism
 	traits = {
-		
+		#
 	}
 }
+create_country_leader = {
+	name = "Alexei Maximovich Peshkov"
+	desc = ""
+	picture = "Portrait_Soviet_Generic_1.dds"
+	expire = "1953.3.1"
+	ideology = social_democracy_ideology
+	traits = {
+		#
+	}
+}
+
+
 
 add_namespace = {
 	name = "unit_leader_sov"

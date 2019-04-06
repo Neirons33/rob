@@ -10,6 +10,22 @@ national_socialist = {
   vlaslovism = {
   }
  }
+ rules = {
+			can_declare_war_on_same_ideology = yes
+			can_force_government = no
+			can_send_volunteers = yes
+			can_puppet = no
+			can_lower_tension = no
+			can_only_justify_war_on_threat_country = no
+			can_guarantee_other_ideologies = no
+		}
+		war_impact_on_world_tension = 0.75
+		faction_impact_on_world_tension = 0.75
+		
+		modifiers = {
+		
+			
+		}
  
  color = { 61 5 10 }
  ai_fascist = yes
@@ -21,12 +37,27 @@ socialist = {
  
   marxism_leninism = {
   }
-  communism = {
+  left_communism = {
   }
   socialism = {
   }
 
 }
+rules = {
+			can_declare_war_on_same_ideology = yes
+			can_force_government = no
+			can_send_volunteers = yes
+			can_puppet = no
+			can_lower_tension = no
+			can_only_justify_war_on_threat_country = no
+		}
+		war_impact_on_world_tension = 0.75
+		faction_impact_on_world_tension = 0.75
+		
+		modifiers = {
+		
+			
+		}
 color = { 204 8 25 }
 ai_fascist = yes
 }
@@ -41,8 +72,25 @@ democratic_socialist = {
   }
   anarchism = {
   }
+  market_socialism = {
+  }
  
  }
+ rules = {
+			can_declare_war_on_same_ideology = yes
+			can_force_government = no
+			can_send_volunteers = yes
+			can_puppet = no
+			can_lower_tension = no
+			can_only_justify_war_on_threat_country = no
+		}
+		war_impact_on_world_tension = 0.75
+		faction_impact_on_world_tension = 0.75
+		
+		modifiers = {
+		
+			
+		}
  color = { 216 52 66 }
  ai_fascist = yes
 
@@ -52,10 +100,27 @@ democratic_socialist = {
 social_democracy = {
  types = {
  
- social_democracy = {
+ social_democracy_ideology = {
  }
  
  }
+ rules = {
+			can_declare_war_on_same_ideology = yes
+			can_force_government = no
+			can_send_volunteers = yes
+			can_puppet = no
+			can_lower_tension = no
+			can_only_justify_war_on_threat_country = no
+			can_guarantee_other_ideologies = no
+		}
+		war_impact_on_world_tension = 0.75
+		faction_impact_on_world_tension = 0.75
+		
+		modifiers = {
+			generate_wargoal_tension = 0.45
+			join_faction_tension = 0.80
+			
+		}
  color = { 239 139 147 }
  ai_fascist = yes
  
@@ -68,6 +133,23 @@ social_liberal = {
  }
  
  }
+ rules = {
+			can_declare_war_on_same_ideology = yes
+			can_force_government = no
+			can_send_volunteers = yes
+			can_puppet = no
+			can_lower_tension = no
+			can_only_justify_war_on_threat_country = no
+			can_guarantee_other_ideologies = no
+		}
+		war_impact_on_world_tension = 0.75
+		faction_impact_on_world_tension = 0.75
+		
+		modifiers = {
+			generate_wargoal_tension = 0.45
+			join_faction_tension = 0.80
+			
+		}
  color = { 209 162 52 }
  ai_fascist = yes
  
@@ -77,10 +159,27 @@ social_liberal = {
 conservative = {
  types = {
  
- conservative = {
+ conservative_ideology = {
  }
  
  }
+ rules = {
+			can_declare_war_on_same_ideology = yes
+			can_force_government = no
+			can_send_volunteers = yes
+			can_puppet = no
+			can_lower_tension = no
+			can_only_justify_war_on_threat_country = no
+			can_guarantee_other_ideologies = no
+		}
+		war_impact_on_world_tension = 0.75
+		faction_impact_on_world_tension = 0.75
+		
+		modifiers = {
+			generate_wargoal_tension = 0.45
+			join_faction_tension = 0.80
+		
+		}
  color = { 226 200 138 }
  ai_fascist = yes
  
@@ -95,6 +194,20 @@ authoritharian = {
  }
  
  }
+ rules = {
+			can_declare_war_on_same_ideology = yes
+			can_force_government = no
+			can_send_volunteers = yes
+			can_puppet = no
+			can_lower_tension = no
+			can_only_justify_war_on_threat_country = no
+		}
+		war_impact_on_world_tension = 0.75
+		faction_impact_on_world_tension = 0.75
+		
+		modifiers = {
+		
+		}
  color = { 183 177 163 }
  ai_fascist = yes
  
@@ -107,6 +220,21 @@ reactionary = {
  }
  
  }
+ rules = {
+			can_declare_war_on_same_ideology = yes
+			can_force_government = no
+			can_send_volunteers = yes
+			can_puppet = no
+			can_lower_tension = no
+			can_only_justify_war_on_threat_country = no
+		}
+		war_impact_on_world_tension = 0.75
+		faction_impact_on_world_tension = 0.75
+		
+		modifiers = {
+		
+			
+		}
  color = { 51 49 45 }
  ai_fascist = yes
  
@@ -116,10 +244,25 @@ reactionary = {
 pelekist = {
  types = {
  
- pelekism = {
+ pelekism_ideology = {
  }
  
  }
+ rules = {
+			can_declare_war_on_same_ideology = yes
+			can_force_government = no
+			can_send_volunteers = yes
+			can_puppet = no
+			can_lower_tension = no
+			can_only_justify_war_on_threat_country = no
+		}
+		war_impact_on_world_tension = 0.75
+		faction_impact_on_world_tension = 0.75
+		
+		modifiers = {
+		
+			
+		}
  color = { 14 40 104 }
  ai_fascist = yes
  
