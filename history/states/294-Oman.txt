@@ -11,7 +11,7 @@ state={
 	}
 
 	history={
-		owner = OMA
+		owner = ENG
 		buildings = {
 			infrastructure = 2
 			arms_factory = 1

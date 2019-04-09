@@ -126,8 +126,8 @@ AFG = {
 	color_ui = rgb { 83 208 217 }
 }
 ARG = {
-	color = rgb { 145 157 236 }
-	color_ui = rgb { 189 204 255 }
+	color = rgb { 9 41 117 }
+	color_ui = rgb { 9 41 117 }
 }
 AST = {
 	color = rgb { 57 143 97 }
@@ -138,12 +138,12 @@ BHU = {
 	color_ui = rgb { 172 122 88 }
 }
 BOL = {
-	color = hsv { 0.1 0.47 0.8 } #255 180 136
-	color_ui = rgb { 255 234 177 }
+	color = rgb { 131 33 153 } 
+	color_ui = rgb { 131 33 153 }
 }
 BRA = {
-	color = rgb { 76 145 63 }
-	color_ui = rgb { 99 189 82 }
+	color = rgb { 54 137 38 }
+	color_ui = rgb { 54 137 38 }
 }
 CAN = {
 	color = rgb { 119 48 39 }
@@ -154,12 +154,12 @@ CHI = {
 	color_ui = hsv { 0.18 0.3 0.9 }
 }
 CHL = {
-	color = rgb { 155 101 107 }
-	color_ui = rgb { 202 131 139 }
+	color = rgb { 56 138 165 }
+	color_ui = rgb { 56 138 165 }
 }
 COL = {
-	color = rgb { 222 187 91 }
-	color_ui = rgb { 255 243 118 }
+	color = rgb { 201 204 71 }
+	color_ui = rgb { 201 204 71 }
 }
 COS = {
 	color = rgb { 152 128 43 }
@@ -226,8 +226,8 @@ PHI = {
 	color_ui = rgb { 198 169 248 }
 }
 PRU = {
-	color = rgb { 196 189 204 }
-	color_ui = rgb { 255 246 255 }
+	color = rgb { 124 66 12 }
+	color_ui = rgb { 124 66 12 }
 }
 SAF = {
 	color = rgb { 180 44 136 }
@@ -307,8 +307,8 @@ SLO = {
 	color_ui = rgb { 255 255 255 }
 }
 RAJ = {
-	color = rgb { 170  10  10 }
-	color_ui = rgb { 200  10  10 }
+	color = rgb { 214 143 12 }
+	color_ui = rgb { 214 143 12 }
 }
 
 CRO = {
