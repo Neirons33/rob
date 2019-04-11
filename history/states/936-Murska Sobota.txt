@@ -1,20 +1,20 @@
+
 state={
 	id=936
 	name="STATE_936"
 
 	history={
-		owner = HUN
+		owner = CRO
 		buildings = {
 			infrastructure = 6
 
 		}
-		add_core_of = HUN
-		add_core_of = SLV
+		add_core_of = CRO
 
 	}
 
 	provinces={
-		6672 
+		3670 6672 9624 
 	}
 	manpower=31000
 	buildings_max_level_factor=1.000

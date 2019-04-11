@@ -1,9 +1,10 @@
+
 state={
 	id=810
 	name="STATE_810"
 
 	history={
-		owner = HUN
+		owner = AUS
 		buildings = {
 			infrastructure = 6
 
@@ -20,7 +21,7 @@ state={
 	}
 
 	provinces={
-		3700 9661 11630 
+		686 3700 6720 9661 11627 11630 
 	}
 	manpower=34031
 	buildings_max_level_factor=1.000

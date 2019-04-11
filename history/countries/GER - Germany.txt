@@ -284,21 +284,29 @@ create_import = {
 set_politics = {
 
 	parties = {
-		democratic = { 
+		democratic_socialist = { 
 			popularity = 20
 		}
 
 		fascism = {
-			popularity = 20
+			popularity = 5
+		}
+
+		national_socialist = {
+			popularity = 15
 		}
 		
 		communism = {
-			popularity = 60
+			popularity = 53
 			banned = yes #default is no
 		}
+
+		authoritharian = {
+			popularity = 7
+			banned = yes #default is no
+		}	
 	}
-	
-	ruling_party = communism
+	ruling_party = socialist
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no
@@ -321,46 +329,21 @@ add_ideas = GER_mefo_bills_1
 activate_mission = GER_mefo_bills_mission
 
 create_country_leader = {
-	name = "Adolf Hitler"
-	desc = "POLITICS_ADOLF_HITLER_DESC"
-	picture = "Portrait_Germany_Adolf_Hitler.dds"
-	expire = "1965.1.1"
-	ideology = nazism
-	traits = {
-		dictator
-	}
-}
-
-create_country_leader = {
 	name = "Hermann Müller"
 	desc = "POLITICS_KONRAD_ADENAUER_DESC"
 	picture = "Hermann_Müller.dds"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = market_socialism
 	traits = {
 	}
 }
 
-
-
-#create_country_leader = {
-#	name = "Otto Wels"
-#	desc = "POLITICS_OTTO_WELS_DESC"
-#	picture = "Portrait_Germany_Adolf_Hitler.dds"
-#	expire = "1939.1.16"
-#	ideology = socialism
-#	traits = {
-#		exiled
-#		union_man
-#	}
-#}
-#
 create_country_leader = {
 	name = "Roza Lucksemburg"
 	desc = "POLITICS_ERNST_THALMANN_DESC"
 	picture = "Portriat_GRC_Roza_Luksemburg.tga"
 	expire = "1956.1.1"
-	ideology = stalinism
+	ideology = marxism_leninism
 	traits = {
 		assassination_survivor
 		stalins_puppet
@@ -368,6 +351,42 @@ create_country_leader = {
 	}
 }
 
+create_country_leader = {
+	name = "Hienrich Himmler"
+	desc = "POLITICS_ERNST_THALMANN_DESC"
+	picture = ""
+	expire = "1956.1.1"
+	ideology = german_socialism
+	traits = {
+		assassination_survivor
+		stalins_puppet
+		political_prisoner
+	}
+}
+
+create_country_leader = {
+	name = "Hienrich Himmler"
+	desc = "POLITICS_ERNST_THALMANN_DESC"
+	picture = ""
+	expire = "1956.1.1"
+	ideology = german_socialism
+	traits = {
+		political_prisoner
+	}
+}
+
+create_country_leader = {
+	name = "August Von Mackenson"
+	desc = "POLITICS_ERNST_THALMANN_DESC"
+	picture = ""
+	expire = "1956.1.1"
+	ideology = authoritarianism
+	traits = {
+
+	}
+}
+
+##Generals and stuff
 add_namespace = {
 	name = "ger_unit_leader"
 	type = unit_leader

@@ -17,24 +17,32 @@ set_technology = {
 set_politics = {
 
 	parties = {
-		neutrality = { 
-			popularity = 48
+		reactionary = { 
+			popularity = 30
 		}
 
-		fascism = {
-			popularity = 50
+		national_socialist = {
+			popularity = 20
 		}
 
-		democratic = {
-			popularity = 1
+		authoritharian = {
+			popularity = 18
+		}
+
+		social_democracy = {
+			popularity = 15
 		}
 		
-		communism = {
-			popularity = 1
+		socialist = {
+			popularity = 7
+		}
+
+		conservative = {
+			popularity = 8
 		}
 	}
 	
-	ruling_party = neutrality
+	ruling_party = reactionary
 	last_election = "1930.11.9"
 	election_frequency = 48
 	elections_allowed = no
@@ -43,11 +51,11 @@ set_politics = {
 set_stability = 0.50
 
 create_country_leader = {
-	name = "Kurt Schuschnigg"
-	desc = "POLITICS_KURT_SCHUSCHNIGG_DESC"
-	picture = "Portrait_Austria_Kurt_Schuschnigg.dds"
+	name = "Engelbert Dollfuss"
+	desc = "POLITICS_Engelbert_Dollfuss_DESC"
+	picture = "Engelbert_Dollfuss.dds"
 	expire = "1965.1.1"
-	ideology = centrism
+	ideology = reactionarism 
 	traits = {
 		#
 	}

@@ -1,20 +1,23 @@
+
 state={
 	id=989
 	name="STATE_989"
-	provinces={
-		6521 13311 13313 13314 13315 13316 
-	}
-		state_category = large_town
 
-	manpower=4242501
 	history={
 		owner = GER
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 7
+
 		}
 		add_core_of = GER
-		
+
 	}
+
+	provinces={
+		6521 13314 13315 13316 
+	}
+	manpower=4242501
 	buildings_max_level_factor=1.000
+	state_category=large_town
 }
