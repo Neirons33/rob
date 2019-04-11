@@ -17,7 +17,7 @@ PixelShader =
 	static const float FOW_NOISE_TILING = 0.01;
 	static const float FOW_NOISE_SPEED = 0.015;
 	
-	// static const float3 BRIGHT_FOW_COLOR = float3(0.98, 0.93, 0.93);
+	// static const float3 BRIGHT_FOW_COLOR = float3(0.47, 0.46, 0.46);
 	// static const float3 DARK_FOW_COLOR = float3(0.08, 0.08, 0.1);
     static const float3 BRIGHT_FOW_COLOR = float3(0.78, 0.73, 0.95);
 	static const float3 DARK_FOW_COLOR = float3(0.04, 0.04, 0.15);

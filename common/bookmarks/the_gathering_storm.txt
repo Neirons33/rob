@@ -88,17 +88,12 @@ bookmarks = {
 				found_own_faction_focus
 			}			
 		}
-		"SOV"={
-			history = "SOV_GATHERING_STORM_DESC"
+		"CHI"={
+			history = "CHI_GATHERING_STORM_DESC"
 			ideology = communism
 			ideas = {
-				trotskyite_plot
-				home_of_revolution
 			}
 			focuses = {
-				SOV_great_purge
-				SOV_claims_on_baltic
-				SOV_war_with_uk
 			}	
 		}
 		
@@ -111,6 +106,20 @@ bookmarks = {
 		"HUN"={
 			minor = yes
 			history = "HUN_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				HUN_treaty_of_triannon
+			}
+			focuses = {
+				HUN_elect_a_king
+				HUN_secret_rearmament
+				HUN_renounce_the_treaty_of_trianon
+			}
+		}
+
+		"CRO"={
+			minor = yes
+			history = "CRO_GATHERING_STORM_DESC"
 			ideology = neutrality
 			ideas = {
 				HUN_treaty_of_triannon
