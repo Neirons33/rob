@@ -1,0 +1,69 @@
+ideas = {
+
+ country = {
+ 
+     weak_democracy = {
+ 
+     allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 picture = GFX_idea_weak_democracy
+     modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.1
+				political_power_factor	= -0.25
+			}
+}
+    civil_war_attrition = {
+	allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+	 removal_cost = -1
+	 picture = GFX_idea_civil_war_attrition
+	 modifier = {
+				conscription_factor	 = -0.6
+				conscription = -0.05
+				MONTHLY_POPULATION	= -0.8
+			}
+	}
+	mari_rebbelion = {
+	
+	allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+	 removal_cost = -1
+	 picture = GFX_idea_marirebellion
+	 modifier = {
+				stability_factor = -0.05
+				political_power_factor	= -0.10
+				consumer_goods_factor = 0.15
+			}
+	}
+	
+	failing_economy = {
+	
+	allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+	 removal_cost = -1
+	 picture = GFX_idea_economy
+	 modifier = {
+				production_factory_max_efficiency_factor = -0.15
+				production_speed_buildings_factor	= -0.15
+			}
+	}
+}
+}

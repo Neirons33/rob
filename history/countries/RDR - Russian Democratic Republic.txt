@@ -47,12 +47,57 @@ parties = {
 	elections_allowed = no
 }
 
+add_ideas = weak_democracy
+add_ideas = civil_war_attrition
+add_ideas = mari_rebbelion
+add_ideas = failing_economy
+
 create_country_leader = {
 	name = "Vasily Maklakov"
 	desc = ""
 	picture = "VasilyMaklakov.dds"
 	expire = "1947.1.1"
 	ideology = conservative_ideology
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Anastasy Vonsiatsky"
+	desc = ""
+	picture = "AnastasyVonsiatsky.dds"
+	expire = "1947.1.1"
+	ideology = pelekism_ideology
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Pavel Bermont-Avalov"
+	desc = ""
+	picture = "PavelBermontAvalov.dds"
+	expire = "1947.1.1"
+	ideology = reactionarism
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Pavel Nikolayevich Milyukov"
+	desc = ""
+	picture = "PavelNikolayevichMilyukov.dds"
+	expire = "1947.1.1"
+	ideology = social_liberalism
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Nikolai Rozhkov"
+	desc = ""
+	picture = "NikolaiRozhkov.dds"
+	expire = "1947.1.1"
+	ideology = social_democracy_ideology
 	traits = {
 		#
 	}
