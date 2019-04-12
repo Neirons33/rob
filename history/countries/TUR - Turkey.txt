@@ -136,22 +136,26 @@ set_politics = {
 			popularity = 10
 		}
 
-		fascism = {
-			popularity = 0
+		pelekist = {
+			popularity = 46
 			banned = yes
 		}
 		
-		communism = {
+		national_socialist = {
 			popularity = 0
 			banned = yes #default is no
 		}
 		
-		neutrality = { 
-			popularity = 100
+		reactionary = { 
+			popularity = 34
+		}
+
+		authoritarianism  = { 
+			popularity = 20
 		}
 	}
 	
-	ruling_party = neutrality
+	ruling_party = pelekist
 	last_election = "1935.2.8"
 	election_frequency = 48
 	elections_allowed = yes
@@ -189,44 +193,26 @@ set_stability = 0.55
 		elections_allowed = yes
 	}
 
+}
+
+# Atatürk still alive in '36, however, Inönü was already Prime Minister (but not President)
 	create_country_leader = {
 		name = "Ismet Inönü"
 		desc = "POLITICS_ISMET_INÖNÜ_DESC"
-		picture = "Portrait_Turkey_Ismet_Inonu.dds"
+		picture = "Portrait_TUR_Ismet_Pasha.tga"
 		expire = "1965.1.1"
-		ideology = despotism
+		ideology = social_democracy_ideology
 		traits = {
 			#
 		}
 	}
 
-	if = {
-		limit = { 
-			has_unit_leader = 59
-		}
-		remove_unit_leader = 59
-	}
-
-}
-
-# Atatürk still alive in '36, however, Inönü was already Prime Minister (but not President)
 create_country_leader = {
-	name = "Ismet Inönü"
-	desc = "POLITICS_ISMET_INÖNÜ_DESC"
-	picture = "Portrait_Turkey_Ismet_Inonu.dds"
-	expire = "1965.1.1"
-	ideology = despotism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Mustafa Kemal Atatürk"
+	name = "Abdülmecid II"
 	desc = "POLITICS_MUSTAFA_KEMAL_ATATÜRK_DESC"
-	picture = "gfx/leaders/TUR/Portrait_Turkey_Mustafa_Kemal_Ataturk.dds"
-	expire = "1938.11.10"
-	ideology = despotism
+	picture = "Portrait_TUR_Abdülmecid_II.tga"
+	expire = "1965.1.1"
+	ideology = authoritarianism
 	traits = {
 		#
 	}
@@ -248,17 +234,17 @@ create_country_leader = {
 	desc = "POLITICS_CELAL_BAYAR_DESC"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = conservative_ideology
 	traits = {
 		#
 	}
 }
 create_country_leader = {
-	name = "Fevzi Çakmak"
+	name = "Enver Pasha"
 	desc = "POLITICS_OGUZ_REMZI_ARIK_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"
+	picture = "Portrait_TUR_Enver_Pasha.tga"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = pelekism_ideology
 	traits = {
 		#
 	}

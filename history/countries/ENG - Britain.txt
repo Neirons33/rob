@@ -320,7 +320,7 @@ create_country_leader = {
 set_politics = {
 
 	parties = {
-		democratic = { 
+		social_democracy = { 
 			popularity = 97
 		}
 
@@ -333,7 +333,7 @@ set_politics = {
 		}
 	}
 	
-	ruling_party = democratic
+	ruling_party = social_democracy
 	last_election = "1935.11.14"
 	election_frequency = 48
 	elections_allowed = yes ##suspended through duration of war, which is handled via event
@@ -343,7 +343,6 @@ set_politics = {
 
 create_faction = Allies
 add_to_faction = ENG
-#add_to_faction = FRA
 add_to_faction = CAN
 add_to_faction = AST
 add_to_faction = NZL
@@ -358,23 +357,11 @@ add_to_faction = MAL
 # Order matters - here Chamberlain becomes starting leader
 
 create_country_leader = {
-	name = "Winston Churchill"
-	desc = "POLITICS_WINSTON_CHURCHILL_DESC"
-	picture = "Portrait_Britain_Winston_Churchill.dds"
-	expire = "1965.1.1"
-	ideology = conservatism
-	traits = {
-		#traits here need to also be added to events britain.9 and britain.10. Don't ask why.
-	}
-}
-
-
-create_country_leader = {
-	name = "Stanley Baldwin"
+	name = "Ramsay MacDonald"
 	desc = "POLITICS_STANLEY_BALDWIN_DESC"
-	picture = "gfx//leaders//ENG//Portrait_Britain_Stanley_Baldwin.dds"
-	expire = "1938.1.1"
-	ideology = liberalism
+	picture = "Portrait_ENG_Ramsay_MacDonald.tga"
+	expire = "1935.6.7"
+	ideology = social_democracy_ideology
 	traits = {
 		conservative_grandee
 	}

@@ -1,4 +1,4 @@
-﻿capital = 282
+capital = 282
 
 oob = "JAP_1936"
 
@@ -293,7 +293,7 @@ set_politics = {
 		}
 	}
 	
-	ruling_party = fascism
+	ruling_party = authoritharian
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -330,7 +330,7 @@ create_country_leader = {
 	desc = "POLITICS_Hirohito_DESC"
 	picture = "Portrait_Japan_Hirohito.dds"
 	expire = "1989.1.1"
-	ideology = fascism_ideology
+	ideology = authoritarianism
 	traits = {
 		warrior_code
 		emperor_showa
@@ -717,7 +717,7 @@ create_navy_leader = {
 }
 
 create_navy_leader = {
-	name = "Nobutake Kondō"
+	name = "Nobutake Kond?"
 		picture = "Portrait_Japan_Nobutake_Kondo.dds"
 	traits = { battleship_adherent naval_lineage fly_swatter }
 	skill = 3

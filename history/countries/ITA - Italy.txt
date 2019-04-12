@@ -99,7 +99,7 @@ if = {
 	give_guarantee = ALB
 }
 
-1939.1.1 = {
+1932.1.1 = {
 
 	add_political_power = 1198
 	
@@ -209,7 +209,7 @@ if = {
 	
 	set_stability = 0.8
 	GER = { add_to_faction = ITA }
-}
+
 
 
 set_convoys = 200
@@ -217,30 +217,37 @@ set_convoys = 200
 set_politics = {
 
 	parties = {
-		neutrality = { 
+		authoritharian = { 
 			popularity = 22
 		}
 
-		democratic = { 
-			popularity = 26
+		conservative = { 
+			popularity = 6
 		}
 
-		fascism = {
-			popularity = 50
+		reactionary = {
+			popularity = 14
 		}
-		
-		communism = {
-			popularity = 2
+
+		pelekist = {
+			popularity = 26
+		}		
+
+		social_liberal = {
+			popularity = 10
+		}
+		national_socialist = {
+			popularity = 22
 		}
 	}
 	
-	ruling_party = neutrality
-	last_election = "1934.3.26"
+	ruling_party = authoritharian
+	last_election = "1930.3.26"
 	election_frequency = 60
 	elections_allowed = no
+	}
+
 }
-
-
 
 
 create_country_leader = {
@@ -248,7 +255,18 @@ create_country_leader = {
 	desc = "POLITICS_BENITO_MUSSOLINI_DESC"
 	picture = "Portrait_Italy_Benito_Mussolini.dds"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = pelekist
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Ivanoe Bonomi"
+	desc = "POLITICS_BENITO_MUSSOLINI_DESC"
+	picture = "Portrait_Rome_Ivanoe_Bonomi.tga"
+	expire = "1965.1.1"
+	ideology = social_democracy_ideology
 	traits = {
 		
 	}
@@ -259,7 +277,7 @@ create_country_leader = {
 	desc = "POLITICS_BENITO_MUSSOLINI_DESC"
 	picture = "GFX_portrait_italy_ferruccio_parri"
 	expire = "1965.1.1"
-	ideology = socialism
+	ideology = german_socialism
 	traits = {
 		
 	}
@@ -272,7 +290,7 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {
-		oligarchism		
+		authoritarianism	
 	}
 }
 
