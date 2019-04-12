@@ -83,9 +83,9 @@ set_politics = {
 set_convoys = 150
 set_stability = 0.5
 
-1939.1.1 = {
+1932.1.1 = {
 
-	add_political_power = 1198
+	add_political_power = 0
 	
 	#generic focuses
 	complete_national_focus = army_effort
@@ -151,22 +151,11 @@ set_stability = 0.5
 		dispersed_industry2 = 1
 		dispersed_industry3 = 1
 	}
-	if = {
-		limit = { not = { has_dlc = "Man the Guns" } }
-		set_technology = {
-		}
-	}
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-		set_technology = {
-			basic_light_battery = 1
-		}
-	}
 
 	set_politics = {
 
 		parties = {
-			democratic = { 
+			social_liberal = { 
 				popularity = 22
 			}
 
@@ -179,22 +168,18 @@ set_stability = 0.5
 			}
 		}
 		
-		ruling_party = fascism
+		ruling_party = social_liberal
 		last_election = "1934.3.26"
 		election_frequency = 60
 		elections_allowed = no
 	}
 
-	set_global_flag = scw_over
-	add_timed_idea = { idea = SPA_recovering_from_civil_war days = 1095 }
-}
-
 create_country_leader = {
-	name = "Manuel Azana"
+	name = "Niceto Alcala Zamora"
 	desc = "POLITICS_MANUEL_AZANA_DESC"
-	picture = "Portrait_Spain_Manuel_Azana.dds"
+	picture = "Portrait_SPR_Niceto_Alcala_Zamora.tga"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = social_liberalism
 	traits = {
 		#
 	}
