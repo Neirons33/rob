@@ -288,9 +288,8 @@ create_country_leader = {
 	desc = "POLITICS_BENITO_MUSSOLINI_DESC"
 	picture = "Portrait_Italy_Vittorio_Emmanuele.tga"
 	expire = "1965.1.1"
-	ideology = despotism
-	traits = {
-		authoritarianism	
+	ideology = authoritarianism
+	traits = {	
 	}
 }
 
