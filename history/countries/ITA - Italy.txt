@@ -233,7 +233,7 @@ set_politics = {
 			popularity = 26
 		}		
 
-		social_liberal = {
+		social_liberalism = {
 			popularity = 10
 		}
 		national_socialist = {
@@ -241,7 +241,7 @@ set_politics = {
 		}
 	}
 	
-	ruling_party = social_liberal
+	ruling_party = social_liberalism
 	last_election = "1930.3.26"
 	election_frequency = 60
 	elections_allowed = no
@@ -273,11 +273,11 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Ferruccio Parri"
+	name = "Fulco Ruffo di Calabria"
 	desc = "POLITICS_BENITO_MUSSOLINI_DESC"
-	picture = "GFX_portrait_italy_ferruccio_parri"
+	picture = "Portrait_Italy_Fulco_Ruffo_di_Calabria.tga"
 	expire = "1965.1.1"
-	ideology = german_socialism
+	ideology = social_liberalism
 	traits = {
 		
 	}

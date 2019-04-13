@@ -178,9 +178,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Peter Karadordevic"
+	name = "Alexander I"
 	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
+	picture = "Alexander 1.tga"
 	expire = "1965.1.1"
 	ideology = authoritarianism
 	traits = {
