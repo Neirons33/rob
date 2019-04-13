@@ -47,7 +47,7 @@ set_politics = {
 }
 
 create_country_leader = {
-	name = "Panteleimon_Ponomarenko"
+	name = "Panteleimon Ponomarenko"
 	desc = "POLITICS_Panteleimon_Ponomarenko_DESC"
 	picture = "Panteleimon_Ponomarenko.dds"
 	expire = "1965.1.1"
