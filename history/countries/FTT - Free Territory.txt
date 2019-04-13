@@ -34,14 +34,24 @@ set_politics = {
 			popularity = 0
 		}
 		
-		communism = {
+		socialist = {
 			popularity = 100
 		}
 		
 	}
 	
-	ruling_party = communism
+	ruling_party = socialist
 	last_election = "1933.2.16"
 	election_frequency = 36
 	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Nestor Makhno"
+	desc = ""
+	picture = "Portrait_FTT_Nestor_Makhno.tga"
+	ideology = anarcho
+	traits = {
+		#
+	}
 }
