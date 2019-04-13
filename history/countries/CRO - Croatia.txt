@@ -85,23 +85,48 @@ set_convoys = 5
 set_politics = {
 
 	parties = {
-		democratic = { 
-			popularity = 15
-		}
-
-		fascism = {
-			popularity = 75
+	
+		national_socialist = { 
+			popularity = 0
 		}
 		
-		communism = {
-			popularity = 10
+        socialist = {
+			popularity = 0
+		}
+		
+		democratic_socialist = {
+			popularity = 0
+		}
+		
+		social_democracy = {
+		    popularity = 0
+		}
+		
+		social_liberal = {
+		    popularity = 0
+		}
+		
+		conservative = {
+		    popularity = 0
+		}
+		
+		authoritharian = {
+		    popularity = 9
+		}
+		
+		reactionary = {
+		    popularity = 11
+		}
+		
+		pelekist = {
+		    popularity = 81
 		}
 	}
 	
-	ruling_party = fascism
-	last_election = "1935.6.9"
-	election_frequency = 12
-	elections_allowed = no # none after offset 1
+	ruling_party = pelekist
+	last_election = "1933.7.1"
+	election_frequency = 48
+	elections_allowed = no
 }
 
 1939.1.1 = {
@@ -129,11 +154,11 @@ set_politics = {
 }
 
 create_country_leader = {
-	name = "Ante Pavelic"
+	name = "Stjepan Sarkotić"
 	desc = "ANTE_PAVELIC_DESC"
-	picture = "Portrait_Croatia_Ante_Pavelic.dds"
+	picture = "StjepanSarkotic.dds"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = pelekism_ideology
 	traits = {
 		#
 	}

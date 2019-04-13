@@ -241,7 +241,7 @@ set_politics = {
 		}
 	}
 	
-	ruling_party = authoritharian
+	ruling_party = social_liberal
 	last_election = "1930.3.26"
 	election_frequency = 60
 	elections_allowed = no
