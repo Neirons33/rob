@@ -107,58 +107,52 @@ set_convoys = 0
 set_politics = {
 
 	parties = {
-		democratic = { 
-			popularity = 20
-		}
-
-		fascism = {
-			popularity = 30
+	
+		national_socialist = { 
+			popularity = 0
 		}
 		
-		communism = {
-			popularity = 20
-			#banned = no #default is no
+        socialist = {
+			popularity = 0
 		}
 		
-		authoritharian = { 
-			popularity = 30
+		democratic_socialist = {
+			popularity = 0
+		}
+		
+		social_democracy = {
+		    popularity = 0
+		}
+		
+		social_liberal = {
+		    popularity = 0
+		}
+		
+		conservative = {
+		    popularity = 0
+		}
+		
+		authoritharian = {
+		    popularity = 100
+		}
+		
+		reactionary = {
+		    popularity = 0
+		}
+		
+		pelekist = {
+		    popularity = 0
 		}
 	}
 	
 	ruling_party = authoritharian
-	last_election = "1936.1.1"
-	election_frequency = 36
-	elections_allowed = yes
+	last_election = "1933.7.1"
+	election_frequency = 48
+	elections_allowed = no
 }
 
-1939.1.1 = {
-	set_politics = {
 
-		parties = {
-			democratic = { 
-				popularity = 20
-			}
 
-			fascism = {
-				popularity = 30
-			}
-			
-			communism = {
-				popularity = 20
-				#banned = no #default is no
-			}
-			
-			neutrality = { 
-				popularity = 30
-			}
-		}
-		
-		ruling_party = neutrality
-		last_election = "1938.1.1"
-		election_frequency = 36
-		elections_allowed = yes
-	}
-}
 set_stability = 0.6
 
 create_country_leader = {
@@ -188,7 +182,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
 	expire = "1965.1.1"
-	ideology = Despotism
+	ideology = authoritarianism
 	traits = {
 		#
 	}

@@ -18,6 +18,8 @@ ideas = {
 				political_power_factor	= -0.25
 			}
 }
+
+
     civil_war_attrition = {
 	allowed = {
        always = no
@@ -33,6 +35,8 @@ ideas = {
 				MONTHLY_POPULATION	= -0.8
 			}
 	}
+	
+	
 	mari_rebbelion = {
 	
 	allowed = {
@@ -49,6 +53,7 @@ ideas = {
 				consumer_goods_factor = 0.15
 			}
 	}
+	
 	
 	failing_economy = {
 	
