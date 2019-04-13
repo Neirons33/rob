@@ -88,8 +88,8 @@ bookmarks = {
 				found_own_faction_focus
 			}			
 		}
-		"CHI"={
-			history = "CHI_GATHERING_STORM_DESC"
+		"TUR"={
+			history = "TUR_GATHERING_STORM_DESC"
 			ideology = communism
 			ideas = {
 			}

@@ -34,13 +34,13 @@ set_politics = {
 			popularity = 0
 		}
 		
-		communism = {
+		socialist = {
 			popularity = 100
 		}
 		
 	}
 	
-	ruling_party = communism
+	ruling_party = socialist
 	last_election = "1933.2.16"
 	election_frequency = 36
 	elections_allowed = no
@@ -51,7 +51,7 @@ create_country_leader = {
 	desc = "POLITICS_Panteleimon_Ponomarenko_DESC"
 	picture = "Panteleimon_Ponomarenko.dds"
 	expire = "1965.1.1"
-	ideology = stalinism
+	ideology = marxism_leninism
 	traits = {
 	}
 }

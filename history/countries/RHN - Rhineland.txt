@@ -83,18 +83,18 @@ set_politics = {
 		}
 	}
 	
-	ruling_party = democratic
+	ruling_party = conservative
 	last_election = "1935.9.8"
 	election_frequency = 36
 	elections_allowed = no
 }
 
 create_country_leader = {
-	name = "Konrad_Adenauer"
+	name = "Konrad Adenauer"
 	desc = "POLITICS_MARCELO_ALVEAR_DESC"
 	picture = "Portrait_Germany_Konrad_Adenauer.dds"
 	expire = "1965.1.1"
-	ideology = socialism
+	ideology = conservative_ideology
 	traits = {
 		#
 	}

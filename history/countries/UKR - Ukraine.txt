@@ -63,26 +63,31 @@ if = {
 set_politics = {
 
 	parties = {
-		democratic = { 
+		conservative = { 
 			popularity = 15
 		}
 
-		fascism = {
+		authoritharian = {
 			popularity = 30
 		}
 		
-		communism = {
+		reactionary = {
 			popularity = 50
 		}
 	}
+
+	ruling_party = reactionary
+	last_election = "1926.1.1"
+	election_frequency = 48
+	elections_allowed = no
 }
 
 create_country_leader = {
-	name = "Kost Levytsky"
+	name = "Symon Petliura"
 	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+	picture = "Symon_Petliura.tga"
 	expire = "1953.3.1"
-	ideology = conservatism
+	ideology = reactionarism
 	traits = {
 		
 	}
