@@ -3257,8 +3257,8 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_idea_marirebellion"
-		texturefile = "gfx/interface/ideas/marirebellion.dds"
+		name = "GFX_idea_mari_rebbelion"
+		texturefile = "gfx/interface/ideas/idea_mari_rebbelion.dds"
 	}
 	
 	spriteType = {
@@ -3267,8 +3267,8 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_idea_economy"
-		texturefile = "gfx/interface/ideas/economy.dds"
+		name = "GFX_idea_failing_economy"
+		texturefile = "gfx/interface/ideas/idea_failing_economy.dds"
 	}
 	
 }

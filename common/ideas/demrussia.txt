@@ -46,7 +46,7 @@ ideas = {
 				always = yes
 			}
 	 removal_cost = -1
-	 picture = GFX_idea_marirebellion
+	 picture = GFX_idea_mari_rebellion
 	 modifier = {
 				stability_factor = -0.05
 				political_power_factor	= -0.10
@@ -64,7 +64,7 @@ ideas = {
 				always = yes
 			}
 	 removal_cost = -1
-	 picture = GFX_idea_economy
+	 picture = GFX_idea_failing_economy
 	 modifier = {
 				production_factory_max_efficiency_factor = -0.15
 				production_speed_buildings_factor	= -0.15

@@ -92,7 +92,7 @@ guiTypes = {
 			instantTextboxType = {
 				name = "victory_points"
 				position = { x = -13 y = 15 }
-				textureFile =hoi_16typewriter ""
+				textureFile ="hoi_16typewriter"
 				font = "hoi_18mbs"
 				text = ""
 				maxWidth = 70
