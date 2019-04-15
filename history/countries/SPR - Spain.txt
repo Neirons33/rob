@@ -179,7 +179,7 @@ create_country_leader = {
 	desc = "POLITICS_MANUEL_AZANA_DESC"
 	picture = "Portrait_SPR_Niceto_Alcala_Zamora.tga"
 	expire = "1965.1.1"
-	ideology = social_liberalism
+	ideology = social_liberal
 	traits = {
 		#
 	}

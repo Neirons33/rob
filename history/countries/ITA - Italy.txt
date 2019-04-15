@@ -3,11 +3,15 @@
 oob = "ITA_1936"
 
 set_research_slots = 4
-set_stability = 0.6
-set_war_support = 0.7
+set_stability = 0.4
+set_war_support = 0.2
 add_ideas = {
-	victor_emmanuel
-	vittoria_mutilata
+    italia_irredenta
+	the_great_depression
+	horrors_of_war
+	overstretched_empire
+	inefficent_army
+	political_crisis
 	limited_exports
 	limited_conscription
 	partial_economic_mobilisation
@@ -103,41 +107,53 @@ set_convoys = 200
 set_politics = {
 
 	parties = {
-		authoritharian = { 
-			popularity = 22
+	
+		national_socialist = { 
+			popularity = 9
 		}
-
-		conservative = { 
-			popularity = 6
+		
+        socialist = {
+			popularity = 12
 		}
-
-		reactionary = {
-			popularity = 14
+		
+		democratic_socialist = {
+			popularity = 13
 		}
-
-		pelekist = {
-			popularity = 26
-		}		
-
+		
+		social_democracy = {
+		    popularity = 3
+		}
+		
 		social_liberal = {
-			popularity = 10
+		    popularity = 32
 		}
-		national_socialist = {
-			popularity = 22
+		
+		conservative = {
+		    popularity = 8
+		}
+		
+		authoritharian = {
+		    popularity = 6
+		}
+		
+		reactionary = {
+		    popularity = 6
+		}
+		
+		pelekist = {
+		    popularity = 11
 		}
 	}
 	
 	ruling_party = social_liberal
-	last_election = "1930.3.26"
-	election_frequency = 60
-	elections_allowed = no
-	}
-
+	last_election = "1932.6.21"
+	election_frequency = 48
+	elections_allowed = yes
 }
 
 
 create_country_leader = {
-	name = "Benito Mussolini"
+	name = "Pelekist Triumvirate"
 	desc = "POLITICS_BENITO_MUSSOLINI_DESC"
 	picture = "Portrait_Italy_Benito_Mussolini.dds"
 	expire = "1965.1.1"
@@ -148,11 +164,11 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Ivanoe Bonomi"
+	name = "Arturo Labriola"
 	desc = "POLITICS_BENITO_MUSSOLINI_DESC"
 	picture = "Portrait_Rome_Ivanoe_Bonomi.tga"
 	expire = "1965.1.1"
-	ideology = social_democracy_ideology
+	ideology = social_democracy
 	traits = {
 		
 	}
@@ -163,28 +179,70 @@ create_country_leader = {
 	desc = "POLITICS_BENITO_MUSSOLINI_DESC"
 	picture = "RandolfoPacciardi.tga"
 	expire = "1965.1.1"
-	ideology = social_liberalism
+	ideology = social_liberal
 	traits = {
 		
 	}
 }
 
 create_country_leader = {
-	name = "Vittorio Emmanuele III"
+	name = "Italian Officers"
 	desc = "POLITICS_BENITO_MUSSOLINI_DESC"
 	picture = "Portrait_Italy_Vittorio_Emmanuele.tga"
 	expire = "1965.1.1"
-	ideology = authoritarianism
+	ideology = authoritharian
 	traits = {	
 	}
 }
 
 create_country_leader = {
-	name = "Palmiro Togliatti"
+	name = "Nicola Bombacci"
 	desc = "POLITICS_BENITO_MUSSOLINI_DESC"
 	picture = "GFX_portrait_ita_palmiro_togliatti"
 	expire = "1965.1.1"
-	ideology = marxism
+	ideology = sorelianism
+	traits = {
+		
+	}
+}
+create_country_leader = {
+	name = "Pietro Sandro Nenni"
+	desc = "POLITICS_BENITO_MUSSOLINI_DESC"
+	picture = "GFX_portrait_ita_palmiro_togliatti"
+	expire = "1965.1.1"
+	ideology = syndicalism
+	traits = {
+		
+	}
+}
+create_country_leader = {
+	name = "Italian Officers"
+	desc = "POLITICS_BENITO_MUSSOLINI_DESC"
+	picture = "GFX_portrait_ita_palmiro_togliatti"
+	expire = "1965.1.1"
+	ideology = reactionary
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Luigi Sturzo"
+	desc = "POLITICS_BENITO_MUSSOLINI_DESC"
+	picture = "GFX_portrait_ita_palmiro_togliatti"
+	expire = "1965.1.1"
+	ideology = conservative
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Amadeo Bordiga"
+	desc = "POLITICS_BENITO_MUSSOLINI_DESC"
+	picture = "GFX_portrait_ita_palmiro_togliatti"
+	expire = "1965.1.1"
+	ideology = marxism_leninism
 	traits = {
 		
 	}

@@ -67,8 +67,9 @@ bookmarks = {
 			history = "ITA_GATHERING_STORM_DESC"
 			ideology = fascism
 			ideas = {
-				vittoria_mutilata
-				victor_emmanuel
+				italia_irredenta
+				horrors_of_war
+				overstretched_empire
 			}	
 			focuses = {
 				ITA_pact_of_steel

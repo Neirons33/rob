@@ -201,7 +201,7 @@ set_stability = 0.55
 		desc = "POLITICS_ISMET_INÖNÜ_DESC"
 		picture = "Portrait_TUR_Ismet_Pasha.tga"
 		expire = "1965.1.1"
-		ideology = social_democracy_ideology
+		ideology = social_democracy
 		traits = {
 			#
 		}
@@ -212,7 +212,7 @@ create_country_leader = {
 	desc = "POLITICS_MUSTAFA_KEMAL_ATATÜRK_DESC"
 	picture = "Portrait_TUR_Abdülmecid_II.tga"
 	expire = "1965.1.1"
-	ideology = authoritarianism
+	ideology = reactionary
 	traits = {
 		#
 	}

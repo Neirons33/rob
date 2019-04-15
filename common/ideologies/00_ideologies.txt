@@ -9,6 +9,8 @@ national_socialist = {
   }
   vlaslovism = {
   }
+  national_socialist = {
+  }
  }
  rules = {
 			can_declare_war_on_same_ideology = yes
@@ -39,7 +41,7 @@ socialist = {
   }
   left_communism = {
   }
-  socialism = {
+  socialist = {
   }
   anarcho = {
   }
@@ -75,6 +77,8 @@ democratic_socialist = {
   }
   market_socialism = {
   }
+  democratic_socialist = {
+  }
  
  }
  rules = {
@@ -101,7 +105,7 @@ democratic_socialist = {
 social_democracy = {
  types = {
  
- social_democracy_ideology = {
+ social_democracy = {
  }
  
  }
@@ -130,7 +134,7 @@ social_democracy = {
 social_liberal = {
  types = {
  
- social_liberalism = {
+ social_liberal = {
  }
  
  }
@@ -160,7 +164,7 @@ social_liberal = {
 conservative = {
  types = {
  
- conservative_ideology = {
+ conservative = {
  }
  
  }
@@ -191,7 +195,7 @@ conservative = {
 authoritharian = {
  types = {
  
- authoritarianism = {
+ authoritharian = {
  }
  
  }
@@ -217,7 +221,7 @@ authoritharian = {
 reactionary = {
  types = {
  
- reactionarism = {
+ reactionary = {
  }
  
  }
@@ -245,7 +249,7 @@ reactionary = {
 pelekist = {
  types = {
  
- pelekism_ideology = {
+ pelekist = {
  }
  
  }

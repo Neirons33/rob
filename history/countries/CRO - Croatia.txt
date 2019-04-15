@@ -158,7 +158,7 @@ create_country_leader = {
 	desc = "ANTE_PAVELIC_DESC"
 	picture = "StjepanSarkotic.dds"
 	expire = "1965.1.1"
-	ideology = pelekism_ideology
+	ideology = pelekist
 	traits = {
 		#
 	}
