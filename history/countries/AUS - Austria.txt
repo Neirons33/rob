@@ -48,6 +48,14 @@ set_politics = {
 	elections_allowed = no
 }
 
+add_ideas = {
+	crotian_economic_pact
+	great_depression_woes
+	monarchist_growing
+	socialist_paramilitaries
+	brownshirt_terror
+}
+
 set_stability = 0.50
 
 create_country_leader = {
