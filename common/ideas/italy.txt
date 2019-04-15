@@ -10,7 +10,7 @@ ideas = {
 				always = yes
 			}
      removal_cost = -1
-	 picture = GFX_idea_weak_democracy
+	 picture = GFX_idea_italy_political_crisis
      modifier = {
 				political_power_factor	= -0.50
 			}
@@ -25,7 +25,7 @@ ideas = {
 				always = yes
 			}
      removal_cost = -1
-	 picture = GFX_idea_weak_democracy
+	 picture = GFX_idea_italian_army
      modifier = {
 				
 				land_reinforce_rate	= -0.02
@@ -44,7 +44,7 @@ ideas = {
 				always = yes
 			}
      removal_cost = -1
-	 picture = GFX_idea_weak_democracy
+	 picture = GFX_idea_overextended_italian_empire
      modifier = {
 				planning_speed = -0.2
 				max_planning = -0.1
@@ -63,7 +63,7 @@ ideas = {
 				always = yes
 			}
      removal_cost = -1
-	 picture = GFX_idea_weak_democracy
+	 picture = GFX_idea_great_war_italy
      modifier = {
 				training_time_army_factor = 0.2
 				conscription = -0.025
@@ -82,7 +82,7 @@ ideas = {
 				always = yes
 			}
      removal_cost = -1
-	 picture = GFX_idea_weak_democracy
+	 picture = GFX_idea_great_depression
      modifier = {
 				production_factory_max_efficiency_factor = -0.3
 				production_speed_buildings_factor = -0.3
@@ -101,7 +101,7 @@ ideas = {
 				always = yes
 			}
      removal_cost = -1
-	 picture = GFX_idea_weak_democracy
+	 picture = GFX_idea_italia_irredenta
      modifier = {
 				army_core_attack_factor = 0.2
 				army_core_defence_factor = 0.2

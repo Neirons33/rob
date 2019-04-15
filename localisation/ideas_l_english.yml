@@ -2497,12 +2497,12 @@
  
  ###austria
  great_depression_woes:0 "Great Depression Woes"
- great_depression_woes:0 "The great depression has reached our country! If we do not act now, only devistation awaits. "
+ great_depression_woes_desc:0 "The great depression has reached our country! If we do not act now, only devistation awaits. "
  crotian_economic_pact:0 "The Austro-Croatian Economic Pact"
- crotian_economic_pact:0 "Both our countries are struggling in these brutal times of economic turmoil, thus we have created a economic pact with the goal of lowering tariffs on eachother's goods. Maybe a alliance could foster thanks to our simililar goverment systems. "
+ crotian_economic_pact_desc:0 "Both our countries are struggling in these brutal times of economic turmoil, thus we have created a economic pact with the goal of lowering tariffs on eachother's goods. Maybe a alliance could foster thanks to our simililar goverment systems. "
  monarchist_growing:0 "Growing Monarchists"
- monarchist_growing:0 "Much of the youth is becoming disilusioned with the speaches being conducted by Otto. "
+ monarchist_growing_desc:0 "Much of the youth is becoming disilusioned with the speaches being conducted by Otto. "
  socialist_paramilitaries:0 "Socialist Paramilitaries"
- socialist_paramilitaries:0 "Socialists in our country are preparing to overthrow us, we must act now! "
+ socialist_paramilitaries_desc:0 "Socialists in our country are preparing to overthrow us, we must act now! "
  brownshirt_terror:0 "Brown Shirt Terror"
- brownshirt_terror_desc:0 "Hitler's Austrian Worker's Party has become quite troublesome since it's ban, many of it's members have started associating with accelerationism. " 
+ brownshirt_terror_desc:0 "Hitler's Austrian Worker's Party has become quite a troublesome foe." 

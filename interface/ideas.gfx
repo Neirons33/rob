@@ -3251,6 +3251,8 @@ spriteTypes = {
 	
 	###New RoB stuff
 	
+	###RDR
+	
 	spriteType = {
 		name = "GFX_idea_civil_war_attrition"
 		texturefile = "gfx/interface/ideas/attritioncivilwar.dds"
@@ -3270,5 +3272,37 @@ spriteTypes = {
 		name = "GFX_idea_failing_economy"
 		texturefile = "gfx/interface/ideas/idea_failing_economy.dds"
 	}
+	
+	###ITA
+	
+	spriteType = {
+		name = "GFX_idea_italia_irredenta"
+		texturefile = "gfx/interface/ideas/italia_irredenta.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_horrors_of_war"
+		texturefile = "gfx/interface/ideas/horrors_of_war.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_inefficent_army"
+		texturefile = "gfx/interface/ideas/inefficent_army.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_political_crisis"
+		texturefile = "gfx/interface/ideas/political_crisis.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_overstretched_empire"
+		texturefile = "gfx/interface/ideas/overstretched_empire.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_the_great_depression"
+		texturefile = "gfx/interface/ideas/the_great_depression.dds"
+	}	
 	
 }
