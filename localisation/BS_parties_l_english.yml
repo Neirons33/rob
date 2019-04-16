@@ -1,5 +1,4 @@
 ﻿l_english:
-<<<<<<< HEAD
  ITA_national_socialist_party:0 "USI (S)"
  ITA_national_socialist_party_long:0 "Unione dei Socialisti Italiani (Sorelians)"
  ITA_socialist_party:0 "USI (B)"
@@ -19,10 +18,6 @@
  ITA_pelekist_party:0 "UCPR"
  ITA_pelekist_party_long:0 "Unità di Combattimento Pelekista Rivoluzionaria"
  
- 
- 
- 
-=======
  POL_national_socialist_party:0 "ONR"
  POL_national_socialist_party_long:0 "Obóz Narodowo-Radykalny"
  POL_socialist_party:0 "KPP"
@@ -41,4 +36,7 @@
  POL_reactionary_party_long:0 "Obóz Zjednoczenia Narodowego"
  POL_pelekist_party:0 "ZLN"
  POL_pelekist_party_long:0 "Związek Ludowo-Narodowy"
->>>>>>> 810d129bb4b2fc1e23a1555898ce4cdc758e9fd5
+
+
+ 
+
