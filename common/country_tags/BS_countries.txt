@@ -25,6 +25,7 @@ CAU = "countries/Caucasus.txt"
 CBR = "countries/Communist Belarus.txt"
 DSU = "countries/Democratic Socialist Ukraine.txt"
 DBR = "countries/Democratic Belarus.txt"
+AWS = "countries/Communist Austria.txt"
 
 
 ##America##

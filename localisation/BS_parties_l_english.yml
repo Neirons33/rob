@@ -1,4 +1,5 @@
 ﻿l_english:
+<<<<<<< HEAD
  ITA_national_socialist_party:0 "USI (S)"
  ITA_national_socialist_party_long:0 "Unione dei Socialisti Italiani (Sorelians)"
  ITA_socialist_party:0 "USI (B)"
@@ -21,3 +22,23 @@
  
  
  
+=======
+ POL_national_socialist_party:0 "ONR"
+ POL_national_socialist_party_long:0 "Obóz Narodowo-Radykalny"
+ POL_socialist_party:0 "KPP"
+ POL_socialist_party_long:0 "Komunistyczna Partia Polski"
+ POL_democratic_socialist_party:0 "PPS"
+ POL_democratic_socialist_party_long:0 "Polska Partia Socjalistyczna"
+ POL_social_democracy_party:0 "PPP"
+ POL_social_democracy_party_long:0 "Polskie Stronnictwo Ludowe "Wyzwolenie""
+ POL_social_liberal:0 "Centrolew"
+ POL_social_liberal_party_long:0 "Centrolew"
+ POL_conservative_party:0 "PSL"
+ POL_conservative_party_long:0 "Polskie Stronnictwo Ludowe "Piast""
+ POL_authoritharian_party:0 "BBWR"
+ POL_authoritharian_party_long:0 "Bezpartyjny Blok Współpracy z Rządem"
+ POL_reactionary_party:0 "OZN"
+ POL_reactionary_party_long:0 "Obóz Zjednoczenia Narodowego"
+ POL_pelekist_party:0 "ZLN"
+ POL_pelekist_party_long:0 "Związek Ludowo-Narodowy"
+>>>>>>> 810d129bb4b2fc1e23a1555898ce4cdc758e9fd5
