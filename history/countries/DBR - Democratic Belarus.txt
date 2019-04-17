@@ -1,4 +1,4 @@
-capital = 657
+capital = 94
 
 set_research_slots = 3
 
@@ -34,14 +34,25 @@ set_politics = {
 			popularity = 0
 		}
 		
-		communism = {
+		conservative = {
 			popularity = 100
 		}
 		
 	}
 	
-	ruling_party = communism
+	ruling_party = conservative
 	last_election = "1933.2.16"
 	election_frequency = 36
 	elections_allowed = no
+}
+
+create_country_leader = {
+    name = "Raman Skirmunt Aliaksandravich"
+    desc = ""
+    picture = "gfx/leaders/BLR/Raman_Skirmunt.dds"
+    expire = "1965.1.1"
+    ideology = conservative
+    traits = {
+        #
+    }
 }

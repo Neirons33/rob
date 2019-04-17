@@ -63,63 +63,34 @@ if = {
 set_politics = {
 
 	parties = {
-		democratic = { 
+		conservative = { 
 			popularity = 15
 		}
 
-		neutrality = {
+		authoritharian = {
 			popularity = 20
 		}
 		
-		communism = {
+		reactionary = {
 			popularity = 60
 		}
 
-		fascism = { 
+		pelekist = { 
 			popularity = 5
 		}
 	}
-}
+	ruling_party = reactionary
+	last_election = "1932.11.27"
+	elections_allowed = no
 
-create_country_leader = {
-    name = "Vasil Zacharka"
-    desc = ""
-    picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
-    expire = "1965.1.1"
-    ideology = centrism
-    traits = {
-        #
-    }
 }
 
 create_country_leader = {
     name = "Radasłaŭ Astroŭski"
     desc = ""
-    picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+    picture = "Radaslaa_Astrouski.dds"
     expire = "1965.1.1"
-    ideology = fascism_ideology
-    traits = {
-        #
-    }
-}
-
-create_country_leader = {
-    name = "Panteleimon Ponomarenko"
-    desc = ""
-    picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
-    expire = "1965.1.1"
-    ideology = stalinism
-    traits = {
-        #
-    }
-}
-
-create_country_leader = {
-    name = "Adam Stankievič"
-    desc = ""
-    picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
-    expire = "1965.1.1"
-    ideology = socialism
+    ideology = reactionary
     traits = {
         #
     }

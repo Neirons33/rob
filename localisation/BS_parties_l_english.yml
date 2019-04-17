@@ -37,6 +37,25 @@
  POL_pelekist_party:0 "ZLN"
  POL_pelekist_party_long:0 "Związek Ludowo-Narodowy"
 
+ AUS_national_socialist_party:0 "BF"
+ AUS_national_socialist_party_long:0 "The Black Front"
+ AUS_socialist_party:0 "KPÖ"
+ AUS_socialist_party_long:0 "Kommunistische Partei Österreichs"
+ AUS_democratic_socialist_party:0 "SPÖ"
+ AUS_democratic_socialist_party_long:0 "Sozialdemokratische Partei Österreichs"
+ AUS_social_democracy_party:0 "SPÖ"
+ AUS_social_democracy_party_long:0 "Sozialdemokratische Partei Österreichs"
+ AUS_social_liberal:0 ""
+ AUS_social_liberal_party_long:0 ""
+ AUS_conservative_party:0 "CS"
+ AUS_conservative_party_long:0 "Christlichsoziale Partei"
+ AUS_authoritharian_party:0 "KLV"
+ AUS_authoritharian_party_long:0 "Kaiser Loyalität Volkspartei"
+ AUS_reactionary_party:0 "VF"
+ AUS_reactionary_party_long:0 "Vaterländische Front"
+ AUS_pelekist_party:0 "TSPDV"
+ AUS_pelekist_party_long:0 "Traditionelle Sozialistische Partei für Deutsche Völker"
+
 
  
 
