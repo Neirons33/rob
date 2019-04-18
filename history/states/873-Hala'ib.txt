@@ -1,20 +1,23 @@
+
 state={
 	id=873
 	name="STATE_873"
 
-	history = {
-		owner = ENG
+	history={
+		owner = EGY
 		buildings = {
 			infrastructure = 0
-		}
 
+		}
 		add_core_of = SUD
+		add_core_of = EGY
+
 	}
 
 	provinces={
-		13260 
+		1977 13260 
 	}
 	manpower=52
 	buildings_max_level_factor=1.000
-	state_category = wasteland
+	state_category=wasteland
 }

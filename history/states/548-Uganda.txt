@@ -7,7 +7,7 @@ state={
 	}
 
 	history={
-		owner = ENG
+		owner = UGA
 		buildings = {
 			infrastructure = 3
 
