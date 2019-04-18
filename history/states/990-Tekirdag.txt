@@ -1,0 +1,22 @@
+state={
+	id=990
+	name="STATE_990"
+	history={
+		owner = TUR
+		victory_points = {
+			9833 20 
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+		}
+		add_core_of = TUR
+
+	}
+
+	provinces={
+		922 3879 6895 
+	}
+	manpower=176848
+	buildings_max_level_factor=1.000
+}
