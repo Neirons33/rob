@@ -11,7 +11,7 @@ if = {
 
 set_research_slots = 3
 set_stability = 0.5
-set_war_support = 0.2
+set_war_support = 0.7
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -115,21 +115,17 @@ set_politics = {
 
 
 add_ideas = {
-	
+	famine_of_1933
+	bourgeoisie_influence
+	southern_defeat
+	birthplace_of_revolution
+	extensive_conscription
+	civil_war_attrition
 }
 
 
 
-create_country_leader = {
-	name = "Vasily Blokhin"
-	desc = ""
-	picture = "VasilyBlokhin.dds"
-	expire = "1953.3.1"
-	ideology = vlaslovism
-	traits = {
-		#
-	}
-}
+
 create_country_leader = {
 	name = "Andrey Andreyevich Vlasov"
 	desc = ""

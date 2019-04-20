@@ -31,7 +31,7 @@ ideas = {
 	 picture = GFX_idea_civil_war_attrition
 	 modifier = {
 				conscription_factor	 = -0.6
-				conscription = -0.05
+				conscription = -0.035
 				MONTHLY_POPULATION	= -0.8
 			}
 	}

@@ -2474,6 +2474,7 @@
  takuo_godo:0 "Takuo Godo"
  
  ###New RoB stuff
+ ###RDR
  weak_democracy:0 "Weak Democracy"
  weak_democracy_desc:0 "Estabilished in 1923 in the chaos of Russian Civil War, democratic system in Russian Republic has been ineffecient and riddled with corruption since beginning. Voter turnout stands at less than 20%, and approval of government among the republic's population is almost negligible. "
  civil_war_attrition:0 "Attrition of Russian Civil War"
@@ -2482,6 +2483,7 @@
  mari_rebbelion_desc:0 "The Mari People, who have been under Russian rule for centuries, saw the instability in Russia as a way to achieve independance. However, their state died under the boots of reactionary Russian forces. Despite the odds being against them, the Mari people still engage in a active warfare against the Russian Republic. "
  failing_economy:0 "Failing Economy"
  failing_economy_desc:0 "Economy of the Russian Republic, structured with capitalist ideals in mind, has proven to be unreliable in the cold fields of Northern Russia, and has put most resources into the hands of the upper clases, leaving peasants and workers in almost poverty. "
+ ###ITA
  political_crisis:0 "Political Crisis"
  political_crisis_desc:0 "Italian Republic with it's democratic system, born out of anti-monarchist revolts in so called "Italian Summer", has become unable to deal with the problems of the Italian nation, and thus, support for the liberal government is extremly low, and the parties have become highly fractured along ideological lines.  "
  the_great_depression:0 "Great Economic Depression"
@@ -2494,6 +2496,23 @@
  inefficent_army_desc:0 "After the Great War and Italian Summer, Army of Italy was left to rot by the liberal government, for it was seen as a force of reactionaries. Thus, in 1934, Italian army is is dire need of reforms. "
  italia_irredenta:0 "Italia Irredenta!"
  italia_irredenta_desc:0 "After a long and bloody struggle with the Austrian Empire for centuries, almost all of the Italian people are united under the glorius Italian State. Long live Italy!"
+ ###SOV
+ famine_of_1933:0 "Famine of 1933"
+ famine_of_1933_desc:0 "During the early 30s, the Bolshevik state started to experience food shortages, due to losing control over the fertile lands of Southern Russia and Ukraine. In 1933, food shortage expolded into a full-blown famine, stopped only by the food imports from United Baltic Duchy, Lithuania and Germany."
+ bourgeoisie_influence:0 "Bourgeoisie Influence"
+ bourgeoisie_influence_desc:0 "With the New Economic Policy, implemented after the death of Vladimir Lenin, which reshaped Bolshevik state into a market socialist economy, the new urban and rural bourgeoisie have started to exert their influence in politics and economy of the country."
+ bourgeoisie_influence_2:0 "Bourgeoisie Influence"
+ bourgeoisie_influence_2_desc:0 "With the New Economic Policy, implemented after the death of Vladimir Lenin, which reshaped Bolshevik state into a market socialist economy, the new urban and rural bourgeoisie have started to exert their influence in politics and economy of the country."
+ southern_defeat:0 "Southern Defeat"
+ southern_defeat_desc:0 "The Red Army was left in shambles and complete disarry, when it chaotically left Southern Russia in 1926, defeated by Libertarian Socialist paramilitaries. This defeat has left the Bolshevik Army in a unorganized and ruined state, with the High Command prioritizing defensive strategies, over offensive action. "
+ birthplace_of_revolution:0 "Birthplace of Revolution"
+ birthplace_of_revolution_desc:0 "This is our final and decisive battle; With the Internationale,humanity will rise up!"
+ mass_unrest:0 "Mass Unrest"
+ mass_unrest_desc:0 "Due to the failed policies of the New Bolshevik government, the people have gone into the streets"
+ bolshevik_strike:0 "General Strike!"
+ bolshevik_strike_desc:0 "The All-Russian Central Council of Trade Unions has announced the general strike in the Soviet Republic. Workers, who believe they have been treated unequaly, have taken matters into their own hands."
+ 
+ 
  
  ###austria
  great_depression_woes:0 "Great Depression Woes"

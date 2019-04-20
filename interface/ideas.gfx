@@ -3305,4 +3305,35 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/the_great_depression.dds"
 	}	
 	
+	###SOV
+	
+	spriteType = {
+		name = "GFX_idea_famine_of_1933"
+		texturefile = "gfx/interface/ideas/famine_of_1933.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_bourgeoisie_influence"
+		texturefile = "gfx/interface/ideas/bourgeoisie_influence.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_bourgeoisie_influence_2"
+		texturefile = "gfx/interface/ideas/bourgeoisie_influence_2.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_southern_defeat"
+		texturefile = "gfx/interface/ideas/southern_defeat.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_birthplace_of_revolution"
+		texturefile = "gfx/interface/ideas/birthplace_of_revolution.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_bolshevik_strike"
+		texturefile = "gfx/interface/ideas/bolshevik_strike.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_mass_unrest"
+		texturefile = "gfx/interface/ideas/mass_unrest.tga"
+	}
+	
 }

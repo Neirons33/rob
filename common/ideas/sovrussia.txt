@@ -1,0 +1,131 @@
+ideas = {
+  country = {
+  
+  famine_of_1933 = {
+  allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 picture = GFX_idea_famine_of_1933
+	 modifier = {
+				stability_factor = -0.2
+				war_support_factor = -0.2
+				conscription = -0.01
+			}
+  
+  }
+  
+  bourgeoisie_influence = {
+  allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 picture = GFX_idea_bourgeoisie_influence
+	  modifier = {
+				consumer_goods_factor = 0.15
+				political_power_gain = -0.4
+				industrial_capacity_factory = -0.3
+				production_factory_max_efficiency_factor = 0.05
+				
+			}
+  
+   }
+   
+   bourgeoisie_influence_2 = {
+  allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 picture = GFX_idea_bourgeoisie_influence_2
+	  modifier = {
+				consumer_goods_factor = 0.15
+				political_power_gain = -0.8
+				industrial_capacity_factory = -0.5
+				
+				
+			}
+  
+   }
+   
+   southern_defeat = {
+   allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 picture = GFX_idea_southern_defeat
+	 
+	 modifier = {
+     army_org_factor = -0.2
+	 offence = -0.3
+	 enemy_partisan_effect = 0.5
+	 army_morale_factor = -0.1
+	 defence = 0.4
+    }
+   }
+   
+   birthplace_of_revolution = {
+    allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 picture = GFX_idea_birthplace_of_revolution
+   
+   modifier = {
+   stability_factor = 0.15
+   political_power_gain	= 0.1
+   send_volunteer_size = 4
+   justify_war_goal_time = -0.2
+    }
+   }
+   
+   
+    mass_unrest = {
+    allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 picture = GFX_idea_mass_unrest
+   
+   modifier = {
+   stability_factor = -0.25
+   political_power_gain	= -1
+  
+    }
+   }
+   
+     bolshevik_strike = {
+    allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 picture = GFX_idea_bolshevik_strike
+   
+   modifier = {
+   production_factory_max_efficiency_factor = -0.4
+   industrial_capacity_factory = -0.5
+  
+    }
+   }
+ }
+}

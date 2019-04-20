@@ -51,6 +51,7 @@ add_ideas = weak_democracy
 add_ideas = civil_war_attrition
 add_ideas = mari_rebbelion
 add_ideas = failing_economy
+add_ideas = extensive_conscription
 
 create_country_leader = {
 	name = "Vasily Maklakov"
