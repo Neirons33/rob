@@ -1825,5 +1825,94 @@ spriteTypes = {
 		name = "GFX_picture_russian_general_strike"
 		texturefile = "gfx/event_pictures/russian_general_strike.dds"
 	}
+	spriteType = {
+		name = "GFX_picture_russian_leningrad_bombings"
+		texturefile = "gfx/event_pictures/russian_leningrad_bombings.dds"
+	}
+	spriteType = {
+		name = "GFX_picture_rykov_resigns"
+		texturefile = "gfx/event_pictures/rykov_resigns.dds"
+	}
+	spriteType = {
+		name = "GFX_picture_russian_political_crisis"
+		texturefile = "gfx/event_pictures/russian_political_crisis.dds"
+	}
+	spriteType = {
+		name = "GFX_picture_general_vlaslov"
+		texturefile = "gfx/event_pictures/general_vlaslov.dds"
+	}
+	spriteType = {
+		name = "GFX_picture_russian_soviet_soldiers"
+		texturefile = "gfx/event_pictures/russian_soviet_soldiers.dds"
+	}
+	spriteType = {
+		name = "GFX_picture_russian_partisans"
+		texturefile = "gfx/event_pictures/russian_partisans.dds"
+	}
+	spriteType = {
+		name = "GFX_picture_vyacheslav_molotov"
+		texturefile = "gfx/event_pictures/vyacheslav_molotov.dds"
+	}
+	spriteType = {
+		name = "GFX_picture_vasiliy_blokhin"
+		texturefile = "gfx/event_pictures/vasiliy_blokhin.dds"
+	}
+	spriteType = {
+		name = "GFX_picture_general_vlaslov_angry_grrrr"
+		texturefile = "gfx/event_pictures/general_vlaslov_angry_grrrr.dds"
+	}
+	spriteType = {
+		name = "GFX_picture_march_on_moscow"
+		texturefile = "gfx/event_pictures/march_on_moscow.dds"
+	}
+    spriteType = {
+		name = "GFX_picture_political_turmoil"
+		texturefile = "gfx/event_pictures/political_turmoil.dds"
+	}
+      spriteType = {
+		name = "GFX_picture_bukharin_seizes_power"
+		texturefile = "gfx/event_pictures/bukharin_seizes_power.dds"
+	}
+	spriteType = {
+		name = "GFX_picture_firing_squad"
+		texturefile = "gfx/event_pictures/firing_squad.dds"
+	}
+	spriteType = {
+		name = "GFX_picture_zinoviev_and_kamenev"
+		texturefile = "gfx/event_pictures/zinoviev_and_kamenev.dds"
+	}
+	spriteType = {
+		name = "GFX_picture_bolshevik_discredited"
+		texturefile = "gfx/event_pictures/bolshevik_discredited.dds"
+	}
+	spriteType = {
+		name = "GFX_picture_tomsky_rides_high"
+		texturefile = "gfx/event_pictures/tomsky_rides_high.dds"
+	}
+	spriteType = {
+		name = "GFX_picture_red_guards"
+		texturefile = "gfx/event_pictures/red_guards.dds"
+	}
+	spriteType = {
+		name = "GFX_picture_bukharin_expelled"
+		texturefile = "gfx/event_pictures/bukharin_expelled.dds"
+	}
+	spriteType = {
+		name = "GFX_picture_zinoviev_meeting"
+		texturefile = "gfx/event_pictures/zinoviev_meeting.dds"
+	}
+	spriteType = {
+		name = "GFX_picture_kamenev_seizes_power"
+		texturefile = "gfx/event_pictures/kamenev_seizes_power.dds"
+	}
+	spriteType = {
+		name = "GFX_picture_zinoviev_seizes_power"
+		texturefile = "gfx/event_pictures/zinoviev_seizes_power.dds"
+	}
+	
+	
+	
+	}
+
 	
 	
