@@ -220,7 +220,7 @@ set_politics = {
 		}
 	}
 	
-	ruling_party = democratic
+	ruling_party = social_liberal
 	last_election = "1932.5.1"
 	election_frequency = 48
 	elections_allowed = yes
@@ -237,13 +237,13 @@ add_ideas = {
 
 #Order matters here Daladier will start as leaders because added last
 create_country_leader = {
-	name = "Édouard Daladier"
+	name = "André Tardieu"
 	desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
-	picture = "Portrait_France_Edouard_Daladier.dds"
+	picture = "André_Tardieu.tga"
 	expire = "1965.1.1"
-	ideology = socialism
+	ideology = social_liberal
 	traits = {
-		stout_defender
+
 	}
 }
 
