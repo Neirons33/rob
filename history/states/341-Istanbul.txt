@@ -8,7 +8,6 @@ state={
 	}
 
 	history={
-		
 		owner = TUR
 		victory_points = {
 			9833 20 
@@ -30,7 +29,7 @@ state={
 	}
 
 	provinces={
-		849 922 3879 3893 6895 9833 11842 
+		9833 11829 
 	}
 	manpower=802209
 	buildings_max_level_factor=1.000

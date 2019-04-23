@@ -45,9 +45,9 @@ guiTypes = {
 						
 			instantTextboxType = {
 				name = "state_name"
-				position = { x = 60 y = 5 }
+				position = { x = 60 y = 9 }
 				textureFile = ""
-				font = "hoi_36header"
+				font = "vic_36s"
 				text = "STATE_NAME_TEST"
 				maxWidth = 320
 				maxHeight = 30
@@ -93,7 +93,7 @@ guiTypes = {
 				name = "victory_points"
 				position = { x = -13 y = 15 }
 				textureFile ="hoi_16typewriter"
-				font = "hoi_18mbs"
+				font = "vic_22"
 				text = ""
 				maxWidth = 70
 				maxHeight = 30
@@ -104,7 +104,7 @@ guiTypes = {
 				name = "claims"
 				position = { x = 15 y = 97 }
 				textureFile = ""
-				font = "hoi_18mbs"
+				font = "vic_22"
 				text = ""
 				maxWidth = 140
 				maxHeight = 30
@@ -124,7 +124,7 @@ guiTypes = {
 				name = "owner"
 				position = { x = 15 y = 42 }
 				textureFile = ""
-				font = "hoi_18mbs"
+				font = "vic_18s"
 				text = ""
 				maxWidth = 140
 				maxHeight = 30
@@ -240,7 +240,7 @@ guiTypes = {
 			instantTextboxType = {
 				name = "province"
 				position = { x = 23 y= -29 }
-				font = "hoi_18mbs"
+				font = "vic_18s"
 				maxWidth = 80
 				maxHeight = 30
 				format = left
