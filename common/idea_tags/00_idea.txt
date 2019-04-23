@@ -15,8 +15,8 @@ idea_categories = {
 	}
 	
 	government = {
-		slot = media
-		slot = police
+		slot = political_advisor
+		slot = political_advisor
 		slot = political_advisor
 		slot = political_advisor
 		slot = political_advisor
