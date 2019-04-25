@@ -3272,6 +3272,11 @@ spriteTypes = {
 		name = "GFX_idea_failing_economy"
 		texturefile = "gfx/interface/ideas/idea_failing_economy.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_failing_economy_2"
+		texturefile = "gfx/interface/ideas/idea_failing_economy_2.dds"
+	}
+	
 	
 	###ITA
 	

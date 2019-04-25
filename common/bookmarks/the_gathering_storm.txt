@@ -89,10 +89,11 @@ bookmarks = {
 				found_own_faction_focus
 			}			
 		}
-		"TUR"={
-			history = "TUR_GATHERING_STORM_DESC"
-			ideology = communism
+		"SOV"={
+			history = "SOV_GATHERING_STORM_DESC"
+			ideology = democratic_socialist
 			ideas = {
+			
 			}
 			focuses = {
 			}	

@@ -2483,6 +2483,8 @@
  mari_rebbelion_desc:0 "The Mari People, who have been under Russian rule for centuries, saw the instability in Russia as a way to achieve independance. However, their state died under the boots of reactionary Russian forces. Despite the odds being against them, the Mari people still engage in a active warfare against the Russian Republic. "
  failing_economy:0 "Failing Economy"
  failing_economy_desc:0 "Economy of the Russian Republic, structured with capitalist ideals in mind, has proven to be unreliable in the cold fields of Northern Russia, and has put most resources into the hands of the upper clases, leaving peasants and workers in almost poverty. "
+ failing_economy_2:0 "Failing Economy"
+ failing_economy_2_desc:0 "Economy of the Russian Republic, structured with capitalist ideals in mind, has proven to be unreliable in the cold fields of Northern Russia, and has put most resources into the hands of the upper clases, leaving peasants and workers in almost poverty. "
  ###ITA
  political_crisis:0 "Political Crisis"
  political_crisis_desc:0 "Italian Republic with it's democratic system, born out of anti-monarchist revolts in so called "Italian Summer", has become unable to deal with the problems of the Italian nation, and thus, support for the liberal government is extremly low, and the parties have become highly fractured along ideological lines.  "

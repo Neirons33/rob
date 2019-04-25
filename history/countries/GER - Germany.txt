@@ -282,39 +282,52 @@ create_import = {
 }
 
 set_politics = {
-
-	parties = {
-		democratic_socialist = { 
-			popularity = 20
-		}
-
-		fascism = {
-			popularity = 5
-		}
-
-		national_socialist = {
-			popularity = 15
+parties = {
+	
+		national_socialist = { 
+			popularity = 13
 		}
 		
-		communism = {
-			popularity = 53
-			banned = yes #default is no
+        socialist = {
+			popularity = 34
 		}
-
+		
+		democratic_socialist = {
+			popularity = 10
+		}
+		
+		social_democracy = {
+		    popularity = 8
+		}
+		
+		social_liberal = {
+		    popularity = 0
+		}
+		
+		conservative = {
+		    popularity = 0
+		}
+		
 		authoritharian = {
-			popularity = 7
-			banned = yes #default is no
-		}	
+		    popularity = 12
+		}
+		
+		reactionary = {
+		    popularity = 12
+		}
+		
+		pelekist = {
+		    popularity = 11
+		}
 	}
+	
 	ruling_party = socialist
-	last_election = "1933.3.5"
+	last_election = "1933.7.1"
 	election_frequency = 48
 	elections_allowed = no
-
 }
 
-create_faction = Axis
-add_to_faction = GER
+
 
 
 add_ideas = {
@@ -329,61 +342,77 @@ add_ideas = GER_mefo_bills_1
 activate_mission = GER_mefo_bills_mission
 
 create_country_leader = {
-	name = "Hermann Müller"
+	name = "Herbert Frahm"
 	desc = "POLITICS_KONRAD_ADENAUER_DESC"
-	picture = "Hermann_Müller.dds"
+	picture = ""
 	expire = "1965.1.1"
-	ideology = market_socialism
+	ideology = democratic_socialist
 	traits = {
 	}
 }
-
 create_country_leader = {
-	name = "Roza Lucksemburg"
+	name = "Georg Ledebour"
+	desc = "POLITICS_KONRAD_ADENAUER_DESC"
+	picture = ""
+	expire = "1965.1.1"
+	ideology = social_democracy
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "Rosa Luxemburg"
 	desc = "POLITICS_ERNST_THALMANN_DESC"
 	picture = "Portriat_GRC_Roza_Luksemburg.tga"
 	expire = "1956.1.1"
 	ideology = marxism_leninism
 	traits = {
-		assassination_survivor
-		stalins_puppet
-		political_prisoner
 	}
 }
-
 create_country_leader = {
-	name = "Hienrich Himmler"
+	name = "Ernst Niekisch"
 	desc = "POLITICS_ERNST_THALMANN_DESC"
-	picture = ""
+	picture = "Portriat_GRC_Roza_Luksemburg.tga"
 	expire = "1956.1.1"
 	ideology = german_socialism
 	traits = {
-		assassination_survivor
-		stalins_puppet
-		political_prisoner
 	}
 }
-
 create_country_leader = {
-	name = "Hienrich Himmler"
+	name = "Reactionary Partisans"
 	desc = "POLITICS_ERNST_THALMANN_DESC"
-	picture = ""
+	picture = "Portriat_GRC_Roza_Luksemburg.tga"
 	expire = "1956.1.1"
-	ideology = german_socialism
+	ideology = pelekist
 	traits = {
-		political_prisoner
 	}
 }
-
 create_country_leader = {
-	name = "August Von Mackenson"
+	name = "Reactionary Partisans"
 	desc = "POLITICS_ERNST_THALMANN_DESC"
-	picture = ""
+	picture = "Portriat_GRC_Roza_Luksemburg.tga"
 	expire = "1956.1.1"
-	ideology = authoritarianism
+	ideology = reactionary
 	traits = {
-
 	}
+}
+create_country_leader = {
+	name = "Reactionary Partisans"
+	desc = "POLITICS_ERNST_THALMANN_DESC"
+	picture = "Portriat_GRC_Roza_Luksemburg.tga"
+	expire = "1956.1.1"
+	ideology = authoritharian
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "Reactionary Partisans"
+	desc = "POLITICS_ERNST_THALMANN_DESC"
+	picture = "Portriat_GRC_Roza_Luksemburg.tga"
+	expire = "1956.1.1"
+	ideology = conservative
+	traits = {
+	}
+}
 }
 
 ##Generals and stuff

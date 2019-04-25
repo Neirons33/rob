@@ -42,7 +42,7 @@ parties = {
 	}
 	
 	ruling_party = conservative
-	last_election = "1933.7.1"
+	last_election = "1930.7.1"
 	election_frequency = 48
 	elections_allowed = no
 }
@@ -66,9 +66,50 @@ create_country_leader = {
 create_country_leader = {
 	name = "Anastasy Vonsiatsky"
 	desc = ""
-	picture = "AnastasyVonsiatsky.dds"
+	picture = "AnastasyVonsiatsky.tga"
 	expire = "1947.1.1"
 	ideology = pelekist
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Sergei Chavain"
+	desc = ""
+	picture = "SergeiChavain.dds"
+	expire = "1947.1.1"
+	ideology = socialist
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Sergei Chavain"
+	desc = ""
+	picture = "SergeiChavain.dds"
+	expire = "1947.1.1"
+	ideology = national_socialist
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Sergei Chavain"
+	desc = ""
+	picture = "SergeiChavain.dds"
+	expire = "1947.1.1"
+	ideology = democratic_socialist
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Pavel Bermont-Avalov"
+	desc = ""
+	picture = "PavelBermontAvalov.dds"
+	expire = "1947.1.1"
+	ideology = reactionary
 	traits = {
 		#
 	}
@@ -78,7 +119,7 @@ create_country_leader = {
 	desc = ""
 	picture = "PavelBermontAvalov.dds"
 	expire = "1947.1.1"
-	ideology = reactionary
+	ideology = authoritharian
 	traits = {
 		#
 	}

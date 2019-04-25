@@ -582,7 +582,7 @@ mean_time_to_happen =  { days = 3 }
 
 option = {
 name = bolshevik_russia.22.a
-add_popularity = { ideology = democratic_socialist =0.10}
+add_popularity = { ideology = democratic_socialist = 0.10 }
 create_country_leader = {
 	name = "Nikolai Ivanovich Bukharin"
 	desc = ""
@@ -860,7 +860,7 @@ create_country_leader = {
 	desc = ""
 	picture = "GrigoryYevseyevichZinoviev.tga"
 	expire = "1953.3.1"
-	ideology = communism
+	ideology = left_communism
 	traits = {
 		#
 	}

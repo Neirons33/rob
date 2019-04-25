@@ -76,6 +76,27 @@
  SOV_democratic_socialist_party_syndicalism:0 "Russian Syndicalists"
  SOV_democratic_socialist_party_syndicalism_long:0 "Russian Syndicalists"
  
+ RDR_national_socialist_party:0 "Mari Rebels"
+ RDR_national_socialist_party_long:0 "Mari Rebels"
+ RDR_socialist_party:0 "Mari Rebels"
+ RDR_socialist_party_long:0 "Mari Rebels"
+ RDR_democratic_socialist_party:0 "Mari Rebels"
+ RDR_democratic_socialist_party_long:0 "Mari Rebels"
+ RDR_social_democracy_party:0 "RSDP"
+ RDR_social_democracy_party_long:0 "Russian Social-Democratic Party"
+ RDR_social_liberal_party:0 "PP"
+ RDR_social_liberal_party_long:0 "Peasant’s Party"
+ RDR_conservative_party:0 "SCP"
+ RDR_conservative_party_long:0 "Social Christians Party"
+ RDR_authoritharian_party:0 "AfR"
+ RDR_authoritharian_party_long:0 ""All for Russia!""
+ RDR_reactionary_party:0 "AfR"
+ RDR_reactionary_party_long:0 ""All for Russia!""
+ RDR_pelekist_party:0 "RU"
+ RDR_pelekist_party_long:0 "Russian Union"
+ RDR_conservative_party_two:0 "RFP"
+ RDR_conservative_party_two_long:0 "Russian Freedom Party"
+ 
  FRA_national_socialist_party:0 "LF"
  FRA_national_socialist_party_long:0 "Le Faisceau"
  FRA_socialist_party:0 "PCF"
@@ -94,4 +115,7 @@
  FRA_reactionary_party_long:0 "Croix-de-Feu"
  FRA_pelekist_party:0 "MF"
  FRA_pelekist_party:0_long "Mouvement Franciste"
+ 
+
+
 

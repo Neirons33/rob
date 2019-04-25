@@ -21,55 +21,67 @@ set_technology = {
 set_politics = {
 
 	parties = {
-		democratic = { 
-			popularity = 10
-		}
-
-		fascism = {
-			popularity = 30
-		}
-		
-		communism = {
+	
+		national_socialist = { 
 			popularity = 0
 		}
 		
+        socialist = {
+			popularity = 0
+		}
+		
+		democratic_socialist = {
+			popularity = 0
+		}
+		
+		social_democracy = {
+		    popularity = 5
+		}
+		
+		social_liberal = {
+		    popularity = 8
+		}
+		
+		conservative = {
+		    popularity = 15
+		}
+		
 		authoritharian = {
-			popularity = 60
+		    popularity = 10
+		}
+		
+		reactionary = {
+		    popularity = 40
+		}
+		
+		pelekist = {
+		    popularity = 22
 		}
 	}
 	
-	ruling_party = authoritharian
-	last_election = "1960.1.1"
-	election_frequency = 50
+	ruling_party = reactionary
+	last_election = "1933.7.1"
+	election_frequency = 48
 	elections_allowed = no
 }
 
-create_country_leader = {
-	name = "Hermann Göring"
-	desc = ""
-	picture = "gfx/leaders/GER/Portrait_Germany_Hermann_Goring.dds"
-	expire = "1960.1.1"
-	ideology = reactionary
-	traits = {
-		#
-	}
-}
+
 
 create_country_leader = {
-	name = "Hugo Eberlein"
+	name = "Konrad Adenauer"
 	desc = ""
-	picture = "gfx/leaders/GER/Portrait_Germany_Generic_1.dds"
+	picture = "Portrait_Germany_Konrad_Adenauer"
 	expire = "1960.1.1"
-	ideology = stalinism
+	ideology = conservative
 	traits = {
 		
 	}
 }
 
 create_country_leader = {
-	name = "Gustav Bauer"
+	name = "Wilhelm Buck"
 	desc = ""
-	picture = "Portrait_Prussia_Gustav.dds"
+	picture = ""
 	expire = "1960.1.1"
 	ideology = socialism
 	traits = {
@@ -86,3 +98,60 @@ create_country_leader = {
 	traits = {
 	}
 }
+create_country_leader = {
+	name = "Friedrich Wilhelm III"
+	desc = ""
+	picture = "gfx/leaders/PRS/wilhelm_3.dds"
+	expire = "1951.1.1"
+	ideology = reactionary
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "Alfred Rosenberg"
+	desc = ""
+	picture = ""
+	expire = "1951.1.1"
+	ideology = pelekist
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "Wilhelm Pieck"
+	desc = ""
+	picture = ""
+	expire = "1951.1.1"
+	ideology = german_socialism
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "Kurt Schumacher"
+	desc = ""
+	picture = ""
+	expire = "1951.1.1"
+	ideology = democratic_socialist
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "Heinrich Brüning"
+	desc = ""
+	picture = ""
+	expire = "1951.1.1"
+	ideology = social_democracy
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "Ernst Cassirer"
+	desc = ""
+	picture = ""
+	expire = "1951.1.1"
+	ideology = social_liberal
+	traits = {
+	}
+}
+
+
+

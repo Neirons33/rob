@@ -1910,6 +1910,54 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/zinoviev_seizes_power.dds"
 	}
 	
+	###RDR
+	spriteType = {
+		name = "GFX_picture_russia_vonsiatsky"
+		texturefile = "gfx/event_pictures/russia_vonsiatsky.dds"
+	}
+	spriteType = {
+		name = "GFX_picture_russia_maklakov"
+		texturefile = "gfx/event_pictures/russia_maklakov.dds"
+	}
+	spriteType = {
+		name = "GFX_picture_russia_white_soldiers"
+		texturefile = "gfx/event_pictures/russian_white_soldiers.dds"
+	}
+	spriteType = {
+		name = "GFX_picture_russia_kazan"
+		texturefile = "gfx/event_pictures/russia_kazan.dds"
+	}
+	spriteType = {
+		name = "GFX_picture_russia_pelekists"
+		texturefile = "gfx/event_pictures/russia_pelekists.dds"
+	}
+	spriteType = {
+		name = "GFX_picture_russia_reactionaries"
+		texturefile = "gfx/event_pictures/russia_reactionaries.dds"
+	}
+	spriteType = {
+		name = "GFX_picture_russia_nobility"
+		texturefile = "gfx/event_pictures/russia_nobility.dds"
+	}
+	spriteType = {
+		name = "GFX_picture_general_bermont"
+		texturefile = "gfx/event_pictures/general_bermont.dds"
+	}
+	spriteType = {
+		name = "GFX_picture_russia_riots"
+		texturefile = "gfx/event_pictures/russia_riots.dds"
+	}
+	spriteType = {
+		name = "GFX_picture_russia_reactionaries_split"
+		texturefile = "gfx/event_pictures/russia_reactionaries_split.dds"
+	}
+	spriteType = {
+		name = "GFX_picture_russia_civil_war_part_two"
+		texturefile = "gfx/event_pictures/russia_civil_war_part_two.dds"
+	}
+	
+	
+	
 	}
 
 	
