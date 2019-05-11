@@ -1,0 +1,20 @@
+state={
+	id=1004
+	name="STATE_1004"
+	history={
+		owner = BUL
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 3
+
+		}
+		add_core_of = BUL
+
+	}
+
+	provinces={
+		793 965 3971 9771 11754 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

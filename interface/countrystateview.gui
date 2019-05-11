@@ -23,18 +23,18 @@ guiTypes = {
 	
 	containerWindowType = {
 		name = "countrystateview"
-		position = { x=-416 y=-549}
-		show_position = { x=-6 y =-549 }
+		position = { x=-416 y=-780}
+		show_position = { x=-6 y =-780 }
 		show_animation_type = decelerated
 		hide_animation_type = accelerated
 		animation_time = 300
 		orientation = lower_left
-		size = { width=436 height=496 }
+		size = { width=436 height=796 }
 		
 		containerWindowType = {
 			name = "state_info_window"
 			position = { x = 0 y = 0 }
-			size = { width=780 height=496 }
+			size = { width=780 height=696 }
 			
 			
 			background = {
@@ -45,9 +45,9 @@ guiTypes = {
 						
 			instantTextboxType = {
 				name = "state_name"
-				position = { x = 60 y = 9 }
+				position = { x = 60 y = 5 }
 				textureFile = ""
-				font = "vic_36s"
+				font = "hoi_36header"
 				text = "STATE_NAME_TEST"
 				maxWidth = 320
 				maxHeight = 30
@@ -92,8 +92,8 @@ guiTypes = {
 			instantTextboxType = {
 				name = "victory_points"
 				position = { x = -13 y = 15 }
-				textureFile ="hoi_16typewriter"
-				font = "vic_22"
+				textureFile = ""
+				font = "hoi_18mbs"
 				text = ""
 				maxWidth = 70
 				maxHeight = 30
@@ -104,7 +104,7 @@ guiTypes = {
 				name = "claims"
 				position = { x = 15 y = 97 }
 				textureFile = ""
-				font = "vic_22"
+				font = "hoi_18mbs"
 				text = ""
 				maxWidth = 140
 				maxHeight = 30
@@ -124,7 +124,7 @@ guiTypes = {
 				name = "owner"
 				position = { x = 15 y = 42 }
 				textureFile = ""
-				font = "vic_18s"
+				font = "hoi_18mbs"
 				text = ""
 				maxWidth = 140
 				maxHeight = 30
@@ -219,7 +219,7 @@ guiTypes = {
 		
 		containerWindowType = {
 			name = "province_info_window"
-			position = { x = 5 y = 435 }
+			position = { x = 5 y = 668 }
 			size = { width=480 height=29%% }
 			
 			iconType = {
@@ -240,7 +240,7 @@ guiTypes = {
 			instantTextboxType = {
 				name = "province"
 				position = { x = 23 y= -29 }
-				font = "vic_18s"
+				font = "hoi_18mbs"
 				maxWidth = 80
 				maxHeight = 30
 				format = left
@@ -491,13 +491,13 @@ guiTypes = {
 		
 		iconType = {
 			name = "resource"
-			position = { x=53 y=8 }	
+			position = { x=50 y=10 }	
 			spriteType = "GFX_resources_strip"
 		}
 		
 		instantTextboxType = {
 			name = "amount"
-			position = { x = 70 y = 12 }
+			position = { x = 66 y = 15 }
 			font = "hoi_20b"
 			maxWidth = 37
 			maxHeight = 18

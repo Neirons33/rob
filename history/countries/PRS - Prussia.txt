@@ -1,8 +1,8 @@
-﻿capital = 64
+﻿capital = 6332
 
 set_research_slots = 3
 
-oob = "PRS_1936"
+oob = "PRS_1934"
 
 set_technology = {
 	infantry_weapons = 1
@@ -92,7 +92,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Friedrich Wilhelm III"
 	desc = ""
-	picture = "gfx/leaders/PRS/wilhelm_3.dds"
+	picture = "wilhelm_3.tga"
 	expire = "1951.1.1"
 	ideology = authoritharian
 	traits = {
@@ -101,7 +101,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Friedrich Wilhelm III"
 	desc = ""
-	picture = "gfx/leaders/PRS/wilhelm_3.dds"
+	picture = "wilhelm_3.tga"
 	expire = "1951.1.1"
 	ideology = reactionary
 	traits = {
@@ -110,7 +110,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Alfred Rosenberg"
 	desc = ""
-	picture = ""
+	picture = "Alfred_Rosenberg.tga"
 	expire = "1951.1.1"
 	ideology = pelekist
 	traits = {
@@ -153,5 +153,58 @@ create_country_leader = {
 	}
 }
 
+create_field_marshal = {
+	name = "Wilhelm III"
+	picture = "wilhelm_3.tga"
+	traits = { politically_connected }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_field_marshal = {
+	name = "Paul von Hindenburg"
+	picture = "Portrait_GER_Hindenburg_general.tga"
+	traits = { }
+	skill = 5
+	attack_skill = 4
+	defense_skill = 5
+	planning_skill = 3
+	logistics_skill = 5
+}
 
 
+create_field_marshal = {
+	name = "August Von Mackensen"
+	picture = "august-von-mackensen.tga"
+	traits = { }
+	skill = 6
+	attack_skill = 5
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Wilhelm Heye"
+	picture = "Portrait_Germany_Wilhelm_Heye.tga"
+	traits = { career_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Pual Von Lettow Vorbeck"
+	picture = "paul-von-lettow-vorbeck"
+	traits = { }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 4
+}

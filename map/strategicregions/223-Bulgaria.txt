@@ -1,3 +1,4 @@
+
 strategic_region={
 	id=223
 	name="STRATEGICREGION_223"
@@ -188,5 +189,4 @@ strategic_region={
 			min_snow_level=0.000
 		}
 	}
-
 }

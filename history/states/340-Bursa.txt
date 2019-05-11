@@ -13,15 +13,13 @@ state={
 			industrial_complex = 1
 
 		}
-		victory_points = {
-			947 1 
-		}
 		add_core_of = TUR
+		set_demilitarized_zone = yes
 
 	}
 
 	provinces={
-		785 947 3786 6864 6912 9799 9887 11778 11867 
+		947 3786 11867 
 	}
 	manpower=1026527
 	buildings_max_level_factor=1.000

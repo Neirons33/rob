@@ -10,7 +10,7 @@ state={
 	history={
 		owner = TUR
 		victory_points = {
-			9833 20 
+			9833 
 		}
 		buildings = {
 			infrastructure = 6
@@ -25,11 +25,12 @@ state={
 
 		}
 		add_core_of = TUR
+		set_demilitarized_zone = yes
 
 	}
 
 	provinces={
-		9833 11829 
+		9833 
 	}
 	manpower=802209
 	buildings_max_level_factor=1.000

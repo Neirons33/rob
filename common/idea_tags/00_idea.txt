@@ -15,9 +15,9 @@ idea_categories = {
 	}
 	
 	government = {
-		slot = political_advisor
-		slot = political_advisor
-		slot = political_advisor
+		slot = head_of_state
+		slot = economic_minister
+		slot = intelligence_offical
 		slot = political_advisor
 		slot = political_advisor
 		slot = political_advisor

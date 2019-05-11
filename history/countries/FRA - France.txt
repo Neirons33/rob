@@ -226,6 +226,11 @@ set_politics = {
 	elections_allowed = yes
 }
 
+	set_autonomy = {
+		target = SYR
+		autonomous_state = autonomy_integrated_puppet
+	}
+	
 add_ideas = {
 	FRA_victors_of_wwi
 	FRA_disjointed_government
