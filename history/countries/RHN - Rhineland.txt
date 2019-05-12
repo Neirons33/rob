@@ -9,58 +9,6 @@ set_technology = {
 	infantry_weapons1 = 1
 }
 
-1939.1.1 = {
-
-	add_political_power = 1198
-	
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = flexible_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-
-	add_ideas = {
-		#laws
-		disarmed_nation
-		partial_economic_mobilisation
-	}
-
-	oob = "DAN_1939"
-	set_technology = {
-	
-	    infantry_weapons1 = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		mechanical_computing = 1
-		computing_machine = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		synth_oil_experiments = 1
-		oil_processing = 1
-		improved_oil_processing = 1
-		construction1 = 1
-		construction2 = 1
-		construction3 = 1
-		construction4 = 1
-		concentrated_industry = 1
-		concentrated_industry2 = 1
-		concentrated_industry3 = 1
-		concentrated_industry4 = 1
-	}
-}
-
-
 set_convoys = 10
 
 set_politics = {
@@ -83,20 +31,96 @@ set_politics = {
 		}
 	}
 	
-	ruling_party = conservative
-	last_election = "1935.9.8"
+	ruling_party = reactionary
+	last_election = "1931.5.8"
 	election_frequency = 36
 	elections_allowed = no
 }
 
 create_country_leader = {
 	name = "Konrad Adenauer"
-	desc = "POLITICS_MARCELO_ALVEAR_DESC"
-	picture = "Portrait_Germany_Konrad_Adenauer.dds"
-	expire = "1965.1.1"
-	ideology = conservative_ideology
+	desc = ""
+	picture = "Portrait_Germany_Konrad_Adenauer"
+	expire = "1960.1.1"
+	ideology = conservative
 	traits = {
-		#
+		
 	}
 }
+
+create_country_leader = {
+	name = "Wilhelm Buck"
+	desc = ""
+	picture = ""
+	expire = "1960.1.1"
+	ideology = socialism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Georg Donatus"
+	desc = ""
+	picture = "Georg_Donatus.tga"
+	expire = "1951.1.1"
+	ideology = authoritharian
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "Hans Adam Dorten"
+	desc = ""
+	picture = "Hans_Adam_Dorten.tga"
+	expire = "1951.1.1"
+	ideology = reactionary
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "Robert Ley"
+	desc = ""
+	picture = "Robert_Ley.tga"
+	expire = "1951.1.1"
+	ideology = pelekist
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "Wilhelm Pieck"
+	desc = ""
+	picture = ""
+	expire = "1951.1.1"
+	ideology = german_socialism
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "Kurt Schumacher"
+	desc = ""
+	picture = ""
+	expire = "1951.1.1"
+	ideology = democratic_socialist
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "Heinrich Brüning"
+	desc = ""
+	picture = ""
+	expire = "1951.1.1"
+	ideology = social_democracy
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "Ernst Cassirer"
+	desc = ""
+	picture = ""
+	expire = "1951.1.1"
+	ideology = social_liberal
+	traits = {
+	}
+}
+
 
