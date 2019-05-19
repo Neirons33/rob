@@ -18,4 +18,8 @@ opinion_modifiers = {
 		value = 20
 	}
 	
+	assassinations = {
+		value = -20
+		months = 12
+	}	
 }	

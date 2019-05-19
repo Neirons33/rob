@@ -34,14 +34,26 @@ set_politics = {
 			popularity = 0
 		}
 		
-		communism = {
+		authoritharian = {
 			popularity = 100
 		}
 		
 	}
 	
-	ruling_party = communism
+	ruling_party = authoritharian
 	last_election = "1933.2.16"
 	election_frequency = 36
 	elections_allowed = no
+}
+
+portrait_Afrikan Bogaevsky.tga
+create_country_leader = {
+	name = "Afrikan Bogaevsky"
+	desc = "POLITICS_Afrikan_Bogaevsky_DESC"
+	picture = "portrait_Afrikan Bogaevsky.tga"
+	expire = "1965.1.1"
+	ideology = authoritharian
+	traits = {
+		
+	}
 }
