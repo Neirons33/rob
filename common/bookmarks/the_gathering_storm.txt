@@ -93,9 +93,14 @@ bookmarks = {
 			history = "SOV_GATHERING_STORM_DESC"
 			ideology = democratic_socialist
 			ideas = {
-			
+			famine_of_1933
+			birthplace_of_revolution
+			bourgeoisie_influence
 			}
 			focuses = {
+			SOV_effectsoffamine
+			SOV_firstfiveyearplan
+			SOV_thenewsovietarmy
 			}	
 		}
 		

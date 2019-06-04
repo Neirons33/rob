@@ -1,0 +1,384 @@
+focus_tree = { 
+id = soviet_focus_vlaslov
+country = { 
+factor = 0 
+modifier = { 
+add = 1 
+tag = SOV 
+} 
+}
+
+
+continuous_focus_position = { x = 50 y = 2000 }
+
+shared_focus = SOV_effectsoffamine
+shared_focus = SOV_sovieteconomy
+shared_focus = SOV_bolsheviklandforces
+shared_focus = SOV_lookoutwards
+
+#Focus for Premier Vlaslov
+focus = { 
+id = SOV_premiervlaslov
+icon = GFX_focus_SOV_Premier_Vlaslov
+x = 5
+y = 1
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+ }
+ 
+ #Focus for Paramilitaries in Cities
+focus = { 
+id = SOV_paramilitariesincities
+icon = GFX_goal_unknown
+x = 7
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_premiervlaslov } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+ 
+ #Focus for Use the Red Guard
+focus = { 
+id = SOV_usetheredguard
+icon = GFX_goal_unknown
+x = 7
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_paramilitariesincities } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ }
+
+ #Focus for Crushing the unrest
+focus = { 
+id = SOV_crushingtheunrest
+icon = GFX_goal_unknown
+x = 7
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_usetheredguard } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ }
+ 
+ #Focus for Meet the Leaders of Trade Unions
+focus = { 
+id = SOV_meettheleadersoftradeunions
+icon = GFX_goal_unknown
+x = 3
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_premiervlaslov } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ }
+ 
+ #Focus for Promise Economic Reforms
+focus = { 
+id = SOV_promiseeconomicreforms
+icon = GFX_goal_unknown
+x = 3
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_meettheleadersoftradeunions } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ }
+ 
+ #Focus for Round up the new bourgeosie
+focus = { 
+id = SOV_roundupthenewbourgeosie
+icon = GFX_goal_unknown
+x = 3
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_promiseeconomicreforms } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ }
+ 
+ #Focus for Vlaslov's Russia
+focus = { 
+id = SOV_vlaslovsrussia
+icon = GFX_goal_unknown
+x = 5
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_roundupthenewbourgeosie } 
+prerequisite = { focus = SOV_crushingtheunrest } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ }
+ 
+ #Focus for Continue Anti-Bourgeoisie Actions
+focus = { 
+id = SOV_continueantibourgeoisieactions
+icon = GFX_goal_unknown
+x = 2
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_vlaslovsrussia } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+ 
+ #Focus for Urban Nationalization
+focus = { 
+id = SOV_urbannationalization
+icon = GFX_goal_unknown
+x = 2
+y = 7
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_continueantibourgeoisieactions } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+ #Focus for Forced Collectivization
+focus = { 
+id = SOV_forcedcollectivization
+icon = GFX_goal_unknown
+x = 2
+y = 8
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_urbannationalization } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+ 
+ #Focus for Stronger Central Planning
+focus = { 
+id = SOV_strongercentralplanning
+icon = GFX_goal_unknown
+x = 2
+y = 9
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_forcedcollectivization } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ }
+
+#Focus for Focus on Military Industry
+focus = { 
+id = SOV_focusonmilitaryindustry
+icon = GFX_goal_unknown
+x = 2
+y = 10
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_strongercentralplanning } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ }
+
+#Focus for Form Local Vlaslovist Militas
+focus = { 
+id = SOV_formlocalvlaslovistmilitas
+icon = GFX_goal_unknown
+x = 5
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_vlaslovsrussia } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ }
+
+#Focus for Vlaslovist Security Services
+focus = { 
+id = SOV_vlaslovistsecurityservices
+icon = GFX_goal_unknown
+x = 5
+y = 7
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_formlocalvlaslovistmilitas } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ }  
+
+ 
+ #Focus for Purges
+focus = { 
+id = SOV_purges
+icon = GFX_goal_unknown
+x = 5
+y = 8
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_vlaslovistsecurityservices } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ }
+
+ #Focus for Slave Labor
+focus = { 
+id = SOV_vlaslov_slave_labor
+icon = GFX_goal_unknown
+x = 5
+y = 9
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_purges } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ }
+ 
+ #Focus for Penal Battalions
+focus = { 
+id = SOV_vlaslov_penal_battalions
+icon = GFX_goal_unknown
+x = 5
+y = 10
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_vlaslov_slave_labor } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ }
+ #Focus for A Strong Premier
+focus = { 
+id = SOV_astrongpremier
+icon = GFX_goal_unknown
+x = 8
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_vlaslovsrussia } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ }
+ 
+ #Focus for Militarization of the schools
+focus = { 
+id = SOV_militarizationoftheschools
+icon = GFX_goal_unknown
+x = 8
+y = 7
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_astrongpremier } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+
+ #Focus for Nationalist Education
+focus = { 
+id = SOV_nationalisteducation
+icon = GFX_goal_unknown
+x = 8
+y = 8
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_militarizationoftheschools } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+
+#Focus for Russian Idenity
+focus = { 
+id = SOV_russianidenity
+icon = GFX_goal_unknown
+x = 8
+y = 9
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_nationalisteducation } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ }
+
+ #Focus for Support Orthodoxy
+focus = { 
+id = SOV_supportorthodoxy
+icon = GFX_goal_unknown
+x = 8
+y = 10
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_russianidenity } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ }
+
+ #Focus for United We March
+focus = { 
+id = SOV_unitedwemarch
+icon = GFX_goal_unknown
+x = 5
+y = 11
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_supportorthodoxy } 
+prerequisite = { focus = SOV_vlaslov_penal_battalions } 
+prerequisite = { focus = SOV_focusonmilitaryindustry } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ }
+
+
+
+}
+

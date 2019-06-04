@@ -11,9 +11,9 @@ ideas = {
      removal_cost = -1
 	 picture = GFX_idea_famine_of_1933
 	 modifier = {
-				stability_factor = -0.2
-				war_support_factor = -0.2
-				conscription = -0.01
+				stability_factor = -0.25
+				war_support_factor = -0.25
+				conscription = -0.02
 			}
   
   }
@@ -71,7 +71,7 @@ ideas = {
 	 offence = -0.3
 	 enemy_partisan_effect = 0.5
 	 army_morale_factor = -0.1
-	 defence = 0.4
+	 defence = 0.2
     }
    }
    

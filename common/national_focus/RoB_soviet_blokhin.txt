@@ -1,0 +1,376 @@
+focus_tree = { 
+id = soviet_focus_blokhin
+country = { 
+factor = 0 
+modifier = { 
+add = 1 
+tag = SOV 
+} 
+}
+
+continuous_focus_position = { x = 50 y = 2000 }
+
+shared_focus = SOV_effectsoffamine
+shared_focus = SOV_sovieteconomy
+shared_focus = SOV_bolsheviklandforces
+shared_focus = SOV_lookoutwards
+shared_focus = SOV_bolshevikairforces
+
+
+#Focus for Premier Blokhin
+focus = { 
+id = SOV_premierblokhin
+icon = GFX_focus_SOV_Premier_Blokhin
+
+
+x = 5
+y = 1
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ }
+ 
+
+ }
+ 
+
+#Focus for Round up leaders of unions
+focus = { 
+id = SOV_roundupleadersofunions
+icon = GFX_goal_unknown
+x = 3
+y = 2
+cost = 2
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_premierblokhin } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ }
+ 
+ 
+#Focus for SORV paramilitaries in cities
+focus = { 
+id = SOV_sorvparamilitariesincities
+icon = GFX_goal_unknown
+x = 7
+y = 2
+cost = 2
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_premierblokhin } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ }
+ 
+ #Focus for Use "Blokhinists"
+focus = { 
+id = SOV_useblokhinists
+icon = GFX_goal_unknown
+x = 7
+y = 3
+cost = 2
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_sorvparamilitariesincities } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+ 
+ #Focus for Brutal Suppresion
+focus = { 
+id = SOV_brutalsuppresion
+icon = GFX_goal_unknown
+x = 7
+y = 4
+cost = 2
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_useblokhinists } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ }
+ 
+ #Focus for Cracking down on Unions
+focus = { 
+id = SOV_crackingdownonunions
+icon = GFX_goal_unknown
+x = 3
+y = 3
+cost = 2
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_roundupleadersofunions } 
+ai_will_do = { 
+ factor = 1
+ } 
+} 
+ #Focus for Crackdown on Strikes
+focus = { 
+id = SOV_crackdownonstrikes
+icon = GFX_goal_unknown
+x = 3
+y = 4
+cost = 2
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_crackingdownonunions } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ }
+#Focus for Red Russia
+focus = { 
+id = SOV_redrussia
+icon = GFX_goal_unknown
+x = 5
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_crackdownonstrikes } 
+prerequisite = { focus = SOV_brutalsuppresion } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+ 
+ #Focus for Ban the church
+focus = { 
+id = SOV_banthechurch
+icon = GFX_goal_unknown
+x = 2
+y = 6
+cost = 5
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_redrussia } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ }
+ 
+ #Focus for Religious Repressions
+focus = { 
+id = SOV_religiousrepressions
+icon = GFX_goal_unknown
+x = 2
+y = 7
+cost = 5
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_banthechurch } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ }
+ 
+ #Focus for Atheist State
+focus = { 
+id = SOV_atheiststate
+icon = GFX_goal_unknown
+x = 2
+y = 8
+cost = 5
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_religiousrepressions } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+ 
+ #Focus for Cultural Revolution
+focus = { 
+id = SOV_culturalrevolution
+icon = GFX_goal_unknown
+x = 2
+y = 9
+cost = 5
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_atheiststate } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ }
+ #Focus for People's Red Guard
+focus = { 
+id = SOV_peoplesredguard
+icon = GFX_goal_unknown
+x = 2
+y = 10
+cost = 5
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_culturalrevolution } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ }
+ #Focus for Purge in Party
+focus = { 
+id = SOV_purgeinparty
+icon = GFX_goal_unknown
+x = 5
+y = 6
+cost = 5
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_redrussia } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+ #Focus for Execute the Bourgeoisie
+focus = { 
+id = SOV_executethebourgeoisie
+icon = GFX_goal_unknown
+x = 5
+y = 7
+cost = 5
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_purgeinparty } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ }
+ #Focus for Curl Intellectuals
+focus = { 
+id = SOV_curlintellectuals
+icon = GFX_goal_unknown
+x = 5
+y = 8
+cost = 5
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_executethebourgeoisie } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+ #Focus for Re-education Camps
+focus = { 
+id = SOV_reeducationcamps
+icon = GFX_goal_unknown
+x = 5
+y = 9
+cost = 5
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_curlintellectuals } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ }
+ #Focus for Expand prision system
+focus = { 
+id = SOV_expandprisionsystem
+icon = GFX_goal_unknown
+x = 5
+y = 10
+cost = 5
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_reeducationcamps } 
+ai_will_do = { 
+ factor = 1
+ } 
+}
+
+#Focus for Collectivization
+focus = { 
+id = SOV_collectivization
+icon = GFX_goal_unknown
+x = 8
+y = 6
+cost = 5
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_redrussia } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+ #Focus for Forced De-industralization
+focus = { 
+id = SOV_forceddeindustralization
+icon = GFX_goal_unknown
+x = 8
+y = 7
+cost = 5
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_collectivization } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ }
+ 
+ #Focus for Expand Collective Farms
+focus = { 
+id = SOV_expandcollectivefarms
+icon = GFX_goal_unknown
+x = 8
+y = 8
+cost = 5
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_forceddeindustralization } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ }
+ 
+ #Focus for Destroying foreign influence
+focus = { 
+id = SOV_destroyingforeigninfluence
+icon = GFX_goal_unknown
+x = 8
+y = 9
+cost = 5
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_expandcollectivefarms } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ }
+
+#Focus for Aim for Autarky
+focus = { 
+id = SOV_aimforautarky
+icon = GFX_goal_unknown
+x = 8
+y = 10
+cost = 5
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_destroyingforeigninfluence } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ }
+
+#Focus for United We Suffer
+focus = { 
+id = SOV_unitedwesuffer
+icon = GFX_goal_unknown
+x = 5
+y = 11
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_expandprisionsystem } 
+prerequisite = { focus = SOV_peoplesredguard } 
+prerequisite = { focus = SOV_aimforautarky } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+ 
+ }
