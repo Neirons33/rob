@@ -64,53 +64,24 @@ if = {
 
 set_convoys = 50
 
-set_politics = {
 
-	parties = {
-	
-		national_socialist = { 
-			popularity = 12
-		}
-		
-        socialist = {
-			popularity = 52
-		}
-		
-		democratic_socialist = {
-			popularity = 34
-		}
-		
-		social_democracy = {
-		    popularity = 2
-		}
-		
-		social_liberal = {
-		    popularity = 0
-		}
-		
-		conservative = {
-		    popularity = 0
-		}
-		
-		authoritharian = {
-		    popularity = 0
-		}
-		
-		reactionary = {
-		    popularity = 0
-		}
-		
-		pelekist = {
-		    popularity = 0
-		}
-	}
-	
+set_politics = {
 	ruling_party = democratic_socialist
 	last_election = "1933.7.1"
 	election_frequency = 48
 	elections_allowed = no
 }
-
+set_popularities = {
+	national_socialist = 12
+	socialist = 52
+	democratic_socialist = 34
+	social_democracy = 2
+	social_liberal = 0
+	conservative = 0
+	authoritharian = 0
+	reactionary = 0
+	pelekist = 0
+}
 
 
 

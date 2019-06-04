@@ -204,26 +204,23 @@ if = {
 set_convoys = 300
 
 
+
 set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 69
-		}
-
-		fascism = {
-			popularity = 1
-		}
-		
-		communism = {
-			popularity = 30
-		}
-	}
-	
 	ruling_party = social_liberal
 	last_election = "1932.5.1"
 	election_frequency = 48
 	elections_allowed = yes
+}
+set_popularities = {
+	national_socialist = 7
+	socialist = 11
+	democratic_socialist = 11
+	social_democracy = 0
+	social_liberal = 44
+	conservative = 16
+	authoritharian = 0
+	reactionary = 0
+	pelekist = 11
 }
 
 	set_autonomy = {

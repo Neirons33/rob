@@ -318,25 +318,21 @@ create_country_leader = {
 }
 
 set_politics = {
-
-	parties = {
-		social_democracy = { 
-			popularity = 97
-		}
-
-		fascism = {
-			popularity = 2
-		}
-		
-		communism = {
-			popularity = 1
-		}
-	}
-	
 	ruling_party = social_democracy
-	last_election = "1935.11.14"
+	last_election = "1933.7.1"
 	election_frequency = 48
-	elections_allowed = yes ##suspended through duration of war, which is handled via event
+	elections_allowed = no
+}
+set_popularities = {
+	national_socialist = 11
+	socialist = 17
+	democratic_socialist = 13
+	social_democracy = 41
+	social_liberal = 0
+	conservative = 0
+	authoritharian = 0
+	reactionary = 18
+	pelekist = 0
 }
 
 

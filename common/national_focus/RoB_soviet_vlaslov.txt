@@ -15,6 +15,7 @@ shared_focus = SOV_effectsoffamine
 shared_focus = SOV_sovieteconomy
 shared_focus = SOV_bolsheviklandforces
 shared_focus = SOV_lookoutwards
+shared_focus = SOV_bolshevikairforces
 
 #Focus for Premier Vlaslov
 focus = { 

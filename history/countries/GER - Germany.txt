@@ -281,52 +281,25 @@ create_import = {
 	}
 }
 
+
+
 set_politics = {
-parties = {
-	
-		national_socialist = { 
-			popularity = 13
-		}
-		
-        socialist = {
-			popularity = 34
-		}
-		
-		democratic_socialist = {
-			popularity = 10
-		}
-		
-		social_democracy = {
-		    popularity = 8
-		}
-		
-		social_liberal = {
-		    popularity = 0
-		}
-		
-		conservative = {
-		    popularity = 0
-		}
-		
-		authoritharian = {
-		    popularity = 12
-		}
-		
-		reactionary = {
-		    popularity = 12
-		}
-		
-		pelekist = {
-		    popularity = 11
-		}
-	}
-	
 	ruling_party = socialist
 	last_election = "1933.7.1"
 	election_frequency = 48
 	elections_allowed = no
 }
-
+set_popularities = {
+	national_socialist = 13
+	socialist = 34
+	democratic_socialist = 10
+	social_democracy = 8
+	social_liberal = 0
+	conservative = 0
+	authoritharian = 12
+	reactionary = 12
+	pelekist = 11
+}
 
 
 

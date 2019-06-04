@@ -122,27 +122,24 @@ give_guarantee = URG
 set_convoys = 400
 
 
+
+
 set_politics = {
-
-	parties = {
-		conservative = { 
-			popularity = 99
-		}
-
-		fascism = {
-			popularity = 0
-		}
-		
-		communism = {
-			popularity = 1
-			#banned = no #default is no
-		}
-	}
-	
 	ruling_party = conservative
 	last_election = "1932.11.8"
 	election_frequency = 48
 	elections_allowed = yes
+}
+set_popularities = {
+	national_socialist = 0
+	socialist = 2
+	democratic_socialist = 0
+	social_democracy = 12
+	social_liberal = 33
+	conservative = 45
+	authoritharian = 0
+	reactionary = 8
+	pelekist = 0
 }
 
 add_ideas = {

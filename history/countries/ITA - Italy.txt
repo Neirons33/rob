@@ -104,53 +104,24 @@ if = {
 
 set_convoys = 200
 
-set_politics = {
 
-	parties = {
-	
-		national_socialist = { 
-			popularity = 9
-		}
-		
-        socialist = {
-			popularity = 12
-		}
-		
-		democratic_socialist = {
-			popularity = 13
-		}
-		
-		social_democracy = {
-		    popularity = 3
-		}
-		
-		social_liberal = {
-		    popularity = 32
-		}
-		
-		conservative = {
-		    popularity = 8
-		}
-		
-		authoritharian = {
-		    popularity = 6
-		}
-		
-		reactionary = {
-		    popularity = 6
-		}
-		
-		pelekist = {
-		    popularity = 11
-		}
-	}
-	
+set_politics = {
 	ruling_party = social_liberal
 	last_election = "1932.6.21"
 	election_frequency = 48
 	elections_allowed = yes
 }
-
+set_popularities = {
+	national_socialist = 9
+	socialist = 12
+	democratic_socialist = 13
+	social_democracy = 3
+	social_liberal = 32
+	conservative = 8
+	authoritharian = 6
+	reactionary = 6
+	pelekist = 11
+}
 
 create_country_leader = {
 	name = "Pelekist Triumvirate"
