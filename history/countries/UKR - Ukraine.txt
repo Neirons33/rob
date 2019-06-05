@@ -61,25 +61,21 @@ if = {
 }
 
 set_politics = {
-
-	parties = {
-		conservative = { 
-			popularity = 15
-		}
-
-		authoritharian = {
-			popularity = 30
-		}
-		
-		reactionary = {
-			popularity = 50
-		}
-	}
-
 	ruling_party = reactionary
-	last_election = "1926.1.1"
+	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no
+}
+set_popularities = {
+	national_socialist = 1
+	socialist = 1
+	democratic_socialist = 1
+	social_democracy = 8
+	social_liberal = 10
+	conservative = 10
+	authoritharian = 10
+	reactionary = 45
+	pelekist = 14
 }
 
 create_country_leader = {

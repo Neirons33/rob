@@ -627,3 +627,7 @@ RDR = {
     color = rgb { 73 153 62 }
 	color_ui = rgb { 73 153 62 }
 }
+YUC = {
+    color = rgb { 224 178 51 }
+	color_ui = rgb { 224 178 51 }
+}

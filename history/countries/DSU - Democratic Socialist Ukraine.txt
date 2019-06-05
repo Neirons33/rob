@@ -24,24 +24,30 @@ set_technology = {
 }
 
 set_politics = {
+	ruling_party = national_socialist
+	last_election = "1933.7.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	national_socialist = 59
+	socialist = 22
+	democratic_socialist = 10
+	social_democracy = 4
+	social_liberal = 0
+	conservative = 0
+	authoritharian = 1
+	reactionary = 1
+	pelekist = 3
+}
 
-	parties = {
-		democratic = { 
-			popularity = 0
-		}
-
-		fascism = {
-			popularity = 0
-		}
-		
-		communism = {
-			popularity = 100
-		}
+create_country_leader = {
+	name = "Lazar Moiseyevich Kaganovich"
+	desc = ""
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+	expire = "1953.3.1"
+	ideology = national_socialist
+	traits = {
 		
 	}
-	
-	ruling_party = communism
-	last_election = "1933.2.16"
-	election_frequency = 36
-	elections_allowed = no
 }

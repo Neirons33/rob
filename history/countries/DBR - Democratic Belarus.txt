@@ -24,26 +24,21 @@ set_technology = {
 }
 
 set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 0
-		}
-
-		fascism = {
-			popularity = 0
-		}
-		
-		conservative = {
-			popularity = 100
-		}
-		
-	}
-	
 	ruling_party = conservative
-	last_election = "1933.2.16"
-	election_frequency = 36
+	last_election = "1933.7.1"
+	election_frequency = 48
 	elections_allowed = no
+}
+set_popularities = {
+	national_socialist = 0
+	socialist = 3
+	democratic_socialist = 3
+	social_democracy = 24
+	social_liberal = 26
+	conservative = 35
+	authoritharian = 3
+	reactionary = 3
+	pelekist = 3
 }
 
 create_country_leader = {

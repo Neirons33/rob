@@ -12,29 +12,21 @@ set_technology = {
 set_convoys = 10
 
 set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 19
-		}
-
-		fascism = {
-			popularity = 44
-		}
-		
-		communism = {
-			popularity = 1
-		}
-		
-		neutrality = { 
-			popularity = 36
-		}
-	}
-	
 	ruling_party = reactionary
-	last_election = "1931.5.8"
-	election_frequency = 36
+	last_election = "1933.7.1"
+	election_frequency = 48
 	elections_allowed = no
+}
+set_popularities = {
+	national_socialist = 2
+	socialist = 1
+	democratic_socialist = 1
+	social_democracy = 13
+	social_liberal = 8
+	conservative = 20
+	authoritharian = 0
+	reactionary = 41
+	pelekist = 14
 }
 
 create_country_leader = {

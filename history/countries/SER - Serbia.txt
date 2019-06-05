@@ -3,6 +3,23 @@
 oob = "YUG_1936"
 
 set_research_slots = 3
+set_politics = {
+	ruling_party = authoritharian
+	last_election = "1933.7.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	national_socialist = 0
+	socialist = 10
+	democratic_socialist = 7
+	social_democracy = 8
+	social_liberal = 8
+	conservative = 11
+	authoritharian = 46
+	reactionary = 10
+	pelekist = 0
+}
 
 add_ideas = {
 	anti_german_military
@@ -103,56 +120,6 @@ if = {
 }
 
 set_convoys = 0
-
-set_politics = {
-
-	parties = {
-	
-		national_socialist = { 
-			popularity = 0
-		}
-		
-        socialist = {
-			popularity = 0
-		}
-		
-		democratic_socialist = {
-			popularity = 0
-		}
-		
-		social_democracy = {
-		    popularity = 0
-		}
-		
-		social_liberal = {
-		    popularity = 0
-		}
-		
-		conservative = {
-		    popularity = 0
-		}
-		
-		authoritharian = {
-		    popularity = 100
-		}
-		
-		reactionary = {
-		    popularity = 0
-		}
-		
-		pelekist = {
-		    popularity = 0
-		}
-	}
-	
-	ruling_party = authoritharian
-	last_election = "1933.7.1"
-	election_frequency = 48
-	elections_allowed = no
-}
-
-
-
 set_stability = 0.6
 
 create_country_leader = {

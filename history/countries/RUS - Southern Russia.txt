@@ -23,51 +23,24 @@ set_technology = {
 	transport = 1
 }
 
-set_politics = {
 
-	parties = {
-	
-		national_socialist = { 
-			popularity = 0
-		}
-		
-        socialist = {
-			popularity = 26
-		}
-		
-		democratic_socialist = {
-			popularity = 54
-		}
-		
-		social_democracy = {
-		    popularity = 15
-		}
-		
-		social_liberal = {
-		    popularity = 5
-		}
-		
-		conservative = {
-		    popularity = 0
-		}
-		
-		authoritharian = {
-		    popularity = 0
-		}
-		
-		reactionary = {
-		    popularity = 0
-		}
-		
-		pelekist = {
-		    popularity = 0
-		}
-	}
-	
+
+set_politics = {
 	ruling_party = democratic_socialist
 	last_election = "1933.7.1"
 	election_frequency = 48
 	elections_allowed = no
+}
+set_popularities = {
+	national_socialist = 0
+	socialist = 26
+	democratic_socialist = 54
+	social_democracy = 15
+	social_liberal = 5
+	conservative = 0
+	authoritharian = 0
+	reactionary = 0
+	pelekist = 0
 }
 
 create_country_leader = {

@@ -7,6 +7,25 @@ set_research_slots = 3
 set_stability = 0.73
 set_war_support = 0.82
 
+
+set_politics = {
+	ruling_party = conservative
+	last_election = "1926.6.7"
+	election_frequency = 72
+	elections_allowed = yes
+}
+set_popularities = {
+	national_socialist = 0
+	socialist = 17
+	democratic_socialist = 13
+	social_democracy = 7
+	social_liberal = 0
+	conservative = 31
+	authoritharian = 15
+	reactionary = 12
+	pelekist = 5
+}
+
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
@@ -45,38 +64,7 @@ if = {
 	}
 }
 
-set_politics = {
 
-	parties = {
-
-		socialist = {
-			popularity = 17
-		}
-		democratic_socialist = {
-			popularity = 13
-		}
-		social_democracy = {
-			popularity = 7
-		}
-		reactionary = {
-			popularity = 22
-		}
-		authoritharian = {
-			popularity = 15
-		}
-		conservative = {
-			popularity = 21
-		}
-		pelekist = {
-			popularity = 5
-		}
-	}
-	
-	ruling_party = conservative
-	last_election = "1926.6.7"
-	election_frequency = 72
-	elections_allowed = no
-}
 
 add_ideas = {
 	limited_conscription

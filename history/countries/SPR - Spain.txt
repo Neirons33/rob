@@ -57,122 +57,28 @@ if = {
 		mtg_transport = 1
 	}
 }
-
 set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 47
-		}
-
-		fascism = {
-			popularity = 46
-		}
-		
-		communism = {
-			popularity = 7
-		}
-	}
-	
-	ruling_party = democratic
-	last_election = "1933.2.16"
-	election_frequency = 36
-	elections_allowed = yes
+	ruling_party = social_liberal
+	last_election = "1933.7.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	national_socialist = 7
+	socialist = 13
+	democratic_socialist = 12
+	social_democracy = 0
+	social_liberal = 33
+	conservative = 10
+	authoritharian = 5
+	reactionary = 5
+	pelekist = 15
 }
 
 set_convoys = 150
 set_stability = 0.5
 
-1932.1.1 = {
 
-	add_political_power = 0
-	
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = large_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-	
-	oob = "SPA_1939"
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-			set_naval_oob = "SPA_1939_naval_mtg"
-		else = {
-			set_naval_oob = "SPA_1939_naval_legacy"
-		}
-	}
-	load_oob = "unlock_tanks"
-	
-	set_technology = {
-		fighter1 = 1
-		CAS1 = 1
-		tactical_bomber1 = 1
-		gwtank = 1
-		basic_light_tank = 1
-		interwar_artillery = 1
-		interwar_antitank = 1
-		motorised_infantry = 1
-		infantry_weapons2 = 1
-		support_weapons = 1
-		support_weapons2 = 1
-
-		#doctrines
-		air_superiority = 1
-		grand_battle_plan = 1
-		trench_warfare = 1
-		fleet_in_being = 1
-		battlefleet_concentration = 1
-		submarine_operations = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		mechanical_computing = 1
-		computing_machine = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		synth_oil_experiments = 1
-		fuel_silos = 1
-		oil_processing = 1
-		improved_oil_processing = 1
-		construction1 = 1
-		construction2 = 1
-		construction3 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-		dispersed_industry3 = 1
-	}
-
-	set_politics = {
-
-		parties = {
-			social_liberal = { 
-				popularity = 22
-			}
-
-			fascism = {
-				popularity = 76
-			}
-			
-			communism = {
-				popularity = 2
-			}
-		}
-		
-		ruling_party = social_liberal
-		last_election = "1934.3.26"
-		election_frequency = 60
-		elections_allowed = no
-	}
 
 create_country_leader = {
 	name = "Niceto Alcala Zamora"
@@ -201,7 +107,7 @@ create_country_leader = {
 	desc = "POLITICS_FRANCISCO_FRANCO_DESC"
 	picture = "Portrait_Spain_Francisco_Franco.dds"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = reactionary
 	traits = {
 		#
 	}

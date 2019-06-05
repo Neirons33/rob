@@ -67,67 +67,43 @@ set_convoys = 10
 		dispersed_industry2 = 1
 	}
 }
-
 set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 30
-		}
-
-		fascism = {
-			popularity = 15
-		}
-		
-		communism = {
-			popularity = 15
-		}
-		
-		neutrality = { 
-			popularity = 50
-		}
-	}
-	
-	ruling_party = neutrality
-	last_election = "1926.5.8"
-	election_frequency = 120
+	ruling_party = conservative
+	last_election = "1933.7.1"
+	election_frequency = 48
 	elections_allowed = no
 }
+set_popularities = {
+	national_socialist = 3
+	socialist = 3
+	democratic_socialist = 0
+	social_democracy = 0
+	social_liberal = 3
+	conservative = 41
+	authoritharian = 12
+	reactionary = 12
+	pelekist = 26
+}
 
-1939.1.1 = {
-	set_politics = {
 
-		parties = {
-			democratic = { 
-				popularity = 30
-			}
-
-			fascism = {
-				popularity = 15
-			}
-			
-			communism = {
-				popularity = 15
-			}
-			
-			neutrality = { 
-				popularity = 50
-			}
-		}
-		
-		ruling_party = neutrality
-		last_election = "1936.6.10"
-		election_frequency = 120
-		elections_allowed = no
+create_country_leader = {
+	name = "Aleksandras Stulginskis"
+	desc = "POLITICS_ANTANAS_SMETONA_DESC"
+	picture = "GFX_Portrait_lithuania_antanas_smetona"
+	expire = "1965.1.1"
+	ideology = conservative
+	traits = {
+		#
 	}
 }
+
 
 create_country_leader = {
 	name = "Antanas Smetona"
 	desc = "POLITICS_ANTANAS_SMETONA_DESC"
 	picture = "GFX_Portrait_lithuania_antanas_smetona"
 	expire = "1965.1.1"
-	ideology = oligarchism
+	ideology = authoritharian
 	traits = {
 		#
 	}

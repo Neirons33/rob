@@ -34,6 +34,7 @@ CAL = "countries/California.txt"
 TEX = "countries/Texas.txt"
 QUE = "countries/Quebec.txt"
 NFL = "countries/New Foundland.txt"
+YUC = "countries/Yucatan.txt"
 
 #Middle-East
 BHR = "countries/Bahrain.txt"

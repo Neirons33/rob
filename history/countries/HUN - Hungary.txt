@@ -72,39 +72,24 @@ if = {
 		fuel_refining = 1
 	}
 
+
+
 set_politics = {
-	parties = {
-		national_socialist = { 
-			popularity = 25
-		}
-		reactionarism = {
-			popularity = 31
-		}
-		authoritharian = {
-			popularity = 10
-		}
-		socialist = {
-			popularity = 8
-		}
-		communism = {
-			popularity = 8
-		}
-		pelekist = {
-			popularity = 6
-		}
-		conservative = {
-			popularity = 8
-		}
-		social_liberal = {
-			popularity = 4
-		}
-	}
-	
-	ruling_party = reactionarism
-	last_election = "1935.3.31"
+	ruling_party = reactionary
+	last_election = "1930.11.9"
 	election_frequency = 48
 	elections_allowed = yes
-	}	
+}
+set_popularities = {
+	national_socialist = 25
+	socialist = 8
+	democratic_socialist = 8
+	social_democracy = 0
+	social_liberal = 4
+	conservative = 8
+	authoritharian = 10
+	reactionary = 31
+	pelekist = 6
 }
 create_country_leader = {
 	name = "Ferenc Szálasi"
@@ -133,7 +118,7 @@ create_country_leader = {
 	desc = "POLITICS_MATYAS_RAKOSKI_DESC"
 	picture = "miklos_horthy.dds"
 	expire = "1965.1.1"
-	ideology = reactionarism
+	ideology = reactionary
 	traits = {
 		#
 	}
