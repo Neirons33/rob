@@ -650,9 +650,9 @@ set_country_flag = hess_victory
 }
 
 country_event = { ###TS Victory - Rosenberg
-id = prussia.17
-title = prussia.17.t
-desc = prussia.17.d
+id = prussia.18
+title = prussia.18.t
+desc = prussia.18.d
 fire_only_once = yes
 
 trigger = {
@@ -665,7 +665,7 @@ value > 2
 mean_time_to_happen = { days = 2 }
 
 option = { ###Rosenbergs takeover
-name = prussia.17.a
+name = prussia.18.a
 add_political_power = 120
 custom_effect_tooltip = prs_tt_4
 
@@ -687,9 +687,9 @@ set_country_flag = rosenberg_victory
 }
 
 country_event = {
-id = prussia.18
-title = prussia.18.t
-desc = prussia.18.d
+id = prussia.19
+title = prussia.19.t
+desc = prussia.19.d
 fire_only_once = yes
 hidden = yes
 
