@@ -8,6 +8,8 @@ tag = SOV
 } 
 }
 
+default = no
+
 continuous_focus_position = { x = 50 y = 2000 }
 
 shared_focus = SOV_effectsoffamine
@@ -21,8 +23,6 @@ shared_focus = SOV_bolshevikairforces
 focus = { 
 id = SOV_premierblokhin
 icon = GFX_focus_SOV_Premier_Blokhin
-
-
 x = 5
 y = 1
 cost = 10
@@ -30,11 +30,7 @@ available_if_capitulated = yes
 ai_will_do = { 
  factor = 1
  }
- 
-
  }
- 
-
 #Focus for Round up leaders of unions
 focus = { 
 id = SOV_roundupleadersofunions

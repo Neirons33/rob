@@ -600,6 +600,10 @@ BAR = {
 	color = rgb { 60 73 59 }
 	color_ui = rgb { 60 73 59 }
 }
+RAJ = {
+	color = rgb { 198 125 7 }
+	color_ui = rgb { 198 125 7 }
+}
 
 
 ##New Countries##

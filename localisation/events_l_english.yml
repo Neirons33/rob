@@ -3111,3 +3111,15 @@
  russian_republic.17.t:0 "Civil War!"
  russian_republic.17.d:0 "As the chaos reigned on, Russian Union chose to take matters into their own hands, seizing most of the more important locations in the Russian Republic. However, such an agressive move has provoked a reaction from the Social Conservative Party, with many of the members openly engaging in violence against paramilitaries of Vonsiatsky. Many former generals and politicians are calling for support against the new regime, even attracting many army units. While it's expected that this anti-Vonsiatsky revolt will be crushed, and at it's core, it's more of a uprising than actual civil war, it's undoubtedly is going to put a scar of the already exausted population.  "
  russian_republic.17.a:0 "To Victory!"
+ 
+ ###SER
+ serbia.100.t:0 "The Bosnian Revolt of 1934"
+ serbia.100.d:0 "The former Austro-Hungarian territory of Bosnia was incorporated into the Serbian state shortly after the fall of Habsburg Empire, despite both Bosniak and Croatian opposition. During years following the annexation, we have faced multiple open revolts against our rightful rule over the region. While every last one of them was crushed under the boots of Serbian army, no bullet was able to break the spirit of Bosnian people. Today, every major rebel group in the Bosnia has put aside their differences, and has united in a struggle against our government. Marxists, Nationalists, Muslims, Croatians and Liberals alike, are seizing the major locations throughout the country, leaving the unpreppared Serbian army in complete disarry, and forcing it to chaotically retreat out of the areas controlled by rebels, as the High Command is working day and night to come up with a plan to retake lost lands."
+ serbia.100.a:0 "Serbian Army is led by God!"
+ serbia.100.b:0 "Serbian tyranny will fall! (Play as Bosnia)"
+ 
+ ###PRS
+ prs_tt_1:0 "§YWillhelm II§  Dies! \n"
+ prs_tt_2:0 "§YVydūnas§  is the new Leader! \n"
+ prs_tt_3:0 "§YHess§  is the new Leader! \n"
+ prs_tt_4:0 "§YRosenberg§  is the new Leader! \n"

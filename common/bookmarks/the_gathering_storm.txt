@@ -2,14 +2,14 @@ bookmarks = {
 	bookmark = {
 		name = "GATHERING_STORM_NAME"
 		desc = "GATHERING_STORM_DESC"
-		date = 1934.1.1.12
+		date = 1934.1.1.1
 		picture = "GFX_select_date_1936"
 		default_country = "GER"
 		default = yes
 		
 		"FRA"={
 			history = "FRA_GATHERING_STORM_DESC"
-			ideology = democratic
+			ideology = social_liberal
 			ideas = {
 				FRA_victors_of_wwi
 				FRA_disjointed_government
@@ -23,7 +23,7 @@ bookmarks = {
 		}
 		"USA"={
 			history = "USA_GATHERING_STORM_DESC"
-			ideology = democratic
+			ideology = conservative
 			ideas = {
 				home_of_the_free
 				great_depression
@@ -37,7 +37,7 @@ bookmarks = {
 		}
 		"ENG"={
 			history = "ENG_GATHERING_STORM_DESC"
-			ideology = democratic
+			ideology = social_democracy
 			ideas = {
 				stiff_upper_lip
 				ENG_the_war_to_end_all_wars
@@ -65,7 +65,7 @@ bookmarks = {
 		}
 		"ITA"={
 			history = "ITA_GATHERING_STORM_DESC"
-			ideology = fascism
+			ideology = social_liberal
 			ideas = {
 				italia_irredenta
 				horrors_of_war
@@ -79,7 +79,7 @@ bookmarks = {
 		}
 		"JAP"={
 			history = "JAP_GATHERING_STORM_DESC"
-			ideology = fascism
+			ideology = authoritharian
 			ideas = {
 				state_shintoism
 			}	
@@ -108,36 +108,64 @@ bookmarks = {
 			history = "OTHER_GATHERING_STORM_DESC"
 		}
 
-
-		# minors from DLC ####
-		"HUN"={
-			minor = yes
-			history = "HUN_GATHERING_STORM_DESC"
-			ideology = neutrality
-			ideas = {
-				HUN_treaty_of_triannon
-			}
-			focuses = {
-				HUN_elect_a_king
-				HUN_secret_rearmament
-				HUN_renounce_the_treaty_of_trianon
-			}
+        "PRS" = {
+		  minor = yes
+		  history = ""
+		  ideology = reactionary
+		  ideas = {
+		  
+		  }
+		  focuses = {
+		  PRS_jngersjunta
+		  PRS_vydnasrules
+		  PRS_rosenbergspresidency
+		  }
 		}
-
-		"CRO"={
-			minor = yes
-			history = "CRO_GATHERING_STORM_DESC"
-			ideology = neutrality
-			ideas = {
-				HUN_treaty_of_triannon
-			}
-			focuses = {
-				HUN_elect_a_king
-				HUN_secret_rearmament
-				HUN_renounce_the_treaty_of_trianon
-			}
+		 "RDR" = {
+		  minor = yes
+		  history = ""
+		  ideology = conservative
+		  ideas = {
+		  
+		  }
+		  focuses = {
+		  
+		  }
 		}
-
+	   "CRO" = {
+		  minor = yes
+		  history = ""
+		  ideology = pelekist
+		  ideas = {
+		  
+		  }
+		  focuses = {
+		  
+		  }
+		}
+	   "LIT" = {
+		  minor = yes
+		  history = ""
+		  ideology = conservative
+		  ideas = {
+		  
+		  }
+		  focuses = {
+		  
+		  }
+		}
+		 "POL" = {
+		  minor = yes
+		  history = ""
+		  ideology = conservative
+		  ideas = {
+		  
+		  }
+		  focuses = {
+		  
+		  }
+		}
+		
 		effect = {
 			randomize_weather = 22345 # <- Obligatory in every bookmark !
 			#123 = { rain_light = yes }

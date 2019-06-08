@@ -657,7 +657,7 @@ id = SOV_locateaffectedareas
 icon = GFX_focus_SOV_locate_affected_areas
 x = 15
 y = 2
-cost = 10
+cost = 2
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_effectsoffamine } 
 ai_will_do = { 

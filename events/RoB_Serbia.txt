@@ -1,0 +1,52 @@
+#################
+###Serbian Events
+#################
+
+add_namespace = serbia
+
+
+###Bosnian Revolt
+
+country_event = {
+id = serbia.100
+title = serbia.100.t
+desc = serbia.100.d
+fire_only_once = yes
+picture = GFX_picture_bosnian_revolt
+
+trigger = {
+tag = SER
+date > 1934.6.7
+}
+mean_time_to_happen = { days = 1 }
+
+immediate = { BOS = { transfer_state = 104 } }
+
+option = {
+name = serbia.100.a
+add_political_power = -100
+add_stability = -0.1
+set_country_flag = bosnia_has_revolted
+}
+option = {
+name = serbia.100.b
+set_country_flag = bosnia_has_revolted
+BOS = { change_tag_from = SER }
+}
+}
+
+country_event = {
+id = serbia.101
+title = serbia.101.t
+desc = serbia.101.d
+fire_only_once = yes
+
+trigger = {
+has_country_flag = bosnia_has_revolted
+}
+
+hidden = yes
+
+immediate = { declare_war_on = { target = BOS  type = annex_everything } }
+
+}

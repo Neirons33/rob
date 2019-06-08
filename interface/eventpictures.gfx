@@ -1956,7 +1956,12 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/russia_civil_war_part_two.dds"
 	}
 	
-	
+	###BOS
+	spriteType = {
+		name = "GFX_picture_bosnian_revolt"
+		texturefile = "gfx/event_pictures/bosnian_revolt.tga"
+	}
+
 	
 	}
 

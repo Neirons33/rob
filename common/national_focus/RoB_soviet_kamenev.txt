@@ -1,9 +1,8 @@
 focus_tree = {
-	id = soviet_focus_tomsky
+	id = soviet_focus_kamenev
 	country = {
 		factor = 0
 	}
-default = no
 
 continuous_focus_position = { x = 50 y = 2000 }
 
@@ -13,9 +12,10 @@ shared_focus = SOV_bolsheviklandforces
 shared_focus = SOV_lookoutwards
 shared_focus = SOV_bolshevikairforces
 
-#Focus for Premier Tomsky
+
+#Focus for Premier Kamenev
 focus = { 
-id = SOV_premiertomsky
+id = SOV_premierkamenev
 icon = GFX_goal_unknown
 x = 5
 y = 1
@@ -24,354 +24,356 @@ available_if_capitulated = yes
 ai_will_do = { 
  factor = 1
  } 
+
  }
-#Focus for Calm down the workers
+
+ #Focus for Round up Union Leaders
 focus = { 
-id = SOV_calmdowntheworkers
+id = SOV_roundupunionleaders
 icon = GFX_goal_unknown
 x = 3
 y = 2
 cost = 10
 available_if_capitulated = yes 
-prerequisite = { focus = SOV_premiertomsky } 
+prerequisite = { focus = SOV_premierkamenev } 
 ai_will_do = { 
  factor = 1
  } 
 
  }
-
-#Focus for Call upon Union representatives
+ 
+ #Focus for Appoint Loyal Leaders
 focus = { 
-id = SOV_calluponunionrepresentatives
+id = SOV_appointloyalleaders
 icon = GFX_goal_unknown
 x = 3
 y = 3
 cost = 10
 available_if_capitulated = yes 
-prerequisite = { focus = SOV_calmdowntheworkers } 
+prerequisite = { focus = SOV_roundupunionleaders } 
 ai_will_do = { 
  factor = 1
  } 
 
  }
- 
- 
-#Focus for Announce end of the strike
+
+#Focus for End the Strike
 focus = { 
-id = SOV_announceendofthestrike
+id = SOV_endthestrike
 icon = GFX_goal_unknown
 x = 3
 y = 4
 cost = 10
 available_if_capitulated = yes 
-prerequisite = { focus = SOV_calluponunionrepresentatives } 
+prerequisite = { focus = SOV_appointloyalleaders } 
 ai_will_do = { 
  factor = 1
  } 
 
  }
- 
- #Focus for Call upon the Red Guard
+
+#Focus for Use VChK Squads
 focus = { 
-id = SOV_callupontheredguard
+id = SOV_usevchksquads
 icon = GFX_goal_unknown
 x = 7
 y = 2
 cost = 10
 available_if_capitulated = yes 
-prerequisite = { focus = SOV_premiertomsky } 
+prerequisite = { focus = SOV_premierkamenev } 
 ai_will_do = { 
  factor = 1
  } 
 
- } 
+ }
 
- #Focus for Call upon local militas
+#Focus for Use Red Guard
 focus = { 
-id = SOV_calluponlocalmilitas
+id = SOV_useredguard
 icon = GFX_goal_unknown
 x = 7
 y = 3
 cost = 10
 available_if_capitulated = yes 
-prerequisite = { focus = SOV_callupontheredguard } 
+prerequisite = { focus = SOV_usevchksquads } 
 ai_will_do = { 
  factor = 1
  } 
 
  }
-#Focus for Use spare police forces
+
+#Focus for Curbing the Unrest
 focus = { 
-id = SOV_usesparepoliceforces
+id = SOV_curbingtheunrest
 icon = GFX_goal_unknown
 x = 7
 y = 4
 cost = 10
 available_if_capitulated = yes 
-prerequisite = { focus = SOV_calluponlocalmilitas } 
+prerequisite = { focus = SOV_useredguard } 
 ai_will_do = { 
  factor = 1
  } 
 
  }
 
-#Focus for Syndicalist Russia
+#Focus for International Russia
 focus = { 
-id = SOV_syndicalistrussia
+id = SOV_internationalrussia
 icon = GFX_goal_unknown
 x = 5
 y = 5
 cost = 10
 available_if_capitulated = yes 
-prerequisite = { focus = SOV_announceendofthestrike } 
-prerequisite = { focus = SOV_usesparepoliceforces } 
+prerequisite = { focus = SOV_endthestrike } 
+prerequisite = { focus = SOV_curbingtheunrest } 
 ai_will_do = { 
  factor = 1
  } 
 
- }  
+ }
 
- #Focus for Abolsih Private Property
+#Focus for Destroying Urban Bourgeosie
 focus = { 
-id = SOV_abolsihprivateproperty
+id = SOV_destroyingurbanbourgeosie
 icon = GFX_goal_unknown
 x = 2
 y = 6
 cost = 10
 available_if_capitulated = yes 
-prerequisite = { focus = SOV_syndicalistrussia } 
+prerequisite = { focus = SOV_internationalrussia } 
 ai_will_do = { 
  factor = 1
  } 
 
  }
- 
- #Focus for Found rural communes
+
+#Focus for Redistribute Land
 focus = { 
-id = SOV_foundruralcommunes
+id = SOV_redistributeland
 icon = GFX_goal_unknown
 x = 2
 y = 7
 cost = 10
 available_if_capitulated = yes 
-prerequisite = { focus = SOV_abolsihprivateproperty } 
+prerequisite = { focus = SOV_destroyingurbanbourgeosie } 
 ai_will_do = { 
  factor = 1
  } 
 
- } 
+ }
 
-
-#Focus for Transform Trade Unions
+#Focus for Farming Modernization
 focus = { 
-id = SOV_transformtradeunions
+id = SOV_farmingmodernization
 icon = GFX_goal_unknown
 x = 2
 y = 8
 cost = 10
 available_if_capitulated = yes 
-prerequisite = { focus = SOV_foundruralcommunes } 
+prerequisite = { focus = SOV_redistributeland } 
 ai_will_do = { 
  factor = 1
  } 
 
  }
 
-#Focus for Worker Self-Managment
+
+#Focus for Expand Rural Infrastructure
 focus = { 
-id = SOV_workerselfmanagment
+id = SOV_expandruralinfrastructure
 icon = GFX_goal_unknown
 x = 2
 y = 9
 cost = 10
 available_if_capitulated = yes 
-prerequisite = { focus = SOV_transformtradeunions } 
+prerequisite = { focus = SOV_farmingmodernization } 
 ai_will_do = { 
  factor = 1
  } 
 
  }
 
- #Focus for Workplace Elections
+#Focus for Enforced Education
 focus = { 
-id = SOV_workplaceelections
+id = SOV_enforcededucation
 icon = GFX_goal_unknown
 x = 2
 y = 10
 cost = 10
 available_if_capitulated = yes 
-prerequisite = { focus = SOV_workerselfmanagment } 
+prerequisite = { focus = SOV_expandruralinfrastructure } 
 ai_will_do = { 
  factor = 1
  } 
 
  }
 
- #Focus for Weaken VChK
+#Focus for Purging Disloyal Elements
 focus = { 
-id = SOV_weakenvchk
+id = SOV_purgingdisloyalelements
 icon = GFX_goal_unknown
 x = 5
 y = 6
 cost = 10
 available_if_capitulated = yes 
-prerequisite = { focus = SOV_syndicalistrussia } 
+prerequisite = { focus = SOV_internationalrussia } 
 ai_will_do = { 
  factor = 1
  } 
 
- } 
+ }
 
- #Focus for Vlaslovist Purge
+#Focus for Expand Communist Youth
 focus = { 
-id = SOV_vlaslovistpurge
+id = SOV_expandcommunistyouth
 icon = GFX_goal_unknown
 x = 5
 y = 7
 cost = 10
 available_if_capitulated = yes 
-prerequisite = { focus = SOV_weakenvchk } 
+prerequisite = { focus = SOV_purgingdisloyalelements } 
 ai_will_do = { 
  factor = 1
  } 
 
  }
 
- #Focus for Arrest Old Bolsheviks
+#Focus for Expand Red Pionners
 focus = { 
-id = SOV_arrestoldbolsheviks
+id = SOV_expandredpionners
 icon = GFX_goal_unknown
 x = 5
 y = 8
 cost = 10
 available_if_capitulated = yes 
-prerequisite = { focus = SOV_vlaslovistpurge } 
+prerequisite = { focus = SOV_expandcommunistyouth } 
 ai_will_do = { 
  factor = 1
  } 
 
  }
- 
- 
-#Focus for People's Militia
+
+#Focus for Workers of Minorities
 focus = { 
-id = SOV_peoplesmilitia
+id = SOV_workersofminorities
 icon = GFX_goal_unknown
 x = 5
 y = 9
 cost = 10
 available_if_capitulated = yes 
-prerequisite = { focus = SOV_arrestoldbolsheviks } 
+prerequisite = { focus = SOV_expandredpionners } 
 ai_will_do = { 
  factor = 1
  } 
+}
 
- } 
- 
- #Focus for All-Russian Council of Workers
+#Focus for Soviet Identity
 focus = { 
-id = SOV_allrussiancouncilofworkers
+id = SOV_sovietidentity
 icon = GFX_goal_unknown
 x = 5
 y = 10
 cost = 10
 available_if_capitulated = yes 
-prerequisite = { focus = SOV_peoplesmilitia } 
+prerequisite = { focus = SOV_workersofminorities } 
 ai_will_do = { 
  factor = 1
  } 
 
  }
 
- #Focus for Expand Rural Education
+#Focus for Industrialization
 focus = { 
-id = SOV_expandruraleducation
+id = SOV_industrialization
 icon = GFX_goal_unknown
 x = 8
 y = 6
 cost = 10
 available_if_capitulated = yes 
-prerequisite = { focus = SOV_syndicalistrussia } 
+prerequisite = { focus = SOV_internationalrussia } 
 ai_will_do = { 
  factor = 1
  } 
 
- } 
+ }
 
-#Focus for Build more schools
+#Focus for Urbanization
 focus = { 
-id = SOV_buildmoreschools
+id = SOV_urbanization
 icon = GFX_goal_unknown
 x = 8
 y = 7
 cost = 10
 available_if_capitulated = yes 
-prerequisite = { focus = SOV_expandruraleducation } 
+prerequisite = { focus = SOV_industrialization } 
 ai_will_do = { 
  factor = 1
  } 
 
  }
 
-#Focus for Expand education possibilites
+#Focus for Forced Labor
 focus = { 
-id = SOV_expandeducationpossibilites
+id = SOV_forcedlabor
 icon = GFX_goal_unknown
 x = 8
 y = 8
 cost = 10
 available_if_capitulated = yes 
-prerequisite = { focus = SOV_buildmoreschools } 
+prerequisite = { focus = SOV_urbanization } 
 ai_will_do = { 
  factor = 1
  } 
 
  }
 
- #Focus for Agrarian Syndicates
+#Focus for Buy Foreign Technology
 focus = { 
-id = SOV_agrariansyndicates
+id = SOV_buyforeigntechnology
 icon = GFX_goal_unknown
 x = 8
 y = 9
 cost = 10
 available_if_capitulated = yes 
-prerequisite = { focus = SOV_expandeducationpossibilites } 
+prerequisite = { focus = SOV_forcedlabor } 
 ai_will_do = { 
  factor = 1
  } 
 
  }
 
- #Focus for Implement Syndicalist Elections
+#Focus for Focusing on Civilian Industry
 focus = { 
-id = SOV_implementsyndicalistelections
+id = SOV_focusingoncivilianindustry
 icon = GFX_goal_unknown
 x = 8
 y = 10
 cost = 10
 available_if_capitulated = yes 
-prerequisite = { focus = SOV_agrariansyndicates } 
+prerequisite = { focus = SOV_buyforeigntechnology } 
 ai_will_do = { 
  factor = 1
  } 
 
- } 
-#Focus for United We Work
+ }
+
+#Focus for Workers of the World, Unite!
 focus = { 
-id = SOV_unitedwework
+id = SOV_workersoftheworldunite
 icon = GFX_goal_unknown
 x = 5
 y = 11
 cost = 10
 available_if_capitulated = yes 
-prerequisite = { focus = SOV_implementsyndicalistelections } 
-prerequisite = { focus = SOV_allrussiancouncilofworkers } 
-prerequisite = { focus = SOV_workplaceelections } 
+prerequisite = { focus = SOV_enforcededucation } 
+prerequisite = { focus = SOV_sovietidentity } 
+prerequisite = { focus = SOV_focusingoncivilianindustry } 
 ai_will_do = { 
  factor = 1
  } 
 
- }
+ }  
+  
 
 }

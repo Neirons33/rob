@@ -1,0 +1,712 @@
+##################
+###Prussian Events
+##################
+
+add_namespace = prussia
+
+
+country_event = {  ###Prussia in 1934
+id = prussia.1
+title = prussia.1.t
+desc = prussia.1.d
+fire_only_once = yes
+
+trigger = {
+tag = PRS
+date > 1934.1.1
+}
+mean_time_to_happen = { days = 2 }
+
+
+option = {
+name = prussia.1.a
+add_political_power = 10
+}
+}
+
+country_event = {
+id = prussia.19
+title = prussia.19.t
+desc = prussia.19.d
+fire_only_once = yes
+is_triggered_only = yes
+hidden = yes
+
+immediate = { country_event = { 
+id = prussia.2
+days = 20
+}
+}
+}
+
+
+country_event = { ###Prepare for Kaiser's Birthday
+id = prussia.2
+title = prussia.2.t
+desc = prussia.2.d
+fire_only_once = yes
+is_triggered_only = yes
+
+mean_time_to_happen = { days = 1 }
+option = {  ###Big Celebration
+name = prussia.2.a
+ai_chance = {
+			factor = 30
+		}
+add_political_power = 50
+set_country_flag = big_birthday
+hidden_effect = { country_event = { 
+id = prussia.3
+days = 10
+}
+}
+}
+
+option = { ###Smaller Celebration
+name = prussia.2.b
+ai_chance = {
+			factor = 10
+		}
+add_political_power = 20
+set_country_flag = small_birthday
+}
+}
+
+country_event = { ###Attack on Kaiser's Life
+id = prussia.3
+title = prussia.3.t
+desc = prussia.3.d
+fire_only_once = yes
+
+trigger = {
+tag = PRS
+date > 1934.1.27
+has_country_flag = big_birthday
+}
+mean_time_to_happen = { days = 1 }
+
+option = {  ###Kaiser Dies!
+name = prussia.3.a
+
+set_country_flag = kaiser_dead
+
+
+hidden_effect = { retire_country_leader = yes }
+hidden_effect = { create_country_leader = {
+	name = "Prussian Reichstag"
+	desc = ""
+	picture = "Reichstag.tga"
+	expire = "1953.3.1"
+	ideology = reactionary
+	traits = {
+		#
+	}
+} 
+}
+add_stability = -0.15
+custom_effect_tooltip = prs_tt_1
+}
+}
+
+
+country_event = {  ###Pelekists Clash
+id = prussia.4
+title = prussia.4.t
+desc = prussia.4.d
+fire_only_once = yes
+
+trigger = {
+tag = PRS
+date > 1934.2.5
+}
+
+mean_time_to_happen = { days = 1 }
+
+option = {  ###End the bloodbath
+name = prussia.4.a
+ai_chance = {
+			factor = 20
+		}
+trigger = { has_country_flag = kaiser_dead }
+set_country_flag = talks_between_pelekists
+add_political_power =-50
+add_stability =-0.05
+add_popularity = {ideology = pelekist popularity =0.06}
+}
+
+option = { ###Status Que
+name = prussia.4.b
+ai_chance = {
+			factor = 20
+		}
+add_political_power = 25
+add_popularity = {ideology = pelekist popularity =-0.02}
+}
+
+option = { ###Ban Pelekist Organizations
+name = prussia.4.c
+ai_chance = {
+			factor = 120
+		}
+trigger = { has_country_flag = kaiser_alive }
+
+add_political_power = 100
+add_stability = 0.05
+set_country_flag = pelekists_banned
+add_popularity = {ideology = pelekist popularity =-0.1}
+}
+}
+
+country_event = {  ###Small Celebration; Kaiser Survives
+id = prussia.5
+title = prussia.5.t
+desc = prussia.5.d
+fire_only_once = yes
+
+trigger = {
+tag = PRS
+date = 1934.1.27
+has_country_flag = small_birthday
+}
+mean_time_to_happen = { days = 1 }
+
+option = { ###Fine!
+name = prussia.5.a
+add_political_power = 25
+set_country_flag = kaiser_alive
+}
+}
+
+country_event = { ###Pelekists Unite!
+id = prussia.6
+title = prussia.6.t
+desc = prussia.6.d
+fire_only_once = yes
+
+trigger = {
+tag = PRS
+date = 1934.3.1
+has_country_flag = talks_between_pelekists
+}
+mean_time_to_happen = { days = 1 }
+
+option = { ###Alright!
+name = prussia.6.a
+add_political_power = -25
+set_country_flag = pelekists_united
+add_popularity = {ideology = pelekist popularity =0.12}
+}
+
+}
+
+country_event = { ###Pelekists Destroyed!
+id = prussia.7
+title = prussia.7.t
+desc = prussia.7.d
+fire_only_once = yes
+
+trigger = {
+tag = PRS
+date = 1934.3.1
+has_country_flag = pelekists_banned
+}
+mean_time_to_happen = { days = 1 }
+
+option = { ###Good ridance!
+name = prussia.7.a
+add_political_power = 40
+set_country_flag = pelekists_destroyed
+add_popularity = {ideology = pelekist popularity =-0.15}
+}
+
+}
+
+###############################
+#######Future of Prussia Events
+###############################
+
+country_event = { ###Future of Prussia
+id = prussia.8
+title = prussia.8.t
+desc = prussia.8.d
+fire_only_once = yes
+
+trigger = { 
+tag = PRS
+date > 1934.2.10
+has_country_flag = kaiser_dead
+}
+mean_time_to_happen = { days = 2 }
+
+
+option = { ###Invite Army
+name = prussia.8.a
+ai_chance = {
+			factor = 20
+		}
+add_political_power = -80
+set_country_flag = military_takeover
+add_popularity = {ideology = reactionary popularity =0.1}
+}
+
+option = { ###Reform Democracy
+name = prussia.8.b
+ai_chance = {
+			factor = 10
+		}
+add_political_power = 80
+set_country_flag = democratic_elections
+add_popularity = {ideology = reactionary popularity =-0.15}
+add_popularity = {ideology = social_liberal popularity =0.05}
+add_popularity = {ideology = social_democracy popularity =0.05}
+add_popularity = {ideology = conservative popularity =0.05}
+
+}
+}
+
+country_event = {  ###Junger's Junta
+id = prussia.9
+title = prussia.9.t
+desc = prussia.9.d
+fire_only_once = yes
+
+
+trigger = {
+tag = PRS
+has_country_flag = military_takeover
+}
+mean_time_to_happen = { days = 2 }
+
+option = { ###Ok
+name = prussia.9.a
+add_political_power = 120
+set_country_flag = jungersjunta
+
+create_country_leader = {
+	name = "Ernst Jünger"
+	desc = ""
+	picture = "ErnstJunger.tga"
+	expire = "1998.2.17"
+	ideology = reactionary
+	traits = {
+		#
+	}
+}
+
+hidden_effect = { retire_country_leader = yes }
+add_popularity = {ideology = reactionary popularity =0.3}
+}
+}
+
+
+country_event = { ###Democratic Elections
+
+id = prussia.10
+title = prussia.10.t
+desc = prussia.10.d
+fire_only_once = yes
+
+trigger = {
+tag = PRS
+has_country_flag = democratic_elections
+}
+mean_time_to_happen = { days = 4 }
+
+option = { ###SPD Victory
+name = prussia.10.a
+ai_chance = {
+			factor = 10
+		}
+set_politics = {
+ruling_party = social_democracy
+elections_allowed = yes
+}
+add_popularity = {ideology = social_democracy popularity =0.25}
+add_political_power = 100
+add_stability = 0.03
+set_country_flag = spd_victory
+}
+
+option = { ###DDP Victory
+name = prussia.10.b
+ai_chance = {
+			factor = 20
+		}
+set_politics = {
+ruling_party = social_liberal
+elections_allowed = yes
+}
+add_popularity = {ideology = social_liberal popularity =0.25}
+add_political_power = 100
+add_stability = 0.07
+set_country_flag = ddp_victory
+}
+
+option = { ###DNVP Victory
+name = prussia.10.c
+ai_chance = {
+			factor = 40
+		}
+set_politics = {
+ruling_party = conservative
+elections_allowed = yes
+}
+add_popularity = {ideology = conservative popularity =0.25}
+add_political_power = 100
+add_stability = 0.1
+set_country_flag = dnvp_victory
+}
+}
+
+
+##################
+###Pelekist Events
+##################
+
+country_event = { #March on Konigsberg
+id = prussia.11
+title = prussia.11.t
+desc = prussia.11.d
+fire_only_once = yes
+
+trigger = {
+tag = PRS
+date = 1934.4.20
+has_country_flag = pelekists_united
+OR = {
+has_country_flag = ddp_victory
+has_country_flag = spd_victory
+}
+}
+mean_time_to_happen = { days = 1 }
+
+option = { ###Pelekists take over
+name = prussia.11.a
+set_politics = {
+ruling_party = pelekist
+elections_allowed = no
+}
+add_popularity = {ideology = pelekist popularity =0.4}
+add_political_power = 120
+add_stability = -0.15
+set_country_flag = pelekist_victory
+
+}
+}
+
+country_event = { ###The Great Debate
+id = prussia.12
+title = prussia.12.t
+desc = prussia.12.d
+fire_only_once = yes
+
+
+trigger = {
+tag = PRS
+has_country_flag = pelekist_victory
+}
+
+mean_time_to_happen = { days = 2 }
+
+option = { ###lets get to work
+name = prussia.12.a
+add_political_power = 30
+set_country_flag = debate_starts
+hidden_effect = {
+
+set_country_flag = {
+flag = prs_lithuanian_faction
+value = 0
+}
+set_country_flag = {
+flag = prs_rosenbergs_faction
+value = 0
+}
+
+set_country_flag = {
+flag = prs_rhess_faction
+value = 0
+}
+
+}
+}
+}
+
+
+country_event = { ###Status of Lithuanians
+id = prussia.13
+title = prussia.13.t
+desc = prussia.13.d
+fire_only_once = yes
+
+trigger = {
+tag = PRS
+has_country_flag = debate_starts
+}
+mean_time_to_happen = { days = 2 }
+
+option = {  ###Favor Lithuanians
+name = prussia.13.a
+ai_chance = {
+			factor = 10
+		}
+modify_country_flag = {
+flag = prs_lithuanian_faction
+value = 2
+}
+add_political_power = -100
+add_stability = -0.05
+set_country_flag = lithuanian_question_solved
+}
+
+option = {  ###Equal Rights
+name = prussia.13.b
+ai_chance = {
+			factor = 40
+		}
+modify_country_flag = {
+flag = prs_rosenbergs_faction
+value = 2
+}
+add_political_power = -50
+add_stability = -0.02
+set_country_flag = lithuanian_question_solved
+}
+
+option = {  ###Favor Germans
+name = prussia.13.c
+ai_chance = {
+			factor = 20
+		}
+modify_country_flag = {
+flag = prs_rhess_faction
+value = 2
+}
+add_political_power = 100
+add_stability = 0.05
+set_country_flag = lithuanian_question_solved
+}
+}
+
+country_event = { ###Status of Poles
+id = prussia.14
+title = prussia.14.t
+desc = prussia.14.d
+fire_only_once = yes
+
+trigger = {
+tag = PRS
+has_country_flag = lithuanian_question_solved
+}
+mean_time_to_happen = { days = 2 }
+
+
+option = {  ###Equal Rights for Poles
+name = prussia.14.a
+ai_chance = {
+			factor = 20
+		}
+modify_country_flag = {
+flag = prs_rosenbergs_faction
+value = 2
+}
+set_country_flag = polish_question_solved
+add_political_power = -50
+add_stability = -0.05
+}
+
+option = {  ###Repressions Against Poles
+name = prussia.14.b
+ai_chance = {
+			factor = 20
+		}
+modify_country_flag = {
+flag = prs_lithuanian_faction
+value = 1
+}
+modify_country_flag = {
+flag = prs_rhess_faction
+value = 1
+}
+set_country_flag = polish_question_solved
+add_political_power = 80
+add_stability = 0.03
+}
+}
+
+country_event = { ###System of government
+id = prussia.15
+title = prussia.15.t
+desc = prussia.15.d
+fire_only_once = yes
+
+trigger = {
+tag = PRS
+has_country_flag = polish_question_solved
+}
+mean_time_to_happen = { days = 2 }
+
+
+option = {  ###Strong Leader
+name = prussia.15.a
+ai_chance = {
+			factor = 10
+		}
+modify_country_flag = {
+flag = prs_lithuanian_faction
+value = 1
+}
+modify_country_flag = {
+flag = prs_rhess_faction
+value = 1
+}
+add_political_power = 120
+}
+
+option = {  ###Strong Council
+name = prussia.15.b
+ai_chance = {
+			factor = 20
+		}
+modify_country_flag = {
+flag = prs_rosenbergs_faction
+value = 2
+}
+add_political_power = -80
+}
+}
+
+country_event = { ###LT Victory
+id = prussia.16
+title = prussia.16.t
+desc = prussia.16.d
+fire_only_once = yes
+
+trigger = {
+has_country_flag = {
+flag = prs_lithuanian_faction
+value > 2
+}
+}
+
+mean_time_to_happen = { days = 2 }
+
+option = { ###Vydūnas takeover
+name = prussia.16.a
+add_political_power = 50
+custom_effect_tooltip = prs_tt_2
+
+hidden_effect = {
+create_country_leader = {
+	name = "Vydūnas"
+	desc = ""
+	picture = "Vydūnas.tga"
+	expire = "1953.3.1"
+	ideology = pelekist
+	traits = {
+		#
+	}
+}
+}
+hidden_effect = { add_popularity = { ideology = pelekist popularity =0.2} }
+set_country_flag = vyddunas_victory
+}
+}
+
+country_event = { ###TS Victory - Hess
+id = prussia.17
+title = prussia.17.t
+desc = prussia.17.d
+fire_only_once = yes
+
+trigger = {
+has_country_flag = {
+flag = prs_rhess_faction
+value > 2
+}
+
+mean_time_to_happen = { days = 2 }
+
+option = { ###Hess takeover
+name = prussia.17.a
+add_political_power = 120
+custom_effect_tooltip = prs_tt_3
+
+hidden_effect = {
+create_country_leader = {
+	name = "Rudolf Hess"
+	desc = ""
+	picture = "RudolfHess.tga"
+	expire = "1953.3.1"
+	ideology = pelekist
+	traits = {
+		#
+	}
+}
+}
+hidden_effect = { add_popularity = { ideology = pelekist popularity =0.2} }
+set_country_flag = hess_victory
+}
+}
+
+country_event = { ###TS Victory - Rosenberg
+id = prussia.17
+title = prussia.17.t
+desc = prussia.17.d
+fire_only_once = yes
+
+trigger = {
+has_country_flag = {
+flag = prs_rosenbergs_faction
+value > 2
+}
+}
+
+mean_time_to_happen = { days = 2 }
+
+option = { ###Rosenbergs takeover
+name = prussia.17.a
+add_political_power = 120
+custom_effect_tooltip = prs_tt_4
+
+hidden_effect = {
+create_country_leader = {
+	name = "Alfred Rosenberg"
+	desc = ""
+	picture = "AlfredRosenberg.tga"
+	expire = "1953.3.1"
+	ideology = pelekist
+	traits = {
+		#
+	}
+}
+}
+hidden_effect = { add_popularity = { ideology = pelekist popularity =0.2} }
+set_country_flag = rosenberg_victory
+}
+}
+
+country_event = {
+id = prussia.18
+title = prussia.18.t
+desc = prussia.18.d
+fire_only_once = yes
+hidden = yes
+
+trigger = {
+has_country_flag = {
+flag = prs_rosenbergs_faction
+value > 1
+}
+has_country_flag = {
+flag = prs_lithuanian_faction
+value > 1
+}
+has_country_flag = {
+flag = prs_rosenbergs_faction
+value > 1
+}
+mean_time_to_happen = { days = 2 }
+}
+immediate = { PRS = { country_event = { id = prussia.17 } } }
+}

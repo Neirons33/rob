@@ -54,4 +54,9 @@ on_actions = {
 			}
 		}
 	}
+	on_startup = {
+        effect = {
+            PRS = { country_event = { id = prussia.19 } }
+        }
+    }
 }

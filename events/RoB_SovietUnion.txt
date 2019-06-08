@@ -491,6 +491,7 @@ fire_only_once = yes
 
 option = {
 name = bolshevik_russia.19.a
+load_focus_tree = soviet_focus_molotov
 create_country_leader = {
 	name = "Vyacheslav Molotov"
 	desc = ""
@@ -585,6 +586,7 @@ mean_time_to_happen =  { days = 3 }
 
 option = {
 name = bolshevik_russia.22.a
+load_focus_tree = soviet_focus_bukharin
 add_popularity = { ideology = democratic_socialist = 0.10 }
 create_country_leader = {
 	name = "Nikolai Ivanovich Bukharin"
@@ -833,6 +835,7 @@ picture = GFX_picture_kamenev_seizes_power
  mean_time_to_happen = { days = 3 }
 option = {
 name = bolshevik_russia.32.a
+load_focus_tree = soviet_focus_kamenev
 set_politics = {
 ruling_party = socialist
 elections_allowed = no
@@ -857,6 +860,7 @@ mean_time_to_happen = { days = 2 }
 
 option = {
 name = bolshevik_russia.32.a
+load_focus_tree = soviet_focus_zinoviev
 create_country_leader = {
 	name = "Grigory Yevseyevich Zinoviev"
 	desc = ""

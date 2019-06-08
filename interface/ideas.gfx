@@ -3341,4 +3341,12 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/mass_unrest.tga"
 	}
 	
+	###BOS
+	
+	spriteType = {
+		name = "GFX_idea_bosnian_uprising"
+		texturefile = "gfx/interface/ideas/bosnian_uprising.tga"
+	}
+	
+	
 }

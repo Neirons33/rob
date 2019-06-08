@@ -16,6 +16,10 @@ set_technology = {
 	
 }
 
+add_ideas = {
+bosnian_uprising
+}
+
 if = {
 	limit = {
 		not = { has_dlc = "Man the Guns" }
@@ -40,18 +44,32 @@ if = {
 }
 
 set_politics = {
-
-	parties = {
-		fascism = { 
-			popularity = 33
-		}
-		neutrality = { 
-			popularity = 33
-		}		
-		communism = {
-			popularity = 34
-		}
-	}
+	ruling_party = reactionary
+	last_election = "1934.6.7"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	national_socialist = 8
+	socialist = 11
+	democratic_socialist = 8
+	social_democracy = 9
+	social_liberal = 11
+	conservative = 7
+	authoritharian = 14
+	reactionary = 30
+	pelekist = 2
 }
 
+
+create_country_leader = {
+	name = "Muhamed Hadžiefendić"
+	desc = ""
+	picture = "MuhamedHadziefendic.tga"
+	expire = "1953.3.1"
+	ideology = reactionary
+	traits = {
+		#
+	}
+}
 
