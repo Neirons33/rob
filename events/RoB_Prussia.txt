@@ -708,5 +708,5 @@ value > 1
 }
 mean_time_to_happen = { days = 2 }
 }
-immediate = { PRS = { country_event = { id = prussia.17 } } }
+immediate = { PRS = { country_event = { id = prussia.18 } } }
 }
