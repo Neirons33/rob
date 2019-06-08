@@ -648,6 +648,7 @@ hidden_effect = { add_popularity = { ideology = pelekist popularity =0.2} }
 set_country_flag = hess_victory
 }
 }
+}
 
 country_event = { ###TS Victory - Rosenberg
 id = prussia.18
@@ -673,7 +674,7 @@ hidden_effect = {
 create_country_leader = {
 	name = "Alfred Rosenberg"
 	desc = ""
-	picture = "AlfredRosenberg.tga"
+	picture = "Alfred_Rosenberg.tga"
 	expire = "1953.3.1"
 	ideology = pelekist
 	traits = {
