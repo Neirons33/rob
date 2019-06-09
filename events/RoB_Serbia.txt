@@ -29,13 +29,11 @@ name = serbia.100.a
 add_political_power = -100
 add_stability = -0.1
 set_country_flag = bosnia_has_revolted
-SER = { country_event = { id = serbia.101 days = 10 } }
 }
 option = {
 name = serbia.100.b
 set_country_flag = bosnia_has_revolted
 BOS = { change_tag_from = SER }
-SER = { country_event = { id = serbia.101 days = 10 } }
 }
 }
 
@@ -44,7 +42,10 @@ id = serbia.101
 title = serbia.101.t
 desc = serbia.101.d
 fire_only_once = yes
-is_triggered_only = yes
+
+trigger = {
+has_country_flag = bosnia_has_revolted
+}
 
 hidden = yes
 
