@@ -1,0 +1,730 @@
+##########################
+###Socialist German Events
+##########################
+
+add_namespace = spartakus_germany
+
+
+country_event = { ###Germany in 1934
+id = spartakus_germany.1
+title = spartakus_germany.1.t
+desc = spartakus_germany.1.d
+fire_only_once = yes
+
+trigger = {
+tag = GER
+date > 1934.1.1
+}
+mean_time_to_happen = { days = 2 }
+
+option = {
+name = spartakus_germany.1.a
+add_political_power = 10
+}
+}
+
+######################
+###Partisan Events####
+######################
+
+
+country_event = { ###Anti-Partisan Action
+id = spartakus_germany.2
+title = spartakus_germany.2.t
+desc = spartakus_germany.2.d
+fire_only_once = yes
+
+trigger = {
+tag = GER
+date > 1934.1.20
+}
+mean_time_to_happen = { days = 2 }
+
+option = {
+name = spartakus_germany.2.a
+set_country_flag = anti_partisan_campaing
+set_country_flag = north_german_partisans
+set_variable = { southern_partisan_strenght = 63 }
+set_variable = { northern_partisan_strenght = 41 }
+}
+option = {
+name = spartakus_germany.2.b
+set_country_flag = anti_partisan_campaing
+set_country_flag = south_german_partisans
+set_variable = { northern_partisan_strenght = 41 }
+set_variable = { southern_partisan_strenght = 63 }
+}
+}
+
+country_event = { ###South falls, relocate north
+id = spartakus_germany.3
+title = spartakus_germany.3.t
+desc = spartakus_germany.3.d
+fire_only_once = yes
+
+trigger = {
+tag = GER
+has_country_flag = south_falls
+}
+option = { ###go north
+name = spartakus_germany.3.a
+set_country_flag = north_german_partisans
+}
+}
+
+country_event = { ###north falls, relocate south
+id = spartakus_germany.4
+title = spartakus_germany.4.t
+desc = spartakus_germany.4.d
+fire_only_once = yes
+
+trigger = {
+tag = GER
+has_country_flag = south_falls
+}
+option = { ###go south
+name = spartakus_germany.4.a
+set_country_flag = south_german_partisans
+}
+}
+
+country_event = { ###north holds, relocate south
+id = spartakus_germany.5
+title = spartakus_germany.5.t
+desc = spartakus_germany.5.d
+fire_only_once = yes
+
+trigger = {
+tag = GER
+has_country_flag = north_holds
+}
+option = { ###go south
+name = spartakus_germany.5.a
+set_country_flag = south_german_partisans
+}
+}
+
+country_event = { ###south holds, relocate north
+id = spartakus_germany.6
+title = spartakus_germany.6.t
+desc = spartakus_germany.6.d
+fire_only_once = yes
+
+trigger = {
+tag = GER
+has_country_flag = south_holds
+}
+option = { ###go south
+name = spartakus_germany.6.a
+set_country_flag = north_german_partisans
+}
+}
+
+######################
+###Political Events###
+######################
+
+country_event = { ###Second All-German Congress
+id = spartakus_germany.7
+title = spartakus_germany.7.t
+desc = spartakus_germany.7.d
+fire_only_once = yes
+
+trigger = {
+tag = GER
+date > 1934.5.8
+}
+
+option = { ###lets get to work
+name = spartakus_germany.6.a
+add_political_power = 50
+set_country_flag = GER_debate_begins
+GER = { country_event = { id = spartakus_germany.8 days = 7 } }
+set_country_flag = {
+flag = GER_national_bolsheviks
+value = 0
+}
+set_country_flag = {
+flag = GER_luxembourgists
+value = 0
+}
+set_country_flag = {
+flag = GER_democrats
+value = 0
+}
+}
+}
+
+country_event = { ###Economic Policy
+id = spartakus_germany.8
+title = spartakus_germany.8.t
+desc = spartakus_germany.8.d
+fire_only_once = yes
+is_triggered_only = yes
+
+option = { ###Focus on agriculture, state socialism 
+name = spartakus_germany.8.a
+add_political_power = -30
+add_stability =-0.03
+modify_country_flag = {
+flag = GER_national_bolsheviks
+value = 1
+}
+add_popularity = { ideology = national_socialist popularity =0.03}
+GER = { country_event = { id = spartakus_germany.9 days = 7 } }
+}
+option = { ###Keep the current policy
+name = spartakus_germany.8.b
+add_political_power = 80
+add_stability =0.03
+modify_country_flag = {
+flag = GER_luxembourgists
+value = 1
+}
+add_popularity = { ideology = socialist popularity =0.03}
+GER = { country_event = { id = spartakus_germany.9 days = 7 } }
+}
+option = {  ###Focus on worker-based economy
+name = spartakus_germany.8.c
+add_political_power =-10
+modify_country_flag = {
+flag = GER_democrats
+value = 1
+}
+add_popularity = { ideology = democratic_socialist popularity =0.03}
+GER = { country_event = { id = spartakus_germany.9 days = 7 } }
+}
+}
+
+country_event = { ###Military Policy
+id = spartakus_germany.9
+title = spartakus_germany.9.t
+desc = spartakus_germany.9.d
+fire_only_once = yes
+is_triggered_only = yes
+
+option = { ###Strong, centralized army 
+name = spartakus_germany.9.a
+add_political_power = 70
+modify_country_flag = {
+flag = GER_national_bolsheviks
+value = 1
+}
+add_popularity = { ideology = national_socialist popularity =0.03}
+GER = { country_event = { id = spartakus_germany.10 days = 7 } }
+}
+option = { ###Focus on Rotkorps
+name = spartakus_germany.9.b
+add_political_power = 20
+modify_country_flag = {
+flag = GER_luxembourgists
+value = 1
+}
+add_popularity = { ideology = socialist popularity =0.03}
+GER = { country_event = { id = spartakus_germany.10 days = 7 } }
+}
+option = {  ###Democratic, decentralized army
+name = spartakus_germany.9.c
+add_political_power =-30
+modify_country_flag = {
+flag = GER_democrats
+value = 1
+}
+add_popularity = { ideology = democratic_socialist popularity =0.03}
+GER = { country_event = { id = spartakus_germany.10 days = 7 } }
+}
+}
+
+country_event = { ###Dissent Policy
+id = spartakus_germany.10
+title = spartakus_germany.10.t
+desc = spartakus_germany.10.d
+fire_only_once = yes
+is_triggered_only = yes
+
+option = { ###Kill them all! 
+name = spartakus_germany.10.a
+add_political_power = -120
+add_stability =-0.05
+modify_country_flag = {
+flag = GER_national_bolsheviks
+value = 1
+}
+GER = { country_event = { id = spartakus_germany.11 days = 7 } }
+add_popularity = { ideology = national_socialist popularity =0.03}
+}
+option = { ###Keep curbing them
+name = spartakus_germany.10.b
+add_political_power = -70
+add_stability = -0.03
+modify_country_flag = {
+flag = GER_luxembourgists
+value = 1
+}
+add_popularity = { ideology = socialist popularity =0.03}
+GER = { country_event = { id = spartakus_germany.11 days = 7 } }
+}
+option = {  ###Reform them n shieet
+name = spartakus_germany.10.c
+add_political_power = 100
+add_stability = 0.04
+modify_country_flag = {
+flag = GER_democrats
+value = 1
+}
+add_popularity = { ideology = democratic_socialist popularity =0.03}
+GER = { country_event = { id = spartakus_germany.11 days = 7 } }
+}
+}
+
+country_event = { ###Diplomacy 
+id = spartakus_germany.11
+title = spartakus_germany.11.t
+desc = spartakus_germany.11.d
+fire_only_once = yes
+is_triggered_only = yes
+
+option = { ###Revaschism 
+name = spartakus_germany.11.a
+add_political_power = -60
+add_stability =-0.05
+modify_country_flag = {
+flag = GER_national_bolsheviks
+value = 1
+}
+GER = { country_event = { id = spartakus_germany.12 days = 7 } }
+add_popularity = { ideology = national_socialist popularity =0.03}
+}
+option = { ###Support other socialists
+name = spartakus_germany.11.b
+add_political_power = 90
+modify_country_flag = {
+flag = GER_luxembourgists
+value = 1
+}
+add_popularity = { ideology = socialist popularity =0.03}
+GER = { country_event = { id = spartakus_germany.12 days = 7 } }
+}
+option = {  ###Isolatiosim
+name = spartakus_germany.11.c
+add_political_power = 40
+modify_country_flag = {
+flag = GER_democrats
+value = 1
+}
+add_popularity = { ideology = democratic_socialist popularity =0.03}
+GER = { country_event = { id = spartakus_germany.12 days = 7 } }
+}
+}
+
+country_event = { ###Position of Chairman 
+id = spartakus_germany.12
+title = spartakus_germany.12.t
+desc = spartakus_germany.12.d
+fire_only_once = yes
+is_triggered_only = yes
+
+option = { ###Empower chairman 
+name = spartakus_germany.12.a
+add_political_power = -100
+modify_country_flag = {
+flag = GER_national_bolsheviks
+value = 1
+}
+GER = { country_event = { id = spartakus_germany.13 days = 1 } }
+add_popularity = { ideology = national_socialist popularity =0.03}
+}
+option = { ###Support other socialists
+name = spartakus_germany.12.b
+add_political_power = 90
+modify_country_flag = {
+flag = GER_luxembourgists
+value = 1
+}
+add_popularity = { ideology = socialist popularity =0.03}
+GER = { country_event = { id = spartakus_germany.13 days = 1 } }
+}
+option = {  ###Isolatiosim
+name = spartakus_germany.12.c
+add_political_power = 40
+modify_country_flag = {
+flag = GER_democrats
+value = 1
+}
+add_popularity = { ideology = democratic_socialist popularity =0.03}
+GER = { country_event = { id = spartakus_germany.12 days = 7 } }
+}
+}
+
+country_event = { ###Congress Ends
+id = spartakus_germany.13
+title = spartakus_germany.13.t
+desc = spartakus_germany.13.d
+fire_only_once = yes
+is_triggered_only = yes
+
+option = { ###National Bolshevik Victory
+name = spartakus_germany.13.a
+trigger = { has_country_flag = { 
+flag = GER_national_bolsheviks 
+value > 2 } 
+}
+add_political_power = 120
+add_popularity = { ideology = national_socialist popularity =0.1}
+set_politics = {
+ruling_party = national_socialist
+elections_allowed = no
+}
+set_country_flag = GER_nb_vitory
+}
+
+option = { ###Luxembourgist Victory
+name = spartakus_germany.13.b
+trigger = { has_country_flag = { 
+flag = GER_luxembourgists 
+value > 2 
+} 
+}
+add_political_power = 120
+add_popularity = { ideology = socialist popularity =0.05}
+set_country_flag = GER_lux_victory
+}
+
+option = { ###Democratic Coallition Victory
+name = spartakus_germany.13.c
+trigger = { has_country_flag = { 
+flag = GER_democrats 
+value > 2 
+} 
+}
+add_political_power = 120
+add_popularity = { ideology = democratic_socialist popularity =0.1}
+set_politics = {
+ruling_party = democratic_socialist
+elections_allowed = no
+}
+set_country_flag = GER_dem_victory
+}
+
+option = { ###NB-L Coalition
+name = spartakus_germany.13.d
+trigger = { has_country_flag = { 
+flag = GER_democrats 
+value < 3 
+}
+has_country_flag = { 
+flag = GER_national_bolsheviks 
+value < 3 
+}
+has_country_flag = { 
+flag = GER_luxembourgists
+value < 3 
+} 
+}
+add_political_power = 120
+add_popularity = { ideology = socialist popularity =0.06}
+add_popularity = { ideology = national_socialist popularity =0.04}
+set_country_flag = GER_lux_nb_victory
+hidden_effect = { create_country_leader = {
+	name = "Gregor Strasser"
+	desc = ""
+	picture = "GregorStrasser.tga"
+	expire = "1953.3.1"
+	ideology = socialism
+	traits = {
+		#
+	}
+} 
+}
+}
+
+option = { ###DS-L Coalition
+name = spartakus_germany.13.e
+trigger = { has_country_flag = { 
+flag = GER_democrats 
+value < 3 
+}
+has_country_flag = { 
+flag = GER_national_bolsheviks 
+value < 3 
+}
+has_country_flag = { 
+flag = GER_luxembourgists
+value < 3 
+} 
+}
+add_political_power = 120
+add_popularity = { ideology = socialist popularity =0.06}
+add_popularity = { ideology = democratic_socialist popularity =0.04}
+set_country_flag = GER_lux_ds_victory
+create_country_leader = {
+	name = "Otto Grotewohl"
+	desc = ""
+	picture = "OttoGrotewohl.tga"
+	expire = "1953.3.1"
+	ideology = socialism
+	traits = {
+		#
+	}
+}
+}
+
+}
+
+
+country_event = {  ###Pelekist Uprising
+id = spartakus_germany.14
+title = spartakus_germany.14.t
+desc = spartakus_germany.14.d
+fire_only_once = yes
+
+immediate = { 
+BAV = { transfer_state = 53 }
+BAV = { transfer_state = 54 }
+BAV = { transfer_state = 52 }
+BAV = { transfer_state = 50 }
+BAV = { transfer_state = 791 } 
+declare_war_on = { 
+type = annex_everything 
+target = BAV 
+}
+} 
+trigger = {
+has_country_flag = south_falls
+has_country_flag = north_holds
+OR = {
+has_country_flag = GER_lux_ds_victory
+has_country_flag = GER_dem_victory
+has_country_flag = GER_lux_victory
+has_country_flag = GER_lux_nb_victory
+has_country_flag = GER_nb_vitory
+}
+}
+mean_time_to_happen = { days = 3 }
+
+option = { ###Revolution continues!
+name = spartakus_germany.14.a
+add_political_power = 100
+add_stability = -0.15
+}
+option = { ###Play as Pelekists!
+name = spartakus_germany.14.b
+add_political_power = 100
+add_stability = -0.15
+BAV = { change_tag_from = GER }
+}
+}
+
+country_event = { ###Reactionary Coup
+id = spartakus_germany.15
+title = spartakus_germany.15.t
+desc = spartakus_germany.15.d
+fire_only_once = yes
+
+trigger = {
+has_country_flag = south_falls
+has_country_flag = north_falls
+OR = {
+has_country_flag = GER_lux_ds_victory
+has_country_flag = GER_dem_victory
+has_country_flag = GER_lux_victory
+has_country_flag = GER_lux_nb_victory
+has_country_flag = GER_nb_vitory
+}
+}
+
+option = { ###Alright
+name = spartakus_germany.15.a
+add_political_power = 200
+add_stability = -0.2
+set_politics = {
+ruling_party = reactionary
+elections_allowed = no
+}
+create_country_leader = {
+	name = "Reactionary Council"
+	desc = ""
+	picture = "ReactionaryCouncil.tga"
+	expire = "1953.3.1"
+	ideology = reactionary
+	traits = {
+		#
+	}
+}
+add_popularity = { ideology = reactionary popularity =0.25}
+GER = { country_event = { id = spartakus_germany.16 days = 7 } }
+}
+}
+
+country_event = { ###Reactionary Council
+id = spartakus_germany.16
+title = spartakus_germany.16.t
+desc = spartakus_germany.16.d
+fire_only_once = yes
+is_triggered_only = yes
+
+option = { ###Democratic Elections
+name = spartakus_germany.16.a
+country_event = { id = spartakus_germany.18 days = 10 }
+}
+
+option = { ###Ludendorf takes control
+name = spartakus_germany.16.b
+create_country_leader = {
+	name = "Erich Ludendorff"
+	desc = ""
+	picture = "ReactionaryCouncil.tga"
+	expire = "1953.3.1"
+	ideology = reactionary
+	traits = {
+		#
+	}
+}
+hidden_effect = { retire_country_leader = yes }
+add_popularity = { ideology = reactionary popularity =0.15}
+set_country_flag = GER_ludendorf_takeover
+}
+
+option = { ###Restore the Monarchy
+name = spartakus_germany.16.c
+hidden_effect = { retire_country_leader = yes }
+add_popularity = { ideology = reactionary popularity =0.15}
+create_country_leader = {
+	name = "Philipp Albrecht"
+	desc = ""
+	picture = "PhilippAlbrecht.tga"
+	expire = "1953.3.1"
+	ideology = reactionary
+	traits = {
+		#
+	}
+}
+set_country_flag = GER_monarchy_restored
+
+}
+}
+
+
+country_event = {  ###Prussia invades
+id = spartakus_germany.17
+title = spartakus_germany.17.t
+desc = spartakus_germany.17.d
+fire_only_once = yes
+
+trigger = {
+tag = GER
+has_country_flag = south_holds
+has_country_flag = north_falls
+OR = {
+has_country_flag = GER_lux_ds_victory
+has_country_flag = GER_dem_victory
+has_country_flag = GER_lux_victory
+has_country_flag = GER_lux_nb_victory
+has_country_flag = GER_nb_vitory
+}
+}
+
+mean_time_to_happen = { days = 2 }
+
+PRS = {
+declare_war_on = { 
+type = annex_everything 
+target = GER 
+}
+immediate = { 
+PRS = { transfer_state = 58 }
+PRS = { transfer_state = 59 }
+PRS = { transfer_state = 63 }
+}
+}
+
+option = { #switch to Prussia
+name = spartakus_germany.17.a
+PRS = { change_tag_from = GER }
+}
+
+option = { #we shall fight!
+name = spartakus_germany.17.b
+add_political_power = 120
+}
+
+}
+
+country_event = { ###Democratic Elections
+id = spartakus_germany.18
+title = spartakus_germany.18.t
+desc = spartakus_germany.18.d
+fire_only_once = yes
+
+
+option = { ###SPD Victory
+name = spartakus_germany.18.a
+ai_chance = {
+			factor = 10
+		}
+set_politics = {
+ruling_party = social_democracy
+elections_allowed = yes
+}
+add_popularity = {ideology = social_democracy popularity =0.25}
+add_political_power = 100
+add_stability = 0.1
+set_country_flag = GER_spd_victory
+}
+
+option = { ###Liberal Victory
+name = spartakus_germany.18.b
+ai_chance = {
+			factor = 20
+		}
+set_politics = {
+ruling_party = social_liberal
+elections_allowed = yes
+}
+add_popularity = {ideology = social_liberal popularity =0.25}
+add_political_power = 100
+add_stability = 0.05
+set_country_flag = GER_liberal_victory
+}
+
+option = { ###Conservative Victory
+name = spartakus_germany.18.c
+ai_chance = {
+			factor = 40
+		}
+set_politics = {
+ruling_party = conservative
+elections_allowed = yes
+}
+add_popularity = {ideology = conservative popularity =0.25}
+add_political_power = 100
+add_stability = 0.1
+set_country_flag = GER_conservative_victory
+}
+}
+
+country_event = { ###Socialists hold on
+id = spartakus_germany.19
+title = spartakus_germany.19.t
+desc = spartakus_germany.19.d
+fire_only_once = yes
+
+trigger = {
+has_country_flag = south_holds
+has_country_flag = north_holds
+OR = {
+has_country_flag = GER_lux_ds_victory
+has_country_flag = GER_dem_victory
+has_country_flag = GER_lux_victory
+has_country_flag = GER_lux_nb_victory
+has_country_flag = GER_nb_vitory
+}
+}
+
+option = { ###Für Revolution! 
+name = spartakus_germany.19.a
+add_stability = 0.2
+add_political_power = 150
+set_country_flag = socialists_hold
+}
+}

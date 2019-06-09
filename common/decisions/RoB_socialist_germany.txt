@@ -1,0 +1,348 @@
+german_partisans = {
+     
+	GER_secure_north = {
+	icon = GFX_decision_oppression
+	priority = 10
+	available = {
+	 check_variable = {
+    var = northern_partisan_strenght
+    value = 25
+    compare = less_than
+}
+
+divisions_in_state = {
+    type = infantry
+    size > 3
+    state = 58
+	 }
+	 divisions_in_state = {
+    type = infantry
+    size > 3
+    state = 59
+	 }
+	 divisions_in_state = {
+    type = infantry
+    size > 3
+    state = 60
+	 }
+	 divisions_in_state = {
+    type = infantry
+    size > 3
+    state = 61
+	 }
+	 divisions_in_state = {
+    type = infantry
+    size > 3
+    state = 63
+	 }
+	 divisions_in_state = {
+    type = infantry
+    size > 3
+    state = 55
+	 }
+	 }
+	 cost = 90
+	 activation = {
+	 has_country_flag = north_german_partisans
+	 }
+	is_good = no
+	days_mission_timeout = 250
+	selectable_mission = yes
+	complete_effect = {
+	add_to_variable = { var = northern_partisan_strenght value =-20 }
+	set_country_flag = north_holds
+	}
+	timeout_effect = {
+	add_to_variable = { var = northern_partisan_strenght value = 35 } 
+	set_country_flag = north_falls
+	}
+	
+	}
+	
+	GER_southern_blow = {
+	icon = GFX_decision_oppression
+	priority = 10
+	
+	available = {
+	 check_variable = {
+    var = southern_partisan_strenght
+    value = 30
+    compare = less_than
+}
+
+divisions_in_state = {
+    type = infantry
+    size > 4
+    state = 53
+	 }
+	 divisions_in_state = {
+    type = infantry
+    size > 3
+    state = 54
+	 }
+	 divisions_in_state = {
+    type = infantry
+    size > 4
+    state = 50
+	 }
+	 divisions_in_state = {
+    type = infantry
+    size > 5
+    state = 791
+	 }
+	 divisions_in_state = {
+    type = infantry
+    size > 6
+    state = 52
+	 }
+
+	 }
+	 cost = 90
+	 activation = {
+	 has_country_flag = south_german_partisans
+	 }
+	is_good = no
+	days_mission_timeout = 250
+	selectable_mission = yes
+	complete_effect = {
+	add_to_variable = { var = southern_partisan_strenght value =-25 }
+	set_country_flag = south_holds
+	}
+	timeout_effect = {
+	add_to_variable = { var = southern_partisan_strenght value = 35 } 
+	set_country_flag = south_falls
+	}
+	
+	}
+
+	 
+	 
+	GER_destroy_partisans_in_holstein = {
+	 allowed = {
+	 has_country_flag = north_german_partisans
+	 }
+	 icon = GFX_decision_infiltrate_state
+	available = {
+	 
+	 divisions_in_state = {
+    type = infantry
+    size > 10
+    state = 58
+	 }
+	 }
+	 fire_only_once = yes
+	 cost = 40
+	 days_remove = 30
+	 remove_effect = {
+     add_to_variable = { var = northern_partisan_strenght value =-4 }
+	 set_country_flag = partisans_holstein_destroyed
+}
+}
+	 GER_destroy_partisans_in_hannover = {
+	 icon = GFX_decision_infiltrate_state
+ allowed = {
+	 has_country_flag = north_german_partisans
+	 }	
+	available = {
+	 
+	 divisions_in_state = {
+    type = infantry
+    size > 12
+    state = 59
+	 }
+	 }
+	 
+	 fire_only_once = yes
+	 cost = 40
+	 days_remove = 30
+	 	 remove_effect = {
+     add_to_variable = { var = northern_partisan_strenght value =-4 }
+	 set_country_flag = partisans_hannover_destroyed
+}
+	 
+	 }
+	 GER_destroy_partisans_in_mecklenburg = {
+	  icon = GFX_decision_infiltrate_state
+	  allowed = {
+	 has_country_flag = north_german_partisans
+	 }
+	 available = {
+	 
+	 divisions_in_state = {
+    type = infantry
+    size > 8
+    state = 61
+	 }
+	 }
+	 fire_only_once = yes
+	 	 remove_effect = {
+     add_to_variable = { var = northern_partisan_strenght value =-4 }
+	 set_country_flag = partisans_hannover_destroyed
+}
+	 cost = 40
+	 days_remove = 30
+	 
+	 }
+	  GER_destroy_partisans_in_hinterpommern = {
+icon = GFX_decision_infiltrate_state	 
+	 allowed = {
+	 has_country_flag = north_german_partisans
+	 }
+	 available = {
+	 divisions_in_state = {
+    type = infantry
+    size > 9
+    state = 63
+	 }
+	 
+	 }
+	 cost = 40
+	 days_remove = 30
+	 fire_only_once = yes
+	  	 remove_effect = {
+     add_to_variable = { var = northern_partisan_strenght value =-4 }
+	 set_country_flag = partisans_hannover_destroyed
+}
+	 
+	 }
+	  
+	 GER_destroy_partisans_in_thuringen = {
+	 icon = GFX_decision_infiltrate_state
+	 allowed = {
+	 has_country_flag = north_german_partisans
+	 }
+	 available = {
+	 
+	divisions_in_state = {
+    type = infantry
+    size > 10
+    state = 60
+	 }
+	 }
+	 cost = 40
+	 remove_effect = {
+     add_to_variable = { var = northern_partisan_strenght value =-4 }
+	 set_country_flag = partisans_hannover_destroyed
+}
+	 days_remove = 30
+	 fire_only_once = yes
+	 
+	 }
+	  GER_destroy_partisans_in_hessen = {
+	  icon = GFX_decision_infiltrate_state
+	 allowed = {
+	 has_country_flag = north_german_partisans
+	 }
+	 available = {
+	 divisions_in_state = {
+    type = infantry
+    size > 11
+    state = 55
+	 }
+	 
+	 }
+	 cost = 40
+	 days_remove = 30
+	 fire_only_once = yes
+	 
+	 }
+	  GER_destroy_partisans_in_niederbayern = {
+	  icon = GFX_decision_infiltrate_state
+	 allowed = {
+	 has_country_flag = south_german_partisans
+	 }
+	 available = {
+	 divisions_in_state = {
+    type = infantry
+    size > 13
+    state = 53
+	 }
+	 }
+	 cost = 40
+	 days_remove = 30
+	 fire_only_once = yes
+	 remove_effect = {
+	add_to_variable = { var = southern_partisan_strenght value = -6 } 
+	}
+	 }
+	 GER_destroy_partisans_in_franken = {
+	 icon = GFX_decision_infiltrate_state
+	 allowed = {
+	 has_country_flag = south_german_partisans
+	 }
+	 	 available = {
+	 divisions_in_state = {
+    type = infantry
+    size > 14
+    state = 54
+	 }
+	 }
+	 cost = 40
+	 days_remove = 30
+	 fire_only_once = yes
+	 remove_effect = {
+	add_to_variable = { var = southern_partisan_strenght value = -8 } 
+	}
+	 }
+	 	  GER_destroy_partisans_in_wurttemberg = {
+		  icon = GFX_decision_infiltrate_state
+	 allowed = {
+	 has_country_flag = south_german_partisans
+	 }
+	 	 available = {
+	 divisions_in_state = {
+    type = infantry
+    size > 12
+    state = 50
+	 }
+	 }
+	 cost = 40
+	 days_remove = 40
+	 fire_only_once = yes
+	 remove_effect = {
+	add_to_variable = { var = southern_partisan_strenght value = -6 } 
+	}
+	 }
+	 	  GER_destroy_partisans_in_baden = {
+		  icon = GFX_decision_infiltrate_state
+	 allowed = {
+	 has_country_flag = south_german_partisans
+	 }
+	 	 available = {
+	 divisions_in_state = {
+    type = infantry
+    size > 13
+    state = 53
+	 }
+	 }
+	 cost = 40
+	 days_remove = 791
+	 fire_only_once = yes
+	 remove_effect = {
+	add_to_variable = { var = southern_partisan_strenght value = -8 } 
+	}
+	 }
+	 	  GER_destroy_partisans_in_oberbayern = {
+		  icon = GFX_decision_infiltrate_state
+	 allowed = {
+	 has_country_flag = south_german_partisans
+	 }
+	 	 available = {
+	 divisions_in_state = {
+    type = infantry
+    size > 11
+    state = 52
+	 }
+	 }
+
+	remove_effect = {
+	add_to_variable = { var = southern_partisan_strenght value = -7 } 
+	}
+	 cost = 40
+	 days_remove = 40
+	 fire_only_once = yes
+	 }
+	 
+	 
+	 
+	}

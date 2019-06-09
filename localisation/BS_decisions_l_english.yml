@@ -1,44 +1,20 @@
 ﻿l_english:
+###German Partisans
+german_partisans: "Anti-Partisan Campaign"
+german_partisans_desc:0 "The Red Revolution of February 14th, which destroyed the old German order and forced traitorous reactionaries to retreat from mainland Germany, has bought new problems and challanges to the new Socialist state. For years now, we have faced a systematic opposition from partisans still loyal to anti-communist cause, and although forced into the forests and mountains during the Fall Schwarz, we were unable to completely destroy them and their leadership. In the last few months, the partisans have become highly active once again. With German Republic facing more internal problems than before, this might be our last chance to get them, before they get to us...\n Strength of the Reactionary Partisans in the South: §R[?Root.southern_partisan_strenght]%§!. \n Strength of the Reactionary Partisans in the North: §R[?Root.northern_partisan_strenght]%§!. "
+GER_secure_north:0 "Secure North"
+GER_secure_north_desc:0 "§GWe shall deal a crushing blow to the reactionary parasites in the North Germany.§!\nNorthern Partisan strength needs to be lower than §R25%§! to take this decision"
+GER_southern_blow:0 "Southern Blow"
+GER_southern_blow_desc:0 "§GWe shall deal a crushing blow to the reactionary traitors in the South Germany.§!\nSouthern Partisan strength needs to be lower than §R30%§! to take this decision"
+GER_destroy_partisans_in_holstein:0 "Destroy Partisans in Holstein"
+GER_destroy_partisans_in_hannover:0 "Bring Army into Hannover"
+GER_destroy_partisans_in_mecklenburg:0 "Attack Partisan Strongholds in Mecklenburg"
+GER_destroy_partisans_in_hinterpommern:0 "Curb Partisans in Hinterpommern"
+GER_destroy_partisans_in_thuringen:0 "Execute Partisans in Thüringen"
+GER_destroy_partisans_in_hessen:0 "Punitive Expeditions in Hessen"
+GER_destroy_partisans_in_niederbayern:0 "Curl Partisan Groups in Niederbayern"
+GER_destroy_partisans_in_franken: "Punish Partisans in Franken"
+GER_destroy_partisans_in_wurttemberg:0 "Allow Death Squads to roam Württemberg"
+GER_destroy_partisans_in_baden:0 "Strike upon Partisan Bases in Baden"
+GER_destroy_partisans_in_oberbayern:0 "Destroy the Reactionaries in Oberbayern"
 
- #Vanilla Fix
- form_country_oman_required_states_tt:0 "Controls all §YOmani§! states."
- form_country_oman_coring_states_tt:0 "Gain cores on all §YOmani§! states.\n"
- form_country_yemen_required_states_tt:0 "Controls all §YYemeni§! states."
- form_country_yemen_coring_states_tt:0 "Gain cores on all §YYemeni§! states.\n"
- 
- GER_reichskommissariat_moskowien:0 "Reichskommissariat Moskowien"
- GER_reichskommissariat_kaukasus:0 "Reichskommissariat Kaukasus"
- GER_reichsprotektorat_bohmen_und_mahren:0 "Reichsprotektorat Böhmen-Mähren"
- GER_generalgouvernement:0 "Generalgouvernement"
-
- #Reichsprotektorat
- GER_form_the_reichsprotektorat:0 "Form the Reichsprotektorat"
- GER_form_the_reichsprotektorat_desc:0 "To improve use of local resources, industry, and manpower, we should look into establishing quasi-autonomous subject government in our conquered areas."
- GER_reichsprotektorat:0 "Reichsprotektorat"
- GER_reichsprotektorat_desc:0 "Enables creation of certain Reichsprotektorat subjects out of controlled territory."
- 
- #Burgenland Question
- HUN_burgenland_question:0 "Request Burgenland to Germany"
- HUN_burgenland_question_desc:0 "Burgenland is our rightful territory. we were lose this region in 1921 through General election. but now Germany control this region, perhaps they could give it to us."
- 
- #Separate Burma
- ENG_separate_burma:0 "Separate Burma from India"
- ENG_separate_burma_desc:0 "We can grant a new constitution calling for a fully elected assembly, with many powers given to the Burmese."
-
- #All
- BS_request_territoy_category:0 "Request territory"
- BS_colony_politic_category:0 "Colonial Politics"
- 
- #Italian Social Republic ##Not finished yet
- GER_operation_achse_category:0 "Operation Achse"
- GER_operation_achse:0 "Operation Achse"
- GER_operation_achse_desc:0 "Operation Achse description"
-
-###########Might be change#########
- #French Question
- #GER_french_question:0 "Rule the France"
- #GER_french_question_desc:0 "We conquered Whole of France. They were huge threat for us. Balkanized France will be helpful for controlling them."
- #GER_ss_staat_burgund:0 "Form the SS-Staat Burgund"
- #GER_ss_staat_burgund_desc:0 "Heinrich Himmler who Leader of Schutzstaffel proposed forming SS-Staat Burgund. Heinrich Himmler said  "Burgundy is an ancient economic and cultural centre""
- #GER_unabhangiger_staat_bretagne:0 "Puppet the Independent State of Bretagne"
- #GER_unabhangiger_staat_bretagne_desc:0 "Our Führer, Adolf Hitler proposed Independent Brittany state. He mentioned this intention on occasion to his military leaders."

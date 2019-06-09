@@ -1,12 +1,8 @@
-focus_tree = { 
-id = soviet_focus_blokhin
-country = { 
-factor = 0 
-modifier = { 
-add = 1 
-tag = SOV 
-} 
-}
+focus_tree = {
+	id = soviet_focus_blokhin
+	country = {
+		factor = 0
+	}
 
 default = no
 

@@ -20,7 +20,9 @@ date > 1934.6.7
 }
 mean_time_to_happen = { days = 1 }
 
-immediate = { BOS = { transfer_state = 104 } }
+immediate = { 
+BOS = { transfer_state = 104 }
+}
 
 option = {
 name = serbia.100.a
