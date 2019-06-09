@@ -484,6 +484,9 @@ BAV = { transfer_state = 54 }
 BAV = { transfer_state = 52 }
 BAV = { transfer_state = 50 }
 BAV = { transfer_state = 791 } 
+BAV = { transfer_state = 799 } 
+BAV = { transfer_state = 798 }
+BAV = { transfer_state = 800 }  
 declare_war_on = { 
 type = annex_everything 
 target = BAV 
@@ -626,17 +629,19 @@ has_country_flag = GER_nb_vitory
 
 mean_time_to_happen = { days = 2 }
 
-PRS = {
-declare_war_on = { 
-type = annex_everything 
-target = GER 
-}
+
 immediate = { 
 PRS = { transfer_state = 58 }
 PRS = { transfer_state = 59 }
 PRS = { transfer_state = 63 }
+PRS = { transfer_state = 61 }
+PRS = { transfer_state = 62 }
+PRS = { transfer_state = 797 }
+PRS = {
+declare_war_on = { target = GER  type = annex_everything }
 }
 }
+
 
 option = { #switch to Prussia
 name = spartakus_germany.17.a
@@ -655,6 +660,7 @@ id = spartakus_germany.18
 title = spartakus_germany.18.t
 desc = spartakus_germany.18.d
 fire_only_once = yes
+is_triggered_only = yes
 
 
 option = { ###SPD Victory

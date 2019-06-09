@@ -99,7 +99,7 @@ trigger = {
 tag = SOV
 has_idea = bourgeoisie_influence_2
 }
-mean_time_to_happen = { months = 1 }
+mean_time_to_happen = { days = 5 }
 
 option = {
 name = bolshevik_russia.5.a
