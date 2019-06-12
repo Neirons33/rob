@@ -1,0 +1,73 @@
+ideas = {
+ country = {
+ 
+ deutsche_volksarmee = {
+ picture = GFX_idea_deutsche_volksarmee
+ allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 modifier = {
+				army_org_factor = -0.15
+				army_attack_factor = -0.1
+				army_morale_factor = 0.15
+				army_defence_factor = 0.1
+				}
+ 
+ }
+ 
+ german_partisans = {
+ picture = GFX_idea_german_partisans
+ allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+ modifier = {
+				conscription = -0.02
+				political_power_factor = -0.4
+				stability_factor = -0.15
+				war_support_factor = -0.15
+			}
+ }
+ spartakus_triumphant = {
+ picture = GFX_idea_spartakus_triumphant
+ allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+ modifier = {
+				political_power_gain = 0.2
+				surrender_limit = 0.25
+}
+ 
+ }
+ 
+ rampant_corruption = {
+ picture = GFX_idea_rampant_corruption
+ allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+		modifier = {
+				political_power_gain = -0.1
+				decryption_factor = -0.2
+				encryption_factor = -0.2
+				stability_factor = 0.05 
+}	
+ 
+ }
+ 
+ }
+}

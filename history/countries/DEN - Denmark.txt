@@ -127,59 +127,53 @@ if = {
 
 
 set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 97
-		}
-
-		fascism = {
-			popularity = 1
-		}
-		
-		communism = {
-			popularity = 2
-		}
-	}
-	
-	ruling_party = democratic
-	last_election = "1935.10.22"
-	election_frequency = 48
+	ruling_party = social_democracy
+	last_election = "1932.11.16"
+	election_frequency = 36
 	elections_allowed = yes
 }
-
-1939.1.1 = {
-	set_politics = {
-
-		parties = {
-			democratic = { 
-				popularity = 97
-			}
-
-			fascism = {
-				popularity = 1
-			}
-			
-			communism = {
-				popularity = 2
-			}
-		}
-		
-		ruling_party = democratic
-		last_election = "1939.4.3"
-		election_frequency = 48
-		elections_allowed = yes
-	}
+set_popularities = {
+	national_socialist = 0
+	socialist = 0
+	democratic_socialist = 0
+	social_democracy = 41 
+	social_liberal = 30
+	conservative = 24
+	authoritharian = 5
+	reactionary = 0
+	pelekist = 0
 }
+
+
 
 set_convoys = 40
 
 create_country_leader = {
-	name = "Thorvald Stauning"
+	name = "Christian X of Denmark"
 	desc = "POLITICS_THORVALD_STAUNING_DESC"
 	picture = "Portrait_Denmark_Thorvald_Stauning.dds"
 	expire = "1965.1.1"
-	ideology = socialism
+	ideology = social_democracy
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Christian X of Denmark"
+	desc = "POLITICS_THORVALD_STAUNING_DESC"
+	picture = "Portrait_Denmark_Thorvald_Stauning.dds"
+	expire = "1965.1.1"
+	ideology = conservative
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Christian X of Denmark"
+	desc = "POLITICS_THORVALD_STAUNING_DESC"
+	picture = "Portrait_Denmark_Thorvald_Stauning.dds"
+	expire = "1965.1.1"
+	ideology = social_liberal
 	traits = {
 		#
 	}
@@ -190,7 +184,7 @@ create_country_leader = {
 	desc = "POLITICS_FRITS_CLAUSEN_DESC"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
 	expire = "1965.1.1"
-	ideology = nazism
+	ideology = pelekist
 	traits = {
 		#
 	}
@@ -201,22 +195,12 @@ create_country_leader = {
 	desc = "POLITICS_AKSEL_LARSEN_DESC"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
 	expire = "1965.1.1"
-	ideology = leninism
+	ideology = socialist
 	traits = {
 		#
 	}
 }
 
-create_country_leader = {
-	name = "Peter Rochegune Munch"
-	desc = "POLITICS_PETER_ROCHEGUNE_MUNCH_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
-	expire = "1965.1.1"
-	ideology = centrism
-	traits = {
-		#
-	}
-}
 
 
 create_corps_commander = {

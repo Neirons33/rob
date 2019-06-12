@@ -112,64 +112,30 @@ add_ideas = {
 }
 
 set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 10
-		}
-
-		fascism = {
-			popularity = 10
-		}
-		
-		communism = {
-			popularity = 1
-		}
-
-		neutrality = {
-			popularity = 79
-		}
-	}
-	
-	ruling_party = neutrality
+	ruling_party = social_democracy
 	last_election = "1933.7.1"
 	election_frequency = 36
 	elections_allowed = yes
 }
-
-1939.1.1 = {
-	set_politics = {
-
-		parties = {
-			democratic = { 
-				popularity = 10
-			}
-
-			fascism = {
-				popularity = 10
-			}
-			
-			communism = {
-				popularity = 1
-			}
-
-			neutrality = {
-				popularity = 79
-			}
-		}
-		
-		ruling_party = neutrality
-		last_election = "1939.7.1"
-		election_frequency = 36
-		elections_allowed = yes
-	}
+set_popularities = {
+	national_socialist = 1
+	socialist = 0
+	democratic_socialist = 0
+	social_democracy = 37
+	social_liberal = 30
+	conservative = 23
+	authoritharian = 0
+	reactionary = 6
+	pelekist = 3
 }
+
+
 create_country_leader = {
-	name = "Risto Heikki Ryti"
+	name = "Toivo Mikael Kivimäki"
 	desc = "POLITICS_RISTO_HEIKKI_RYT_DESC"
 	picture = "Portrait_Finland_Risto_Heikki_Ryti.dds"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = social_democracy
 	traits = {
 		#
 	}
@@ -180,7 +146,7 @@ create_country_leader = {
 	desc = "POLITICS_AIMO_AALTONEN_DESC"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
 	expire = "1965.1.1"
-	ideology = marxism
+	ideology = socialist
 	traits = {
 		#
 	}
@@ -191,7 +157,7 @@ create_country_leader = {
 	desc = "POLITICS_VILHO_ANNALA_DESC"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = pelekist
 	traits = {
 		#
 	}
@@ -202,7 +168,7 @@ create_country_leader = {
 	desc = "POLITICS_KYÖSTI_KALLIO_DESC"
 	picture = "gfx/leaders/FIN/Portrait_Finland_Kyosti_Kallio.dds"
 	expire = "1965.1.1"
-	ideology = centrism
+	ideology = social_liberal
 	traits = {
 		#
 	}
