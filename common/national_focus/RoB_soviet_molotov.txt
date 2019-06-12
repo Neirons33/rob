@@ -14,7 +14,7 @@ shared_focus = SOV_bolshevikairforces
 #Focus for Premier Molotov
 	focus = {
 		id = SOV_premiermolotov
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_Premier_Molotov
 		x = 5
 		y = 1
 		cost = 10
@@ -27,7 +27,7 @@ shared_focus = SOV_bolshevikairforces
 	#Focus for Purging Union Leaders
 	focus = {
 		id = SOV_purgingunionleaders
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_purge_trade_unions
 		x = 3
 		y = 2
 		cost = 10
@@ -41,7 +41,7 @@ shared_focus = SOV_bolshevikairforces
 	#Focus for Form camps
 	focus = {
 		id = SOV_formcamps
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_form_camps
 		x = 3
 		y = 3
 		cost = 10
@@ -55,7 +55,7 @@ shared_focus = SOV_bolshevikairforces
 		#Focus for Socialize the system
 	focus = {
 		id = SOV_socializethesystem
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_socialize_system
 		x = 3
 		y = 4
 		cost = 10
@@ -69,7 +69,7 @@ shared_focus = SOV_bolshevikairforces
 	#Focus for NKVD Units In the Cities
 	focus = {
 		id = SOV_nkvdunitsinthecities
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_nkvd_units
 		x = 7
 		y = 2
 		cost = 10
@@ -83,7 +83,7 @@ shared_focus = SOV_bolshevikairforces
 		#Focus for Commisar officers
 	focus = {
 		id = SOV_commisarofficers
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_commiser_officers
 		x = 7
 		y = 3
 		cost = 10
@@ -97,7 +97,7 @@ shared_focus = SOV_bolshevikairforces
 	#Focus for Kill all traitors
 	focus = {
 		id = SOV_killalltraitors
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_kill_all_traitors
 		x = 7
 		y = 4
 		cost = 10
@@ -111,7 +111,7 @@ shared_focus = SOV_bolshevikairforces
 		#Focus for Molotov's Russia
 	focus = {
 		id = SOV_molotovsrussia
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_molotovs_russia
 		x = 5
 		y = 5
 		cost = 10
@@ -130,7 +130,7 @@ shared_focus = SOV_bolshevikairforces
 		#Focus for Use the camps for ''projects''
 	focus = {
 		id = SOV_usethecampsforprojects
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_use_camps_for_projects
 		x = 2
 		y = 6
 		cost = 10
@@ -144,7 +144,7 @@ shared_focus = SOV_bolshevikairforces
 	#Focus for Mass industrilisation
 	focus = {
 		id = SOV_massindustrilisation
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_mass_industry
 		x = 2
 		y = 7
 		cost = 10
@@ -158,7 +158,7 @@ shared_focus = SOV_bolshevikairforces
 		#Focus for Increase the kolkhozes
 	focus = {
 		id = SOV_increasethekolkhozes
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_increase_kolkhozes
 		x = 2
 		y = 8
 		cost = 10
@@ -172,7 +172,7 @@ shared_focus = SOV_bolshevikairforces
 	#Focus for Remind the workers
 	focus = {
 		id = SOV_remindtheworkers
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_remind_the_workers
 		x = 2
 		y = 9
 		cost = 10
@@ -186,7 +186,7 @@ shared_focus = SOV_bolshevikairforces
 	#Focus for Work for all!
 	focus = {
 		id = SOV_workforall
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_work_for_all
 		x = 2
 		y = 10
 		cost = 10
@@ -200,7 +200,7 @@ shared_focus = SOV_bolshevikairforces
 		#Focus for Modernize the red army
 	focus = {
 		id = SOV_modernizetheredarmy
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_modernize_red_army
 		x = 5
 		y = 6
 		cost = 10
@@ -214,7 +214,7 @@ shared_focus = SOV_bolshevikairforces
 	#Focus for Mass Conscription
 	focus = {
 		id = SOV_massconscription
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_mass_mobilizations_molotov
 		x = 5
 		y = 7
 		cost = 10
@@ -228,7 +228,7 @@ shared_focus = SOV_bolshevikairforces
 	#Focus for Blood for freedom
 	focus = {
 		id = SOV_bloodforfreedom
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_freedom_for_blood
 		x = 5
 		y = 8
 		cost = 10
@@ -242,7 +242,7 @@ shared_focus = SOV_bolshevikairforces
 		#Focus for Indoctrinate the men
 	focus = {
 		id = SOV_indoctrinatethemen
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_SOV_indoctrinate_molotov
 		x = 5
 		y = 9
 		cost = 10
@@ -256,7 +256,7 @@ shared_focus = SOV_bolshevikairforces
 		#Focus for Liberational Army
 	focus = {
 		id = SOV_liberationalarmy
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_liberational_army
 		x = 5
 		y = 10
 		cost = 10
@@ -270,7 +270,7 @@ shared_focus = SOV_bolshevikairforces
 	#Focus for A Soviet Education
 	focus = {
 		id = SOV_asovieteducation
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_soviet_education
 		x = 8
 		y = 6
 		cost = 10
@@ -284,7 +284,7 @@ shared_focus = SOV_bolshevikairforces
 	#Focus for Cult of Personality
 	focus = {
 		id = SOV_cultofpersonality
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_cult_of_persoanlity
 		x = 8
 		y = 7
 		cost = 10
@@ -298,7 +298,7 @@ shared_focus = SOV_bolshevikairforces
 	#Focus for There is no god
 	focus = {
 		id = SOV_thereisnogod
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_no_god
 		x = 8
 		y = 8
 		cost = 10
@@ -312,7 +312,7 @@ shared_focus = SOV_bolshevikairforces
 	#Focus for Get rid of the bourgeoisie
 	focus = {
 		id = SOV_getridofthebourgeoisie
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_get_rid_of_bourgeosie
 		x = 8
 		y = 9
 		cost = 10
@@ -326,7 +326,7 @@ shared_focus = SOV_bolshevikairforces
 	#Focus for The Soviet Identity
 	focus = {
 		id = SOV_thesovietidentity
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_soviet_identity
 		x = 8
 		y = 10
 		cost = 10
@@ -340,7 +340,7 @@ shared_focus = SOV_bolshevikairforces
 	#Focus for March till our death!
 	focus = {
 		id = SOV_marchtillourdeath
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_march_til_our_death
 		x = 5
 		y = 11
 		cost = 10

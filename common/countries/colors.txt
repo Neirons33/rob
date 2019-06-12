@@ -636,6 +636,6 @@ YUC = {
 	color_ui = rgb { 224 178 51 }
 }
 BAV = {
-    color = rgb { 24 69 142 }
-	color_ui = rgb { 24 69 142 }
+    color = rgb { 82 135 221 }
+	color_ui = rgb { 82 135 221 }
 }

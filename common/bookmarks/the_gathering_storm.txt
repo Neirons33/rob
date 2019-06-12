@@ -54,8 +54,9 @@ bookmarks = {
 			history = "GER_GATHERING_STORM_DESC"
 			ideology = fascism
 			ideas = {
-				sour_loser
-				general_staff
+				deutsche_volksarmee
+				german_partisans
+				spartakus_triumphant
 			}
 			focuses = {
 				GER_anschluss

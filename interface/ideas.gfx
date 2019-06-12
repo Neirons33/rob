@@ -3348,5 +3348,22 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/bosnian_uprising.tga"
 	}
 	
+	###GER
+	spriteType = {
+		name = "GFX_idea_spartakus_triumphant"
+		texturefile = "gfx/interface/ideas/spartakus_triumphant.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_rampant_corruption"
+		texturefile = "gfx/interface/ideas/rampant_corruption.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_german_partisans"
+		texturefile = "gfx/interface/ideas/german_partisans.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_deutsche_volksarmee"
+		texturefile = "gfx/interface/ideas/deutsche_volksarmee.tga"
+	}
 	
 }

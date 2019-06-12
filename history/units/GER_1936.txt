@@ -13,23 +13,23 @@
         infantry = { x = 2 y = 0 }
 		infantry = { x = 2 y = 1 }
 		infantry = { x = 2 y = 2 }
+		infantry = { x = 1 y = 3 }
 	}
 	
 	support = {
-        engineer = { x = 0 y = 0 }
-        artillery = { x = 0 y = 1 }
+        artillery = { x = 0 y = 0 }
 	}
 }
 division_template = {
-	name = "Panzer-Division"
+	name = "Rotkorps-Division"
 
 	division_names_group = GER_Arm_01
 
 	regiments = {
 		light_armor = { x = 0 y = 0 }
 		light_armor = { x = 0 y = 1 }
-        light_armor = { x = 1 y = 0 }
-		light_armor = { x = 1 y = 1 }
+        motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
 		motorized = { x = 2 y = 0 }
         motorized = { x = 2 y = 1 }
 	}
@@ -39,30 +39,7 @@ division_template = {
         artillery = { x = 0 y = 2 }
 	}
 }
-division_template = {
-	name = "Infanterie-Division (mot.)" 			# Used to be SS division -> New system for SS. Also messed up the civil war by refusing to move to the fascists, and immersion-breaking to have them around as royalists
 
-	division_names_group = GER_MOT_02
-
-	regiments = {
-		motorized = { x = 0 y = 0 }
-	    motorized = { x = 0 y = 1 }
-		motorized = { x = 0 y = 2 }
-		
-		motorized = { x = 1 y = 0 }
-		motorized = { x = 1 y = 1 }
-		motorized = { x = 1 y = 2 }
-		
-		motorized = { x = 2 y = 0 }
-	    motorized = { x = 2 y = 1 }
-		motorized = { x = 2 y = 2 }
-	}
-	support = {
-        recon = { x = 0 y = 0 }
-	 	engineer = { x = 0 y = 1 }
-        artillery = { x = 0 y = 2 }
-	}
-}
 division_template = {
 	name = "Gebirgs-Brigade"		# Gebirgsbrigade
 	#Note: precursor to Gebirgs-Divisions
@@ -107,6 +84,7 @@ units = {
 		location = 6334
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
 	}
 	division= {	
 		division_name = {
@@ -116,6 +94,7 @@ units = {
 		location = 537
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
 	}
 	# III. Armeekorps
 	division= {	
@@ -126,6 +105,7 @@ units = {
 		location = 478
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
 	}
 	division= {	
 		division_name = {
@@ -135,6 +115,7 @@ units = {
 		location = 478
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
 	}
 	# Panzertruppenkommando
 	division= {	
@@ -143,8 +124,9 @@ units = {
 				name_order = 1
 		}
 		location = 6521
-		division_template = "Panzer-Division"
+		division_template = "Rotkorps-Division"
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
 		force_equipment_variants = { light_tank_equipment_1 = { owner = "GER" } }
 	}
 	division= {	
@@ -152,9 +134,10 @@ units = {
 				is_name_ordered = yes
 				name_order = 2
 		}
-		location = 6521
-		division_template = "Panzer-Division"
+		location = 692
+		division_template = "Rotkorps-Division"
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
 		force_equipment_variants = { light_tank_equipment_1 = { owner = "GER" } }
 	}
 	division= {	
@@ -162,9 +145,10 @@ units = {
 				is_name_ordered = yes
 				name_order = 3
 		}
-		location = 6521
-		division_template = "Panzer-Division"
+		location = 6488
+		division_template = "Rotkorps-Division"
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
 		force_equipment_variants = { light_tank_equipment_1 = { owner = "GER" } }
 	}
 
@@ -174,8 +158,10 @@ units = {
 				name_order = 1
 		}
 		location = 11505
-		division_template = "Infanterie-Division (mot.)"
+		division_template = "Rotkorps-Division"
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+		force_equipment_variants = { light_tank_equipment_1 = { owner = "GER" } }
 	}
 
 	### 3. Armee (Wehrmacht-Gruppenkommando) ###
@@ -185,27 +171,30 @@ units = {
 				is_name_ordered = yes
 				name_order = 4
 		}
-		location = 6462
+		location = 514
 		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
 	}
 	division= {	
 		division_name = {
 				is_name_ordered = yes
 				name_order = 14
 		}
-		location = 6462
+		location = 514
 		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.6
 	}
 	division= {	
 		division_name = {
 				is_name_ordered = yes
 				name_order = 24
 		}
-		location = 6462
+		location = 514
 		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
 	}
 	# VIII. Armeekorps
 	division= {	
@@ -213,18 +202,20 @@ units = {
 				is_name_ordered = yes
 				name_order = 8
 		}
-		location = 11467
+		location = 9496
 		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.6
 	}
 	division= {	
 		division_name = {
 				is_name_ordered = yes
 				name_order = 18
 		}
-		location = 11467
+		location = 9496
 		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
 	}
 
 	# I. Armeekorps
@@ -233,33 +224,37 @@ units = {
 				is_name_ordered = yes
 				name_order = 1
 		}
-		location = 6402
+		location = 11372
 		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
 	}
 	division= {	
 		division_name = {
 				is_name_ordered = yes
 				name_order = 11
 		}
-		location = 266
+		location = 3473
 		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
 	}
 	division= {	
 		division_name = {
 				is_name_ordered = yes
 				name_order = 21
 		}
-		location = 3384
+		location = 9252
 		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
 	}
 	division= {	
 		name = "Kavallerie-Kommando Insterburg" 
-		location = 281
+		location = 11505
 		division_template = "Kavallerie-Brigade"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
 	}
 
 
@@ -272,6 +267,7 @@ units = {
 		location = 6257
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
 	}
 	# VI. Armeekorps
 	division= {	
@@ -282,6 +278,7 @@ units = {
 		location = 11264
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
 	}
 	division= {	
 		division_name = {
@@ -291,56 +288,10 @@ units = {
 		location = 11264
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
 	}
 	# IX. Armeekorps
-	division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 9
-		}
-		location = 11388
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 15
-		}
-		location = 241
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	# X. Armeekorps
-	division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 19
-		}
-		location = 6488
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 20
-		}
-		location = 9572
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 22
-		}
-		location = 9572
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-
-	# V. Armeekorps
+    # V. Armeekorps
 	division= {	
 		division_name = {
 				is_name_ordered = yes
@@ -349,6 +300,7 @@ units = {
 		location = 9517
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
 	}
 
 	# VII. Armeekorps
@@ -360,6 +312,7 @@ units = {
 		location = 11544
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
 	}
 	division= {	
 		division_name = {
@@ -369,6 +322,7 @@ units = {
 		location = 11497
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
 	}
 	division= {	
 		division_name = {
@@ -378,12 +332,14 @@ units = {
 		location = 586
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
 	}			
 	division= {	
 		name = "Gebirgs-Brigade" 
 		location = 692
 		division_template = "Gebirgs-Brigade" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
 	}
 }
 

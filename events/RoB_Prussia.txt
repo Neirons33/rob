@@ -249,7 +249,7 @@ ai_chance = {
 			factor = 20
 		}
 add_political_power = -80
-set_country_flag = military_takeover
+PRS = { country_event = { id = prussia.9 days = 15 }
 add_popularity = {ideology = reactionary popularity =0.1}
 }
 
@@ -259,7 +259,7 @@ ai_chance = {
 			factor = 10
 		}
 add_political_power = 80
-set_country_flag = democratic_elections
+PRS = { country_event = { id = prussia.10 days = 15 }
 add_popularity = {ideology = reactionary popularity =-0.15}
 add_popularity = {ideology = social_liberal popularity =0.05}
 add_popularity = {ideology = social_democracy popularity =0.05}
@@ -273,13 +273,9 @@ id = prussia.9
 title = prussia.9.t
 desc = prussia.9.d
 fire_only_once = yes
+is_triggered_only = yes
 
 
-trigger = {
-tag = PRS
-has_country_flag = military_takeover
-}
-mean_time_to_happen = { days = 2 }
 
 option = { ###Ok
 name = prussia.9.a
@@ -309,12 +305,8 @@ id = prussia.10
 title = prussia.10.t
 desc = prussia.10.d
 fire_only_once = yes
+is_triggered_only = yes
 
-trigger = {
-tag = PRS
-has_country_flag = democratic_elections
-}
-mean_time_to_happen = { days = 4 }
 
 option = { ###SPD Victory
 name = prussia.10.a

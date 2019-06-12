@@ -509,12 +509,66 @@ option = { ###Revolution continues!
 name = spartakus_germany.14.a
 add_political_power = 100
 add_stability = -0.15
+hidden_effect = { 
+BAV = { load_oob = BAV_1934 }
+52 = {
+add_core_of = BAV
+}
+53 = {
+add_core_of = BAV
+}
+54 = {
+add_core_of = BAV
+}
+50 = {
+add_core_of = BAV
+}
+791 = {
+add_core_of = BAV
+}
+799 = {
+add_core_of = BAV
+}
+798 = {
+add_core_of = BAV
+}
+800 = {
+add_core_of = BAV
+}
+}
 }
 option = { ###Play as Pelekists!
 name = spartakus_germany.14.b
 add_political_power = 100
 add_stability = -0.15
 BAV = { change_tag_from = GER }
+hidden_effect = { 
+BAV = { load_oob = BAV_1934 }
+52 = {
+add_core_of = BAV
+}
+53 = {
+add_core_of = BAV
+}
+54 = {
+add_core_of = BAV
+}
+50 = {
+add_core_of = BAV
+}
+791 = {
+add_core_of = BAV
+}
+799 = {
+add_core_of = BAV
+}
+798 = {
+add_core_of = BAV
+}
+800 = {
+add_core_of = BAV
+}
+}
 }
 }
 

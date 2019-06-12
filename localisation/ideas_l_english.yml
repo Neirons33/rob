@@ -2525,3 +2525,13 @@
  socialist_paramilitaries_desc:0 "Socialists in our country are preparing to overthrow us, we must act now! "
  brownshirt_terror:0 "Brown Shirt Terror"
  brownshirt_terror_desc:0 "Hitler's Austrian Worker's Party has become quite a troublesome foe." 
+ 
+ ###GER
+ deutsche_volksarmee:0 "Deutsche Volksarmee"
+ deutsche_volksarmee_desc:0 "Deutsche Volksarmee, meaning "German People's Army" is the main force behind Socialist regime in Germany. Made up mostly of loyal revolutionary supporters and former imperial soldiers, DVA is fanatical in defence of it's ideals. Despite their loyality, the German Army is poorly trained and is lacking a strong general core in it's High Command." 
+ german_partisans:0 "German Partisans"
+ german_partisans_desc:0 "Since the beginning of the Socialist state, it has been plagued by anti-communist reactionaries, aiming to shape Germany according to their reactionary beliefs. While many partisans  their bases were destroyed during Fall Schwarz, they have recovered, and are once again wrecking havoc on the German countryside. Their leadership is still unknown, and the only thing that the security services are certain about is that there are two partisan leaders at the top - one in the South, and one in the North."
+ spartakus_triumphant:0 "Spartacus Triumphant"
+ spartakus_triumphant_desc:0 "Da hat der Soldat das Gewehr umgewandt\nDa wurd' er wieder Prolet\nWorauf sehr schnell vom Krieg abstand\nDie Generalität!"
+ rampant_corruption:0 "Rampant Corruption"
+ rampant_corruption_desc:0 "Corruption is a big problem in both the government of the German state and in it's army. As such, the forces of the Socialist system has faced multiple defeats on the field of battle due to partisans exploiting military and government officials. "

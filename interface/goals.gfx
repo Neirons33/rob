@@ -1499,13 +1499,200 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/SOV_Premier_Molotov.tga"
 	}
 	SpriteType = { 
-		name = "GFX_focus_SOV_Premier_Vlaslov"
-		texturefile = "gfx/interface/goals/SOV_Premier_Vlaslov.tga"
-	}
-	SpriteType = { 
 		name = "GFX_focus_SOV_Premier_Blokhin"
 		texturefile = "gfx/interface/goals/SOV_Premier_Blokhin.tga"
 	}
 	
-
+	###SOV-Vlaslov
+		SpriteType = { 
+		name = "GFX_focus_SOV_Premier_Vlaslov"
+		texturefile = "gfx/interface/goals/SOV_Premier_Vlaslov.tga"
+	}
+			SpriteType = { 
+		name = "GFX_focus_SOV_urban_nationalization"
+		texturefile = "gfx/interface/goals/SOV_urban_nationalization.tga"
+	}
+			SpriteType = { 
+		name = "GFX_focus_SOV_united_we_march"
+		texturefile = "gfx/interface/goals/SOV_united_we_march.tga"
+	}
+			SpriteType = { 
+		name = "GFX_focus_SOV_stronegr_central_planning"
+		texturefile = "gfx/interface/goals/SOV_stronegr_central_planning.tga"
+	}
+			SpriteType = { 
+		name = "GFX_focus_SOV_promise_reforms"
+		texturefile = "gfx/interface/goals/SOV_promise_reforms.tga"
+	}
+			SpriteType = { 
+		name = "GFX_focus_SOV_paramilitaries_in_cities"
+		texturefile = "gfx/interface/goals/SOV_paramilitaries_in_cities.tga"
+	}
+			SpriteType = { 
+		name = "GFX_focus_SOV_meet_leaders_of_unions"
+		texturefile = "gfx/interface/goals/SOV_meet_leaders_of_unions.tga"
+	}
+			SpriteType = { 
+		name = "GFX_focus_SOV_local_vlaslovist_militias"
+		texturefile = "gfx/interface/goals/SOV_local_vlaslovist_militias.tga"
+	}
+			SpriteType = { 
+		name = "GFX_focus_SOV_kill_bourgeoisie"
+		texturefile = "gfx/interface/goals/SOV_kill_bourgeoisie.tga"
+	}
+			SpriteType = { 
+		name = "GFX_focus_SOV_foreced_collectiviation_vlaslov"
+		texturefile = "gfx/interface/goals/SOV_foreced_collectiviation_vlaslov.tga"
+	}
+			SpriteType = { 
+		name = "GFX_focus_SOV_focus_on_military_industry"
+		texturefile = "gfx/interface/goals/SOV_focus_on_military_industry.tga"
+	}
+			SpriteType = { 
+		name = "GFX_focus_SOV_crush_unrest"
+		texturefile = "gfx/interface/goals/SOV_crush_unrest.tga"
+	}
+			SpriteType = { 
+		name = "GFX_focus_SOV_continue_anti_bourgeosie"
+		texturefile = "gfx/interface/goals/SOV_continue_anti_bourgeosie.tga"
+	}
+				SpriteType = { 
+		name = "GFX_focus_SOV_vlaslovs_russia"
+		texturefile = "gfx/interface/goals/SOV_vlaslovs_russia.tga"
+	}
+				SpriteType = { 
+		name = "GFX_focus_SOV_vlaslovist_security"
+		texturefile = "gfx/interface/goals/SOV_vlaslovist_security.tga"
+	}
+				SpriteType = { 
+		name = "GFX_focus_SOV_vlaslov_support_orthodox"
+		texturefile = "gfx/interface/goals/SOV_vlaslov_support_orthodox.tga"
+	}
+				SpriteType = { 
+		name = "GFX_focus_SOV_vlaslov_strong_premier"
+		texturefile = "gfx/interface/goals/SOV_vlaslov_strong_premier.tga"
+	}
+				SpriteType = { 
+		name = "GFX_focus_SOV_vlaslov_slave_labour"
+		texturefile = "gfx/interface/goals/SOV_vlaslov_slave_labour.tga"
+	}
+				SpriteType = { 
+		name = "GFX_focus_SOV_vlaslov_russian_identity"
+		texturefile = "gfx/interface/goals/SOV_vlaslov_russian_identity.tga"
+	}
+				SpriteType = { 
+		name = "GFX_focus_SOV_vlaslov_purges"
+		texturefile = "gfx/interface/goals/SOV_vlaslov_purges.tga"
+	}
+				SpriteType = { 
+		name = "GFX_focus_SOV_vlaslov_penal_battalions"
+		texturefile = "gfx/interface/goals/SOV_vlaslov_penal_battalions.tga"
+	}
+				SpriteType = { 
+		name = "GFX_focus_SOV_vlaslov_nationalist_education"
+		texturefile = "gfx/interface/goals/SOV_vlaslov_nationalist_education.tga"
+	}
+				SpriteType = { 
+		name = "GFX_focus_SOV_vlaslov_militarize_schools"
+		texturefile = "gfx/interface/goals/SOV_vlaslov_militarize_schools.tga"
+	}
+				SpriteType = { 
+		name = "GFX_focus_SOV_use_red_guard"
+		texturefile = "gfx/interface/goals/SOV_use_red_guard.tga"
+	}
+	
+	###SOV-Molotov
+					SpriteType = { 
+		name = "GFX_focus_SOV_work_for_all"
+		texturefile = "gfx/interface/goals/SOV_work_for_all.tga"
+	}
+					SpriteType = { 
+		name = "GFX_focus_SOV_use_camps_for_projects"
+		texturefile = "gfx/interface/goals/SOV_use_camps_for_projects.tga"
+	}
+					SpriteType = { 
+		name = "GFX_focus_SOV_soviet_identity"
+		texturefile = "gfx/interface/goals/SOV_soviet_identity.tga"
+	}
+					SpriteType = { 
+		name = "GFX_focus_SOV_soviet_education"
+		texturefile = "gfx/interface/goals/SOV_soviet_education.tga"
+	}
+					SpriteType = { 
+		name = "GFX_focus_SOV_socialize_system"
+		texturefile = "gfx/interface/goals/SOV_socialize_system.tga"
+	}
+					SpriteType = { 
+		name = "GFX_focus_SOV_remind_the_workers"
+		texturefile = "gfx/interface/goals/SOV_remind_the_workers.tga"
+	}
+					SpriteType = { 
+		name = "GFX_focus_SOV_purge_trade_unions"
+		texturefile = "gfx/interface/goals/SOV_purge_trade_unions.tga"
+	}
+					SpriteType = { 
+		name = "GFX_focus_SOV_no_god"
+		texturefile = "gfx/interface/goals/SOV_no_god.tga"
+	}
+					SpriteType = { 
+		name = "GFX_focus_SOV_nkvd_units"
+		texturefile = "gfx/interface/goals/SOV_nkvd_units.tga"
+	}
+					SpriteType = { 
+		name = "GFX_focus_SOV_molotovs_russia"
+		texturefile = "gfx/interface/goals/SOV_molotovs_russia.tga"
+	}
+					SpriteType = { 
+		name = "GFX_focus_SOV_modernize_red_army"
+		texturefile = "gfx/interface/goals/SOV_modernize_red_army.tga"
+	}
+					SpriteType = { 
+		name = "GFX_focus_SOV_mass_mobilizations_molotov"
+		texturefile = "gfx/interface/goals/SOV_mass_mobilizations_molotov.tga"
+	}
+					SpriteType = { 
+		name = "GFX_focus_SOV_mass_industry"
+		texturefile = "gfx/interface/goals/SOV_mass_industry.tga"
+	}
+					SpriteType = { 
+		name = "GFX_focus_SOV_march_til_our_death"
+		texturefile = "gfx/interface/goals/SOV_march_til_our_death.tga"
+	}
+					SpriteType = { 
+		name = "GFX_focus_SOV_liberational_army"
+		texturefile = "gfx/interface/goals/SOV_liberational_army.tga"
+	}
+					SpriteType = { 
+		name = "GFX_focus_SOV_kill_all_traitors"
+		texturefile = "gfx/interface/goals/SOV_kill_all_traitors.tga"
+	}
+					SpriteType = { 
+		name = "GFX_focus_SOV_SOV_indoctrinate_molotov"
+		texturefile = "gfx/interface/goals/SOV_indoctrinate_molotov.tga"
+	}
+					SpriteType = { 
+		name = "GFX_focus_SOV_increase_kolkhozes"
+		texturefile = "gfx/interface/goals/SOV_increase_kolkhozes.tga"
+	}
+					SpriteType = { 
+		name = "GFX_focus_SOV_get_rid_of_bourgeosie"
+		texturefile = "gfx/interface/goals/SOV_get_rid_of_bourgeosie.tga"
+	}
+					SpriteType = { 
+		name = "GFX_focus_SOV_freedom_for_blood"
+		texturefile = "gfx/interface/goals/SOV_freedom_for_blood.tga"
+	}
+					SpriteType = { 
+		name = "GFX_focus_SOV_form_camps"
+		texturefile = "gfx/interface/goals/SOV_form_camps.tga"
+	}
+					SpriteType = { 
+		name = "GFX_focus_SOV_cult_of_persoanlity"
+		texturefile = "gfx/interface/goals/SOV_cult_of_persoanlity.tga"
+	}
+					SpriteType = { 
+		name = "GFX_focus_SOV_commiser_officers"
+		texturefile = "gfx/interface/goals/SOV_commiser_officers.tga"
+	}
+	
 }
