@@ -1,3 +1,4 @@
+
 state={
 	id=806
 	name="STATE_806"
@@ -12,23 +13,14 @@ state={
 		victory_points = {
 			688 10 
 		}
-		victory_points = {
-			3673 3 
-		}
 		add_core_of = AUS
-		1938.3.12 = {
-			owner = GER
-			controller = GER
-			add_core_of = GER
-
-		}
 
 	}
 
 	provinces={
-		668 688 3673 3674 3675 6673 6687 6691 11612 11634 
+		688 3675 11634 13363 13364 13366 13368 13380 
 	}
-	manpower=1050133
+	manpower=117691
 	buildings_max_level_factor=1.000
 	state_category=town
 }

@@ -15,19 +15,13 @@ state={
 
 		}
 		add_core_of = AUS
-		1938.3.12 = {
-			owner = GER
-			controller = GER
-			add_core_of = GER
-
-		}
 
 	}
 
 	provinces={
-		671 673 6678 6680 9633 9636 11618 
+		671 673 9633 9636 11618 13359 13361 13362 
 	}
-	manpower=1655340
+	manpower=572547
 	buildings_max_level_factor=1.000
 	state_category=town
 }
