@@ -1,20 +1,18 @@
-
 state={
-	id=1007
-	name="STATE_1007"
-
+	id=1014
+	name="STATE_1014"
 	history={
 		owner = FRA
 		buildings = {
 			infrastructure = 6
-
+			
 		}
 		add_core_of = FRA
 
 	}
 
 	provinces={
-		6572 9525 13341 13342 13343 
+		539 553 3534 3549 3579 6599 9578 11521 11535 13344 13346 
 	}
 	manpower=0
 	buildings_max_level_factor=1.000

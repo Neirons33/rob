@@ -974,7 +974,7 @@
  STATE_973:0 "British Virgin Islands"
  STATE_974:0 "Channel Islands"
  STATE_975:0 "East Aegean Islands"
- STATE_976:0 "Epirus"
+ STATE_976:0 "Central Epirus"
  STATE_977:0 "Corfu"
  STATE_978:0 "Euboea"
  STATE_979:0 "Ostfriesland"
@@ -1012,3 +1012,4 @@
  STATE_1011:0 "Central Greece"
  STATE_1012:0 "Thessaly"
  STATE_1013:0 "Western Macedonia"
+ STATE_1014:0 "Normandy"
