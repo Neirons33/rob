@@ -1,0 +1,21 @@
+state={
+	id=1022
+	name="STATE_1022"
+		history={
+		owner = AUS
+		buildings = {
+			infrastructure = 7
+			arms_factory = 1
+			industrial_complex = 2
+
+		}
+		add_core_of = AUS
+
+	}
+
+	provinces={
+		13355 
+	}
+	manpower=33257
+	buildings_max_level_factor=1.000
+}
