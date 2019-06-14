@@ -3,70 +3,82 @@ add_namespace = austria
 ##Event: Austrian Civil War Beggins
 country_event = {
  id = austria.1
- title = austria.1.title
- desc = austria.1.desc
+ title = austria.1.t
+ desc = austria.1.d
  picture = GFX_report_event_french_resistance_02
- is_triggered_only = yes
  fire_only_once = yes
  trigger = {
     date > 1934.2.12
-	}	option = {
+	tag = AUS
+	}
+	option = {
 		name = austria.1.a
 		ai_chance = { factor = 1}
-		change_tag_from= ACM
+		hidden_effect = { 
+				ACM = { transfer_state = 1018 }
+ACM = { transfer_state = 1021 }
+ACM = { transfer_state = 1020 }
+ACM = { transfer_state = 1019 }
+ACM = { transfer_state = 1018 }
+ACM = { transfer_state = 1023 }
+ACM = { transfer_state = 1022 }
+THR = { transfer_state = 807 }
+THR = { transfer_state = 806 }
+THR = { transfer_state = 152 }
+THR = { transfer_state = 1017 }
+AUS = { declare_war_on = { target = THR  type = annex_everything } }
+AUS = { declare_war_on = { target = ACM  type = annex_everything } }
+THR = { declare_war_on = { target = ACM  type = annex_everything } }
+THR = { load_obb = THR_civil_war }
+ACM = { load_obb = ACM_civil_war }
 	}
+	ACM = { change_tag_from = AUS }
+}
+	
 	option = {
 		name = austria.1.b
 		ai_chance = { factor = 1}
-		change_tag_from= THR
+				hidden_effect = { 
+				ACM = { transfer_state = 1018 }
+ACM = { transfer_state = 1021 }
+ACM = { transfer_state = 1020 }
+ACM = { transfer_state = 1019 }
+ACM = { transfer_state = 1018 }
+ACM = { transfer_state = 1023 }
+ACM = { transfer_state = 1022 }
+THR = { transfer_state = 807 }
+THR = { transfer_state = 806 }
+THR = { transfer_state = 152 }
+THR = { transfer_state = 1017 }
+AUS = { declare_war_on = { target = THR  type = annex_everything } }
+AUS = { declare_war_on = { target = ACM  type = annex_everything } }
+THR = { declare_war_on = { target = ACM  type = annex_everything } }
+THR = { load_obb = THR_civil_war }
+ACM = { load_obb = ACM_civil_war }
+	}
+		THR = { change_tag_from = AUS }
 	}
 }
 
-##Event: Austrian Unrest Is Reaching It's Peak
-country_event = {
- id = austria.2
- title = austria.2.title
- desc = austria.2.desc
- picture = GFX_report_event_german_reichstag_gathering
- is_triggered_only = yes
- fire_only_once = yes
- trigger = {
-date > 1934.2.11
-	}	option = {
-		name = austria.2.a
-		ai_chance = { factor = 1}
-		ACM = { transfer_state = 1018
-ACM = { transfer_state = 1021
-ACM = { transfer_state = 1020
-ACM = { transfer_state = 1019
-ACM = { transfer_state = 1018
-ACM = { transfer_state = 1023
-ACM = { transfer_state = 1022
-THR = { transfer_state = 807
-THR = { transfer_state = 806
-THR = { transfer_state = 152
-THR = { transfer_state = 1017
-	}
-}
 
 ##Event: Engelbert Dollfuss Is Assassinated!
 country_event = {
- id = austria.3
- title = austria.3.title
- desc = austria.3.desc
+ id = austria.2
+ title = austria.2.t
+ desc = austria.2.d
  picture = GFX_report_event_generic_read_write
  is_triggered_only = yes
  fire_only_once = yes
  trigger = {
 date > 1934.7.25
 	}	option = {
-		name = austria.3.a
+		name = austria.2.a
 		ai_chance = { factor = 1}
 		create_country_leader= {
- name = 'Kurt Schuschnigg' 
-desc = 'POLITICS_PETER_II_DESC' 
-picture = 'Kurt_Schuschnigg.dds' 
-expire = '1965.1.1' 
+ name = "Kurt Schuschnigg" 
+desc = ""
+picture = "Kurt_Schuschnigg.dds"
+expire = "1965.1.1"
 ideology = reactionary
 traits = {
 }
@@ -77,14 +89,15 @@ traits = {
 
 ##Event: Engelbert Dollfuss Disolves All Parties
 news_event = {
- id = austria.4
- title = austria.4.title
- desc = austria.4.desc
+ id = austria.3
+ title = austria.3.t
+ desc = austria.3.d
  picture = GFX_news_event_generic_parliament
  is_triggered_only = yes
  fire_only_once = yes
  major = yes
  trigger = {
 date > 1934.2.1
-	}}
+	}
+	}
 
