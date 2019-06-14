@@ -3,23 +3,7 @@
 oob = "AUS_1936"
 
 set_research_slots = 3
-set_politics = {
-	ruling_party = reactionary
-	last_election = "1930.11.9"
-	election_frequency = 48
-	elections_allowed = no
-}
-set_popularities = {
-	national_socialist = 8
-	socialist = 7
-	democratic_socialist = 0
-	social_democracy = 15
-	social_liberal = 0
-	conservative = 5
-	authoritharian = 18
-	reactionary = 30
-	pelekist = 17
-}
+
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
@@ -29,6 +13,41 @@ set_technology = {
 	tech_mountaineers = 1
 	early_fighter = 1
 }
+
+set_politics = {
+
+	parties = {
+		reactionary = { 
+			popularity = 30
+		}
+
+		national_socialist = {
+			popularity = 20
+		}
+
+		authoritharian = {
+			popularity = 18
+		}
+
+		social_democracy = {
+			popularity = 15
+		}
+		
+		socialist = {
+			popularity = 7
+		}
+
+		conservative = {
+			popularity = 8
+		}
+	}
+	
+	ruling_party = reactionary
+	last_election = "1930.11.9"
+	election_frequency = 48
+	elections_allowed = no
+}
+
 add_ideas = {
 	crotian_economic_pact
 	great_depression_woes
