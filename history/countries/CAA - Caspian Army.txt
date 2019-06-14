@@ -24,24 +24,29 @@ set_technology = {
 }
 
 set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 0
-		}
-
-		fascism = {
-			popularity = 100
-		}
-		
-		communism = {
-			popularity = 0
-		}
-		
-	}
-	
-	ruling_party = fascism
-	last_election = "1933.2.16"
-	election_frequency = 36
+	ruling_party = reactionary
+	last_election = "1930.1.1"
+	election_frequency = 48
 	elections_allowed = no
+}
+set_popularities = {
+	national_socialist = 0
+	socialist = 0
+	democratic_socialist = 0
+	social_democracy = 0
+	social_liberal = 0
+	conservative = 3
+	authoritharian = 6
+	reactionary = 91
+	pelekist = 0
+}
+
+create_country_leader = {
+	name = "Alexander Pavlovich Kutepov"
+	desc = ""
+	picture = ""
+	expire = "1950.1.1"
+	ideology = reactionary
+	traits = {
+	}
 }

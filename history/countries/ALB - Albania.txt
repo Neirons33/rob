@@ -9,35 +9,26 @@ set_technology = {
 }
 
 set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 0
-		}
-
-		fascism = {
-			popularity = 0
-		}
-		
-		communism = {
-			popularity = 0
-		}
-		
-		authoritarianism = { 
-			popularity = 100
-		}
-	}
-	
-	ruling_party = authoritarianism
-	last_election = "1933.3.5"
+	ruling_party = authoritharian
+	last_election = "1934.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
-
+set_popularities = {
+	national_socialist = 0
+	socialist = 3
+	democratic_socialist = 3
+	social_democracy = 3
+	social_liberal = 3
+	conservative = 3
+	authoritharian = 78
+	reactionary = 7
+	pelekist = 0
+}
 set_convoys = 5
 
 create_country_leader = {
-	name = "King Zog"
+	name = "Zog I of Albania"
 	desc = "POLITICS_KING_ZOG_DESC"
 	picture = "Portrait_Albania_Zog_I.tga"
 	expire = "1965.1.1"
@@ -52,9 +43,8 @@ create_country_leader = {
 	desc = "POLITICS_KING_ZOG_DESC"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
 	expire = "1965.1.1"
-	ideology = stalinism
+	ideology = national_socialist
 	traits = {
-		staunch_stalinist
 	}
 }
 

@@ -39,25 +39,21 @@ set_technology = {
 set_convoys = 30
 
 set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 92
-		}
-
-		fascism = {
-			popularity = 5
-		}
-		
-		communism = {
-			popularity = 3
-		}
-	}
-	
-	ruling_party = democratic
-	last_election = "1932.11.8"
+	ruling_party = reactionary
+	last_election = "1930.1.1"
 	election_frequency = 48
 	elections_allowed = no
+}
+set_popularities = {
+	national_socialist = 0
+	socialist = 5
+	democratic_socialist = 5
+	social_democracy = 0
+	social_liberal = 0
+	conservative = 3
+	authoritharian = 6
+	reactionary = 79
+	pelekist = 2
 }
 
 add_ideas = {
@@ -67,33 +63,12 @@ add_ideas = {
 
 
 create_country_leader = {
-	name = "James V. Allred"
+	name = "Anton Denikin"
 	desc = ""
-	picture = "Portrait_Texas_James.dds"
+	picture = ""
 	expire = "1950.1.1"
-	ideology = liberalism
+	ideology = reactionary
 	traits = {
 	}
 }
 
-create_country_leader = {
-	name = "Arthur Harvey"
-	desc = ""
-	picture = "gfx/leaders/USA/Portrait_USA_Generic_3.dds"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = "Rex O'donnell"
-	desc = ""
-	picture = "gfx/leaders/USA/Portrait_USA_Generic_3.dds"
-	expire = "1965.1.1"
-	ideology = marxism
-	traits = {
-		
-	}
-}

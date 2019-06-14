@@ -21,23 +21,22 @@ set_technology = {
 }
 
 set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 90
-		}
-		
-		neutrality = {
-			popularity = 10
-		}
-	}
-	
-	ruling_party = democratic
-	last_election = "1936.1.1"
-	election_frequency = 50
+	ruling_party = conservative
+	last_election = "1934.1.1"
+	election_frequency = 48
 	elections_allowed = no
 }
-
+set_popularities = {
+	national_socialist = 0
+	socialist = 0
+	democratic_socialist = 0
+	social_democracy = 2
+	social_liberal = 20
+	conservative = 78
+	authoritharian = 0
+	reactionary = 0
+	pelekist = 0
+}
 add_ideas = {
 	neutrality_idea	
 	limited_conscription
@@ -50,7 +49,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Portrait_Andorra_General_council.dds"
 	expire = "1960.1.1"
-	ideology = conservatism
+	ideology = conservative
 	traits = {
 		
 	}

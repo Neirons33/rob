@@ -1963,6 +1963,11 @@ spriteTypes = {
 	}
 
 	
+	###CRO
+		spriteType = {
+		name = "GFX_picture_soldiers_attacking"
+		texturefile = "gfx/event_pictures/soldiers_attacking.tga"
+	}
 	}
 
 	

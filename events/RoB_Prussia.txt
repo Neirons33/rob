@@ -275,8 +275,6 @@ desc = prussia.9.d
 fire_only_once = yes
 is_triggered_only = yes
 
-
-
 option = { ###Ok
 name = prussia.9.a
 add_political_power = 120
