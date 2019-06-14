@@ -1,0 +1,412 @@
+########################
+###United Kingdom Events
+########################
+
+
+add_namespace = united_kingdom
+
+###Main Political Events
+
+###UK in 1934
+country_event = {
+id = united_kingdom.0
+title = united_kingdom.0.t
+desc = united_kingdom.0.d
+fire_only_once = yes
+
+trigger = {
+tag = ENG
+}
+mean_time_to_happen = { days = 2 }
+
+option = {
+name = united_kingdom.0.a
+add_political_power = 10
+hidden_effect = { country_event = { id = united_kingdom.1 days = 3 } }
+}
+}
+
+###Monarchist March on London
+country_event = {
+id = united_kingdom.1
+title = united_kingdom.1.t
+desc = united_kingdom.1.d
+fire_only_once = yes
+is_triggered_only = yes
+
+option = { 
+name = united_kingdom.1.a
+add_political_power =-60
+add_stability =-0.08
+add_popularity = { ideology = reactionary popularity = 0.05 }
+hidden_effect = { country_event = { id = united_kingdom.2 days = 5 } }
+}
+}
+
+###Labour MPs killed
+country_event = {
+id = united_kingdom.2
+title = united_kingdom.2.t
+desc = united_kingdom.2.d
+fire_only_once = yes
+is_triggered_only = yes
+
+option = { 
+name = united_kingdom.2.a
+add_political_power =-80
+add_stability =-0.07
+add_popularity = { ideology = reactionary popularity = 0.05 }
+add_popularity = { ideology = socialist popularity = 0.05 }
+hidden_effect = { country_event = { id = united_kingdom.3 days = 5 }
+}
+}
+}
+
+###Speech by George V
+country_event = {
+id = united_kingdom.3
+title = united_kingdom.3.t
+desc = united_kingdom.3.d
+fire_only_once = yes
+is_triggered_only = yes
+
+option = { ###Denounce reactionaries
+name = united_kingdom.3.a
+add_political_power = -50
+add_popularity = { ideology = reactionary popularity = -0.08 }
+set_country_flag = ENG_reactionaries_denounced
+country_event = { id = united_kingdom.4 days = 2 } 
+}
+option = { ###Denounce reactionaries
+name = united_kingdom.3.b
+add_political_power = 50
+add_popularity = { ideology = reactionary popularity = 0.03 }
+set_country_flag = ENG_reactionaries_supported
+}
+}
+
+###Edward VIII supports reactionaries
+country_event = {
+id = united_kingdom.4
+title = united_kingdom.4.t
+desc = united_kingdom.4.d
+fire_only_once = yes
+is_triggered_only = yes
+
+option = {
+name = united_kingdom.4.a
+add_popularity = { ideology = reactionary popularity = 0.01 }
+create_country_leader = {
+	name = "Edward Patrick David"
+	desc = ""
+	picture = "edwardviii.dds"
+	expire = "1953.3.1"
+	ideology = reactionary
+	traits = {
+		#
+	}
+}
+}
+}
+
+###ELECTIONS
+country_event = {
+id = united_kingdom.5
+title = united_kingdom.5.t
+desc = united_kingdom.5.d
+fire_only_once = yes
+is_triggered_only = yes
+
+option = { ###Conservative Victory
+name = united_kingdom.5.a
+add_political_power = 100
+set_politics = {
+ruling_party = conservative
+elections_allowed = yes
+}
+add_popularity = { ideology = conservative popularity = 0.1 }
+country_event = { id = united_kingdom.6 days = 10 }
+}
+
+option = { ###Reactionary Victory
+name = united_kingdom.5.b
+add_political_power = 100
+set_politics = {
+ruling_party = reactionary
+elections_allowed = yes
+}
+add_popularity = { ideology = reactionary popularity = 0.1 }
+add_popularity = { ideology = authoritharian popularity = 0.02 }
+hidden_effect = { country_event = { id = united_kingdom.8 days = 25 } }
+}
+
+option = { ###Socialist Victory
+name = united_kingdom.5.c
+add_political_power = 100
+set_politics = {
+ruling_party = socialist
+elections_allowed = yes
+}
+add_popularity = { ideology = socialist popularity = 0.1 }
+add_popularity = { ideology = national_socialist popularity = 0.02 }
+add_popularity = { ideology = democratic_socialist popularity = 0.02 }
+hidden_effect = { country_event = { id = united_kingdom.9 days = 25 } }
+}
+
+option = { ###Labour Victory
+name = united_kingdom.5.d
+add_political_power = 100
+set_politics = {
+ruling_party = social_democracy
+elections_allowed = yes
+}
+add_popularity = { ideology = social_democracy popularity = 0.1 }
+hidden_effect = { country_event = { id = united_kingdom.12 days = 25 } }
+}
+
+option = { ###Liberal Victory
+name = united_kingdom.5.e
+add_political_power = 100
+set_politics = {
+ruling_party = social_liberal
+elections_allowed = yes
+}
+add_popularity = { ideology = social_liberal popularity = 0.1 }
+hidden_effect = { country_event = { id = united_kingdom.12 days = 25 } }
+}
+}
+
+
+###Conservative Victory - New Government (Crush Reactionaries)
+country_event = {
+id = united_kingdom.6
+title = united_kingdom.6.t
+desc = united_kingdom.6.d
+fire_only_once = yes
+is_triggered_only = yes
+
+
+option = { ###Squash Reactionaries
+name = united_kingdom.6.a
+add_political_power = -80
+add_stability = -0.05
+hidden_effect = { country_event = { id = united_kingdom.7 days = 25 }
+country_event = { id = united_kingdom.9 days = 45 } }
+add_popularity = { ideology = reactionary popularity = -0.07 }
+}
+}
+
+###Conservative Victory - Crush Socialists
+country_event = {
+id = united_kingdom.7
+title = united_kingdom.7.t
+desc = united_kingdom.7.d
+fire_only_once = yes
+is_triggered_only = yes
+
+
+option = { ###Squash Socialists
+name = united_kingdom.7.a
+add_political_power = -80
+add_stability = -0.05
+hidden_effect = { country_event = { id = united_kingdom.8 days = 20 } }
+add_popularity = { ideology = socialist popularity = -0.07 }
+}
+}
+
+###Labour Riots
+country_event = {
+id = united_kingdom.8
+title = united_kingdom.8.t
+desc = united_kingdom.8.d
+fire_only_once = yes
+is_triggered_only = yes
+
+option = {
+name = united_kingdom.8.a
+add_stability = -0.1
+hidden_effect = { country_event = { id = united_kingdom.10 days = 20 } }
+}
+
+}
+
+###Reactionary Riots
+country_event = {
+id = united_kingdom.9
+title = united_kingdom.9.t
+desc = united_kingdom.9.d
+fire_only_once = yes
+is_triggered_only = yes
+
+option = {
+name = united_kingdom.9.a
+add_political_power = -100
+hidden_effect = { country_event = { id = united_kingdom.11 days = 20 } }
+}
+}
+
+###Labour Absorbed
+country_event = {
+id = united_kingdom.10
+title = united_kingdom.10.t
+desc = united_kingdom.10.d
+fire_only_once = yes
+is_triggered_only = yes
+
+option = {
+name = united_kingdom.10.a
+
+if = {
+  limit = {
+  has_government = socialist
+  }
+  add_political_power = 100
+  add_stability = 0.05
+  
+  else = {
+  add_political_power = -100
+  }
+  }
+add_popularity = { ideology = socialist popularity = 0.16 }
+add_popularity = { ideology = social_democracy popularity = -0.16 }
+set_country_flag = ENG_labour_absorbed
+}
+
+}
+
+###British Union Formed
+country_event = {
+id = united_kingdom.11
+title = united_kingdom.11.t
+desc = united_kingdom.11.d
+fire_only_once = yes
+is_triggered_only = yes
+
+
+option = {
+name = united_kingdom.11.a
+add_popularity = { ideology = reactionary popularity = 0.15 }
+add_popularity = { ideology = authoritharian popularity = -0.05 }
+add_popularity = { ideology = conservative popularity = -0.08 }
+set_country_flag = ENG_british_union_formed
+}
+}
+
+###Slim Victory
+country_event = {
+id = united_kingdom.12
+title = united_kingdom.12.t
+desc = united_kingdom.12.d
+fire_only_once = yes
+is_triggered_only = yes
+
+
+option = {
+name = united_kingdom.12.a
+add_political_power =-100
+if = {
+ limit = {
+  has_government = social_democracy
+ }
+ add_popularity = { ideology = social_democracy popularity =-0.04 }
+   else = {
+   add_popularity = { ideology = social_liberal popularity =-0.04 }
+   }
+}
+hidden_effect =  { country_event = { id = united_kingdom.8 days = 25 } }
+hidden_effect =  { country_event = { id = united_kingdom.9 days = 40 } }
+}
+}
+
+###UK STATUS:FUCKED
+country_event = {
+id = united_kingdom.13
+title = united_kingdom.13.t
+desc = united_kingdom.13.d
+fire_only_once = yes
+
+trigger = {
+tag = ENG
+date > 1934.7.5
+has_country_flag = ENG_british_union_formed
+has_country_flag = ENG_labour_absorbed
+}
+
+option = {
+name = united_kingdom.13.a
+add_stability =-0.15
+hidden_effect = { country_event = { id = united_kingdom.14 days = 7 } }
+}
+}
+
+###Last Disscussion
+country_event = {
+id = united_kingdom.14
+title = united_kingdom.14.t
+desc = united_kingdom.14.d
+fire_only_once = yes
+is_triggered_only = yes
+
+option = {
+name = united_kingdom.14.a
+trigger =
+ OR = { 
+  has_government = socialist
+  has_government = social_democracy
+}
+add_political_power = -150
+add_stability = 0.06
+hidden_effect = { country_event = { id = united_kingdom.15 days = 15 } }
+}
+option = {
+name = united_kingdom.14.b
+trigger =
+ OR = { 
+  has_government = reactionary
+  has_government = conservative
+  has_government = authoritharian
+  has_government = social_liberal
+}
+add_political_power = 150
+add_stability = -0.06
+hidden_effect = { country_event = { id = united_kingdom.15 days = 15 } }
+}
+}
+
+###Reactionary offer to conservatives
+country_event = {
+id = united_kingdom.15
+title = united_kingdom.15.t
+desc = united_kingdom.15.d
+fire_only_once = yes
+is_triggered_only = yes
+
+option = { ###They accept
+name = united_kingdom.15.a
+add_political_power = 30
+add_popularity = { ideology = reactionary popularity = 0.15 } 
+add_popularity = { ideology = conservative popularity = -0.15 } 
+set_country_flag = ENG_conservatives_absorbed
+}
+
+option = { ###They reject
+name = united_kingdom.15.b
+add_political_power = 30
+set_country_flag = ENG_conservatives_independant
+}
+}
+
+###STANDOFF
+country_event = {
+id = united_kingdom.16
+title = united_kingdom.16.t
+desc = united_kingdom.16.d
+fire_only_once = yes
+
+trigger = {
+ OR =  {
+ has_country_flag = ENG_conservatives_absorbed
+ has_country_flag = ENG_conservatives_independant
+}
+
+}

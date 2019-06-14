@@ -1,22 +1,22 @@
-add_namespace = austrianstuffofriversofblood
+add_namespace = austria
 
 ##Event: Austrian Civil War Beggins
 country_event = {
- id = austrianstuffofriversofblood.1
- title = austrianstuffofriversofblood.1.title
- desc = austrianstuffofriversofblood.1.desc
+ id = austria.1
+ title = austria.1.title
+ desc = austria.1.desc
  picture = GFX_report_event_french_resistance_02
  is_triggered_only = yes
  fire_only_once = yes
  trigger = {
-date >, date <> 1934.2.12
+    date > 1934.2.12
 	}	option = {
-		name = austrianstuffofriversofblood.1.a
+		name = austria.1.a
 		ai_chance = { factor = 1}
 		change_tag_from= ACM
 	}
 	option = {
-		name = austrianstuffofriversofblood.1.b
+		name = austria.1.b
 		ai_chance = { factor = 1}
 		change_tag_from= THR
 	}
@@ -24,16 +24,16 @@ date >, date <> 1934.2.12
 
 ##Event: Austrian Unrest Is Reaching It's Peak
 country_event = {
- id = austrianstuffofriversofblood.2
- title = austrianstuffofriversofblood.2.title
- desc = austrianstuffofriversofblood.2.desc
+ id = austria.2
+ title = austria.2.title
+ desc = austria.2.desc
  picture = GFX_report_event_german_reichstag_gathering
  is_triggered_only = yes
  fire_only_once = yes
  trigger = {
-date >, date <> 1934.2.11
+date > 1934.2.11
 	}	option = {
-		name = austrianstuffofriversofblood.2.a
+		name = austria.2.a
 		ai_chance = { factor = 1}
 		ACM = { transfer_state = 1018
 ACM = { transfer_state = 1021
@@ -51,16 +51,16 @@ THR = { transfer_state = 1017
 
 ##Event: Engelbert Dollfuss Is Assassinated!
 country_event = {
- id = austrianstuffofriversofblood.3
- title = austrianstuffofriversofblood.3.title
- desc = austrianstuffofriversofblood.3.desc
+ id = austria.3
+ title = austria.3.title
+ desc = austria.3.desc
  picture = GFX_report_event_generic_read_write
  is_triggered_only = yes
  fire_only_once = yes
  trigger = {
-date >, date <> 1934.7.25
+date > 1934.7.25
 	}	option = {
-		name = austrianstuffofriversofblood.3.a
+		name = austria.3.a
 		ai_chance = { factor = 1}
 		create_country_leader= {
  name = 'Kurt Schuschnigg' 
@@ -77,14 +77,14 @@ traits = {
 
 ##Event: Engelbert Dollfuss Disolves All Parties
 news_event = {
- id = austrianstuffofriversofblood.4
- title = austrianstuffofriversofblood.4.title
- desc = austrianstuffofriversofblood.4.desc
+ id = austria.4
+ title = austria.4.title
+ desc = austria.4.desc
  picture = GFX_news_event_generic_parliament
  is_triggered_only = yes
  fire_only_once = yes
  major = yes
  trigger = {
-date >, date <> 1934.2.1
+date > 1934.2.1
 	}}
 
