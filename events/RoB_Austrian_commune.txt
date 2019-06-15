@@ -1,0 +1,38 @@
+add_namespace = Austrian_commune
+
+##Event: Austrian_commune_OOB
+country_event = {
+ id = Austrian_commune.1
+ title = Austrian_commune.1.t
+ desc = Austrian_commune.1.d
+ picture = GFX_report_event_french_resistance_02
+ fire_only_once = yes
+ trigger = {
+    country_exists = ACM
+	tag = ACM
+	}
+	option = {
+		name = Austrian_commune.1.a
+		ai_chance = { factor = 1}
+		hidden_effect = { 
+			load_oob = "ACM_civil_war"
+			add_state_core = 807
+			add_state_core = 934
+			add_state_core = 1016
+			add_state_core = 153
+			add_state_core = 1017
+			add_state_core = 4
+			add_state_core = 810
+			add_state_core = 152
+			add_state_core = 806
+			add_state_core = 1015
+			add_state_core = 1023
+			add_state_core = 1022
+			add_state_core = 1021
+			add_state_core = 1020
+			add_state_core = 1018
+			add_state_core = 1019
+		}
+	}
+}
+

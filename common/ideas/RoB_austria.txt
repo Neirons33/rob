@@ -2,7 +2,7 @@ ideas = {
 
 	country = {
 		socialist_paramilitaries = {
-			picture = 
+			picture = austrian_socialist_paramilitaries
 			
 			allowed = {
 				always = no

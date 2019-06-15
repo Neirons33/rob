@@ -1,0 +1,25 @@
+add_namespace = Hungary
+
+##Event: Hungary Invades Burganland
+country_event = {
+ id = Hungary.1
+ title = Hungary.1.t
+ desc = Hungary.1.d
+ picture = GFX_report_event_french_resistance_02
+ fire_only_once = yes
+ trigger = {
+    country_exists = AUS
+	tag = THR
+	}
+	option = {
+		name = third_reich
+		ai_chance = { factor = 1}
+		effect = { 
+			declare_war_on = {
+				target = AUS
+				type = annex_everything
+			}
+		}
+	}
+}
+
