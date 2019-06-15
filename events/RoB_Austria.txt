@@ -26,13 +26,24 @@ THR = { transfer_state = 807 }
 THR = { transfer_state = 806 }
 THR = { transfer_state = 152 }
 THR = { transfer_state = 1017 }
+1021 = { add_core_of = ACM }
+1020 = { add_core_of = ACM }
+1019 = { add_core_of = ACM }
+1018 = { add_core_of = ACM }
+1023 = { add_core_of = ACM }
+1022 = { add_core_of = ACM }
+807 = { add_core_of = THR }
+806 = { add_core_of = THR }
+152 = { add_core_of = THR }
+1017 = { add_core_of = THR }
 AUS = { declare_war_on = { target = THR  type = annex_everything } }
 AUS = { declare_war_on = { target = ACM  type = annex_everything } }
 THR = { declare_war_on = { target = ACM  type = annex_everything } }
-THR = { load_obb = THR_civil_war }
-ACM = { load_obb = ACM_civil_war }
+
 	}
 	ACM = { change_tag_from = AUS }
+	THR = { load_oob = THR_civil_war }
+ACM = { load_oob = ACM_civil_war }
 }
 	
 	option = {
@@ -50,13 +61,23 @@ THR = { transfer_state = 807 }
 THR = { transfer_state = 806 }
 THR = { transfer_state = 152 }
 THR = { transfer_state = 1017 }
+1021 = { add_core_of = ACM }
+1020 = { add_core_of = ACM }
+1019 = { add_core_of = ACM }
+1018 = { add_core_of = ACM }
+1023 = { add_core_of = ACM }
+1022 = { add_core_of = ACM }
+807 = { add_core_of = THR }
+806 = { add_core_of = THR }
+152 = { add_core_of = THR }
+1017 = { add_core_of = THR }
 AUS = { declare_war_on = { target = THR  type = annex_everything } }
 AUS = { declare_war_on = { target = ACM  type = annex_everything } }
 THR = { declare_war_on = { target = ACM  type = annex_everything } }
-THR = { load_obb = THR_civil_war }
-ACM = { load_obb = ACM_civil_war }
 	}
 		THR = { change_tag_from = AUS }
+		THR = { load_oob = THR_civil_war }
+        ACM = { load_oob = ACM_civil_war }
 	}
 }
 

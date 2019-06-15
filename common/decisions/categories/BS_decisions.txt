@@ -1,8 +1,11 @@
-german_partisans = {
+GER_german_partisans = {
   icon = GFX_decision_oppression
   picture = GFX_decision_germany_partisans
 	visible = {
     tag = GER
 	has_country_flag = anti_partisan_campaing
           }
+		  priority = {
+		  base = 10
+		  }
 }
