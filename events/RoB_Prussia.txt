@@ -249,7 +249,7 @@ ai_chance = {
 			factor = 20
 		}
 add_political_power = -80
-PRS = { country_event = { id = prussia.9 days = 15 }
+PRS = { country_event = { id = prussia.9 days = 15 } }
 add_popularity = {ideology = reactionary popularity =0.1}
 }
 
@@ -259,7 +259,7 @@ ai_chance = {
 			factor = 10
 		}
 add_political_power = 80
-PRS = { country_event = { id = prussia.10 days = 15 }
+PRS = { country_event = { id = prussia.10 days = 15 } }
 add_popularity = {ideology = reactionary popularity =-0.15}
 add_popularity = {ideology = social_liberal popularity =0.05}
 add_popularity = {ideology = social_democracy popularity =0.05}
