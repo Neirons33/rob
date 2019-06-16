@@ -42,7 +42,7 @@ THR = { declare_war_on = { target = ACM  type = annex_everything } }
 
 	}
 	ACM = { change_tag_from = AUS }
-	THR = { load_oob = THR_civil_war }
+
 ACM = { load_oob = ACM_civil_war }
 }
 	

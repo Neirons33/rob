@@ -2,7 +2,7 @@ ideas = {
 
 	country = {
 		socialist_paramilitaries = {
-			picture = austrian_socialist_paramilitaries
+			picture = GFX_austrian_socialist_paramilitaries
 			
 			allowed = {
 				always = no
@@ -22,7 +22,7 @@ ideas = {
 			}
 		}
 		brownshirt_terror = {
-			picture = 
+			picture = GFX_austrian_blackshirt_terror
 			
 			allowed = {
 				always = no
@@ -40,25 +40,7 @@ ideas = {
 			}
 		}
 		monarchist_growing = {
-			picture = 
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				political_power_gain = -0.05
-				stability_factor = -0.05
-			}
-		}
-		economic_hell = {
-			picture = 
+			picture = GFX_austria_monarchist_growing
 			
 			allowed = {
 				always = no
@@ -76,7 +58,7 @@ ideas = {
 			}
 		}
 		crotian_economic_pact = {
-			picture = 
+			picture = GFX_idea_generic_production_bonus
 			
 			allowed = {
 				always = no
@@ -95,7 +77,7 @@ ideas = {
 			}
 		}
 		great_depression_woes = {
-			picture = 
+			picture = GFX_idea_the_great_depression
 			
 			allowed = {
 				always = no

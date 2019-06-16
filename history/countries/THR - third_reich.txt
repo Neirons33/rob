@@ -38,7 +38,7 @@ extensive_conscription
 set_stability = 0.80
 
 create_country_leader = {
-	name = "Adolf Hitler"
+	name = "Adolf Hitler"
 	desc = "POLITICS_Engelbert_Dollfuss_DESC"
 	picture = "gfx//leaders//AUS//Adolf_Hitler.dds"
 	expire = "1965.1.1"
@@ -48,4 +48,61 @@ create_country_leader = {
 	}
 }
 
+create_field_marshal = {
+	name = "Ernst Rohm"
+	picture = "Portrait_Germany_Ernst_Rohm.tga"
+	traits = {
+		politically_connected
+		career_officer
+		defensive_doctrine
+	}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 3
+}
 
+create_corps_commander = {
+	name = "Ernst Kaltenbrunner"
+	picture = "Ernst Kaltenbrunner.dds"
+	traits = {  armor_officer career_officer  }
+	skill = 3
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Eduard Dietl.dds"
+	picture = "Eduard Dietl(mountainer).dds"
+	traits = {}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "karl von fischer-treuenfeld"
+	picture = "karl von fischer-treuenfeld.dds"
+	traits = {}
+	skill = 2
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Ulrich Graf"
+	picture = "Ulrich_Graf.dds"
+	traits = {}
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}

@@ -15,7 +15,6 @@ country_event = {
 		name = Austrian_commune.1.a
 		ai_chance = { factor = 1}
 		hidden_effect = { 
-			load_oob = "ACM_civil_war"
 			add_state_core = 807
 			add_state_core = 934
 			add_state_core = 1016

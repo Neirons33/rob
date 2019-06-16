@@ -3366,4 +3366,17 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/deutsche_volksarmee.tga"
 	}
 	
+	###Austria
+	spriteType = {
+		name = "GFX_austria_monarchist_growing"
+		texturefile = "gfx/interface/ideas/monarchist_growing.tga"
+	}
+	spriteType = {
+		name = "GFX_austrian_blackshirt_terror"
+		texturefile = "gfx/interface/ideas/blackshirt_terror.tga"
+	}
+	spriteType = {
+		name = "GFX_austrian_socialist_paramilitaries"
+		texturefile = "gfx/interface/ideas/austrian_socialist paramilitaries.tga"
+	}
 }
