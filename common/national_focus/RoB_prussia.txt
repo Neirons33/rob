@@ -29,6 +29,9 @@ focus_tree = {
 		x = 26
 		y = 0
 		cost = 10
+		available = {
+		has_country_flag = rosenberg_victory
+		}
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 1
@@ -43,6 +46,7 @@ focus_tree = {
 		y = 1
 		cost = 10
 		available_if_capitulated = yes
+
 		prerequisite = { focus = PRS_hessdictatorship }
 		ai_will_do = {
 			factor = 1
@@ -70,6 +74,7 @@ focus_tree = {
 		x = 36
 		y = 1
 		cost = 10
+
 		available_if_capitulated = yes
 		prerequisite = { focus = PRS_vydnasrules }
 		ai_will_do = {
@@ -83,6 +88,9 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 6
 		y = 0
+		available = {
+		has_country_flag = kaiser_controls_everything
+		}
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -1105,6 +1113,9 @@ focus_tree = {
 		y = 1
 		cost = 10
 		available_if_capitulated = yes
+				available = {
+		has_government = social_democracy
+		}
 		prerequisite = { focus = PRS_democraticelections }
 		ai_will_do = {
 			factor = 1
@@ -1119,6 +1130,9 @@ focus_tree = {
 		y = 1
 		cost = 10
 		available_if_capitulated = yes
+		available = {
+		has_government = conservative
+		}
 		prerequisite = { focus = PRS_democraticelections }
 		ai_will_do = {
 			factor = 1
@@ -1428,6 +1442,9 @@ focus_tree = {
 		y = 0
 		cost = 10
 		available_if_capitulated = yes
+				available = {
+		has_country_flag = vyddunas_victory
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -1441,6 +1458,9 @@ focus_tree = {
 		y = 0
 		cost = 10
 		available_if_capitulated = yes
+				available = {
+		has_country_flag = jungersjunta
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -1454,8 +1474,18 @@ focus_tree = {
 		y = 0
 		cost = 10
 		available_if_capitulated = yes
+		available = {
+		has_country_flag = democratic_elections
+		}
+		bypass = {
+		has_country_flag = democratic_elections
+		}
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		add_political_power = 100
+		add_stability = 0.1
 		}
 	}
 
@@ -1494,6 +1524,9 @@ focus_tree = {
 		x = 16
 		y = 0
 		cost = 10
+		available = {
+		has_country_flag = hess_victory
+		}
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 1
@@ -1541,6 +1574,9 @@ focus_tree = {
 		y = 1
 		cost = 10
 		available_if_capitulated = yes
+			available = {
+		has_government = social_liberal
+		}
 		prerequisite = { focus = PRS_democraticelections }
 		ai_will_do = {
 			factor = 1
