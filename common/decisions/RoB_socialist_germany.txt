@@ -13,32 +13,32 @@ GER_german_partisans = {
 
 divisions_in_state = {
     type = infantry
-    size > 3
+    size > 2
     state = 58
 	 }
 	 divisions_in_state = {
     type = infantry
-    size > 3
+    size > 2
     state = 59
 	 }
 	 divisions_in_state = {
     type = infantry
-    size > 3
+    size > 2
     state = 60
 	 }
 	 divisions_in_state = {
     type = infantry
-    size > 3
+    size > 2
     state = 61
 	 }
 	 divisions_in_state = {
     type = infantry
-    size > 3
+    size > 2
     state = 63
 	 }
 	 divisions_in_state = {
     type = infantry
-    size > 3
+    size > 2
     state = 55
 	 }
 	 }
@@ -77,27 +77,27 @@ divisions_in_state = {
 
 divisions_in_state = {
     type = infantry
-    size > 4
+    size > 2
     state = 53
 	 }
 	 divisions_in_state = {
     type = infantry
-    size > 3
+    size > 2
     state = 54
 	 }
 	 divisions_in_state = {
     type = infantry
-    size > 4
+    size > 2
     state = 50
 	 }
 	 divisions_in_state = {
     type = infantry
-    size > 5
+    size > 2
     state = 791
 	 }
 	 divisions_in_state = {
     type = infantry
-    size > 6
+    size > 2
     state = 52
 	 }
 
@@ -137,7 +137,7 @@ divisions_in_state = {
 	 
 	 divisions_in_state = {
     type = infantry
-    size > 10
+    size > 2
     state = 58
 	 }
 	 }
@@ -161,7 +161,7 @@ divisions_in_state = {
 	 
 	 divisions_in_state = {
     type = infantry
-    size > 12
+    size > 2
     state = 59
 	 }
 	 }
@@ -187,7 +187,7 @@ divisions_in_state = {
 	 
 	 divisions_in_state = {
     type = infantry
-    size > 8
+    size > 2
     state = 61
 	 }
 	 }
@@ -211,7 +211,7 @@ icon = GFX_decision_infiltrate_state
 	 available = {
 	 divisions_in_state = {
     type = infantry
-    size > 9
+    size > 2
     state = 63
 	 }
 	 
@@ -238,7 +238,7 @@ icon = GFX_decision_infiltrate_state
 	 
 	divisions_in_state = {
     type = infantry
-    size > 10
+    size > 2
     state = 60
 	 }
 	 }
@@ -262,7 +262,7 @@ icon = GFX_decision_infiltrate_state
 	 available = {
 	 divisions_in_state = {
     type = infantry
-    size > 11
+    size > 2
     state = 55
 	 }
 	 
@@ -283,7 +283,7 @@ icon = GFX_decision_infiltrate_state
 	 available = {
 	 divisions_in_state = {
     type = infantry
-    size > 13
+    size > 2
     state = 53
 	 }
 	 }
@@ -305,7 +305,7 @@ icon = GFX_decision_infiltrate_state
 	 	 available = {
 	 divisions_in_state = {
     type = infantry
-    size > 14
+    size > 2
     state = 54
 	 }
 	 }
@@ -327,7 +327,7 @@ icon = GFX_decision_infiltrate_state
 	 	 available = {
 	 divisions_in_state = {
     type = infantry
-    size > 12
+    size > 2
     state = 50
 	 }
 	 }
@@ -349,7 +349,7 @@ icon = GFX_decision_infiltrate_state
 	 	 available = {
 	 divisions_in_state = {
     type = infantry
-    size > 13
+    size > 2
     state = 53
 	 }
 	 }
@@ -371,7 +371,7 @@ icon = GFX_decision_infiltrate_state
 	 	 available = {
 	 divisions_in_state = {
     type = infantry
-    size > 11
+    size > 2
     state = 52
 	 }
 	 }

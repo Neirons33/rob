@@ -408,5 +408,9 @@ trigger = {
  has_country_flag = ENG_conservatives_absorbed
  has_country_flag = ENG_conservatives_independant
 }
+option = { ###They reject
+name = united_kingdom.16.b
+add_political_power = -30
 
+}
 }

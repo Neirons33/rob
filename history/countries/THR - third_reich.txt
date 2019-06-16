@@ -38,7 +38,7 @@ extensive_conscription
 set_stability = 0.80
 
 create_country_leader = {
-	name = "Adolf Hitler"
+	name = "Adolf Hitler"
 	desc = "POLITICS_Engelbert_Dollfuss_DESC"
 	picture = "gfx//leaders//AUS//Adolf_Hitler.dds"
 	expire = "1965.1.1"

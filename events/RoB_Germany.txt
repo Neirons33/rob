@@ -80,7 +80,7 @@ fire_only_once = yes
 
 trigger = {
 tag = GER
-has_country_flag = south_falls
+has_country_flag = north_falls
 }
 option = { ###go south
 name = spartakus_germany.4.a
