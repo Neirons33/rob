@@ -2,6 +2,10 @@
 state={
 	id=109
 	name="STATE_109"
+	resources={
+		steel=21.000
+		aluminium=2.000
+	}
 
 	history={
 		owner = CRO
