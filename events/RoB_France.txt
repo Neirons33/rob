@@ -824,4 +824,64 @@ NOT = {
  }
  }
 }
+
+option = {
+name = france.25.a
+trigger = {
+NOT = {
+ country_exists = FRL
+ }
+ has_country_flag = FRA_sor_status_quo
+ }
+ hidden_effect = {
+ FRR = { load_oob = FRR_civil_war }
+ FRP = { load_oob = FRP_civil_war }
+ FRS = { load_oob = FRS_civil_war }
+ declare_war_on = { type = annex_everything target = FRS }
+ declare_war_on = { type = annex_everything target = FRR }
+ declare_war_on = { type = annex_everything target = FRP }
+ 
+ FRS = {
+ declare_war_on = { type = annex_everything target = FRP }
+ declare_war_on = { type = annex_everything target = FRR }
+ }
+ 
+ FRP = {
+ declare_war_on = { type = annex_everything target = FRR }
+ }
+ }
+}
+
+option = {
+name = france.25.a
+trigger = {
+ country_exists = FRL
+ has_country_flag = FRA_sor_status_quo
+ }
+ hidden_effect = {
+ FRL = { load_oob = FRL_civil_war }
+ FRR = { load_oob = FRR_civil_war }
+ FRP = { load_oob = FRP_civil_war }
+ FRS = { load_oob = FRS_civil_war }
+ declare_war_on = { type = annex_everything target = FRL }
+ declare_war_on = { type = annex_everything target = FRS }
+ declare_war_on = { type = annex_everything target = FRR }
+ declare_war_on = { type = annex_everything target = FRP }
+ 
+ FRL = {
+ declare_war_on = { type = annex_everything target = FRS }
+ declare_war_on = { type = annex_everything target = FRR }
+ declare_war_on = { type = annex_everything target = FRP }
+ }
+ FRS = {
+ declare_war_on = { type = annex_everything target = FRP }
+ declare_war_on = { type = annex_everything target = FRR }
+ }
+ 
+ FRP = {
+ declare_war_on = { type = annex_everything target = FRR }
+ }
+ }
+}
+
 }
