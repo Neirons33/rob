@@ -596,9 +596,9 @@ TOW = {
 	color = rgb { 64 91 82 }
 	color_ui = rgb { 64 91 82 }
 }
-BAR = {
-	color = rgb { 60 73 59 }
-	color_ui = rgb { 60 73 59 }
+BWR = {
+	color = rgb { 146 175 65 }
+	color_ui = rgb { 146 175 65 }
 }
 RAJ = {
 	color = rgb { 198 125 7 }
@@ -638,4 +638,24 @@ YUC = {
 BAV = {
     color = rgb { 82 135 221 }
 	color_ui = rgb { 82 135 221 }
+}
+FRS = {
+    color = rgb { 198 80 71 }
+	color_ui = rgb { 198 80 71 }
+}
+FRR = {
+    color = rgb { 132 14 5 }
+	color_ui = rgb { 132 14 5 }
+}
+FRP = {
+    color = rgb { 12 11 86 }
+	color_ui = rgb { 12 11 86 }
+}
+FRL = {
+    color = rgb { 33 104 109 }
+	color_ui = rgb { 33 104 109 }
+}
+ACM = {
+    color = rgb { 125 13 24 }
+	color_ui = rgb { 125 13 24 }
 }

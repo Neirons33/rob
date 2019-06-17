@@ -10,7 +10,7 @@ set_technology = {
 }
 
 set_convoys = 10
-
+give_military_access = FRA
 set_politics = {
 	ruling_party = reactionary
 	last_election = "1933.7.1"

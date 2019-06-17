@@ -97,7 +97,7 @@ units = {
 				name_order = 12
 		}
 		location = 13357
-		division_template = "Sturmabteilung Infanterie"
+		division_template = "Volkspolizei"
 		start_experience_factor = 0.4
 		start_equipment_factor = 0.5
 	}
@@ -117,7 +117,7 @@ units = {
 				name_order = 23
 		}
 		location = 13371
-		division_template = "Sturmabteilung Infanterie"
+		division_template = "Volkspolizei"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.7
 	}
@@ -149,7 +149,7 @@ units = {
 				name_order = 1
 		}
 		location = 13381
-		division_template = "Sturmabteilung Infanterie"
+		division_template = "Volkspolizei"
 		start_experience_factor = 0.4
 		start_equipment_factor = 0.9
 
@@ -206,47 +206,10 @@ units = {
 		start_equipment_factor = 0.3
 	}
 
-	division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 25
-		}
-		location = 3718
-		division_template = "Sturmabteilung Infanterie"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.5
-	}
-	division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 25
-		}
-		location = 13357
-		division_template = "Volkspolizei"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.3
-	}
 
-	division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 25
-		}
-		location = 11634
-		division_template = "Volkspolizei"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.3
-	}
-	division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 25
-		}
-		location = 6708
-		division_template = "Volkspolizei"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.3
-	}
+
+
+
 
 
 	}

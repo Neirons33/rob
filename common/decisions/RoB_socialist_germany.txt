@@ -126,6 +126,14 @@ divisions_in_state = {
 	 
 	 
 	GER_destroy_partisans_in_holstein = {
+	 visible = {
+	  NOT = {
+	   OR = {
+	   has_country_flag = north_falls
+	   has_country_flag = north_holds
+	   }
+	 }
+	 }
 	 allowed = {
 	 has_country_flag = north_german_partisans
 	 }
@@ -153,6 +161,14 @@ divisions_in_state = {
 	 	ai_will_do = {
 			factor = 200
 		}
+		 visible = {
+	  NOT = {
+	   OR = {
+	   has_country_flag = north_falls
+	   has_country_flag = north_holds
+	   }
+	 }
+	 }
 	 icon = GFX_decision_infiltrate_state
  allowed = {
 	 has_country_flag = north_german_partisans
@@ -179,6 +195,14 @@ divisions_in_state = {
 	 	ai_will_do = {
 			factor = 200
 		}
+		 visible = {
+	  NOT = {
+	   OR = {
+	   has_country_flag = north_falls
+	   has_country_flag = north_holds
+	   }
+	 }
+	 }
 	  icon = GFX_decision_infiltrate_state
 	  allowed = {
 	 has_country_flag = north_german_partisans
@@ -204,6 +228,14 @@ divisions_in_state = {
 	  	ai_will_do = {
 			factor = 200
 		}
+		 visible = {
+	  NOT = {
+	   OR = {
+	   has_country_flag = north_falls
+	   has_country_flag = north_holds
+	   }
+	 }
+	 }
 icon = GFX_decision_infiltrate_state	 
 	 allowed = {
 	 has_country_flag = north_german_partisans
@@ -230,6 +262,14 @@ icon = GFX_decision_infiltrate_state
 	 	ai_will_do = {
 			factor = 200
 		}
+		 visible = {
+	  NOT = {
+	   OR = {
+	   has_country_flag = north_falls
+	   has_country_flag = north_holds
+	   }
+	 }
+	 }
 	 icon = GFX_decision_infiltrate_state
 	 allowed = {
 	 has_country_flag = north_german_partisans
@@ -255,6 +295,14 @@ icon = GFX_decision_infiltrate_state
 	  	ai_will_do = {
 			factor = 200
 		}
+		 visible = {
+	  NOT = {
+	   OR = {
+	   has_country_flag = north_falls
+	   has_country_flag = north_holds
+	   }
+	 }
+	 }
 	  icon = GFX_decision_infiltrate_state
 	 allowed = {
 	 has_country_flag = north_german_partisans
@@ -276,6 +324,14 @@ icon = GFX_decision_infiltrate_state
 	  	ai_will_do = {
 			factor = 200
 		}
+		 visible = {
+	  NOT = {
+	   OR = {
+	   has_country_flag = south_falls
+	   has_country_flag = south_holds
+	   }
+	 }
+	 }
 	  icon = GFX_decision_infiltrate_state
 	 allowed = {
 	 has_country_flag = south_german_partisans
@@ -298,6 +354,14 @@ icon = GFX_decision_infiltrate_state
 	 	ai_will_do = {
 			factor = 200
 		}
+				 visible = {
+	  NOT = {
+	   OR = {
+	   has_country_flag = south_falls
+	   has_country_flag = south_holds
+	   }
+	 }
+	 }
 	 icon = GFX_decision_infiltrate_state
 	 allowed = {
 	 has_country_flag = south_german_partisans
@@ -309,6 +373,7 @@ icon = GFX_decision_infiltrate_state
     state = 54
 	 }
 	 }
+	 
 	 cost = 40
 	 days_remove = 30
 	 fire_only_once = yes
@@ -320,6 +385,14 @@ icon = GFX_decision_infiltrate_state
 		  	ai_will_do = {
 			factor = 200
 		}
+				 visible = {
+	  NOT = {
+	   OR = {
+	   has_country_flag = south_falls
+	   has_country_flag = south_holds
+	   }
+	 }
+	 }
 		  icon = GFX_decision_infiltrate_state
 	 allowed = {
 	 has_country_flag = south_german_partisans
@@ -342,6 +415,14 @@ icon = GFX_decision_infiltrate_state
 		  	ai_will_do = {
 			factor = 200
 		}
+				 visible = {
+	  NOT = {
+	   OR = {
+	   has_country_flag = south_falls
+	   has_country_flag = south_holds
+	   }
+	 }
+	 }
 		  icon = GFX_decision_infiltrate_state
 	 allowed = {
 	 has_country_flag = south_german_partisans
@@ -364,6 +445,14 @@ icon = GFX_decision_infiltrate_state
 		  	ai_will_do = {
 			factor = 200
 		}
+				 visible = {
+	  NOT = {
+	   OR = {
+	   has_country_flag = south_falls
+	   has_country_flag = south_holds
+	   }
+	 }
+	 }
 		  icon = GFX_decision_infiltrate_state
 	 allowed = {
 	 has_country_flag = south_german_partisans

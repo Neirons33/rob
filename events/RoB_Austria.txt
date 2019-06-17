@@ -40,6 +40,8 @@ country_event = {
 				AUS = { declare_war_on = { target = THR  type = annex_everything } }
 				AUS = { declare_war_on = { target = ACM  type = annex_everything } }
 				THR = { declare_war_on = { target = ACM  type = annex_everything } }
+				THR = { load_oob = THR_civil_war }
+                ACM = { load_oob = ACM_civil_war }
 				set_country_flag = AUS_CIVIL_WAR
 
 	}

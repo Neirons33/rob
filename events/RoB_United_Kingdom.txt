@@ -411,6 +411,6 @@ trigger = {
 option = { ###They reject
 name = united_kingdom.16.b
 add_political_power = -30
-
+country_event = { 
 }
 }

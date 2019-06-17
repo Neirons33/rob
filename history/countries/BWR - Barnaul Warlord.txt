@@ -1,5 +1,5 @@
-capital = 571
-set_research_slots = 3
+capital = 40
+set_research_slots = 1
 
 set_politics = {
 	ruling_party = authoritharian
@@ -9,18 +9,18 @@ set_politics = {
 }
 set_popularities = {
 	national_socialist = 0
-	socialist = 4
-	democratic_socialist = 4
-	social_democracy = 4
-	social_liberal = 4
-	conservative = 4
-	authoritharian = 65
+	socialist = 2
+	democratic_socialist = 2
+	social_democracy = 2
+	social_liberal = 2
+	conservative = 2
+	authoritharian = 75
 	reactionary = 6
 	pelekist = 9
 }
 
 create_country_leader = {
-	name = "Grand Duke Kirill Vladimirovich"
+	name = "Grand Duke Dmitri Pavlovich"
 	desc = ""
 	picture = ""
 	expire = "1965.1.1"

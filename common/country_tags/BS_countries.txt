@@ -26,6 +26,10 @@ CBR = "countries/Communist Belarus.txt"
 DSU = "countries/Democratic Socialist Ukraine.txt"
 DBR = "countries/Democratic Belarus.txt"
 AWS = "countries/Communist Austria.txt"
+FRS = "countries/Socialist France.txt"
+FRR = "countries/Sorelian France.txt"
+FRP = "countries/Pelekist France.txt"
+FRL = "countries/Liberal France.txt"
 
 
 ##America##
@@ -64,7 +68,7 @@ UGC = "countries/Ugric Confederation.txt"
 LES = "countries/Legion State.txt"
 OMS = "countries/Omsk.txt"
 TOW = "countries/Tomsk.txt"
-BAR = "countries/Barnaul.txt"
+BWR = "countries/Barnaul.txt"
 
 
 ##European Russia##

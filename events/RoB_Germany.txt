@@ -425,16 +425,17 @@ add_political_power = 120
 add_popularity = { ideology = socialist popularity =0.06}
 add_popularity = { ideology = national_socialist popularity =0.04}
 set_country_flag = GER_lux_nb_victory
-hidden_effect = { create_country_leader = {
+
+create_country_leader = {
 	name = "Gregor Strasser"
 	desc = ""
 	picture = "GregorStrasser.tga"
 	expire = "1953.3.1"
-	ideology = socialism
+	ideology = socialist
 	traits = {
 		#
 	}
-} 
+ 
 }
 }
 
@@ -699,12 +700,51 @@ declare_war_on = { target = GER  type = annex_everything }
 
 option = { #switch to Prussia
 name = spartakus_germany.17.a
+hidden_effect = {
+58 = { 
+add_core_of = PRS
+}
+59 = { 
+add_core_of = PRS
+}
+63 = { 
+add_core_of = PRS
+}
+61 = { 
+add_core_of = PRS
+}
+62 = { 
+add_core_of = PRS
+}
+797 = { 
+add_core_of = PRS
+}
 PRS = { change_tag_from = GER }
 }
 
 option = { #we shall fight!
 name = spartakus_germany.17.b
 add_political_power = 120
+hidden_effect = {
+58 = { 
+add_core_of = PRS
+}
+59 = { 
+add_core_of = PRS
+}
+63 = { 
+add_core_of = PRS
+}
+61 = { 
+add_core_of = PRS
+}
+62 = { 
+add_core_of = PRS
+}
+797 = { 
+add_core_of = PRS
+}
+}
 }
 
 }

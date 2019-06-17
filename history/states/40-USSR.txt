@@ -7,12 +7,12 @@ state={
 	state_category = large_town
 
 	history={
-		owner = TOW
+		owner = BWR
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
 		}
-		add_core_of = TOW
+		add_core_of = BWR
 		1939.1.1 = {
 			buildings = {
 				industrial_complex = 2

@@ -22,7 +22,7 @@ ideas = {
 			}
 		}
 		brownshirt_terror = {
-			picture = GFX_austrian_blackshirt_terror
+			picture = GFX_austrian_brownshirt_terror
 			
 			allowed = {
 				always = no
