@@ -1,25 +1,66 @@
-add_namespace = Hungary
+###########################
+# Hungarian Events
+###########################
 
-##Event: Hungary Invades Burganland
+add_namespace = hungary
+
+# magyar niggas want da burgenland
 country_event = {
- id = Hungary.1
- title = Hungary.1.t
- desc = Hungary.1.d
- picture = GFX_report_event_french_resistance_02
- fire_only_once = yes
- trigger = {
-    country_exists = AUS
-	tag = THR
+	id = hungary.1
+	title = hungary.1.t
+	desc = hungary.1.d
+	picture = GFX_report_event_finnish_letter
+	fire_only_once = yes	
+	trigger = {
+		tag = HUN
+		mean_time_to_happen = { days = 1}
+		AUS ={
+		   has_war = yes
+		 }
 	}
+	#demand burganland
 	option = {
-		name = third_reich
-		ai_chance = { factor = 1}
-		effect = { 
-			declare_war_on = {
-				target = AUS
-				type = annex_everything
-			}
-		}
+		name = hungary.1.a
+		ai_chance = { factor = 5}
+			hidden_effect = { 	
+				country_event = {
+				    id = austria.4 
+				    days = 10
+				    random = 1
+				}
+		}		
+	}
+	#nigga have no spine
+	option = {
+		name = hungary.1.b
+		ai_chance = { factor = 2}
+			hidden_effect = { 	
+		}		
 	}
 }
 
+
+# hungary declares war on austria
+country_event = {
+	id = hungary.2
+	title = hungary.2.t
+	desc = hungary.2.d
+	picture = GFX_report_event_second_vienna_award_pact
+	fire_only_once = yes
+	is_triggered_only = yes		
+	trigger = {
+		tag = HUN
+		mean_time_to_happen = { days = 1}
+	    AUS ={
+		   		untry_flag = ignore_hun_demand_4_burgand
+		 }
+	}
+	#invades austria
+	option = {
+		name = hungary.2.a
+		ai_chance = { factor = 5}
+			hidden_effect = { 	
+				HUN = { declare_war_on = { target = AUS  type = annex_everything } }
+		}		
+	}
+}

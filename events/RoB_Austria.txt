@@ -9,6 +9,7 @@ country_event = {
  fire_only_once = yes
  trigger = {
     date > 1934.2.12
+    mean_time_to_happen = { days = 1}
 	tag = AUS
 	}
 	option = {
@@ -16,29 +17,30 @@ country_event = {
 		ai_chance = { factor = 1}
 		hidden_effect = { 
 				ACM = { transfer_state = 1018 }
-ACM = { transfer_state = 1021 }
-ACM = { transfer_state = 1020 }
-ACM = { transfer_state = 1019 }
-ACM = { transfer_state = 1018 }
-ACM = { transfer_state = 1023 }
-ACM = { transfer_state = 1022 }
-THR = { transfer_state = 807 }
-THR = { transfer_state = 806 }
-THR = { transfer_state = 152 }
-THR = { transfer_state = 1017 }
-1021 = { add_core_of = ACM }
-1020 = { add_core_of = ACM }
-1019 = { add_core_of = ACM }
-1018 = { add_core_of = ACM }
-1023 = { add_core_of = ACM }
-1022 = { add_core_of = ACM }
-807 = { add_core_of = THR }
-806 = { add_core_of = THR }
-152 = { add_core_of = THR }
-1017 = { add_core_of = THR }
-AUS = { declare_war_on = { target = THR  type = annex_everything } }
-AUS = { declare_war_on = { target = ACM  type = annex_everything } }
-THR = { declare_war_on = { target = ACM  type = annex_everything } }
+				ACM = { transfer_state = 1021 }
+				ACM = { transfer_state = 1020 }
+				ACM = { transfer_state = 1019 }
+				ACM = { transfer_state = 1018 }
+				ACM = { transfer_state = 1023 }
+				ACM = { transfer_state = 1022 }
+				THR = { transfer_state = 807 }
+				THR = { transfer_state = 806 }
+				THR = { transfer_state = 152 }
+				THR = { transfer_state = 1017 }
+				1021 = { add_core_of = ACM }
+				1020 = { add_core_of = ACM }
+				1019 = { add_core_of = ACM }
+				1018 = { add_core_of = ACM }
+				1023 = { add_core_of = ACM }
+				1022 = { add_core_of = ACM }
+				807 = { add_core_of = THR }
+				806 = { add_core_of = THR }
+				152 = { add_core_of = THR }
+				1017 = { add_core_of = THR }
+				AUS = { declare_war_on = { target = THR  type = annex_everything } }
+				AUS = { declare_war_on = { target = ACM  type = annex_everything } }
+				THR = { declare_war_on = { target = ACM  type = annex_everything } }
+				set_country_flag = AUS_CIVIL_WAR
 
 	}
 	ACM = { change_tag_from = AUS }
@@ -51,36 +53,69 @@ ACM = { load_oob = ACM_civil_war }
 		ai_chance = { factor = 1}
 				hidden_effect = { 
 				ACM = { transfer_state = 1018 }
-ACM = { transfer_state = 1021 }
-ACM = { transfer_state = 1020 }
-ACM = { transfer_state = 1019 }
-ACM = { transfer_state = 1018 }
-ACM = { transfer_state = 1023 }
-ACM = { transfer_state = 1022 }
-THR = { transfer_state = 807 }
-THR = { transfer_state = 806 }
-THR = { transfer_state = 152 }
-THR = { transfer_state = 1017 }
-1021 = { add_core_of = ACM }
-1020 = { add_core_of = ACM }
-1019 = { add_core_of = ACM }
-1018 = { add_core_of = ACM }
-1023 = { add_core_of = ACM }
-1022 = { add_core_of = ACM }
-807 = { add_core_of = THR }
-806 = { add_core_of = THR }
-152 = { add_core_of = THR }
-1017 = { add_core_of = THR }
-AUS = { declare_war_on = { target = THR  type = annex_everything } }
-AUS = { declare_war_on = { target = ACM  type = annex_everything } }
-THR = { declare_war_on = { target = ACM  type = annex_everything } }
+				ACM = { transfer_state = 1021 }
+				ACM = { transfer_state = 1020 }
+				ACM = { transfer_state = 1019 }
+				ACM = { transfer_state = 1018 }
+				ACM = { transfer_state = 1023 }
+				ACM = { transfer_state = 1022 }
+				THR = { transfer_state = 807 }
+				THR = { transfer_state = 806 }
+				THR = { transfer_state = 152 }
+				THR = { transfer_state = 1017 }
+				1021 = { add_core_of = ACM }
+				1020 = { add_core_of = ACM }
+				1019 = { add_core_of = ACM }
+				1018 = { add_core_of = ACM }
+				1023 = { add_core_of = ACM }
+				1022 = { add_core_of = ACM }
+				807 = { add_core_of = THR }
+				806 = { add_core_of = THR }
+				152 = { add_core_of = THR }
+				1017 = { add_core_of = THR }
+				AUS = { declare_war_on = { target = THR  type = annex_everything } }
+				AUS = { declare_war_on = { target = ACM  type = annex_everything } }
+				THR = { declare_war_on = { target = ACM  type = annex_everything } }
+				set_country_flag = AUS_CIVIL_WAR
 	}
 		THR = { change_tag_from = AUS }
 		THR = { load_oob = THR_civil_war }
         ACM = { load_oob = ACM_civil_war }
 	}
+	option = {
+		name = austria.1.c
+		ai_chance = { factor = 1}
+		hidden_effect = { 
+				ACM = { transfer_state = 1018 }
+				ACM = { transfer_state = 1021 }
+				ACM = { transfer_state = 1020 }
+				ACM = { transfer_state = 1019 }
+				ACM = { transfer_state = 1018 }
+				ACM = { transfer_state = 1023 }
+				ACM = { transfer_state = 1022 }
+				THR = { transfer_state = 807 }
+				THR = { transfer_state = 806 }
+				THR = { transfer_state = 152 }
+				THR = { transfer_state = 1017 }
+				1021 = { add_core_of = ACM }
+				1020 = { add_core_of = ACM }
+				1019 = { add_core_of = ACM }
+				1018 = { add_core_of = ACM }
+				1023 = { add_core_of = ACM }
+				1022 = { add_core_of = ACM }
+				807 = { add_core_of = THR }
+				806 = { add_core_of = THR }
+				152 = { add_core_of = THR }
+				1017 = { add_core_of = THR }
+				AUS = { declare_war_on = { target = THR  type = annex_everything } }
+				AUS = { declare_war_on = { target = ACM  type = annex_everything } }
+				THR = { declare_war_on = { target = ACM  type = annex_everything } }
+				set_country_flag = AUS_CIVIL_WAR
+		}
+		THR = { load_oob = THR_civil_war }
+        ACM = { load_oob = ACM_civil_war }
+	}
 }
-
 
 ##Event: Engelbert Dollfuss Is Assassinated!
 country_event = {
@@ -88,23 +123,30 @@ country_event = {
  title = austria.2.t
  desc = austria.2.d
  picture = GFX_report_event_generic_read_write
- is_triggered_only = yes
  fire_only_once = yes
  trigger = {
-date > 1934.7.25
-	}	option = {
+	date > 1934.2.25
+	tag = AUS
+	mean_time_to_happen = { days = 1}
+	}	
+	option = {
 		name = austria.2.a
 		ai_chance = { factor = 1}
+		news_event = {
+		    id = austria.3
+		    days = 10
+		    random = 25
+		}
 		create_country_leader= {
- name = "Kurt Schuschnigg" 
-desc = ""
-picture = "Kurt_Schuschnigg.dds"
-expire = "1965.1.1"
-ideology = reactionary
-traits = {
-}
+			name = "Kurt Schuschnigg" 
+			desc = ""
+			picture = "Kurt_Schuschnigg.dds"
+			expire = "1965.1.1"
+			ideology = reactionary
+			traits = {
+				}
 
- }
+		 }
 	}
 }
 
@@ -118,7 +160,56 @@ news_event = {
  fire_only_once = yes
  major = yes
  trigger = {
-date > 1934.2.1
+ 	mean_time_to_happen = { days = 1}
 	}
 	}
 
+country_event = {
+	id = austria.4
+	title = austria.4.t
+	desc = austria.4.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	picture = GFX_picture_russia_white_soldiers
+	trigger = {
+		mean_time_to_happen = { days = 1}
+		 }
+	}
+	#ignores demands
+	option = {
+	name = austria.4.a
+		hidden_effect = { 	
+			country_event = {
+				id = hungary.2
+				days = 10
+				random = 1
+			}
+		}
+	}
+	#nigga conceeds
+	option = {
+	name = austria.4.b
+		hidden_effect = { 	
+		HUN = { transfer_state = 810 }	
+			}
+		
+	}
+}
+
+country _event = {
+ id = austria.5
+ title = austria.5.t
+ desc = austria.5.d
+ picture = GFX_report_event_generic_read_write
+ fire_only_once = yes
+	trigger = {
+		tag = AUS
+		has_war = yes
+		mean_time_to_happen = { days = 1}
+		}
+		option = {
+		name = austria.5.a
+		ai_chance = { factor = 1}
+		AUS = { load_oob = ostmarksche_volunteers }
+		 }
+	}	
