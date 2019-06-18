@@ -1,10 +1,10 @@
-add_namespace = austria
+add_namespace = rob_austria
 
-##Event: Austrian Civil War Beggins
+##Event: rob_austrian Civil War Beggins
 country_event = {
- id = austria.1
- title = austria.1.t
- desc = austria.1.d
+ id = rob_austria.1
+ title = rob_austria.1.t
+ desc = rob_austria.1.d
  picture = GFX_report_event_french_resistance_02
  fire_only_once = yes
  trigger = {
@@ -13,7 +13,7 @@ country_event = {
 	tag = AUS
 	}
 	option = {
-		name = austria.1.a
+		name = rob_austria.1.a
 		ai_chance = { factor = 1}
 		hidden_effect = { 
 				ACM = { transfer_state = 1018 }
@@ -43,6 +43,9 @@ country_event = {
 				THR = { load_oob = THR_civil_war }
                 ACM = { load_oob = ACM_civil_war }
 				set_country_flag = AUS_CIVIL_WAR
+				HUN = { 
+				country_event = { id = rob_hungary.1 days = 7 } 
+				}
 
 	}
 	ACM = { change_tag_from = AUS }
@@ -51,7 +54,7 @@ ACM = { load_oob = ACM_civil_war }
 }
 	
 	option = {
-		name = austria.1.b
+		name = rob_austria.1.b
 		ai_chance = { factor = 1}
 				hidden_effect = { 
 				ACM = { transfer_state = 1018 }
@@ -79,13 +82,16 @@ ACM = { load_oob = ACM_civil_war }
 				AUS = { declare_war_on = { target = ACM  type = annex_everything } }
 				THR = { declare_war_on = { target = ACM  type = annex_everything } }
 				set_country_flag = AUS_CIVIL_WAR
+				HUN = { 
+				country_event = { id = rob_hungary.1 days = 7 } 
+				}
 	}
 		THR = { change_tag_from = AUS }
 		THR = { load_oob = THR_civil_war }
         ACM = { load_oob = ACM_civil_war }
 	}
 	option = {
-		name = austria.1.c
+		name = rob_austria.1.c
 		ai_chance = { factor = 1}
 		hidden_effect = { 
 				ACM = { transfer_state = 1018 }
@@ -113,6 +119,9 @@ ACM = { load_oob = ACM_civil_war }
 				AUS = { declare_war_on = { target = ACM  type = annex_everything } }
 				THR = { declare_war_on = { target = ACM  type = annex_everything } }
 				set_country_flag = AUS_CIVIL_WAR
+				HUN = { 
+				country_event = { id = rob_hungary.1 days = 7 } 
+				}
 		}
 		THR = { load_oob = THR_civil_war }
         ACM = { load_oob = ACM_civil_war }
@@ -121,21 +130,21 @@ ACM = { load_oob = ACM_civil_war }
 
 ##Event: Engelbert Dollfuss Is Assassinated!
 country_event = {
- id = austria.2
- title = austria.2.t
- desc = austria.2.d
+ id = rob_austria.2
+ title = rob_austria.2.t
+ desc = rob_austria.2.d
  picture = GFX_report_event_generic_read_write
  fire_only_once = yes
  trigger = {
 	date > 1934.2.25
 	tag = AUS
-	mean_time_to_happen = { days = 1}
+	mean_time_to_happen = { days = 1 }
 	}	
 	option = {
-		name = austria.2.a
+		name = rob_austria.2.a
 		ai_chance = { factor = 1}
 		news_event = {
-		    id = austria.3
+		    id = rob_austria.3
 		    days = 10
 		    random = 25
 		}
@@ -154,43 +163,38 @@ country_event = {
 
 ##Event: Engelbert Dollfuss Disolves All Parties
 news_event = {
- id = austria.3
- title = austria.3.t
- desc = austria.3.d
+ id = rob_austria.3
+ title = rob_austria.3.t
+ desc = rob_austria.3.d
  picture = GFX_news_event_generic_parliament
  is_triggered_only = yes
  fire_only_once = yes
  major = yes
- trigger = {
- 	mean_time_to_happen = { days = 1}
-	}
-	}
 
+}
 country_event = {
-	id = austria.4
-	title = austria.4.t
-	desc = austria.4.d
+	id = rob_austria.4
+	title = rob_austria.4.t
+	desc = rob_austria.4.d
 	fire_only_once = yes
 	is_triggered_only = yes
 	picture = GFX_picture_russia_white_soldiers
-	trigger = {
-		mean_time_to_happen = { days = 1}
-		 }
-	}
+	
 	#ignores demands
 	option = {
-	name = austria.4.a
-		hidden_effect = { 	
-			country_event = {
-				id = hungary.2
-				days = 10
-				random = 1
+	name = rob_austria.4.a
+			
+			HUN = { 
+			  country_event = {  
+				id = rob_hungary.2
+				days = 4
 			}
+		
 		}
 	}
 	#nigga conceeds
 	option = {
-	name = austria.4.b
+	name = rob_austria.4.b
 		hidden_effect = { 	
 		HUN = { transfer_state = 810 }	
 			}
@@ -198,19 +202,20 @@ country_event = {
 	}
 }
 
-country _event = {
- id = austria.5
- title = austria.5.t
- desc = austria.5.d
+country_event = {
+ id = rob_austria.5
+ title = rob_austria.5.t
+ desc = rob_austria.5.d
  picture = GFX_report_event_generic_read_write
  fire_only_once = yes
 	trigger = {
 		tag = AUS
 		has_war = yes
-		mean_time_to_happen = { days = 1}
-		}
+		
+}
+mean_time_to_happen = { days = 1 }
 		option = {
-		name = austria.5.a
+		name = rob_austria.5.a
 		ai_chance = { factor = 1}
 		AUS = { load_oob = ostmarksche_volunteers }
 		 }

@@ -461,6 +461,7 @@ create_country_leader = {
  
 }
 add_popularity = { ideology = authoritharian popularity = 0.2 }
+add_stability = 0.15
 set_country_flag = FRA_gaulle_dictatorship
 }
 
@@ -483,6 +484,7 @@ create_country_leader = {
   
 }
 add_popularity = { ideology = reactionary popularity = 0.2 }
+add_stability = 0.15
 set_country_flag = FRA_petain_dictatorship
 }
 }
