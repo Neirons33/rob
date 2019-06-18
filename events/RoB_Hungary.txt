@@ -4,38 +4,34 @@
 
 add_namespace = hungary
 
-# magyar niggas want da burgenland
+#magyar niggas want da burgenland
 country_event = {
 	id = hungary.1
 	title = hungary.1.t
 	desc = hungary.1.d
 	picture = GFX_report_event_finnish_letter
 	fire_only_once = yes	
-	trigger = {
-		tag = HUN
-		mean_time_to_happen = { days = 1}
-		AUS ={
-		   has_war = yes
-		 }
-	}
+    is_triggered_only = yes
+	
 	#demand burganland
 	option = {
 		name = hungary.1.a
 		ai_chance = { factor = 5}
-			hidden_effect = { 	
-				country_event = {
+			hidden_effect = {
+				AUS = {
+				 country_event = {
 				    id = austria.4 
-				    days = 10
-				    random = 1
+				    days = 3
 				}
-		}		
-	}
+		}
+}		
+}
+
 	#nigga have no spine
 	option = {
 		name = hungary.1.b
-		ai_chance = { factor = 2}
-			hidden_effect = { 	
-		}		
+		add_political_power = -100
+		ai_chance = { factor = 2 }	
 	}
 }
 
@@ -48,13 +44,7 @@ country_event = {
 	picture = GFX_report_event_second_vienna_award_pact
 	fire_only_once = yes
 	is_triggered_only = yes		
-	trigger = {
-		tag = HUN
-		mean_time_to_happen = { days = 1}
-	    AUS ={
-		   		untry_flag = ignore_hun_demand_4_burgand
-		 }
-	}
+
 	#invades austria
 	option = {
 		name = hungary.2.a

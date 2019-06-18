@@ -43,6 +43,9 @@ country_event = {
 				THR = { load_oob = THR_civil_war }
                 ACM = { load_oob = ACM_civil_war }
 				set_country_flag = AUS_CIVIL_WAR
+				HUN = { 
+				country_event = { id = hungary.1 days = 7 } 
+				}
 
 	}
 	ACM = { change_tag_from = AUS }
@@ -79,6 +82,9 @@ ACM = { load_oob = ACM_civil_war }
 				AUS = { declare_war_on = { target = ACM  type = annex_everything } }
 				THR = { declare_war_on = { target = ACM  type = annex_everything } }
 				set_country_flag = AUS_CIVIL_WAR
+				HUN = { 
+				country_event = { id = hungary.1 days = 7 } 
+				}
 	}
 		THR = { change_tag_from = AUS }
 		THR = { load_oob = THR_civil_war }
@@ -113,6 +119,9 @@ ACM = { load_oob = ACM_civil_war }
 				AUS = { declare_war_on = { target = ACM  type = annex_everything } }
 				THR = { declare_war_on = { target = ACM  type = annex_everything } }
 				set_country_flag = AUS_CIVIL_WAR
+				HUN = { 
+				country_event = { id = hungary.1 days = 7 } 
+				}
 		}
 		THR = { load_oob = THR_civil_war }
         ACM = { load_oob = ACM_civil_war }
@@ -129,7 +138,7 @@ country_event = {
  trigger = {
 	date > 1934.2.25
 	tag = AUS
-	mean_time_to_happen = { days = 1}
+	mean_time_to_happen = { days = 1 }
 	}	
 	option = {
 		name = austria.2.a
@@ -161,11 +170,8 @@ news_event = {
  is_triggered_only = yes
  fire_only_once = yes
  major = yes
- trigger = {
- 	mean_time_to_happen = { days = 1}
-	}
-	}
 
+}
 country_event = {
 	id = austria.4
 	title = austria.4.t
@@ -173,19 +179,17 @@ country_event = {
 	fire_only_once = yes
 	is_triggered_only = yes
 	picture = GFX_picture_russia_white_soldiers
-	trigger = {
-		mean_time_to_happen = { days = 1}
-		 }
-	}
+	
 	#ignores demands
 	option = {
 	name = austria.4.a
 		hidden_effect = { 	
-			country_event = {
+			HUN = { 
+			  country_event = {
 				id = hungary.2
-				days = 10
-				random = 1
+				days = 4
 			}
+		}
 		}
 	}
 	#nigga conceeds
@@ -198,7 +202,7 @@ country_event = {
 	}
 }
 
-country _event = {
+country_event = {
  id = austria.5
  title = austria.5.t
  desc = austria.5.d
@@ -207,8 +211,9 @@ country _event = {
 	trigger = {
 		tag = AUS
 		has_war = yes
-		mean_time_to_happen = { days = 1}
-		}
+		
+}
+mean_time_to_happen = { days = 1 }
 		option = {
 		name = austria.5.a
 		ai_chance = { factor = 1}
