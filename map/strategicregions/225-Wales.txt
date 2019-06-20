@@ -1,14 +1,13 @@
-
 strategic_region={
-	id=3
-	name="STRATEGICREGION_3"
+	id=225
+	name="STRATEGICREGION_225"
 	provinces={
-		131 159 200 284 351 3150 3159 3178 3273 3311 3373 6046 6062 6104 6205 6300 6320 6350 6385 6395 9075 9090 9161 9237 9314 9350 9383 9392 11055 11064 11136 11161 11207 11218 11266 11299 11306 11378 13246 13412 
+		253 311 377 407 3205 3241 3274 3301 6301 6363 7239 9364 11345 11361 13403 13405 13406 13407 13416 13417 13418 13419 13420 13421 13423 
 	}
 	weather={
 		period={
 			between={ 0.0 30.0 }
-			temperature={ -10.0 5.0 }
+			temperature={ -5.0 7.0 }
 			temperature_day_night={ 5.0 -5.0 }
 			no_phenomenon=0.500
 			rain_light=1.000
@@ -22,7 +21,7 @@ strategic_region={
 		}
 		period={
 			between={ 0.1 27.1 }
-			temperature={ -10.0 5.0 }
+			temperature={ 0.0 7.0 }
 			temperature_day_night={ 5.0 -5.0 }
 			no_phenomenon=0.500
 			rain_light=1.000
@@ -36,7 +35,7 @@ strategic_region={
 		}
 		period={
 			between={ 0.2 30.2 }
-			temperature={ 0.0 6.0 }
+			temperature={ 3.0 6.0 }
 			temperature_day_night={ 5.0 -5.0 }
 			no_phenomenon=0.500
 			rain_light=1.000
@@ -64,7 +63,7 @@ strategic_region={
 		}
 		period={
 			between={ 0.4 30.4 }
-			temperature={ 8.0 15.0 }
+			temperature={ 8.0 17.0 }
 			temperature_day_night={ 5.0 -5.0 }
 			no_phenomenon=0.500
 			rain_light=1.000
@@ -78,7 +77,7 @@ strategic_region={
 		}
 		period={
 			between={ 0.5 29.5 }
-			temperature={ 9.0 18.0 }
+			temperature={ 11.0 20.0 }
 			temperature_day_night={ 5.0 -5.0 }
 			no_phenomenon=0.500
 			rain_light=1.000
@@ -162,7 +161,7 @@ strategic_region={
 		}
 		period={
 			between={ 0.11 30.11 }
-			temperature={ -5.0 2.0 }
+			temperature={ -3.0 5.0 }
 			temperature_day_night={ 5.0 -5.0 }
 			no_phenomenon=0.500
 			rain_light=1.000
