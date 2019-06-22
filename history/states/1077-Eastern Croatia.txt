@@ -1,0 +1,25 @@
+state={
+	id=1077
+	name="STATE_1077"
+	provinces={
+		3627 6647 9595 
+	}
+	history={
+		owner = CRO
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+			arms_factory = 2
+
+		}
+		add_core_of = CRO
+
+	}
+
+	provinces={
+		9595 8627 6647
+	}
+	manpower= 563100
+	buildings_max_level_factor=1.250
+	state_category=large_town
+}
