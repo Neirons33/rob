@@ -1,0 +1,5 @@
+focus_tree = {
+	id = germany_no_coallition
+	country = {
+		factor = 0
+	}

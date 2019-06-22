@@ -25,7 +25,7 @@ focus_tree = {
 	#Focus for Rosenberg's Presidency
 	focus = {
 		id = PRS_rosenbergspresidency
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_rosenbergs_presidency
 		x = 26
 		y = 0
 		cost = 10
@@ -41,7 +41,7 @@ focus_tree = {
 	#Focus for Purge Lithuanian Faction
 	focus = {
 		id = PRS_purgelithuanianfaction
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_purge_lithuanians
 		x = 20
 		y = 1
 		cost = 10
@@ -56,7 +56,7 @@ focus_tree = {
 	#Focus for Stricter Minority Control
 	focus = {
 		id = PRS_stricterminoritycontrol
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_stricter_minority_controll
 		x = 12
 		y = 1
 		cost = 10
@@ -70,7 +70,7 @@ focus_tree = {
 	#Focus for Corporatism
 	focus = {
 		id = PRS_corporatism
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_corporatism
 		x = 36
 		y = 1
 		cost = 10
@@ -85,7 +85,7 @@ focus_tree = {
 	#Focus for True to Kaiser!
 	focus = {
 		id = PRS_truetokaiser
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_true_to_kaiser
 		x = 6
 		y = 0
 		available = {
@@ -692,7 +692,7 @@ focus_tree = {
 	#Focus for Socialism With German Characteristics
 	focus = {
 		id = PRS_socialismwithgermancharacteristics
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_socialism_with_german_char
 		x = 16
 		y = 1
 		cost = 10
@@ -706,7 +706,7 @@ focus_tree = {
 	#Focus for Subjugate Bourgeosie
 	focus = {
 		id = PRS_subjugatebourgeosie
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_subjugate_bourgeoisie
 		x = 18
 		y = 2
 		cost = 10
@@ -753,7 +753,7 @@ focus_tree = {
 	#Focus for Create SS
 	focus = {
 		id = PRS_createss
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_create_ss_hess
 		x = 20
 		y = 2
 		cost = 10
@@ -767,7 +767,7 @@ focus_tree = {
 	#Focus for Militarize Industry
 	focus = {
 		id = PRS_militarizeindustry
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_militarize_industry
 		x = 16
 		y = 3
 		cost = 10
@@ -789,7 +789,7 @@ focus_tree = {
 	#Focus for Nordicism
 	focus = {
 		id = PRS_nordicism
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_nordicism
 		x = 12
 		y = 4
 		cost = 10
@@ -803,7 +803,7 @@ focus_tree = {
 	#Focus for The Hyperborean Spirit
 	focus = {
 		id = PRS_thehyperboreanspirit
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_hyperborean_hess
 		x = 20
 		y = 4
 		cost = 10
@@ -817,7 +817,7 @@ focus_tree = {
 	#Focus for Militarized Society
 	focus = {
 		id = PRS_militarizedsociety
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_militarized_scoiety
 		x = 16
 		y = 4
 		cost = 10
@@ -831,7 +831,7 @@ focus_tree = {
 	#Focus for Positive Christianity
 	focus = {
 		id = PRS_positivechristianity
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_positive_christianity
 		x = 18
 		y = 6
 		cost = 10
@@ -845,7 +845,7 @@ focus_tree = {
 	#Focus for Control the Church
 	focus = {
 		id = PRS_controlthechurch
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_control_the_church
 		x = 18
 		y = 5
 		cost = 10
@@ -864,7 +864,7 @@ focus_tree = {
 	#Focus for The Nordic Youth
 	focus = {
 		id = PRS_thenordicyouth
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_nordic_youth
 		x = 14
 		y = 5
 		cost = 10
@@ -883,7 +883,7 @@ focus_tree = {
 	#Focus for Strength Through Joy
 	focus = {
 		id = PRS_strengththroughjoy
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_strenght_through_joy
 		x = 14
 		y = 6
 		cost = 10
@@ -897,7 +897,7 @@ focus_tree = {
 	#Focus for Deutschland, erwache!
 	focus = {
 		id = PRS_deutschlanderwache
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_deutschland_erwache
 		x = 16
 		y = 7
 		cost = 10
@@ -916,7 +916,7 @@ focus_tree = {
 	#Focus for Aryan Ties
 	focus = {
 		id = PRS_aryanties
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_aryan_ties
 		x = 32
 		y = 4
 		cost = 10
@@ -930,7 +930,7 @@ focus_tree = {
 	#Focus for Baltic Kshatriyas
 	focus = {
 		id = PRS_baltickshatriyas
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_vydunas_baltic_soldiers
 		x = 36
 		y = 3
 		cost = 10
@@ -944,7 +944,7 @@ focus_tree = {
 	#Focus for Lithuanian Brahmins
 	focus = {
 		id = PRS_lithuanianbrahmins
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_vydunas_baltic_rulers
 		x = 36
 		y = 4
 		cost = 10
@@ -958,7 +958,7 @@ focus_tree = {
 	#Focus for The Romuva Faith
 	focus = {
 		id = PRS_theromuvafaith
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_vydunas_romuva_faith
 		x = 34
 		y = 5
 		cost = 10
@@ -977,7 +977,7 @@ focus_tree = {
 	#Focus for Invite Lithuanian Immigrants
 	focus = {
 		id = PRS_invitelithuanianimmigrants
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_vydunas_lithuanian_immigration
 		x = 40
 		y = 3
 		cost = 10
@@ -991,7 +991,7 @@ focus_tree = {
 	#Focus for Support Latvian Partisans
 	focus = {
 		id = PRS_supportlatvianpartisans
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_vydunas_support_latvian_partisans
 		x = 40
 		y = 4
 		cost = 10
@@ -1005,7 +1005,7 @@ focus_tree = {
 	#Focus for Perenniall Policy
 	focus = {
 		id = PRS_perenniallpolicy
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_vydunas_pereniallism
 		x = 34
 		y = 6
 		cost = 10
@@ -1019,7 +1019,7 @@ focus_tree = {
 	#Focus for Solidfy our Control
 	focus = {
 		id = PRS_solidfyourcontrol
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_solidify_our_controll
 		x = 38
 		y = 6
 		cost = 10
@@ -1033,7 +1033,7 @@ focus_tree = {
 	#Focus for The Baltic Warrior-Poet King
 	focus = {
 		id = PRS_thebalticwarriorpoetking
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_vydunas_poet_warrior_king
 		x = 36
 		y = 7
 		cost = 10
@@ -1052,7 +1052,7 @@ focus_tree = {
 	#Focus for Reconcile with Lithuanians
 	focus = {
 		id = PRS_reconcilewithlithuanians
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_deal_with_lithuanians
 		x = 22
 		y = 1
 		cost = 10
@@ -1066,7 +1066,7 @@ focus_tree = {
 	#Focus for Vydūnas-Hess Meeting
 	focus = {
 		id = PRS_vydnashessmeeting
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_vydunas_hess_meeting
 		x = 30
 		y = 1
 		cost = 10
@@ -1080,7 +1080,7 @@ focus_tree = {
 	#Focus for Expand KSD
 	focus = {
 		id = PRS_expandksd
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_expand_ksd
 		x = 2
 		y = 1
 		cost = 10
@@ -1094,7 +1094,7 @@ focus_tree = {
 	#Focus for The Army of Kaiser
 	focus = {
 		id = PRS_thearmyofkaiser
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_army_of_kaiser
 		x = 10
 		y = 1
 		cost = 10
@@ -1142,7 +1142,7 @@ focus_tree = {
 	#Focus for Lithuanians in Government
 	focus = {
 		id = PRS_lithuaniansingovernment
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_liths_in_governemnt
 		x = 32
 		y = 2
 		cost = 10
@@ -1156,7 +1156,7 @@ focus_tree = {
 	#Focus for Expel Reactionaries
 	focus = {
 		id = PRS_expelreactionaries
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_vydunas_expel_reactionaries
 		x = 40
 		y = 2
 		cost = 10
@@ -1170,7 +1170,7 @@ focus_tree = {
 	#Focus for Class Collaboration
 	focus = {
 		id = PRS_classcollaboration
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_vydunas_class_collab
 		x = 36
 		y = 2
 		cost = 10
@@ -1184,7 +1184,7 @@ focus_tree = {
 	#Focus for Mandatory Lithuanian in School
 	focus = {
 		id = PRS_mandatorylithuanianinschool
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_lithuanian_in_schools
 		x = 32
 		y = 3
 		cost = 10
@@ -1198,7 +1198,7 @@ focus_tree = {
 	#Focus for Repeal Anti-Lithuanian Laws
 	focus = {
 		id = PRS_repealantilithuanianlaws
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_repeal_anti_lith_laws
 		x = 32
 		y = 1
 		cost = 10
@@ -1212,7 +1212,7 @@ focus_tree = {
 	#Focus for Deal with the Hess faction
 	focus = {
 		id = PRS_dealwiththehessfaction
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_deal_with_hess_faction
 		x = 40
 		y = 1
 		cost = 10
@@ -1550,7 +1550,7 @@ focus_tree = {
 	#Focus for Baltic Stromtroopers
 	focus = {
 		id = PRS_balticstromtroopers
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_vydunas_baltic_stoormtroops
 		x = 38
 		y = 5
 		cost = 10
@@ -1586,7 +1586,7 @@ focus_tree = {
 	#Focus for Nationalize Industry
 	focus = {
 		id = PRS_KfJVhzNw
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_nationalize_industry_hess
 		x = 14
 		y = 2
 		cost = 10
@@ -1600,7 +1600,7 @@ focus_tree = {
 	#Focus for Concentration Camps
 	focus = {
 		id = PRS_concentrationcamps
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_concentration_camps
 		x = 12
 		y = 2
 		cost = 10
@@ -1642,7 +1642,7 @@ focus_tree = {
 	#Focus for Increase conscription
 	focus = {
 		id = PRS_increaseconscription
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_increase_conscription
 		x = 10
 		y = 2
 		cost = 10
@@ -1656,7 +1656,7 @@ focus_tree = {
 	#Focus for Fanaticalism for the Kaiser!
 	focus = {
 		id = PRS_fanaticalismforthekaiser
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_fantical_for_kaiser
 		x = 10
 		y = 4
 		cost = 10
@@ -1670,7 +1670,7 @@ focus_tree = {
 	#Focus for Aryan Identity
 	focus = {
 		id = PRS_aryanidentity
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_aryan_identity
 		x = 30
 		y = 2
 		cost = 10
@@ -2682,7 +2682,7 @@ focus_tree = {
 	#Focus for Create SS
 	focus = {
 		id = PRS_WSscaJXF
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_rosenberg_create_ss
 		x = 30
 		y = 3
 		cost = 10
@@ -2696,7 +2696,7 @@ focus_tree = {
 	#Focus for German-Lithuanian Brotherhood
 	focus = {
 		id = PRS_germanlithuanianbrotherhood
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_lith_ger_brotherhood
 		x = 22
 		y = 2
 		cost = 10
@@ -2710,7 +2710,7 @@ focus_tree = {
 	#Focus for SS - The New Kshatriyas
 	focus = {
 		id = PRS_ssthenewkshatriyas
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_rosenberg_new_kshaitriyas
 		x = 30
 		y = 4
 		cost = 10
@@ -2724,7 +2724,7 @@ focus_tree = {
 	#Focus for Prussian Socialism
 	focus = {
 		id = PRS_nNioyJZb
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_prussian_socialism
 		x = 26
 		y = 1
 		cost = 10
@@ -2738,7 +2738,7 @@ focus_tree = {
 	#Focus for Class Collaboration
 	focus = {
 		id = PRS_eGQfNYna
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_class_collab
 		x = 27
 		y = 2
 		cost = 10
@@ -2752,7 +2752,7 @@ focus_tree = {
 	#Focus for Partly Nationalize the Industry
 	focus = {
 		id = PRS_partlynationalizetheindustry
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_rosenberg_nationalization
 		x = 25
 		y = 2
 		cost = 10
@@ -2766,7 +2766,7 @@ focus_tree = {
 	#Focus for Militarize the Industry
 	focus = {
 		id = PRS_militarizetheindustry
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_rosenberg_military_industry
 		x = 26
 		y = 3
 		cost = 10
@@ -2785,7 +2785,7 @@ focus_tree = {
 	#Focus for Prussian Vaishyas
 	focus = {
 		id = PRS_prussianvaishyas
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_prussian_vaishyas
 		x = 26
 		y = 4
 		cost = 10
@@ -2799,7 +2799,7 @@ focus_tree = {
 	#Focus for Stop Germanization
 	focus = {
 		id = PRS_stopgermanization
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_stop_germanization
 		x = 22
 		y = 3
 		cost = 10
@@ -2813,7 +2813,7 @@ focus_tree = {
 	#Focus for Hyperborean Spirit
 	focus = {
 		id = PRS_hyperboreanspirit
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_hyperborean_spirit
 		x = 22
 		y = 4
 		cost = 10
@@ -2827,7 +2827,7 @@ focus_tree = {
 	#Focus for Pereniallism
 	focus = {
 		id = PRS_pereniallism
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_perenialism
 		x = 24
 		y = 6
 		cost = 10
@@ -2841,7 +2841,7 @@ focus_tree = {
 	#Focus for An Aryan State!
 	focus = {
 		id = PRS_anaryanstate
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_aryan_state
 		x = 26
 		y = 7
 		cost = 10
@@ -2918,7 +2918,7 @@ focus_tree = {
 	#Focus for For the Kaiser till our death!
 	focus = {
 		id = PRS_forthekaisertillourdeath
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_for_kaiser
 		x = 6
 		y = 4
 		cost = 10
@@ -2932,7 +2932,7 @@ focus_tree = {
 	#Focus for Focus on small buisnesses
 	focus = {
 		id = PRS_focusonsmallbuisnesses
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_support_small_bus
 		x = 2
 		y = 2
 		cost = 10
@@ -2946,7 +2946,7 @@ focus_tree = {
 	#Focus for A economic revival
 	focus = {
 		id = PRS_aeconomicrevival
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_civilian_industry
 		x = 2
 		y = 4
 		cost = 10
@@ -2960,7 +2960,7 @@ focus_tree = {
 	#Focus for Focus west
 	focus = {
 		id = PRS_focuswest
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_focus_west
 		x = 4
 		y = 5
 		cost = 10
@@ -2982,7 +2982,7 @@ focus_tree = {
 	#Focus for Grant the church rights
 	focus = {
 		id = PRS_grantthechurchrights
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_grant_chruch_rights
 		x = 8
 		y = 5
 		cost = 10
@@ -3004,7 +3004,7 @@ focus_tree = {
 	#Focus for Prepare for war
 	focus = {
 		id = PRS_prepareforwar
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_prepare_for_war
 		x = 4
 		y = 6
 		cost = 10
@@ -3018,7 +3018,7 @@ focus_tree = {
 	#Focus for Support Christians in occupied lands
 	focus = {
 		id = PRS_supportchristiansinoccupiedlands
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_support_christians
 		x = 8
 		y = 6
 		cost = 10
@@ -3032,7 +3032,7 @@ focus_tree = {
 	#Focus for Fur unsere Kaiser!
 	focus = {
 		id = PRS_furunserekaiser
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_fur_unser_kaiser
 		x = 6
 		y = 7
 		cost = 10
@@ -3051,7 +3051,7 @@ focus_tree = {
 	#Focus for A Nation United
 	focus = {
 		id = PRS_anationunited
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_nation_united
 		x = 6
 		y = 3
 		cost = 10
@@ -3070,7 +3070,7 @@ focus_tree = {
 	#Focus for Deal with the Pelekists
 	focus = {
 		id = PRS_dealwiththepelekists
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_deal_with_pelekists
 		x = 6
 		y = 1
 		cost = 10
@@ -3084,7 +3084,7 @@ focus_tree = {
 	#Focus for Deal with the communists
 	focus = {
 		id = PRS_dealwiththecommunists
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_deal_with_communists
 		x = 5
 		y = 2
 		cost = 10
@@ -3098,7 +3098,7 @@ focus_tree = {
 	#Focus for Crush Opposition
 	focus = {
 		id = PRS_crushopposition
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_crush_opposition
 		x = 7
 		y = 2
 		cost = 10
@@ -3112,7 +3112,7 @@ focus_tree = {
 	#Focus for The Religious Question
 	focus = {
 		id = PRS_thereligiousquestion
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_religious_question
 		x = 28
 		y = 5
 		cost = 10
@@ -3134,7 +3134,7 @@ focus_tree = {
 	#Focus for Form the Brahmins
 	focus = {
 		id = PRS_formthebrahmins
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_new_brahmins
 		x = 28
 		y = 6
 		cost = 10
@@ -3148,7 +3148,7 @@ focus_tree = {
 	#Focus for Prussian Youth
 	focus = {
 		id = PRS_prussianyouth
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_prussian_youth
 		x = 24
 		y = 5
 		cost = 10

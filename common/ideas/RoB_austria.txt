@@ -2,7 +2,7 @@ ideas = {
 
 	country = {
 		socialist_paramilitaries = {
-			picture = GFX_austrian_socialist_paramilitaries
+			picture = GFX_idea_austrian_socialist_paramilitaries
 			
 			allowed = {
 				always = no
@@ -22,7 +22,7 @@ ideas = {
 			}
 		}
 		brownshirt_terror = {
-			picture = GFX_austrian_brownshirt_terror
+			picture = GFX_idea_austrian_brownshirt_terror
 			
 			allowed = {
 				always = no
@@ -40,7 +40,7 @@ ideas = {
 			}
 		}
 		monarchist_growing = {
-			picture = GFX_austria_monarchist_growing
+			picture = GFX_idea_austria_monarchist_growing
 			
 			allowed = {
 				always = no
