@@ -1,13 +1,13 @@
 ﻿capital = 126
 
-set_oob = "ENG_1936"
+set_oob = ""
 if = {
 	limit = {
 		has_dlc = "Man the Guns"
 	}
-	set_naval_oob = "ENG_1936_Naval"
+	set_naval_oob = ""
 	else = {
-		set_naval_oob = "ENG_1936_Naval_Legacy"
+		set_naval_oob = ""
 	}
 }
 
@@ -204,14 +204,14 @@ create_country_leader = {
 
 	give_guarantee = POL
 	
-	set_oob = "ENG_1939"
+	set_oob = ""
 	if = {
 		limit = {
-			has_dlc = "Man the Guns"
+			has_dlc = ""
 		}
-		set_naval_oob = "ENG_1939_Naval"
+		set_naval_oob = ""
 		else = {
-			set_naval_oob = "ENG_1939_Naval_Legacy"
+			set_naval_oob = ""
 		}
 	}
 

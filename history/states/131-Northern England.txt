@@ -21,10 +21,6 @@ state={
 				naval_base = 6
 
 			}
-			3311 = {
-				naval_base = 1
-
-			}
 
 		}
 		add_core_of = ENG
@@ -42,7 +38,7 @@ state={
 	provinces={
 		351 
 	}
-	manpower=2128860
+	manpower=128860
 	buildings_max_level_factor=1.000
 	state_category=city
 }

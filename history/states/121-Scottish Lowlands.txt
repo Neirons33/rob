@@ -6,22 +6,11 @@ state={
 	history={
 		add_core_of = SCO
 		owner = ENG
-		victory_points = {
-			9392 10 
-		}
-		victory_points = {
-			6300 1 
-		}
 		buildings = {
 			infrastructure = 7
 			industrial_complex = 1
 			dockyard = 1
 			air_base = 3
-			6300 = {
-				naval_base = 5
-
-			}
-
 		}
 		add_core_of = ENG
 
@@ -30,7 +19,7 @@ state={
 	provinces={
 		9314 11378 
 	}
-	manpower=1431624
+	manpower=131624
 	buildings_max_level_factor=1.000
 	state_category=city
 }
