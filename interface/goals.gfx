@@ -1977,5 +1977,290 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/PRS_aryan_ties.tga"
 	}
 	
+	###PRS - Junger
+												SpriteType = { 
+		name = "GFX_focus_PRS_junger_revitalize_security"
+		texturefile = "gfx/interface/goals/PRS_junger_revitalize_security.tga"
+	}
+												SpriteType = { 
+		name = "GFX_focus_PRS_junger_red_scare"
+		texturefile = "gfx/interface/goals/PRS_junger_red_scare.tga"
+	}
+												SpriteType = { 
+		name = "GFX_focus_PRS_junger_reactionary_values"
+		texturefile = "gfx/interface/goals/PRS_junger_reactionary_values.tga"
+	}
+												SpriteType = { 
+		name = "GFX_focus_PRS_junger_prussian_military_industry"
+		texturefile = "gfx/interface/goals/PRS_junger_prussian_military_industry.tga"
+	}
+												SpriteType = { 
+		name = "GFX_focus_PRS_junger_power_to_nobility"
+		texturefile = "gfx/interface/goals/PRS_junger_power_to_nobility.tga"
+	}
+												SpriteType = { 
+		name = "GFX_focus_PRS_junger_military_education"
+		texturefile = "gfx/interface/goals/PRS_junger_military_education.tga"
+	}
+												SpriteType = { 
+		name = "GFX_focus_PRS_junger_lithuanian_campaing"
+		texturefile = "gfx/interface/goals/PRS_junger_lithuanian_campaing.tga"
+	}
+												SpriteType = { 
+		name = "GFX_focus_PRS_junger_iron_fist"
+		texturefile = "gfx/interface/goals/PRS_junger_iron_fist.tga"
+	}
+												SpriteType = { 
+		name = "GFX_focus_PRS_junger_germanisation"
+		texturefile = "gfx/interface/goals/PRS_junger_germanisation.tga"
+	}
+												SpriteType = { 
+		name = "GFX_focus_PRS_junger_expand_conscription"
+		texturefile = "gfx/interface/goals/PRS_junger_expand_conscription.tga"
+	}
+												SpriteType = { 
+		name = "GFX_focus_PRS_junger_enforce_german_identity"
+		texturefile = "gfx/interface/goals/PRS_junger_enforce_german_identity.tga"
+	}
+												SpriteType = { 
+		name = "GFX_focus_PRS_junger_elite_training"
+		texturefile = "gfx/interface/goals/PRS_junger_elite_training.tga"
+	}
+												SpriteType = { 
+		name = "GFX_focus_PRS_junger_crush_nbp"
+		texturefile = "gfx/interface/goals/PRS_junger_crush_nbp.tga"
+	}
+												SpriteType = { 
+		name = "GFX_focus_PRS_junger_army_with_a_state"
+		texturefile = "gfx/interface/goals/PRS_junger_army_with_a_state.tga"
+	}
+												SpriteType = { 
+		name = "GFX_focus_PRS_junger_army_primacy"
+		texturefile = "gfx/interface/goals/PRS_junger_army_primacy.tga"
+	}
+												SpriteType = { 
+		name = "GFX_focus_PRS_junger_anti_bourgeosie"
+		texturefile = "gfx/interface/goals/PRS_junger_anti_bourgeosie.tga"
+	}
+													SpriteType = { 
+		name = "GFX_focus_PRS_junger_deal_with_pelekists"
+		texturefile = "gfx/interface/goals/PRS_junger_deal_with_pelekists.tga"
+	}
+	
+	###PRS - Democratic Shit
+														SpriteType = { 
+		name = "GFX_focus_PRS_foundation_behind"
+		texturefile = "gfx/interface/goals/PRS_foundation_behind.tga"
+	}
+														SpriteType = { 
+		name = "GFX_focus_PRS_future_ahead"
+		texturefile = "gfx/interface/goals/PRS_future_ahead.tga"
+	}
+														SpriteType = { 
+		name = "GFX_focus_PRS_conservative_monarchy"
+		texturefile = "gfx/interface/goals/PRS_conservative_monarchy.tga"
+	}
+														SpriteType = { 
+		name = "GFX_focus_PRS_liberal_monarchy"
+		texturefile = "gfx/interface/goals/PRS_liberal_monarchy.tga"
+	}
+														SpriteType = { 
+		name = "GFX_focus_PRS_liberal_republic"
+		texturefile = "gfx/interface/goals/PRS_liberal_republic.tga"
+	}
+														SpriteType = { 
+		name = "GFX_focus_PRS_social_republic"
+		texturefile = "gfx/interface/goals/PRS_social_republic.tga"
+	}
+														SpriteType = { 
+		name = "GFX_focus_PRS_abolish_monarchy"
+		texturefile = "gfx/interface/goals/PRS_abolish_monarchy.tga"
+	}
+														SpriteType = { 
+		name = "GFX_focus_PRS_anti_reactionary_values"
+		texturefile = "gfx/interface/goals/PRS_anti_reactionary_values.tga"
+	}
+														SpriteType = { 
+		name = "GFX_focus_PRS_willhelm_iv"
+		texturefile = "gfx/interface/goals/PRS_willhelm_iv.tga"
+	}
+														SpriteType = { 
+		name = "GFX_focus_PRS_traitional_norms"
+		texturefile = "gfx/interface/goals/PRS_traitional_norms.tga"
+	}
+														SpriteType = { 
+		name = "GFX_focus_PRS_protectionism"
+		texturefile = "gfx/interface/goals/PRS_protectionism.tga"
+	}
+														SpriteType = { 
+		name = "GFX_focus_PRS_german_nationalism"
+		texturefile = "gfx/interface/goals/PRS_german_nationalism.tga"
+	}
+														SpriteType = { 
+		name = "GFX_focus_PRS_prussian_militarism"
+		texturefile = "gfx/interface/goals/PRS_prussian_militarism.tga"
+	}
+														SpriteType = { 
+		name = "GFX_focus_PRS_open_borders"
+		texturefile = "gfx/interface/goals/PRS_open_borders.tga"
+	}
+														SpriteType = { 
+		name = "GFX_focus_PRS_free_trade"
+		texturefile = "gfx/interface/goals/PRS_free_trade.tga"
+	}
+														SpriteType = { 
+		name = "GFX_focus_PRS_encourage_private_industry"
+		texturefile = "gfx/interface/goals/PRS_encourage_private_industry.tga"
+	}
+														SpriteType = { 
+		name = "GFX_focus_PRS_prussian_consumer_goods"
+		texturefile = "gfx/interface/goals/PRS_prussian_consumer_goods.tga"
+	}
+														SpriteType = { 
+		name = "GFX_focus_PRS_cripple_nobility"
+		texturefile = "gfx/interface/goals/PRS_cripple_nobility.tga"
+	}
+														SpriteType = { 
+		name = "GFX_focus_PRS_control_the_capitalists"
+		texturefile = "gfx/interface/goals/PRS_control_the_capitalists.tga"
+	}
+														SpriteType = { 
+		name = "GFX_focus_PRS_tax_the_rich"
+		texturefile = "gfx/interface/goals/PRS_tax_the_rich.tga"
+	}
+														SpriteType = { 
+		name = "GFX_focus_PRS_workers_rights"
+		texturefile = "gfx/interface/goals/PRS_workers_rights.tga"
+	}
+														SpriteType = { 
+		name = "GFX_focus_PRS_dnvp_victory"
+		texturefile = "gfx/interface/goals/PRS_dnvp_victory.tga"
+	}
+														SpriteType = { 
+		name = "GFX_focus_PRS_ddp_victory"
+		texturefile = "gfx/interface/goals/PRS_ddp_victory.tga"
+	}
+														SpriteType = { 
+		name = "GFX_focus_PRS_spd_victory"
+		texturefile = "gfx/interface/goals/PRS_spd_victory.tga"
+	}
+	
+	###PRS - Industry
+															SpriteType = { 
+		name = "GFX_focus_PRS_braun"
+		texturefile = "gfx/interface/goals/PRS_braun.tga"
+	}
+															SpriteType = { 
+		name = "GFX_focus_PRS_claas"
+		texturefile = "gfx/interface/goals/PRS_claas.tga"
+	}
+															SpriteType = { 
+		name = "GFX_focus_PRS_daimler"
+		texturefile = "gfx/interface/goals/PRS_daimler.tga"
+	}
+															SpriteType = { 
+		name = "GFX_focus_PRS_krupp"
+		texturefile = "gfx/interface/goals/PRS_krupp.tga"
+	}
+																SpriteType = { 
+		name = "GFX_focus_PRS_prussia_shines_again"
+		texturefile = "gfx/interface/goals/PRS_prussia_shines_again.tga"
+	}
+	
+	###PRS - Army
+															SpriteType = { 
+		name = "GFX_focus_PRS_10cm_art"
+		texturefile = "gfx/interface/goals/PRS_10cm_art.tga"
+	}
+															SpriteType = { 
+		name = "GFX_focus_PRS_german_tank_corps"
+		texturefile = "gfx/interface/goals/PRS_german_tank_corps.tga"
+	}
+															SpriteType = { 
+		name = "GFX_focus_PRS_lighting_war"
+		texturefile = "gfx/interface/goals/PRS_lighting_war.tga"
+	}
+															SpriteType = { 
+		name = "GFX_focus_PRS_pazner_3"
+		texturefile = "gfx/interface/goals/PRS_pazner_3.tga"
+	}
+															SpriteType = { 
+		name = "GFX_focus_PRS_preussesiche_armee"
+		texturefile = "gfx/interface/goals/PRS_preussesiche_armee.tga"
+	}
+															SpriteType = { 
+		name = "GFX_focus_PRS_preussesiche_kriegsmarine"
+		texturefile = "gfx/interface/goals/PRS_preussesiche_kriegsmarine.tga"
+	}
+															SpriteType = { 
+		name = "GFX_focus_PRS_preussesiche_luftwaffe"
+		texturefile = "gfx/interface/goals/PRS_preussesiche_luftwaffe.tga"
+	}
+																SpriteType = { 
+		name = "GFX_focus_PRS_mg_34"
+		texturefile = "gfx/interface/goals/PRS_mg_34.tga"
+	}
+																SpriteType = { 
+		name = "GFX_focus_PRS_new_age"
+		texturefile = "gfx/interface/goals/PRS_new_age.tga"
+	}
+																SpriteType = { 
+		name = "GFX_focus_PRS_old_methods"
+		texturefile = "gfx/interface/goals/PRS_old_methods.tga"
+	}
+																SpriteType = { 
+		name = "GFX_focus_PRS_we_march"
+		texturefile = "gfx/interface/goals/PRS_we_march.tga"
+	}
+	
+	###PRS - Air
+																	SpriteType = { 
+		name = "GFX_focus_PRS_great_war_aces"
+		texturefile = "gfx/interface/goals/PRS_great_war_aces.tga"
+	}
+																	SpriteType = { 
+		name = "GFX_focus_PRS_ha_140"
+		texturefile = "gfx/interface/goals/PRS_ha_140.tga"
+	}
+																	SpriteType = { 
+		name = "GFX_focus_PRS_he_111"
+		texturefile = "gfx/interface/goals/PRS_he_111.tga"
+	}
+																	SpriteType = { 
+		name = "GFX_focus_PRS_he_112"
+		texturefile = "gfx/interface/goals/PRS_he_112.tga"
+	}
+																	SpriteType = { 
+		name = "GFX_focus_PRS_ju_87"
+		texturefile = "gfx/interface/goals/PRS_ju_87.tga"
+	}
+																	SpriteType = { 
+		name = "GFX_focus_PRS_tact_supporth"
+		texturefile = "gfx/interface/goals/PRS_tact_supporth.tga"
+	}
+																	SpriteType = { 
+		name = "GFX_focus_PRS_trained_staff"
+		texturefile = "gfx/interface/goals/PRS_trained_staff.tga"
+	}
+																	SpriteType = { 
+		name = "GFX_focus_PRS_we_rule_the_skies"
+		texturefile = "gfx/interface/goals/PRS_we_rule_the_skies.tga"
+	}
+	
+	###PRS - Navy
+																		SpriteType = { 
+		name = "GFX_focus_PRS_modernize_subs"
+		texturefile = "gfx/interface/goals/PRS_modernize_subs.tga"
+	}
+																		SpriteType = { 
+		name = "GFX_focus_PRS_plan_z"
+		texturefile = "gfx/interface/goals/PRS_plan_z.tga"
+	}
+																		SpriteType = { 
+		name = "GFX_focus_PRS_we_rule_the_seas"
+		texturefile = "gfx/interface/goals/PRS_we_rule_the_seas.tga"
+	}
+	
+	
 	
 }
