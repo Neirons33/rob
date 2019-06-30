@@ -1393,10 +1393,13 @@ x = 16
 y = 10
 cost = 10
 available_if_capitulated = yes 
+		completion_reward = {
+			army_experience = 5
+			add_political_power = 50
+			}
 ai_will_do = { 
  factor = 1
- } 
-
+ 	} 
  } 
 
 #Focus for 107mm M1940 (M-60)
@@ -1423,6 +1426,25 @@ y = 11
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_lookoutwards } 
+available_if_capitulated = yes 
+		completion_reward = {
+			add_opinion_modifier = {
+			    target = GER
+			    modifier = similar_ruling_party 
+			}
+			add_opinion_modifier = {
+			    target = OMS
+			    modifier = similar_ruling_party 
+			}
+			add_opinion_modifier = {
+			    target = CBR
+			    modifier = similar_ruling_party 
+			}
+			add_opinion_modifier = {
+			    target = DSU
+			    modifier = similar_ruling_party 
+			}
+		}
 ai_will_do = { 
  factor = 1
  } 
@@ -1439,6 +1461,13 @@ cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_enemiesonallsides } 
 prerequisite = { focus = SOV_comradesabroad } 
+		completion_reward = {
+			country_event = {
+			    id = OMR_event.1
+			    days = 10
+			    random = 50
+			}
+		}
 ai_will_do = { 
  factor = 1
  } 
@@ -1454,6 +1483,20 @@ y = 13
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_siberiancomrades } 
+		completion_reward = {
+			create_wargoal = {
+			    type = annex_everything
+			    target = CRM
+			}
+			create_wargoal = {
+			    type = annex_everything
+			    target = CAU
+			}
+			create_wargoal = {
+			    type = annex_everything
+			    target = CAA
+			}
+		}
 ai_will_do = { 
  factor = 1
  } 
@@ -1469,6 +1512,16 @@ y = 13
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_siberiancomrades } 
+		completion_reward = {
+			create_wargoal = {
+			    type = puppet_wargoal_focus
+			    target = FIN
+			}
+			create_wargoal = {
+			    type = annex_everything
+			    target = FTT
+			}
+		}
 ai_will_do = { 
  factor = 1
  } 
@@ -1593,6 +1646,36 @@ available_if_capitulated = yes
 prerequisite = { focus = SOV_southernrussiandirection } 
 prerequisite = { focus = SOV_easterneuropeancampaign } 
 prerequisite = { focus = SOV_centralasiandirection } 
+		completion_reward = {
+			create_wargoal = {
+			    type = annex_everything
+			    target = UGC
+			}
+			create_wargoal = {
+			    type = annex_everything
+			    target = LES
+			}
+			create_wargoal = {
+			    type = annex_everything
+			    target = TOW
+			}
+			create_wargoal = {
+			    type = annex_everything
+			    target = BRW
+			}
+			create_wargoal = {
+			    type = annex_everything
+			    target = KRW
+			}
+			create_wargoal = {
+			    type = annex_everything
+			    target = BWR
+			}
+			create_wargoal = {
+			    type = annex_everything
+			    target = JSW
+			}
+		}
 ai_will_do = { 
  factor = 1
  } 
@@ -1608,6 +1691,20 @@ y = 13
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_siberiancomrades } 
+		completion_reward = {
+			create_wargoal = {
+			    type = annex_everything
+			    target = KAZ
+			}
+			create_wargoal = {
+			    type = annex_everything
+			    target = TMS
+			}
+			create_wargoal = {
+			    type = annex_everything
+			    target = UZB
+			}
+		}
 ai_will_do = { 
  factor = 1
  } 
@@ -2005,6 +2102,7 @@ y = 13
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_sovietgermanpact } 
+
 ai_will_do = { 
  factor = 1
  } 
@@ -2033,6 +2131,9 @@ y = 11
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_lookoutwards } 
+		completion_reward = {
+			add_war_support = 0.03
+			}
 ai_will_do = { 
  factor = 1
  } 
