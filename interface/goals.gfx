@@ -1765,6 +1765,10 @@ spriteTypes = {
 	
 	###PRS - Hess
 								SpriteType = { 
+		name = "GFX_focus_PRS_hess_dictatorship"
+		texturefile = "gfx/interface/goals/PRS_hess_dictatorship.tga"
+	}
+	SpriteType = { 
 		name = "GFX_focus_PRS_concentration_camps"
 		texturefile = "gfx/interface/goals/PRS_concentration_camps.tga"
 	}
@@ -1908,7 +1912,12 @@ spriteTypes = {
 	}
 	
 	###PRS - Vydūnas
-											SpriteType = { 
+												SpriteType = { 
+		name = "GFX_focus_PRS_vydunas_rule"
+		texturefile = "gfx/interface/goals/PRS_vydunas_rule.tga"
+	}
+
+	SpriteType = { 
 		name = "GFX_focus_PRS_vydunas_support_latvian_partisans"
 		texturefile = "gfx/interface/goals/PRS_vydunas_support_latvian_partisans.tga"
 	}
@@ -1979,6 +1988,10 @@ spriteTypes = {
 	
 	###PRS - Junger
 												SpriteType = { 
+		name = "GFX_focus_PRS_junger_junta"
+		texturefile = "gfx/interface/goals/PRS_junger_junta.tga"
+	}
+	SpriteType = { 
 		name = "GFX_focus_PRS_junger_revitalize_security"
 		texturefile = "gfx/interface/goals/PRS_junger_revitalize_security.tga"
 	}
@@ -2259,6 +2272,56 @@ spriteTypes = {
 																		SpriteType = { 
 		name = "GFX_focus_PRS_we_rule_the_seas"
 		texturefile = "gfx/interface/goals/PRS_we_rule_the_seas.tga"
+	}
+	
+	###PRS - Minorities
+																			SpriteType = { 
+		name = "GFX_focus_PRS_army_in_cities"
+		texturefile = "gfx/interface/goals/PRS_army_in_cities.tga"
+	}
+																			SpriteType = { 
+		name = "GFX_focus_PRS_assasinate_exiled_enemies"
+		texturefile = "gfx/interface/goals/PRS_assasinate_exiled_enemies.tga"
+	}
+																			SpriteType = { 
+		name = "GFX_focus_PRS_burn_villiages"
+		texturefile = "gfx/interface/goals/PRS_burn_villiages.tga"
+	}
+																			SpriteType = { 
+		name = "GFX_focus_PRS_deal_with_liths"
+		texturefile = "gfx/interface/goals/PRS_deal_with_liths.tga"
+	}
+																			SpriteType = { 
+		name = "GFX_focus_PRS_disband_ethnic_units"
+		texturefile = "gfx/interface/goals/PRS_disband_ethnic_units.tga"
+	}
+																			SpriteType = { 
+		name = "GFX_focus_PRS_execute_dissidents"
+		texturefile = "gfx/interface/goals/PRS_execute_dissidents.tga"
+	}
+																			SpriteType = { 
+		name = "GFX_focus_PRS_execute_poles"
+		texturefile = "gfx/interface/goals/PRS_execute_poles.tga"
+	}
+																			SpriteType = { 
+		name = "GFX_focus_PRS_foreigns_in_army"
+		texturefile = "gfx/interface/goals/PRS_foreigns_in_army.tga"
+	}
+																			SpriteType = { 
+		name = "GFX_focus_PRS_men_must_be_fanatics"
+		texturefile = "gfx/interface/goals/PRS_men_must_be_fanatics.tga"
+	}
+																			SpriteType = { 
+		name = "GFX_focus_PRS_purge_few_traitors"
+		texturefile = "gfx/interface/goals/PRS_purge_few_traitors.tga"
+	}
+																			SpriteType = { 
+		name = "GFX_focus_PRS_purge_lith_leaders"
+		texturefile = "gfx/interface/goals/PRS_purge_lith_leaders.tga"
+	}
+																			SpriteType = { 
+		name = "GFX_focus_PRS_support_coustums"
+		texturefile = "gfx/interface/goals/PRS_support_coustums.tga"
 	}
 	
 	

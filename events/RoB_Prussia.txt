@@ -334,7 +334,7 @@ elections_allowed = yes
 add_popularity = {ideology = social_liberal popularity =0.25}
 add_political_power = 100
 add_stability = 0.07
-
+set_country_flag = ddp_victory
 }
 
 option = { ###DNVP Victory
@@ -349,7 +349,7 @@ elections_allowed = yes
 add_popularity = {ideology = conservative popularity =0.25}
 add_political_power = 100
 add_stability = 0.1
-
+set_country_flag = spd_victory
 }
 }
 
@@ -555,6 +555,7 @@ modify_country_flag = {
 flag = prs_rhess_faction
 value = 1
 }
+set_country_flag = debate_done
 add_political_power = 120
 }
 
@@ -567,6 +568,7 @@ modify_country_flag = {
 flag = prs_rosenbergs_faction
 value = 2
 }
+set_country_flag = debate_done
 add_political_power = -80
 }
 }
@@ -582,6 +584,7 @@ has_country_flag = {
 flag = prs_lithuanian_faction
 value > 2
 }
+has_country_flag = debate_done
 }
 
 mean_time_to_happen = { days = 2 }
@@ -618,6 +621,8 @@ trigger = {
 has_country_flag = {
 flag = prs_rhess_faction
 value > 2
+}
+has_country_flag = debate_done
 }
 
 mean_time_to_happen = { days = 2 }
@@ -656,6 +661,7 @@ has_country_flag = {
 flag = prs_rosenbergs_faction
 value > 2
 }
+has_country_flag = debate_done
 }
 
 mean_time_to_happen = { days = 2 }
@@ -701,6 +707,8 @@ value > 1
 has_country_flag = {
 flag = prs_rosenbergs_faction
 value > 1
+}
+has_country_flag = debate_done
 }
 mean_time_to_happen = { days = 2 }
 }

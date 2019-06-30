@@ -3379,4 +3379,23 @@ spriteTypes = {
 		name = "GFX_idea_austrian_socialist_paramilitaries"
 		texturefile = "gfx/interface/ideas/socialist_paramilitaries.tga"
 	}
+	
+	###Prussia
+		spriteType = {
+		name = "GFX_idea_minority_troubles"
+		texturefile = "gfx/interface/ideas/minority_troubles.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_prussian_army"
+		texturefile = "gfx/interface/ideas/prussian_army.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_weak_king"
+		texturefile = "gfx/interface/ideas/weak_king.tga"
+	}
+			spriteType = {
+		name = "GFX_idea_prussian_high_command"
+		texturefile = "gfx/interface/ideas/idea_prussian_high_command.dds"
+	}
+	
 }
