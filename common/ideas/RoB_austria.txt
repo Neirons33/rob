@@ -21,6 +21,26 @@ ideas = {
 				stability_factor = -0.05
 			}
 		}
+		AUS_civilwar = {
+			picture = GFX_idea_austrian_socialist_paramilitaries
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.02
+				army_org = 5
+				stability_factor = 0.15
+				surrender_limit = 0.4
+			}
+		}
 		brownshirt_terror = {
 			picture = GFX_idea_austrian_brownshirt_terror
 			

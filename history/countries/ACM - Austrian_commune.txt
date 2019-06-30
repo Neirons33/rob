@@ -31,6 +31,7 @@ set_technology = {
 }
 add_ideas = {
 	extensive_conscription
+	AUS_civilwar
 }
 
 set_stability = 0.80

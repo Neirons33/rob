@@ -31,8 +31,9 @@ set_technology = {
 }
 
 add_ideas = {
-great_depression_woes
-extensive_conscription
+	great_depression_woes
+	extensive_conscription
+	AUS_civilwar
 }
 
 set_stability = 0.80

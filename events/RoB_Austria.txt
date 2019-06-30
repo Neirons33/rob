@@ -43,8 +43,11 @@ country_event = {
 				THR = { load_oob = THR_civil_war }
                 ACM = { load_oob = ACM_civil_war }
 				set_country_flag = AUS_CIVIL_WAR
+				add_ideas = {
+					AUS_civilwar
+				}
 				HUN = { 
-				country_event = { id = rob_hungary.1 days = 7 } 
+				country_event = { id = rob_hungary.1 days = 7 } 			
 				}
 
 	}
@@ -82,6 +85,9 @@ ACM = { load_oob = ACM_civil_war }
 				AUS = { declare_war_on = { target = ACM  type = annex_everything } }
 				THR = { declare_war_on = { target = ACM  type = annex_everything } }
 				set_country_flag = AUS_CIVIL_WAR
+				add_ideas = {
+					AUS_civilwar
+				}
 				HUN = { 
 				country_event = { id = rob_hungary.1 days = 7 } 
 				}
@@ -119,6 +125,9 @@ ACM = { load_oob = ACM_civil_war }
 				AUS = { declare_war_on = { target = ACM  type = annex_everything } }
 				THR = { declare_war_on = { target = ACM  type = annex_everything } }
 				set_country_flag = AUS_CIVIL_WAR
+				add_ideas = {
+					AUS_civilwar
+				}
 				HUN = { 
 				country_event = { id = rob_hungary.1 days = 7 } 
 				}
