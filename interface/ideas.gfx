@@ -3368,17 +3368,26 @@ spriteTypes = {
 	
 	###Austria
 	spriteType = {
-		name = "GFX_idea_austria_monarchist_growing"
-		texturefile = "gfx/interface/ideas/monarchist_growing.tga"
+		name = "GFX_idea_austrian_civil_war"
+		texturefile = "gfx/interface/ideas/AUSTRIA/GFX_austrian_civil_war.tga"
 	}
 	spriteType = {
 		name = "GFX_idea_austrian_brownshirt_terror"
-		texturefile = "gfx/interface/ideas/brownshirt_terror.tga"
+		texturefile = "gfx/interface/ideas/AUSTRIA/GFX_ideas_austrian_brownshirts.tga"
 	}
 	spriteType = {
 		name = "GFX_idea_austrian_socialist_paramilitaries"
-		texturefile = "gfx/interface/ideas/socialist_paramilitaries.tga"
+		texturefile = "gfx/interface/ideas/AUSTRIA/socialist_paramilitaries.tga"
 	}
+		spriteType = {
+		name = "GFX_idea_austria_monarchist_growing"
+		texturefile = "gfx/interface/ideas/AUSTRIA/GFX_idea_austria_monarchist_growing.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_austrian_bad_econ"
+		texturefile = "gfx/interface/ideas/AUSTRIA/GFX_ideas_austrian_bad_econ.tga"
+	}
+	
 	
 	###Prussia
 		spriteType = {

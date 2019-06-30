@@ -2,7 +2,6 @@ ideas = {
 
 	country = {
 		socialist_paramilitaries = {
-			picture = GFX_idea_austrian_socialist_paramilitaries
 			
 			allowed = {
 				always = no
@@ -13,7 +12,8 @@ ideas = {
 			}
 
 			removal_cost = -1
-			
+			picture = GFX_idea_austrian_socialist_paramilitaries
+
 			modifier = {
 				political_power_gain = -0.05
 				conscription = -0.01
@@ -21,9 +21,7 @@ ideas = {
 				stability_factor = -0.05
 			}
 		}
-		AUS_civilwar = {
-			picture = GFX_idea_austrian_socialist_paramilitaries
-			
+		AUS_civilwar = {			
 			allowed = {
 				always = no
 			}
@@ -33,7 +31,8 @@ ideas = {
 			}
 
 			removal_cost = -1
-			
+			picture = GFX_idea_austrian_civil_war
+
 			modifier = {
 				conscription = 0.02
 				army_org = 5
@@ -42,7 +41,6 @@ ideas = {
 			}
 		}
 		brownshirt_terror = {
-			picture = GFX_idea_austrian_brownshirt_terror
 			
 			allowed = {
 				always = no
@@ -53,6 +51,7 @@ ideas = {
 			}
 
 			removal_cost = -1
+			picture = GFX_idea_austrian_brownshirt_terror
 			
 			modifier = {
 				political_power_gain = -0.1
@@ -60,7 +59,6 @@ ideas = {
 			}
 		}
 		monarchist_growing = {
-			picture = GFX_idea_austria_monarchist_growing
 			
 			allowed = {
 				always = no
@@ -71,7 +69,7 @@ ideas = {
 			}
 
 			removal_cost = -1
-			
+			picture = GFX_idea_austria_monarchist_growing
 			modifier = {
 				political_power_gain = -0.05
 				stability_factor = -0.05
@@ -96,9 +94,7 @@ ideas = {
 				production_speed_buildings_factor = 0.03
 			}
 		}
-		great_depression_woes = {
-			picture = GFX_idea_the_great_depression
-			
+		great_depression_woes = {			
 			allowed = {
 				always = no
 			}
@@ -108,7 +104,7 @@ ideas = {
 			}
 
 			removal_cost = -1
-			
+			picture = GFX_idea_austrian_bad_econ
 			modifier = {
 				political_power_gain = -0.20
 				production_factory_max_efficiency_factor = -0.20
