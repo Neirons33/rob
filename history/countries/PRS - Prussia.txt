@@ -49,6 +49,13 @@ create_country_leader = {
 	}
 }
 
+add_ideas = {
+minority_troubles
+weak_king
+prussian_army
+prussian_high_command
+}
+
 create_country_leader = {
 	name = "Wilhelm Buck"
 	desc = ""

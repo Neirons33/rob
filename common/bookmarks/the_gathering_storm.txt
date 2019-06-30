@@ -114,7 +114,9 @@ bookmarks = {
 		  history = ""
 		  ideology = reactionary
 		  ideas = {
-		  
+		  minority_troubles
+		  weak_king
+		  prussian_army
 		  }
 		  focuses = {
 		  PRS_jngersjunta

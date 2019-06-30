@@ -1,0 +1,75 @@
+ideas = {
+ country = {
+ 
+ minority_troubles = {
+  picture = GFX_idea_minority_troubles
+ allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 modifier = {
+				stability_factor = -0.3
+				war_support_factor = -0.3
+				consumer_goods_factor = 0.15
+				production_factory_max_efficiency_factor = -0.15
+				}
+ 
+ }
+ 
+ weak_king = {
+   picture = GFX_idea_weak_king
+ allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 modifier = {
+	 army_morale_factor = -0.05
+	 political_power_gain = -0.25
+
+		}
+ 
+ }
+ 
+  prussian_army = {
+   picture = GFX_idea_prussian_army
+ allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 modifier = {
+	 stability_factor = 0.08
+	 conscription = 0.05
+
+		}
+ 
+ }
+ 
+   prussian_high_command = {
+   picture = GFX_idea_prussian_high_command
+ allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 modifier = {
+	 planning_speed = 0.25
+	 army_org_factor = 0.1
+	 army_attack_factor = 0.1
+	 
+
+		}
+ 
+ }
+ }
+}

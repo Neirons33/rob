@@ -366,7 +366,7 @@ focus_tree = {
 	#Focus for A fanatic army!
 	focus = {
 		id = PRS_afanaticarmy
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_increase_conscription
 		x = 11
 		y = 13
 		cost = 10
@@ -411,7 +411,7 @@ focus_tree = {
 	#Focus for Burn the villages!
 	focus = {
 		id = PRS_burnthevillages
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_burn_villiages
 		x = 13
 		y = 13
 		cost = 10
@@ -425,7 +425,7 @@ focus_tree = {
 	#Focus for Purge Lithuanian Cultural Leaders
 	focus = {
 		id = PRS_purgelithuanianculturalleaders
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_purge_lith_leaders
 		x = 9
 		y = 12
 		cost = 10
@@ -439,7 +439,7 @@ focus_tree = {
 	#Focus for Assassinate Exiled Enemies
 	focus = {
 		id = PRS_assassinateexiledenemies
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_assasinate_exiled_enemies
 		x = 9
 		y = 13
 		cost = 10
@@ -453,7 +453,7 @@ focus_tree = {
 	#Focus for Support minority customs
 	focus = {
 		id = PRS_supportminoritycustoms
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_support_coustums
 		x = 7
 		y = 11
 		cost = 10
@@ -467,7 +467,7 @@ focus_tree = {
 	#Focus for Execute dissenting groups
 	focus = {
 		id = PRS_executedissentinggroups
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_execute_dissidents
 		x = 9
 		y = 11
 		cost = 10
@@ -481,7 +481,7 @@ focus_tree = {
 	#Focus for Disband the ethnic units
 	focus = {
 		id = PRS_disbandtheethnicunits
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_disband_ethnic_units
 		x = 11
 		y = 11
 		cost = 10
@@ -495,7 +495,7 @@ focus_tree = {
 	#Focus for A German army
 	focus = {
 		id = PRS_agermanarmy
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_fantical_for_kaiser
 		x = 11
 		y = 12
 		cost = 10
@@ -509,7 +509,7 @@ focus_tree = {
 	#Focus for Purge the minorities
 	focus = {
 		id = PRS_purgetheminorities
-		icon = GFX_goal_unknown
+		icon = GFX_goal_continuous_suppression 
 		x = 11
 		y = 10
 		cost = 10
@@ -524,7 +524,7 @@ focus_tree = {
 	#Focus for Send in the army to the towns
 	focus = {
 		id = PRS_sendinthearmytothetowns
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_army_in_cities
 		x = 5
 		y = 11
 		cost = 10
@@ -538,7 +538,7 @@ focus_tree = {
 	#Focus for Import forigners for the army
 	focus = {
 		id = PRS_importforignersforthearmy
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_foreigns_in_army
 		x = 5
 		y = 13
 		cost = 10
@@ -552,7 +552,7 @@ focus_tree = {
 	#Focus for Enforce Germanisation or death
 	focus = {
 		id = PRS_enforcegermanisationordeath
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_junger_germanisation
 		x = 13
 		y = 11
 		cost = 10
@@ -566,7 +566,7 @@ focus_tree = {
 	#Focus for Encourage rural values
 	focus = {
 		id = PRS_encourageruralvalues
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_rural_volunteers
 		x = 3
 		y = 12
 		cost = 10
@@ -580,7 +580,7 @@ focus_tree = {
 	#Focus for Encourage anti-communism
 	focus = {
 		id = PRS_encourageanticommunism
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_junger_red_scare
 		x = 3
 		y = 13
 		cost = 10
@@ -608,7 +608,7 @@ focus_tree = {
 	#Focus for A deal with the Lithuanians
 	focus = {
 		id = PRS_adealwiththelithuanians
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_deal_with_liths
 		x = 7
 		y = 13
 		cost = 10
@@ -622,7 +622,7 @@ focus_tree = {
 	#Focus for The Ethnic Question
 	focus = {
 		id = PRS_theethnicquestion
-		icon = GFX_goal_unknown
+		icon = GFX_goal_continuous_restrict_freedom
 		x = 8
 		y = 9
 		cost = 10
@@ -635,7 +635,7 @@ focus_tree = {
 	#Focus for Placate the minorities
 	focus = {
 		id = PRS_placatetheminorities
-		icon = GFX_goal_unknown
+		icon = GFX_goal_continuous_increase_nu
 		x = 5
 		y = 10
 		cost = 10
@@ -650,7 +650,7 @@ focus_tree = {
 	#Focus for Purge the few traitors
 	focus = {
 		id = PRS_purgethefewtraitors
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_purge_few_traitors
 		x = 3
 		y = 11
 		cost = 10
@@ -664,7 +664,7 @@ focus_tree = {
 	#Focus for The men must be fanatics!
 	focus = {
 		id = PRS_themenmustbefanatics
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_men_must_be_fanatics
 		x = 5
 		y = 12
 		cost = 10
@@ -678,7 +678,7 @@ focus_tree = {
 	#Focus for Execute Polish Inteligencia
 	focus = {
 		id = PRS_executepolishinteligencia
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_execute_poles
 		x = 13
 		y = 12
 		cost = 10
@@ -1437,7 +1437,7 @@ focus_tree = {
 	#Focus for Vydūnas Rules
 	focus = {
 		id = PRS_vydnasrules
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_vydunas_rule
 		x = 36
 		y = 0
 		cost = 10
@@ -1453,7 +1453,7 @@ focus_tree = {
 	#Focus for Jünger's Junta
 	focus = {
 		id = PRS_jngersjunta
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_junger_junta
 		x = 47
 		y = 0
 		cost = 10
@@ -1520,7 +1520,7 @@ focus_tree = {
 	#Focus for Hess Dictatorship
 	focus = {
 		id = PRS_hessdictatorship
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_hess_dictatorship
 		x = 16
 		y = 0
 		cost = 10
