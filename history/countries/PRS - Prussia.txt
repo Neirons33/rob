@@ -54,6 +54,7 @@ minority_troubles
 weak_king
 prussian_army
 prussian_high_command
+extensive_conscription
 }
 
 create_country_leader = {
@@ -61,7 +62,7 @@ create_country_leader = {
 	desc = ""
 	picture = ""
 	expire = "1960.1.1"
-	ideology = socialism
+	ideology = national_socialist
 	traits = {
 		
 	}

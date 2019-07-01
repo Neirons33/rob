@@ -1968,6 +1968,48 @@ spriteTypes = {
 		name = "GFX_picture_soldiers_attacking"
 		texturefile = "gfx/event_pictures/soldiers_attacking.tga"
 	}
+	
+	###PRS
+			spriteType = {
+		name = "GFX_picture_willhelm_ii"
+		texturefile = "gfx/event_pictures/willhelm_ii.tga"
+	}
+				spriteType = {
+		name = "GFX_picture_jungerjunta"
+		texturefile = "gfx/event_pictures/jungerjunta.tga"
+	}
+				spriteType = {
+		name = "GFX_picture_konigsberg"
+		texturefile = "gfx/event_pictures/konigsberg.tga"
+	}
+				spriteType = {
+		name = "GFX_picture_pelekist_clash"
+		texturefile = "gfx/event_pictures/pelekist_clash.tga"
+	}
+				spriteType = {
+		name = "GFX_picture_pelekist_march"
+		texturefile = "gfx/event_pictures/pelekist_march.tga"
+	}
+				spriteType = {
+		name = "GFX_picture_rosenberg"
+		texturefile = "gfx/event_pictures/rosenberg.tga"
+	}
+				spriteType = {
+		name = "GFX_picture_rosenberg_speaking"
+		texturefile = "gfx/event_pictures/rosenberg_speaking.tga"
+	}
+				spriteType = {
+		name = "GFX_picture_hess"
+		texturefile = "gfx/event_pictures/hess.tga"
+	}
+				spriteType = {
+		name = "GFX_picture_vydunas"
+		texturefile = "gfx/event_pictures/vydunas.tga"
+	}
+				spriteType = {
+		name = "GFX_picture_willhelm_iii"
+		texturefile = "gfx/event_pictures/willhelm_iii.tga"
+	}
 	}
 
 	

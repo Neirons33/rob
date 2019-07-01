@@ -2452,7 +2452,7 @@ focus_tree = {
 	#Focus for Revitalize Our Bomber Forces
 	focus = {
 		id = PRS_revitalizeourbomberforces
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_air_defense
 		x = 62
 		y = 11
 		cost = 10
