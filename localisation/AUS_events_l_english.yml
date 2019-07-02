@@ -1,0 +1,16 @@
+﻿l_english:
+
+ #Third Reich Civil War event
+ third_reich.1.t:0 "The Civil War Begins"
+ third_reich.1.d:0 "For too long us Germans have been completely on the edge of being whiped out by judio-bolshivism, luckly for us their hand of cards will help ours! Recently communists and socialists alike have risen up against Eingelbert. If we make a move now in building up this civil war, we might have a chance of finally reuniting the German peoples."
+ third_reich.1.a:0 "Ein Volk, ein Reich, ein Führer!"
+
+ third_reich.2.t:0 "The Civil War Ends"
+ third_reich.2.d:0 "Mien Fuhrer, the final traces of communist and austro fascist resistance have finally been crushed. Vienna is ours along with the nearly the rest of Austria. One must recommend to you though that you play your next hand of cards carefully, many Austrians workers still sympathize with the wretched socialists and communists."
+ third_reich.2.a:0 "Ein Endsieg"
+
+ #aftermath/what to do with badies
+ third_reich.3.t:0 "What To Do With Fascists"
+ third_reich.3.d:0 "Mien Fuhrer, what shall we do with the many fascists prisoners which we have obtained throughout this war? Many are willing to fight for the glory of a new Germanic empire."
+ third_reich.3.a:0 "We can't risk it, kill them or imprision them!"
+ third_reich.3.b:0 "They are of the same blood fool, if they will cooperate, then so will I!"

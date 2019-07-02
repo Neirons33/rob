@@ -3407,4 +3407,22 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_prussian_high_command.dds"
 	}
 	
+	###Rhineland
+		spriteType = {
+		name = "GFX_idea_rhur_economic_wonderland"
+		texturefile = "gfx/interface/ideas/rhur_economic_wonderland.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_rhur_under_french_protection"
+		texturefile = "gfx/interface/ideas/rhur_under_french_protection.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_rhur_mass_degeneracy"
+		texturefile = "gfx/interface/ideas/mass_degeneracy.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_rhur_underequiped_military"
+		texturefile = "gfx/interface/ideas/Underequiped_military.tga"
+	}	
+
 }

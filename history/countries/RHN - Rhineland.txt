@@ -18,15 +18,22 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	national_socialist = 2
-	socialist = 1
-	democratic_socialist = 1
+	national_socialist = 7
+	socialist = 8
+	democratic_socialist = 7
 	social_democracy = 13
 	social_liberal = 8
-	conservative = 20
-	authoritharian = 0
-	reactionary = 41
+	conservative = 10
+	authoritharian = 4
+	reactionary = 31
 	pelekist = 14
+}
+add_ideas = {
+	rhur_economic_wonderland
+	rhur_under_french_protection
+	rhur_mass_degeneracy
+	rhur_underequiped_military
+	extensive_conscription
 }
 
 create_country_leader = {
