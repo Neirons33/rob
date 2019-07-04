@@ -101,9 +101,31 @@ set_stability = 0.75
 create_country_leader = {
 	name = "Henri Jaspar"
 	desc = "POLITICS_HUBERT_PIERLOT_DESC"
-	picture = "gfx/leaders/BEL/Portrait_Belgium_Paul_Van_Zeeland.dds"
+	picture = "Portrait_FLA_Henri_Jaspar.tga"
 	expire = "1965.1.1"
 	ideology = conservative
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Charles de Broqueville"
+	desc = "POLITICS_HUBERT_PIERLOT_DESC"
+	picture = "Portrait_FLA_Charles_de_Broqueville.tga"
+	expire = "1965.1.1"
+	ideology = social_liberal
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Léon Joseph Degrelle"
+	desc = "POLITICS_HUBERT_PIERLOT_DESC"
+	picture = "Portrait_FLA_Leon_Degrelle.tga"
+	expire = "1965.1.1"
+	ideology = pelekist
 	traits = {
 		#
 	}

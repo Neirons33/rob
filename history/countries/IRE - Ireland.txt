@@ -61,18 +61,18 @@ set_convoys = 10
 }
 
 set_politics = {
-	ruling_party = national_socialist
+	ruling_party = conservative
 	last_election = "1933.7.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	national_socialist = 65
+	national_socialist = 15
 	socialist = 11
 	democratic_socialist = 8
 	social_democracy = 0
-	social_liberal = 0
-	conservative = 0
+	social_liberal = 20
+	conservative = 30
 	authoritharian = 3
 	reactionary = 3
 	pelekist = 10
@@ -90,6 +90,16 @@ create_country_leader = {
 	}
 }
 
+create_country_leader = {
+	name = "William Thomas Cosgrave"
+	desc = "POLITICS_ÉAMON_DE_VALERA_DESC"
+	picture = "Portrait_IRE_William_Thomas_Cosgrave.tga"
+	expire = "1965.1.1"
+	ideology = conservative
+	traits = {
+		#
+	}
+}
 
 create_corps_commander = {
 	name = "Michael Costello"
