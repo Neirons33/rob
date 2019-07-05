@@ -526,16 +526,16 @@
  bolshevik_strike_desc:0 "The All-Russian Central Council of Trade Unions has announced the general strike in the Soviet Republic. Workers, who believe they have been treated unequaly, have taken matters into their own hands."
  
  ###AUS
- great_depression_woes:0 "Great Depression Woes"
- great_depression_woes_desc:0 "The great depression has reached our country! If we do not act now, only devistation awaits. "
+ austrian_bad_econ:0 "Great Depression Woes"
+ austrian_bad_econ_desc:0 "The great depression has reached our country! If we do not act now, only devistation awaits. "
  crotian_economic_pact:0 "The Austro-Croatian Economic Pact"
  crotian_economic_pact_desc:0 "Both our countries are struggling in these brutal times of economic turmoil, thus we have created a economic pact with the goal of lowering tariffs on eachother's goods. Maybe a alliance could foster thanks to our simililar goverment systems. "
- monarchist_growing:0 "Growing Monarchists"
- monarchist_growing_desc:0 "Much of the youth is becoming disilusioned with the speaches being conducted by Otto. "
- socialist_paramilitaries:0 "Socialist Paramilitaries"
- socialist_paramilitaries_desc:0 "Socialists in our country are preparing to overthrow us, we must act now! "
- brownshirt_terror:0 "Brown Shirt Terror"
- brownshirt_terror_desc:0 "Hitler's Austrian Worker's Party has become quite a troublesome foe." 
+ austria_monarchist_growing:0 "Growing Monarchists"
+ austria_monarchist_growing_desc:0 "Much of the youth is becoming disilusioned with the speaches being conducted by Otto. "
+ austrian_socialist_paramilitaries:0 "Socialist Paramilitaries"
+ austrian_socialist_paramilitaries_desc:0 "Socialists in our country are preparing to overthrow us, we must act now! "
+ austrian_brownshirt_terror:0 "Brown Shirt Terror"
+ austrian_brownshirt_terror_desc:0 "Hitler's Austrian Worker's Party has become quite a troublesome foe." 
  
  ###GER
  deutsche_volksarmee:0 "Deutsche Volksarmee"

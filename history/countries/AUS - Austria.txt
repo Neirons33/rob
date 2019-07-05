@@ -31,10 +31,10 @@ set_technology = {
 }
 add_ideas = {
 	crotian_economic_pact
-	great_depression_woes
-	monarchist_growing
-	socialist_paramilitaries
-	brownshirt_terror
+	austrian_bad_econ
+	austria_monarchist_growing
+	austrian_socialist_paramilitaries
+	austrian_brownshirt_terror
 }
 
 set_stability = 0.50

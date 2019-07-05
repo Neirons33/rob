@@ -1,8 +1,8 @@
 ideas = {
 
 	country = {
-		socialist_paramilitaries = {
-			
+		austrian_socialist_paramilitaries = {
+			picture = GFX_idea_austrian_socialist_paramilitaries
 			allowed = {
 				always = no
 			}
@@ -12,7 +12,7 @@ ideas = {
 			}
 
 			removal_cost = -1
-			picture = GFX_idea_austrian_socialist_paramilitaries
+			
 
 			modifier = {
 				political_power_gain = -0.05
@@ -21,7 +21,8 @@ ideas = {
 				stability_factor = -0.05
 			}
 		}
-		AUS_civilwar = {			
+		austrian_civil_war = {
+		picture = GFX_idea_austrian_civil_war
 			allowed = {
 				always = no
 			}
@@ -31,7 +32,7 @@ ideas = {
 			}
 
 			removal_cost = -1
-			picture = GFX_idea_austrian_civil_war
+			
 
 			modifier = {
 				conscription = 0.02
@@ -40,8 +41,8 @@ ideas = {
 				surrender_limit = 0.4
 			}
 		}
-		brownshirt_terror = {
-			
+		austrian_brownshirt_terror = {
+			picture = GFX_idea_austrian_brownshirt_terror
 			allowed = {
 				always = no
 			}
@@ -51,15 +52,15 @@ ideas = {
 			}
 
 			removal_cost = -1
-			picture = GFX_idea_austrian_brownshirt_terror
+			
 			
 			modifier = {
 				political_power_gain = -0.1
 				stability_factor = -0.10
 			}
 		}
-		monarchist_growing = {
-			
+		austria_monarchist_growing = {
+			picture = GFX_idea_austria_monarchist_growing
 			allowed = {
 				always = no
 			}
@@ -69,14 +70,14 @@ ideas = {
 			}
 
 			removal_cost = -1
-			picture = GFX_idea_austria_monarchist_growing
+			
 			modifier = {
 				political_power_gain = -0.05
 				stability_factor = -0.05
 			}
 		}
 		crotian_economic_pact = {
-			picture = GFX_idea_generic_production_bonus
+			picture = GFX_idea_crotian_economic_pact
 			
 			allowed = {
 				always = no
@@ -94,7 +95,8 @@ ideas = {
 				production_speed_buildings_factor = 0.03
 			}
 		}
-		great_depression_woes = {			
+		austrian_bad_econ = {
+            picture = GFX_idea_austrian_bad_econ		
 			allowed = {
 				always = no
 			}
@@ -104,7 +106,7 @@ ideas = {
 			}
 
 			removal_cost = -1
-			picture = GFX_idea_austrian_bad_econ
+			
 			modifier = {
 				political_power_gain = -0.20
 				production_factory_max_efficiency_factor = -0.20
