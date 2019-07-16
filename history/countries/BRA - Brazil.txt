@@ -146,9 +146,9 @@ set_politics = {
 create_country_leader = {
 	name = "Getúlio Vargas"
 	desc = "POLITICS_GETULIO_VARGAS_DESC"
-	picture = "Portrait_Brazil_Getulio_Vargas.dds"
+	picture = "Portrait_BRA_getúlio_vargas.tga"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = conservative
 	traits = {
 		#
 	}

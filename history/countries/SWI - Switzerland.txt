@@ -98,9 +98,9 @@ set_stability = 0.85
 
 
 create_country_leader = {
-	name = "Ernest Béuin"
+	name = "Marcel Pilet-Golaz"
 	desc = "POLITICS_ERNST_BEGUIN_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+	picture = "Portrait_SWI_Marcel_Pilet_Golaz.tga"
 	expire = "1965.1.1"
 	ideology = social_liberal
 	traits = {
