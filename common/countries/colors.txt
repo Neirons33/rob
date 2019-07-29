@@ -659,3 +659,19 @@ ACM = {
     color = rgb { 125 13 24 }
 	color_ui = rgb { 125 13 24 }
 }
+JOB = {
+    color = rgb { 214 188 124 }
+	color_ui = rgb { 214 188 124 }
+}
+CHE = {
+    color = rgb { 71 171 14 }
+	color_ui = rgb { 71 171 14 }
+}
+MRP = {
+    color = rgb { 186 26 15 }
+	color_ui = rgb { 186 26 15 }
+}
+DAG = {
+    color = rgb { 180 184 57 }
+	color_ui = rgb { 180 184 57  }
+}

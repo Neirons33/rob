@@ -1,0 +1,19 @@
+state={
+	id=1082
+	name="STATE_1082"
+	provinces={
+		1707 1727 1829 7838 10524 10596 12525 12647 
+	}
+	history={
+		owner = JOB
+		buildings = {
+			infrastructure = 5
+		}
+		add_core_of = JOB
+		
+
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category=city
+}

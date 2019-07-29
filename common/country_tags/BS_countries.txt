@@ -69,6 +69,7 @@ LES = "countries/Legion State.txt"
 OMS = "countries/Omsk.txt"
 TOW = "countries/Tomsk.txt"
 BWR = "countries/Barnaul.txt"
+JOB = "countries/Jewish Oblast.txt"
 
 
 ##European Russia##

@@ -159,7 +159,15 @@ divisions_in_state = {
 }
 	 GER_destroy_partisans_in_hannover = {
 	 	ai_will_do = {
-			factor = 200
+			factor = 0
+			 modifier = {
+			 add = 200
+			 divisions_in_state = {
+              type = infantry
+               size > 2
+                state = 58
+	 }
+			 }
 		}
 		 visible = {
 	  NOT = {
@@ -193,7 +201,16 @@ divisions_in_state = {
 	 }
 	 GER_destroy_partisans_in_mecklenburg = {
 	 	ai_will_do = {
-			factor = 200
+			factor = 0
+			modifier = {
+			add = 200
+				 divisions_in_state = {
+                 type = infantry
+                 size > 2
+                 state = 59
+	 }
+			
+			}
 		}
 		 visible = {
 	  NOT = {
@@ -226,7 +243,16 @@ divisions_in_state = {
 	 }
 	  GER_destroy_partisans_in_hinterpommern = {
 	  	ai_will_do = {
-			factor = 200
+			factor = 0
+			modifier = {
+			add = 200
+				 divisions_in_state = {
+                 type = infantry
+                 size > 2
+                 state = 61
+	 }
+			
+			}
 		}
 		 visible = {
 	  NOT = {

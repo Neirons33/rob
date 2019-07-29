@@ -1,5 +1,7 @@
 capital = 572
 
+oob = "LES_1934"
+
 set_research_slots = 2
 
 set_technology = {
