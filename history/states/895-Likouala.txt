@@ -3,7 +3,8 @@ state={
 	name="STATE_895"
 
 	history={
-		owner = FRA
+		owner = FCM
+		add_core_of = FCM
 		add_core_of = RCG
 		buildings = {
 			infrastructure = 2

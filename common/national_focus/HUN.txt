@@ -1,0 +1,998 @@
+focus_tree = {
+	id = HUN
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = HUN
+		}
+	}
+	default = no
+	focus = {
+		id = HUN_state_of_military
+		icon = GFX_goal_unknown
+		cost = 0.00
+		x = 18
+		y = 0
+			completion_reward = {
+					army_experience = 10
+				}
+
+	}
+	focus = {
+		id = HUN_clock_strikes_12
+		icon = GFX_goal_unknown
+		cost = 0.00
+		x = 69
+		y = 0
+
+	}
+	focus = {
+		id = HUN_clock_strikes_12
+		icon = GFX_goal_unknown
+		cost = 0.00
+		x = 69
+		y = 0
+			available = {
+					if = {
+							tag = HUN
+							has_idea = HUN_independence_War
+						}
+				}
+
+	}
+	focus = {
+		id = HUN_Frenzic_coup
+		icon = GFX_goal_unknown
+		cost = 0.00
+		x = 101
+		y = 1
+
+	}
+	focus = {
+		id = HUN_Frenzic_coup
+		icon = GFX_goal_unknown
+		cost = 0.00
+		x = 93
+		y = 1
+
+	}
+	focus = {
+		id = HUN_fascist_coup
+		icon = GFX_goal_unknown
+		cost = 0.00
+		x = 52
+		y = 1
+
+	}
+	focus = {
+		id = HUN_fascist_coup
+		icon = GFX_goal_unknown
+		cost = 0.00
+		x = 69
+		y = 1
+
+	}
+	focus = {
+		id = HUN_second_march_on_budapest
+		icon = GFX_goal_unknown
+		cost = 0.00
+		x = 65
+		y = 0
+
+	}
+	focus = {
+		id = HUN_hungarian_king
+		icon = GFX_goal_unknown
+		cost = 0.00
+		x = 75
+		y = 0
+
+	}
+	focus = {
+		id = HUN_the_other_frenic
+		icon = GFX_goal_unknown
+		cost = 0.00
+		x = 72
+		y = 0
+
+	}
+	focus = {
+		id = HUN_promoting_french_money_counterfit
+		icon = GFX_goal_unknown
+		cost = 0.00
+		x = 39
+		y = 7
+
+	}
+	focus = {
+		id = Bosnian_intervention
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_state_of_military
+		}
+		x = 9
+		y = 1
+			completion_reward = {
+					BOS = {
+							add_war_support = 0.075
+						}
+				}
+
+	}
+	focus = {
+		id = HUN_CRO_assitance
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Bosnian_intervention
+		}
+		x = 7
+		y = 2
+			completion_reward = {
+					CRO = {
+							add_manpower = 4500
+						}
+					add_manpower = -4500
+				}
+
+	}
+	focus = {
+		id = HUN_legion_leopold
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_CRO_assitance
+		}
+		x = 7
+		y = 3
+			completion_reward = {
+					BOS = {
+							air_experience = 30
+							add_manpower = 750
+						}
+				}
+
+	}
+	focus = {
+		id = HUN_crack_open_ww1_armouries
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Bosnian_intervention
+		}
+		x = 9
+		y = 2
+
+	}
+	focus = {
+		id = HUN_send_youth_construction_groups
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_crack_open_ww1_armouries
+		}
+		x = 9
+		y = 3
+			completion_reward = {
+					BOS = {
+							add_ideas = BOS_hungarian_construction_support
+						}
+				}
+
+	}
+	focus = {
+		id = HUN_beca_partisans
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Bosnian_intervention
+		}
+		x = 11
+		y = 2
+			completion_reward = {
+					SER = {
+							add_ideas = SER_hungarian_partisans
+						}
+				}
+
+	}
+	focus = {
+		id = HUN_danube_river_blocade_acident
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_beca_partisans
+		}
+		x = 11
+		y = 3
+			completion_reward = {
+					ROM = {
+							add_ideas = HUN_river_blocade
+						}
+					SER = {
+							add_ideas = HUN_river_blocade
+						}
+				}
+
+	}
+	focus = {
+		id = HUN_division_atilla
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_danube_river_blocade_acident
+		}
+		prerequisite = {
+			focus = HUN_send_youth_construction_groups
+		}
+		prerequisite = {
+			focus = HUN_legion_leopold
+		}
+		x = 9
+		y = 4
+			completion_reward = {
+					BOS = {
+							load_oob = "BOS_HUN_LEGION"
+						}
+				}
+
+	}
+	focus = {
+		id = HUN_solving_the_fund_issue
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_state_of_military
+		}
+		x = 14
+		y = 1
+
+	}
+	focus = {
+		id = HUN_Mercenarism
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_solving_the_fund_issue
+		}
+		x = 14
+		y = 2
+
+	}
+	focus = {
+		id = HUN_allow_peoples_militias
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_Mercenarism
+		}
+		mutually_exclusive = {
+			focus = HUN_ban_militias
+		}
+		x = 13
+		y = 3
+
+	}
+	focus = {
+		id = HUN_ban_militias
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_Mercenarism
+		}
+		mutually_exclusive = {
+			focus = HUN_allow_peoples_militias
+		}
+		x = 15
+		y = 3
+
+	}
+	focus = {
+		id = HUN_soldiers_in_factories
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_allow_peoples_militias
+		}
+		prerequisite = {
+			focus = HUN_ban_militias
+		}
+		x = 14
+		y = 4
+
+	}
+	focus = {
+		id = HUN_find_funders
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_solving_the_fund_issue
+		}
+		x = 20
+		y = 2
+
+	}
+	focus = {
+		id = HUN_turn_to_poland
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_find_funders
+		}
+		mutually_exclusive = {
+			focus = HUN_turn_to_prussia
+			focus = HUN_turn_to_chech_republic
+			focus = HUN_no_one_anwsers
+		}
+		x = 17
+		y = 3
+
+	}
+	focus = {
+		id = HUN_turn_to_prussia
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_find_funders
+		}
+		mutually_exclusive = {
+			focus = HUN_turn_to_poland
+			focus = HUN_turn_to_chech_republic
+			focus = HUN_no_one_anwsers
+		}
+		x = 19
+		y = 3
+
+	}
+	focus = {
+		id = HUN_turn_to_chech_republic
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_find_funders
+		}
+		mutually_exclusive = {
+			focus = HUN_turn_to_prussia
+			focus = HUN_turn_to_poland
+			focus = HUN_no_one_anwsers
+		}
+		x = 21
+		y = 3
+
+	}
+	focus = {
+		id = HUN_no_one_anwsers
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_find_funders
+		}
+		mutually_exclusive = {
+			focus = HUN_turn_to_chech_republic
+			focus = HUN_turn_to_poland
+			focus = HUN_turn_to_prussia
+		}
+		x = 23
+		y = 3
+
+	}
+	focus = {
+		id = HUN_turn_to_the_devil
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_no_one_anwsers
+		}
+		mutually_exclusive = {
+			focus = HUN_make_a_risk_with_the_reich
+		}
+		x = 22
+		y = 4
+
+	}
+	focus = {
+		id = HUN_make_a_risk_with_the_reich
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_no_one_anwsers
+		}
+		mutually_exclusive = {
+			focus = HUN_turn_to_the_devil
+		}
+		x = 24
+		y = 4
+
+	}
+	focus = {
+		id = HUN_the_army
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_state_of_military
+		}
+		x = 32
+		y = 1
+			completion_reward = {
+					army_experience = 10
+				}
+
+	}
+	focus = {
+		id = HUN_Szombathelyi_plan
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_the_army
+		}
+		mutually_exclusive = {
+			focus = HUN_Karoyli_plan
+		}
+		x = 28
+		y = 2
+
+	}
+	focus = {
+		id = HUN_massive_motorization
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_Szombathelyi_plan
+		}
+		x = 26
+		y = 3
+
+	}
+	focus = {
+		id = HUN_expand_baltan_oil
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_Szombathelyi_plan
+		}
+		x = 28
+		y = 3
+
+	}
+	focus = {
+		id = HUN_import_skoda_designs
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_expand_baltan_oil
+		}
+		x = 28
+		y = 4
+
+	}
+	focus = {
+		id = MAVAG_tank_project
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_massive_motorization
+		}
+		x = 26
+		y = 4
+
+	}
+	focus = {
+		id = HUN_examine_ww1_errors
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_Szombathelyi_plan
+		}
+		x = 30
+		y = 3
+
+	}
+	focus = {
+		id = HUN_open_tank_school_in_ludovica
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_examine_ww1_errors
+		}
+		x = 30
+		y = 4
+
+	}
+	focus = {
+		id = HUN_gods_of_speed
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_open_tank_school_in_ludovica
+		}
+		prerequisite = {
+			focus = HUN_import_skoda_designs
+		}
+		prerequisite = {
+			focus = MAVAG_tank_project
+		}
+		x = 28
+		y = 5
+
+	}
+	focus = {
+		id = HUN_Karoyli_plan
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_the_army
+		}
+		mutually_exclusive = {
+			focus = HUN_Szombathelyi_plan
+		}
+		x = 36
+		y = 2
+
+	}
+	focus = {
+		id = HUN_decentralized_warfare
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_Karoyli_plan
+		}
+		x = 34
+		y = 3
+
+	}
+	focus = {
+		id = HUN_methodical_warfare
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_decentralized_warfare
+		}
+		x = 34
+		y = 4
+
+	}
+	focus = {
+		id = HUN_mechanized_artillery
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_Karoyli_plan
+		}
+		x = 36
+		y = 3
+
+	}
+	focus = {
+		id = HUN_centralized_firing
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_mechanized_artillery
+		}
+		x = 36
+		y = 4
+
+	}
+	focus = {
+		id = HUN_guerrilla_tactics
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_Karoyli_plan
+		}
+		x = 38
+		y = 3
+
+	}
+	focus = {
+		id = HUN_emphasize_soldiers
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_guerrilla_tactics
+		}
+		x = 38
+		y = 4
+
+	}
+	focus = {
+		id = HUN_death_from_above
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_centralized_firing
+		}
+		prerequisite = {
+			focus = HUN_emphasize_soldiers
+		}
+		prerequisite = {
+			focus = HUN_methodical_warfare
+		}
+		x = 36
+		y = 5
+
+	}
+	focus = {
+		id = HUN_ready_for_war
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_gods_of_speed
+			focus = HUN_death_from_above
+		}
+		x = 32
+		y = 6
+
+	}
+	focus = {
+		id = HUN_visit_with_ukraine
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_fascist_coup
+		}
+		x = 43
+		y = 2
+
+	}
+	focus = {
+		id = HUN_visit_with_poland
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_fascist_coup
+		}
+		x = 45
+		y = 2
+
+	}
+	focus = {
+		id = HUN_the_budapest_aka_rome_protocals
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_visit_with_ukraine
+			focus = HUN_visit_with_poland
+		}
+		x = 44
+		y = 3
+
+	}
+	focus = {
+		id = HUN_article_1
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_the_budapest_aka_rome_protocals
+		}
+		x = 41
+		y = 4
+
+	}
+	focus = {
+		id = HUN_invite_austria
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_the_budapest_aka_rome_protocals
+		}
+		x = 43
+		y = 4
+
+	}
+	focus = {
+		id = HUN_invite_bulgaria
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_the_budapest_aka_rome_protocals
+		}
+		x = 45
+		y = 4
+
+	}
+	focus = {
+		id = HUN_southern_economic_zone
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_invite_bulgaria
+			focus = HUN_invite_austria
+		}
+		x = 44
+		y = 5
+
+	}
+	focus = {
+		id = HUN_beginning_95_point_program
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_fascist_coup
+		}
+		x = 48
+		y = 2
+
+	}
+	focus = {
+		id = HUN_heavy_centralization
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_beginning_95_point_program
+		}
+		x = 48
+		y = 3
+
+	}
+	focus = {
+		id = HUN_libralize_literature
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_heavy_centralization
+		}
+		x = 48
+		y = 4
+
+	}
+	focus = {
+		id = HUN_found_new_intellectual_front
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_libralize_literature
+		}
+		x = 48
+		y = 5
+
+	}
+	focus = {
+		id = HUN_militarize_the_turel_movement
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_fascist_coup
+		}
+		x = 50
+		y = 2
+
+	}
+	focus = {
+		id = HUN_honor_the_balassagyarmat_uprising
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_militarize_the_turel_movement
+		}
+		x = 50
+		y = 3
+
+	}
+	focus = {
+		id = HUN_nationalize_schooling
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_honor_the_balassagyarmat_uprising
+		}
+		x = 50
+		y = 4
+
+	}
+	focus = {
+		id = HUN_embrace_stoicism
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_nationalize_schooling
+		}
+		x = 50
+		y = 5
+
+	}
+	focus = {
+		id = HUN_jewish_question
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_fascist_coup
+		}
+		x = 52
+		y = 2
+
+	}
+	focus = {
+		id = HUN_limit_intellectuals
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_jewish_question
+		}
+		x = 52
+		y = 3
+
+	}
+	focus = {
+		id = HUN_jewish_segragation
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_limit_intellectuals
+		}
+		x = 52
+		y = 4
+
+	}
+	focus = {
+		id = HUN_apply_to_minorities
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_jewish_segragation
+		}
+		x = 52
+		y = 5
+
+	}
+	focus = {
+		id = HUN_cult_of_the_state
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_embrace_stoicism
+		}
+		prerequisite = {
+			focus = HUN_found_new_intellectual_front
+		}
+		prerequisite = {
+			focus = HUN_apply_to_minorities
+		}
+		x = 50
+		y = 6
+
+	}
+	focus = {
+		id = HUN_massacre_monarchist_threat
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_fascist_coup
+		}
+		x = 54
+		y = 2
+
+	}
+	focus = {
+		id = HUN_ban_monarchism
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_massacre_monarchist_threat
+		}
+		x = 54
+		y = 3
+
+	}
+	focus = {
+		id = HUN_assassinate_charles
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_ban_monarchism
+		}
+		x = 54
+		y = 4
+
+	}
+	focus = {
+		id = HUN_ban_communist_movements
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_fascist_coup
+		}
+		x = 56
+		y = 2
+
+	}
+	focus = {
+		id = HUN_hunt_down_bela
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_ban_communist_movements
+		}
+		x = 56
+		y = 3
+
+	}
+	focus = {
+		id = HUN_Biatorbagy_train_assassination_propoganda
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_hunt_down_bela
+		}
+		x = 56
+		y = 4
+
+	}
+	focus = {
+		id = HUN_indroctronate_natsoc
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_Biatorbagy_train_assassination_propoganda
+			focus = HUN_assassinate_charles
+		}
+		mutually_exclusive = {
+			focus = HUN_kill_natsoc
+		}
+		x = 54
+		y = 5
+
+	}
+	focus = {
+		id = HUN_kill_natsoc
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_assassinate_charles
+			focus = HUN_Biatorbagy_train_assassination_propoganda
+		}
+		mutually_exclusive = {
+			focus = HUN_indroctronate_natsoc
+		}
+		x = 56
+		y = 5
+
+	}
+	focus = {
+		id = HUN_embrace_christian_nationalism
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_kill_natsoc
+			focus = HUN_indroctronate_natsoc
+		}
+		x = 55
+		y = 6
+
+	}
+	focus = {
+		id = HUN_article_2
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_article_1
+		}
+		x = 41
+		y = 5
+
+	}
+	focus = {
+		id = HUN_article_3
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_article_2
+		}
+		x = 41
+		y = 6
+
+	}
+	focus = {
+		id = HUN_meet_with_pope
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_embrace_christian_nationalism
+		}
+		x = 55
+		y = 7
+
+	}
+}

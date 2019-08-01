@@ -10,12 +10,13 @@ state={
 		add_core_of = CRO
 		buildings = {
 			infrastructure = 2
+
 		}
 
 	}
 
 	provinces={
-		11735 
+		11735 13453 
 	}
 	manpower=643147
 	buildings_max_level_factor=1.000

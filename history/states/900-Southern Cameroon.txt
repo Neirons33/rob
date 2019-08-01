@@ -4,8 +4,9 @@ state={
 
 
 	history={
-		owner = CMR
+		owner = FCM
 		add_core_of = CMR
+		add_core_of = FCM
 		buildings = {
 			infrastructure = 2
 

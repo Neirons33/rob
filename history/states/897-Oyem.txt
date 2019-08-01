@@ -3,7 +3,8 @@ state={
 	name="STATE_897"
 
 	history={
-		owner = FRA
+		owner = FCM
+		add_core_of = FCM
 		add_core_of = GAB
 		buildings = {
 			infrastructure = 3

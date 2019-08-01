@@ -15,7 +15,7 @@ state={
 			infrastructure = 6
 			industrial_complex = 2
 			dockyard = 2
-			fuel_silo = 1
+			fuel_silo = 2
 			241 = {
 				naval_base = 8
 
@@ -25,19 +25,11 @@ state={
 		}
 		add_core_of = GER
 		add_core_of = PRS
-		1939.1.1 = {
-			buildings = {
-				industrial_complex = 4
-				dockyard = 3
-
-			}
-
-		}
 
 	}
 
 	provinces={
-		241 247 309 3234 9281 11233 11388 
+		241 247 309 9281 11233 11388 
 	}
 	manpower=2016434
 	buildings_max_level_factor=1.000

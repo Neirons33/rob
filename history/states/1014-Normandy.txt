@@ -15,5 +15,6 @@ state={
 		539 553 3534 3549 3579 6599 9578 11521 11535 13344 13346 
 	}
 	manpower=0
-	buildings_max_level_factor=1.000
+	buildings_max_level_factor=1.00
+	state_category=city
 }

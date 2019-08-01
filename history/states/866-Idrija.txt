@@ -1,3 +1,4 @@
+
 state={
 	id=866
 	name="STATE_866"
@@ -9,12 +10,13 @@ state={
 		add_core_of = SLV
 		buildings = {
 			infrastructure = 3
+
 		}
 
 	}
 
 	provinces={
-		599 11595 
+		6626 
 	}
 	manpower=420012
 	buildings_max_level_factor=1.000

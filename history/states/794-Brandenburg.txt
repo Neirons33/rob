@@ -17,22 +17,13 @@ state={
 		}
 		add_core_of = GER
 		add_core_of = PRS
-		1939.1.1 = {
-			buildings = {
-				air_base = 10
-				arms_factory = 7
-				industrial_complex = 3
-
-			}
-
-		}
 
 	}
 
 	provinces={
-		375 478 3367 3499 6441 9428 9456 9496 11219 11415 11444 11505 
+		375 3367 3499 9456 11219 11444 
 	}
-	manpower=3030016
+	manpower=1970026
 	buildings_max_level_factor=1.000
 	state_category=megalopolis
 }

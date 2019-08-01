@@ -7,7 +7,7 @@ state={
 	}
 
 	history={
-		owner = SPR
+		owner = ITA
 		add_core_of = MOR
 		victory_points = {
 			9945 5 

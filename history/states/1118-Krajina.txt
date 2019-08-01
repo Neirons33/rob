@@ -1,0 +1,30 @@
+state={
+	id=1118
+	name="STATE_1118"
+	history={
+		owner = SER
+		victory_points = {
+			11899 5 
+		}
+		victory_points = {
+			6619 5 
+		}
+
+		buildings = {
+			infrastructure = 5
+			arms_factory = 1
+
+
+		}
+		add_core_of = CRO
+		add_core_of = BOS
+
+	}
+
+	provinces={
+		3985 6614 6619 6983 9586 9588 
+	}
+	manpower=299823
+	buildings_max_level_factor=1.000
+	state_category=city
+}

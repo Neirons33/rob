@@ -1,0 +1,17 @@
+add_namespace = ROB_HUN
+country_event = {
+	id = ROB_HUN.0
+	title = ROB_HUN.0.t
+	picture = GFX_news_event_047
+	desc = ROB_HUN.0.d
+	option = {
+	name = ROB_Hungary.1.a
+		immediate = {
+				if = {
+						date > 1934.01.01
+					}
+			}
+
+	}
+
+	}

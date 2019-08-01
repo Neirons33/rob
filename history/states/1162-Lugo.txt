@@ -1,0 +1,21 @@
+state={
+	id=1162
+	name="STATE_1162"
+	history={
+		owner = POR
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+
+
+		}
+		add_core_of = POR
+
+	}
+
+	provinces={
+		729 3761 6764 11675 11677 11692 11840 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

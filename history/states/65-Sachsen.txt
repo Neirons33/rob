@@ -19,22 +19,13 @@ state={
 		}
 		add_core_of = GER
 		add_core_of = SAX
-		1939.1.1 = {
-			buildings = {
-				synthetic_refinery = 2
-				arms_factory = 3
-				industrial_complex = 6
-
-			}
-
-		}
 
 	}
 
 	provinces={
-		514 573 3514 9535 
+		514 573 3514 6559 9535 
 	}
-	manpower=3491553
+	manpower=3293323
 	buildings_max_level_factor=1.000
 	state_category=large_city
 }

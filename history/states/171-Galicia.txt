@@ -2,20 +2,17 @@
 state={
 	id=171
 	name="STATE_171"
-	manpower = 2295085
 	resources={
-		aluminium=102
+		aluminium=102.000
 	}
 
-	state_category = city
-
 	history={
-		owner = SPR
+		owner = POR
 		victory_points = {
-			758 3
+			758 3 
 		}
 		victory_points = {
-			6734 1
+			6734 1 
 		}
 		buildings = {
 			infrastructure = 6
@@ -24,12 +21,18 @@ state={
 			air_base = 2
 			758 = {
 				naval_base = 6
+
 			}
+
 		}
-		add_core_of = SPR
+		add_core_of = POR
+
 	}
 
 	provinces={
-		729 758 3761 6734 6764 6955 9686 9689 11675 11677 11692 11710 11840 
+		758 6734 6955 9686 9689 11710 
 	}
+	manpower=2295085
+	buildings_max_level_factor=1.000
+	state_category=city
 }

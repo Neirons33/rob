@@ -1,0 +1,20 @@
+state={
+	id=1150
+	name="STATE_1150"
+	history={
+		owner = SPR
+		buildings = {
+			infrastructure = 6
+
+		}
+		add_core_of = SPR
+		add_core_of = AND
+
+	}
+
+	provinces={
+		6800 9881 11863 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

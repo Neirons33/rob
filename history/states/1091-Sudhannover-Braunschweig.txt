@@ -1,0 +1,26 @@
+state={
+	id=1091
+	name="STATE_1091"
+
+	history={
+		owner = GER
+		buildings = {
+			infrastructure = 8
+			arms_factory = 3
+			industrial_complex = 1
+			air_base = 3
+
+		}
+		add_core_of = GER
+		add_core_of = PRS
+
+	}
+
+	provinces={
+		3234 3355 3395 11493 
+	}
+	manpower=1803733
+	buildings_max_level_factor=1.000
+	state_category=large_city
+
+}

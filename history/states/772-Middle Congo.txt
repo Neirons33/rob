@@ -7,7 +7,8 @@ state={
 	}
 
 	history={
-		owner = FRA
+		owner = FCM
+		add_core_of = FCM
 		add_core_of = RCG
 		victory_points = {
 			8193 2 
