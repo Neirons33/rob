@@ -1,0 +1,756 @@
+focus_tree = {
+	id = german_focus_coallition
+		country = {
+		factor = 0
+
+	}
+
+	continuous_focus_position = { x = 50 y = 3000 }
+	
+	
+	shared_focus = GER_rotevolksarmee
+	shared_focus = GER_rotevolksflotte
+	shared_focus = GER_roteluftwaffe
+	shared_focus = GER_germaneconomy
+	
+		#Focus for L-NB Majority
+	focus = {
+		id = GER_lnbmajority
+		icon = GFX_goal_unknown
+		x = 21
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+		#Focus for German Patriotism
+	focus = {
+		id = GER_germanpatriotism
+		icon = GFX_goal_unknown
+		x = 19
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_lnbmajority }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		#Focus for Rotkorps Priority
+	focus = {
+		id = GER_rotkorpspriority
+		icon = GFX_goal_unknown
+		x = 26
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_lnbmajority }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		#Focus for Continue Our Economic Policiy
+	focus = {
+		id = GER_continueoureconomicpoliciy
+		icon = GFX_goal_unknown
+		x = 21
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_lnbmajority }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		#Focus for Strengthen the Chairman
+	focus = {
+		id = GER_strengthenthechairman
+		icon = GFX_goal_unknown
+		x = 16
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_lnbmajority }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		#Focus for Purge Reactionaries
+	focus = {
+		id = GER_purgereactionaries
+		icon = GFX_goal_unknown
+		x = 16
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_strengthenthechairman }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		#Focus for Socialist Security Services
+	focus = {
+		id = GER_socialistsecurityservices
+		icon = GFX_goal_unknown
+		x = 16
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_purgereactionaries }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	#Focus for European Politics
+	focus = {
+		id = GER_europeanpolitics
+		icon = GFX_goal_unknown
+		x = 19
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_germanpatriotism }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		#Focus for The Spearhead
+	focus = {
+		id = GER_thespearhead
+		icon = GFX_goal_unknown
+		x = 26
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_rotkorpspriority }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Control Over Volksarmee
+	focus = {
+		id = GER_controlovervolksarmee
+		icon = GFX_goal_unknown
+		x = 26
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_thespearhead }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	#Focus for Expand Anti-Partisan Warfare
+	focus = {
+		id = GER_expandantipartisanwarfare
+		icon = GFX_goal_unknown
+		x = 23
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_lnbmajority }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		#Focus for Fight with Consumer Good Shortages
+	focus = {
+		id = GER_fightwithconsumergoodshortages
+		icon = GFX_goal_unknown
+		x = 21
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_continueoureconomicpoliciy }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Agricultural Grants
+	focus = {
+		id = GER_agriculturalgrants
+		icon = GFX_goal_unknown
+		x = 21
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_fightwithconsumergoodshortages }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Countryside Supporters
+	focus = {
+		id = GER_countrysidesupporters
+		icon = GFX_goal_unknown
+		x = 23
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_expandantipartisanwarfare }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Heavy Anti-Corruption Measures
+	focus = {
+		id = GER_heavyanticorruptionmeasures
+		icon = GFX_goal_unknown
+		x = 17
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GER_socialistsecurityservices 
+		}
+		prerequisite = { 
+			focus = GER_europeanpolitics 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Economic Independence
+	focus = {
+		id = GER_economicindependence
+		icon = GFX_goal_unknown
+		x = 20
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GER_europeanpolitics 
+		}
+		prerequisite = { 
+			focus = GER_agriculturalgrants 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		#Focus for Connecting Rural Communes
+	focus = {
+		id = GER_connectingruralcommunes
+		icon = GFX_goal_unknown
+		x = 22
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GER_NUVOWPFm 
+		}
+		prerequisite = { 
+			focus = GER_countrysidesupporters 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		#Focus for Medium-scale Operations
+	focus = {
+		id = GER_mediumscaleoperations
+		icon = GFX_goal_unknown
+		x = 25
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GER_countrysidesupporters 
+		}
+		prerequisite = { 
+			focus = GER_controlovervolksarmee 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+		#Focus for Authoritarian State
+	focus = {
+		id = GER_authoritarianstate
+		icon = GFX_goal_unknown
+		x = 18
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GER_heavyanticorruptionmeasures 
+		}
+		prerequisite = { 
+			focus = GER_economicindependence 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Local Socialist Militias
+	focus = {
+		id = GER_localsocialistmilitias
+		icon = GFX_goal_unknown
+		x = 22
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GER_gunsforourarmy 
+		}
+		prerequisite = { 
+			focus = GER_conscriptpeasants 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Political Commissars
+	focus = {
+		id = GER_politicalcommissars
+		icon = GFX_goal_unknown
+		x = 20
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GER_authoritarianstate 
+		}
+		prerequisite = { 
+			focus = GER_gunsforourarmy 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The German Socialist State
+	focus = {
+		id = GER_thegermansocialiststate
+		icon = GFX_goal_unknown
+		x = 21
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GER_politicalcommissars 
+		}
+		prerequisite = { 
+			focus = GER_localsocialistmilitias 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Guns for Our Army!
+	focus = {
+		id = GER_gunsforourarmy
+		icon = GFX_goal_unknown
+		x = 21
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GER_economicindependence 
+		}
+		prerequisite = { 
+			focus = GER_connectingruralcommunes 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Conscript Peasants
+	focus = {
+		id = GER_conscriptpeasants
+		icon = GFX_goal_unknown
+		x = 24
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GER_mediumscaleoperations 
+		}
+		prerequisite = { 
+			focus = GER_connectingruralcommunes 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	########L-DC Coallition
+		#Focus for DS-L Majority
+	focus = {
+		id = GER_dslmajority
+		icon = GFX_goal_unknown
+		x = 49
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		#Focus for Strenghten the Rotkorps
+	focus = {
+		id = GER_strenghtentherotkorps
+		icon = GFX_goal_unknown
+		x = 54
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_dslmajority }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		#Focus for Forgive partisans...
+	focus = {
+		id = GER_forgivepartisans
+		icon = GFX_goal_unknown
+		x = 51
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_dslmajority }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		#Focus for Cultural marxism
+	focus = {
+		id = GER_culturalmarxism
+		icon = GFX_goal_unknown
+		x = 47
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_dslmajority }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		#Focus for Further industrilization
+	focus = {
+		id = GER_furtherindustrilization
+		icon = GFX_goal_unknown
+		x = 49
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_dslmajority }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		#Focus for Liberalize the council
+	focus = {
+		id = GER_liberalizethecouncil
+		icon = GFX_goal_unknown
+		x = 44
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_dslmajority }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	#Focus for More power to the trade unions
+	focus = {
+		id = GER_morepowertothetradeunions
+		icon = GFX_goal_unknown
+		x = 44
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_liberalizethecouncil }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		#Focus for Extreme anti-coruption measures
+	focus = {
+		id = GER_extremeanticoruptionmeasures
+		icon = GFX_goal_unknown
+		x = 44
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_morepowertothetradeunions }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		#Focus for Destroy German Identity
+	focus = {
+		id = GER_destroygermanidentity
+		icon = GFX_goal_unknown
+		x = 47
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_culturalmarxism }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		#Focus for Build the Autobahn
+	focus = {
+		id = GER_buildtheautobahn
+		icon = GFX_goal_unknown
+		x = 49
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_furtherindustrilization }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Focus on the worker
+	focus = {
+		id = GER_focusontheworker
+		icon = GFX_goal_unknown
+		x = 49
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_buildtheautobahn }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	#Focus for ...Execute the rest
+	focus = {
+		id = GER_executetherest
+		icon = GFX_goal_unknown
+		x = 51
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_forgivepartisans }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		#Focus for Dominate the Volksarmee
+	focus = {
+		id = GER_dominatethevolksarmee
+		icon = GFX_goal_unknown
+		x = 54
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_importforeignrevoliutionaries }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Import foreign revoliutionaries
+	focus = {
+		id = GER_importforeignrevoliutionaries
+		icon = GFX_goal_unknown
+		x = 54
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_strenghtentherotkorps }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Volksmilitia
+	focus = {
+		id = GER_volksmilitia
+		icon = GFX_goal_unknown
+		x = 53
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GER_executetherest 
+		}
+		prerequisite = { 
+			focus = GER_dominatethevolksarmee 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The loyal people
+	focus = {
+		id = GER_theloyalpeople
+		icon = GFX_goal_unknown
+		x = 50
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GER_focusontheworker 
+		}
+		prerequisite = { 
+			focus = GER_executetherest 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		#Focus for The new education
+	focus = {
+		id = GER_theneweducation
+		icon = GFX_goal_unknown
+		x = 48
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GER_destroygermanidentity 
+		}
+		prerequisite = { 
+			focus = GER_focusontheworker 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for The Communist Man
+	focus = {
+		id = GER_thecommunistman
+		icon = GFX_goal_unknown
+		x = 45
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GER_extremeanticoruptionmeasures 
+		}
+		prerequisite = { 
+			focus = GER_destroygermanidentity 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Undeniable rule
+	focus = {
+		id = GER_undeniablerule
+		icon = GFX_goal_unknown
+		x = 52
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GER_volksmilitia 
+		}
+		prerequisite = { 
+			focus = GER_theloyalpeople 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for The workers state
+	focus = {
+		id = GER_theworkersstate
+		icon = GFX_goal_unknown
+		x = 49
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GER_communistyouth 
+		}
+		prerequisite = { 
+			focus = GER_theweakchairman 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		#Focus for The weak chairman
+	focus = {
+		id = GER_theweakchairman
+		icon = GFX_goal_unknown
+		x = 50
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GER_gunsforpartymembers 
+		}
+		prerequisite = { 
+			focus = GER_undeniablerule 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		#Focus for Guns for party members
+	focus = {
+		id = GER_gunsforpartymembers
+		icon = GFX_goal_unknown
+		x = 49
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GER_theneweducation 
+		}
+		prerequisite = { 
+			focus = GER_theloyalpeople 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		#Focus for Communist youth
+	focus = {
+		id = GER_communistyouth
+		icon = GFX_goal_unknown
+		x = 48
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GER_gunsforpartymembers 
+		}
+		prerequisite = { 
+			focus = GER_arbeitstaat 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		#Focus for Arbeitstaat
+	focus = {
+		id = GER_arbeitstaat
+		icon = GFX_goal_unknown
+		x = 46
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GER_thecommunistman 
+		}
+		prerequisite = { 
+			focus = GER_theneweducation 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	}

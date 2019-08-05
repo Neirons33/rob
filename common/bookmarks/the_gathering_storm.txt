@@ -21,19 +21,19 @@ bookmarks = {
 				FRA_revise_versailles
 			}
 		}
-		"USA"={
-			history = "USA_GATHERING_STORM_DESC"
-			ideology = conservative
-			ideas = {
-				home_of_the_free
-				great_depression
-				undisturbed_isolation
-			}
-			focuses = {
-				USA_war_plan_black
-				USA_strike_at_the_empire
-				USA_pearl_harbor_gambit
-			}
+        "PRS" = {
+		  history = ""
+		  ideology = reactionary
+		  ideas = {
+		     minority_troubles
+		     weak_king
+		     prussian_army
+		  }
+		  focuses = {
+		     PRS_jngersjunta
+		     PRS_vydnasrules
+		     PRS_rosenbergspresidency
+		  }
 		}
 		"ENG"={
 			history = "ENG_GATHERING_STORM_DESC"
@@ -109,21 +109,7 @@ bookmarks = {
 			history = "OTHER_GATHERING_STORM_DESC"
 		}
 
-        "PRS" = {
-		  minor = yes
-		  history = ""
-		  ideology = reactionary
-		  ideas = {
-		  minority_troubles
-		  weak_king
-		  prussian_army
-		  }
-		  focuses = {
-		  PRS_jngersjunta
-		  PRS_vydnasrules
-		  PRS_rosenbergspresidency
-		  }
-		}
+
 		 "RDR" = {
 		  minor = yes
 		  history = ""

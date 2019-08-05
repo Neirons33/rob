@@ -4,6 +4,8 @@ country_event = {
 	title = ROB_HUN.0.t
 	picture = GFX_news_event_047
 	desc = ROB_HUN.0.d
+	is_triggered_only = yes
+	
 	option = {
 	name = ROB_Hungary.1.a
 		immediate = {
