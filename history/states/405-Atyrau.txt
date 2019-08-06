@@ -4,18 +4,18 @@ state={
 	name="STATE_405"
 
 	history={
-		owner = UZB
-		add_core_of = UZB
+		owner = KAZ
 		victory_points = {
 			1459 3 
 		}
 		buildings = {
-			infrastructure = 5
-			industrial_complex = 3
+			infrastructure = 3
+			industrial_complex = 1
 			air_base = 1
 
 		}
-		add_core_of = UZB
+		add_core_of = KAZ
+		add_core_of = KYR
 		1939.1.1 = {
 			buildings = {
 				industrial_complex = 4
@@ -27,9 +27,9 @@ state={
 	}
 
 	provinces={
-		756 1459 1573 1632 4629 7639 7682 7775 9605 10205 10488 10671 11687 12239 12722 
+		1459 
 	}
-	manpower=6275820
+	manpower=1275820
 	buildings_max_level_factor=1.000
 	state_category=city
 }

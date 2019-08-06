@@ -1,0 +1,25 @@
+state={
+	id=1175
+	name="STATE_1175"
+	resources={
+		oil=2.000
+		
+	}
+	history={
+		owner = TMS
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+
+		}
+		add_core_of = TMS
+
+	}
+	provinces={
+		1593 4599 7477 10359 10510 12359 
+	}
+	manpower=119281
+	buildings_max_level_factor=1.000
+	state_category=rural
+
+}
