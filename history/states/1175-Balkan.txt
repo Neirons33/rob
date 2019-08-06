@@ -6,13 +6,18 @@ state={
 		
 	}
 	history={
-		owner = TMS
+		owner = TRS
 		buildings = {
 			infrastructure = 1
 			industrial_complex = 1
 
 		}
+		victory_points = {
+			10510 1
+		}
+		add_core_of = TRS
 		add_core_of = TMS
+
 
 	}
 	provinces={
