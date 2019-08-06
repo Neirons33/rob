@@ -4,12 +4,14 @@ state={
 	name="STATE_267"
 	resources={
 		tungsten=3.000
+		steel =2.000
+		
 	}
 
 	history={
 		owner = AFG
 		buildings = {
-			infrastructure = 2
+			infrastructure = 3
 			arms_factory = 1
 			industrial_complex = 2
 
@@ -22,9 +24,9 @@ state={
 	}
 
 	provinces={
-		5082 7519 7916 7984 10737 10781 10826 10852 10896 12248 12314 12653 12769 12831 
+		5082 10737 10781 10826 12314 12653 12769 12831 
 	}
-	manpower=4637140
+	manpower=3137140
 	buildings_max_level_factor=1.000
 	state_category=town
 }
