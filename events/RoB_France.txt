@@ -713,7 +713,7 @@ trigger = {
  country_exists = FRL
  has_country_flag = FRA_pelekist_sorelian_alliance
  }
- hidden_effect = {
+ hidden_effect = {`
  FRL = { load_oob = FRL_civil_war }
  FRR = { load_oob = FRR_civil_war }
  FRP = { load_oob = FRP_civil_war }

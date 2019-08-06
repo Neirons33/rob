@@ -226,3 +226,8 @@ GER_reactionary = {
 color = rgb { 48 48 47 }
 color_ui = rgb { 48 48 47 }
 }
+
+ENG_navy = {
+color = rgb { 143 130 191 }
+color_ui = rgb { 143 130 191 }
+}

@@ -6,6 +6,7 @@ set_technology = {
 	gwtank = 1
 }
 
+set_cosmetic_tag = FRA_SYR
 set_convoys = 5
 
 1939.1.1 = {

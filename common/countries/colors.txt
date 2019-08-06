@@ -675,3 +675,19 @@ DAG = {
     color = rgb { 180 184 57 }
 	color_ui = rgb { 180 184 57  }
 }
+BLF = {
+    color = rgb { 224 93 61 }
+	color_ui = rgb { 224 93 61  }
+}
+BRU = {
+    color = rgb { 99 20 23 }
+	color_ui = rgb { 99 20 23  }
+}
+BRL = {
+    color = rgb { 199 189 76 }
+	color_ui = rgb { 199 189 76  }
+}
+BRC = {
+    color = rgb { 87 158 119 }
+	color_ui = rgb { 87 158 119 }
+}

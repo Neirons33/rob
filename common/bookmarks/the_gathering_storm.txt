@@ -78,18 +78,6 @@ bookmarks = {
 				ITA_italy_first
 			}		
 		}
-		"JAP"={
-			history = "JAP_GATHERING_STORM_DESC"
-			ideology = authoritharian
-			ideas = {
-				state_shintoism
-			}	
-			focuses = {
-				southern_expansion_focus
-				divine_wind_focus
-				found_own_faction_focus
-			}			
-		}
 		"SOV"={
 			history = "SOV_GATHERING_STORM_DESC"
 			ideology = democratic_socialist

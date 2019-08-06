@@ -623,21 +623,11 @@ guiTypes = {
 			quadTextureSprite ="GFX_country_selection_bg"
 		}
 		
-		ButtonType = {
-			name = "back_button"
-			position = { x = -158 y = -52 }
-			quadTextureSprite ="GFX_button_148x34"	
-			buttonText = "BACK"
-			buttonFont = "hoi_18mbs"
-			Orientation = "CENTER_DOWN"
-			clicksound = click_close
-			oversound = ui_menu_over
-			shortcut = "ESCAPE"
-		}
+
 		
 		ButtonType = {
 			name = "select_button"
-			position = { x = 10 y = -52 }
+			position = { x = -70 y = -52 }
 			quadTextureSprite ="GFX_button_148x34"
 			buttonText = "FE_SELECT_COUNTRY"
 			buttonFont = "hoi_18mbs"
@@ -649,7 +639,7 @@ guiTypes = {
 
 		containerWindowType = {
 			name ="countries"
-			position = { x = 15 y = 45 }
+			position = { x = 90 y = 45 }
 			size = { width = -15 height = 120}
 			
 			gridboxType = {
@@ -828,7 +818,7 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "nation_title"
-			position = { x = 437 y = 429 }
+			position = { x = 440 y = 433 }
 			font = "hoi_24header"
 			borderSize = {x = 0 y = 0}
 			maxWidth = 340

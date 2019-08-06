@@ -30,6 +30,10 @@ FRS = "countries/Socialist France.txt"
 FRR = "countries/Sorelian France.txt"
 FRP = "countries/Pelekist France.txt"
 FRL = "countries/Liberal France.txt"
+BLF = "countries/British Labour Front.txt"
+BRU = "countries/British Union.txt"
+BRL = "countries/British Liberal Union.txt"
+BRC = "countries/British Conservatives.txt"
 
 
 ##America##
