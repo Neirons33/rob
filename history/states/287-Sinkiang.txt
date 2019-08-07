@@ -3,7 +3,7 @@ state={
 	name="STATE_287"
 
 	history={
-		owner = XSM
+		owner = SIK
 		add_core_of = SIK
 		add_core_of = XSM
 		add_core_of = CHI
