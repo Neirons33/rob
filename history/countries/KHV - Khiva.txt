@@ -25,6 +25,9 @@ set_popularities = {
 	reactionary = 73
 	pelekist = 0
 }
+add_ideas = {
+extensive_conscription
+}
 
 create_country_leader = {
 	name = "Sayid Abdullah"

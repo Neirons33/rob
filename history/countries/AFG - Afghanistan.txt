@@ -8,6 +8,8 @@ set_technology = {
 	basic_light_tank = 1
 }
 
+puppet = UZB
+
 set_politics = {
 	ruling_party = reactionary
 	last_election = "1934.1.1"
@@ -24,6 +26,10 @@ set_popularities = {
 	authoritharian = 5
 	reactionary = 68
 	pelekist = 1
+}
+
+add_ideas = {
+limited_conscription
 }
 
 create_country_leader = {
