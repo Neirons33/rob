@@ -31,6 +31,9 @@ l_english:
  VICTORY_POINTS_12040:0 "Kaesong"
  VICTORY_POINTS_13265:0 "Weihaiwei"
 
+ ##Central Asia
+VICTORY_POINTS_10510:0 "Kara Kala"
+
  #Austria
  VICTORY_POINTS_6680:0 "Bregenz"
  VICTORY_POINTS_6708:0 "Braunau am Inn"
