@@ -1177,8 +1177,7 @@ STATE_1081:0 "STATE_1081"
  STATE_1176:0 "Khiva"
  STATE_1177:0 "Bukhara"
  STATE_1178:0 "Kyzyl-Kum Desert"
- STATE_1176:0 "Mary"
- STATE_1177:0 "Dasoguz"
- STATE_1178:0 "Gyzylgaya"
-
+ STATE_1179:0 "Mary"
+ STATE_1180:0 "Dasgouz"
+ STATE_1181:0 "Gyzylgaya"
  
