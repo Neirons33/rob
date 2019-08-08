@@ -17,6 +17,8 @@ picture = GFX_picture_bosnian_revolt
 trigger = {
 tag = TRS
 date > 1936.8.13
+is_puppet = no
+
 }
 mean_time_to_happen = { days = 1 }
 
@@ -89,6 +91,8 @@ picture = GFX_picture_bosnian_revolt
 
 trigger = {
 tag = KHV
+is_puppet = yes
+
 }
 option = {
 name = turkmenistan.101.a
@@ -130,6 +134,7 @@ picture = GFX_picture_bosnian_revolt
 
 trigger = {
 tag = TMS
+
 }
 option = {
 name = turkmenistan.102.a
@@ -151,6 +156,7 @@ picture = GFX_picture_bosnian_revolt
 
 trigger = {
 tag = AFG
+is_puppet = no
 }
 option = {
 name = turkmenistan.103.a
@@ -215,6 +221,7 @@ picture = GFX_picture_bosnian_revolt
 
 trigger = {
 tag = KAZ
+is_puppet = no
 }
 option = {
 name = turkmenistan.105.a
