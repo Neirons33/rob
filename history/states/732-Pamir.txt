@@ -12,10 +12,12 @@ chromium=2.000
 		add_core_of = KYR
 		owner = KYR
 		victory_points = {
-			12583 1 
+			12583 3 
 		}
 		buildings = {
-			infrastructure = 1
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
 
 		}
 
@@ -24,7 +26,7 @@ chromium=2.000
 	provinces={
 		1483 1675 1825 4224 4316 4391 4768 5062 10187 10408 10488 10530 10660 12370 12511 12583 13147 
 	}
-	manpower=230000
+	manpower=423120
 	buildings_max_level_factor=1.000
-	state_category=pastoral
+	state_category=rural
 }
