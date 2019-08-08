@@ -43,7 +43,7 @@ units = {
 	division = {
 		name = "2nd Russian Brigade"
 		location = 4599
-		division_template = "Bukharan Cavalry"
+		division_template = "Russian Guards"
 		start_experience_factor = 0.3
 
 	}
@@ -51,7 +51,6 @@ units = {
 		name = "1st Turkmen Brigade"
 		location = 10359
 		division_template = "Militia"
-		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
 
 	}
@@ -59,7 +58,6 @@ units = {
 		name = "2nd Turkmen Brigade"
 		location = 7477
 		division_template = "Militia"
-		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
 
 	}
