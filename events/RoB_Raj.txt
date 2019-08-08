@@ -1,0 +1,67 @@
+#################
+###Turkmen Events
+#################
+
+add_namespace = raj
+
+
+###India goes boom
+
+country_event = {
+id = raj.100
+title = raj.100.t
+desc = raj.100.d
+fire_only_once = yes
+picture = GFX_picture_bosnian_revolt
+
+trigger = {
+tag = RAJ
+}
+
+option = {
+name = raj.100.a
+ai_chance = { factor = 100}
+
+DEL = { annex_country = {
+    target = RAJ
+    transfer_troops = yes
+}
+}
+DEL = { change_tag_from = ROOT }
+BAL = { add_state_core = 444 }
+BAL = { transfer_state = 444 }
+DEL = { add_state_core = 439 }
+DEL = { transfer_state = 439 }
+DEL = { add_state_core = 438 }
+DEL = { transfer_state = 438 }
+DEL = { add_state_core = 440 }
+DEL = { transfer_state = 440 }
+DEL = { add_state_core = 445 }
+DEL = { transfer_state = 445 }
+DEL = { add_state_core = 442 }
+DEL = { transfer_state = 442 }
+DEL = { transfer_state = 440 }
+JAK = { add_state_core = 787 }
+JAK = { transfer_state = 787 }
+JAK = { add_state_core = 441 }
+JAK = { transfer_state = 441 }
+BIH = { add_state_core = 435 }
+BIH = { transfer_state = 435 }
+SNH = { add_state_core = 443 }
+SNH = { transfer_state = 443 }
+GUJ = { add_state_core = 428 }
+GUJ = { transfer_state = 428 }
+RPF = { add_state_core = 433 }
+RPF = { transfer_state = 433 }
+PRF = { add_state_core = 437 }
+PRF = { transfer_state = 437 }
+BNL = { add_state_core = 430 }
+BNL = { transfer_state = 430 }
+BNL = { add_state_core = 431 }
+BNL = { transfer_state = 431 }
+
+}
+
+
+}
+
