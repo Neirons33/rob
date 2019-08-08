@@ -28,6 +28,9 @@ TMS = {country_event = {
     days = 2
 }
 }
+TRS = {
+transfer_state = 1181
+}
 
 }
 
@@ -60,9 +63,7 @@ declare_war_on = {
     target = TRS
     type = annex_everything
 }
-TRS = {
-transfer_state = 1181
-}
+
 hidden_effect = {
 	KHV = { country_event = { id = turkmenistan.101 days = 10 } }
 }
@@ -73,9 +74,7 @@ name = turkmenistan.100.b
 ai_chance = { factor = 0}
 add_political_power = -100
 add_stability = -0.25
-TRS = {
-transfer_state = 1181
-}
+
 
 }
 }
