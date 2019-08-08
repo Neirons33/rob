@@ -87,3 +87,13 @@ THR = "countries/third_reich.txt"
 
 ##Central Asia & India##
 KHV = "countries/Khiva.txt"
+DEL = "countries/Delhi.txt"
+BAL = "countries/Baluchistan.txt"
+SNH = "countries/Sindh.txt"
+JAK = "countries/Jammu.txt"
+RPF = "countries/Rajputs.txt"
+GUJ = "countries/Gujarat.txt"
+BIH = "countries/Bihar.txt"
+BNL = "countries/Bengal.txt"
+SIK = "countries/Sikkim.txt"
+PRF = "countries/Princes.txt"
