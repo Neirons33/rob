@@ -16,7 +16,7 @@ picture = GFX_picture_bosnian_revolt
 
 trigger = {
 tag = TRS
-date > 1934.8.13
+date > 1936.8.13
 }
 mean_time_to_happen = { days = 1 }
 
@@ -225,17 +225,20 @@ ai_chance = { factor = 100}
 1178 = { add_core_of = KAZ }
 
 
-declare_war_on = {
-    target = TRS
-    type = annex_everything
+add_to_war = { 
+    targeted_alliance = TMS 
+    enemy = KHV 
+    hostility_reason = asked_to_join
 }
-declare_war_on = {
-    target = AFG
-    type = annex_everything
+add_to_war = { 
+    targeted_alliance = TMS 
+    enemy = TRS 
+    hostility_reason = asked_to_join
 }
-declare_war_on = {
-    target = KHV
-    type = annex_everything
+add_to_war = { 
+    targeted_alliance = TMS 
+    enemy = AFG 
+    hostility_reason = asked_to_join
 }
 }
 option = {
