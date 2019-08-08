@@ -32,7 +32,7 @@ limited_conscription
 create_country_leader = {
 	name = "Mohammed Alim Khan"
 	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-	picture = ""
+	picture = "mohammed_alim_khan.tga"
 	expire = "1965.1.1"
 	ideology = reactionary
 	traits = {
@@ -40,3 +40,13 @@ create_country_leader = {
 	}
 }
 
+create_field_marshal = {
+	name = "Mohammed Alim Khan"
+	picture = "mohammed_alim_khan.dds"
+	traits = { old_guard trait_cautious }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
