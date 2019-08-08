@@ -18,7 +18,8 @@ trigger = {
 tag = TRS
 date > 1936.8.13
 is_puppet = no
-
+owns_state = 1183
+owns_state = 1184
 }
 mean_time_to_happen = { days = 1 }
 
