@@ -1,0 +1,247 @@
+#################
+###Turkmen Events
+#################
+
+add_namespace = turkmenistan
+
+
+###Turkmen Invasion
+
+country_event = {
+id = turkmenistan.99
+title = turkmenistan.99.t
+desc = turkmenistan.99.d
+fire_only_once = yes
+picture = GFX_picture_bosnian_revolt
+
+trigger = {
+tag = TRS
+date > 1934.8.13
+}
+mean_time_to_happen = { days = 1 }
+
+option = {
+name = turkmenistan.99.a
+ai_chance = { factor = 100}
+TMS = {country_event = {
+    id = turkmenistan.100
+    days = 2
+}
+}
+
+}
+
+option = {
+name = turkmenistan.99.b
+ai_chance = { factor = 0}
+add_political_power = -100
+
+}
+}
+
+country_event = {
+id = turkmenistan.100
+title = turkmenistan.100.t
+desc = turkmenistan.100.d
+is_triggered_only = yes
+fire_only_once = yes
+picture = GFX_picture_bosnian_revolt
+
+trigger = {
+tag = TMS
+}
+mean_time_to_happen = { days = 1 }
+
+option = {
+name = turkmenistan.100.a
+ai_chance = { factor = 100}
+set_country_flag = turkmen_war
+declare_war_on = {
+    target = TRS
+    type = annex_everything
+}
+TRS = {
+transfer_state = 1181
+}
+hidden_effect = {
+	KHV = { country_event = { id = turkmenistan.101 days = 10 } }
+}
+}
+
+option = {
+name = turkmenistan.100.b
+ai_chance = { factor = 0}
+add_political_power = -100
+add_stability = -0.25
+TRS = {
+transfer_state = 1181
+}
+
+}
+}
+
+country_event = {
+id = turkmenistan.101
+title = turkmenistan.101.t
+desc = turkmenistan.101.d
+fire_only_once = yes
+is_triggered_only = yes
+picture = GFX_picture_bosnian_revolt
+
+trigger = {
+tag = KHV
+}
+option = {
+name = turkmenistan.101.a
+ai_chance = { factor = 100}
+TMS = {country_event = {
+    id = turkmenistan.102
+    days = 2
+}
+}
+white_peace = TRS
+TMS = {end_puppet = KHV}
+declare_war_on = {
+    target = TMS
+    type = annex_everything
+}
+
+hidden_effect = {
+	AFG = { country_event = { id = turkmenistan.103 days = 20 } }
+}
+
+}
+
+option = {
+name = turkmenistan.101.b
+ai_chance = { factor = 0}
+add_political_power = -100
+
+}
+
+}
+
+country_event = {
+id = turkmenistan.102
+title = turkmenistan.102.t
+desc = turkmenistan.102.d
+fire_only_once = yes
+is_triggered_only = yes
+picture = GFX_picture_bosnian_revolt
+
+trigger = {
+tag = TMS
+}
+option = {
+name = turkmenistan.102.a
+ai_chance = { factor = 100}
+add_political_power = -50
+
+
+}
+
+}
+
+country_event = {
+id = turkmenistan.103
+title = turkmenistan.103.t
+desc = turkmenistan.103.d
+fire_only_once = yes
+is_triggered_only = yes
+picture = GFX_picture_bosnian_revolt
+
+trigger = {
+tag = AFG
+}
+option = {
+name = turkmenistan.103.a
+ai_chance = { factor = 100}
+TMS = {country_event = {
+    id = turkmenistan.104
+    days = 2
+}
+}
+
+1179 = { add_core_of = AFG }
+1180 = { add_core_of = UZB }
+
+
+declare_war_on = {
+    target = TMS
+    type = annex_everything
+}
+
+hidden_effect = {
+	KAZ = { country_event = { id = turkmenistan.105 days = 20 } }
+}
+
+}
+
+option = {
+name = turkmenistan.103.b
+ai_chance = { factor = 0}
+add_political_power = -50
+
+}
+
+}
+
+country_event = {
+id = turkmenistan.104
+title = turkmenistan.104.t
+desc = turkmenistan.104.d
+fire_only_once = yes
+is_triggered_only = yes
+picture = GFX_picture_bosnian_revolt
+
+trigger = {
+tag = TMS
+}
+option = {
+name = turkmenistan.104.a
+ai_chance = { factor = 100}
+add_political_power = -50
+
+
+}
+
+}
+
+country_event = {
+id = turkmenistan.105
+title = turkmenistan.105.t
+desc = turkmenistan.105.d
+fire_only_once = yes
+is_triggered_only = yes
+picture = GFX_picture_bosnian_revolt
+
+trigger = {
+tag = KAZ
+}
+option = {
+name = turkmenistan.105.a
+ai_chance = { factor = 100}
+
+1178 = { add_core_of = KAZ }
+
+
+declare_war_on = {
+    target = TRS
+    type = annex_everything
+}
+declare_war_on = {
+    target = AFG
+    type = annex_everything
+}
+declare_war_on = {
+    target = KHV
+    type = annex_everything
+}
+}
+option = {
+name = turkmenistan.105.b
+ai_chance = { factor = 0}
+
+}
+
+}
