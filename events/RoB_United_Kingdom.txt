@@ -551,6 +551,11 @@ BRU = { transfer_state = 1044 }
 1045 = { add_core_of = BRU }
 1053 = { add_core_of = BRU }
 1044 = { add_core_of = BRU }
+RAJ = {country_event = {
+    id = raj.100
+    days = 10
+}
+}
 }
 }
 
@@ -694,6 +699,11 @@ BRU = { transfer_state = 1044 }
 1045 = { add_core_of = BRU }
 1053 = { add_core_of = BRU }
 1044 = { add_core_of = BRU }
+RAJ = {country_event = {
+    id = raj.100
+    days = 10
+}
+}
 }
 }
 }
