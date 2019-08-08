@@ -42,6 +42,10 @@ set_popularities = {
 	reactionary = 6
 	pelekist = 88
 }
+add_ideas = {
+extensive_conscription
+}
+
 
 create_country_leader = {
 	name = "Radola Gajda"
