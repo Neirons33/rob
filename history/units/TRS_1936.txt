@@ -39,26 +39,22 @@ units = {
 		location = 10510
 		division_template = "Russian Guards"
 		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "2nd Russian Brigade"
-		location = 4599
+		location = 10510
 		division_template = "Russian Guards"
 		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
 
 	}
 	division = {
 		name = "1st Turkmen Brigade"
-		location = 10359
+		location = 10510
 		division_template = "Militia"
-		start_equipment_factor = 0.3
-
-	}
-	division = {
-		name = "2nd Turkmen Brigade"
-		location = 7477
-		division_template = "Militia"
-		start_equipment_factor = 0.3
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
 
 	}
 
