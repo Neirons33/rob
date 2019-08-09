@@ -1,0 +1,52 @@
+BLR_power_struggle = {
+
+ BLR_favor_pelekists_1 = {
+  cost = 10
+  fire_only_once = yes
+  complete_effect = {
+   add_to_variable = { var = BLR_pelekist_strenght value = 1 }
+   add_popularity = { ideology = pelekist popularity = 0.02 }
+   add_manpower = 10000
+ }
+
+}
+
+ BLR_favor_elite_1 = {
+  cost = 10
+  fire_only_once = yes
+  complete_effect = {
+   add_to_variable = { var = BLR_authoritharian_strenght value = 1 }
+   add_popularity = { ideology = authoritharian popularity = 0.02 }
+   add_stability = 0.05
+ }
+
+}
+}
+
+BLR_raids = {
+ 
+ BLR_raid_baranowize = {
+ 
+  start_border_war = {
+    change_state_after_war = no
+    attacker = {
+        state = 96
+        num_provinces = 4
+        on_win = riversofbloodahoimod.3
+        on_lose = riversofbloodahoimod.4
+        on_cancel = riversofbloodahoimod.5
+    }
+                
+    defender = {
+        state = 95
+        num_provinces = 4
+        on_win = riversofbloodahoimod.3
+        on_lose = riversofbloodahoimod.4
+        on_cancel = riversofbloodahoimod.5
+    }
+}
+ 
+ }
+ 
+
+}

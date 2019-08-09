@@ -1,0 +1,333 @@
+####################
+###Belarusian Events
+####################
+
+
+add_namespace = belarusia
+
+
+####STARTING EVENTS
+###National Junta Starting Event
+country_event = { 
+id = belarusia.0
+title = belarusia.0.t
+desc = belarusia.0.d
+fire_only_once = yes
+
+trigger = {
+ tag = BLR
+}
+
+mean_time_to_happen = { days = 1 }
+
+option = {
+ name = belarusia.0.a
+ add_political_power = 10
+ set_variable = { BLR_pelekist_strenght = 0 }
+ set_variable = { BLR_authoritharian_strenght = 3 }
+}
+}
+
+###Democratic Starting Event
+country_event = { 
+id = belarusia.1
+title = belarusia.1.t
+desc = belarusia.1.d
+fire_only_once = yes
+
+trigger = {
+ tag = DBR
+}
+
+mean_time_to_happen = { days = 1 }
+
+option = {
+ name = belarusia.1.a
+ add_political_power = 10
+}
+}
+
+###Socialist Starting Event
+country_event = { 
+id = belarusia.2
+title = belarusia.2.t
+desc = belarusia.2.d
+fire_only_once = yes
+
+trigger = {
+ tag = CBR
+}
+
+mean_time_to_happen = { days = 1 }
+
+option = {
+ name = belarusia.1.a
+ add_political_power = 10
+}
+}
+
+####NATIONAL JUNTA EVENTS
+###Lithuanian Arms
+country_event = {
+id = belarusia.4
+title = belarusia.4.t
+desc = belarusia.4.d
+fire_only_once = yes
+
+trigger = {
+ has_country_flag = BLR_lithuanian_arms
+ tag = BLR
+}
+
+mean_time_to_happen = { days = 2 }
+
+option = {
+ name = belarusia.4.a
+ add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 2000
+			producer = LIT 
+		}
+	
+}
+set_country_flag = BLR_equipment_arrives
+}
+
+###Pelekist Visit
+country_event = {
+id = belarusia.5
+title = belarusia.5.t
+desc = belarusia.5.d
+fire_only_once = yes
+
+trigger = {
+ has_country_flag = BLR_equipment_arrives
+}
+
+mean_time_to_happen = { days = 3 }
+
+option = { ###Accepts the aid
+ add_popularity = { ideology = pelekist popularity = 0.05 }
+ set_country_flag = BLR_pelekist_aid
+ hidden_effect = {
+  BLR = { country_event = { id = belarusia.6 days = 20 } }
+ }
+}
+
+option = { ###decline the aid
+ add_stability = -0.1
+ add_popularity = { ideology = pelekist popularity = -0.05 }
+ hidden_effect = { 
+  DBR = { country_event = { id = belarusia.8 days = 20 } }
+}
+}
+}
+
+###Pelekist Coup!
+country_event = {
+id = belarusia.6
+title = belarusia.6.t
+desc = belarusia.6.d
+fire_only_once = yes
+
+trigger = {
+ tag = BLR
+ check_variable = {
+    var = BLR_pelekist_strenght
+    value = 5
+    compare = more_than
+}
+}
+
+option = {
+ name = belarusia.6.a
+ set_politics = {
+  ruling_party = pelekist
+  elections_allowed = no
+ }
+
+}
+}
+
+###Authoritarian Coup!
+country_event = {
+id = belarusia.7
+title = belarusia.7.t
+desc = belarusia.7.d
+fire_only_once = yes
+
+trigger = {
+ tag = BLR
+ check_variable = {
+    var = BLR_authoritharian_strenght
+    value = 5
+    compare = more_than
+}
+}
+
+option = {
+ name = belarusia.6.a
+ set_politics = {
+  ruling_party = authoritharian
+  elections_allowed = no
+ }
+
+}
+}
+
+###Pelekist Visit - DBR
+country_event = {
+id = belarusia.8
+title = belarusia.8.t
+desc = belarusia.8.d
+fire_only_once = yes
+is_triggered_only = yes
+
+
+option = { ###Accept the aid
+ name = belarusia.8.a
+ add_popularity = { ideology = pelekist popularity = 0.05 }
+ set_country_flag = BLR_pelekist_aid
+ add_to_variable = { var = BLR_pelekist_strenght value = 1 }
+
+}
+
+option = { ###decline the aid
+ name = belarusia.8.b
+ add_stability = -0.1
+ add_popularity = { ideology = pelekist popularity = -0.05 }
+ hidden_effect = { 
+  BLR = { country_event = { id = belarusia.100 days = 20 } }
+}
+}
+}
+
+####BIALYSTOK CONFERENCE
+###Republican Raid
+country_event = {
+id = belarusia.9
+title = belarusia.9.t
+desc = belarusia.9.d
+fire_only_once = yes
+
+trigger = {
+ BLR = {
+  has_country_flag = BLR_republicans_respond_with_force
+   }
+   }
+   
+ mean_time_to_happen = { days = 1 }
+ 
+ option = { ###approach democrats
+  name = belarusia.9.a
+  DBR = { country_event = { id = belarusia.10 days = 5 } }
+ }
+ 
+ option = { ###Turn to Lithuania
+  name = belarusia.9.a
+  LIT = { country_event = { id = lithuania.1 days = 5 } }
+ }
+ }
+ 
+###Democratcs get the choice
+country_event = {
+id = belarusia.10
+title = belarusia.10.t
+desc = belarusia.10.d
+fire_only_once = yes
+is_triggered_only = yes
+
+option = { ###accept proposal
+ name = belarusia.10.a
+ country_event = { id = belarusia.11 days = 10 } 
+ hidden_effect = {
+  BLR = {
+   country_event = { id = belarusia.11 days = 10 }
+  }
+ }
+}
+
+option = { ###Deny proposal
+ name = belarusia.10.b
+ BLR = { 
+  country_event = { id = belarusia.12 days = 3 } 
+  }
+ }
+}
+
+###Bialystok - alliance
+country_event = {
+id = belarusia.11
+title = belarusia.11.t
+desc = belarusia.11.d
+fire_only_once = yes
+is_triggered_only = yes
+
+option = {
+ name = belarusia.11.a
+ trigger = { tag = BLR }
+ create_faction = "Belarusian National Government"
+ add_to_faction = DBR
+}
+
+option = {
+ name = belarusia.11.b
+ add_stability = 0.1
+ add_war_support = 0.1
+}
+
+}
+
+###Democrats deny
+country_event = {
+id = belarusia.12
+title = belarusia.12.t
+desc = belarusia.12.d
+fire_only_once = yes
+is_triggered_only = yes
+
+
+option = { ###turn to Lithuania
+name = belarusia.12.a
+  LIT = { country_event = { id = lithuania.1 days = 5 } }
+}
+
+}
+
+###Lithuania denies help 
+country_event = {
+id = belarusia.13
+title = belarusia.13.t
+desc = belarusia.13.d
+fire_only_once = yes
+is_triggered_only = yes
+
+option = { ###we shall win alone!
+name = belarusia.13.a
+add_ideas = {
+BLR_on_our_own
+}
+}
+}
+
+
+###Lithuania accepts  
+country_event = {
+id = belarusia.14
+title = belarusia.14.t
+desc = belarusia.14.d
+fire_only_once = yes
+is_triggered_only = yes
+
+option = { 
+name = belarusia.14.a
+  add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 1000
+			producer = LIT 
+		}
+  LIT = { give_guarantee = BLR }
+  BLR = { give_military_access = LIT }
+}
+
+}

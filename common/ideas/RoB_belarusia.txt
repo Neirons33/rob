@@ -1,0 +1,24 @@
+ideas = {
+ country = {
+ 
+ BLR_on_our_own = {
+  picture = GFX_idea_minority_troubles
+ allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 modifier = {
+				stability_factor = 0.1
+				war_support_factor = 0.1
+				conscription = 0.025 
+				army_attack_factor = 0.1
+				army_defense_factor = 0.1
+				}
+ 
+ }
+ 
+ }
+ }

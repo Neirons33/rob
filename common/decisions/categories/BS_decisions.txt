@@ -9,3 +9,27 @@ GER_german_partisans = {
 		  base = 10
 		  }
 }
+
+BLR_power_struggle = {
+  icon = GFX_decision_oppression
+  picture = GFX_decision_germany_partisans
+	visible = {
+    tag = BLR
+	has_country_flag = BLR_pelekist_aid
+          }
+		  priority = {
+		  base = 10
+		  }
+}
+
+BLR_raids = {
+  icon = GFX_decision_oppression
+  picture = GFX_decision_germany_partisans
+	visible = {
+    tag = BLR
+	has_country_flag = BLR_pelekist_aid
+          }
+		  priority = {
+		  base = 10
+		  }
+}
