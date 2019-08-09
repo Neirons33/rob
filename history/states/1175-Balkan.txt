@@ -9,7 +9,6 @@ state={
 		owner = TRS
 		buildings = {
 			infrastructure = 1
-			industrial_complex = 1
 			arms_factory = 1
 
 		}
@@ -22,9 +21,9 @@ state={
 
 	}
 	provinces={
-		1593 4599 7477 10359 10510 12359 
+		10510 
 	}
-	manpower=119281
+	manpower=89281
 	buildings_max_level_factor=1.000
 	state_category=pastoral
 
