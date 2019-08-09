@@ -28,7 +28,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = HUN_clock_strikes_12
+		id = HUN_end_of_military_goverment
 		icon = GFX_goal_unknown
 		cost = 0.00
 		x = 69
@@ -50,34 +50,10 @@ focus_tree = {
 
 	}
 	focus = {
-		id = HUN_Frenzic_coup
-		icon = GFX_goal_unknown
-		cost = 0.00
-		x = 93
-		y = 1
-
-	}
-	focus = {
-		id = HUN_fascist_coup
-		icon = GFX_goal_unknown
-		cost = 0.00
-		x = 52
-		y = 1
-
-	}
-	focus = {
-		id = HUN_fascist_coup
-		icon = GFX_goal_unknown
-		cost = 0.00
-		x = 69
-		y = 1
-
-	}
-	focus = {
 		id = HUN_second_march_on_budapest
 		icon = GFX_goal_unknown
 		cost = 0.00
-		x = 65
+		x = 78
 		y = 0
 
 	}
@@ -85,16 +61,8 @@ focus_tree = {
 		id = HUN_hungarian_king
 		icon = GFX_goal_unknown
 		cost = 0.00
-		x = 75
-		y = 0
-
-	}
-	focus = {
-		id = HUN_the_other_frenic
-		icon = GFX_goal_unknown
-		cost = 0.00
-		x = 72
-		y = 0
+		x = 84
+		y = 1
 
 	}
 	focus = {
@@ -259,6 +227,9 @@ focus_tree = {
 		}
 		x = 14
 		y = 2
+			completion_reward = {
+
+}
 
 	}
 	focus = {
@@ -273,6 +244,9 @@ focus_tree = {
 		}
 		x = 13
 		y = 3
+			completion_reward = {
+					add_ideas = HUN_militia_allowed
+				}
 
 	}
 	focus = {
@@ -287,6 +261,9 @@ focus_tree = {
 		}
 		x = 15
 		y = 3
+			completion_reward = {
+					add_ideas = HUN_RWDS_banned
+				}
 
 	}
 	focus = {
@@ -301,6 +278,9 @@ focus_tree = {
 		}
 		x = 14
 		y = 4
+			completion_reward = {
+					add_ideas = soldiers_in_factories
+				}
 
 	}
 	focus = {
@@ -624,6 +604,17 @@ focus_tree = {
 		}
 		x = 32
 		y = 6
+
+	}
+	focus = {
+		id = HUN_fascist_coup
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_end_of_military_goverment
+		}
+		x = 52
+		y = 1
 
 	}
 	focus = {
@@ -963,6 +954,365 @@ focus_tree = {
 
 	}
 	focus = {
+		id = HUN_the_frenic_szali
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_end_of_military_goverment
+		}
+		x = 69
+		y = 1
+
+	}
+	focus = {
+		id = HUN_a_letter_from_eichmann
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_the_frenic_szali
+		}
+		x = 63
+		y = 2
+
+	}
+	focus = {
+		id = HUN_build_camps
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_a_letter_from_eichmann
+		}
+		mutually_exclusive = {
+			focus = HUN_mass_deportation
+		}
+		x = 62
+		y = 3
+
+	}
+	focus = {
+		id = HUN_mass_deportation
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_a_letter_from_eichmann
+		}
+		mutually_exclusive = {
+			focus = HUN_build_camps
+		}
+		x = 64
+		y = 3
+
+	}
+	focus = {
+		id = HUN_redistribute_lands
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_mass_deportation
+		}
+		x = 64
+		y = 4
+
+	}
+	focus = {
+		id = HUN_redistribute_property
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_redistribute_lands
+		}
+		x = 64
+		y = 5
+
+	}
+	focus = {
+		id = HUN_brutally_realistic_state_objectives
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_the_frenic_szali
+		}
+		x = 67
+		y = 2
+
+	}
+	focus = {
+		id = HUN_delay_loans
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_brutally_realistic_state_objectives
+		}
+		x = 66
+		y = 3
+
+	}
+	focus = {
+		id = HUN_declare_defualt_one_pre_1914_loans
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_delay_loans
+		}
+		x = 66
+		y = 4
+
+	}
+	focus = {
+		id = HUN_Working_Nations_Occupational_Order
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_declare_defualt_one_pre_1914_loans
+		}
+		x = 66
+		y = 5
+
+	}
+	focus = {
+		id = HUN_break_up_the_banks
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_brutally_realistic_state_objectives
+		}
+		x = 68
+		y = 3
+
+	}
+	focus = {
+		id = HUN_artifical_deflation
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_break_up_the_banks
+		}
+		x = 68
+		y = 4
+
+	}
+	focus = {
+		id = HUN_worker_rights_promotion
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_artifical_deflation
+		}
+		x = 68
+		y = 5
+
+	}
+	focus = {
+		id = HUN_Country_Construction_Plan
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_Working_Nations_Occupational_Order
+		}
+		prerequisite = {
+			focus = HUN_worker_rights_promotion
+		}
+		x = 67
+		y = 6
+
+	}
+	focus = {
+		id = HUN_a_state_of_total_war
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_the_frenic_szali
+		}
+		x = 71
+		y = 2
+
+	}
+	focus = {
+		id = HUN_all_men_work
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_a_state_of_total_war
+		}
+		x = 70
+		y = 3
+
+	}
+	focus = {
+		id = HUN_form_the_4_divisions
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_all_men_work
+		}
+		x = 70
+		y = 4
+
+	}
+	focus = {
+		id = HUN_recruit_ages_17_to_37
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_a_state_of_total_war
+		}
+		x = 72
+		y = 3
+
+	}
+	focus = {
+		id = HUN_budapest_fortifacations
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_recruit_ages_17_to_37
+		}
+		x = 72
+		y = 4
+
+	}
+	focus = {
+		id = HUN_replace_officer_staff
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_budapest_fortifacations
+		}
+		prerequisite = {
+			focus = HUN_form_the_4_divisions
+		}
+		x = 71
+		y = 5
+
+	}
+	focus = {
+		id = HUN_frenic_policies
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_the_frenic_szali
+		}
+		x = 76
+		y = 2
+
+	}
+	focus = {
+		id = HUN_agrarianism
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_frenic_policies
+		}
+		x = 74
+		y = 3
+
+	}
+	focus = {
+		id = HUN_traditional_roles
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_agrarianism
+		}
+		x = 74
+		y = 4
+
+	}
+	focus = {
+		id = HUN_family_subsidies
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_traditional_roles
+		}
+		x = 74
+		y = 5
+
+	}
+	focus = {
+		id = HUN_ban_communists
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_frenic_policies
+		}
+		x = 76
+		y = 3
+
+	}
+	focus = {
+		id = HUN_found_National_calling_secret_police
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_ban_communists
+		}
+		x = 76
+		y = 4
+
+	}
+	focus = {
+		id = HUN_eugenics
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_found_National_calling_secret_police
+		}
+		x = 76
+		y = 5
+
+	}
+	focus = {
+		id = HUN_stregthen_centralization
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_frenic_policies
+		}
+		x = 78
+		y = 3
+
+	}
+	focus = {
+		id = HUN_end_elections
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_stregthen_centralization
+		}
+		x = 78
+		y = 4
+
+	}
+	focus = {
+		id = HUN_anti_democatic_propoganda
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_end_elections
+		}
+		x = 78
+		y = 5
+
+	}
+	focus = {
+		id = HUN_foundation_of_the_nation
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_family_subsidies
+		}
+		prerequisite = {
+			focus = HUN_eugenics
+		}
+		prerequisite = {
+			focus = HUN_anti_democatic_propoganda
+		}
+		x = 76
+		y = 6
+
+	}
+	focus = {
 		id = HUN_article_2
 		icon = GFX_goal_unknown
 		cost = 0.00
@@ -993,6 +1343,71 @@ focus_tree = {
 		}
 		x = 55
 		y = 7
+
+	}
+	focus = {
+		id = HUN_forced_labour
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_build_camps
+		}
+		x = 62
+		y = 4
+
+	}
+	focus = {
+		id = HUN_reproductive_genocide
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_forced_labour
+		}
+		x = 62
+		y = 5
+
+	}
+	focus = {
+		id = HUN_pure_lands
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_redistribute_property
+			focus = HUN_reproductive_genocide
+		}
+		x = 63
+		y = 6
+
+	}
+	focus = {
+		id = HUN_a_goverment_of_national_unity
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_irredentist_ideals
+		}
+		prerequisite = {
+			focus = HUN_foundation_of_the_nation
+		}
+		prerequisite = {
+			focus = HUN_Country_Construction_Plan
+		}
+		prerequisite = {
+			focus = HUN_pure_lands
+		}
+		x = 69
+		y = 8
+
+	}
+	focus = {
+		id = HUN_irredentist_ideals
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = HUN_replace_officer_staff
+		}
+		x = 71
+		y = 6
 
 	}
 }
