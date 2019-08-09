@@ -10,6 +10,7 @@ shared_focus = GER_formthewehrmacht
 shared_focus = GER_formthekriegsmarine
 shared_focus = GER_formtheluftwaffe
 
+
 	#Focus for A German Army!
 	focus = {
 		id = GER_agermanarmy
@@ -368,7 +369,7 @@ shared_focus = GER_formtheluftwaffe
 		y = 4
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = GER_qHpQrikg }
+		prerequisite = { focus = GER_JeOCFyGx }
 		ai_will_do = {
 			factor = 1
 		}
@@ -721,12 +722,12 @@ shared_focus = GER_formtheluftwaffe
 		}
 	}
 
-	#Focus for Jewconomics sorry neirons x2
+	#Focus for Revitalize German Economy
 	focus = {
-		id = GER_jewconomicssorryneironsx2
+		id = GER_revitalizegermaneconomy
 		icon = GFX_goal_unknown
-		x = 1
-		y = 7
+		x = 39
+		y = 0
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -1155,4 +1156,174 @@ shared_focus = GER_formtheluftwaffe
 		}
 	}
 
+	#Focus for Privatize Land
+	focus = {
+		id = GER_privatizeland
+		icon = GFX_goal_unknown
+		x = 36
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_revitalizegermaneconomy }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Privatize Industry
+	focus = {
+		id = GER_privatizeindustry
+		icon = GFX_goal_unknown
+		x = 42
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_revitalizegermaneconomy }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Invite Exiled Capitalists
+	focus = {
+		id = GER_inviteexiledcapitalists
+		icon = GFX_goal_unknown
+		x = 39
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_revitalizegermaneconomy }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Decree No.5
+	focus = {
+		id = GER_decreeno5
+		icon = GFX_goal_unknown
+		x = 36
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_privatizeland }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Invest in Private Sector
+	focus = {
+		id = GER_investinprivatesector
+		icon = GFX_goal_unknown
+		x = 42
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_privatizeindustry }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Munich-Berlin Highway
+	focus = {
+		id = GER_munichberlinhighway
+		icon = GFX_goal_unknown
+		x = 42
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_investinprivatesector }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Return of Nobility
+	focus = {
+		id = GER_returnofnobility
+		icon = GFX_goal_unknown
+		x = 36
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_decreeno5 }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Invite Austrian School Theorists
+	focus = {
+		id = GER_inviteaustrianschooltheorists
+		icon = GFX_goal_unknown
+		x = 39
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_inviteexiledcapitalists }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Import Cheap Consumer Goods
+	focus = {
+		id = GER_importcheapconsumergoods
+		icon = GFX_goal_unknown
+		x = 40
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GER_inviteaustrianschooltheorists 
+		}
+		prerequisite = { 
+			focus = GER_munichberlinhighway 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Laissez-Faire Economics
+	focus = {
+		id = GER_laissezfaireeconomics
+		icon = GFX_goal_unknown
+		x = 38
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GER_returnofnobility 
+		}
+		prerequisite = { 
+			focus = GER_inviteaustrianschooltheorists 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Free from Socialism!
+	focus = {
+		id = GER_freefromsocialism
+		icon = GFX_goal_unknown
+		x = 39
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GER_laissezfaireeconomics 
+		}
+		prerequisite = { 
+			focus = GER_importcheapconsumergoods 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+#End of focuses 
  }

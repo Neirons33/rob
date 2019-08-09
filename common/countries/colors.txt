@@ -699,3 +699,7 @@ BRC = {
     color = rgb { 87 158 119 }
 	color_ui = rgb { 87 158 119 }
 }
+KHV = {
+    color = rgb { 179 167 93 }
+	color_ui = rgb { 179 167 93 }
+}
