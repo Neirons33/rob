@@ -231,3 +231,18 @@ ENG_navy = {
 color = rgb { 143 130 191 }
 color_ui = rgb { 143 130 191 }
 }
+
+SIC_civil_war = {
+ color = rgb { 12 79 26 }
+ color_ui = rgb { 12 79 26 }
+}
+
+PIE_civil_war = {
+color = rgb { 166 102 94 }
+ color_ui = rgb { 166 102 94 }
+}
+
+ITA_socialist = {
+color = rgb { 143 25 19 }
+color_ui = rgb { 143 25 19 }
+}

@@ -41,6 +41,10 @@ POL = {
 	color = rgb { 171 70 134 }
 	color_ui = rgb { 171 70 134 }
 }
+PIE = {
+	color = rgb { 166 137 94 }
+	color_ui = rgb { 166 137 94 }
+}
 AUS = {
 	color = rgb { 194 198 215 }
 	color_ui = rgb { 255 255 255 }
@@ -56,6 +60,10 @@ EST = {
 LAT = {
 	color = rgb { 75 77 186 }
 	color_ui = rgb { 124 125 184 }
+}
+SIC = {
+	color = rgb { 255  89  0 }
+	color_ui = rgb { 255  89  0 }
 }
 SPR = {
 	color = rgb { 165 139 46 }

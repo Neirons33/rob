@@ -2,6 +2,8 @@
 CAT = "countries/Catalonia.txt"
 LIE = "countries/Liechtenstein.txt"
 KTS = "countries/Kingdom of Two Sicilies.txt"
+SIC = "countries/Sicily.txt"
+PIE = "countries/Piedmont.txt"
 BAV = "countries/Bavaria.txt"
 PRS = "countries/Prussia.txt"
 MCO = "countries/Monaco.txt"
