@@ -1,5 +1,5 @@
 #################
-###Turkmen Events
+###Raj Events
 #################
 
 add_namespace = raj
@@ -21,11 +21,17 @@ option = {
 name = raj.100.a
 ai_chance = { factor = 100}
 
-DEL = { annex_country = {
-    target = RAJ
-    transfer_troops = yes
-}
-}
+DEL = { add_state_core = 438 }
+DEL = { transfer_state = 438 }
+DEL = { add_state_core = 439 }
+DEL = { transfer_state = 439 }
+DEL = { add_state_core = 440 }
+DEL = { transfer_state = 440 }
+DEL = { add_state_core = 445 }
+DEL = { transfer_state = 445 }
+DEL = { add_state_core = 442 }
+DEL = { transfer_state = 442 }
+
 DEL = { change_tag_from = ROOT }
 BAL = { add_state_core = 444 }
 BAL = { transfer_state = 444 }
@@ -58,6 +64,27 @@ BNL = { add_state_core = 430 }
 BNL = { transfer_state = 430 }
 BNL = { add_state_core = 431 }
 BNL = { transfer_state = 431 }
+CIR = { add_state_core = 436 }
+CIR = { transfer_state = 436 }
+BBY = { add_state_core = 429 }
+BBY = { transfer_state = 429 }
+MYS = { add_state_core = 425 }
+MYS = { transfer_state = 425 }
+TML = { add_state_core = 423 }
+TML = { transfer_state = 423 }
+MAD = { add_state_core = 424 }
+MAD = { transfer_state = 424 }
+HYD = { add_state_core = 427 }
+HYD = { transfer_state = 427 }
+ORS = { add_state_core = 426 }
+ORS = { transfer_state = 426 }
+ASM = { add_state_core = 432 }
+ASM = { transfer_state = 432 }
+ASM = { add_state_core = 434 }
+ASM = { transfer_state = 434 }
+BRM = { transfer_state = 288 }
+SNN = { add_state_core = 640 }
+SNN = { transfer_state = 640 }
 
 }
 
