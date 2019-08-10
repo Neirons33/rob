@@ -9,7 +9,7 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = authoritharian
+	ruling_party = reactionary
 	last_election = "1934.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -21,8 +21,8 @@ set_popularities = {
 	social_democracy = 0
 	social_liberal = 0
 	conservative = 0
-	authoritharian = 90
-	reactionary = 0
+	authoritharian = 0
+	reactionary = 90
 	pelekist = 0
 }
 add_ideas = {
@@ -34,7 +34,7 @@ create_country_leader = {
 	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
 	picture = ""
 	expire = "1965.1.1"
-	ideology = authoritharian
+	ideology = reactionary
 	traits = {
 		#
 	}
