@@ -31,21 +31,11 @@ DEL = { add_state_core = 445 }
 DEL = { transfer_state = 445 }
 DEL = { add_state_core = 442 }
 DEL = { transfer_state = 442 }
+DEL = { inherit_technology = ROOT }	
 
 DEL = { change_tag_from = ROOT }
 BAL = { add_state_core = 444 }
 BAL = { transfer_state = 444 }
-DEL = { add_state_core = 439 }
-DEL = { transfer_state = 439 }
-DEL = { add_state_core = 438 }
-DEL = { transfer_state = 438 }
-DEL = { add_state_core = 440 }
-DEL = { transfer_state = 440 }
-DEL = { add_state_core = 445 }
-DEL = { transfer_state = 445 }
-DEL = { add_state_core = 442 }
-DEL = { transfer_state = 442 }
-DEL = { transfer_state = 440 }
 JAK = { add_state_core = 787 }
 JAK = { transfer_state = 787 }
 JAK = { add_state_core = 441 }
@@ -72,8 +62,8 @@ MYS = { add_state_core = 425 }
 MYS = { transfer_state = 425 }
 TML = { add_state_core = 423 }
 TML = { transfer_state = 423 }
-MAD = { add_state_core = 424 }
-MAD = { transfer_state = 424 }
+MRS = { add_state_core = 424 }
+MRS = { transfer_state = 424 }
 HYD = { add_state_core = 427 }
 HYD = { transfer_state = 427 }
 ORS = { add_state_core = 426 }
