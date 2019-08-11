@@ -1,6 +1,8 @@
+
 state={
 	id=1128
 	name="STATE_1128"
+
 	history={
 		owner = AUS
 		buildings = {
@@ -13,7 +15,7 @@ state={
 	}
 
 	provinces={
-		9627 
+		9627 13537 
 	}
 	manpower=1
 	buildings_max_level_factor=1.000

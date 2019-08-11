@@ -32,10 +32,11 @@ state={
 
 		}
 		add_core_of = ITA
+
 	}
 
 	provinces={
-		603 3604 9582 11584 
+		603 3604 9582 11584 13518 13525 13533 13535 
 	}
 	manpower=2972364
 	buildings_max_level_factor=1.000

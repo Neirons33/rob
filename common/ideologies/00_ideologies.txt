@@ -223,7 +223,9 @@ reactionary = {
  
  reactionary = {
  }
- 
+ military_junta = {
+ }
+
  }
  rules = {
 			can_declare_war_on_same_ideology = yes

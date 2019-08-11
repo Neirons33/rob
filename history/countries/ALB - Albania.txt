@@ -39,6 +39,40 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Zog I of Albania"
+	desc = "POLITICS_KING_ZOG_DESC"
+	picture = "Portrait_Albania_Zog_I.tga"
+	expire = "1965.1.1"
+	ideology = conservative
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Shefqet Vërlaci"
+	desc = "POLITICS_KING_ZOG_DESC"
+	picture = "Portrait_Shefqet_Vërlaci_I.tga"
+	expire = "1965.1.1"
+	ideology = reactionary
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Ali bey Këlcyra"
+	desc = "POLITICS_KING_ZOG_DESC"
+	picture = "Portrait_Ali_bey_Këlcyra_I.tga"
+	expire = "1965.1.1"
+	ideology = pelekist
+	traits = {
+		
+	}
+}
+
+
+create_country_leader = {
 	name = "Enver Hoxha"
 	desc = "POLITICS_KING_ZOG_DESC"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
@@ -47,6 +81,27 @@ create_country_leader = {
 	traits = {
 	}
 }
+
+create_country_leader = {
+	name = "Enver Hoxha"
+	desc = "POLITICS_KING_ZOG_DESC"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = anarcho_socialism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Enver Hoxha"
+	desc = "POLITICS_KING_ZOG_DESC"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = marxism_leninism
+	traits = {
+	}
+}
+
 
 create_field_marshal = {
 	name = "Xhemal Aranitasi"
@@ -59,3 +114,13 @@ create_field_marshal = {
     logistics_skill = 1
 }
 
+create_field_marshal = {
+	name = "Abaz Kupi"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	traits = { }
+	skill = 2
+	attack_skill = 1
+    defense_skill = 3
+    planning_skill = 2
+    logistics_skill = 1
+}

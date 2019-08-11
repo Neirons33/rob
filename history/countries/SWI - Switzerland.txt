@@ -16,56 +16,6 @@ set_technology = {
 	fuel_silos = 1
 }
 
-1939.1.1 = {
-
-	add_political_power = 1198
-	
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-	
-	oob = "SWI_1939"
-	set_technology = {
-		fighter1 = 1
-		gw_artillery = 1
-		interwar_artillery = 1
-		interwar_antiair = 1
-		infantry_weapons2 = 1
-		support_weapons = 1
-
-		#doctrines
-		air_superiority = 1
-		grand_battle_plan = 1
-		trench_warfare = 1
-		fleet_in_being = 1
-		battlefleet_concentration = 1
-		convoy_sailing = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		mechanical_computing = 1
-		computing_machine = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		construction1 = 1
-		construction2 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-		fuel_refining = 1
-	}
-}
-
 give_guarantee = LIE
 
 
@@ -98,11 +48,55 @@ set_stability = 0.85
 
 
 create_country_leader = {
+	name = "Fritz Platten"
+	desc = "POLITICS_ERNST_BEGUIN_DESC"
+	picture = "Portrait_SWI_Marcel_Pilet_Golaz.tga"
+	expire = "1965.1.1"
+	ideology = sorelianism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
 	name = "Marcel Pilet-Golaz"
 	desc = "POLITICS_ERNST_BEGUIN_DESC"
 	picture = "Portrait_SWI_Marcel_Pilet_Golaz.tga"
 	expire = "1965.1.1"
 	ideology = social_liberal
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Rolf Henne"
+	desc = "POLITICS_ERNST_BEGUIN_DESC"
+	picture = "Portrait_SWI_Marcel_Pilet_Golaz.tga"
+	expire = "1965.1.1"
+	ideology = pelekist
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Georges Oltramare"
+	desc = "POLITICS_ERNST_BEGUIN_DESC"
+	picture = "Portrait_SWI_Marcel_Pilet_Golaz.tga"
+	expire = "1965.1.1"
+	ideology = reactionary
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Eugen Bircher"
+	desc = "POLITICS_ERNST_BEGUIN_DESC"
+	picture = "Portrait_SWI_Marcel_Pilet_Golaz.tga"
+	expire = "1965.1.1"
+	ideology = authoritharian
 	traits = {
 		#
 	}
@@ -118,4 +112,26 @@ create_corps_commander = {
 	defense_skill = 3
 	planning_skill = 3
 	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Eugen Bircher"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	traits = {  winter_specialist }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Emil Sonderegger"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	traits = {  winter_specialist }
+	skill = 4
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 1
 }
