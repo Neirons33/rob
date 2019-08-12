@@ -18,3 +18,7 @@ GER_destroy_partisans_in_wurttemberg:0 "Allow Death Squads to roam Württemberg"
 GER_destroy_partisans_in_baden:0 "Strike upon Partisan Bases in Baden"
 GER_destroy_partisans_in_oberbayern:0 "Destroy the Reactionaries in Oberbayern"
 
+###Belarussian Power Struggle
+BLR_power_struggle: "Nationalist Power Struggle"
+BLR_power_struggle_desc: "Current Strenght of Wealthy Elite is §R[?Root.BLR_authoritharian_strenght]§!.\nCurrent Strenght of Pelekist faction is §M[?Root.BLR_pelekist_strenght]§!."
+
