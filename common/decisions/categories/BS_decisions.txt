@@ -33,3 +33,45 @@ BLR_raids = {
 		  }
 }
 
+DSU_ukrainian_ambition = {
+  icon = GFX_decision_oppression
+  picture = GFX_decision_germany_partisans
+	visible = {
+    tag = DSU
+	}
+		  priority = {
+		  base = 100
+		  }
+
+
+}
+
+DSU_allies = {
+  icon = GFX_decision_oppression
+  picture = GFX_decision_germany_partisans
+	visible = {
+    tag = DSU
+	}
+	allowed = {
+	
+	}
+		  priority = {
+		  base = 90
+		  }
+
+
+}
+
+UKR_ukrainian_ambition = {
+  icon = GFX_decision_oppression
+  picture = GFX_decision_germany_partisans
+	visible = {
+    tag = UKR
+	}
+		  priority = {
+		  base = 100
+		  }
+
+
+}
+

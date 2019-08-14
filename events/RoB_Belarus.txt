@@ -23,8 +23,14 @@ mean_time_to_happen = { days = 1 }
 option = {
  name = belarusia.0.a
  add_political_power = 10
- set_variable = { BLR_pelekist_strenght = 0 }
- set_variable = { BLR_authoritharian_strenght = 3 }
+ set_variable = { 
+   var = BLR_pelekist_strenght 
+   value = 0 
+ }
+ set_variable = { 
+   var = BLR_authoritharian_strenght 
+   value = 3
+ }
 }
 }
 
@@ -61,7 +67,7 @@ trigger = {
 mean_time_to_happen = { days = 1 }
 
 option = {
- name = belarusia.1.a
+ name = belarusia.2.a
  add_political_power = 10
 }
 }
@@ -105,6 +111,7 @@ trigger = {
 mean_time_to_happen = { days = 3 }
 
 option = { ###Accepts the aid
+name = belarusia.5.a
  add_popularity = { ideology = pelekist popularity = 0.05 }
  set_country_flag = BLR_pelekist_aid
  hidden_effect = {
@@ -114,6 +121,7 @@ option = { ###Accepts the aid
 }
 
 option = { ###decline the aid
+name = belarusia.5.b
  add_stability = -0.1
  add_popularity = { ideology = pelekist popularity = -0.05 }
  hidden_effect = { 
@@ -134,7 +142,7 @@ trigger = {
  check_variable = {
     var = BLR_pelekist_strenght
     value = 5
-    compare = more_than
+    compare = greater_than
 }
 }
 
@@ -160,7 +168,7 @@ trigger = {
  check_variable = {
     var = BLR_authoritharian_strenght
     value = 5
-    compare = more_than
+    compare = greater_than
 }
 }
 

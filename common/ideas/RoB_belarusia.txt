@@ -20,5 +20,207 @@ ideas = {
  
  }
  
+ BLR_pelekists_1 = {
+  picture = GFX_idea_minority_troubles
+ allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 modifier = {
+				war_support_factor = 0.03
+				army_org_factor = 0.03
+
+				}
+ 
+ }
+  BLR_pelekists_2 = {
+  picture = GFX_idea_minority_troubles
+ allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 modifier = {
+				war_support_factor = 0.06
+				army_org_factor = 0.06
+				}
+ 
+ }
+  BLR_pelekists_3 = {
+  picture = GFX_idea_minority_troubles
+ allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 modifier = {
+				war_support_factor = 0.08
+				army_org_factor = 0.08
+				recon_factor = 0.01
+
+				}
+ 
+ }
+  BLR_pelekists_4 = {
+  picture = GFX_idea_minority_troubles
+ allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 modifier = {
+				war_support_factor = 0.1
+				army_org_factor = 0.1
+				recon_factor = 0.02
+				}
+ 
+ }
+  BLR_pelekists_5 = {
+  picture = GFX_idea_minority_troubles
+ allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 modifier = {
+				war_support_factor = 0.1
+				army_org_factor = 0.1
+				recon_factor = 0.02
+				training_time_army_factor = -0.05
+				}
+ 
+ }
+ 
+   BLR_pelekists_6 = {
+  picture = GFX_idea_minority_troubles
+ allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 modifier = {
+				war_support_factor = 0.12
+				army_org_factor = 0.12
+				recon_factor = 0.03
+				training_time_army_factor = -0.1
+				}
+ 
+ }
+ 
+    BLR_industrialists_1 = {
+  picture = GFX_idea_minority_troubles
+ allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 modifier = {
+				stability_factor = 0.03
+				production_factory_max_efficiency_factor = 0.03
+
+				}
+ 
+ }
+     BLR_industrialists_2 = {
+  picture = GFX_idea_minority_troubles
+ allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 modifier = {
+				stability_factor = 0.06
+				production_factory_max_efficiency_factor = 0.06
+
+				}
+ 
+ }
+     BLR_industrialists_3 = {
+  picture = GFX_idea_minority_troubles
+ allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 modifier = {
+				stability_factor = 0.08
+				production_factory_max_efficiency_factor = 0.08
+				consumer_goods_factor = -0.05
+
+				}
+ 
+ }
+     BLR_industrialists_4 = {
+  picture = GFX_idea_minority_troubles
+ allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 modifier = {
+				stability_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				consumer_goods_factor = -0.1
+
+				}
+ 
+ }
+     BLR_industrialists_5 = {
+  picture = GFX_idea_minority_troubles
+ allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 modifier = {
+				stability_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+                consumer_goods_factor = -0.1
+				industrial_capacity_factory = 0.08
+				}
+ 
+ }
+     BLR_industrialists_6 = {
+  picture = GFX_idea_minority_troubles
+ allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 modifier = {
+				stability_factor = 0.12
+				production_factory_max_efficiency_factor = 0.12
+                consumer_goods_factor = -0.12
+				industrial_capacity_factory = 0.12
+
+				}
+ 
+ }
+ 
  }
  }

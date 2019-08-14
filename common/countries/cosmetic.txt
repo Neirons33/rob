@@ -246,3 +246,13 @@ ITA_socialist = {
 color = rgb { 143 25 19 }
 color_ui = rgb { 143 25 19 }
 }
+
+UKR_united = {
+	color = rgb { 76 137 167 }
+	color_ui = rgb { 0  80  230 }	
+}
+
+DSU_reactionary = {
+	color = rgb { 120 170 194 }
+	color_ui = rgb { 120 170 194 }	
+}

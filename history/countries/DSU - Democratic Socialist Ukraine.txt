@@ -1,5 +1,7 @@
 capital = 657
 
+oob = "DSU_1934"
+
 set_research_slots = 3
 
 set_technology = {
@@ -21,6 +23,11 @@ set_technology = {
 	basic_heavy_cruiser = 1
 	early_battleship = 1
 	transport = 1
+}
+
+add_ideas = {
+limited_conscription
+
 }
 
 set_politics = {
@@ -51,3 +58,63 @@ create_country_leader = {
 		
 	}
 }
+
+create_field_marshal = {
+	name = "Voldemar Aussem" # Aristocrat
+	id = 1001
+	picture = ".dds"
+	traits = {  offensive_doctrine inflexible_strategist  }
+	skill = 2
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Semyon Timoshenko"
+	picture = ".dds"
+	traits = {  }
+	id = 1002
+	skill = 3
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 5
+}
+
+create_corps_commander = {
+	name = "Nikolai Vatutin"
+	picture = ".dds"
+	traits = {  }
+	id = 1003
+	skill = 4
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Volodymyr Zatonsky"
+	picture = ".dds"
+	traits = { career_officer }
+	id = 1004
+	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Vladimir Antonov-Ovseyenko"
+	picture = ".dds"
+	traits = {  }
+	id = 1005
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+

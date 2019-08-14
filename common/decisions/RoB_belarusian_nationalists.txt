@@ -5,10 +5,128 @@ BLR_power_struggle = {
  BLR_favor_pelekists_1 = {
   cost = 10
   fire_only_once = yes
+  available = {
+   NOT = { 
+	has_government = authoritharian
+  } 
+  }
   complete_effect = {
    add_to_variable = { var = BLR_pelekist_strenght value = 1 }
    add_popularity = { ideology = pelekist popularity = 0.02 }
-   add_manpower = 10000
+   add_manpower = 1000
+   set_country_flag = BLR_pelekists_move
+ }
+
+}
+ BLR_favor_pelekists_2 = {
+  cost = 20
+  fire_only_once = yes
+  available = {
+ has_country_flag = BLR_pelekists_move
+    NOT = { 
+	has_government = authoritharian
+  }
+  }
+  complete_effect = {
+   add_to_variable = { var = BLR_pelekist_strenght value = 1 }
+   add_popularity = { ideology = pelekist popularity = 0.02 }
+   swap_ideas = {
+    remove_idea = BLR_pelekists_1
+	add_idea = BLR_pelekists_2
+   }
+ }
+
+}
+
+ BLR_favor_pelekists_3 = {
+  cost = 30
+  fire_only_once = yes
+  available = {
+   check_variable = {
+    var = BLR_pelekist_strenght
+    value = 1
+    compare = greater_than
+}
+   NOT = { 
+	has_government = authoritharian
+  }
+  }
+  complete_effect = {
+   add_to_variable = { var = BLR_pelekist_strenght value = 1 }
+   add_popularity = { ideology = pelekist popularity = 0.02 }
+   swap_ideas = {
+    remove_idea = BLR_pelekists_2
+	add_idea = BLR_pelekists_3
+   }
+ }
+
+}
+ BLR_favor_pelekists_4 = {
+  cost = 40
+  fire_only_once = yes
+  available = {
+   check_variable = {
+    var = BLR_pelekist_strenght
+    value = 2
+    compare = greater_than
+}
+   NOT = { 
+	has_government = authoritharian
+  }
+  }
+  complete_effect = {
+   add_to_variable = { var = BLR_pelekist_strenght value = 1 }
+   add_popularity = { ideology = pelekist popularity = 0.02 }
+   swap_ideas = {
+    remove_idea = BLR_pelekists_3
+	add_idea = BLR_pelekists_4
+   }
+ }
+
+}
+ BLR_favor_pelekists_5 = {
+  cost = 50
+  fire_only_once = yes
+  available = {
+   check_variable = {
+    var = BLR_pelekist_strenght
+    value = 3
+    compare = greater_than
+}
+   NOT = { 
+	has_government = authoritharian
+  }
+  }
+  complete_effect = {
+   add_to_variable = { var = BLR_pelekist_strenght value = 1 }
+   add_popularity = { ideology = pelekist popularity = 0.02 }
+   swap_ideas = {
+    remove_idea = BLR_pelekists_4
+	add_idea = BLR_pelekists_5
+   }
+ }
+
+}
+ BLR_favor_pelekists_6 = {
+  cost = 60
+  fire_only_once = yes
+  available = {
+   check_variable = {
+    var = BLR_pelekist_strenght
+    value = 4
+    compare = greater_than
+}
+   NOT = { 
+	has_government = authoritharian
+  }
+  }
+  complete_effect = {
+   add_to_variable = { var = BLR_pelekist_strenght value = 1 }
+   add_popularity = { ideology = pelekist popularity = 0.02 }
+   swap_ideas = {
+    remove_idea = BLR_pelekists_5
+	add_idea = BLR_pelekists_6
+   }
  }
 
 }
@@ -20,6 +138,124 @@ BLR_power_struggle = {
    add_to_variable = { var = BLR_authoritharian_strenght value = 1 }
    add_popularity = { ideology = authoritharian popularity = 0.02 }
    add_stability = 0.05
+   add_ideas = {
+   BLR_industrialists_1
+   }
+ }
+
+}
+ BLR_favor_elite_2 = {
+  cost = 20
+  fire_only_once = yes
+    available = {
+   check_variable = {
+    var = BLR_authoritharian_strenght
+    value = 1
+    compare = greater_than
+}
+   NOT = { 
+	has_government = pelekist
+  }
+  }
+  complete_effect = {
+   add_to_variable = { var = BLR_authoritharian_strenght value = 1 }
+   add_popularity = { ideology = authoritharian popularity = 0.02 }
+   swap_ideas = {
+   remove_idea = BLR_industrialists_1
+   add_idea = BLR_industrialists_2
+   }
+ }
+
+}
+ BLR_favor_elite_3 = {
+  cost = 30
+  fire_only_once = yes
+    available = {
+   check_variable = {
+    var = BLR_authoritharian_strenght
+    value = 2
+    compare = greater_than
+}
+  NOT = { 
+	has_government = pelekist
+  }
+  }
+  complete_effect = {
+   add_to_variable = { var = BLR_authoritharian_strenght value = 1 }
+   add_popularity = { ideology = authoritharian popularity = 0.02 }
+   swap_ideas = {
+   remove_idea = BLR_industrialists_2
+   add_idea = BLR_industrialists_3
+   }
+ }
+
+}
+ BLR_favor_elite_4 = {
+  cost = 40
+  fire_only_once = yes
+    available = {
+   check_variable = {
+    var = BLR_authoritharian_strenght
+    value = 3
+    compare = greater_than
+}
+  NOT = { 
+	has_government = pelekist
+  }
+  }
+  complete_effect = {
+   add_to_variable = { var = BLR_authoritharian_strenght value = 1 }
+   add_popularity = { ideology = authoritharian popularity = 0.02 }
+   swap_ideas = {
+   remove_idea = BLR_industrialists_3
+   add_idea = BLR_industrialists_4
+   }
+ }
+
+}
+ BLR_favor_elite_5 = {
+  cost = 50
+  fire_only_once = yes
+    available = {
+   check_variable = {
+    var = BLR_authoritharian_strenght
+    value = 4
+    compare = greater_than
+}
+  NOT = { 
+	has_government = pelekist
+  }
+  }
+  complete_effect = {
+   add_to_variable = { var = BLR_authoritharian_strenght value = 1 }
+   add_popularity = { ideology = authoritharian popularity = 0.02 }
+   swap_ideas = {
+   remove_idea = BLR_industrialists_4
+   add_idea = BLR_industrialists_5
+   }
+ }
+
+}
+ BLR_favor_elite_6 = {
+  cost = 60
+  fire_only_once = yes
+    available = {
+   check_variable = {
+    var = BLR_authoritharian_strenght
+    value = 5
+    compare = greater_than
+}
+  NOT = { 
+	has_government = pelekist
+  }
+  }
+  complete_effect = {
+   add_to_variable = { var = BLR_authoritharian_strenght value = 1 }
+   add_popularity = { ideology = authoritharian popularity = 0.02 }
+   swap_ideas = {
+   remove_idea = BLR_industrialists_5
+   add_idea = BLR_industrialists_6
+   }
  }
 
 }
@@ -35,20 +271,23 @@ BLR_raids = {
   country_event = { id = belarusia.4 days = 5 } 
  }
  ai_will_do = {
-  factor = 200
+  modifier = 200
  }
  }
      BLR_request_lithuanian_support = {
  cost = 50
  fire_only_once = yes
  available = {
-   has_country_flag = BLR_dbr_refuses
+   OR = {
+    has_country_flag = BLR_dbr_refuses
+	date > 1935.9.1
+  }
   }
  complete_effect = {
   LIT = { country_event = { id = lithuania.1 days = 5 } }
  }
  ai_will_do = {
-  factor = 200
+  modifier = 200
  }
  }
  
@@ -179,7 +418,6 @@ BLR_raids = {
   has_country_flag = BLR_lithuanian_help
   has_country_flag = BLR_on_our_own
   has_country_flag = BLR_dbr_alliance
-  
  }
  has_army_manpower = {
   size > 100000
