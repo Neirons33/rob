@@ -1,17 +1,18 @@
 DSU_ukrainian_ambition = {
 
- DSU_deal_with_manko = {
-  cost = 80
+
+DSU_use_the_momentum = {
   fire_only_once = yes
-  days_remove = 40
+   	ai_will_do = {
+			base = 200
+			}
+  days_remove = 10
     available = {
    has_country_flag = DSU_stable
-   has_army_manpower = {
-   size > 250000
-   
-  }
-  has_war = no
-  date > 1934.10.31
+   UKR = {
+    has_war_with = FTT
+   }
+
   }
   remove_effect = {
   declare_war_on = {
@@ -19,9 +20,6 @@ DSU_ukrainian_ambition = {
 					type = annex_everything
 				}
 }
-		ai_will_do = {
-			factor = 200
-			}
 }
  DSU_crush_reactionaries = {
   cost = 80
@@ -48,7 +46,7 @@ DSU_ukrainian_ambition = {
 				}
 }
 	ai_will_do = {
-			factor = 200
+			base = 200
 			}
 }
 
@@ -75,7 +73,7 @@ DSU_propose_peaceful_reunion = {
 	}
 	}
 		ai_will_do = {
-			factor = 200
+			base = 200
 			}
 
 }
@@ -109,7 +107,7 @@ DSU_conntact_nationalists = {
 	}
 	}
 		ai_will_do = {
-			factor = 200
+			base = 200
 			}
 
 }
@@ -147,7 +145,7 @@ every_country = {
 
 }
 	ai_will_do = {
-			factor = 200
+			base = 200
 			}
 }
 DSU_retake_ukrainian_lands_2 = {
@@ -185,7 +183,7 @@ every_country = {
 
 }
 	ai_will_do = {
-			factor = 200
+			base = 200
 			}
 }
 DSU_retake_ukrainian_lands_3 = {
@@ -224,7 +222,7 @@ every_country = {
 
 }
 	ai_will_do = {
-			factor = 200
+			base = 200
 			}
 }
 DSU_retake_ukrainian_lands_4 = {
@@ -270,7 +268,7 @@ every_country = {
 
 }
 	ai_will_do = {
-			factor = 200
+			base = 200
 			}
 }
 
@@ -330,7 +328,7 @@ every_country = {
 
 }
 	ai_will_do = {
-			factor = 200
+			base = 200
 			}
 }
 
@@ -355,7 +353,9 @@ DSU_proclaim_USR = {
 	remove_core_of = UKR
 }
 }
-
+	ai_will_do = {
+			base = 200
+			}
 }
 }
 
@@ -368,6 +368,9 @@ DSU_allies = {
  cost = 50
   fire_only_once = yes
   days_remove = 10
+  	ai_will_do = {
+			base = 200
+			}
 target_trigger = {
  FROM = {
  OR = {
@@ -403,6 +406,9 @@ remove_effect = {
 DSU_ally_cbr = {
  cost = 50
   fire_only_once = yes
+  	ai_will_do = {
+			base = 200
+			}
   days_remove = 10
 target_trigger = {
  FROM = {
@@ -435,6 +441,9 @@ remove_effect = {
 
 DSU_ally_sov = {
  cost = 50
+ 	ai_will_do = {
+			base = 200
+			}
   fire_only_once = yes
   days_remove = 10
 target_trigger = {

@@ -152,7 +152,17 @@ option = {
   ruling_party = pelekist
   elections_allowed = no
  }
-
+create_country_leader = {
+	name = "Michał Vituška"
+	desc = ""
+	picture = "BLR_vituska.tga"
+	expire = "1953.3.1"
+	ideology = pelekist
+	traits = {
+		#
+	}
+}
+add_popularity = { ideology = pelekist popularity =0.2}
 }
 }
 
@@ -280,6 +290,12 @@ option = {
  trigger = {
   tag = DBR
  }
+ DBR = {
+ add_ai_strategy = {
+    type = alliance
+    id = "BLR"
+    value = 2000
+}
  add_stability = 0.1
  add_war_support = 0.1
 }

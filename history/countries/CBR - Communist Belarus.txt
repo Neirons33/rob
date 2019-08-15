@@ -41,7 +41,10 @@ set_popularities = {
 	reactionary = 0
 	pelekist = 0
 }
-
+add_ideas = {
+belarusian_civil_war
+CBR_russian_influence
+}
 create_country_leader = {
 	name = "Panteleimon Ponomarenko"
 	desc = "POLITICS_Panteleimon_Ponomarenko_DESC"

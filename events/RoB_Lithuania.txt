@@ -34,8 +34,14 @@ is_triggered_only = yes
 
 option = { ###accept
  BLR = { country_event = { id = belarusia.14 days = 5 } }
+   	ai_will_do = {
+			base = 200
+			}
  }
 option = { ###deny
  BLR = { country_event = { id = belarusia.13 days = 5 } }
+   	ai_will_do = {
+			base = 20
+			}
  }
 }

@@ -77,7 +77,10 @@ set_popularities = {
 	reactionary = 61
 	pelekist = 22
 }
-
+add_ideas = {
+belarusian_civil_war
+BLR_lithuanian_influence
+}
 create_country_leader = {
     name = "Radasłaŭ Astroŭski"
     desc = ""

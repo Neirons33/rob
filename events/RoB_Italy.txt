@@ -137,6 +137,7 @@ set_politics = {
 ruling_party = pelekist
 elections_allowed = no
 }
+load_focus_tree = italy_pelekist
 }
 option = { ###UIS Victory
 name = republican_italy.6.b
@@ -150,6 +151,7 @@ set_politics = {
 ruling_party = socialist
 elections_allowed = no
 }
+load_focus_tree = italy_socialist
 }
 option = { ###PDSI Victory
 name = republican_italy.6.d
@@ -601,6 +603,7 @@ create_country_leader = {
 	}
 }
 add_cosmetic_tag = SIC_civil_war
+load_focus_tree = italy_army_tree
 }
 }
 ITA = { country_event = { id = republican_italy.26 days = 5 } }
@@ -640,6 +643,7 @@ create_country_leader = {
 	}
 }
 add_cosmetic_tag = SIC_civil_war
+load_focus_tree = italy_army_tree
 add_popularity = { ideology = authoritharian popularity = 0.75 }
 set_politics = {
  ruling_party = authoritharian
@@ -727,6 +731,9 @@ hidden_effect = {
 }
 ITA = { declare_war_on = { type = annex_everything target = PIE } }
 set_country_flag = ITA_civil_war_pelekists
+PIE = {
+ load_focus_tree = ita
+}
 }
 
 }

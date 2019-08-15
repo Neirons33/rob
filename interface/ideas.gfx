@@ -3427,6 +3427,48 @@ spriteTypes = {
 		spriteType = {
 		name = "GFX_idea_rhur_underequiped_military"
 		texturefile = "gfx/interface/ideas/Underequiped_military.tga"
-	}	
+	}
+
+   ###Belarusia
+   		spriteType = {
+		name = "GFX_idea_belarusian_civil_war"
+		texturefile = "gfx/interface/ideas/belarusian_civil_war.dds"
+	}
+	   		spriteType = {
+		name = "GFX_idea_BLR_industrialists_high"
+		texturefile = "gfx/interface/ideas/BLR_industrialists_high.dds"
+	}
+		   		spriteType = {
+		name = "GFX_idea_BLR_industrialists_low"
+		texturefile = "gfx/interface/ideas/BLR_industrialists_low.dds"
+	}
+			   		spriteType = {
+		name = "GFX_idea_BLR_industrialists_medium"
+		texturefile = "gfx/interface/ideas/BLR_industrialists_medium.dds"
+	}
+				   		spriteType = {
+		name = "GFX_idea_BLR_lithuanian_influence"
+		texturefile = "gfx/interface/ideas/BLR_lithuanian_influence.dds"
+	}
+					   		spriteType = {
+		name = "GFX_idea_BLR_pelekists_high"
+		texturefile = "gfx/interface/ideas/BLR_pelekists_high.dds"
+	}
+						   		spriteType = {
+		name = "GFX_idea_BLR_pelekists_low"
+		texturefile = "gfx/interface/ideas/BLR_pelekists_low.dds"
+	}
+							   		spriteType = {
+		name = "GFX_idea_CBR_russian_influence"
+		texturefile = "gfx/interface/ideas/CBR_russian_influence.dds"
+	}
+								   		spriteType = {
+		name = "GFX_idea_DBR_polish_dominance"
+		texturefile = "gfx/interface/ideas/DBR_polish_dominance.dds"
+	}
+									   		spriteType = {
+		name = "GFX_idea_BLR_pelekists_medium"
+		texturefile = "gfx/interface/ideas/BLR_pelekists_medium.dds"
+	}
 
 }

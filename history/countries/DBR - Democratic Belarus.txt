@@ -42,6 +42,10 @@ set_popularities = {
 	pelekist = 3
 }
 
+add_ideas = {
+belarusian_civil_war
+DBR_polish_dominance
+}
 create_country_leader = {
     name = "Raman Skirmunt Aliaksandravich"
     desc = ""

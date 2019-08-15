@@ -95,6 +95,7 @@ add_political_power = 50
 add_popularity = { ideology = pelekist popularity = -0.1 } 
 add_popularity = { ideology = socialist popularity = -0.1 }
 add_popularity = { ideology = national_socialist popularity = -0.1 }  
+set_country_flag = FRA_radicals_dead
 }
 }
 
@@ -152,6 +153,9 @@ fire_only_once = yes
 trigger = {
 tag = FRA
 date > 1934.4.1
+NOT ={ 
+has_country_flag = FRA_radicals_dead
+}
 }
 
 mean_time_to_happen = { days = 2 }
@@ -709,11 +713,27 @@ is_triggered_only = yes
 
 option = {
 name = france.25.a
+set_country_flag = FRA_civil_war
 trigger = {
  country_exists = FRL
  has_country_flag = FRA_pelekist_sorelian_alliance
+ }
+ FRA = { 
+  add_stability = 0.4
+  add_war_support = 0.4
  }
  hidden_effect = {`
+    every_state = {
+    limit = { 
+	 is_core_of = FRA 
+    OR = {
+	is_core_of = FRS
+	is_core_of = FRR
+	is_core_of = FRP
+	}
+	}
+	remove_core_of = FRA
+}
  FRL = { load_oob = FRL_civil_war }
  FRR = { load_oob = FRR_civil_war }
  FRP = { load_oob = FRP_civil_war }
@@ -741,11 +761,27 @@ trigger = {
 }
 option = {
 name = france.25.a
+set_country_flag = FRA_civil_war
+ FRA = { 
+  add_stability = 0.4
+  add_war_support = 0.4
+ }
 trigger = {
  country_exists = FRL
  has_country_flag = FRA_socialists_united
  }
  hidden_effect = {
+     every_state = {
+    limit = { 
+	 is_core_of = FRA 
+    OR = {
+	is_core_of = FRS
+	is_core_of = FRR
+	is_core_of = FRP
+	}
+	}
+	remove_core_of = FRA
+}
  FRL = { load_oob = FRL_civil_war }
  FRR = { load_oob = FRR_civil_war }
  FRP = { load_oob = FRP_civil_war }
@@ -774,6 +810,11 @@ trigger = {
 
 option = {
 name = france.25.a
+set_country_flag = FRA_civil_war
+ FRA = { 
+  add_stability = 0.4
+  add_war_support = 0.4
+ }
 trigger = {
 NOT = {
  country_exists = FRL
@@ -781,6 +822,17 @@ NOT = {
  has_country_flag = FRA_socialists_united
  }
  hidden_effect = {
+     every_state = {
+    limit = { 
+	 is_core_of = FRA 
+    OR = {
+	is_core_of = FRS
+	is_core_of = FRR
+	is_core_of = FRP
+	}
+	}
+	remove_core_of = FRA
+}
  FRR = { load_oob = FRR_civil_war }
  FRP = { load_oob = FRP_civil_war }
  FRS = { load_oob = FRS_civil_war }
@@ -801,6 +853,11 @@ NOT = {
 }
 option = {
 name = france.25.a
+set_country_flag = FRA_civil_war
+ FRA = { 
+  add_stability = 0.4
+  add_war_support = 0.4
+ }
 trigger = {
 NOT = {
  country_exists = FRL
@@ -808,6 +865,17 @@ NOT = {
  has_country_flag = FRA_pelekist_sorelian_alliance
  }
  hidden_effect = {
+     every_state = {
+    limit = { 
+	 is_core_of = FRA 
+    OR = {
+	is_core_of = FRS
+	is_core_of = FRR
+	is_core_of = FRP
+	}
+	}
+	remove_core_of = FRA
+}
  FRR = { load_oob = FRR_civil_war }
  FRP = { load_oob = FRP_civil_war }
  FRS = { load_oob = FRS_civil_war }
@@ -829,6 +897,11 @@ NOT = {
 
 option = {
 name = france.25.a
+set_country_flag = FRA_civil_war
+ FRA = { 
+  add_stability = 0.4
+  add_war_support = 0.4
+ }
 trigger = {
 NOT = {
  country_exists = FRL
@@ -836,6 +909,17 @@ NOT = {
  has_country_flag = FRA_sor_status_quo
  }
  hidden_effect = {
+     every_state = {
+    limit = { 
+	 is_core_of = FRA 
+    OR = {
+	is_core_of = FRS
+	is_core_of = FRR
+	is_core_of = FRP
+	}
+	}
+	remove_core_of = FRA
+}
  FRR = { load_oob = FRR_civil_war }
  FRP = { load_oob = FRP_civil_war }
  FRS = { load_oob = FRS_civil_war }
@@ -856,11 +940,27 @@ NOT = {
 
 option = {
 name = france.25.a
+set_country_flag = FRA_civil_war
+ FRA = { 
+  add_stability = 0.4
+  add_war_support = 0.4
+ }
 trigger = {
  country_exists = FRL
  has_country_flag = FRA_sor_status_quo
  }
  hidden_effect = {
+     every_state = {
+    limit = { 
+	 is_core_of = FRA 
+    OR = {
+	is_core_of = FRS
+	is_core_of = FRR
+	is_core_of = FRP
+	}
+	}
+	remove_core_of = FRA
+}
  FRL = { load_oob = FRL_civil_war }
  FRR = { load_oob = FRR_civil_war }
  FRP = { load_oob = FRP_civil_war }
@@ -883,6 +983,70 @@ trigger = {
  FRP = {
  declare_war_on = { type = annex_everything target = FRR }
  }
+ }
+}
+
+}
+
+
+###After civil war
+country_event = {
+id = france.26
+title = france.26.t
+desc = france.26.d
+fire_only_once = yes
+
+trigger = {
+ tag = FRP
+ FRP = {
+  has_war = no
+ }
+ FRR = {
+  exists = yes
+  has_war = no
+  NOT = {
+  is_in_faction_with = FRP
+ }
+ }
+}
+
+mean_time_to_happen = { days = 1 }
+
+option = { ###destroy sorelians
+name = france.26.a
+FRP = {
+ declare_war_on = { type = annex_everything target = FRR }
+ }
+}
+
+}
+
+country_event = {
+id = france.27
+title = france.27.t
+desc = france.27.d
+fire_only_once = yes
+
+trigger = {
+ tag = FRS
+ FRS = {
+  has_war = no
+ }
+ FRR = {
+  exists = yes
+  has_war = no
+  NOT ={
+  is_in_faction_with = FRS
+ }
+ }
+}
+
+mean_time_to_happen = { days = 1 }
+
+option = { ###destroy sorelians
+name = france.26.a
+FRS = {
+ declare_war_on = { type = annex_everything target = FRR }
  }
 }
 
