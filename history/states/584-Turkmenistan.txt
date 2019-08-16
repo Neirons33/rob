@@ -12,7 +12,7 @@ state={
 		add_core_of = TRS
 		owner = TMS
 		victory_points = {
-			12333 1 
+			12333 5 
 		}
 		buildings = {
 			infrastructure = 3
