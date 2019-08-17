@@ -24,7 +24,6 @@ name = "Armor Brigade"
 location = 4797
 division_template = "Armor Brigade"
 start_experience_factor = 0.8
-start_equipment_factor = 0.6
 }
 
 
