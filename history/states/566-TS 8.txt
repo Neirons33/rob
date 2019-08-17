@@ -8,7 +8,7 @@ state={
 	}
 
 	history={
-		owner = MON
+		owner = IRK
 		victory_points = {
 			4797 3 
 		}
@@ -19,6 +19,7 @@ state={
 
 		}
 		add_core_of = MON
+		add_core_of = IRK
 
 	}
 
