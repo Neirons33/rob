@@ -44,3 +44,30 @@ TAN = { change_tag_from = MON }
 
 }
 
+###Mongolia annex irkutsk for some reason
+
+country_event = {
+id = mongolia.101
+title = mongolia.101.t
+desc = mongolia.101.d
+fire_only_once = yes
+picture = GFX_picture_bosnian_revolt
+hidden = yes
+trigger = {
+tag = MON
+has_war_with = IRK
+controls_state = 566
+}
+immediate = { 
+annex_country = {
+    target = IRK
+}
+}
+option = {
+name = mongolia.101.a
+ai_chance = { factor = 100}
+
+
+}
+
+}
