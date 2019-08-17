@@ -2561,7 +2561,12 @@ france.1.t:0 "Third French Republic in 1934"
  turkmenistan.105.d:0 "The entire Central Asian region is against Turkmenistan. This greatly upsets the balance of power in the region. Our nation would surely fall to the Afghans after this, and since we already have claims to some land, we can intervene easily."
  turkmenistan.105.a:0 "Intervene on the Turkmen side."
  turkmenistan.105.b:0 "There is no point wasting blood in this war."
- 
+  
+ ###MON
+ mongolia.100.t:0 "Tuvan Revolt"
+ mongolia.100.d:0 "With our war against the Irkutsk regime in the north grinding to a halt, the Tuvan population, generally dissatisfied with Ungern's rule even despite our cultural links, have decided to rebel against our rule. While our forces can probably defeat these traitors, our troops are at great risk of being outflanked and destroyed from two sides."
+ mongolia.100.a:0 "Tannu What?"
+ mongolia.100.b:0 "Death to Sternberg! (Play as Tuva)"
  
  ###Ukraine
  ukraine.0.t:0 "Ukrainian People's Republic in 1934"
