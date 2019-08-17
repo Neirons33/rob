@@ -9,7 +9,7 @@ set_technology = {
 	basic_light_tank = 1
 }
 set_politics = {
-	ruling_party = authoritharian
+	ruling_party = reactionary
 	last_election = "1934.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -36,7 +36,7 @@ create_country_leader = {
 	desc = "POLITICS_ANANDYN_AMAR_DESC"
 	picture = 
 	expire = "1965.1.1"
-	ideology = authoritharian
+	ideology = reactionary
 	traits = {
 		#
 	}
