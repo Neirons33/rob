@@ -146,11 +146,7 @@ guiTypes = {
 			
 		}
 		
-		containerWindowType = {
-			name = "overextension_container"
-			position = { x = 190 y = 275 }
-			size = { width = 175 height = 60 }
-			clipping = no
+
 					
 #			instantTextboxType = {
 #				name = "party"
@@ -161,16 +157,7 @@ guiTypes = {
 #				maxHeight = 20
 #			}
 			
-			instantTextboxType = {
-				name = "overextension"
-				position = { x = 0 y = 3 }
-				font = "hoi_18mbs"
-				text = "overextension level ="
-				maxWidth = 155
-				maxHeight = 20
-			}			
-			
-		}		
+	
 		
 		containerWindowType = {
 			name = "autonomy_progress_view"

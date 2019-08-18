@@ -11,8 +11,8 @@ regiments = {
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
-		line_artillery = { x = 2 y = 0 }
-		line_artillery = { x = 2 y = 1 }
+		artillery_brigade = { x = 2 y = 0 }
+		artillery_brigade = { x = 2 y = 1 }
 	}
 
 }

@@ -16,9 +16,17 @@ SWE = {
 	color = rgb { 36 132 247 }
 	color_ui = rgb { 47 172 255 }
 }
+IRK = {
+	color = rgb { 102 138 134 }
+	color_ui = rgb { 102 138 134 }
+}
 RHN = {
 	color = rgb { 43 91 51 }
 	color_ui = rgb { 43 91 51 }
+}
+BSQ = {
+	color = rgb { 168 77 35 }
+	color_ui = rgb { 168 77 35 }
 }
 FRA = {
 	color = rgb { 36 114 146 }
