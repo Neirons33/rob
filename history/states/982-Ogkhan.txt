@@ -3,7 +3,7 @@ state={
 	id=982
 	name="STATE_982" # Kirensk
 	manpower = 101674
-	
+	impassable = yes
 	state_category = wasteland
 
 	history={

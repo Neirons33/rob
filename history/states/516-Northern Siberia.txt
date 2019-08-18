@@ -2,6 +2,7 @@
 state={
 	id=516
 	name="STATE_516"
+	impassable = yes
 
 	history={
 		owner = UGC
