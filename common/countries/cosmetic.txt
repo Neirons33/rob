@@ -256,3 +256,7 @@ DSU_reactionary = {
 	color = rgb { 120 170 194 }
 	color_ui = rgb { 120 170 194 }	
 }
+FRA_SYR = {
+	color = rgb { 47 124 156 }
+	color_ui = rgb { 47 124 156 }	
+}

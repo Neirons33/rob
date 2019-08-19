@@ -152,6 +152,7 @@ ruling_party = socialist
 elections_allowed = no
 }
 load_focus_tree = italy_socialist
+set_cosmetic_tag = ITA_socialist
 }
 option = { ###PDSI Victory
 name = republican_italy.6.d

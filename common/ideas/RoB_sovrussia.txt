@@ -127,5 +127,141 @@ ideas = {
   
     }
    }
+   
+   ###focus
+   ###famine
+   
+   sov_grain_quta = {
+     allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 picture = GFX_idea_famine_of_1933
+	 modifier = {
+				consumer_goods_factor = -0.05
+
+			}
+   
+   
+   }
+      sov_grain_quta_2 = {
+     allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 picture = GFX_idea_famine_of_1933
+	 modifier = {
+				consumer_goods_factor = -0.08
+
+			}
+   
+   
+   }
+   
+         sov_grain_quta_3 = {
+     allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 picture = GFX_idea_famine_of_1933
+	 modifier = {
+				consumer_goods_factor = -0.08
+                stability_factor = 0.05
+			}
+   
+   
+   }
+     famine_of_1933_control = {
+  allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 picture = GFX_idea_famine_of_1933
+	 modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.1
+				conscription = -0.01
+			}
+  
+  }
+  sov_international_commite = {
+     allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 picture = GFX_idea_famine_of_1933
+	 modifier = {
+				
+                stability_factor = 0.05
+			}
+   
+   
+   }
+   
+     sov_international_commite_2 = {
+     allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 picture = GFX_idea_famine_of_1933
+	 modifier = {
+				political_power_gain = 0.2
+                stability_factor = 0.05
+				
+			}
+   
+   
+   }
+      
+     sov_american_experts = {
+     allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 picture = GFX_idea_famine_of_1933
+	 modifier = {
+
+				industrial_capacity_factory = 0.05
+			}
+   
+   
+   }
+     famine_of_1933_food_imports = {
+  allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 picture = GFX_idea_famine_of_1933
+	 modifier = {
+				stability_factor = -0.25
+				war_support_factor = -0.25
+				conscription = -0.018
+			}
+  
+  }
  }
 }

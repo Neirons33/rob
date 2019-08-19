@@ -307,14 +307,19 @@ id = SOV_rampupfoodimports
 icon = GFX_goal_generic_trade
 x = 13
 y = 7
-cost = 10
+cost = 6
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_americanexperts } 
 prerequisite = { focus = SOV_internationalvolunteers } 
 ai_will_do = { 
  factor = 1
  } 
-
+ completion_reward = {
+  swap_ideas = {
+   remove_idea = famine_of_1933
+   add_idea = famine_of_1933_food_imports
+  }
+ }
  } 
 
 #Focus for Our friends in Italy
@@ -323,13 +328,15 @@ id = SOV_ourfriendsinitaly
 icon = GFX_focus_SOV_friends_in_italy
 x = 10
 y = 6
-cost = 10
+cost = 2
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_dealwithwesternsocialists } 
 ai_will_do = { 
  factor = 1
  } 
-
+ completion_reward = {
+  add_manpower = 8000
+ }
  } 
 
 #Focus for Famine Under Control
@@ -345,7 +352,13 @@ prerequisite = { focus = SOV_rampupfoodimports }
 ai_will_do = { 
  factor = 1
  } 
-
+ completion_reward = {
+  
+  remove_ideas ={
+  famine_of_1933_food_imports
+  }
+  add_timed_idea = { idea = famine_of_1933_control days = 365 }
+  }
  } 
 
 #Focus for Socialist Charity Organization
@@ -354,14 +367,16 @@ id = SOV_socialistcharityorganization
 icon = GFX_focus_SOV_socialist_charity_organization
 x = 11
 y = 7
-cost = 10
+cost = 6
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_ourfriendsinitaly } 
 prerequisite = { focus = SOV_internationalvolunteers } 
 ai_will_do = { 
  factor = 1
  } 
-
+ completion_reward = {
+  add_political_power = 100
+ }
  } 
 
 #Focus for International Volunteers
@@ -370,13 +385,19 @@ id = SOV_internationalvolunteers
 icon = GFX_focus_SOV_international_volunteers
 x = 12
 y = 6
-cost = 10
+cost = 4
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_internationalcommitte } 
 ai_will_do = { 
  factor = 1
  } 
-
+ completion_reward = {
+ swap_ideas = {
+  remove_idea = sov_international_commite
+  add_idea = sov_international_commite_2
+ }
+ 
+ }
  } 
 
 #Focus for American Experts
@@ -385,13 +406,17 @@ id = SOV_americanexperts
 icon = GFX_focus_SOV_american_help
 x = 14
 y = 6
-cost = 10
+cost = 4
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_inviteredcross } 
 ai_will_do = { 
  factor = 1
  } 
-
+ completion_reward = {
+  add_ideas = {
+   sov_american_experts
+  }
+ }
  } 
 
 #Focus for Famine Under Control
@@ -407,8 +432,15 @@ prerequisite = { focus = SOV_voluntaryruralworkers }
 ai_will_do = { 
  factor = 1
  } 
+ completion_reward = {
+  
+  remove_ideas ={
+  famine_of_1933
+  }
+  add_timed_idea = { idea = famine_of_1933_control days = 365 }
+  }
+ }
 
- } 
 
 #Focus for International Committe
 shared_focus = { 
@@ -416,13 +448,17 @@ id = SOV_internationalcommitte
 icon = GFX_focus_generic_diplomatic_treaty
 x = 12
 y = 5
-cost = 10
+cost = 5
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_askforoutsidehelp } 
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = {
+ add_ideas = {
+  sov_international_commite
+ }
+}
  } 
 
 #Focus for Helping Units
@@ -431,13 +467,16 @@ id = SOV_helpingunits
 icon = GFX_focus_SOV_helping_units
 x = 20
 y = 5
-cost = 10
+cost = 2
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_formemergencycommittee } 
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = {
+add_political_power = 10
+add_war_support = 0.04
+}
  } 
 
 #Focus for Mobilize the Red Youth
@@ -446,13 +485,16 @@ id = SOV_mobilizetheredyouth
 icon = GFX_focus_SOV_red_youth
 x = 20
 y = 6
-cost = 10
+cost = 2
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_helpingunits } 
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = {
+add_manpower = 20000
+add_war_support = 0.04
+}
  } 
 
 #Focus for Voluntary Rural Workers
@@ -461,14 +503,16 @@ id = SOV_voluntaryruralworkers
 icon = GFX_focus_SOV_rural_volunteers
 x = 19
 y = 7
-cost = 10
+cost = 6
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_redistributefood } 
 prerequisite = { focus = SOV_mobilizetheredyouth } 
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = {
+add_war_support = 0.05
+}
  } 
 
 #Focus for Invite Red Cross
@@ -477,13 +521,15 @@ id = SOV_inviteredcross
 icon = GFX_focus_SOV_red_cross
 x = 14
 y = 5
-cost = 10
+cost = 2
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_ontheinternationalstage } 
 ai_will_do = { 
  factor = 1
  } 
-
+ completion_reward = {
+  add_manpower = 10000
+ }
  } 
 
 #Focus for Deal with Western Socialists
@@ -492,13 +538,15 @@ id = SOV_dealwithwesternsocialists
 icon = GFX_focus_SOV_western_socialists
 x = 10
 y = 5
-cost = 10
+cost = 2
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_ourtiesineurope } 
 ai_will_do = { 
  factor = 1
  } 
-
+ completion_reward = {
+  add_manpower = 12000
+ }
  } 
 
 #Focus for Socialist Relief Act
@@ -507,13 +555,15 @@ id = SOV_socialistreliefact
 icon = GFX_focus_SOV_socialist_relief_act
 x = 16
 y = 4
-cost = 10
+cost = 2
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_wellmanageonourown } 
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = {
+add_stability = 0.04
+}
  } 
 
 #Focus for ...to the countryside
@@ -522,13 +572,15 @@ id = SOV_tothecountryside
 icon = GFX_focus_SOV_to_the_country
 x = 16
 y = 6
-cost = 10
+cost = 2
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_fromthecities } 
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = {
+ add_stability = 0.04
+}
  } 
 
 #Focus for Redistribute Food
@@ -537,14 +589,19 @@ id = SOV_redistributefood
 icon = GFX_focus_SOV_redistrubete_food
 x = 18
 y = 6
-cost = 10
+cost = 4
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_grainquota } 
 ai_will_do = { 
  factor = 1
  } 
-
+ completion_reward = {
+ swap_ideas = {
+ remove_idea = sov_grain_quta
+ add_idea = sov_grain_quta_2
+ }
  } 
+ }
 
 #Focus for Local Storages
 shared_focus = { 
@@ -552,14 +609,19 @@ id = SOV_localstorages
 icon = GFX_goal_generic_construct_civilian
 x = 17
 y = 7
-cost = 10
+cost = 6
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_tothecountryside } 
 prerequisite = { focus = SOV_redistributefood } 
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = {
+ swap_ideas = {
+ remove_idea = sov_grain_quta_2
+ add_idea = sov_grain_quta_3
+ }
+}
  } 
 
 #Focus for On the International Stage
@@ -568,13 +630,15 @@ id = SOV_ontheinternationalstage
 icon = GFX_focus_SOV_international_stage
 x = 14
 y = 4
-cost = 10
+cost = 2
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_askforoutsidehelp } 
 ai_will_do = { 
  factor = 1
  } 
-
+ completion_reward = {
+  add_political_power = 20
+ }
  } 
 
 #Focus for Our ties in Europe
@@ -583,13 +647,15 @@ id = SOV_ourtiesineurope
 icon = GFX_focus_SOV_friends_in_europe
 x = 10
 y = 4
-cost = 10
+cost = 2
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_askforoutsidehelp } 
 ai_will_do = { 
  factor = 1
  } 
-
+ completion_reward = {
+  add_manpower = 10000
+ }
  } 
 
 #Focus for Grain Quota
@@ -598,13 +664,17 @@ id = SOV_grainquota
 icon = GFX_focus_SOV_grain_quatas
 x = 18
 y = 5
-cost = 10
+cost = 6
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_wellmanageonourown } 
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = {
+add_ideas = {
+ sov_grain_quta
+}
+}
  } 
 
 #Focus for From the cities...
@@ -613,13 +683,15 @@ id = SOV_fromthecities
 icon = GFX_focus_SOV_from_the_cities
 x = 16
 y = 5
-cost = 10
+cost = 2
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_socialistreliefact } 
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = {
+ add_stability = 0.04
+}
  } 
 
 #Focus for Form Emergency Committee
@@ -628,13 +700,15 @@ id = SOV_formemergencycommittee
 icon = GFX_focus_SOV_emergency_commite
 x = 20
 y = 4
-cost = 10
+cost = 2
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_wellmanageonourown } 
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = {
+add_war_support = 0.04
+}
  } 
 
 #Focus for Effects of Famine
@@ -646,8 +720,11 @@ y = 1
 cost = 1
 available_if_capitulated = yes 
 ai_will_do = { 
- factor = 1
+ factor = 1000
  } 
+ completion_reward = {
+ add_political_power = 20
+ }
 
  } 
 
@@ -663,7 +740,9 @@ prerequisite = { focus = SOV_effectsoffamine }
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = {
+ add_stability = 0.05
+}
  } 
 
 #Focus for Ask for outside help
@@ -672,14 +751,16 @@ id = SOV_askforoutsidehelp
 icon = GFX_focus_SOV_outside_help
 x = 12
 y = 3
-cost = 10
+cost = 5
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_locateaffectedareas } 
 mutually_exclusive = { focus = SOV_wellmanageonourown } 
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = {
+ add_manpower = 10000
+}
  } 
 
 #Focus for We'll manage on our own!
@@ -688,14 +769,17 @@ id = SOV_wellmanageonourown
 icon = GFX_focus_SOV_on_our_won
 x = 18
 y = 3
-cost = 10
+cost = 5
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_locateaffectedareas } 
 mutually_exclusive = { focus = SOV_askforoutsidehelp } 
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = {
+ add_stability = 0.03
+ add_war_support = 0.03
+}
  } 
 
 #Focus for Bukharin's Reforms
@@ -706,6 +790,9 @@ x = 42
 y = 7
 cost = 10
 available_if_capitulated = yes 
+available = {
+ has_country_flag = bukharin_seizes_power
+}
 prerequisite = { focus = SOV_newcourse } 
 mutually_exclusive = { focus = SOV_proclaimnepdead } 
 ai_will_do = { 
@@ -766,8 +853,15 @@ id = SOV_newcourse
 icon = GFX_focus_SOV_soviet_new_course
 x = 35
 y = 6
-cost = 10
+cost = 5
 available_if_capitulated = yes 
+bypass = {
+OR = {
+ has_country_flag = bukharin_seizes_power
+ has_government = socialist
+ has_government = national_socialist
+}
+}
 prerequisite = { focus = SOV_trytoimprovefarmingtechnology } 
 ai_will_do = { 
  factor = 1
@@ -783,7 +877,13 @@ x = 37
 y = 4
 cost = 10
 available_if_capitulated = yes 
-prerequisite = { focus = SOV_civilianindustry } 
+prerequisite = { focus = SOV_civilianindustry }
+available = {
+ has_country_flag = SOV_rykov_holds_on
+} 
+    bypass = {
+        has_country_flag = rykov_resigned
+    }
 ai_will_do = { 
  factor = 1
  } 
@@ -797,7 +897,13 @@ icon = GFX_goal_generic_construct_infrastructure
 x = 33
 y = 3
 cost = 10
-available_if_capitulated = yes 
+available_if_capitulated = yes
+available = {
+ has_country_flag = SOV_rykov_holds_on
+} 
+    bypass = {
+        has_country_flag = rykov_resigned
+    }
 prerequisite = { focus = SOV_continuenep } 
 ai_will_do = { 
  factor = 1
@@ -813,6 +919,12 @@ x = 35
 y = 5
 cost = 10
 available_if_capitulated = yes 
+available = {
+ has_country_flag = SOV_rykov_holds_on
+}
+    bypass = {
+        has_country_flag = rykov_resigned
+    }
 prerequisite = { focus = SOV_rebuildinginfrastructure } 
 prerequisite = { focus = SOV_handinhandwithbourgeoisie } 
 prerequisite = { focus = SOV_subsidisingfarmers } 
@@ -830,6 +942,12 @@ x = 37
 y = 3
 cost = 10
 available_if_capitulated = yes 
+available = {
+ has_country_flag = SOV_rykov_holds_on
+}
+    bypass = {
+        has_country_flag = rykov_resigned
+    }
 prerequisite = { focus = SOV_continuenep } 
 ai_will_do = { 
  factor = 1
@@ -845,6 +963,12 @@ x = 33
 y = 4
 cost = 10
 available_if_capitulated = yes 
+available = {
+ has_country_flag = SOV_rykov_holds_on
+}
+    bypass = {
+        has_country_flag = rykov_resigned
+    }
 prerequisite = { focus = SOV_connectmajorcities } 
 ai_will_do = { 
  factor = 1
@@ -860,6 +984,12 @@ x = 35
 y = 3
 cost = 10
 available_if_capitulated = yes 
+available = {
+ has_country_flag = SOV_rykov_holds_on
+}
+    bypass = {
+        has_country_flag = rykov_resigned
+    }
 prerequisite = { focus = SOV_continuenep } 
 ai_will_do = { 
  factor = 1
@@ -1259,7 +1389,13 @@ icon = GFX_goal_generic_soviet_construction
 x = 35
 y = 1
 cost = 10
+    bypass = {
+        has_country_flag = rykov_resigned
+    }
 available_if_capitulated = yes 
+available = {
+ has_country_flag = SOV_rykov_holds_on
+}
 ai_will_do = { 
  factor = 1
  } 
@@ -1274,6 +1410,12 @@ x = 35
 y = 2
 cost = 10
 available_if_capitulated = yes 
+available = {
+ has_country_flag = SOV_rykov_holds_on
+}
+    bypass = {
+        has_country_flag = rykov_resigned
+    }
 prerequisite = { focus = SOV_sovieteconomy } 
 ai_will_do = { 
  factor = 1
