@@ -1,9 +1,10 @@
 
 state={
-	id=982
-	name="STATE_982" # Kirensk
-	manpower = 101674
+	id=1187
+	name="STATE_1187" # FNS
+	manpower = 31674
 	state_category = wasteland
+	impassable = yes
 
 	history={
 		owner = FER
@@ -14,6 +15,6 @@ state={
 	}
 
 	provinces={
-		1792 4737 7726 10557 12531 12608 12668
+		6085 13059 13060
 	}
 }
