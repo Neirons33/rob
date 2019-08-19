@@ -1,0 +1,21 @@
+state={
+	id=1188
+	name="STATE_1188"
+	history={
+		owner = JOB
+		buildings = {
+			infrastructure = 3
+		industrial_complex = 1
+
+		}
+		add_core_of = JOB
+
+	}
+
+	provinces={
+		1727 12525 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

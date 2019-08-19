@@ -1,0 +1,784 @@
+focus_tree = {
+	id = CRO
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = CRO
+		}
+	}
+	default = no
+	focus = {
+		id = CRO_death_of_sarkotic
+		icon = GFX_goal_unknown
+		cost = 0.00
+		x = 30
+		y = 0
+
+	}
+	focus = {
+		id = CRO_war_with_serbia
+		icon = GFX_goal_unknown
+		cost = 0.00
+		x = 6
+		y = 0
+
+	}
+	focus = {
+		id = CRO_examine_the_economy
+		icon = GFX_goal_unknown
+		cost = 0.00
+		x = 15
+		y = 0
+
+	}
+	focus = {
+		id = CRO_aftermath_of_serbian_croatian_war
+		icon = GFX_goal_unknown
+		cost = 0.00
+		x = 8
+		y = 5
+
+	}
+	focus = {
+		id = CRO_disregard_rome_protocals
+		icon = GFX_goal_unknown
+		cost = 0.00
+		x = 25
+		y = 6
+
+	}
+	focus = {
+		id = newfocus_67
+		icon = GFX_goal_unknown
+		cost = 0.00
+		x = 15
+		y = 8
+
+	}
+	focus = {
+		id = CRO_allow_the_wild_militias
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CRO_war_with_serbia
+		}
+		x = 2
+		y = 1
+
+	}
+	focus = {
+		id = CRO_form_the_black_legion
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CRO_allow_the_wild_militias
+		}
+		x = 2
+		y = 2
+
+	}
+	focus = {
+		id = CRO_form_bosnian_division_handschar
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CRO_form_the_black_legion
+		}
+		x = 2
+		y = 3
+
+	}
+	focus = {
+		id = CRO_victory_in_serbia
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CRO_aftermath_of_serbian_croatian_war
+		}
+		mutually_exclusive = {
+			focus = CRO_failure_in_serbia
+		}
+		x = 7
+		y = 6
+
+	}
+	focus = {
+		id = CRO_reeducation_in_becka
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CRO_victory_in_serbia
+		}
+		x = 3
+		y = 7
+
+	}
+	focus = {
+		id = CRO_full_bosnian_cooperation
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CRO_war_with_serbia
+		}
+		x = 4
+		y = 1
+
+	}
+	focus = {
+		id = CRO_illyria_pact
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CRO_full_bosnian_cooperation
+		}
+		x = 4
+		y = 2
+
+	}
+	focus = {
+		id = CRO_invite_albania
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CRO_illyria_pact
+		}
+		x = 4
+		y = 3
+
+	}
+	focus = {
+		id = CRO_seek_union_with_bosnia
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CRO_victory_in_serbia
+		}
+		x = 5
+		y = 7
+
+	}
+	focus = {
+		id = CRO_fortify_border_with_italy
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CRO_seek_union_with_bosnia
+		}
+		x = 5
+		y = 8
+
+	}
+	focus = {
+		id = CRO_declare_war_on_italy
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CRO_fortify_border_with_italy
+		}
+		x = 5
+		y = 9
+
+	}
+	focus = {
+		id = CRO_intern_the_serbs
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CRO_war_with_serbia
+		}
+		x = 7
+		y = 1
+
+	}
+	focus = {
+		id = CRO_mass_deportation
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CRO_intern_the_serbs
+		}
+		mutually_exclusive = {
+			focus = CRO_forced_serb_labour
+		}
+		x = 6
+		y = 2
+
+	}
+	focus = {
+		id = CRO_forced_serb_labour
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CRO_intern_the_serbs
+		}
+		mutually_exclusive = {
+			focus = CRO_mass_deportation
+		}
+		x = 8
+		y = 2
+
+	}
+	focus = {
+		id = CRO_a_ethnic_war
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CRO_forced_serb_labour
+			focus = CRO_mass_deportation
+		}
+		x = 7
+		y = 3
+
+	}
+	focus = {
+		id = CRO_find_allies
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CRO_victory_in_serbia
+		}
+		x = 9
+		y = 7
+
+	}
+	focus = {
+		id = CRO_maybe_slovakia
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CRO_find_allies
+		}
+		x = 7
+		y = 8
+
+	}
+	focus = {
+		id = CRO_failure_in_serbia
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CRO_aftermath_of_serbian_croatian_war
+		}
+		mutually_exclusive = {
+			focus = CRO_victory_in_serbia
+		}
+		x = 9
+		y = 6
+
+	}
+	focus = {
+		id = CRO_ask_bulgaria
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CRO_find_allies
+		}
+		x = 9
+		y = 8
+
+	}
+	focus = {
+		id = CRO_mass_purchase_vz24
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CRO_war_with_serbia
+		}
+		x = 10
+		y = 1
+
+	}
+	focus = {
+		id = CRO_invite_Zbrojovka_Brno
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CRO_mass_purchase_vz24
+		}
+		x = 10
+		y = 2
+
+	}
+	focus = {
+		id = CRO_zadgreb_line
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CRO_invite_Zbrojovka_Brno
+		}
+		x = 10
+		y = 3
+
+	}
+	focus = {
+		id = CRO_a_war_to_remember
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CRO_a_ethnic_war
+		}
+		prerequisite = {
+			focus = CRO_zadgreb_line
+		}
+		prerequisite = {
+			focus = CRO_invite_albania
+		}
+		prerequisite = {
+			focus = CRO_form_bosnian_division_handschar
+		}
+		x = 6
+		y = 4
+
+	}
+	focus = {
+		id = CRO_ask_austria
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CRO_find_allies
+		}
+		x = 11
+		y = 8
+
+	}
+	focus = {
+		id = CRO_high_taxation
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CRO_examine_the_economy
+		}
+		x = 13
+		y = 1
+
+	}
+	focus = {
+		id = CRO_devote_money_to_city_expansion
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CRO_high_taxation
+		}
+		x = 13
+		y = 2
+
+	}
+	focus = {
+		id = CRO_city_subsidies
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CRO_devote_money_to_city_expansion
+		}
+		x = 13
+		y = 3
+
+	}
+	focus = {
+		id = CRO_redistribute_farmland
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CRO_city_subsidies
+		}
+		x = 13
+		y = 4
+
+	}
+	focus = {
+		id = CRO_nationalize_monopolies
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CRO_examine_the_economy
+		}
+		x = 15
+		y = 1
+
+	}
+	focus = {
+		id = CRO_croatian_state_bank
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CRO_nationalize_monopolies
+		}
+		x = 15
+		y = 2
+
+	}
+	focus = {
+		id = CRO_deflate_the_kuna
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CRO_croatian_state_bank
+		}
+		x = 15
+		y = 3
+
+	}
+	focus = {
+		id = CRO_high_tariffs
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CRO_deflate_the_kuna
+		}
+		x = 15
+		y = 4
+
+	}
+	focus = {
+		id = CRO_nationalized_unions
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CRO_examine_the_economy
+		}
+		x = 17
+		y = 1
+
+	}
+	focus = {
+		id = CRO_job_assitance_program
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CRO_nationalized_unions
+		}
+		x = 17
+		y = 2
+
+	}
+	focus = {
+		id = CRO_welfare_for_the_poor
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CRO_job_assitance_program
+		}
+		x = 17
+		y = 3
+
+	}
+	focus = {
+		id = CRO_recruit_the_jobless
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CRO_welfare_for_the_poor
+		}
+		x = 17
+		y = 4
+
+	}
+	focus = {
+		id = CRO_an_economy_rejuvinated
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CRO_redistribute_farmland
+		}
+		prerequisite = {
+			focus = CRO_high_tariffs
+		}
+		prerequisite = {
+			focus = CRO_recruit_the_jobless
+		}
+		x = 15
+		y = 5
+
+	}
+	focus = {
+		id = CRO_army_focus
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CRO_disregard_rome_protocals
+		}
+		x = 17
+		y = 7
+
+	}
+	focus = {
+		id = CRO_expansion_of_healthcare
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CRO_examine_the_economy
+		}
+		x = 19
+		y = 1
+
+	}
+	focus = {
+		id = CRO_a_hospital_for_every_city
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CRO_expansion_of_healthcare
+		}
+		x = 19
+		y = 2
+
+	}
+	focus = {
+		id = CRO_state_healthcare_plan
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CRO_a_hospital_for_every_city
+		}
+		x = 19
+		y = 3
+
+	}
+	focus = {
+		id = CRO_zagreb_medical_university
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CRO_state_healthcare_plan
+		}
+		x = 19
+		y = 4
+
+	}
+	focus = {
+		id = CRO_air_focus
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CRO_disregard_rome_protocals
+		}
+		x = 25
+		y = 7
+
+	}
+	focus = {
+		id = CRO_form_1st_Light_Infantry_Parachute_Company
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CRO_air_focus
+		}
+		x = 21
+		y = 8
+
+	}
+	focus = {
+		id = CRO_Slavko_Kvaternik_steps_in
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CRO_death_of_sarkotic
+		}
+		x = 25
+		y = 1
+
+	}
+	focus = {
+		id = CRO_purge_jewish_influences
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CRO_Slavko_Kvaternik_steps_in
+		}
+		x = 22
+		y = 2
+
+	}
+	focus = {
+		id = CRO_jewish_interment_camps
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CRO_purge_jewish_influences
+		}
+		x = 22
+		y = 3
+
+	}
+	focus = {
+		id = CRO_anoda_shoah
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CRO_jewish_interment_camps
+		}
+		x = 22
+		y = 4
+
+	}
+	focus = {
+		id = CRO_promotion_of_militarism
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CRO_Slavko_Kvaternik_steps_in
+		}
+		x = 24
+		y = 2
+
+	}
+	focus = {
+		id = CRO_centralize_goverment
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CRO_promotion_of_militarism
+		}
+		x = 24
+		y = 3
+
+	}
+	focus = {
+		id = CRO_absolute_control
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CRO_centralize_goverment
+		}
+		x = 24
+		y = 4
+
+	}
+	focus = {
+		id = CRO_Rogulja_plan
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CRO_air_focus
+		}
+		mutually_exclusive = {
+			focus = CRO_Kren_plan
+		}
+		x = 24
+		y = 8
+
+	}
+	focus = {
+		id = CRO_rape_communists
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CRO_Slavko_Kvaternik_steps_in
+		}
+		x = 26
+		y = 2
+
+	}
+	focus = {
+		id = CRO_disband_peasants_party
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CRO_rape_communists
+		}
+		x = 26
+		y = 3
+
+	}
+	focus = {
+		id = CRO_state_controlled_schooling
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CRO_disband_peasants_party
+		}
+		x = 26
+		y = 4
+
+	}
+	focus = {
+		id = CRO_Kren_plan
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CRO_air_focus
+		}
+		mutually_exclusive = {
+			focus = CRO_Rogulja_plan
+		}
+		x = 26
+		y = 8
+
+	}
+	focus = {
+		id = CRO_promote_catholocism
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CRO_Slavko_Kvaternik_steps_in
+		}
+		x = 28
+		y = 2
+
+	}
+	focus = {
+		id = CRO_mandatory_sunday_schools
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CRO_promote_catholocism
+		}
+		x = 28
+		y = 3
+
+	}
+	focus = {
+		id = CRO_purge_bosniak_islam
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CRO_mandatory_sunday_schools
+		}
+		x = 28
+		y = 4
+
+	}
+	focus = {
+		id = CRO_a_pure_state
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CRO_state_controlled_schooling
+		}
+		prerequisite = {
+			focus = CRO_absolute_control
+		}
+		prerequisite = {
+			focus = CRO_anoda_shoah
+		}
+		prerequisite = {
+			focus = CRO_purge_bosniak_islam
+		}
+		x = 25
+		y = 5
+
+	}
+	focus = {
+		id = CRO_form_an_illyrian_nation
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CRO_declare_war_on_italy
+		}
+		x = 5
+		y = 10
+
+	}
+	focus = {
+		id = CRO_secured_our_coastline
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CRO_disregard_rome_protocals
+		}
+		x = 33
+		y = 7
+
+	}
+}
