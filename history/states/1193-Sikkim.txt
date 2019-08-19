@@ -1,0 +1,19 @@
+state={
+	id=1193
+	name="STATE_1193"
+	history={
+		owner = RAJ
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = RAJ
+
+	}
+	provinces={
+		4435 
+	}
+	manpower=538128
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}
