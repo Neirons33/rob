@@ -272,6 +272,7 @@ option = {
 name = turkmenistan.106.a
 ai_chance = { factor = 100}
 KHV = { transfer_state = 1185 }
+KHV = { transfer_state = 1176 }
 AFG = { transfer_state = 1179 }
 UZB = { transfer_state = 1180 }
 TRS = { annex_country = {
