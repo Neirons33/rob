@@ -46,6 +46,7 @@ KHV = { country_event = {
 		}
 available = { 
 is_neighbor_of = TRS
+NOT = { has_war = yes }
 
  } 
 		completion_reward = {
@@ -339,6 +340,7 @@ DEL = { country_event = {
 		available = {
 		owns_state = 442
 		owns_state = 445
+		NOT = { has_war = yes }
 		}	
 		completion_reward = {
 		declare_war_on = {
@@ -791,6 +793,11 @@ add_opinion_modifier = {
 		ai_will_do = {
 			factor = 3
 		}
+available = { 
+is_neighbor_of = KYR
+NOT = { has_war = yes }
+
+ } 
 		completion_reward = {
 		create_wargoal = {
     type = puppet_wargoal_focus
