@@ -31,6 +31,12 @@ DEL = { add_state_core = 445 }
 DEL = { transfer_state = 445 }
 DEL = { add_state_core = 442 }
 DEL = { transfer_state = 442 }
+DEL = { add_state_core = 1189 }
+DEL = { transfer_state = 1189 }
+DEL = { add_state_core = 1191 }
+DEL = { transfer_state = 1191 }
+DEL = { add_state_core = 1188 }
+DEL = { transfer_state = 1188 }
 DEL = { inherit_technology = ROOT }	
 
 DEL = { change_tag_from = ROOT }
@@ -75,6 +81,18 @@ ASM = { transfer_state = 434 }
 BRM = { transfer_state = 288 }
 SNN = { add_state_core = 640 }
 SNN = { transfer_state = 640 }
+PRF = { add_state_core = 1190 }
+PRF = { transfer_state = 1190 }
+MRS = { add_state_core = 1192 }
+MRS = { transfer_state = 1192 }
+BNL = { add_state_core = 1193 }
+BNL = { transfer_state = 1193 }
+BRM = { add_state_core = 1194 }
+BRM = { transfer_state = 1194 }
+BRM = { add_state_core = 1195 }
+BRM = { transfer_state = 1195 }
+BRM = { add_state_core = 1196 }
+BRM = { transfer_state = 1196 }
 
 }
 
