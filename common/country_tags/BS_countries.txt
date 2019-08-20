@@ -78,6 +78,7 @@ TOW = "countries/Tomsk.txt"
 BWR = "countries/Barnaul.txt"
 JOB = "countries/Jewish Oblast.txt"
 IRK = "countries/Irkutsk.txt"
+SFS = "countries/Sretensk Free State.txt"
 
 
 ##European Russia##
