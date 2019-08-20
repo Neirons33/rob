@@ -1,0 +1,24 @@
+state={
+	id=1197
+	name="STATE_1197"
+	history={
+		owner = SFS
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 1
+
+		}
+		victory_points = {
+		7725 5
+		}
+		add_core_of = SFS
+
+	}
+	provinces={
+		7725 10559 12622 4719 4677 7786 1672 10683
+	}
+	manpower=346173
+	buildings_max_level_factor=1.000
+	state_category=rural
+}
