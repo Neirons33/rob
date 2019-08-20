@@ -32,7 +32,7 @@ extensive_conscription
 create_country_leader = {
 	name = "Sayid Abdullah"
 	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-	picture = ""
+	picture = "sayid_abdullah.tga"
 	expire = "1965.1.1"
 	ideology = reactionary
 	traits = {

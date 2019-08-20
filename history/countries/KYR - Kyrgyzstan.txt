@@ -34,7 +34,7 @@ limited_conscription
 create_country_leader = {
 	name = "Abdukadyr Urazbekov"
 	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-	picture = ""
+	picture = "abdukadyr_urazbekov.tga"
 	expire = "1965.1.1"
 	ideology = authoritharian
 	traits = {
