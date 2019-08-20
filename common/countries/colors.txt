@@ -652,8 +652,8 @@ YUC = {
 	color_ui = rgb { 224 178 51 }
 }
 BAV = {
-    color = rgb { 82 135 221 }
-	color_ui = rgb { 82 135 221 }
+    color = rgb { 14 27 48 }
+	color_ui = rgb { 14 27 48 }
 }
 FRS = {
     color = rgb { 198 80 71 }
@@ -710,4 +710,86 @@ BRC = {
 KHV = {
     color = rgb { 179 167 93 }
 	color_ui = rgb { 179 167 93 }
+}
+
+###India
+JAK = {
+    color = rgb { 85 18 33 }
+	color_ui = rgb { 85 18 33 }
+}
+DEL = {
+    color = rgb { 96 37 23 }
+	color_ui = rgb { 96 37 23 }
+}
+RPF = {
+    color = rgb { 82 78 11 }
+	color_ui = rgb { 82 78 11 }
+}
+SNH = {
+    color = rgb { 17 47 80 }
+	color_ui = rgb { 17 47 80 }
+}
+BAL = {
+    color = rgb { 115 90 15 }
+	color_ui = rgb { 115 90 15 }
+}
+PRF = {
+    color = rgb { 116 90 10 }
+	color_ui = rgb { 115 90 15 }
+}
+GUJ = {
+    color = rgb { 28 69 63 }
+	color_ui = rgb { 28 69 63 }
+}
+BBY = {
+    color = rgb { 82 83 61 }
+	color_ui = rgb { 82 83 61 }
+}
+BBY = {
+    color = rgb { 82 83 61 }
+	color_ui = rgb { 82 83 61 }
+}
+CIR = {
+    color = rgb { 51 63 76 }
+	color_ui = rgb { 51 63 76 }
+}
+HYD = {
+    color = rgb { 52 41 8 }
+	color_ui = rgb { 52 41 8 }
+}
+MYS = {
+    color = rgb { 40 68 29 }
+	color_ui = rgb { 40 68 29 }
+}
+MYS = {
+    color = rgb { 40 68 29 }
+	color_ui = rgb { 40 68 29 }
+}
+MRS = {
+    color = rgb { 23 68 61 }
+	color_ui = rgb { 23 68 61 }
+}
+TML = {
+    color = rgb { 115 92 23 }
+	color_ui = rgb { 115 92 23 }
+}
+ORS = {
+    color = rgb { 123 16 8 }
+	color_ui = rgb { 123 16 8 }
+}
+BIH = {
+    color = rgb { 124 99 75 }
+	color_ui = rgb { 124 99 75 }
+}
+BNL = {
+    color = rgb { 31 47 84 }
+	color_ui = rgb { 31 47 84 }
+}
+ASM = {
+    color = rgb { 170 71 63 }
+	color_ui = rgb { 170 71 63 }
+}
+SNN = {
+    color = rgb { 82 76 46 }
+	color_ui = rgb { 82 76 46 }
 }

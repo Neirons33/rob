@@ -20,7 +20,7 @@ mean_time_to_happen = { days = 1 }
 
 option = {
  name = lithuania.0.a
- add_stability = 10
+ add_stability = 0.05
 }
 }
 
@@ -44,4 +44,362 @@ option = { ###deny
 			base = 20
 			}
  }
+}
+
+###pelekist parade
+country_event = { 
+id = lithuania.2
+title = lithuania.2.t
+desc = lithuania.2.d
+fire_only_once = yes
+
+trigger = {
+ tag = LIT
+ date > 1934.3.1
+}
+
+mean_time_to_happen = { days = 1 }
+
+option = {
+ name = lithuania.2.a
+ add_stability = 0.05
+ add_popularity = {ideology = pelekist popularity =0.06}
+ hidden_effect = {
+  country_event = { id = lithuania.3 days = 90 }
+ }
+}
+}
+
+###rise of Pērkons man
+country_event = { 
+id = lithuania.3
+title = lithuania.3.t
+desc = lithuania.3.d
+fire_only_once = yes
+is_triggered_only = yes
+
+
+option = {
+ name = lithuania.3.a
+ add_stability = 0.05
+ add_popularity = {ideology = pelekist popularity =0.08}
+
+}
+}
+
+###Elections
+country_event = { 
+id = lithuania.4
+title = lithuania.4.t
+desc = lithuania.4.d
+fire_only_once = yes
+is_triggered_only = yes
+
+
+option = { ###Conservative Victory
+ name = lithuania.4.a
+ add_stability = 0.1
+ add_popularity = {ideology = conservative popularity =0.25}
+
+}
+option = { ###Liberal Block Victory
+ name = lithuania.4.b
+ add_stability = 0.1
+ add_popularity = {ideology = social_democracy popularity =0.3}
+ add_popularity = {ideology = social_liberal popularity =0.15}
+ add_popularity = {ideology = socialist popularity =0.05}
+ set_politics = {
+  ruling_party = social_democracy
+  elections_allowed = no
+ }
+ hidden_effect = {
+  country_event = { id = lithuania.5 days = 10 }
+ }
+}
+}
+
+###Military talks of coup
+country_event = { 
+id = lithuania.5
+title = lithuania.5.t
+desc = lithuania.5.d
+fire_only_once = yes
+is_triggered_only = yes
+
+
+option = { ###The talks go nowhere
+ name = lithuania.5.a
+ add_stability = 0.1
+ hidden_effect = {
+  country_event = { id = lithuania.9 days = 25 }
+ }
+}
+option = { ###Military Coups!
+ name = lithuania.5.b
+ add_stability = -0.25
+ add_popularity = {ideology = authoritharian popularity =0.2}
+ add_popularity = {ideology = reactionary popularity =0.1}
+ add_popularity = {ideology = pelekist popularity =0.1}
+ set_politics = {
+  ruling_party = authoritharian
+  elections_allowed = no
+ }
+ hidden_effect = {
+  country_event = { id = lithuania.6 days = 10 }
+ }
+}
+}
+
+###Military leaders meet
+country_event = { 
+id = lithuania.6
+title = lithuania.6.t
+desc = lithuania.6.d
+fire_only_once = yes
+is_triggered_only = yes
+
+
+option = { ###Jonas Beržanskis
+ name = lithuania.6.a
+ add_stability = 0.1
+ add_popularity = {ideology = pelekist popularity =0.15}
+  set_politics = {
+  ruling_party = pelekist
+  elections_allowed = no
+ }
+ create_country_leader = {
+	name = "Jonas Beržanskis"
+	desc = ""
+	picture = ".tga"
+	expire = "1953.3.1"
+	ideology = pelekist
+	traits = {
+		#
+	}
+}
+hidden_effect = {
+ country_event = { id = lithuania.7 days = 700 } 
+}
+}
+option = { ###Augustinas Voldemaras
+ name = lithuania.6.b
+ add_stability = 0.1
+ add_popularity = {ideology = pelekist popularity =0.15}
+  set_politics = {
+  ruling_party = pelekist
+  elections_allowed = no
+ }
+ create_country_leader = {
+	name = "Augustinas Voldemaras"
+	desc = ""
+	picture = ".tga"
+	expire = "1953.3.1"
+	ideology = pelekist
+	traits = {
+		#
+	}
+}
+hidden_effect = {
+ country_event = { id = lithuania.8 days = 45 }
+}
+}
+option = { ###Military Dictaotshiop
+ name = lithuania.6.c
+ add_stability = 0.1
+ add_popularity = {ideology = authoritharian popularity =0.40}
+  set_politics = {
+  ruling_party = authoritharian
+  elections_allowed = no
+ }
+ create_country_leader = {
+	name = "Kazys Škirpa"
+	desc = ""
+	picture = ".tga"
+	expire = "1953.3.1"
+	ideology = authoritharian
+	traits = {
+		#
+	}
+}
+}
+
+option = { ###Smentona Dictaotshiop
+ name = lithuania.6.e
+ add_stability = 0.1
+ add_popularity = {ideology = reactionary popularity =0.40}
+  set_politics = {
+  ruling_party = reactionary
+  elections_allowed = no
+ }
+ create_country_leader = {
+	name = "Antanas Smetona"
+	desc = ""
+	picture = ".tga"
+	expire = "1953.3.1"
+	ideology = reactionary
+	traits = {
+		#
+	}
+}
+}
+}
+
+###death of Beržanskis
+country_event = {
+id = lithuania.7
+title = lithuania.7.t
+desc = lithuania.7.d
+fire_only_once = yes
+is_triggered_only = yes
+
+option = {
+name = lithuania.7.a
+retire_country_leader = yes
+add_stability = -0.1
+add_political_power = -100
+ create_country_leader = {
+	name = "National Council"
+	desc = ""
+	picture = ".tga"
+	expire = "1953.3.1"
+	ideology = pelekist
+	traits = {
+		#
+	}
+}
+country_event = { id = lithuania.12 days = 5 }
+}
+}
+
+###death of Voldemaras
+country_event = {
+id = lithuania.8
+title = lithuania.8.t
+desc = lithuania.8.d
+fire_only_once = yes
+is_triggered_only = yes
+
+option = {
+name = lithuania.8.a
+kill_country_leader = yes
+ create_country_leader = {
+	name = "Vladas Mironas"
+	desc = ""
+	picture = ".tga"
+	expire = "1953.3.1"
+	ideology = pelekist
+	traits = {
+		#
+	}
+}
+
+}
+}
+
+###socialist gain governmental power
+country_event = {
+id = lithuania.9
+title = lithuania.9.t
+desc = lithuania.9.d
+fire_only_once = yes
+is_triggered_only = yes
+
+option = {
+name = lithuania.9.a
+add_popularity = {ideology = socialist popularity =0.05}
+hidden_effect = {
+ country_event = { id = lithuania.10 days = 30 }
+}
+}
+}
+
+###Assinations
+country_event = {
+id = lithuania.10
+title = lithuania.10.t
+desc = lithuania.10.d
+fire_only_once = yes
+is_triggered_only = yes
+
+option = { ###Grinius dies
+name = lithuania.10.a
+kill_country_leader = yes
+ create_country_leader = {
+	name = "Lietuvos Respublikos Seimas"
+	desc = ""
+	picture = ".tga"
+	expire = "1953.3.1"
+	ideology = social_democracy
+	traits = {
+		#
+	}
+}
+hidden_effect = {
+ country_event = { id = lithuania.11 days = 30 }
+}
+}
+
+option = { ###grinuis hold
+name = lithuania.10.b
+add_stability = 0.1
+}
+}
+
+###Socialists execute coup
+country_event = {
+id = lithuania.11
+title = lithuania.11.t
+desc = lithuania.11.d
+fire_only_once = yes
+is_triggered_only = yes
+
+option = {
+name = lithuania.11.a
+add_popularity = {ideology = socialist popularity =0.45}
+set_politics = {
+ ruling_party = socialist
+ elections_allowed = no
+}
+}
+}
+
+###children refuse throne
+country_event = {
+id = lithuania.12
+title = lithuania.12.t
+desc = lithuania.12.d
+fire_only_once = yes
+is_triggered_only = yes
+
+option = {
+name = lithuania.12.a
+add_political_power = -50
+country_event = { id= lithuania.13 days = 5 }
+}
+}
+
+###Visoumis takes over
+country_event = {
+id = lithuania.13
+title = lithuania.13.t
+desc = lithuania.13.d
+fire_only_once = yes
+is_triggered_only = yes
+
+option = {
+name = lithuania.13.a
+add_political_power = 150
+add_stability = 0.05
+
+ create_country_leader = {
+	name = "Domas Šidlauskas-Visuomis"
+	desc = ""
+	picture = ".tga"
+	expire = "1953.3.1"
+	ideology = pelekist
+	traits = {
+		#
+	}
+}
+}
 }

@@ -1,0 +1,156 @@
+#########################
+###Pelekist German Events
+#########################
+
+add_namespace = pelekist_germany
+
+
+###Victory in the Civil War
+country_event = {
+id = pelekist_germany.1
+desc = pelekist_germany.1.d
+title = pelekist_germany.1.t
+fire_only_once = yes
+
+trigger = {
+ GER = {
+  exists = no
+}
+tag = BAV
+}
+
+mean_time_to_happen = { days = 1 }
+
+
+option = {
+ name = pelekist_germany.1.a
+ every_state = {
+    limit = { 
+	OR = {
+	is_core_of = GER
+    is_core_of = RHN
+	}
+	}
+	add_core_of = BAV
+	remove_core_of = GER
+}
+
+
+}
+
+}
+
+###Integration of French core
+country_event = {
+id = pelekist_germany.2
+desc = pelekist_germany.2.d
+title = pelekist_germany.2.t
+fire_only_once = yes
+
+trigger = {
+ 789 = { is_owned_by = BAV }
+ 981 = { is_owned_by = BAV }
+ 28 = { is_owned_by = BAV }
+ 814 = { is_owned_by = BAV }
+ 816 = { is_owned_by = BAV }
+ tag = BAV
+}
+
+mean_time_to_happen = { days = 1 }
+
+option = {
+ name = pelekist_germany.2.a
+ 789 = { add_core_of = BAV }
+ 981 = { add_core_of = BAV }
+ 28 = { add_core_of = BAV }
+ 814 = { add_core_of = BAV }
+ 816 = { add_core_of = BAV }
+}
+
+}
+
+###FATE OF FRANCE
+country_event = {
+id = pelekist_germany.3
+desc = pelekist_germany.3.d
+title = pelekist_germany.3.t
+fire_only_once = yes
+
+trigger = {
+ tag = BAV
+ FRA = {
+  exists = no
+ }
+ 16 = { is_owned_by = BAV }
+ 18 = { is_owned_by = BAV }
+ 817 = { is_owned_by = BAV }
+ 785 = { is_owned_by = BAV }
+ 29 = { is_owned_by = BAV }
+ 818 = { is_owned_by = BAV }
+ 1014 = { is_owned_by = BAV }
+}
+
+option = { ###Estabilsh a French State
+ name = pelekist_germany.3.a
+ 			every_owned_state = {
+			 limit = { 
+			 is_owned_by = ROOT 
+			 is_core_of = FRA
+			 NOT = {
+			  OR = {
+			   is_core_of = ROOT
+			   
+			 }
+			 }
+			 }
+			 FRA = {
+					transfer_state = PREV
+					add_state_core = PREV
+				}
+			}
+		ROOT = {
+	   puppet = FRA
+	  }
+}
+
+option = { ###Occupy North, Puppet South
+ name = pelekist_germany.3.b
+ trigger = {
+ 29 = { is_owned_by = ROOT }
+ 785 = { is_owned_by = ROOT }
+ 18 = { is_owned_by = ROOT }
+ 815 = { is_owned_by = ROOT }
+ 1014 = { is_owned_by = ROOT }
+ 24 = { is_owned_by = ROOT }
+ }
+ 
+
+ 
+ GER = { transfer_state = 29 }
+ BNG = { transfer_state = 785 }
+ BNG = { transfer_state = 18 }
+ BNG = { transfer_state = 815 }
+ BNG = { transfer_state = 1014 }
+ BNG = { transfer_state = 24 }
+
+ 			every_owned_state = {
+			 limit = { 
+			 is_owned_by = ROOT 
+			 is_core_of = FRA
+			 NOT = {
+			  OR = {
+			   is_core_of = ROOT
+			 
+			 }
+			 }
+			 }
+			 FRA = {
+					transfer_state = PREV
+					add_state_core = PREV
+				}
+			}
+		ROOT = {
+	   puppet = FRA
+	  }
+}
+}

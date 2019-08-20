@@ -854,7 +854,15 @@ icon = GFX_focus_SOV_soviet_new_course
 x = 35
 y = 6
 cost = 5
-available_if_capitulated = yes 
+available_if_capitulated = yes
+available = {
+ OR = {
+ has_country_flag = bukharin_seizes_power
+ has_government = socialist
+ has_government = national_socialist
+}
+}
+
 bypass = {
 OR = {
  has_country_flag = bukharin_seizes_power
@@ -881,9 +889,9 @@ prerequisite = { focus = SOV_civilianindustry }
 available = {
  has_country_flag = SOV_rykov_holds_on
 } 
-    bypass = {
-        has_country_flag = rykov_resigned
-    }
+bypass = {
+ has_country_flag = rykov_resigned
+}
 ai_will_do = { 
  factor = 1
  } 
