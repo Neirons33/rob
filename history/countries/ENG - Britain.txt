@@ -1,4 +1,4 @@
-﻿capital = 126
+capital = 126
 
 set_oob = ""
 if = {
@@ -124,6 +124,10 @@ if = {
 		target = MAL
 		autonomous_state = autonomy_integrated_puppet
 	}
+	set_autonomy = {
+		target = BRJ
+		autonomous_state = autonomy_integrated_puppet
+	}
 	
 	set_autonomy = {
 		target = CAN
@@ -147,6 +151,7 @@ if = {
 	}
 	else = {
 		puppet = MAL
+		puppet = BRJ
 
 	}
 }
