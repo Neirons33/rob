@@ -15,6 +15,10 @@ state={
 		buildings = {
 			infrastructure = 3
 			air_base = 2
+			industrial_complex = 1
+		}
+		victory_points = {
+		12678 3
 		}
 		add_core_of = WFE
 	}

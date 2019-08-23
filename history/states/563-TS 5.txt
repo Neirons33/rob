@@ -14,8 +14,13 @@ state={
 		buildings = {
 			infrastructure = 3
 			air_base = 2
+			industrial_complex = 2
+			arms_factory = 1
 		}
 		add_core_of = WFE
+		victory_points = {
+		12641 10
+		}
 	}
 
 	provinces={

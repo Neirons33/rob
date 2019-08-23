@@ -2,7 +2,7 @@
 state={
 	id=561
 	name="STATE_561" # Amur
-	manpower = 454281
+	manpower = 554281
 	
 	state_category = rural
 
@@ -11,6 +11,7 @@ state={
 		buildings = {
 			infrastructure = 3
 			arms_factory = 1
+			industrial_complex = 1
 		}
 		add_core_of = WFE
 	}
