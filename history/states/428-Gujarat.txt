@@ -19,13 +19,33 @@ state={
 			add_core_of = RAJ
 		buildings = {
 			infrastructure = 4
-			arms_factory = 2
+			arms_factory = 1
 			dockyard = 1
-			industrial_complex = 3
+			industrial_complex = 2
 			9975 = {
-				naval_base = 2
+				naval_base = 3
 			}
-		}
+			4064 = {
+				bunker = 3
+
+			}
+			1103 = {
+				bunker = 3
+
+			}
+			12092 = {
+				bunker = 3
+
+			}
+			7165 = {
+				bunker = 3
+
+			}
+			11952 = {
+				bunker = 3
+
+			}
+			}
 
 	}
 

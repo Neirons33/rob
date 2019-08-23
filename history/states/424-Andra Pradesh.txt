@@ -7,11 +7,51 @@ state={
 		owner = BRJ
 		buildings = {
 			infrastructure = 4
-			arms_factory = 1
-			industrial_complex = 1
+			arms_factory = 2
+			industrial_complex = 2
 			dockyard = 1
+			10152 = {
+				bunker = 3
+
+			}
+			7310 = {
+				bunker = 3
+
+			}
+			10897 = {
+				bunker = 3
+
+			}
+			12734 = {
+				bunker = 3
+
+			}
+			10808 = {
+				bunker = 3
+
+			}
+			8067 = {
+				bunker = 3
+
+			}
+			10246 = {
+				bunker = 3
+
+			}
+			12164 = {
+				bunker = 3
+
+			}
+			10278 = {
+				bunker = 5
+
+			}
+			10278 = {
+				naval_base = 5
+
 
 		}
+}
 			victory_points = {
 			10278 10
 			}
