@@ -557,6 +557,7 @@ RAJ = {
     days = 30
 }
 }
+end_puppet = BRJ
 }
 }
 
@@ -706,6 +707,7 @@ RAJ = {
     days = 30
 }
 }
+end_puppet = BRJ
 }
 }
 }
