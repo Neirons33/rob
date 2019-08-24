@@ -7,9 +7,10 @@ state={
 		owner = BRJ
 		buildings = {
 			infrastructure = 4
+			
 			arms_factory = 2
-			industrial_complex = 2
-			dockyard = 1
+			industrial_complex = 1
+
 			10152 = {
 				bunker = 3
 
@@ -55,6 +56,7 @@ state={
 			victory_points = {
 			10278 10
 			}
+
 			add_core_of = BRJ
 			add_core_of = RAJ
 
