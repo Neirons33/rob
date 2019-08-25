@@ -2,11 +2,14 @@
 state={
 	id=424
 	name="STATE_424"
+	resources={
+		steel=12 # was: 4
+	}
 
 	history={
 		owner = BRJ
 		buildings = {
-			infrastructure = 4
+			infrastructure = 6
 			
 			arms_factory = 2
 			industrial_complex = 1
@@ -50,9 +53,8 @@ state={
 			10278 = {
 				naval_base = 5
 
-
-		}
-}
+				}
+			}
 			victory_points = {
 			10278 10
 			}
