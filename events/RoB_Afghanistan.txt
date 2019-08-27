@@ -10,7 +10,7 @@ add_namespace = afghanistan
 country_event = {
 id = afghanistan.100
 title = afghanistan.100.t
-desc = turkmenistan.100.d
+desc = afghanistan.100.d
 is_triggered_only = yes
 fire_only_once = yes
 picture = GFX_picture_bosnian_revolt
@@ -21,7 +21,7 @@ tag = KHV
 mean_time_to_happen = { days = 1 }
 
 option = {
-name = turkmenistan.100.a
+name = afghanistan.100.a
 ai_chance = { factor = 100}
 
 load_oob = "khiva_aid"
