@@ -31,8 +31,11 @@ l_english:
  VICTORY_POINTS_12040:0 "Kaesong"
  VICTORY_POINTS_13265:0 "Weihaiwei"
 
- ##Central Asia
-VICTORY_POINTS_10510:0 "Kara Kala"
+ ##Raj
+ VICTORY_POINTS_4090:0 "Junagadh"
+ VICTORY_POINTS_4187:0 "Surat"
+ VICTORY_POINTS_4420:0 "Vellore"
+
 
  #Austria
  VICTORY_POINTS_6680:0 "Bregenz"
