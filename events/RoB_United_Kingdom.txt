@@ -558,6 +558,7 @@ RAJ = {
 }
 }
 end_puppet = BRJ
+BRJ = { leave_faction = yes }
 }
 }
 
@@ -708,6 +709,7 @@ RAJ = {
 }
 }
 end_puppet = BRJ
+BRJ = { leave_faction = yes }
 }
 }
 }
