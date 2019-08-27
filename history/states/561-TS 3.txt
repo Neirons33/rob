@@ -3,6 +3,9 @@ state={
 	id=561
 	name="STATE_561" # Amur
 	manpower = 554281
+	resources = {
+	oil = 12.000
+	}
 	
 	state_category = rural
 
