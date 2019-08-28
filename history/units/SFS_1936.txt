@@ -81,7 +81,7 @@ units = {
 	}
 	division = {
 		name = "Hungarian Infantry Division"
-		location = 10683
+		location = 10559
 		division_template = "Infantry Division"
 		start_experience_factor = 0.9
 	}
@@ -105,7 +105,7 @@ units = {
 	}
 	division = {
 		name = "1st Russian Infantry Division"
-		location = 7786
+		location = 4677
 		division_template = "Russian Militia"
 		start_equipment_factor = 0.5
 	}
