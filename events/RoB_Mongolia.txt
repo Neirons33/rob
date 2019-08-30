@@ -104,9 +104,9 @@ ai_chance = { factor = 100}
 ###TANNA TUBA annex Mongol for some reason
 
 country_event = {
-id = mongolia.102
-title = mongolia.102.t
-desc = mongolia.102.d
+id = mongolia.103
+title = mongolia.103.t
+desc = mongolia.103.d
 fire_only_once = yes
 picture = GFX_picture_bosnian_revolt
 hidden = yes
@@ -122,7 +122,7 @@ IRK = { add_state_core = 564 }
 IRK = { transfer_state = 564 }
 }
 option = {
-name = mongolia.102.a
+name = mongolia.103.a
 ai_chance = { factor = 100}
 
 
