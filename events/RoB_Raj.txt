@@ -106,6 +106,7 @@ BBY = { add_state_core = 429 }
 BBY = { transfer_state = 429 }
 MYS = { add_state_core = 425 }
 MYS = { transfer_state = 425 }
+MYS = { load_oob = "MYS_1936" }
 TML = { add_state_core = 423 }
 TML = { transfer_state = 423 }
 MRS = { add_state_core = 424 }
@@ -127,6 +128,7 @@ MRS = { add_state_core = 1192 }
 MRS = { transfer_state = 1192 }
 BNL = { add_state_core = 1193 }
 BNL = { transfer_state = 1193 }
+BNL = { load_oob = "BNL_1936" }
 BRM = { add_state_core = 1194 }
 BRM = { transfer_state = 1194 }
 BRM = { add_state_core = 1195 }
@@ -184,6 +186,7 @@ BBY = { transfer_state = 429 }
 MYS = { add_state_core = 425 }
 MYS = { transfer_state = 425 }
 MYS = { change_tag_from = ROOT }
+MYS = { load_oob = "MYS_1936" }
 TML = { add_state_core = 423 }
 TML = { transfer_state = 423 }
 MRS = { add_state_core = 424 }
@@ -205,6 +208,7 @@ MRS = { add_state_core = 1192 }
 MRS = { transfer_state = 1192 }
 BNL = { add_state_core = 1193 }
 BNL = { transfer_state = 1193 }
+BNL = { load_oob = "BNL_1936" }
 BRM = { add_state_core = 1194 }
 BRM = { transfer_state = 1194 }
 BRM = { add_state_core = 1195 }
@@ -261,6 +265,7 @@ BBY = { add_state_core = 429 }
 BBY = { transfer_state = 429 }
 MYS = { add_state_core = 425 }
 MYS = { transfer_state = 425 }
+MYS = { load_oob = "MYS_1936" }
 TML = { add_state_core = 423 }
 TML = { transfer_state = 423 }
 MRS = { add_state_core = 424 }
@@ -282,6 +287,7 @@ MRS = { add_state_core = 1192 }
 MRS = { transfer_state = 1192 }
 BNL = { add_state_core = 1193 }
 BNL = { transfer_state = 1193 }
+BNL = { load_oob = "BNL_1936" }
 BRM = { add_state_core = 1194 }
 BRM = { transfer_state = 1194 }
 BRM = { add_state_core = 1195 }
@@ -294,3 +300,31 @@ BRM = { transfer_state = 1196 }
 
 }
 
+country_event = {
+id = raj.102
+title = raj.102.t
+desc = raj.102.d
+fire_only_once = yes
+picture = GFX_picture_bosnian_revolt
+trigger = {
+tag = POR
+MYS = { owns_state = 425 }
+}
+
+option = {
+name = raj.102.a
+ai_chance = { factor = 100}
+load_oob = "POR_GOA"
+declare_war_on = {
+    target = MYS
+    type = annex_everything
+}
+add_manpower = 100000
+
+}
+option = {
+name = raj.102.b
+ai_chance = { factor = 100}
+add_political_power = -100
+}
+}
