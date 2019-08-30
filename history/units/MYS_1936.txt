@@ -1,7 +1,7 @@
 division_template = {
-	name = "National Guard"
+	name = "Mysore Guard"
 
-	division_names_group = RAJ_ARM_01
+	division_names_group = RAJ_INF_01
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -16,32 +16,34 @@ division_template = {
 		infantry = { x = 3 y = 0 }
 		infantry = { x = 3 y = 1 }
 		infantry = { x = 3 y = 2 }
-		light_armor = { x = 4 y = 0 }
-		light_armor = { x = 4 y = 1 }
-		light_armor = { x = 4 y = 2 }
 	}
 	priority = 2
 }
-division_template = {
-	name = "Infantry Brigade"				# Militia units (lowest experience, oldest equipment)
 
-	division_names_group = RAJ_ARM_01
+division_template = {
+	name = "Infantry Brigade"
+
+	division_names_group = RAJ_INF_01
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
 		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
 		infantry = { x = 2 y = 1 }
-		infantry = { x = 3 y = 2 }
+		infantry = { x = 2 y = 2 }
 	}
 	priority = 1
 }
 
+
 division_template = {
 	name = "Militia"				# Militia units (lowest experience, oldest equipment)
 
-	division_names_group = RAJ_ARM_01
+	division_names_group = RAJ_INF_01
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -55,75 +57,57 @@ division_template = {
 }
 
 units = {
-	#Royal Khivan Army
+	#Royal Mysore Army
 	division = {
-		name = "Indian National Guard"
-		location = 2086
-		division_template = "National Guard"
-		start_experience_factor = 0.3
-	}
-	division = {
-		name = "1st Indian Infantry"
-		location = 12137
-		division_template = "Infantry Brigade"
-		start_experience_factor = 0.1
-	}
-	division = {
-		name = "2nd Indian Infantry"
-		location = 10887
-		division_template = "Infantry Brigade"
-		start_experience_factor = 0.1
-	}
-	division = {
-		name = "3rd Indian Infantry"
-		location = 5105
-		division_template = "Infantry Brigade"
-		start_experience_factor = 0.1
-	}
-	division = {
-		name = "Delhi Militia"
-		location = 2086
-		division_template = "Militia"
-		start_equipment_factor = 0.3
-	}
-	division = {
-		name = "Lucknow Militia"
-		location = 12137
-		division_template = "Militia"
-		start_equipment_factor = 0.3
-	}
-	division = {
-		name = "Himalayan Militia"
-		location = 1129
-		division_template = "Militia"
-		start_equipment_factor = 0.3
-	}
-	division = {
-		name = "Gorakhpur Militia"
-		location = 7734
-		division_template = "Militia"
-		start_equipment_factor = 0.3
-	}
-	division = {
-		name = "Lahore Militia"
-		location = 10887
-		division_template = "Militia"
-		start_equipment_factor = 0.3
-	}
-	division = {
-		name = "Pashawar Militia"
-		location = 12763
-		division_template = "Militia"
-		start_equipment_factor = 0.3
-	}
+		name = "Mysore Royal Guard"
+		location = 8011
+		division_template = "Mysore Guard"
+		start_experience_factor = 0.5
 
+	}
+	division = {
+		name = "Loyal Indian Regiment"
+		location = 5032
+		division_template = "Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		name = "1st Royal Mysore Infantry"
+		location = 12208
+		division_template = "Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		name = "2nd Royal Mysore Infantry"
+		location = 10259
+		division_template = "Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		name = "Mysore Militia"
+		location = 4315
+		division_template = "Militia"
+		start_equipment_factor = 0.1
+	}
+	division = {
+		name = "All-Indian Militia"
+		location = 10208
+		division_template = "Militia"
+		start_equipment_factor = 0.1
+	}
 
 ### Starting Equipment ###
 instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = infantry_equipment_0
-			creator = "DEL"
+			creator = "MYS"
 		}
 		requested_factories = 1
 		progress = 0.28
