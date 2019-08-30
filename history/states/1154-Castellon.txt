@@ -1,5 +1,6 @@
 state={
 	id=1154
+	state_category = city
 	name="STATE_1154"
 	provinces={
 		3873 6817 

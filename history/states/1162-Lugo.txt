@@ -1,5 +1,6 @@
 state={
 	id=1162
+	state_category = city
 	name="STATE_1162"
 	history={
 		owner = POR

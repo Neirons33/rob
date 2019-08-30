@@ -24,6 +24,8 @@ add_ideas = mari_rebbelion
 add_ideas = failing_economy
 add_ideas = extensive_conscription
 
+set_country_flag = RUS_warlord
+
 create_country_leader = {
 	name = "Vasily Maklakov"
 	desc = ""

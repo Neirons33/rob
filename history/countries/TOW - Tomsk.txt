@@ -1,5 +1,7 @@
 capital = 571
 set_research_slots = 3
+oob = "TOW_1934"
+
 
 set_politics = {
 	ruling_party = authoritharian
@@ -18,7 +20,15 @@ set_popularities = {
 	reactionary = 6
 	pelekist = 9
 }
+add_ideas = {
+ extensive_conscription
+}
 
+create_faction = "Union of Romanovs"
+add_to_faction = BWR
+add_to_faction = KRW
+add_to_faction = BRW
+set_country_flag = RUS_warlord
 create_country_leader = {
 	name = "Grand Duke Kirill Vladimirovich"
 	desc = ""

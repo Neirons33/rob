@@ -1,5 +1,7 @@
 capital = 40
 set_research_slots = 1
+oob = "BWR_1934"
+
 
 set_politics = {
 	ruling_party = authoritharian
@@ -19,6 +21,15 @@ set_popularities = {
 	pelekist = 9
 }
 
+set_country_flag = RUS_warlord
+add_ai_strategy = {
+    type = alliance
+    id = "TOW"
+    value = 2000
+}
+add_ideas = {
+ extensive_conscription
+}
 create_country_leader = {
 	name = "Grand Duke Dmitri Pavlovich"
 	desc = ""

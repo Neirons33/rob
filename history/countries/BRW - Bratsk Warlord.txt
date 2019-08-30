@@ -1,5 +1,6 @@
 capital = 567
 set_research_slots = 1
+oob = "BRW_1934"
 
 set_politics = {
 	ruling_party = reactionary
@@ -18,7 +19,15 @@ set_popularities = {
 	reactionary = 77
 	pelekist = 0
 }
-
+add_ideas = {
+ extensive_conscription
+}
+set_country_flag = RUS_warlord
+add_ai_strategy = {
+    type = alliance
+    id = "TOW"
+    value = 2000
+}
 create_country_leader = {
 	name = "Mikhail Diterikhs"
 	desc = "POLITICS_BENITO_MUSSOLINI_DESC"
