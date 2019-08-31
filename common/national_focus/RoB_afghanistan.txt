@@ -771,6 +771,7 @@ add_opinion_modifier = {
 		NOT = { 
 		country_exists = TMS
 		}
+		NOT = { has_war = yes }
 		owns_state = 1179
 		}
 		completion_reward = {
