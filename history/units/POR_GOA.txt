@@ -63,19 +63,7 @@ units = {
 		start_experience_factor = 0.3
 	}
 	division = {
-		name = "3rd Goa Infantry Brigade"
-		location = 1273
-		division_template = "Goa Infantry"
-		start_experience_factor = 0.3
-	}
-	division = {
 		name = "1st Goa Armor Battalion"
-		location = 1273
-		division_template = "Armor Battalion"
-		start_experience_factor = 0.3
-	}
-	division = {
-		name = "2nd Goa Armor Battalion"
 		location = 1273
 		division_template = "Armor Battalion"
 		start_experience_factor = 0.3
