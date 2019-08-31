@@ -90,6 +90,8 @@ immediate = {
 annex_country = {
     target = MON
 }
+white_peace = MON
+TAN = { white_peace = MON }
 add_state_core = 564
 }
 option = {

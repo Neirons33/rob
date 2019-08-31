@@ -64,8 +64,10 @@ DEL = { add_state_core = 438 }
 DEL = { transfer_state = 438 }
 DEL = { add_state_core = 439 }
 DEL = { transfer_state = 439 }
+PNJ = { add_state_core = 440 }
+PNJ = { transfer_state = 440 }
+PNJ = { add_state_core = 1188 }
 DEL = { add_state_core = 440 }
-DEL = { transfer_state = 440 }
 DEL = { add_state_core = 445 }
 DEL = { transfer_state = 445 }
 DEL = { add_state_core = 442 }
@@ -76,10 +78,14 @@ DEL = { add_state_core = 1191 }
 DEL = { transfer_state = 1191 }
 DEL = { add_state_core = 1188 }
 DEL = { transfer_state = 1188 }
-DEL = { inherit_technology = ROOT }	
-DEL = { load_oob = "DEL_1936" }
-
-DEL = { change_tag_from = ROOT }
+DEL = { inherit_technology = ROOT }
+DEL = { load_oob = "DEL_1936" }	
+PNJ = { load_oob = "PNJ_1936" }	
+DEL = { declare_war_on = {
+    target = PNJ
+    type = annex_everything
+}
+}
 BAL = { add_state_core = 444 }
 BAL = { transfer_state = 444 }
 JAK = { add_state_core = 787 }
@@ -100,6 +106,7 @@ BNL = { add_state_core = 430 }
 BNL = { transfer_state = 430 }
 BNL = { add_state_core = 431 }
 BNL = { transfer_state = 431 }
+DEL = { change_tag_from = ROOT }
 CIR = { add_state_core = 436 }
 CIR = { transfer_state = 436 }
 BBY = { add_state_core = 429 }
@@ -135,6 +142,7 @@ BRM = { add_state_core = 1195 }
 BRM = { transfer_state = 1195 }
 BRM = { add_state_core = 1196 }
 BRM = { transfer_state = 1196 }
+
 
 }
 
@@ -146,8 +154,10 @@ DEL = { add_state_core = 438 }
 DEL = { transfer_state = 438 }
 DEL = { add_state_core = 439 }
 DEL = { transfer_state = 439 }
+PNJ = { add_state_core = 440 }
+PNJ = { transfer_state = 440 }
+PNJ = { add_state_core = 1188 }
 DEL = { add_state_core = 440 }
-DEL = { transfer_state = 440 }
 DEL = { add_state_core = 445 }
 DEL = { transfer_state = 445 }
 DEL = { add_state_core = 442 }
@@ -158,7 +168,14 @@ DEL = { add_state_core = 1191 }
 DEL = { transfer_state = 1191 }
 DEL = { add_state_core = 1188 }
 DEL = { transfer_state = 1188 }
-DEL = { inherit_technology = ROOT }	
+DEL = { inherit_technology = ROOT }
+DEL = { load_oob = "DEL_1936" }	
+PNJ = { load_oob = "PNJ_1936" }	
+DEL = { declare_war_on = {
+    target = PNJ
+    type = annex_everything
+}
+}
 BAL = { add_state_core = 444 }
 BAL = { transfer_state = 444 }
 JAK = { add_state_core = 787 }
@@ -179,13 +196,13 @@ BNL = { add_state_core = 430 }
 BNL = { transfer_state = 430 }
 BNL = { add_state_core = 431 }
 BNL = { transfer_state = 431 }
+MYS = { change_tag_from = ROOT }
 CIR = { add_state_core = 436 }
 CIR = { transfer_state = 436 }
 BBY = { add_state_core = 429 }
 BBY = { transfer_state = 429 }
 MYS = { add_state_core = 425 }
 MYS = { transfer_state = 425 }
-MYS = { change_tag_from = ROOT }
 MYS = { load_oob = "MYS_1936" }
 TML = { add_state_core = 423 }
 TML = { transfer_state = 423 }
@@ -216,6 +233,7 @@ BRM = { transfer_state = 1195 }
 BRM = { add_state_core = 1196 }
 BRM = { transfer_state = 1196 }
 
+
 }
 option = {
 name = raj.101.c
@@ -225,8 +243,10 @@ DEL = { add_state_core = 438 }
 DEL = { transfer_state = 438 }
 DEL = { add_state_core = 439 }
 DEL = { transfer_state = 439 }
+PNJ = { add_state_core = 440 }
+PNJ = { transfer_state = 440 }
+PNJ = { add_state_core = 1188 }
 DEL = { add_state_core = 440 }
-DEL = { transfer_state = 440 }
 DEL = { add_state_core = 445 }
 DEL = { transfer_state = 445 }
 DEL = { add_state_core = 442 }
@@ -237,7 +257,14 @@ DEL = { add_state_core = 1191 }
 DEL = { transfer_state = 1191 }
 DEL = { add_state_core = 1188 }
 DEL = { transfer_state = 1188 }
-DEL = { inherit_technology = ROOT }	
+DEL = { inherit_technology = ROOT }
+DEL = { load_oob = "DEL_1936" }	
+PNJ = { load_oob = "PNJ_1936" }	
+DEL = { declare_war_on = {
+    target = PNJ
+    type = annex_everything
+}
+}
 BAL = { add_state_core = 444 }
 BAL = { transfer_state = 444 }
 JAK = { add_state_core = 787 }
@@ -324,7 +351,7 @@ add_manpower = 100000
 }
 option = {
 name = raj.102.b
-ai_chance = { factor = 100}
+ai_chance = { factor = 1}
 add_political_power = -100
 }
 }
