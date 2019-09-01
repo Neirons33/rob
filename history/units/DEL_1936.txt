@@ -100,7 +100,7 @@ units = {
 	}
 	division = {
 		name = "Gorakhpur Militia"
-		location = 7734
+		location = 7334
 		division_template = "Militia"
 		start_equipment_factor = 0.3
 	}
