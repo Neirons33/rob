@@ -60,7 +60,7 @@ start_equipment_factor = 0.4
 }
  division = {
 name = "2nd Imperial Auxiliary Brigade"
-location = 9236
+location = 1797
 division_template = "Imperial Auxiliaries"
 start_experience_factor = 0.3
 start_equipment_factor = 0.5

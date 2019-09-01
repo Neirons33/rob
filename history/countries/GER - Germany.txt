@@ -316,7 +316,7 @@ add_ideas = GER_mefo_bills_1
 activate_mission = GER_mefo_bills_mission
 
 create_country_leader = {
-	name = "Herbert Frahm"
+	name = "George Grosz"
 	desc = "POLITICS_KONRAD_ADENAUER_DESC"
 	picture = ""
 	expire = "1965.1.1"

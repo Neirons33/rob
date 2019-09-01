@@ -146,11 +146,7 @@ is_triggered_only = yes
 
 option = { #refuse
 name = romanov.5.a
-
-create_wargoal = {
-    type = annex_everything
-    target = TOW
-}
+add_stability =-0.03
 ai_chance = {
 factor = 0  
 
@@ -184,11 +180,7 @@ is_triggered_only = yes
 
 option = { #refuse
 name = romanov.6.a
-
-create_wargoal = {
-    type = annex_everything
-    target = BWR
-}
+add_stability =-0.03
 ai_chance = {
 factor = 0  
 

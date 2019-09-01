@@ -166,8 +166,7 @@ name = france.7.a
 add_popularity = { ideology = pelekist popularity = -0.03 }
 add_political_power = -100
 add_stability = -0.04 
-hidden_effect = { country_event = { id = france.8 days = 20 }
-}
+hidden_effect = { country_event = { id = france.8 days = 20 } }
 }
 option = { ###blame socialists
 name = france.7.b

@@ -26,7 +26,7 @@ TOW_search_for_allies = {
   available = {
   check_variable = {
     var = TOW_clergy_support
-    value = 3
+    value = 4
     compare = greater_than
 }
 KRW = { is_in_faction = no }
@@ -49,7 +49,7 @@ KRW = { is_in_faction = no }
  available = {
   check_variable = {
     var = TOW_military_support
-    value = 3
+    value = 4
     compare = greater_than
 }
 BRW = { is_in_faction = no }
@@ -69,6 +69,10 @@ BRW = { is_in_faction = no }
  TOW_give_money_to_clergy = {
  fire_only_once = yes
  cost = 40
+ available = {
+  KRW = { is_in_faction = no }
+  is_at_war = no
+ }
  complete_effect = {
   add_to_variable = {
     var = TOW_clergy_support
@@ -86,6 +90,10 @@ BRW = { is_in_faction = no }
  TOW_expand_religious_education = {
  fire_only_once = yes
  cost = 40
+  available = {
+  KRW = { is_in_faction = no }
+  is_at_war = no
+ }
  complete_effect = {
   add_to_variable = {
     var = TOW_clergy_support
@@ -100,6 +108,10 @@ BRW = { is_in_faction = no }
  TOW_offer_priests_government_positions = {
  fire_only_once = yes
  cost = 40
+  available = {
+  KRW = { is_in_faction = no }
+  is_at_war = no
+ }
  complete_effect = {
   add_to_variable = {
     var = TOW_clergy_support
@@ -114,6 +126,10 @@ BRW = { is_in_faction = no }
  TOW_arm_the_church = {
  fire_only_once = yes
  cost = 40
+  available = {
+  KRW = { is_in_faction = no }
+  is_at_war = no
+ }
  complete_effect = {
   add_to_variable = {
     var = TOW_clergy_support
@@ -132,6 +148,10 @@ BRW = { is_in_faction = no }
  TOW_promise_new_guns = {
  fire_only_once = yes
   cost = 40
+   available = {
+  BRW = { is_in_faction = no }
+  is_at_war = no
+ }
  complete_effect = {
   add_to_variable = {
     var = TOW_military_support
@@ -146,6 +166,10 @@ BRW = { is_in_faction = no }
  TOW_militarize_education = {
  fire_only_once = yes
    cost = 40
+      available = {
+  BRW = { is_in_faction = no }
+  is_at_war = no
+ }
  complete_effect = {
   add_to_variable = {
     var = TOW_military_support
@@ -160,6 +184,10 @@ BRW = { is_in_faction = no }
  TOW_publically_support_diethrikhs= {
  fire_only_once = yes
    cost = 40
+      available = {
+  BRW = { is_in_faction = no }
+  is_at_war = no
+ }
  complete_effect = {
   add_to_variable = {
     var = TOW_military_support
@@ -174,6 +202,10 @@ BRW = { is_in_faction = no }
  TOW_militarize_society = {
  fire_only_once = yes
    cost = 40
+      available = {
+  BRW = { is_in_faction = no }
+  is_at_war = no
+ }
  complete_effect = {
   add_to_variable = {
     var = TOW_military_support
@@ -220,7 +252,7 @@ BWR_search_for_allies = {
   available = {
   check_variable = {
     var = BWR_clergy_support
-    value = 3
+    value = 4
     compare = greater_than
 }
 KRW = { is_in_faction = no }
@@ -243,7 +275,7 @@ KRW = { is_in_faction = no }
  available = {
   check_variable = {
     var = BWR_military_support
-    value = 3
+    value = 4
     compare = greater_than
 }
 BRW = { is_in_faction = no }
@@ -263,6 +295,10 @@ BRW = { is_in_faction = no }
  BWR_give_money_to_clergy = {
  fire_only_once = yes
  cost = 40
+    available = {
+  KRW = { is_in_faction = no }
+  is_at_war = no
+ }
  complete_effect = {
   add_to_variable = {
     var = BWR_clergy_support
@@ -277,6 +313,10 @@ BRW = { is_in_faction = no }
  BWR_expand_religious_education = {
  fire_only_once = yes
  cost = 40
+     available = {
+  KRW = { is_in_faction = no }
+  is_at_war = no
+ }
  complete_effect = {
   add_to_variable = {
     var = BWR_clergy_support
@@ -291,6 +331,10 @@ BRW = { is_in_faction = no }
  BWR_offer_priests_government_positions = {
  fire_only_once = yes
  cost = 40
+     available = {
+  KRW = { is_in_faction = no }
+  is_at_war = no
+ }
  complete_effect = {
   add_to_variable = {
     var = BWR_clergy_support
@@ -305,6 +349,10 @@ BRW = { is_in_faction = no }
  BWR_arm_the_church = {
  fire_only_once = yes
  cost = 40
+     available = {
+  KRW = { is_in_faction = no }
+  is_at_war = no
+ }
  complete_effect = {
   add_to_variable = {
     var = BWR_clergy_support
@@ -323,6 +371,10 @@ BRW = { is_in_faction = no }
  BWR_promise_new_guns = {
  fire_only_once = yes
   cost = 40
+      available = {
+  BRW = { is_in_faction = no }
+  is_at_war = no
+ }
  complete_effect = {
   add_to_variable = {
     var = BWR_military_support
@@ -337,6 +389,10 @@ BRW = { is_in_faction = no }
  BWR_militarize_education = {
  fire_only_once = yes
    cost = 40
+         available = {
+  BRW = { is_in_faction = no }
+  is_at_war = no
+ }
  complete_effect = {
   add_to_variable = {
     var = BWR_military_support
@@ -351,6 +407,10 @@ BRW = { is_in_faction = no }
  BWR_publically_support_diethrikhs= {
  fire_only_once = yes
    cost = 40
+         available = {
+  BRW = { is_in_faction = no }
+  is_at_war = no
+ }
  complete_effect = {
   add_to_variable = {
     var = BWR_military_support
@@ -365,6 +425,10 @@ BRW = { is_in_faction = no }
  BWR_militarize_society = {
  fire_only_once = yes
    cost = 40
+         available = {
+  BRW = { is_in_faction = no }
+  is_at_war = no
+ }
  complete_effect = {
   add_to_variable = {
     var = BWR_military_support

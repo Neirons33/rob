@@ -19,13 +19,12 @@ regiments = {
 
 
 units = {
- division = {
+division = {
 name = "1st Siberian Rifle Division"
 location = 12523
 division_template = "Imperial Infantry Division"
 start_experience_factor = 0.3
 start_equipment_factor = 0.9
-
 }
 division = {
 name = "2nd Siberian Rifle Division"
