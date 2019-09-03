@@ -2,14 +2,18 @@
 state={
 	id=576
 	name="STATE_576" # Yeniseisk
-	manpower = 117195
+	manpower = 127195
 	
-	state_category = wasteland
+	state_category = pastoral
 
 	history={
 		owner = JSW
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		victory_points = {
+		12595 1
 		}
 		add_core_of = JSW
 	}
