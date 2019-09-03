@@ -557,6 +557,12 @@ RAJ = {
     days = 30
 }
 }
+BRJ = {
+ country_event = {
+    id = raj.105
+    days = 15
+}
+}
 end_puppet = BRJ
 BRJ = { leave_faction = yes }
 }
@@ -705,7 +711,13 @@ BRU = { transfer_state = 1044 }
 RAJ = {
  country_event = {
     id = raj.100
-    days = 30
+    days = 40
+}
+}
+BRJ = {
+ country_event = {
+    id = raj.105
+    days = 15
 }
 }
 end_puppet = BRJ

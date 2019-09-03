@@ -133,8 +133,6 @@ PRF = { add_state_core = 1190 }
 PRF = { transfer_state = 1190 }
 MRS = { add_state_core = 1192 }
 MRS = { transfer_state = 1192 }
-BNL = { add_state_core = 1193 }
-BNL = { transfer_state = 1193 }
 BNL = { load_oob = "BNL_1936" }
 BRM = { add_state_core = 1194 }
 BRM = { transfer_state = 1194 }
@@ -142,7 +140,12 @@ BRM = { add_state_core = 1195 }
 BRM = { transfer_state = 1195 }
 BRM = { add_state_core = 1196 }
 BRM = { transfer_state = 1196 }
-
+BRJ = {
+country_event = {
+    id = raj.107
+    days = 5
+}
+}
 
 }
 
@@ -223,8 +226,6 @@ PRF = { add_state_core = 1190 }
 PRF = { transfer_state = 1190 }
 MRS = { add_state_core = 1192 }
 MRS = { transfer_state = 1192 }
-BNL = { add_state_core = 1193 }
-BNL = { transfer_state = 1193 }
 BNL = { load_oob = "BNL_1936" }
 BRM = { add_state_core = 1194 }
 BRM = { transfer_state = 1194 }
@@ -232,6 +233,12 @@ BRM = { add_state_core = 1195 }
 BRM = { transfer_state = 1195 }
 BRM = { add_state_core = 1196 }
 BRM = { transfer_state = 1196 }
+BRJ = {
+country_event = {
+    id = raj.107
+    days = 5
+}
+}
 
 
 }
@@ -319,6 +326,12 @@ BRM = { add_state_core = 1195 }
 BRM = { transfer_state = 1195 }
 BRM = { add_state_core = 1196 }
 BRM = { transfer_state = 1196 }
+BRJ = {
+country_event = {
+    id = raj.107
+    days = 5
+}
+}
 
 }
 
@@ -411,6 +424,92 @@ declare_war_on = {
 option = {
 name = raj.104.b
 ai_chance = { factor = 60}
+add_political_power = -100
+}
+}
+
+country_event = {
+id = raj.105
+title = raj.105.t
+desc = raj.105.d
+fire_only_once = yes
+picture = GFX_picture_bosnian_revolt
+trigger = {
+tag = BRJ
+}
+is_triggered_only = yes
+
+
+option = {
+name = raj.105.a
+ai_chance = { factor = 40}
+transfer_state = 422
+transfer_state = 281
+transfer_state = 710
+transfer_state = 709
+transfer_state = 707
+transfer_state = 733
+add_state_core = 422
+add_state_core = 281
+add_state_core = 733
+add_stability = 0.2
+add_war_support = 0.2
+
+
+
+
+
+}
+}
+
+country_event = {
+id = raj.106
+title = raj.106.t
+desc = raj.106.d
+fire_only_once = yes
+picture = GFX_picture_bosnian_revolt
+trigger = {
+tag = RAJ
+controls_state = 428
+controls_state = 424
+}
+
+
+option = {
+name = raj.106.a
+ai_chance = { factor = 40}
+transfer_state = 428
+transfer_state = 424
+white_peace = BRJ
+
+
+}
+}
+
+country_event = {
+id = raj.107
+title = raj.107.t
+desc = raj.107.d
+fire_only_once = yes
+picture = GFX_picture_bosnian_revolt
+trigger = {
+tag = BRJ
+}
+is_triggered_only = yes
+
+
+option = {
+name = raj.107.a
+ai_chance = { factor = 100}
+declare_war_on = {
+    target = TML
+    type = annex_everything
+}
+
+}
+option = {
+name = raj.104.b
+ai_chance = { factor = 1}
 add_political_power = -100
 }
 }
