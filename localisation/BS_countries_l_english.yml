@@ -60,6 +60,9 @@
  LIT_authoritharian_ADJ:0 "Lithuanian"
  LIT_pelekist_ADJ:0 "Lithuanian"
  
+ ###Lith leaders
+ POLITICS_VLADAS_MIRONAS_DESC:0 "Vladas Mironas, born in 22nd of June, 1880, has become the supreme leader of Lithuanian State, after his predecessor, Augustinas Voldemaras, was killed by a local communist terrorist.\nAs a catholic priest, and a Lithuanian nationalist, who has taken inspiration from Christian fundamentalists in other countries, and ideas of Gabrielle D'Annunzio, Mironas promises to implement a heavily authoritarian, nationalist and catholic system in all Lithuanian lands."
+ 
  HUN_pelekist:0 "Great Hungarian Empire"
  HUN_pelekist_DEF:0 "The Great Hungarian Empire" 
  HUN_reactionary:0 "Hungarian Republic"

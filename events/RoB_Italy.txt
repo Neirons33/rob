@@ -325,12 +325,12 @@ mean_time_to_happen = { days = 1 }
 option = { #Messe flies to Libya
 name = republican_italy.14.a
 hidden_effect = {
-ITA = { country_event = { republican_italy.15 days = 5 } }
+ITA = { country_event = { id = republican_italy.15 days = 5 } }
 }
 option = { #Graziani flies to Anatolia
 name = republican_italy.14.a
 hidden_effect = {
-ITA = { country_event = { republican_italy.19 days = 5 } }
+ITA = { country_event = { id = republican_italy.19 days = 5 } }
 }
 }
 }
@@ -346,7 +346,7 @@ is_triggered_only = yes
 option = {
  name = republican_italy.15.a
   hidden_effect = {
-    ITA = { country_event = { republican_italy.16 days = 2 } }
+    ITA = { country_event = { id = republican_italy.16 days = 2 } }
   }
 }
 }
@@ -386,7 +386,7 @@ option = {
  name = republican_italy.17.a
  add_political_power = 50
   hidden_effect = {
-    ITA = { country_event = { republican_italy.18 days = 25 } }
+    ITA = { country_event = { id = republican_italy.18 days = 25 } }
   }
 }
 }
@@ -439,14 +439,14 @@ is_triggered_only = yes
 option = { ###Bodyguards find it
  name = republican_italy.19.a
   hidden_effect = {
-    ITA = { country_event = { republican_italy.20.a days = 1 } }
+    ITA = { country_event = { id = republican_italy.20.a days = 1 } }
   }
 }
 
 option = { ###...let it be
  name = republican_italy.19.b
   hidden_effect = {
-    ITA = { country_event = { republican_italy.21.a days = 1 } }
+    ITA = { country_event = { id = republican_italy.21.a days = 1 } }
   }
 
 }
@@ -462,7 +462,7 @@ is_triggered_only = yes
 option = { ###bomb found, flight stopped
  name = republican_italy.20.a
   hidden_effect = {
-    ITA = { country_event = { republican_italy.22 days = 5 } }
+    ITA = { country_event = { id = republican_italy.22 days = 5 } }
   }
 }
 }
@@ -493,7 +493,7 @@ is_triggered_only = yes
 option = { ###claims government is behind it
  name = republican_italy.22.a
   hidden_effect = {
-    ITA = { country_event = { republican_italy.23 days = 25 } }
+    ITA = { country_event = { id = republican_italy.23 days = 25 } }
   }
 }
 }

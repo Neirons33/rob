@@ -1,0 +1,3070 @@
+focus_tree = {
+	id = rob_lithuania
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = LIT
+		}
+	}
+	#Focus for Return of the Balts!
+	focus = {
+		id = LIT_returnofthebalts
+		icon = GFX_goal_unknown
+		x = 39
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LIT_baltificationofthelands 
+		}
+		prerequisite = { 
+			focus = LIT_samogitianautonomy 
+		}
+		prerequisite = { 
+			focus = LIT_ 
+		}
+	}
+
+	#Focus for Truly Gediminas Reborn!
+	focus = {
+		id = LIT_trulygediminasreborn
+		icon = GFX_goal_unknown
+		x = 38
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LIT_thenewnationalistgeneration 
+		}
+		prerequisite = { 
+			focus = LIT_returnofthebalts 
+		}
+		prerequisite = { 
+			focus = LIT_ 
+		}
+	}
+
+	#Focus for Invite Latvia to Join
+	focus = {
+		id = LIT_invitelatviatojoin
+		icon = GFX_goal_unknown
+		x = 38
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_createaistija }
+	}
+
+	#Focus for Get Prussia to Join
+	focus = {
+		id = LIT_getprussiatojoin
+		icon = GFX_goal_unknown
+		x = 38
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_invitelatviatojoin }
+	}
+
+	#Focus for Declare Beržanskis a National Hero
+	focus = {
+		id = LIT_declareberanskisanationalhero
+		icon = GFX_goal_unknown
+		x = 36
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_kunigaiktisvisuomis }
+	}
+
+	#Focus for Kunigaikštis Visuomis
+	focus = {
+		id = LIT_kunigaiktisvisuomis
+		icon = GFX_goal_unknown
+		x = 38
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+	}
+
+	#Focus for God and Mironas
+	focus = {
+		id = LIT_godandmironas
+		icon = GFX_focus_LIT_godandmironas
+		x = 31
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LIT_moveintobelarus 
+		}
+		prerequisite = { 
+			focus = LIT_battalionpriests 
+		}
+		prerequisite = { 
+			focus = LIT_ 
+		}
+	}
+
+	#Focus for Legacy of the Crusades
+	focus = {
+		id = LIT_legacyofthecrusades
+		icon = GFX_focus_LIT_legacyofcrusades
+		x = 33
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_godiswithus }
+	}
+
+	#Focus for Cult of Personality
+	focus = {
+		id = LIT_cultofpersonality
+		icon = GFX_focus_LIT_peronslaitycult
+		x = 29
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_godiswithus }
+	}
+
+	#Focus for A New Baltic Crusade
+	focus = {
+		id = LIT_anewbalticcrusade
+		icon = GFX_focus_LIT_newcrusade
+		x = 33
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_legacyofthecrusades }
+	}
+
+	#Focus for Priests in the Saugumas
+	focus = {
+		id = LIT_priestsinthesaugumas
+		icon = GFX_focus_LIT_priestsindp
+		x = 29
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_cultofpersonality }
+	}
+
+	#Focus for Move into Belarus
+	focus = {
+		id = LIT_moveintobelarus
+		icon = GFX_focus_LIT_attackbelarus
+		x = 32
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_anewbalticcrusade }
+	}
+
+	#Focus for Battalion-Priests
+	focus = {
+		id = LIT_battalionpriests
+		icon = GFX_focus_LIT_battlepriests
+		x = 30
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_priestsinthesaugumas }
+	}
+
+	#Focus for Retake Belarus
+	focus = {
+		id = LIT_retakebelarus
+		icon = GFX_goal_unknown
+		x = 41
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_legacyofthedneperbalts }
+	}
+
+	#Focus for Form a Dnepr Balt Identity
+	focus = {
+		id = LIT_formadneprbaltidentity
+		icon = GFX_goal_unknown
+		x = 41
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_retakebelarus }
+	}
+
+	#Focus for Grand Federation of Lithuania
+	focus = {
+		id = LIT_grandfederationoflithuania
+		icon = GFX_goal_unknown
+		x = 40
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_formadneprbaltidentity }
+	}
+
+	#Focus for Aid Latvian Pelekists!
+	focus = {
+		id = LIT_aidlatvianpelekists
+		icon = GFX_goal_unknown
+		x = 40
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_expandthemilitary }
+	}
+
+	#Focus for Clerical-Pelekism
+	focus = {
+		id = LIT_clericalpelekism
+		icon = GFX_focus_LIT_clericalpelekism
+		x = 33
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_christianlithuaniannationalism }
+	}
+
+	#Focus for The State Stable!
+	focus = {
+		id = LIT_thestatestable
+		icon = GFX_goal_unknown
+		x = 38
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LIT_aidlatvianpelekists 
+		}
+		prerequisite = { 
+			focus = LIT_formtheministryofpropaganda 
+		}
+		prerequisite = { 
+			focus = LIT_ 
+		}
+	}
+
+	#Focus for Award the Riflemen
+	focus = {
+		id = LIT_awardtheriflemen
+		icon = GFX_goal_unknown
+		x = 21
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_awardthearmy }
+	}
+
+	#Focus for Economic Growth
+	focus = {
+		id = LIT_economicgrowth
+		icon = GFX_goal_unknown
+		x = 24
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_specializetheministryofeconomics }
+	}
+
+	#Focus for Start to Hunt the Minorities
+	focus = {
+		id = LIT_starttohunttheminorities
+		icon = GFX_focus_LIT_huntminorities
+		x = 29
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_purgeeveryone }
+	}
+
+	#Focus for Pull out of Belarus
+	focus = {
+		id = LIT_pulloutofbelarus
+		icon = GFX_focus_LIT_pulloutofbelrus
+		x = 31
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_pulloutfromlatvia }
+	}
+
+	#Focus for Arm Lithuanians in Smolensk, Minsk and Latvia
+	focus = {
+		id = LIT_armlithuaniansinsmolenskminskandlatvia
+		icon = GFX_goal_unknown
+		x = 22
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_vytautasthegreatreborn }
+	}
+
+	#Focus for Relithunize the Poles
+	focus = {
+		id = LIT_relithunizethepoles
+		icon = GFX_goal_unknown
+		x = 26
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_ruralideals }
+	}
+
+	#Focus for Use GDL Nostalgia
+	focus = {
+		id = LIT_usegdlnostalgia
+		icon = GFX_goal_unknown
+		x = 26
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_relithunizethepoles }
+	}
+
+	#Focus for Legion of Foreign Lithuanians
+	focus = {
+		id = LIT_legionofforeignlithuanians
+		icon = GFX_goal_unknown
+		x = 22
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_armlithuaniansinsmolenskminskandlatvia }
+	}
+
+	#Focus for God is with us!
+	focus = {
+		id = LIT_godiswithus
+		icon = GFX_focus_LIT_godwithus
+		x = 31
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LIT_anationonlyforchristianlithuanians 
+		}
+		prerequisite = { 
+			focus = LIT_pulloutofbelarus 
+		}
+		prerequisite = { 
+			focus = LIT_clericalpelekism 
+		}
+		prerequisite = { 
+			focus = LIT_ 
+		}
+	}
+
+	#Focus for To the Death!
+	focus = {
+		id = LIT_tothedeath
+		icon = GFX_goal_unknown
+		x = 22
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_legionofforeignlithuanians }
+	}
+
+	#Focus for Specialize the Ministry of Economics
+	focus = {
+		id = LIT_specializetheministryofeconomics
+		icon = GFX_goal_unknown
+		x = 24
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_corporativisteconomics }
+	}
+
+	#Focus for Lithuania Great Again!
+	focus = {
+		id = LIT_lithuaniagreatagain
+		icon = GFX_goal_unknown
+		x = 24
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LIT_usegdlnostalgia 
+		}
+		prerequisite = { 
+			focus = LIT_tothedeath 
+		}
+		prerequisite = { 
+			focus = LIT_economicgrowth 
+		}
+		prerequisite = { 
+			focus = LIT_ 
+		}
+	}
+
+	#Focus for Tautos Vadas - Mironas
+	focus = {
+		id = LIT_tautosvadasmironas
+		icon = GFX_focus_LIT_tautosvadasmironas
+		x = 31
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+	}
+
+	#Focus for Purge Everyone!
+	focus = {
+		id = LIT_purgeeveryone
+		icon = GFX_focus_PRS_junger_deal_with_pelekists
+		x = 29
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_tautosvadasmironas }
+	}
+
+	#Focus for Christianize History
+	focus = {
+		id = LIT_christianizehistory
+		icon = GFX_focus_LIT_christinizehistory
+		x = 31
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_tautosvadasmironas }
+	}
+
+	#Focus for Strengthen the Church
+	focus = {
+		id = LIT_strengthenthechurch
+		icon = GFX_focus_LIT_strghtenchurch
+		x = 33
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_tautosvadasmironas }
+	}
+
+	#Focus for Christian-Lithuanian Nationalism
+	focus = {
+		id = LIT_christianlithuaniannationalism
+		icon = GFX_focus_LIT_christlithnationalism
+		x = 33
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_strengthenthechurch }
+	}
+
+	#Focus for Pull out from Latvia
+	focus = {
+		id = LIT_pulloutfromlatvia
+		icon = GFX_focus_LIT_pulloutoflatvia
+		x = 31
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_christianizehistory }
+	}
+
+	#Focus for A Nation Only for Christian Lithuanians!
+	focus = {
+		id = LIT_anationonlyforchristianlithuanians
+		icon = GFX_focus_LIT_nationforchristliths
+		x = 29
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_starttohunttheminorities }
+	}
+
+	#Focus for President Antanas Smetona
+	focus = {
+		id = LIT_presidentantanassmetona
+		icon = GFX_goal_unknown
+		x = 24
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+	}
+
+	#Focus for Purge the Left
+	focus = {
+		id = LIT_purgetheleft
+		icon = GFX_goal_unknown
+		x = 24
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_presidentantanassmetona }
+	}
+
+	#Focus for "Edit" the Education System
+	focus = {
+		id = LIT_edittheeducationsystem
+		icon = GFX_goal_unknown
+		x = 27
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_presidentantanassmetona }
+	}
+
+	#Focus for Ease Gun Laws
+	focus = {
+		id = LIT_easegunlaws
+		icon = GFX_goal_unknown
+		x = 21
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_awardtheriflemen }
+	}
+
+	#Focus for Lithuanian Nationalism
+	focus = {
+		id = LIT_lithuaniannationalism
+		icon = GFX_goal_unknown
+		x = 27
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_edittheeducationsystem }
+	}
+
+	#Focus for Historical Revisionalism
+	focus = {
+		id = LIT_historicalrevisionalism
+		icon = GFX_goal_unknown
+		x = 27
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_lithuaniannationalism }
+	}
+
+	#Focus for Guranteed Loyalty
+	focus = {
+		id = LIT_guranteedloyalty
+		icon = GFX_goal_unknown
+		x = 24
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_destroyvoldemaras }
+	}
+
+	#Focus for Vytautas the Great Reborn!
+	focus = {
+		id = LIT_vytautasthegreatreborn
+		icon = GFX_goal_unknown
+		x = 24
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LIT_guranteedloyalty 
+		}
+		prerequisite = { 
+			focus = LIT_historicalrevisionalism 
+		}
+		prerequisite = { 
+			focus = LIT_easegunlaws 
+		}
+		prerequisite = { 
+			focus = LIT_ 
+		}
+	}
+
+	#Focus for Corporativist Economics
+	focus = {
+		id = LIT_corporativisteconomics
+		icon = GFX_goal_unknown
+		x = 24
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_vytautasthegreatreborn }
+	}
+
+	#Focus for Rural ideals
+	focus = {
+		id = LIT_ruralideals
+		icon = GFX_goal_unknown
+		x = 26
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_vytautasthegreatreborn }
+	}
+
+	#Focus for Award the Army
+	focus = {
+		id = LIT_awardthearmy
+		icon = GFX_goal_unknown
+		x = 21
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_presidentantanassmetona }
+	}
+
+	#Focus for Destroy Voldemaras
+	focus = {
+		id = LIT_destroyvoldemaras
+		icon = GFX_goal_unknown
+		x = 24
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_purgetheleft }
+	}
+
+	#Focus for Duty for All!
+	focus = {
+		id = LIT_dutyforall
+		icon = GFX_goal_unknown
+		x = 35
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_encouragesocialismofduty }
+	}
+
+	#Focus for Baltification of the Lands
+	focus = {
+		id = LIT_baltificationofthelands
+		icon = GFX_goal_unknown
+		x = 38
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_getprussiatojoin }
+	}
+
+	#Focus for Economic Rise
+	focus = {
+		id = LIT_economicrise
+		icon = GFX_goal_unknown
+		x = 35
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_dutyforall }
+	}
+
+	#Focus for Encourage Socialism of Duty
+	focus = {
+		id = LIT_encouragesocialismofduty
+		icon = GFX_goal_unknown
+		x = 35
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_thestatestable }
+	}
+
+	#Focus for Politicize the Jaunalietuviai
+	focus = {
+		id = LIT_politicizethejaunalietuviai
+		icon = GFX_goal_unknown
+		x = 36
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_paganbias }
+	}
+
+	#Focus for The New Nationalist Generation!
+	focus = {
+		id = LIT_thenewnationalistgeneration
+		icon = GFX_goal_unknown
+		x = 37
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LIT_politicizethejaunalietuviai 
+		}
+		prerequisite = { 
+			focus = LIT_baltificationofthelands 
+		}
+		prerequisite = { 
+			focus = LIT_ 
+		}
+	}
+
+	#Focus for Legacy of the Dneper Balts
+	focus = {
+		id = LIT_legacyofthedneperbalts
+		icon = GFX_goal_unknown
+		x = 41
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_thestatestable }
+	}
+
+	#Focus for Curbing Unemployment
+	focus = {
+		id = LIT_curbingunemployment
+		icon = GFX_goal_unknown
+		x = 63
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LIT_towardswareconomy 
+		}
+		prerequisite = { 
+			focus = LIT_ourowncementandceramics 
+		}
+		prerequisite = { 
+			focus = LIT_ 
+		}
+	}
+
+	#Focus for Chamber of Agriculture
+	focus = {
+		id = LIT_chamberofagriculture
+		icon = GFX_goal_unknown
+		x = 58
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_nationalchamberofresources }
+	}
+
+	#Focus for National Retail Union
+	focus = {
+		id = LIT_nationalretailunion
+		icon = GFX_goal_unknown
+		x = 64
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_nationalizebanks }
+	}
+
+	#Focus for National Syndicates
+	focus = {
+		id = LIT_nationalsyndicates
+		icon = GFX_goal_unknown
+		x = 61
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_nationalchamberofindustry }
+	}
+
+	#Focus for National Chamber of Industry
+	focus = {
+		id = LIT_nationalchamberofindustry
+		icon = GFX_goal_unknown
+		x = 61
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_formtheeconomicchambers }
+	}
+
+	#Focus for Nationalize Key Industries
+	focus = {
+		id = LIT_nationalizekeyindustries
+		icon = GFX_goal_unknown
+		x = 58
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_thecomingcorporatestate }
+	}
+
+	#Focus for National Chamber of Resources
+	focus = {
+		id = LIT_nationalchamberofresources
+		icon = GFX_goal_unknown
+		x = 58
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_formtheeconomicchambers }
+	}
+
+	#Focus for Work for All!
+	focus = {
+		id = LIT_workforall
+		icon = GFX_goal_unknown
+		x = 74
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_movepeopleintocities }
+	}
+
+	#Focus for Our Own Cement and Ceramics!
+	focus = {
+		id = LIT_ourowncementandceramics
+		icon = GFX_goal_unknown
+		x = 58
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_chamberofagriculture }
+	}
+
+	#Focus for The Rich State
+	focus = {
+		id = LIT_therichstate
+		icon = GFX_goal_unknown
+		x = 53
+		y = 12
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LIT_antanasnoribtiore 
+		}
+		prerequisite = { 
+			focus = LIT_drob 
+		}
+		prerequisite = { 
+			focus = LIT_lietkis 
+		}
+		prerequisite = { 
+			focus = LIT_ 
+		}
+	}
+
+	#Focus for The Coming Corporate State
+	focus = {
+		id = LIT_thecomingcorporatestate
+		icon = GFX_goal_unknown
+		x = 61
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_thelithuanianeconomy }
+	}
+
+	#Focus for The Bourgeoisie Class
+	focus = {
+		id = LIT_thebourgeoisieclass
+		icon = GFX_goal_unknown
+		x = 56
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_decreasesafetyregulations }
+	}
+
+	#Focus for Materialistic Mentality
+	focus = {
+		id = LIT_materialisticmentality
+		icon = GFX_goal_unknown
+		x = 56
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_thebourgeoisieclass }
+	}
+
+	#Focus for Martial Society
+	focus = {
+		id = LIT_martialsociety
+		icon = GFX_goal_unknown
+		x = 71
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LIT_hiearchicalsociety 
+		}
+		prerequisite = { 
+			focus = LIT_masspublicspending 
+		}
+		prerequisite = { 
+			focus = LIT_ 
+		}
+	}
+
+	#Focus for Encourage Spiritualism over Materialism
+	focus = {
+		id = LIT_encouragespiritualismovermaterialism
+		icon = GFX_goal_unknown
+		x = 67
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LIT_stiprybidiaugsmo 
+		}
+		prerequisite = { 
+			focus = LIT_hiearchicalsociety 
+		}
+		prerequisite = { 
+			focus = LIT_ 
+		}
+	}
+
+	#Focus for Collectivist State
+	focus = {
+		id = LIT_collectiviststate
+		icon = GFX_goal_unknown
+		x = 77
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_thesocialiststate }
+	}
+
+	#Focus for The Lithuanian Economy
+	focus = {
+		id = LIT_thelithuanianeconomy
+		icon = GFX_goal_unknown
+		x = 64
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+	}
+
+	#Focus for The Capitalist State
+	focus = {
+		id = LIT_thecapitaliststate
+		icon = GFX_goal_unknown
+		x = 53
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_thelithuanianeconomy }
+	}
+
+	#Focus for Encourage the Formation of Lithuanian Companies
+	focus = {
+		id = LIT_encouragetheformationoflithuaniancompanies
+		icon = GFX_goal_unknown
+		x = 50
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_thecapitaliststate }
+	}
+
+	#Focus for Kolhoze System
+	focus = {
+		id = LIT_kolhozesystem
+		icon = GFX_goal_unknown
+		x = 77
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_thesocialistgem }
+	}
+
+	#Focus for A Home for All!
+	focus = {
+		id = LIT_ahomeforall
+		icon = GFX_goal_unknown
+		x = 75
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LIT_nationalizetheland 
+		}
+		prerequisite = { 
+			focus = LIT_workforall 
+		}
+	}
+
+	#Focus for Peasant's Society
+	focus = {
+		id = LIT_peasantssociety
+		icon = GFX_goal_unknown
+		x = 79
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LIT_nationalizetheland 
+		}
+		prerequisite = { 
+			focus = LIT_freeeducation 
+		}
+		prerequisite = { 
+			focus = LIT_ 
+		}
+	}
+
+	#Focus for Army-like People!
+	focus = {
+		id = LIT_armylikepeople
+		icon = GFX_goal_unknown
+		x = 71
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_aryansocialism }
+	}
+
+	#Focus for Hiearchical Society
+	focus = {
+		id = LIT_hiearchicalsociety
+		icon = GFX_goal_unknown
+		x = 69
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_antiindividualistic }
+	}
+
+	#Focus for Mass Public Spending
+	focus = {
+		id = LIT_masspublicspending
+		icon = GFX_goal_unknown
+		x = 72
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_antiequality }
+	}
+
+	#Focus for Stiprybė iš Džiaugsmo
+	focus = {
+		id = LIT_stiprybidiaugsmo
+		icon = GFX_goal_unknown
+		x = 66
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_anticollectivism }
+	}
+
+	#Focus for The Red Military Complex
+	focus = {
+		id = LIT_theredmilitarycomplex
+		icon = GFX_goal_unknown
+		x = 75
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_thesocialistgem }
+	}
+
+	#Focus for Planned Economy
+	focus = {
+		id = LIT_plannedeconomy
+		icon = GFX_goal_unknown
+		x = 79
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_thesocialistgem }
+	}
+
+	#Focus for Pure Society!
+	focus = {
+		id = LIT_puresociety
+		icon = GFX_goal_unknown
+		x = 67
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_aryansocialism }
+	}
+
+	#Focus for United as a Shieldwall!
+	focus = {
+		id = LIT_unitedasashieldwall
+		icon = GFX_goal_unknown
+		x = 69
+		y = 12
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LIT_banusury 
+		}
+		prerequisite = { 
+			focus = LIT_armylikepeople 
+		}
+		prerequisite = { 
+			focus = LIT_puresociety 
+		}
+		prerequisite = { 
+			focus = LIT_ 
+		}
+	}
+
+	#Focus for Towards War Economy
+	focus = {
+		id = LIT_towardswareconomy
+		icon = GFX_goal_unknown
+		x = 61
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_nationalsyndicates }
+	}
+
+	#Focus for Nationalize Banks
+	focus = {
+		id = LIT_nationalizebanks
+		icon = GFX_goal_unknown
+		x = 64
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_nationalchamberofservices }
+	}
+
+	#Focus for Lithuanian Chamber of Infrastructure
+	focus = {
+		id = LIT_lithuanianchamberofinfrastructure
+		icon = GFX_goal_unknown
+		x = 59
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LIT_nationalretailunion 
+		}
+		prerequisite = { 
+			focus = LIT_ourowncementandceramics 
+		}
+		prerequisite = { 
+			focus = LIT_ 
+		}
+	}
+
+	#Focus for National Chamber of Services
+	focus = {
+		id = LIT_nationalchamberofservices
+		icon = GFX_goal_unknown
+		x = 64
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_formtheeconomicchambers }
+	}
+
+	#Focus for The Beauty of Struggle
+	focus = {
+		id = LIT_thebeautyofstruggle
+		icon = GFX_goal_unknown
+		x = 66
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_lietuvikassocializmas }
+	}
+
+	#Focus for Lietūkis
+	focus = {
+		id = LIT_lietkis
+		icon = GFX_goal_unknown
+		x = 53
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_capitalisticinspirations }
+	}
+
+	#Focus for Vadoprincipas
+	focus = {
+		id = LIT_vadoprincipas
+		icon = GFX_goal_unknown
+		x = 69
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_lietuvikassocializmas }
+	}
+
+	#Focus for Anti-Collectivism
+	focus = {
+		id = LIT_anticollectivism
+		icon = GFX_goal_unknown
+		x = 66
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_thebeautyofstruggle }
+	}
+
+	#Focus for Anti-Individualistic
+	focus = {
+		id = LIT_antiindividualistic
+		icon = GFX_goal_unknown
+		x = 69
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_vadoprincipas }
+	}
+
+	#Focus for Anti-Equality
+	focus = {
+		id = LIT_antiequality
+		icon = GFX_goal_unknown
+		x = 72
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_spiritofduty }
+	}
+
+	#Focus for Move People into Cities!
+	focus = {
+		id = LIT_movepeopleintocities
+		icon = GFX_goal_unknown
+		x = 74
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_massindustrilization }
+	}
+
+	#Focus for Aryan Socialism!
+	focus = {
+		id = LIT_aryansocialism
+		icon = GFX_goal_unknown
+		x = 69
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LIT_encouragespiritualismovermaterialism 
+		}
+		prerequisite = { 
+			focus = LIT_martialsociety 
+		}
+		prerequisite = { 
+			focus = LIT_ 
+		}
+	}
+
+	#Focus for Capitalistic Inspirations
+	focus = {
+		id = LIT_capitalisticinspirations
+		icon = GFX_goal_unknown
+		x = 53
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LIT_cultureofwork 
+		}
+		prerequisite = { 
+			focus = LIT_entrepreneursledeconomy 
+		}
+		prerequisite = { 
+			focus = LIT_ 
+		}
+	}
+
+	#Focus for Antanas Nori Būti Ore
+	focus = {
+		id = LIT_antanasnoribtiore
+		icon = GFX_goal_unknown
+		x = 51
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_capitalisticinspirations }
+	}
+
+	#Focus for Drobė
+	focus = {
+		id = LIT_drob
+		icon = GFX_goal_unknown
+		x = 55
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_capitalisticinspirations }
+	}
+
+	#Focus for To Autarky and Beyond!
+	focus = {
+		id = LIT_toautarkyandbeyond
+		icon = GFX_goal_unknown
+		x = 61
+		y = 12
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LIT_lithuanianchamberofinfrastructure 
+		}
+		prerequisite = { 
+			focus = LIT_curbingunemployment 
+		}
+		prerequisite = { 
+			focus = LIT_ 
+		}
+	}
+
+	#Focus for Form the Economic Chambers
+	focus = {
+		id = LIT_formtheeconomicchambers
+		icon = GFX_goal_unknown
+		x = 61
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LIT_bantradeunions 
+		}
+		prerequisite = { 
+			focus = LIT_destroyforeigninfluence 
+		}
+		prerequisite = { 
+			focus = LIT_nationalizekeyindustries 
+		}
+	}
+
+	#Focus for Destroy Foreign Influence
+	focus = {
+		id = LIT_destroyforeigninfluence
+		icon = GFX_goal_unknown
+		x = 64
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_thecomingcorporatestate }
+	}
+
+	#Focus for Ban Trade Unions
+	focus = {
+		id = LIT_bantradeunions
+		icon = GFX_goal_unknown
+		x = 61
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_thecomingcorporatestate }
+	}
+
+	#Focus for Lietuviškas Socializmas
+	focus = {
+		id = LIT_lietuvikassocializmas
+		icon = GFX_goal_unknown
+		x = 69
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_thelithuanianeconomy }
+	}
+
+	#Focus for The Socialist State
+	focus = {
+		id = LIT_thesocialiststate
+		icon = GFX_goal_unknown
+		x = 77
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_thelithuanianeconomy }
+	}
+
+	#Focus for Encourage Family Buisnesses
+	focus = {
+		id = LIT_encouragefamilybuisnesses
+		icon = GFX_goal_unknown
+		x = 50
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_driveforproduction }
+	}
+
+	#Focus for Entrepreneurs-Led Economy
+	focus = {
+		id = LIT_entrepreneursledeconomy
+		icon = GFX_goal_unknown
+		x = 51
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LIT_encouragefamilybuisnesses 
+		}
+		prerequisite = { 
+			focus = LIT_powertothecompanies 
+		}
+		prerequisite = { 
+			focus = LIT_ 
+		}
+	}
+
+	#Focus for Culture of Work
+	focus = {
+		id = LIT_cultureofwork
+		icon = GFX_goal_unknown
+		x = 55
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LIT_materialisticmentality 
+		}
+		prerequisite = { 
+			focus = LIT_powertothecompanies 
+		}
+		prerequisite = { 
+			focus = LIT_ 
+		}
+	}
+
+	#Focus for Weaken Welfare
+	focus = {
+		id = LIT_weakenwelfare
+		icon = GFX_goal_unknown
+		x = 53
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_thecapitaliststate }
+	}
+
+	#Focus for Laissez-faire Economics
+	focus = {
+		id = LIT_laissezfaireeconomics
+		icon = GFX_goal_unknown
+		x = 53
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_weakenwelfare }
+	}
+
+	#Focus for Spirit of Duty
+	focus = {
+		id = LIT_spiritofduty
+		icon = GFX_goal_unknown
+		x = 72
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_lietuvikassocializmas }
+	}
+
+	#Focus for Power to the Companies!
+	focus = {
+		id = LIT_powertothecompanies
+		icon = GFX_goal_unknown
+		x = 53
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_laissezfaireeconomics }
+	}
+
+	#Focus for Decrease Safety Regulations
+	focus = {
+		id = LIT_decreasesafetyregulations
+		icon = GFX_goal_unknown
+		x = 56
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_thecapitaliststate }
+	}
+
+	#Focus for Drive for Production
+	focus = {
+		id = LIT_driveforproduction
+		icon = GFX_goal_unknown
+		x = 50
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_encouragetheformationoflithuaniancompanies }
+	}
+
+	#Focus for Corruptionless Society
+	focus = {
+		id = LIT_corruptionlesssociety
+		icon = GFX_goal_unknown
+		x = 80
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_equalityforall }
+	}
+
+	#Focus for Equality for All!
+	focus = {
+		id = LIT_equalityforall
+		icon = GFX_goal_unknown
+		x = 80
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_thesocialiststate }
+	}
+
+	#Focus for Mass Industrilization
+	focus = {
+		id = LIT_massindustrilization
+		icon = GFX_goal_unknown
+		x = 74
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_thesocialiststate }
+	}
+
+	#Focus for The Socialist Gem
+	focus = {
+		id = LIT_thesocialistgem
+		icon = GFX_goal_unknown
+		x = 77
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LIT_ahomeforall 
+		}
+		prerequisite = { 
+			focus = LIT_peasantssociety 
+		}
+		prerequisite = { 
+			focus = LIT_ 
+		}
+	}
+
+	#Focus for Lower Military Funding
+	focus = {
+		id = LIT_lowermilitaryfunding
+		icon = GFX_goal_unknown
+		x = 77
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_collectiviststate }
+	}
+
+	#Focus for Nationalize the Land
+	focus = {
+		id = LIT_nationalizetheland
+		icon = GFX_goal_unknown
+		x = 77
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_lowermilitaryfunding }
+	}
+
+	#Focus for Ban Usury!
+	focus = {
+		id = LIT_banusury
+		icon = GFX_goal_unknown
+		x = 69
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_aryansocialism }
+	}
+
+	#Focus for Spread the Revoliution Outwards!
+	focus = {
+		id = LIT_spreadtherevoliutionoutwards
+		icon = GFX_goal_unknown
+		x = 77
+		y = 12
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LIT_theredmilitarycomplex 
+		}
+		prerequisite = { 
+			focus = LIT_kolhozesystem 
+		}
+		prerequisite = { 
+			focus = LIT_plannedeconomy 
+		}
+		prerequisite = { 
+			focus = LIT_ 
+		}
+	}
+
+	#Focus for The Baltic Legion
+	focus = {
+		id = LIT_thebalticlegion
+		icon = GFX_goal_unknown
+		x = 38
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_thestatestable }
+	}
+
+	#Focus for Pagan Bias
+	focus = {
+		id = LIT_paganbias
+		icon = GFX_goal_unknown
+		x = 36
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_economicrise }
+	}
+
+	#Focus for Expand the Military
+	focus = {
+		id = LIT_expandthemilitary
+		icon = GFX_goal_unknown
+		x = 40
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_purgeanyonenotpartoftheperknininkai }
+	}
+
+	#Focus for Form the Ministry of Propaganda
+	focus = {
+		id = LIT_formtheministryofpropaganda
+		icon = GFX_goal_unknown
+		x = 36
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_fvskoCPL }
+	}
+
+	#Focus for Ban Usury
+	focus = {
+		id = LIT_banusury
+		icon = GFX_goal_unknown
+		x = 36
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_declareberanskisanationalhero }
+	}
+
+	#Focus for Purge anyone not part of the Perkūnininkai
+	focus = {
+		id = LIT_purgeanyonenotpartoftheperknininkai
+		icon = GFX_goal_unknown
+		x = 40
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_kunigaiktisvisuomis }
+	}
+
+	#Focus for Create Aistija
+	focus = {
+		id = LIT_createaistija
+		icon = GFX_goal_unknown
+		x = 38
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_thebalticlegion }
+	}
+
+	#Focus for Samogitian Autonomy
+	focus = {
+		id = LIT_samogitianautonomy
+		icon = GFX_goal_unknown
+		x = 40
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_grandfederationoflithuania }
+	}
+
+	#Focus for Free the Prussian Lithuanians!
+	focus = {
+		id = LIT_freetheprussianlithuanians
+		icon = GFX_goal_unknown
+		x = 19
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_prepareforancampaign }
+	}
+
+	#Focus for Take the Northern Lands
+	focus = {
+		id = LIT_takethenorthernlands
+		icon = GFX_goal_unknown
+		x = 15
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_prepareforancampaign }
+	}
+
+	#Focus for Invade Belarus
+	focus = {
+		id = LIT_invadebelarus
+		icon = GFX_goal_unknown
+		x = 11
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_prepareforancampaign }
+	}
+
+	#Focus for Economic Boom
+	focus = {
+		id = LIT_economicboom
+		icon = GFX_goal_unknown
+		x = 15
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LIT_industrialisation 
+			focus = LIT_ruralvalues 
+		}
+	}
+
+	#Focus for Industrialisation
+	focus = {
+		id = LIT_industrialisation
+		icon = GFX_goal_unknown
+		x = 16
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_secularstate }
+		mutually_exclusive = { focus = LIT_ruralvalues }
+	}
+
+	#Focus for Rural Values
+	focus = {
+		id = LIT_ruralvalues
+		icon = GFX_goal_unknown
+		x = 14
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_secularstate }
+		mutually_exclusive = { focus = LIT_industrialisation }
+	}
+
+	#Focus for Fanatical Army
+	focus = {
+		id = LIT_fanaticalarmy
+		icon = GFX_goal_unknown
+		x = 19
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_formthelithuanianforeignlegion }
+	}
+
+	#Focus for Indoctrinate the Youth
+	focus = {
+		id = LIT_indoctrinatetheyouth
+		icon = GFX_goal_unknown
+		x = 11
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_kirposjaunimas }
+	}
+
+	#Focus for Secular State
+	focus = {
+		id = LIT_secularstate
+		icon = GFX_goal_unknown
+		x = 15
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+	}
+
+	#Focus for The Army with a State
+	focus = {
+		id = LIT_thearmywithastate
+		icon = GFX_goal_unknown
+		x = 15
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LIT_theredscare 
+		}
+		prerequisite = { 
+			focus = LIT_thenewconstitution 
+		}
+		prerequisite = { 
+			focus = LIT_declaremobilization 
+		}
+		prerequisite = { 
+			focus = LIT_ 
+		}
+	}
+
+	#Focus for Škirpos Jaunimas
+	focus = {
+		id = LIT_kirposjaunimas
+		icon = GFX_goal_unknown
+		x = 11
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_thearmywithastate }
+	}
+
+	#Focus for Support for Minority Rights
+	focus = {
+		id = LIT_supportforminorityrights
+		icon = GFX_goal_unknown
+		x = 17
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_generalkirpa }
+		mutually_exclusive = { focus = LIT_interveneinbelarus }
+	}
+
+	#Focus for The Old Guard
+	focus = {
+		id = LIT_theoldguard
+		icon = GFX_goal_unknown
+		x = 17
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LIT_supportforminorityrights 
+			focus = LIT_interveneinbelarus 
+		}
+	}
+
+	#Focus for Farmer President
+	focus = {
+		id = LIT_farmerpresident
+		icon = GFX_goal_unknown
+		x = 2
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_thedemocraticstate }
+		mutually_exclusive = { focus = LIT_thepresidentwholivesasapeasant }
+	}
+
+	#Focus for Declare Mobilization
+	focus = {
+		id = LIT_declaremobilization
+		icon = GFX_goal_unknown
+		x = 15
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_allowparamilitariesforallies }
+	}
+
+	#Focus for Intervene in Belarus
+	focus = {
+		id = LIT_interveneinbelarus
+		icon = GFX_goal_unknown
+		x = 13
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_generalkirpa }
+		mutually_exclusive = { focus = LIT_supportforminorityrights }
+	}
+
+	#Focus for Disband the Seimas
+	focus = {
+		id = LIT_disbandtheseimas
+		icon = GFX_goal_unknown
+		x = 11
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_qaKrvgsF }
+	}
+
+	#Focus for The New Constitution
+	focus = {
+		id = LIT_thenewconstitution
+		icon = GFX_goal_unknown
+		x = 11
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_disbandtheseimas }
+	}
+
+	#Focus for Encourage Lithuanian Nationalism
+	focus = {
+		id = LIT_encouragelithuaniannationalism
+		icon = GFX_goal_unknown
+		x = 19
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_encouragemilitarism }
+	}
+
+	#Focus for The Red Scare
+	focus = {
+		id = LIT_theredscare
+		icon = GFX_goal_unknown
+		x = 19
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_encouragelithuaniannationalism }
+	}
+
+	#Focus for General Škirpa
+	focus = {
+		id = LIT_generalkirpa
+		icon = GFX_goal_unknown
+		x = 15
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+	}
+
+	#Focus for Purge the Left
+	focus = {
+		id = LIT_purgetheleft
+		icon = GFX_goal_unknown
+		x = 11
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_generalkirpa }
+	}
+
+	#Focus for Pelekist and Reactionary Allies
+	focus = {
+		id = LIT_pelekistandreactionaryallies
+		icon = GFX_goal_unknown
+		x = 15
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_generalkirpa }
+	}
+
+	#Focus for Encourage Militarism
+	focus = {
+		id = LIT_encouragemilitarism
+		icon = GFX_goal_unknown
+		x = 19
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_generalkirpa }
+	}
+
+	#Focus for Allow Paramilitaries for Allies
+	focus = {
+		id = LIT_allowparamilitariesforallies
+		icon = GFX_goal_unknown
+		x = 15
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_pelekistandreactionaryallies }
+	}
+
+	#Focus for Grant Power to the Younger Officers
+	focus = {
+		id = LIT_grantpowertotheyoungerofficers
+		icon = GFX_goal_unknown
+		x = 13
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LIT_interveneinbelarus 
+			focus = LIT_supportforminorityrights 
+		}
+	}
+
+	#Focus for Form the Lithuanian Foreign Legion
+	focus = {
+		id = LIT_formthelithuanianforeignlegion
+		icon = GFX_goal_unknown
+		x = 19
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_thearmywithastate }
+	}
+
+	#Focus for Prepare for an Campaign
+	focus = {
+		id = LIT_prepareforancampaign
+		icon = GFX_goal_unknown
+		x = 15
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LIT_fanaticalarmy 
+		}
+		prerequisite = { 
+			focus = LIT_economicboom 
+		}
+		prerequisite = { 
+			focus = LIT_indoctrinatetheyouth 
+		}
+		prerequisite = { 
+			focus = LIT_ 
+		}
+	}
+
+	#Focus for Glory Restored!
+	focus = {
+		id = LIT_gloryrestored
+		icon = GFX_goal_unknown
+		x = 15
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LIT_freetheprussianlithuanians 
+		}
+		prerequisite = { 
+			focus = LIT_invadebelarus 
+		}
+		prerequisite = { 
+			focus = LIT_takethenorthernlands 
+		}
+		prerequisite = { 
+			focus = LIT_ 
+		}
+	}
+
+	#Focus for The President Who Lives as a Peasant
+	focus = {
+		id = LIT_thepresidentwholivesasapeasant
+		icon = GFX_goal_unknown
+		x = 8
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_thedemocraticstate }
+		mutually_exclusive = { focus = LIT_farmerpresident }
+	}
+
+	#Focus for Industrilization
+	focus = {
+		id = LIT_industrilization
+		icon = GFX_goal_unknown
+		x = 6
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_thepresidentwholivesasapeasant }
+	}
+
+	#Focus for Free Speach for All...
+	focus = {
+		id = LIT_freespeachforall
+		icon = GFX_goal_unknown
+		x = 9
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_thepresidentwholivesasapeasant }
+	}
+
+	#Focus for Fight Corruption!
+	focus = {
+		id = LIT_fightcorruption
+		icon = GFX_goal_unknown
+		x = 9
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_buttheright }
+	}
+
+	#Focus for Reverse the Interventionalism
+	focus = {
+		id = LIT_reversetheinterventionalism
+		icon = GFX_goal_unknown
+		x = 6
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_industrilization }
+	}
+
+	#Focus for State-Aided Modernization
+	focus = {
+		id = LIT_stateaidedmodernization
+		icon = GFX_goal_unknown
+		x = 6
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_reversetheinterventionalism }
+	}
+
+	#Focus for The Land Without Corruption
+	focus = {
+		id = LIT_thelandwithoutcorruption
+		icon = GFX_goal_unknown
+		x = 7
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LIT_fightcorruption 
+		}
+		prerequisite = { 
+			focus = LIT_stateaidedmodernization 
+		}
+		prerequisite = { 
+			focus = LIT_ 
+		}
+	}
+
+	#Focus for A Example of Democracy!
+	focus = {
+		id = LIT_aexampleofdemocracy
+		icon = GFX_goal_unknown
+		x = 5
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LIT_apatrioticconservativestate 
+			focus = LIT_thelandwithoutcorruption 
+		}
+	}
+
+	#Focus for Encourage Agriculturalism
+	focus = {
+		id = LIT_encourageagriculturalism
+		icon = GFX_goal_unknown
+		x = 1
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_farmerpresident }
+	}
+
+	#Focus for Encourage Christian Values
+	focus = {
+		id = LIT_encouragechristianvalues
+		icon = GFX_goal_unknown
+		x = 1
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_encourageagriculturalism }
+	}
+
+	#Focus for Aid Ulmanis for Gurantees
+	focus = {
+		id = LIT_aidulmanisforgurantees
+		icon = GFX_goal_unknown
+		x = 4
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_defensiveinterventionalism }
+	}
+
+	#Focus for Attempt to Influence Further Into Russia...
+	focus = {
+		id = LIT_attempttoinfluencefurtherintorussia
+		icon = GFX_goal_unknown
+		x = 4
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_aidulmanisforgurantees }
+	}
+
+	#Focus for The Democratic State
+	focus = {
+		id = LIT_thedemocraticstate
+		icon = GFX_goal_unknown
+		x = 5
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+	}
+
+	#Focus for Defensive Interventionalism
+	focus = {
+		id = LIT_defensiveinterventionalism
+		icon = GFX_goal_unknown
+		x = 4
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_farmerpresident }
+	}
+
+	#Focus for Ban the Perkūnininkai
+	focus = {
+		id = LIT_bantheperknininkai
+		icon = GFX_goal_unknown
+		x = 1
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_encouragechristianvalues }
+	}
+
+	#Focus for A Patriotic Conservative State
+	focus = {
+		id = LIT_apatrioticconservativestate
+		icon = GFX_goal_unknown
+		x = 3
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LIT_attempttoinfluencefurtherintorussia 
+		}
+		prerequisite = { 
+			focus = LIT_bantheperknininkai 
+		}
+		prerequisite = { 
+			focus = LIT_ 
+		}
+	}
+
+	#Focus for ...But the Right
+	focus = {
+		id = LIT_buttheright
+		icon = GFX_goal_unknown
+		x = 9
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_freespeachforall }
+	}
+
+	#Focus for Free Education!
+	focus = {
+		id = LIT_freeeducation
+		icon = GFX_goal_unknown
+		x = 80
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_corruptionlesssociety }
+	}
+
+	#Focus for Offensive Doctrine
+	focus = {
+		id = LIT_offensivedoctrine
+		icon = GFX_goal_unknown
+		x = 19
+		y = 14
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_lietuvoskariuomen }
+		mutually_exclusive = { focus = LIT_defensivedoctrine }
+	}
+
+	#Focus for Mass Artillery Fire
+	focus = {
+		id = LIT_massartilleryfire
+		icon = GFX_goal_unknown
+		x = 12
+		y = 15
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LIT_offensivedoctrine 
+			focus = LIT_defensivedoctrine 
+		}
+		mutually_exclusive = { 
+			focus = LIT_mobiledoctrineii 
+		}
+		mutually_exclusive = { 
+			focus = LIT_trenchwarfare 
+		}
+		mutually_exclusive = { 
+			focus = LIT_ 
+		}
+	}
+
+	#Focus for End the ANBO Monpoly
+	focus = {
+		id = LIT_endtheanbomonpoly
+		icon = GFX_goal_unknown
+		x = 37
+		y = 14
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_lietuvosoropajgos }
+		mutually_exclusive = { focus = LIT_grantanbomoreprivledges }
+	}
+
+	#Focus for Grant ANBO More Privledges
+	focus = {
+		id = LIT_grantanbomoreprivledges
+		icon = GFX_goal_unknown
+		x = 41
+		y = 14
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_lietuvosoropajgos }
+		mutually_exclusive = { focus = LIT_endtheanbomonpoly }
+	}
+
+	#Focus for Import Foreign Models
+	focus = {
+		id = LIT_importforeignmodels
+		icon = GFX_goal_unknown
+		x = 35
+		y = 15
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_endtheanbomonpoly }
+		mutually_exclusive = { focus = LIT_encouragelithuanianmadeplanes }
+	}
+
+	#Focus for Encourage Lithuanian Made Planes
+	focus = {
+		id = LIT_encouragelithuanianmadeplanes
+		icon = GFX_goal_unknown
+		x = 37
+		y = 15
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_endtheanbomonpoly }
+		mutually_exclusive = { focus = LIT_importforeignmodels }
+	}
+
+	#Focus for Focus on CAS
+	focus = {
+		id = LIT_focusoncas
+		icon = GFX_goal_unknown
+		x = 39
+		y = 17
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LIT_selllithuanianaircraftstoforeigners 
+			focus = LIT_ 
+		}
+		mutually_exclusive = { 
+			focus = LIT_endtheanbomonpoly 
+		}
+		mutually_exclusive = { 
+			focus = LIT_endtheanbomonpoly 
+		}
+		mutually_exclusive = { 
+			focus = LIT_ 
+		}
+	}
+
+	#Focus for Focus on Fighters
+	focus = {
+		id = LIT_focusonfighters
+		icon = GFX_goal_unknown
+		x = 37
+		y = 17
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LIT_selllithuanianaircraftstoforeigners 
+			focus = LIT_importforeignmodels 
+		}
+		mutually_exclusive = { focus = LIT_focusoncas }
+	}
+
+	#Focus for Lithuanians in the air!
+	focus = {
+		id = LIT_lithuaniansintheair
+		icon = GFX_goal_unknown
+		x = 39
+		y = 18
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LIT_focusonfighters 
+			focus = LIT_focusoncas 
+			focus = LIT_focusonbombers 
+		}
+	}
+
+	#Focus for Start Mass-Producement and Export
+	focus = {
+		id = LIT_startmassproducementandexport
+		icon = GFX_goal_unknown
+		x = 41
+		y = 16
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_lithuanianquality }
+	}
+
+	#Focus for Focus on Bombers
+	focus = {
+		id = LIT_focusonbombers
+		icon = GFX_goal_unknown
+		x = 41
+		y = 17
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_startmassproducementandexport }
+		mutually_exclusive = { 
+			focus = LIT_focusoncas 
+			focus = LIT_ 
+		}
+	}
+
+	#Focus for Air Doctrine Focus I
+	focus = {
+		id = LIT_airdoctrinefocusi
+		icon = GFX_goal_unknown
+		x = 39
+		y = 15
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_lietuvosoropajgos }
+	}
+
+	#Focus for Air Doctrine Focus II
+	focus = {
+		id = LIT_airdoctrinefocusii
+		icon = GFX_goal_unknown
+		x = 39
+		y = 16
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_airdoctrinefocusi }
+	}
+
+	#Focus for Defend the Sea!
+	focus = {
+		id = LIT_defendthesea
+		icon = GFX_goal_unknown
+		x = 31
+		y = 19
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_thesmallfleet }
+	}
+
+	#Focus for Modernize the Ship "Prezidentas Antanas Smetona"
+	focus = {
+		id = LIT_modernizetheshipprezidentasantanassmetona
+		icon = GFX_goal_unknown
+		x = 32
+		y = 16
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_leaveitasitis }
+	}
+
+	#Focus for The Small Fleet
+	focus = {
+		id = LIT_thesmallfleet
+		icon = GFX_goal_unknown
+		x = 31
+		y = 18
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_buymoredestroyers }
+	}
+
+	#Focus for Buy Foreign Submarines
+	focus = {
+		id = LIT_buyforeignsubmarines
+		icon = GFX_goal_unknown
+		x = 27
+		y = 18
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_lithuaniansubmarinefleet }
+		mutually_exclusive = { focus = LIT_makelithuaniansubmarines }
+	}
+
+	#Focus for Make Lithuanian Submarines!
+	focus = {
+		id = LIT_makelithuaniansubmarines
+		icon = GFX_goal_unknown
+		x = 29
+		y = 18
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_lithuaniansubmarinefleet }
+		mutually_exclusive = { focus = LIT_buyforeignsubmarines }
+	}
+
+	#Focus for Underwater Attack!
+	focus = {
+		id = LIT_underwaterattack
+		icon = GFX_goal_unknown
+		x = 27
+		y = 19
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LIT_buyforeignsubmarines 
+			focus = LIT_makelithuaniansubmarines 
+		}
+	}
+
+	#Focus for Leave it as it is
+	focus = {
+		id = LIT_leaveitasitis
+		icon = GFX_goal_unknown
+		x = 32
+		y = 15
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_theprussiandeal }
+		mutually_exclusive = { focus = LIT_reformthenavy }
+	}
+
+	#Focus for Experts from Prussia
+	focus = {
+		id = LIT_expertsfromprussia
+		icon = GFX_goal_unknown
+		x = 28
+		y = 16
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_reformthenavy }
+	}
+
+	#Focus for Create an Military port
+	focus = {
+		id = LIT_createanmilitaryport
+		icon = GFX_goal_unknown
+		x = 26
+		y = 16
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_reformthenavy }
+	}
+
+	#Focus for Raid German Strongholds!
+	focus = {
+		id = LIT_raidgermanstrongholds
+		icon = GFX_goal_unknown
+		x = 18
+		y = 17
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_aidlithuaniansinbelarus }
+	}
+
+	#Focus for Radical Interventionalism
+	focus = {
+		id = LIT_radicalinterventionalism
+		icon = GFX_goal_unknown
+		x = 18
+		y = 18
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_raidgermanstrongholds }
+	}
+
+	#Focus for Lion of Offense!
+	focus = {
+		id = LIT_lionofoffense
+		icon = GFX_goal_unknown
+		x = 20
+		y = 19
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LIT_radicalinterventionalism 
+		}
+		prerequisite = { 
+			focus = LIT_lightningattacks 
+		}
+		prerequisite = { 
+			focus = LIT_ 
+		}
+	}
+
+	#Focus for Lithuanian Tanks!
+	focus = {
+		id = LIT_lithuaniantanks
+		icon = GFX_goal_unknown
+		x = 20
+		y = 17
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_lithuanianstormtroopers }
+		mutually_exclusive = { focus = LIT_importgermantanks }
+	}
+
+	#Focus for Import German Tanks
+	focus = {
+		id = LIT_importgermantanks
+		icon = GFX_goal_unknown
+		x = 24
+		y = 17
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_lithuanianstormtroopers }
+		mutually_exclusive = { focus = LIT_lithuaniantanks }
+	}
+
+	#Focus for Lightning Attacks!
+	focus = {
+		id = LIT_lightningattacks
+		icon = GFX_goal_unknown
+		x = 22
+		y = 18
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LIT_lithuaniantanks 
+			focus = LIT_importgermantanks 
+		}
+	}
+
+	#Focus for Aid Lithuanians in Belarus!
+	focus = {
+		id = LIT_aidlithuaniansinbelarus
+		icon = GFX_goal_unknown
+		x = 18
+		y = 16
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_aidthebalticpartisans }
+	}
+
+	#Focus for Mobile Doctrine II
+	focus = {
+		id = LIT_mobiledoctrineii
+		icon = GFX_goal_unknown
+		x = 16
+		y = 16
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_mobiledoctrine }
+		mutually_exclusive = { 
+			focus = LIT_trenchwarfare 
+		}
+		mutually_exclusive = { 
+			focus = LIT_massartilleryfire 
+		}
+	}
+
+	#Focus for Grant Power to the Lithuanian Riflemen
+	focus = {
+		id = LIT_grantpowertothelithuanianriflemen
+		icon = GFX_goal_unknown
+		x = 6
+		y = 16
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_contractcompaniestoaidthearmy }
+	}
+
+	#Focus for Modern Lithuanian Equipment
+	focus = {
+		id = LIT_modernlithuanianequipment
+		icon = GFX_goal_unknown
+		x = 5
+		y = 17
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_grantpowertothelithuanianriflemen }
+		mutually_exclusive = { focus = LIT_importforeignequipment }
+	}
+
+	#Focus for Prepare for Partisan Warfare
+	focus = {
+		id = LIT_prepareforpartisanwarfare
+		icon = GFX_goal_unknown
+		x = 6
+		y = 18
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LIT_importforeignequipment 
+			focus = LIT_modernlithuanianequipment 
+		}
+	}
+
+	#Focus for Lion of Defence!
+	focus = {
+		id = LIT_lionofdefence
+		icon = GFX_goal_unknown
+		x = 7
+		y = 19
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LIT_fortsontheprussianborder 
+		}
+		prerequisite = { 
+			focus = LIT_prepareforpartisanwarfare 
+		}
+		prerequisite = { 
+			focus = LIT_ 
+		}
+	}
+
+	#Focus for The Pride of Lithuania!
+	focus = {
+		id = LIT_theprideoflithuania
+		icon = GFX_goal_unknown
+		x = 13
+		y = 20
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LIT_lionofdefence 
+			focus = LIT_lionofoffense 
+		}
+	}
+
+	#Focus for Lithuanian Stormtroopers!
+	focus = {
+		id = LIT_lithuanianstormtroopers
+		icon = GFX_goal_unknown
+		x = 22
+		y = 16
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_preparetomotorizethearmy }
+	}
+
+	#Focus for Aid the Baltic Partisans!
+	focus = {
+		id = LIT_aidthebalticpartisans
+		icon = GFX_goal_unknown
+		x = 18
+		y = 15
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_offensivedoctrine }
+	}
+
+	#Focus for All Arms in Lithuania!
+	focus = {
+		id = LIT_allarmsinlithuania
+		icon = GFX_goal_unknown
+		x = 10
+		y = 17
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LIT_offensivedoctrine 
+			focus = LIT_defensivedoctrine 
+		}
+	}
+
+	#Focus for Trench Warfare II
+	focus = {
+		id = LIT_trenchwarfareii
+		icon = GFX_goal_unknown
+		x = 8
+		y = 16
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_trenchwarfare }
+	}
+
+	#Focus for Mass Artillery II
+	focus = {
+		id = LIT_massartilleryii
+		icon = GFX_goal_unknown
+		x = 12
+		y = 16
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_massartilleryfire }
+	}
+
+	#Focus for Prolong the Russian Civil War
+	focus = {
+		id = LIT_prolongtherussiancivilwar
+		icon = GFX_goal_unknown
+		x = 14
+		y = 17
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LIT_offensivedoctrine 
+			focus = LIT_defensivedoctrine 
+		}
+	}
+
+	#Focus for Forts along the Belarusian Border
+	focus = {
+		id = LIT_fortsalongthebelarusianborder
+		icon = GFX_goal_unknown
+		x = 3
+		y = 16
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_defensivedoctrine }
+	}
+
+	#Focus for Forts along the Latvian Border
+	focus = {
+		id = LIT_fortsalongthelatvianborder
+		icon = GFX_goal_unknown
+		x = 3
+		y = 17
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_fortsalongthebelarusianborder }
+	}
+
+	#Focus for Forts on the Prussian Border
+	focus = {
+		id = LIT_fortsontheprussianborder
+		icon = GFX_goal_unknown
+		x = 3
+		y = 18
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_fortsalongthelatvianborder }
+	}
+
+	#Focus for Forts along the Polish Border
+	focus = {
+		id = LIT_fortsalongthepolishborder
+		icon = GFX_goal_unknown
+		x = 3
+		y = 15
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_defensivedoctrine }
+	}
+
+	#Focus for Contract Companies to Aid the Army
+	focus = {
+		id = LIT_contractcompaniestoaidthearmy
+		icon = GFX_goal_unknown
+		x = 6
+		y = 15
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_defensivedoctrine }
+	}
+
+	#Focus for Lietuvos Laivynas
+	focus = {
+		id = LIT_lietuvoslaivynas
+		icon = GFX_goal_unknown
+		x = 29
+		y = 13
+		cost = 10
+		available_if_capitulated = yes
+	}
+
+	#Focus for Lietuvos Oro Pajėgos
+	focus = {
+		id = LIT_lietuvosoropajgos
+		icon = GFX_goal_unknown
+		x = 39
+		y = 13
+		cost = 10
+		available_if_capitulated = yes
+	}
+
+	#Focus for Defensive Doctrine
+	focus = {
+		id = LIT_defensivedoctrine
+		icon = GFX_goal_unknown
+		x = 7
+		y = 14
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_lietuvoskariuomen }
+		mutually_exclusive = { focus = LIT_offensivedoctrine }
+	}
+
+	#Focus for Trench Warfare
+	focus = {
+		id = LIT_trenchwarfare
+		icon = GFX_goal_unknown
+		x = 8
+		y = 15
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_defensivedoctrine }
+		mutually_exclusive = { 
+			focus = LIT_mobiledoctrineii 
+		}
+		mutually_exclusive = { 
+			focus = LIT_massartilleryfire 
+		}
+		mutually_exclusive = { 
+			focus = LIT_ 
+		}
+	}
+
+	#Focus for Mobile Doctrine
+	focus = {
+		id = LIT_mobiledoctrine
+		icon = GFX_goal_unknown
+		x = 16
+		y = 15
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_offensivedoctrine }
+		mutually_exclusive = { focus = LIT_massartilleryfire }
+	}
+
+	#Focus for Lietuvos Kariuomenė
+	focus = {
+		id = LIT_lietuvoskariuomen
+		icon = GFX_goal_unknown
+		x = 13
+		y = 13
+		cost = 10
+		available_if_capitulated = yes
+	}
+
+	#Focus for Import Foreign Equipment
+	focus = {
+		id = LIT_importforeignequipment
+		icon = GFX_goal_unknown
+		x = 7
+		y = 17
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_grantpowertothelithuanianriflemen }
+		mutually_exclusive = { focus = LIT_modernlithuanianequipment }
+	}
+
+	#Focus for Raids into Russia
+	focus = {
+		id = LIT_raidsintorussia
+		icon = GFX_goal_unknown
+		x = 12
+		y = 18
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LIT_allarmsinlithuania 
+			focus = LIT_prolongtherussiancivilwar 
+		}
+	}
+
+	#Focus for Prepare to Motorize the Army
+	focus = {
+		id = LIT_preparetomotorizethearmy
+		icon = GFX_goal_unknown
+		x = 22
+		y = 15
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_offensivedoctrine }
+	}
+
+	#Focus for The Prussian Deal
+	focus = {
+		id = LIT_theprussiandeal
+		icon = GFX_goal_unknown
+		x = 29
+		y = 14
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_lietuvoslaivynas }
+	}
+
+	#Focus for Reform the Navy
+	focus = {
+		id = LIT_reformthenavy
+		icon = GFX_goal_unknown
+		x = 26
+		y = 15
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_theprussiandeal }
+		mutually_exclusive = { focus = LIT_leaveitasitis }
+	}
+
+	#Focus for Form the Lithuanian Marines
+	focus = {
+		id = LIT_formthelithuanianmarines
+		icon = GFX_goal_unknown
+		x = 30
+		y = 16
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LIT_reformthenavy 
+			focus = LIT_leaveitasitis 
+		}
+	}
+
+	#Focus for Lithuanian Submarine Fleet
+	focus = {
+		id = LIT_lithuaniansubmarinefleet
+		icon = GFX_goal_unknown
+		x = 28
+		y = 17
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LIT_expertsfromprussia 
+		}
+		prerequisite = { 
+			focus = LIT_createanmilitaryport 
+		}
+		prerequisite = { 
+			focus = LIT_ 
+		}
+	}
+
+	#Focus for Buy More Destroyers
+	focus = {
+		id = LIT_buymoredestroyers
+		icon = GFX_goal_unknown
+		x = 30
+		y = 17
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LIT_formthelithuanianmarines 
+		}
+		prerequisite = { 
+			focus = LIT_modernizetheshipprezidentasantanassmetona 
+		}
+	}
+
+	#Focus for The Pearl of Lithuania!
+	focus = {
+		id = LIT_thepearloflithuania
+		icon = GFX_goal_unknown
+		x = 29
+		y = 20
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LIT_defendthesea 
+			focus = LIT_underwaterattack 
+		}
+	}
+
+	#Focus for Sell Lithuanian Aircrafts to Foreigners
+	focus = {
+		id = LIT_selllithuanianaircraftstoforeigners
+		icon = GFX_goal_unknown
+		x = 37
+		y = 16
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_encouragelithuanianmadeplanes }
+	}
+
+	#Focus for Lithuanian Quality
+	focus = {
+		id = LIT_lithuanianquality
+		icon = GFX_goal_unknown
+		x = 41
+		y = 15
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LIT_grantanbomoreprivledges }
+	}
+
+#End of focuses 
+ }

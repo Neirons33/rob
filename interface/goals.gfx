@@ -2324,6 +2324,75 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/PRS_support_coustums.tga"
 	}
 	
+	###Lithuania
+	###Mironas
 	
-	
+	SpriteType = { 
+		name = "GFX_focus_LIT_attackbelarus"
+		texturefile = "gfx/interface/goals/LIT_attackbelarus.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_battlepriests"
+		texturefile = "gfx/interface/goals/LIT_battlepriests.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_christinizehistory"
+		texturefile = "gfx/interface/goals/LIT_christinizehistory.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_christlithnationalism"
+		texturefile = "gfx/interface/goals/LIT_christlithnationalism.tga"
+	}	
+	SpriteType = { 
+		name = "GFX_focus_LIT_clericalpelekism"
+		texturefile = "gfx/interface/goals/LIT_clericalpelekism.tga"
+	}	
+	SpriteType = { 
+		name = "GFX_focus_LIT_godandmironas"
+		texturefile = "gfx/interface/goals/LIT_godandmironas.tga"
+	}	
+	SpriteType = { 
+		name = "GFX_focus_LIT_godwithus"
+		texturefile = "gfx/interface/goals/LIT_godwithus.tga"
+	}	
+	SpriteType = { 
+		name = "GFX_focus_LIT_huntminorities"
+		texturefile = "gfx/interface/goals/LIT_huntminorities.tga"
+	}	
+	SpriteType = { 
+		name = "GFX_focus_LIT_legacyofcrusades"
+		texturefile = "gfx/interface/goals/LIT_legacyofcrusades.tga"
+	}	
+	SpriteType = { 
+		name = "GFX_focus_LIT_nationforchristliths"
+		texturefile = "gfx/interface/goals/LIT_nationforchristliths.tga"
+	}	
+	SpriteType = { 
+		name = "GFX_focus_LIT_newcrusade"
+		texturefile = "gfx/interface/goals/LIT_newcrusade.tga"
+	}	
+	SpriteType = { 
+		name = "GFX_focus_LIT_peronslaitycult"
+		texturefile = "gfx/interface/goals/LIT_peronslaitycult.tga"
+	}	
+	SpriteType = { 
+		name = "GFX_focus_LIT_priestsindp"
+		texturefile = "gfx/interface/goals/LIT_priestsindp.tga"
+	}	
+	SpriteType = { 
+		name = "GFX_focus_LIT_pulloutofbelrus"
+		texturefile = "gfx/interface/goals/LIT_pulloutofbelrus.tga"
+	}	
+	SpriteType = { 
+		name = "GFX_focus_LIT_pulloutoflatvia"
+		texturefile = "gfx/interface/goals/LIT_pulloutoflatvia.tga"
+	}	
+	SpriteType = { 
+		name = "GFX_focus_LIT_strghtenchurch"
+		texturefile = "gfx/interface/goals/LIT_strghtenchurch.tga"
+	}	
+	SpriteType = { 
+		name = "GFX_focus_LIT_tautosvadasmironas"
+		texturefile = "gfx/interface/goals/LIT_tautosvadasmironas.tga"
+	}	
 }

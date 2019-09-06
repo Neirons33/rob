@@ -155,7 +155,7 @@ tag = FRA
 date > 1934.4.1
 NOT ={ 
 has_country_flag = FRA_radicals_dead
-FRA_pelekist_victory
+has_country_flag = FRA_pelekist_victory
 }
 }
 

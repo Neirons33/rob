@@ -98,10 +98,10 @@ bookmarks = {
 		}
 
 
-		 "RDR" = {
+		 "LES" = {
 		  minor = yes
 		  history = ""
-		  ideology = conservative
+		  ideology = pelekist
 		  ideas = {
 		  
 		  }

@@ -29,7 +29,10 @@ TOW_search_for_allies = {
     value = 4
     compare = greater_than
 }
-KRW = { is_in_faction = no }
+KRW = { 
+is_in_faction = no 
+exists = yes
+}
 }
  cost = 20
  
@@ -52,7 +55,10 @@ KRW = { is_in_faction = no }
     value = 4
     compare = greater_than
 }
-BRW = { is_in_faction = no }
+BRW = { 
+is_in_faction = no
+exists = yes
+ }
 }
  cost = 20
  
@@ -70,8 +76,11 @@ BRW = { is_in_faction = no }
  fire_only_once = yes
  cost = 40
  available = {
-  KRW = { is_in_faction = no }
-  is_at_war = no
+  KRW = { 
+is_in_faction = no 
+exists = yes
+}
+  has_war = no
  }
  complete_effect = {
   add_to_variable = {
@@ -91,8 +100,11 @@ BRW = { is_in_faction = no }
  fire_only_once = yes
  cost = 40
   available = {
-  KRW = { is_in_faction = no }
-  is_at_war = no
+  KRW = { 
+is_in_faction = no 
+exists = yes
+}
+  has_war = no
  }
  complete_effect = {
   add_to_variable = {
@@ -109,8 +121,11 @@ BRW = { is_in_faction = no }
  fire_only_once = yes
  cost = 40
   available = {
-  KRW = { is_in_faction = no }
-  is_at_war = no
+  KRW = { 
+is_in_faction = no 
+exists = yes
+}
+  has_war = no
  }
  complete_effect = {
   add_to_variable = {
@@ -127,8 +142,11 @@ BRW = { is_in_faction = no }
  fire_only_once = yes
  cost = 40
   available = {
-  KRW = { is_in_faction = no }
-  is_at_war = no
+  KRW = { 
+is_in_faction = no 
+exists = yes
+}
+  has_war = no
  }
  complete_effect = {
   add_to_variable = {
@@ -149,8 +167,11 @@ BRW = { is_in_faction = no }
  fire_only_once = yes
   cost = 40
    available = {
-  BRW = { is_in_faction = no }
-  is_at_war = no
+  BRW = { 
+is_in_faction = no 
+exists = yes
+}
+  has_war = no
  }
  complete_effect = {
   add_to_variable = {
@@ -167,8 +188,11 @@ BRW = { is_in_faction = no }
  fire_only_once = yes
    cost = 40
       available = {
-  BRW = { is_in_faction = no }
-  is_at_war = no
+    BRW = { 
+is_in_faction = no 
+exists = yes
+}
+  has_war = no
  }
  complete_effect = {
   add_to_variable = {
@@ -185,8 +209,11 @@ BRW = { is_in_faction = no }
  fire_only_once = yes
    cost = 40
       available = {
-  BRW = { is_in_faction = no }
-  is_at_war = no
+    BRW = { 
+is_in_faction = no 
+exists = yes
+}
+  has_war = no
  }
  complete_effect = {
   add_to_variable = {
@@ -203,8 +230,11 @@ BRW = { is_in_faction = no }
  fire_only_once = yes
    cost = 40
       available = {
-  BRW = { is_in_faction = no }
-  is_at_war = no
+  BRW = { 
+is_in_faction = no 
+exists = yes
+}
+  has_war = no
  }
  complete_effect = {
   add_to_variable = {
@@ -296,8 +326,11 @@ BRW = { is_in_faction = no }
  fire_only_once = yes
  cost = 40
     available = {
-  KRW = { is_in_faction = no }
-  is_at_war = no
+    KRW = { 
+is_in_faction = no 
+exists = yes
+}
+  has_war = no
  }
  complete_effect = {
   add_to_variable = {
@@ -314,8 +347,11 @@ BRW = { is_in_faction = no }
  fire_only_once = yes
  cost = 40
      available = {
-  KRW = { is_in_faction = no }
-  is_at_war = no
+  KRW = { 
+is_in_faction = no 
+exists = yes
+}
+  has_war = no
  }
  complete_effect = {
   add_to_variable = {
@@ -332,8 +368,11 @@ BRW = { is_in_faction = no }
  fire_only_once = yes
  cost = 40
      available = {
-  KRW = { is_in_faction = no }
-  is_at_war = no
+  KRW = { 
+is_in_faction = no 
+exists = yes
+}
+  has_war = no
  }
  complete_effect = {
   add_to_variable = {
@@ -350,8 +389,11 @@ BRW = { is_in_faction = no }
  fire_only_once = yes
  cost = 40
      available = {
-  KRW = { is_in_faction = no }
-  is_at_war = no
+  KRW = { 
+is_in_faction = no 
+exists = yes
+}
+  has_war = no
  }
  complete_effect = {
   add_to_variable = {
@@ -372,8 +414,11 @@ BRW = { is_in_faction = no }
  fire_only_once = yes
   cost = 40
       available = {
-  BRW = { is_in_faction = no }
-  is_at_war = no
+  BRW = { 
+is_in_faction = no 
+exists = yes
+}
+  has_war = no
  }
  complete_effect = {
   add_to_variable = {
@@ -390,8 +435,11 @@ BRW = { is_in_faction = no }
  fire_only_once = yes
    cost = 40
          available = {
-  BRW = { is_in_faction = no }
-  is_at_war = no
+  BRW = { 
+is_in_faction = no 
+exists = yes
+}
+  has_war = no
  }
  complete_effect = {
   add_to_variable = {
@@ -408,8 +456,11 @@ BRW = { is_in_faction = no }
  fire_only_once = yes
    cost = 40
          available = {
-  BRW = { is_in_faction = no }
-  is_at_war = no
+  BRW = { 
+is_in_faction = no 
+exists = yes
+}
+  has_war = no
  }
  complete_effect = {
   add_to_variable = {
@@ -426,8 +477,11 @@ BRW = { is_in_faction = no }
  fire_only_once = yes
    cost = 40
          available = {
-  BRW = { is_in_faction = no }
-  is_at_war = no
+  BRW = { 
+is_in_faction = no 
+exists = yes
+}
+  has_war = no
  }
  complete_effect = {
   add_to_variable = {
