@@ -2395,4 +2395,139 @@ spriteTypes = {
 		name = "GFX_focus_LIT_tautosvadasmironas"
 		texturefile = "gfx/interface/goals/LIT_tautosvadasmironas.tga"
 	}	
+###LIT - Democratic Shit
+	SpriteType = { 
+		name = "GFX_focus_LIT_grinius"
+		texturefile = "gfx/interface/goals/LIT_grinius.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_christian_values"
+		texturefile = "gfx/interface/goals/LIT_christian_values.tga"
+	}		
+	SpriteType = { 
+		name = "GFX_focus_LIT_aid_ulmanis"
+		texturefile = "gfx/interface/goals/LIT_aid_ulmanis.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_ban_perkunikais"
+		texturefile = "gfx/interface/goals/LIT_ban_perkunikais.tga"
+	}	
+	SpriteType = { 
+		name = "GFX_focus_LIT_christian_conservative_state"
+		texturefile = "gfx/interface/goals/LIT_christian_conservative_state.tga"
+	}	
+	SpriteType = { 
+		name = "GFX_focus_LIT_defensive_intervention"
+		texturefile = "gfx/interface/goals/LIT_defensive_intervention.tga"
+	}	
+	SpriteType = { 
+		name = "GFX_focus_LIT_exceptthrright"
+		texturefile = "gfx/interface/goals/LIT_exceptthrright.tga"
+	}	
+	SpriteType = { 
+		name = "GFX_focus_LIT_fight_corruption"
+		texturefile = "gfx/interface/goals/LIT_fight_corruption.tga"
+	}	
+	SpriteType = { 
+		name = "GFX_focus_LIT_freespeech"
+		texturefile = "gfx/interface/goals/LIT_freespeech.tga"
+	}	
+	SpriteType = { 
+		name = "GFX_focus_LIT_influence_russia"
+		texturefile = "gfx/interface/goals/LIT_influence_russia.tga"
+	}	
+	SpriteType = { 
+		name = "GFX_focus_LIT_land_without_corruption"
+		texturefile = "gfx/interface/goals/LIT_land_without_corruption.tga"
+	}	
+	SpriteType = { 
+		name = "GFX_focus_LIT_peasant_president"
+		texturefile = "gfx/interface/goals/LIT_peasant_president.tga"
+	}	
+	SpriteType = { 
+		name = "GFX_focus_LIT_stop_interviening"
+		texturefile = "gfx/interface/goals/LIT_stop_interviening.tga"
+	}
+
+###LIT - Škirpa
+	SpriteType = { 
+		name = "GFX_focus_LIT_disband_seaimas"
+		texturefile = "gfx/interface/goals/LIT_disband_seaimas.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_foreignlegion"
+		texturefile = "gfx/interface/goals/LIT_foreignlegion.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_gloryrestored"
+		texturefile = "gfx/interface/goals/LIT_gloryrestored.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_indoctrinateyouth"
+		texturefile = "gfx/interface/goals/LIT_indoctrinateyouth.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_intervieneinbelarus"
+		texturefile = "gfx/interface/goals/LIT_intervieneinbelarus.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_invadebelrus"
+		texturefile = "gfx/interface/goals/LIT_invadebelrus.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_invadelat"
+		texturefile = "gfx/interface/goals/LIT_invadelat.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_invadeprs"
+		texturefile = "gfx/interface/goals/LIT_invadeprs.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_militarism"
+		texturefile = "gfx/interface/goals/LIT_militarism.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_mobilization"
+		texturefile = "gfx/interface/goals/LIT_mobilization.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_new_constitiuon"
+		texturefile = "gfx/interface/goals/LIT_new_constitiuon.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_old_guear"
+		texturefile = "gfx/interface/goals/LIT_old_guear.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_paramilitaries"
+		texturefile = "gfx/interface/goals/LIT_paramilitaries.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_prepareforcaompaing"
+		texturefile = "gfx/interface/goals/LIT_prepareforcaompaing.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_reactionaryallies"
+		texturefile = "gfx/interface/goals/LIT_reactionaryallies.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_redscare"
+		texturefile = "gfx/interface/goals/LIT_redscare.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_secualrstate"
+		texturefile = "gfx/interface/goals/LIT_secualrstate.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_skirpa_rules"
+		texturefile = "gfx/interface/goals/LIT_skirpa_rules.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_skirpayouth"
+		texturefile = "gfx/interface/goals/LIT_skirpayouth.tga"
+	}	
+	SpriteType = { 
+		name = "GFX_focus_LIT_fanaticalarmy"
+		texturefile = "gfx/interface/goals/LIT_fanaticalarmy.tga"
+	}	
 }

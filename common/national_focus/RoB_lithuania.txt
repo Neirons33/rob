@@ -409,6 +409,9 @@ focus_tree = {
 		y = 0
 		cost = 10
 		available_if_capitulated = yes
+	 available = {
+		 has_country_flag = LIT_mironas_rules
+		}
 	}
 
 	#Focus for Purge Everyone!
@@ -1676,7 +1679,7 @@ focus_tree = {
 	#Focus for Free the Prussian Lithuanians!
 	focus = {
 		id = LIT_freetheprussianlithuanians
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_invadeprs
 		x = 19
 		y = 9
 		cost = 10
@@ -1687,7 +1690,7 @@ focus_tree = {
 	#Focus for Take the Northern Lands
 	focus = {
 		id = LIT_takethenorthernlands
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_invadelat
 		x = 15
 		y = 9
 		cost = 10
@@ -1698,7 +1701,7 @@ focus_tree = {
 	#Focus for Invade Belarus
 	focus = {
 		id = LIT_invadebelarus
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_invadebelrus
 		x = 11
 		y = 9
 		cost = 10
@@ -1709,7 +1712,7 @@ focus_tree = {
 	#Focus for Economic Boom
 	focus = {
 		id = LIT_economicboom
-		icon = GFX_goal_unknown
+		icon = GFX_goal_continuous_non_factory_construct
 		x = 15
 		y = 7
 		cost = 10
@@ -1723,7 +1726,7 @@ focus_tree = {
 	#Focus for Industrialisation
 	focus = {
 		id = LIT_industrialisation
-		icon = GFX_goal_unknown
+		icon = GFX_SOV_heavy_industry
 		x = 16
 		y = 6
 		cost = 10
@@ -1735,7 +1738,7 @@ focus_tree = {
 	#Focus for Rural Values
 	focus = {
 		id = LIT_ruralvalues
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_rural_volunteers
 		x = 14
 		y = 6
 		cost = 10
@@ -1747,7 +1750,7 @@ focus_tree = {
 	#Focus for Fanatical Army
 	focus = {
 		id = LIT_fanaticalarmy
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_fanaticalarmy
 		x = 19
 		y = 6
 		cost = 10
@@ -1758,7 +1761,7 @@ focus_tree = {
 	#Focus for Indoctrinate the Youth
 	focus = {
 		id = LIT_indoctrinatetheyouth
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_indoctrinateyouth
 		x = 11
 		y = 6
 		cost = 10
@@ -1769,17 +1772,20 @@ focus_tree = {
 	#Focus for Secular State
 	focus = {
 		id = LIT_secularstate
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_secualrstate
 		x = 15
 		y = 5
 		cost = 10
 		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LIT_thearmywithastate
+		}
 	}
 
 	#Focus for The Army with a State
 	focus = {
 		id = LIT_thearmywithastate
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_junger_reactionary_values
 		x = 15
 		y = 4
 		cost = 10
@@ -1793,15 +1799,13 @@ focus_tree = {
 		prerequisite = { 
 			focus = LIT_declaremobilization 
 		}
-		prerequisite = { 
-			focus = LIT_ 
-		}
+
 	}
 
 	#Focus for Škirpos Jaunimas
 	focus = {
 		id = LIT_kirposjaunimas
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_skirpayouth
 		x = 11
 		y = 5
 		cost = 10
@@ -1812,7 +1816,7 @@ focus_tree = {
 	#Focus for Support for Minority Rights
 	focus = {
 		id = LIT_supportforminorityrights
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_foreigns_in_army
 		x = 17
 		y = 1
 		cost = 10
@@ -1824,7 +1828,7 @@ focus_tree = {
 	#Focus for The Old Guard
 	focus = {
 		id = LIT_theoldguard
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_old_guear
 		x = 17
 		y = 2
 		cost = 10
@@ -1838,7 +1842,7 @@ focus_tree = {
 	#Focus for Farmer President
 	focus = {
 		id = LIT_farmerpresident
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_peasant_president
 		x = 2
 		y = 1
 		cost = 10
@@ -1850,7 +1854,7 @@ focus_tree = {
 	#Focus for Declare Mobilization
 	focus = {
 		id = LIT_declaremobilization
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_mobilization
 		x = 15
 		y = 3
 		cost = 10
@@ -1861,7 +1865,7 @@ focus_tree = {
 	#Focus for Intervene in Belarus
 	focus = {
 		id = LIT_interveneinbelarus
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_intervieneinbelarus
 		x = 13
 		y = 1
 		cost = 10
@@ -1873,18 +1877,18 @@ focus_tree = {
 	#Focus for Disband the Seimas
 	focus = {
 		id = LIT_disbandtheseimas
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_disband_seaimas
 		x = 11
 		y = 2
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = LIT_qaKrvgsF }
+		prerequisite = { focus = LIT_purgetheleftskirpa }
 	}
 
 	#Focus for The New Constitution
 	focus = {
 		id = LIT_thenewconstitution
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_new_constitiuon
 		x = 11
 		y = 3
 		cost = 10
@@ -1895,7 +1899,7 @@ focus_tree = {
 	#Focus for Encourage Lithuanian Nationalism
 	focus = {
 		id = LIT_encouragelithuaniannationalism
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_liths_in_governemnt
 		x = 19
 		y = 2
 		cost = 10
@@ -1906,7 +1910,7 @@ focus_tree = {
 	#Focus for The Red Scare
 	focus = {
 		id = LIT_theredscare
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_redscare
 		x = 19
 		y = 3
 		cost = 10
@@ -1917,17 +1921,20 @@ focus_tree = {
 	#Focus for General Škirpa
 	focus = {
 		id = LIT_generalkirpa
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_skirpa_rules
 		x = 15
 		y = 0
 		cost = 10
 		available_if_capitulated = yes
+		available = {
+		 has_country_flag = LIT_skirpa_rules
+		}
 	}
 
 	#Focus for Purge the Left
 	focus = {
-		id = LIT_purgetheleft
-		icon = GFX_goal_unknown
+		id = LIT_purgetheleftskirpa
+		icon = GFX_focus_PRS_junger_red_scare
 		x = 11
 		y = 1
 		cost = 10
@@ -1938,7 +1945,7 @@ focus_tree = {
 	#Focus for Pelekist and Reactionary Allies
 	focus = {
 		id = LIT_pelekistandreactionaryallies
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_reactionaryallies
 		x = 15
 		y = 1
 		cost = 10
@@ -1949,7 +1956,7 @@ focus_tree = {
 	#Focus for Encourage Militarism
 	focus = {
 		id = LIT_encouragemilitarism
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_militarism
 		x = 19
 		y = 1
 		cost = 10
@@ -1960,7 +1967,7 @@ focus_tree = {
 	#Focus for Allow Paramilitaries for Allies
 	focus = {
 		id = LIT_allowparamilitariesforallies
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_paramilitaries
 		x = 15
 		y = 2
 		cost = 10
@@ -1971,7 +1978,7 @@ focus_tree = {
 	#Focus for Grant Power to the Younger Officers
 	focus = {
 		id = LIT_grantpowertotheyoungerofficers
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_junger_elite_training
 		x = 13
 		y = 2
 		cost = 10
@@ -1985,7 +1992,7 @@ focus_tree = {
 	#Focus for Form the Lithuanian Foreign Legion
 	focus = {
 		id = LIT_formthelithuanianforeignlegion
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_foreignlegion
 		x = 19
 		y = 5
 		cost = 10
@@ -1996,7 +2003,7 @@ focus_tree = {
 	#Focus for Prepare for an Campaign
 	focus = {
 		id = LIT_prepareforancampaign
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_prepareforcaompaing
 		x = 15
 		y = 8
 		cost = 10
@@ -2018,7 +2025,7 @@ focus_tree = {
 	#Focus for Glory Restored!
 	focus = {
 		id = LIT_gloryrestored
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_gloryrestored
 		x = 15
 		y = 10
 		cost = 10
@@ -2040,7 +2047,7 @@ focus_tree = {
 	#Focus for The President Who Lives as a Peasant
 	focus = {
 		id = LIT_thepresidentwholivesasapeasant
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_grinius
 		x = 8
 		y = 1
 		cost = 10
@@ -2052,7 +2059,7 @@ focus_tree = {
 	#Focus for Industrilization
 	focus = {
 		id = LIT_industrilization
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_bukharins_industriliaze_novgorod
 		x = 6
 		y = 2
 		cost = 10
@@ -2063,7 +2070,7 @@ focus_tree = {
 	#Focus for Free Speach for All...
 	focus = {
 		id = LIT_freespeachforall
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_freespeech
 		x = 9
 		y = 2
 		cost = 10
@@ -2074,7 +2081,7 @@ focus_tree = {
 	#Focus for Fight Corruption!
 	focus = {
 		id = LIT_fightcorruption
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_fight_corruption
 		x = 9
 		y = 4
 		cost = 10
@@ -2085,7 +2092,7 @@ focus_tree = {
 	#Focus for Reverse the Interventionalism
 	focus = {
 		id = LIT_reversetheinterventionalism
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_stop_interviening
 		x = 6
 		y = 3
 		cost = 10
@@ -2096,7 +2103,7 @@ focus_tree = {
 	#Focus for State-Aided Modernization
 	focus = {
 		id = LIT_stateaidedmodernization
-		icon = GFX_goal_unknown
+		icon = GFX_SOV_leningrad_industry
 		x = 6
 		y = 4
 		cost = 10
@@ -2107,7 +2114,7 @@ focus_tree = {
 	#Focus for The Land Without Corruption
 	focus = {
 		id = LIT_thelandwithoutcorruption
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_land_without_corruption
 		x = 7
 		y = 5
 		cost = 10
@@ -2126,7 +2133,7 @@ focus_tree = {
 	#Focus for A Example of Democracy!
 	focus = {
 		id = LIT_aexampleofdemocracy
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_the_giant_wakes
 		x = 5
 		y = 6
 		cost = 10
@@ -2140,7 +2147,7 @@ focus_tree = {
 	#Focus for Encourage Agriculturalism
 	focus = {
 		id = LIT_encourageagriculturalism
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_bukharins_privatize_state_land
 		x = 1
 		y = 2
 		cost = 10
@@ -2151,7 +2158,7 @@ focus_tree = {
 	#Focus for Encourage Christian Values
 	focus = {
 		id = LIT_encouragechristianvalues
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_christian_values
 		x = 1
 		y = 3
 		cost = 10
@@ -2162,7 +2169,7 @@ focus_tree = {
 	#Focus for Aid Ulmanis for Gurantees
 	focus = {
 		id = LIT_aidulmanisforgurantees
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_aid_ulmanis
 		x = 4
 		y = 3
 		cost = 10
@@ -2173,7 +2180,7 @@ focus_tree = {
 	#Focus for Attempt to Influence Further Into Russia...
 	focus = {
 		id = LIT_attempttoinfluencefurtherintorussia
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_influence_russia
 		x = 4
 		y = 4
 		cost = 10
@@ -2184,17 +2191,20 @@ focus_tree = {
 	#Focus for The Democratic State
 	focus = {
 		id = LIT_thedemocraticstate
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_liberal_republic
 		x = 5
 		y = 0
 		cost = 10
 		available_if_capitulated = yes
+		available = {
+		 has_country_flag = LIT_democracyholds
+		}
 	}
 
 	#Focus for Defensive Interventionalism
 	focus = {
 		id = LIT_defensiveinterventionalism
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_defensive_intervention
 		x = 4
 		y = 2
 		cost = 10
@@ -2205,7 +2215,7 @@ focus_tree = {
 	#Focus for Ban the Perkūnininkai
 	focus = {
 		id = LIT_bantheperknininkai
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_ban_perkunikais
 		x = 1
 		y = 4
 		cost = 10
@@ -2216,7 +2226,7 @@ focus_tree = {
 	#Focus for A Patriotic Conservative State
 	focus = {
 		id = LIT_apatrioticconservativestate
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_christian_conservative_state
 		x = 3
 		y = 5
 		cost = 10
@@ -2235,7 +2245,7 @@ focus_tree = {
 	#Focus for ...But the Right
 	focus = {
 		id = LIT_buttheright
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_exceptthrright
 		x = 9
 		y = 3
 		cost = 10

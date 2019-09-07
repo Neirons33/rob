@@ -48,6 +48,7 @@ if = {
 	}
 
 }
+set_politics = {
 	ruling_party = authoritharian
 	last_election = "1933.7.1"
 	election_frequency = 48
@@ -62,7 +63,7 @@ set_popularities = {
 	conservative = 10
 	authoritharian = 4
 	reactionary = 31
-	pelekist = 14
+	pelekist = 12
 }
 add_ideas = {
 
