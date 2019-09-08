@@ -2529,5 +2529,162 @@ spriteTypes = {
 	SpriteType = { 
 		name = "GFX_focus_LIT_fanaticalarmy"
 		texturefile = "gfx/interface/goals/LIT_fanaticalarmy.tga"
-	}	
+	}
+###LIT - Smentona
+	SpriteType = { 
+		name = "GFX_focus_LIT_vytautasreborn"
+		texturefile = "gfx/interface/goals/LIT_vytautasreborn.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_todeath"
+		texturefile = "gfx/interface/goals/LIT_todeath.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_smentona_rules"
+		texturefile = "gfx/interface/goals/LIT_smentona_rules.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_ruralideals"
+		texturefile = "gfx/interface/goals/LIT_ruralideals.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_rewritehistory"
+		texturefile = "gfx/interface/goals/LIT_rewritehistory.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_reworkeducation"
+		texturefile = "gfx/interface/goals/LIT_reworkeducation.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_rewardriflemen"
+		texturefile = "gfx/interface/goals/LIT_rewardriflemen.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_rewardarmy"
+		texturefile = "gfx/interface/goals/LIT_rewardarmy.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_lithuanizepoles"
+		texturefile = "gfx/interface/goals/LIT_lithuanizepoles.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_lithuaniannationalism"
+		texturefile = "gfx/interface/goals/LIT_lithuaniannationalism.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_killvoldemaras"
+		texturefile = "gfx/interface/goals/LIT_killvoldemaras.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_greatagain"
+		texturefile = "gfx/interface/goals/LIT_greatagain.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_gdlnostalgia"
+		texturefile = "gfx/interface/goals/LIT_gdlnostalgia.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_easegunlaws"
+		texturefile = "gfx/interface/goals/LIT_easegunlaws.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_corporateeconomics"
+		texturefile = "gfx/interface/goals/LIT_corporateeconomics.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_armforeignliths"
+		texturefile = "gfx/interface/goals/LIT_armforeignliths.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_absoluteloyaslity"
+		texturefile = "gfx/interface/goals/LIT_absoluteloyaslity.tga"
+	}
+
+###LIT - Visoumis
+	SpriteType = { 
+		name = "GFX_focus_LIT_balticificationoflands"
+		texturefile = "gfx/interface/goals/LIT_balticificationoflands.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_balticlegion"
+		texturefile = "gfx/interface/goals/LIT_balticlegion.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_banusury"
+		texturefile = "gfx/interface/goals/LIT_banusury.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_beržianiskshero"
+		texturefile = "gfx/interface/goals/LIT_beržianiskshero.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_createaistija"
+		texturefile = "gfx/interface/goals/LIT_createaistija.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_dneprbaltidentity"
+		texturefile = "gfx/interface/goals/LIT_dneprbaltidentity.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_dutyforall"
+		texturefile = "gfx/interface/goals/LIT_dutyforall.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_grandlithfed"
+		texturefile = "gfx/interface/goals/LIT_grandlithfed.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_invitelatvia"
+		texturefile = "gfx/interface/goals/LIT_invitelatvia.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_inviteprussia"
+		texturefile = "gfx/interface/goals/LIT_inviteprussia.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_legacyofdneprbalts"
+		texturefile = "gfx/interface/goals/LIT_legacyofdneprbalts.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_lithuanianyouth"
+		texturefile = "gfx/interface/goals/LIT_lithuanianyouth.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_newgeneration"
+		texturefile = "gfx/interface/goals/LIT_newgeneration.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_pelekistpurges"
+		texturefile = "gfx/interface/goals/LIT_pelekistpurges.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_reborn"
+		texturefile = "gfx/interface/goals/LIT_reborn.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_returnofthebalts"
+		texturefile = "gfx/interface/goals/LIT_returnofthebalts.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_samagotianaut"
+		texturefile = "gfx/interface/goals/LIT_samagotianaut.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_socialismofduty"
+		texturefile = "gfx/interface/goals/LIT_socialismofduty.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_stablestate"
+		texturefile = "gfx/interface/goals/LIT_stablestate.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_supportlatvians"
+		texturefile = "gfx/interface/goals/LIT_supportlatvians.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_visoumis"
+		texturefile = "gfx/interface/goals/LIT_visoumis.tga"
+	}
+
+	
 }

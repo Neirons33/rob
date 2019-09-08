@@ -10,7 +10,7 @@ focus_tree = {
 	#Focus for Return of the Balts!
 	focus = {
 		id = LIT_returnofthebalts
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_returnofthebalts
 		x = 39
 		y = 10
 		cost = 10
@@ -29,7 +29,7 @@ focus_tree = {
 	#Focus for Truly Gediminas Reborn!
 	focus = {
 		id = LIT_trulygediminasreborn
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_reborn
 		x = 38
 		y = 11
 		cost = 10
@@ -48,7 +48,7 @@ focus_tree = {
 	#Focus for Invite Latvia to Join
 	focus = {
 		id = LIT_invitelatviatojoin
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_invitelatvia
 		x = 38
 		y = 7
 		cost = 10
@@ -59,7 +59,7 @@ focus_tree = {
 	#Focus for Get Prussia to Join
 	focus = {
 		id = LIT_getprussiatojoin
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_inviteprussia
 		x = 38
 		y = 8
 		cost = 10
@@ -70,7 +70,7 @@ focus_tree = {
 	#Focus for Declare Beržanskis a National Hero
 	focus = {
 		id = LIT_declareberanskisanationalhero
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_beržianiskshero
 		x = 36
 		y = 1
 		cost = 10
@@ -81,11 +81,14 @@ focus_tree = {
 	#Focus for Kunigaikštis Visuomis
 	focus = {
 		id = LIT_kunigaiktisvisuomis
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_visoumis
 		x = 38
 		y = 0
 		cost = 10
 		available_if_capitulated = yes
+		available = {
+		 has_country_flag = LIT_visoumis_rule
+		}
 	}
 
 	#Focus for God and Mironas
@@ -176,7 +179,7 @@ focus_tree = {
 	#Focus for Retake Belarus
 	focus = {
 		id = LIT_retakebelarus
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_attackbelarus
 		x = 41
 		y = 6
 		cost = 10
@@ -187,7 +190,7 @@ focus_tree = {
 	#Focus for Form a Dnepr Balt Identity
 	focus = {
 		id = LIT_formadneprbaltidentity
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_dneprbaltidentity
 		x = 41
 		y = 7
 		cost = 10
@@ -198,7 +201,7 @@ focus_tree = {
 	#Focus for Grand Federation of Lithuania
 	focus = {
 		id = LIT_grandfederationoflithuania
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_grandlithfed
 		x = 40
 		y = 8
 		cost = 10
@@ -209,7 +212,7 @@ focus_tree = {
 	#Focus for Aid Latvian Pelekists!
 	focus = {
 		id = LIT_aidlatvianpelekists
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_supportlatvians
 		x = 40
 		y = 3
 		cost = 10
@@ -231,7 +234,7 @@ focus_tree = {
 	#Focus for The State Stable!
 	focus = {
 		id = LIT_thestatestable
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_stablestate
 		x = 38
 		y = 4
 		cost = 10
@@ -250,7 +253,7 @@ focus_tree = {
 	#Focus for Award the Riflemen
 	focus = {
 		id = LIT_awardtheriflemen
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_rewardriflemen
 		x = 21
 		y = 2
 		cost = 10
@@ -261,7 +264,7 @@ focus_tree = {
 	#Focus for Economic Growth
 	focus = {
 		id = LIT_economicgrowth
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_production
 		x = 24
 		y = 7
 		cost = 10
@@ -294,7 +297,7 @@ focus_tree = {
 	#Focus for Arm Lithuanians in Smolensk, Minsk and Latvia
 	focus = {
 		id = LIT_armlithuaniansinsmolenskminskandlatvia
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_armforeignliths
 		x = 22
 		y = 5
 		cost = 10
@@ -305,7 +308,7 @@ focus_tree = {
 	#Focus for Relithunize the Poles
 	focus = {
 		id = LIT_relithunizethepoles
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_lithuanizepoles
 		x = 26
 		y = 6
 		cost = 10
@@ -316,7 +319,7 @@ focus_tree = {
 	#Focus for Use GDL Nostalgia
 	focus = {
 		id = LIT_usegdlnostalgia
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_gdlnostalgia
 		x = 26
 		y = 7
 		cost = 10
@@ -327,7 +330,7 @@ focus_tree = {
 	#Focus for Legion of Foreign Lithuanians
 	focus = {
 		id = LIT_legionofforeignlithuanians
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_mobilization
 		x = 22
 		y = 6
 		cost = 10
@@ -360,7 +363,7 @@ focus_tree = {
 	#Focus for To the Death!
 	focus = {
 		id = LIT_tothedeath
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_todeath
 		x = 22
 		y = 7
 		cost = 10
@@ -371,7 +374,7 @@ focus_tree = {
 	#Focus for Specialize the Ministry of Economics
 	focus = {
 		id = LIT_specializetheministryofeconomics
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_the_giant_wakes
 		x = 24
 		y = 6
 		cost = 10
@@ -382,7 +385,7 @@ focus_tree = {
 	#Focus for Lithuania Great Again!
 	focus = {
 		id = LIT_lithuaniagreatagain
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_greatagain
 		x = 24
 		y = 8
 		cost = 10
@@ -483,17 +486,20 @@ focus_tree = {
 	#Focus for President Antanas Smetona
 	focus = {
 		id = LIT_presidentantanassmetona
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_smentona_rules
 		x = 24
 		y = 0
 		cost = 10
 		available_if_capitulated = yes
+		available = {
+		 has_country_flag = LIT_smetona_president
+		}
 	}
 
 	#Focus for Purge the Left
 	focus = {
 		id = LIT_purgetheleft
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_deal_with_hess_faction
 		x = 24
 		y = 1
 		cost = 10
@@ -504,7 +510,7 @@ focus_tree = {
 	#Focus for "Edit" the Education System
 	focus = {
 		id = LIT_edittheeducationsystem
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_reworkeducation
 		x = 27
 		y = 1
 		cost = 10
@@ -515,7 +521,7 @@ focus_tree = {
 	#Focus for Ease Gun Laws
 	focus = {
 		id = LIT_easegunlaws
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_easegunlaws
 		x = 21
 		y = 3
 		cost = 10
@@ -526,7 +532,7 @@ focus_tree = {
 	#Focus for Lithuanian Nationalism
 	focus = {
 		id = LIT_lithuaniannationalism
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_lithuaniannationalism
 		x = 27
 		y = 2
 		cost = 10
@@ -537,7 +543,7 @@ focus_tree = {
 	#Focus for Historical Revisionalism
 	focus = {
 		id = LIT_historicalrevisionalism
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_rewritehistory
 		x = 27
 		y = 3
 		cost = 10
@@ -548,7 +554,7 @@ focus_tree = {
 	#Focus for Guranteed Loyalty
 	focus = {
 		id = LIT_guranteedloyalty
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_absoluteloyaslity
 		x = 24
 		y = 3
 		cost = 10
@@ -559,7 +565,7 @@ focus_tree = {
 	#Focus for Vytautas the Great Reborn!
 	focus = {
 		id = LIT_vytautasthegreatreborn
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_vytautasreborn
 		x = 24
 		y = 4
 		cost = 10
@@ -581,7 +587,7 @@ focus_tree = {
 	#Focus for Corporativist Economics
 	focus = {
 		id = LIT_corporativisteconomics
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_corporateeconomics
 		x = 24
 		y = 5
 		cost = 10
@@ -592,7 +598,7 @@ focus_tree = {
 	#Focus for Rural ideals
 	focus = {
 		id = LIT_ruralideals
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_ruralideals
 		x = 26
 		y = 5
 		cost = 10
@@ -603,7 +609,7 @@ focus_tree = {
 	#Focus for Award the Army
 	focus = {
 		id = LIT_awardthearmy
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_rewardarmy
 		x = 21
 		y = 1
 		cost = 10
@@ -614,7 +620,7 @@ focus_tree = {
 	#Focus for Destroy Voldemaras
 	focus = {
 		id = LIT_destroyvoldemaras
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_killvoldemaras
 		x = 24
 		y = 2
 		cost = 10
@@ -625,7 +631,7 @@ focus_tree = {
 	#Focus for Duty for All!
 	focus = {
 		id = LIT_dutyforall
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_dutyforall
 		x = 35
 		y = 6
 		cost = 10
@@ -636,7 +642,7 @@ focus_tree = {
 	#Focus for Baltification of the Lands
 	focus = {
 		id = LIT_baltificationofthelands
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_balticificationoflands
 		x = 38
 		y = 9
 		cost = 10
@@ -647,7 +653,7 @@ focus_tree = {
 	#Focus for Economic Rise
 	focus = {
 		id = LIT_economicrise
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_consumer_goods
 		x = 35
 		y = 7
 		cost = 10
@@ -658,7 +664,7 @@ focus_tree = {
 	#Focus for Encourage Socialism of Duty
 	focus = {
 		id = LIT_encouragesocialismofduty
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_socialismofduty
 		x = 35
 		y = 5
 		cost = 10
@@ -669,7 +675,7 @@ focus_tree = {
 	#Focus for Politicize the Jaunalietuviai
 	focus = {
 		id = LIT_politicizethejaunalietuviai
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_lithuanianyouth
 		x = 36
 		y = 9
 		cost = 10
@@ -680,7 +686,7 @@ focus_tree = {
 	#Focus for The New Nationalist Generation!
 	focus = {
 		id = LIT_thenewnationalistgeneration
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_newgeneration
 		x = 37
 		y = 10
 		cost = 10
@@ -699,7 +705,7 @@ focus_tree = {
 	#Focus for Legacy of the Dneper Balts
 	focus = {
 		id = LIT_legacyofthedneperbalts
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_legacyofdneprbalts
 		x = 41
 		y = 5
 		cost = 10
@@ -1591,7 +1597,7 @@ focus_tree = {
 	#Focus for The Baltic Legion
 	focus = {
 		id = LIT_thebalticlegion
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_balticlegion
 		x = 38
 		y = 5
 		cost = 10
@@ -1602,7 +1608,7 @@ focus_tree = {
 	#Focus for Pagan Bias
 	focus = {
 		id = LIT_paganbias
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_vydunas_pereniallism
 		x = 36
 		y = 8
 		cost = 10
@@ -1613,7 +1619,7 @@ focus_tree = {
 	#Focus for Expand the Military
 	focus = {
 		id = LIT_expandthemilitary
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_fanaticalarmy
 		x = 40
 		y = 2
 		cost = 10
@@ -1624,18 +1630,18 @@ focus_tree = {
 	#Focus for Form the Ministry of Propaganda
 	focus = {
 		id = LIT_formtheministryofpropaganda
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_indoctrinateyouth
 		x = 36
 		y = 3
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = LIT_fvskoCPL }
+		prerequisite = { focus = LIT_banusuryvisoumis }
 	}
 
 	#Focus for Ban Usury
 	focus = {
-		id = LIT_banusury
-		icon = GFX_goal_unknown
+		id = LIT_banusuryvisoumis
+		icon = GFX_focus_LIT_banusury
 		x = 36
 		y = 2
 		cost = 10
@@ -1646,7 +1652,7 @@ focus_tree = {
 	#Focus for Purge anyone not part of the Perkūnininkai
 	focus = {
 		id = LIT_purgeanyonenotpartoftheperknininkai
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_pelekistpurges
 		x = 40
 		y = 1
 		cost = 10
@@ -1657,7 +1663,7 @@ focus_tree = {
 	#Focus for Create Aistija
 	focus = {
 		id = LIT_createaistija
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_createaistija
 		x = 38
 		y = 6
 		cost = 10
@@ -1668,7 +1674,7 @@ focus_tree = {
 	#Focus for Samogitian Autonomy
 	focus = {
 		id = LIT_samogitianautonomy
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_samagotianaut
 		x = 40
 		y = 9
 		cost = 10
