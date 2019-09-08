@@ -10,8 +10,7 @@ state={
 	state_category = city
 
 	history={
-		owner = PRU
-		buildings = {
+		owner = ECU		buildings = {
 			infrastructure = 3
 			arms_factory = 1
 			industrial_complex = 4
