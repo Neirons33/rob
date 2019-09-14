@@ -1,5 +1,5 @@
 division_template = {
-	name = "Bengali Guard"
+	name = "Revolutionary Guard"
 
 	division_names_group = RAJ_INF_01
 
@@ -20,6 +20,8 @@ division_template = {
 	priority = 2
 }
 
+
+
 division_template = {
 	name = "Militia"				# Militia units (lowest experience, oldest equipment)
 
@@ -37,67 +39,44 @@ division_template = {
 }
 
 units = {
-	#Royal Bengali Army
+	#Orissa Army
 	division = {
-		name = "Bengali National Guard"
-		location = 11929
-		division_template = "Bengali Guard"
+		name = "Odishan Revolutionary Guard"
+		location = 10116
+		division_template = "Revolutionary Guard"
 		start_experience_factor = 0.3
 	}
 	division = {
-		name = "1st Bengali Militia"
-		location = 10389
+		name = "All-Indian Infantry Legion"
+		location = 10116
+		division_template = "Revolutionary Guard"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "1st Odishan Socialist Militia"
+		location = 1059
 		division_template = "Militia"
 		start_experience_factor = 0.1
 	}
 	division = {
-		name = "2nd Bengali Miliitia"
-		location = 12423
+		name = "2nd Odishan Socialist Militia"
+		location = 4104
 		division_template = "Militia"
 		start_experience_factor = 0.1
 	}
 	division = {
-		name = "3rd Bengali Militia"
-		location = 11968
+		name = "3rd Odishan Socialist Militia"
+		location = 12490
 		division_template = "Militia"
 		start_experience_factor = 0.1
 	}
 	division = {
-		name = "4th Bengali Militia"
-		location = 9991
+		name = "Andhra Socialist Militia"
+		location = 4237
 		division_template = "Militia"
 		start_experience_factor = 0.1
 	}
-	division = {
-		name = "Calcutta Infantry"
-		location = 4245
-		division_template = "Militia"
-		start_experience_factor = 0.1
-	}
-	division = {
-		name = "West Bengali Militia"
-		location = 7537
-		division_template = "Militia"
-		start_experience_factor = 0.1
-	}
-	division = {
-		name = "5th Bengali Militia"
-		location = 11929
-		division_template = "Militia"
-		start_experience_factor = 0.1
-	}
-	division = {
-		name = "Himalayan Infantry"
-		location = 12338
-		division_template = "Militia"
-		start_experience_factor = 0.1
-	}
-	division = {
-		name = "Indian Loyalists"
-		location = 1656
-		division_template = "Militia"
-		start_experience_factor = 0.1
-	}
+
 
 
 ### Starting Equipment ###
@@ -105,7 +84,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = infantry_equipment_0
-			creator = "BNL"
+			creator = "ORS"
 		}
 		requested_factories = 1
 		progress = 0.28

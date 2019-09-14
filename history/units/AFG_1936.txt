@@ -45,7 +45,8 @@ units = {
 		name = "Farah Military District"
 		location = 10737
 		division_template = "Militia"
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.8
+		start_experience_factor = 0.2
 
 	}
 	division = {
@@ -53,6 +54,7 @@ units = {
 		location = 4893
 		division_template = "Militia"
 		start_equipment_factor = 0.8
+		start_experience_factor = 0.2
 
 	}
 	division = {
@@ -60,6 +62,8 @@ units = {
 		location = 4893
 		division_template = "Militia"
 		start_equipment_factor = 0.8
+		start_experience_factor = 0.2
+
 	}
 	#Herat Army
 	division = {
@@ -67,6 +71,8 @@ units = {
 		location = 4893
 		division_template = "Militia"
 		start_equipment_factor = 0.3
+		start_experience_factor = 0.2
+
 
 	}
 	division = {
@@ -74,6 +80,8 @@ units = {
 		location = 10852
 		division_template = "Militia"
 		start_equipment_factor = 0.3
+		start_experience_factor = 0.2
+
 
 	}
 	division = {
@@ -81,6 +89,8 @@ units = {
 		location = 1948
 		division_template = "Militia"
 		start_equipment_factor = 0.3
+		start_experience_factor = 0.2
+
 
 	}
 	#Kandahar Army
@@ -89,6 +99,8 @@ units = {
 		location = 1948
 		division_template = "Militia"
 		start_equipment_factor = 0.3
+		start_experience_factor = 0.2
+
 
 	}
 	division = {
@@ -96,6 +108,8 @@ units = {
 		location = 10852
 		division_template = "Militia"
 		start_equipment_factor = 0.3
+		start_experience_factor = 0.2
+
 
 	}
 	division = {
@@ -103,6 +117,8 @@ units = {
 		location = 8027
 		division_template = "Militia"
 		start_equipment_factor = 0.3
+		start_experience_factor = 0.2
+
 
 	}	
 	division = {
@@ -110,6 +126,8 @@ units = {
 		location = 1573
 		division_template = "Militia"
 		start_equipment_factor = 0.3
+		start_experience_factor = 0.2
+
 
 	}	
 
