@@ -142,6 +142,11 @@ BRM = { add_state_core = 1195 }
 BRM = { transfer_state = 1195 }
 BRM = { add_state_core = 1196 }
 BRM = { transfer_state = 1196 }
+TML = { load_oob = "TML_1936" }
+ASM = { load_oob = "ASM_1936" }
+JAK = { load_oob = "JAK_1936" }
+ORS = { load_oob = "ORS_1936" }
+
 BRJ = {
 country_event = {
     id = raj.107
@@ -236,6 +241,11 @@ BRM = { add_state_core = 1195 }
 BRM = { transfer_state = 1195 }
 BRM = { add_state_core = 1196 }
 BRM = { transfer_state = 1196 }
+TML = { load_oob = "TML_1936" }
+ASM = { load_oob = "ASM_1936" }
+JAK = { load_oob = "JAK_1936" }
+ORS = { load_oob = "ORS_1936" }
+
 BRJ = {
 country_event = {
     id = raj.107
@@ -330,6 +340,11 @@ BRM = { add_state_core = 1195 }
 BRM = { transfer_state = 1195 }
 BRM = { add_state_core = 1196 }
 BRM = { transfer_state = 1196 }
+TML = { load_oob = "TML_1936" }
+ASM = { load_oob = "ASM_1936" }
+JAK = { load_oob = "JAK_1936" }
+ORS = { load_oob = "ORS_1936" }
+
 BRJ = {
 country_event = {
     id = raj.107
@@ -422,6 +437,10 @@ BRM = { add_state_core = 1195 }
 BRM = { transfer_state = 1195 }
 BRM = { add_state_core = 1196 }
 BRM = { transfer_state = 1196 }
+TML = { load_oob = "TML_1936" }
+ASM = { load_oob = "ASM_1936" }
+JAK = { load_oob = "JAK_1936" }
+ORS = { load_oob = "ORS_1936" }
 BRJ = {
 country_event = {
     id = raj.107
@@ -576,7 +595,9 @@ ai_chance = { factor = 40}
 transfer_state = 428
 transfer_state = 424
 white_peace = BRJ
-
+hidden_effect = { 
+BRJ = { remove_ideas = brindian_war }
+}
 
 }
 }
@@ -589,6 +610,9 @@ fire_only_once = yes
 picture = GFX_picture_bosnian_revolt
 trigger = {
 tag = BRJ
+has_army_manpower = {
+    size > 10000 
+}
 }
 is_triggered_only = yes
 
@@ -603,8 +627,88 @@ declare_war_on = {
 
 }
 option = {
-name = raj.104.b
+name = raj.107.b
 ai_chance = { factor = 1}
 add_political_power = -100
+}
+}
+
+country_event = {
+id = raj.108
+title = raj.108.t
+desc = raj.108.d
+fire_only_once = yes
+picture = GFX_picture_bosnian_revolt
+trigger = {
+tag = ASM
+}
+
+
+option = {
+name = raj.108.a
+ai_chance = { factor = 100}
+declare_war_on = {
+    target = BNL
+    type = annex_everything
+}
+ORS = {
+country_event = {
+    id = raj.109
+    days = 5
+}
+}
+
+}
+option = {
+name = raj.108.b
+ai_chance = { factor = 1}
+add_political_power = -100
+}
+}
+
+country_event = {
+id = raj.109
+title = raj.109.t
+desc = raj.109.d
+fire_only_once = yes
+picture = GFX_picture_bosnian_revolt
+trigger = {
+tag = ORS
+}
+is_triggered_only = yes
+option = {
+name = raj.109.a
+ai_chance = { factor = 100}
+declare_war_on = {
+    target = BNL
+    type = annex_everything
+}
+
+}
+option = {
+name = raj.109.b
+ai_chance = { factor = 1}
+add_political_power = -100
+}
+}
+
+country_event = {
+id = raj.110
+title = raj.110.t
+desc = raj.110.d
+fire_only_once = yes
+picture = GFX_picture_bosnian_revolt
+trigger = {
+tag = ASM
+is_neighbor_of = ORS
+has_war = no
+}
+option = {
+name = raj.110.a
+ai_chance = { factor = 100}
+annex_country = {
+    target = ORS
+    transfer_troops = yes
+}
 }
 }
