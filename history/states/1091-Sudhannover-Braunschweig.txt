@@ -1,3 +1,4 @@
+
 state={
 	id=1091
 	name="STATE_1091"
@@ -13,14 +14,14 @@ state={
 		}
 		add_core_of = GER
 		add_core_of = PRS
+		add_core_of = HAN
 
 	}
 
 	provinces={
-		3234 3355 3395 11493 
+		405 3234 3395 
 	}
 	manpower=1803733
 	buildings_max_level_factor=1.000
 	state_category=large_city
-
 }

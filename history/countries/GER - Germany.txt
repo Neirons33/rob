@@ -722,6 +722,18 @@ create_corps_commander = {
 }
 
 create_corps_commander = {
+	name = "Dietrich von Saucken"
+	picture = "Portrait_Germany_Ernst-Eberhard_Hell.dds"
+	traits = { trait_engineer war_hero }
+	skill = 3
+	id = 34
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
 	name = "Felix Steiner"
 	gfx = "GFX_portrait_ger_felix_steiner"
 	traits = {  }

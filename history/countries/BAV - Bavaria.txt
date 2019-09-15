@@ -47,3 +47,67 @@ create_country_leader = {
 	}
 }
 
+create_country_leader = {
+	name = "Heinrich Himmler"
+	desc = "ANTE_PAVELIC_DESC"
+	picture = "HeinrichHimmler.tga"
+	expire = "1965.1.1"
+	ideology = pelekist
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Heinrich Himmler"
+	desc = "ANTE_PAVELIC_DESC"
+	picture = "HeinrichHimmler.tga"
+	expire = "1965.1.1"
+	ideology = pelekist
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Franz Ritter von Epp"
+	desc = "ANTE_PAVELIC_DESC"
+	picture = "HeinrichHimmler.tga"
+	expire = "1965.1.1"
+	ideology = reactionary
+	traits = {
+		#
+	}
+}
+create_corps_commander  = {
+	name = "Friedrich Dollmann"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	traits = { }
+	skill = 2
+	attack_skill = 1
+    defense_skill = 3
+    planning_skill = 2
+    logistics_skill = 1
+}
+
+create_corps_commander  = {
+	name = "Franz Halder"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	traits = { }
+	skill = 2
+	attack_skill = 1
+    defense_skill = 3
+    planning_skill = 2
+    logistics_skill = 1
+}
+
+create_corps_commander  = {
+	name = "Alfred Jodl"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	traits = { }
+	skill = 2
+	attack_skill = 1
+    defense_skill = 3
+    planning_skill = 2
+    logistics_skill = 1
+}

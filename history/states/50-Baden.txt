@@ -22,6 +22,7 @@ state={
 
 		}
 		add_core_of = GER
+		add_core_of = WUR
 		1939.1.1 = {
 			buildings = {
 				arms_factory = 11
@@ -34,7 +35,7 @@ state={
 	}
 
 	provinces={
-		519 694 6555 6581 9517 9545 11486 11499 
+		6555 6581 9517 9545 
 	}
 	manpower=3921831
 	buildings_max_level_factor=1.000

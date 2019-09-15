@@ -16,6 +16,8 @@ state={
 
 		}
 		add_core_of = GER
+		add_core_of = BDB
+		add_core_of = POM
 
 	}
 

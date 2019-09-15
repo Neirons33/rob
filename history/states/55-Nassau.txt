@@ -15,6 +15,7 @@ state={
 		}
 		add_core_of = GER
 		add_core_of = PRS
+		add_core_of = HES
 		1939.1.1 = {
 			buildings = {
 				air_base = 3
@@ -26,7 +27,7 @@ state={
 	}
 
 	provinces={
-		564 3397 3524 6549 9524 9547 11445 11533 
+		3397 3524 6549 9547 11445 
 	}
 	manpower=2294232
 	buildings_max_level_factor=1.000

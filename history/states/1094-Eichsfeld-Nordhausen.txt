@@ -1,12 +1,13 @@
+
 state={
 	id=1094
 	name="STATE_1094"
+
 	history={
 		owner = GER
 		victory_points = {
 			3561 5 
 		}
-
 		buildings = {
 			infrastructure = 8
 			arms_factory = 3
@@ -15,15 +16,14 @@ state={
 		}
 		add_core_of = GER
 		add_core_of = PRS
+		add_core_of = TRG
 
 	}
 
 	provinces={
-		3561 6513 11402 
+		3561 
 	}
 	manpower=521631
 	buildings_max_level_factor=1.000
 	state_category=large_city
-
-
 }

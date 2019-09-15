@@ -793,3 +793,45 @@ SNN = {
     color = rgb { 82 76 46 }
 	color_ui = rgb { 82 76 46 }
 }
+
+##germanstates##
+BDB = {
+    color = rgb { 122 133 125 }
+	color_ui = rgb { 52 41 8 }
+}
+MSZ = {
+    color = rgb { 150 35 28 }
+	color_ui = rgb { 40 68 29 }
+}
+POM = {
+    color = rgb { 115 85 28 }
+	color_ui = rgb { 40 68 29 }
+}
+BAD = {
+    color = rgb { 203 170 94 }
+	color_ui = rgb { 23 68 61 }
+}
+WUR = {
+    color = rgb { 157 198 76 }
+	color_ui = rgb { 115 92 23 }
+}
+HES = {
+    color = rgb { 1 0 127 }
+	color_ui = rgb { 123 16 8 }
+}
+SWH = {
+    color = rgb { 182 143 131 }
+	color_ui = rgb { 124 99 75 }
+}
+TRG = {
+    color = rgb { 119 64 0 }
+	color_ui = rgb { 31 47 84 }
+}
+ODB = {
+    color = rgb { 36 79 121 }
+	color_ui = rgb { 170 71 63 }
+}
+HAN = {
+    color = rgb { 55 115 64 }
+	color_ui = rgb { 82 76 46 }
+}

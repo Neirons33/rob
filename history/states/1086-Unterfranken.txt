@@ -1,3 +1,4 @@
+
 state={
 	id=1086
 	name="STATE_1086"
@@ -10,11 +11,12 @@ state={
 		}
 		add_core_of = GER
 		add_core_of = BAV
+		add_core_of = HES
 
 	}
 
 	provinces={
-		6421 6594 9557 11417 13116 
+		6421 6594 9557 11417 13116 13574 
 	}
 	manpower=1043930
 	buildings_max_level_factor=1.000
