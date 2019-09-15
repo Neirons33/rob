@@ -1,4 +1,4 @@
-capital = 405
+capital = 1177
 
 oob = "UZB_1936"
 

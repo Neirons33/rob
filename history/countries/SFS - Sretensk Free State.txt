@@ -31,12 +31,24 @@ add_ideas = {
 
 
 create_country_leader = {
-	name = "Adolf Osipovich"
-	desc = "POLITICS_ANANDYN_AMAR_DESC"
-	picture = 
+	name = "Robert von Kosch"
+	desc = "POLITICS_ROBERT_KOSCH_DESC"
+	picture = "Robert_Kosch.tga"
 	expire = "1965.1.1"
 	ideology = reactionary
 	traits = {
 		#
 	}
+}
+
+create_corps_commander = {
+	name = "Robert von Kosch"
+	picture = "Robert_Kosch.dds"
+	traits = { infantry_officer trait_reckless politically_connected}
+	skill = 3
+	id = 15
+	attack_skill = 2
+	defense_skill = 5
+	planning_skill = 1
+	logistics_skill = 3
 }

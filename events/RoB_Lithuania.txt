@@ -34,14 +34,14 @@ is_triggered_only = yes
 
 option = { ###accept
  BLR = { country_event = { id = belarusia.14 days = 5 } }
-   	ai_will_do = {
-			base = 200
+   	ai_chance = {
+			factor = 200
 			}
  }
 option = { ###deny
  BLR = { country_event = { id = belarusia.13 days = 5 } }
-   	ai_will_do = {
-			base = 20
+   	ai_chance = {
+			factor = 20
 			}
  }
 }
@@ -200,7 +200,7 @@ option = { ###Augustinas Voldemaras
 	}
 }
 hidden_effect = {
- country_event = { id = lithuania.8 days = 45 }
+ country_event = { id = lithuania.8 days = 3 }
 }
 }
 option = { ###Military Dictaotshiop
@@ -284,8 +284,8 @@ name = lithuania.8.a
 kill_country_leader = yes
  create_country_leader = {
 	name = "Vladas Mironas"
-	desc = ""
-	picture = ".tga"
+	desc = "POLITICS_VLADAS_MIRONAS_DESC"
+	picture = "LIT_Mironas.tga"
 	expire = "1953.3.1"
 	ideology = pelekist
 	traits = {

@@ -243,7 +243,7 @@ units = {
 			name_order = 34
 		}
 		location = 9503
-		division_template = 3"Division d'Infanterie" 	# Frontline, best equipment
+		division_template = "Division d'Infanterie" 	# Frontline, best equipment
 		start_experience_factor = 0.3
 	}
 			division= {	# "42ème Division d'Infanterie"

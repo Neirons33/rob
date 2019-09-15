@@ -11,36 +11,8 @@ GER_german_partisans = {
     compare = less_than
 }
 
-divisions_in_state = {
-    type = infantry
-    size > 2
-    state = 58
-	 }
-	 divisions_in_state = {
-    type = infantry
-    size > 2
-    state = 59
-	 }
-	 divisions_in_state = {
-    type = infantry
-    size > 2
-    state = 60
-	 }
-	 divisions_in_state = {
-    type = infantry
-    size > 2
-    state = 61
-	 }
-	 divisions_in_state = {
-    type = infantry
-    size > 2
-    state = 63
-	 }
-	 divisions_in_state = {
-    type = infantry
-    size > 2
-    state = 55
-	 }
+
+
 	 }
 	 cost = 90
 	 activation = {
@@ -52,13 +24,20 @@ divisions_in_state = {
 	complete_effect = {
 	add_to_variable = { var = northern_partisan_strenght value =-20 }
 	set_country_flag = north_holds
+	add_equipment_to_stockpile = {
+    type = infantry_equipment
+    amount = -3000
+    producer = GER
+}
+ add_manpower =-30000
 	}
 	timeout_effect = {
 	add_to_variable = { var = northern_partisan_strenght value = 35 } 
 	set_country_flag = north_falls
+	
 	}
 		ai_will_do = {
-			factor = 200
+			base = 150
 		}
 	
 	}
@@ -75,31 +54,7 @@ divisions_in_state = {
     compare = less_than
 }
 
-divisions_in_state = {
-    type = infantry
-    size > 2
-    state = 53
-	 }
-	 divisions_in_state = {
-    type = infantry
-    size > 2
-    state = 54
-	 }
-	 divisions_in_state = {
-    type = infantry
-    size > 2
-    state = 50
-	 }
-	 divisions_in_state = {
-    type = infantry
-    size > 2
-    state = 791
-	 }
-	 divisions_in_state = {
-    type = infantry
-    size > 2
-    state = 52
-	 }
+
 
 	 }
 	 cost = 90
@@ -112,13 +67,19 @@ divisions_in_state = {
 	complete_effect = {
 	add_to_variable = { var = southern_partisan_strenght value =-25 }
 	set_country_flag = south_holds
+add_equipment_to_stockpile = {
+    type = infantry_equipment
+    amount = -4000
+    producer = GER
+}
+ add_manpower =-40000
 	}
 	timeout_effect = {
 	add_to_variable = { var = southern_partisan_strenght value = 35 } 
 	set_country_flag = south_falls
 	}
 		ai_will_do = {
-			factor = 200
+			base = 150
 		}
 	
 	}
@@ -139,15 +100,10 @@ divisions_in_state = {
 	 }
 	 icon = GFX_decision_infiltrate_state
 	 	ai_will_do = {
-			factor = 200
+			base = 150
 		}
 	available = {
-	 
-	 divisions_in_state = {
-    type = infantry
-    size > 2
-    state = 58
-	 }
+	 has_country_flag = north_german_partisans
 	 }
 	 fire_only_once = yes
 	 cost = 40
@@ -155,19 +111,17 @@ divisions_in_state = {
 	 remove_effect = {
      add_to_variable = { var = northern_partisan_strenght value =-4 }
 	 set_country_flag = partisans_holstein_destroyed
+	 add_equipment_to_stockpile = {
+    type = infantry_equipment
+    amount = -450
+    producer = GER
+}
+ add_manpower =-4500
 }
 }
 	 GER_destroy_partisans_in_hannover = {
 	 	ai_will_do = {
-			factor = 0
-			 modifier = {
-			 add = 200
-			 divisions_in_state = {
-              type = infantry
-               size > 2
-                state = 58
-	 }
-			 }
+			base = 150
 		}
 		 visible = {
 	  NOT = {
@@ -182,12 +136,7 @@ divisions_in_state = {
 	 has_country_flag = north_german_partisans
 	 }	
 	available = {
-	 
-	 divisions_in_state = {
-    type = infantry
-    size > 2
-    state = 59
-	 }
+	 has_country_flag = north_german_partisans
 	 }
 	 
 	 fire_only_once = yes
@@ -196,21 +145,18 @@ divisions_in_state = {
 	 	 remove_effect = {
      add_to_variable = { var = northern_partisan_strenght value =-4 }
 	 set_country_flag = partisans_hannover_destroyed
+	add_equipment_to_stockpile = {
+    type = infantry_equipment
+    amount = -360
+    producer = GER
+}
+ add_manpower =-3600
 }
 	 
 	 }
 	 GER_destroy_partisans_in_mecklenburg = {
 	 	ai_will_do = {
-			factor = 0
-			modifier = {
-			add = 200
-				 divisions_in_state = {
-                 type = infantry
-                 size > 2
-                 state = 59
-	 }
-			
-			}
+			base = 0
 		}
 		 visible = {
 	  NOT = {
@@ -225,17 +171,19 @@ divisions_in_state = {
 	 has_country_flag = north_german_partisans
 	 }
 	 available = {
-	 
-	 divisions_in_state = {
-    type = infantry
-    size > 2
-    state = 61
-	 }
+	 has_country_flag = north_german_partisans
+
 	 }
 	 fire_only_once = yes
 	 	 remove_effect = {
      add_to_variable = { var = northern_partisan_strenght value =-4 }
 	 set_country_flag = partisans_hannover_destroyed
+	 	add_equipment_to_stockpile = {
+    type = infantry_equipment
+    amount = -650
+    producer = GER
+}
+ add_manpower =-6500
 }
 	 cost = 40
 	 days_remove = 30
@@ -243,16 +191,7 @@ divisions_in_state = {
 	 }
 	  GER_destroy_partisans_in_hinterpommern = {
 	  	ai_will_do = {
-			factor = 0
-			modifier = {
-			add = 200
-				 divisions_in_state = {
-                 type = infantry
-                 size > 2
-                 state = 61
-	 }
-			
-			}
+			base = 0
 		}
 		 visible = {
 	  NOT = {
@@ -267,12 +206,7 @@ icon = GFX_decision_infiltrate_state
 	 has_country_flag = north_german_partisans
 	 }
 	 available = {
-	 divisions_in_state = {
-    type = infantry
-    size > 2
-    state = 63
-	 }
-	 
+	 has_country_flag = north_german_partisans
 	 }
 	 cost = 40
 	 days_remove = 30
@@ -280,13 +214,19 @@ icon = GFX_decision_infiltrate_state
 	  	 remove_effect = {
      add_to_variable = { var = northern_partisan_strenght value =-4 }
 	 set_country_flag = partisans_hannover_destroyed
+	 	add_equipment_to_stockpile = {
+    type = infantry_equipment
+    amount = -160
+    producer = GER
+}
+ add_manpower =-1600
 }
 	 
 	 }
 	  
 	 GER_destroy_partisans_in_thuringen = {
 	 	ai_will_do = {
-			factor = 200
+			base = 150
 		}
 		 visible = {
 	  NOT = {
@@ -301,17 +241,18 @@ icon = GFX_decision_infiltrate_state
 	 has_country_flag = north_german_partisans
 	 }
 	 available = {
-	 
-	divisions_in_state = {
-    type = infantry
-    size > 2
-    state = 60
-	 }
+	 has_country_flag = north_german_partisans
 	 }
 	 cost = 40
 	 remove_effect = {
      add_to_variable = { var = northern_partisan_strenght value =-4 }
 	 set_country_flag = partisans_hannover_destroyed
+	 	 	add_equipment_to_stockpile = {
+    type = infantry_equipment
+    amount = -550
+    producer = GER
+}
+ add_manpower =-5500
 }
 	 days_remove = 30
 	 fire_only_once = yes
@@ -319,7 +260,7 @@ icon = GFX_decision_infiltrate_state
 	 }
 	  GER_destroy_partisans_in_hessen = {
 	  	ai_will_do = {
-			factor = 200
+			base = 150
 		}
 		 visible = {
 	  NOT = {
@@ -334,21 +275,25 @@ icon = GFX_decision_infiltrate_state
 	 has_country_flag = north_german_partisans
 	 }
 	 available = {
-	 divisions_in_state = {
-    type = infantry
-    size > 2
-    state = 55
-	 }
-	 
+	 has_country_flag = north_german_partisans
 	 }
 	 cost = 40
 	 days_remove = 30
 	 fire_only_once = yes
-	 
-	 }
+	 remove_effect = {
+	  		 	add_equipment_to_stockpile = {
+    type = infantry_equipment
+    amount = -450
+    producer = GER
+}
+ add_manpower =-4500
+	}
+	}
+	
+
 	  GER_destroy_partisans_in_niederbayern = {
 	  	ai_will_do = {
-			factor = 200
+			base = 150
 		}
 		 visible = {
 	  NOT = {
@@ -363,22 +308,24 @@ icon = GFX_decision_infiltrate_state
 	 has_country_flag = south_german_partisans
 	 }
 	 available = {
-	 divisions_in_state = {
-    type = infantry
-    size > 2
-    state = 53
-	 }
+	 has_country_flag = south_german_partisans
 	 }
 	 cost = 40
 	 days_remove = 30
 	 fire_only_once = yes
 	 remove_effect = {
+	 	 	add_equipment_to_stockpile = {
+    type = infantry_equipment
+    amount = -240
+    producer = GER
+}
+ add_manpower =-2400
 	add_to_variable = { var = southern_partisan_strenght value = -6 } 
 	}
 	 }
 	 GER_destroy_partisans_in_franken = {
 	 	ai_will_do = {
-			factor = 200
+			base = 150
 		}
 				 visible = {
 	  NOT = {
@@ -393,11 +340,7 @@ icon = GFX_decision_infiltrate_state
 	 has_country_flag = south_german_partisans
 	 }
 	 	 available = {
-	 divisions_in_state = {
-    type = infantry
-    size > 2
-    state = 54
-	 }
+     has_country_flag = south_german_partisans
 	 }
 	 
 	 cost = 40
@@ -405,11 +348,17 @@ icon = GFX_decision_infiltrate_state
 	 fire_only_once = yes
 	 remove_effect = {
 	add_to_variable = { var = southern_partisan_strenght value = -8 } 
+		 	add_equipment_to_stockpile = {
+    type = infantry_equipment
+    amount = -450
+    producer = GER
+}
+ add_manpower =-4500
 	}
 	 }
 	 	  GER_destroy_partisans_in_wurttemberg = {
 		  	ai_will_do = {
-			factor = 200
+			base = 150
 		}
 				 visible = {
 	  NOT = {
@@ -424,22 +373,24 @@ icon = GFX_decision_infiltrate_state
 	 has_country_flag = south_german_partisans
 	 }
 	 	 available = {
-	 divisions_in_state = {
-    type = infantry
-    size > 2
-    state = 50
-	 }
+      has_country_flag = south_german_partisans
 	 }
 	 cost = 40
 	 days_remove = 40
 	 fire_only_once = yes
 	 remove_effect = {
 	add_to_variable = { var = southern_partisan_strenght value = -6 } 
+		 	add_equipment_to_stockpile = {
+    type = infantry_equipment
+    amount = -1000
+    producer = GER
+}
+ add_manpower =-10000
 	}
 	 }
 	 	  GER_destroy_partisans_in_baden = {
 		  	ai_will_do = {
-			factor = 200
+			base = 150
 		}
 				 visible = {
 	  NOT = {
@@ -454,22 +405,24 @@ icon = GFX_decision_infiltrate_state
 	 has_country_flag = south_german_partisans
 	 }
 	 	 available = {
-	 divisions_in_state = {
-    type = infantry
-    size > 2
-    state = 53
-	 }
+		 has_country_flag = south_german_partisans
 	 }
 	 cost = 40
 	 days_remove = 40
 	 fire_only_once = yes
 	 remove_effect = {
 	add_to_variable = { var = southern_partisan_strenght value = -8 } 
+		 	add_equipment_to_stockpile = {
+    type = infantry_equipment
+    amount = -760
+    producer = GER
+}
+ add_manpower =-7600
 	}
 	 }
 	 	  GER_destroy_partisans_in_oberbayern = {
 		  	ai_will_do = {
-			factor = 200
+			base = 150
 		}
 				 visible = {
 	  NOT = {
@@ -484,15 +437,17 @@ icon = GFX_decision_infiltrate_state
 	 has_country_flag = south_german_partisans
 	 }
 	 	 available = {
-	 divisions_in_state = {
-    type = infantry
-    size > 2
-    state = 52
-	 }
+		 has_country_flag = south_german_partisans
 	 }
 
 	remove_effect = {
-	add_to_variable = { var = southern_partisan_strenght value = -7 } 
+	add_to_variable = { var = southern_partisan_strenght value = -7 }
+	 	add_equipment_to_stockpile = {
+    type = infantry_equipment
+    amount = -800
+    producer = GER
+}
+ add_manpower =-8000	
 	}
 	 cost = 40
 	 days_remove = 40

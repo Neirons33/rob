@@ -7,15 +7,12 @@ state={
 	state_category = pastoral
 
 	history={
-		owner = PRU
-		buildings = {
+		owner = ECU		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
 			air_base = 1
 		}
-		add_core_of = PRU
-		add_core_of = ECU
-	}
+		add_core_of = ECU		add_core_of = PRU	}
 
 	provinces={
 		8149 10942 

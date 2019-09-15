@@ -114,8 +114,8 @@ ASM = "countries/Assam.txt"
 MNP = "countries/Manipur.txt"
 SNN = "countries/ShanCon.txt"
 KRN = "countries/Karen.txt"
-
-##German States##
+PNJ = "countries/Panjab.txt"
+###German
 BDB = "countries/Brandenburg.txt"
 MSZ = "countries/Mecklenburg_Strelitz.txt"
 POM = "countries/Pomerania.txt"

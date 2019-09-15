@@ -6,7 +6,7 @@ DSU_use_the_momentum = {
    	ai_will_do = {
 			base = 200
 			}
-  days_remove = 10
+  days_remove = 3
     available = {
    has_country_flag = DSU_stable
    UKR = {
@@ -468,6 +468,7 @@ target_trigger = {
 	 NOT = { 
 	  is_in_faction_with = RUS
 	}
+	is_in_faction = no
 	}
  has_country_flag = DSU_stable
  }

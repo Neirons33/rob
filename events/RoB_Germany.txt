@@ -184,7 +184,7 @@ value = 1
 add_popularity = { ideology = socialist popularity =0.03}
 GER = { country_event = { id = spartakus_germany.9 days = 7 } }
 }
-option = {  ###Focus on worker-based economy
+option = {  ###Focus on worker-factord economy
 name = spartakus_germany.8.c
 add_political_power =-10
 modify_country_flag = {

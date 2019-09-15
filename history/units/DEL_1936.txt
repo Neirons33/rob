@@ -32,8 +32,8 @@ division_template = {
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
 		infantry = { x = 1 y = 0 }
-		infantry = { x = 2 y = 1 }
-		infantry = { x = 3 y = 2 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
 	}
 	priority = 1
 }
@@ -48,8 +48,8 @@ division_template = {
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
 		infantry = { x = 1 y = 0 }
-		infantry = { x = 2 y = 1 }
-		infantry = { x = 3 y = 2 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
 	}
 	priority = 0
 }
@@ -76,7 +76,7 @@ units = {
 	}
 	division = {
 		name = "3rd Indian Infantry"
-		location = 4410
+		location = 5105
 		division_template = "Infantry Brigade"
 		start_experience_factor = 0.1
 	}
@@ -93,20 +93,20 @@ units = {
 		start_equipment_factor = 0.3
 	}
 	division = {
-		name = "Princely Forces"
-		location = 5040
+		name = "Himalayan Militia"
+		location = 1129
 		division_template = "Militia"
 		start_equipment_factor = 0.3
 	}
 	division = {
-		name = "Princely Forces"
-		location = 10332
+		name = "Gorakhpur Militia"
+		location = 7334
 		division_template = "Militia"
 		start_equipment_factor = 0.3
 	}
 	division = {
 		name = "Lahore Militia"
-		location = 10887
+		location = 4979
 		division_template = "Militia"
 		start_equipment_factor = 0.3
 	}

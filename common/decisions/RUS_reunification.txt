@@ -1,0 +1,634 @@
+RUS_russian_reunification = {
+
+ RUS_destroy_SOV = {
+ target_trigger = { FROM = {tag = SOV} }
+  visible = {
+	  NOT = {
+       tag = SOV
+	   }
+	   SOV = {
+	    exists = yes
+	   }
+ }
+ available = {
+  is_neighbor_of = SOV
+  date > 1939.1.1
+  NOT = {
+   is_in_faction_with = SOV
+  }
+ }
+ cost = 50
+ fire_only_once = yes
+ days_remove = 20
+ remove_effect = {
+  ROOT = {
+   declare_war_on = { target = SOV type = annex_everything }
+}
+ }
+ }
+ 
+ RUS_destroy_RUS = {
+ target_trigger = { FROM = {tag = RUS} }
+  visible = {
+	  NOT = {
+       tag = RUS
+	   }
+	   RUS = {
+	    exists = yes
+	   }
+ }
+ available = {
+  is_neighbor_of = RUS 
+  date > 1939.1.1
+    NOT = {
+   is_in_faction_with = RUS
+  }
+ }
+ cost = 50
+ fire_only_once = yes
+ days_remove = 20
+ remove_effect = {
+  ROOT = {
+     declare_war_on = { target = RUS type = annex_everything }
+  }
+ }
+ }
+ 
+ RUS_destroy_RDR = {
+  target_trigger = { FROM = {tag = RDR} }
+  visible = {
+	  NOT = {
+       tag = RDR
+	   }
+	   RDR = {
+	    exists = yes
+	   }
+ }
+ available = {
+  is_neighbor_of = RDR 
+  date > 1939.1.1
+    NOT = {
+   is_in_faction_with = RDR
+  }
+ }
+ cost = 50
+ fire_only_once = yes
+ days_remove = 20
+ remove_effect = {
+  ROOT = {
+      declare_war_on = { target = RDR type = annex_everything }
+   }
+ }
+ }
+ 
+ RUS_destroy_LES = {
+  target_trigger = { FROM = {tag = LES} }
+  visible = {
+	  NOT = {
+       tag = LES
+	   }
+	  LES = {
+	    exists = yes
+	   }
+ }
+ available = {
+  is_neighbor_of = LES
+  date > 1936.1.1
+    NOT = {
+   is_in_faction_with = LES
+  }
+ }
+ ai_will_do = {
+  base = 10
+   modifier = {
+   factor = 200
+   strength_ratio = {
+	  tag = LES
+	  ratio > 0.75
+	 
+	}
+   }
+ }
+ cost = 50
+ fire_only_once = yes
+ days_remove = 20
+ remove_effect = {
+  ROOT = {
+      declare_war_on = { target = LES type = annex_everything }
+  }
+ }
+ }
+ 
+  RUS_destroy_TOW = {
+   target_trigger = { FROM = {tag = TOW} }
+  visible = {
+	  NOT = {
+       tag = TOW
+	   }
+	   TOW = {
+	    exists = yes
+	   }
+ }
+ available = {
+  is_neighbor_of = TOW
+  date > 1936.1.1
+    NOT = {
+   is_in_faction_with = TOW
+  }
+ }
+ ai_will_do = {
+  base = 10
+   modifier = {
+   factor = 200
+    ROOT = {
+	 strength_ratio = {
+	  tag = TOW
+	  ratio > 0.75
+	 }
+	}
+   }
+ }
+ cost = 50
+ fire_only_once = yes
+ days_remove = 20
+ remove_effect = {
+  ROOT = {
+      declare_war_on = { target = TOW type = annex_everything }
+  }
+ }
+ }
+ 
+   RUS_destroy_OMS = {
+    target_trigger = { FROM = {tag = OMS} }
+  visible = {
+	  NOT = {
+       tag = OMS
+	   }
+	  OMS = {
+	    exists = yes
+	   }
+ }
+ available = {
+  is_neighbor_of = OMS
+  date > 1936.1.1
+    NOT = {
+   is_in_faction_with = OMS
+  }
+ }
+ ai_will_do = {
+  base = 10
+   modifier = {
+   factor = 200
+    ROOT = {
+	 strength_ratio = {
+	  tag = OMS
+	  ratio > 0.75
+	 }
+	}
+   }
+ }
+ cost = 50
+ fire_only_once = yes
+ days_remove = 20
+ remove_effect = {
+  ROOT = {
+      declare_war_on = { target = OMS type = annex_everything }
+  }
+ }
+ }
+
+    RUS_destroy_BWR = {
+	 target_trigger = { FROM = {tag = BWR} }
+  visible = {
+	  NOT = {
+       tag = BWR
+	   }
+	  BWR = {
+	    exists = yes
+	   }
+ }
+ available = {
+  is_neighbor_of = BWR
+  date > 1936.1.1
+    NOT = {
+   is_in_faction_with = BWR
+  }
+ }
+ ai_will_do = {
+  base = 10
+   modifier = {
+   factor = 200
+    ROOT = {
+	 strength_ratio = {
+	  tag = BWR
+	  ratio > 0.75
+	 }
+	}
+   }
+ }
+ cost = 50
+ fire_only_once = yes
+ days_remove = 20
+ remove_effect = {
+  ROOT = {
+ declare_war_on = { target = BWR type = annex_everything }
+  }
+ }
+ }
+ 
+     RUS_destroy_CAU = {
+	  target_trigger = { FROM = {tag = CAU} }
+  visible = {
+	  NOT = {
+       tag = CAU
+	   }
+	   	   CAU = {
+	    exists = yes
+	   }
+ }
+ available = {
+  is_neighbor_of = CAU
+  date > 1936.1.1
+    NOT = {
+   is_in_faction_with = CAU
+  }
+ }
+ ai_will_do = {
+  base = 10
+   modifier = {
+   factor = 200
+    ROOT = {
+	 strength_ratio = {
+	  tag = CAU
+	  ratio > 0.75
+	 }
+	}
+   }
+ }
+ cost = 50
+ fire_only_once = yes
+ days_remove = 20
+ remove_effect = {
+  ROOT = {
+  declare_war_on = { target = CAU type = annex_everything }
+  }
+ }
+ }
+ 
+      RUS_destroy_CAA = {
+	   target_trigger = { FROM = {tag = CAA} }
+  visible = {
+	  NOT = {
+       tag = CAA
+	   }
+	   	   CAA = {
+	    exists = yes
+	   }
+ }
+ available = {
+  is_neighbor_of = CAA
+  date > 1936.1.1
+    NOT = {
+   is_in_faction_with = CAA
+  }
+ }
+ ai_will_do = {
+  base = 10
+   modifier = {
+   factor = 200
+    ROOT = {
+	 strength_ratio = {
+	  tag = CAA
+	  ratio > 0.75
+	 }
+	}
+   }
+ }
+ cost = 50
+ fire_only_once = yes
+ days_remove = 20
+ remove_effect = {
+  ROOT = {
+ declare_war_on = { target = CAA type = annex_everything }
+  }
+ }
+ }
+ 
+ RUS_destroy_CRM = {
+  target_trigger = { FROM = {tag = CRM} }
+  visible = {
+	  NOT = {
+       tag = CRM
+	   }
+	   	   CRM = {
+	    exists = yes
+	   }
+ }
+ available = {
+  is_neighbor_of = CRM
+  date > 1936.1.1
+    NOT = {
+   is_in_faction_with = CRM
+  }
+ }
+ ai_will_do = {
+  base = 10
+   modifier = {
+   factor = 200
+    ROOT = {
+	 strength_ratio = {
+	  tag = CRM
+	  ratio > 0.75
+	 }
+	}
+   }
+ }
+ cost = 50
+ fire_only_once = yes
+ days_remove = 20
+ remove_effect = {
+  ROOT = {
+ declare_war_on = { target = CRM type = annex_everything }
+  }
+ }
+ }
+ 
+RUS_destroy_FER = {
+ target_trigger = { FROM = {tag = FER} }
+  visible = {
+	  NOT = {
+       tag = FER
+	   }
+	   FER = {
+	    exists = yes
+	   }
+ }
+ available = {
+  is_neighbor_of = FER
+  date > 1936.1.1
+    NOT = {
+   is_in_faction_with = FER
+  }
+ }
+ ai_will_do = {
+  base = 10
+   modifier = {
+   factor = 200
+    ROOT = {
+	 strength_ratio = {
+	  tag = FER
+	  ratio > 0.75
+	 }
+	}
+   }
+ }
+ cost = 50
+ fire_only_once = yes
+ days_remove = 20
+ remove_effect = {
+  ROOT = {
+ declare_war_on = { target = FER type = annex_everything }
+  }
+ }
+ }
+ 
+ RUS_destroy_WFE = {
+  target_trigger = { FROM = {tag = WFE} }
+  visible = {
+	  NOT = {
+       tag = WFE
+	   }
+	   WFE = {
+	    exists = yes
+	   }
+ }
+ available = {
+  is_neighbor_of = WFE
+  date > 1936.1.1
+    NOT = {
+   is_in_faction_with = WFE
+  }
+ }
+ ai_will_do = {
+  base = 10
+   modifier = {
+   factor = 200
+    ROOT = {
+	 strength_ratio = {
+	  tag = WFE
+	  ratio > 0.75
+	 }
+	}
+   }
+ }
+ cost = 50
+ fire_only_once = yes
+ days_remove = 20
+ remove_effect = {
+  ROOT = {
+ declare_war_on = { target = WFE type = annex_everything }
+  }
+ }
+ }
+ 
+  
+ RUS_destroy_JSW = {
+  target_trigger = { FROM = {tag = JSW} }
+  visible = {
+	  NOT = {
+       tag = JSW
+	   }
+	   JSW = {
+	    exists = yes
+	   }
+ }
+ available = {
+  is_neighbor_of = JSW
+  date > 1936.1.1
+    NOT = {
+   is_in_faction_with = JSW
+  }
+ }
+ ai_will_do = {
+  base = 10
+   modifier = {
+   factor = 200
+    ROOT = {
+	 strength_ratio = {
+	  tag = JSW
+	  ratio > 0.75
+	 }
+	}
+   }
+ }
+ cost = 50
+ fire_only_once = yes
+ days_remove = 20
+ remove_effect = {
+  ROOT = {
+ declare_war_on = { target = JSW type = annex_everything }
+  }
+ }
+ }
+ 
+   
+ RUS_destroy_JOB = {
+  target_trigger = { FROM = {tag = JOB} }
+  visible = {
+	  NOT = {
+       tag = JOB
+	   }
+	   JOB = {
+	    exists = yes
+	   }
+ }
+ available = {
+  is_neighbor_of = JOB
+  date > 1936.1.1
+    NOT = {
+   is_in_faction_with = JOB
+  }
+ }
+ ai_will_do = {
+  base = 10
+   modifier = {
+   factor = 200
+    ROOT = {
+	 strength_ratio = {
+	  tag = JOB
+	  ratio > 0.75
+	 }
+	}
+   }
+ }
+ cost = 50
+ fire_only_once = yes
+ days_remove = 20
+ remove_effect = {
+  ROOT = {
+ declare_war_on = { target = JOB type = annex_everything }
+  }
+ }
+ }
+ 
+  RUS_destroy_KRW = {
+  target_trigger = { FROM = {tag = KRW} }
+  visible = {
+	  NOT = {
+       tag = KRW
+	   }
+	   KRW = {
+	    exists = yes
+	   }
+ }
+ available = {
+  is_neighbor_of = KRW
+  date > 1936.1.1
+    NOT = {
+   is_in_faction_with = KRW
+  }
+ }
+ ai_will_do = {
+  base = 10
+   modifier = {
+   factor = 200
+    ROOT = {
+	 strength_ratio = {
+	  tag = KRW
+	  ratio > 0.75
+	 }
+	}
+   }
+ }
+ cost = 50
+ fire_only_once = yes
+ days_remove = 20
+ remove_effect = {
+  ROOT = {
+ declare_war_on = { target = KRW type = annex_everything }
+  }
+ }
+ }
+ 
+   RUS_destroy_BRW = {
+  target_trigger = { FROM = {tag = BRW} }
+  visible = {
+	  NOT = {
+       tag = BRW
+	   }
+	   BRW = {
+	    exists = yes
+	   }
+ }
+ available = {
+  is_neighbor_of = BRW
+  date > 1936.1.1
+    NOT = {
+   is_in_faction_with = BRW
+  }
+ }
+ ai_will_do = {
+  base = 10
+   modifier = {
+   factor = 200
+    ROOT = {
+	 strength_ratio = {
+	  tag = BRW
+	  ratio > 0.75
+	 }
+	}
+   }
+ }
+ cost = 50
+ fire_only_once = yes
+ days_remove = 20
+ remove_effect = {
+  ROOT = {
+ declare_war_on = { target = BRW type = annex_everything }
+  }
+ }
+ }
+ 
+    RUS_destroy_UGC = {
+  target_trigger = { FROM = {tag = UGC} }
+  visible = {
+	  NOT = {
+       tag = UGC
+	   }
+	   UGC = {
+	    exists = yes
+	   }
+ }
+ available = {
+  is_neighbor_of = UGC
+  date > 1936.1.1
+    NOT = {
+   is_in_faction_with = UGC
+  }
+ }
+ ai_will_do = {
+  base = 10
+   modifier = {
+   factor = 200
+    ROOT = {
+	 strength_ratio = {
+	  tag = UGC
+	  ratio > 0.75
+	 }
+	}
+   }
+ }
+ cost = 50
+ fire_only_once = yes
+ days_remove = 20
+ remove_effect = {
+  ROOT = {
+ declare_war_on = { target = UGC type = annex_everything }
+  }
+ }
+ }
+ 
+ }
+
+
+

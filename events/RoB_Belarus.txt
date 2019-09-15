@@ -460,7 +460,7 @@ is_triggered_only = yes
 
 option = { ###aid them
 name = belarusia.20.a
-  ai_will_do = {
+  ai_chance = {
   factor = 100
  }
  CBR = {
@@ -469,7 +469,7 @@ name = belarusia.20.a
   }
  option = {
  name = belarusia.20.b
- ai_will_do = { ###refuse
+ ai_chance = { ###refuse
   factor = 10
  }
  add_political_power = -60

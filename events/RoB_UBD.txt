@@ -1,0 +1,7 @@
+#############################
+###United Baltic Duchy Events
+#############################
+
+
+add_namespace = ubd
+

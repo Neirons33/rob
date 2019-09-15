@@ -177,29 +177,6 @@ annex_country = {
 
 }
 
-###Afghan Takes Peshawar
-
-
-country_event = {
-id = afghanistan.106
-title = afghanistan.106.t
-desc = afghanistan.106.d
-is_triggered_only = yes
-fire_only_once = yes
-picture = GFX_picture_bosnian_revolt
-
-trigger = {
-tag = DEL
-}
-mean_time_to_happen = { days = 1 }
-
-option = {
-name = afghanistan.106.a
-ai_chance = { factor = 100}
-
-}
-
-}
 
 country_event = {
 id = afghanistan.106
@@ -255,6 +232,30 @@ option = {
 name = afghanistan.107.a
 ai_chance = { factor = 100}
 AFG = { puppet = JAK }
+
+}
+
+}
+
+###Afghan Takes Peshawar
+
+
+country_event = {
+id = afghanistan.108
+title = afghanistan.108.t
+desc = afghanistan.108.d
+is_triggered_only = yes
+fire_only_once = yes
+picture = GFX_picture_bosnian_revolt
+
+trigger = {
+tag = DEL
+}
+mean_time_to_happen = { days = 1 }
+
+option = {
+name = afghanistan.108.a
+ai_chance = { factor = 100}
 
 }
 

@@ -179,7 +179,22 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 12722;1216;impassable;-1;-1;-1;-1;-1;;stalinabad mountains
 10671;1216;impassable;-1;-1;-1;-1;-1;;stalinabad mountains
 10671;1919;impassable;-1;-1;-1;-1;-1;;stalinabad mountains
-7519;5087;impassable;-1;-1;-1;-1;-1;;stalinabad mountains
+10821;5087;impassable;-1;-1;-1;-1;-1;;nhimalayas
+10821;1970;impassable;-1;-1;-1;-1;-1;;nhimalayas
+10821;8112;impassable;-1;-1;-1;-1;-1;;nhimalayas
+8112;5042;impassable;-1;-1;-1;-1;-1;;nhimalayas
+5042;4973;impassable;-1;-1;-1;-1;-1;;nhimalayas
+5042;12801;impassable;-1;-1;-1;-1;-1;;nhimalayas
+5042;10802;impassable;-1;-1;-1;-1;-1;;nhimalayas
+7273;10802;impassable;-1;-1;-1;-1;-1;;nhimalayas
+12884;10802;impassable;-1;-1;-1;-1;-1;;nhimalayas
+10826;12717;impassable;-1;-1;-1;-1;-1;;nhimalayas
+12807;12892;impassable;-1;-1;-1;-1;-1;;shimalayas
+4900;12892;impassable;-1;-1;-1;-1;-1;;shimalayas
+4900;4435;impassable;-1;-1;-1;-1;-1;;shimalayas
+2014;8010;impassable;-1;-1;-1;-1;-1;;shimalayas
+2014;12860;impassable;-1;-1;-1;-1;-1;;shimalayas
+2098;12860;impassable;-1;-1;-1;-1;-1;;shimalayas
 1766;4923;impassable;-1;-1;-1;-1;-1;;pamir mountains
 12370;1766;impassable;-1;-1;-1;-1;-1;;pamir mountains
 12370;12119;impassable;-1;-1;-1;-1;-1;;pamir mountains
@@ -190,4 +205,5 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 4391;1703;impassable;-1;-1;-1;-1;-1;;pamir mountains
 4391;12526;impassable;-1;-1;-1;-1;-1;;pamir mountains
 3314;6336;sea;2752;2885;1578;2890;1581;;Afsluitdijk
+7265;10201;sea;7479;-1;-1;-1;-1;;Srilanka-Tamilland
 -1;-1;;-1;-1;-1;-1;-1;-1

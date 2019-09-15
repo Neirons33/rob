@@ -36,6 +36,8 @@ set_technology = {
 
 }
 
+set_country_flag = RUS_warlord
+
 set_convoys = 30
 
 set_politics = {

@@ -1,0 +1,177 @@
+#################
+###World Cup Events
+#################
+
+add_namespace = worldcup
+
+
+###Randomizer
+
+country_event = {
+	id = worldcup.99
+        title = worldcup.99.t # The localisable text that appears as a header
+        desc = worldcup.99.d # The localisable main text body that appears
+	picture = GFX_report_event_election_vote # Image displayed alongside the text.
+
+	hidden = yes # Optional : if set to "yes" no one will see the event
+
+	fire_only_once = yes # Optional : if set to "yes" the event will never occur more than once
+
+	immediate = { # Optional : all the following will occur once the event occurs
+random_list = {
+    40 = {
+        set_global_flag = hungary_wins	
+    }
+    40 = {
+        set_global_flag = italy_wins
+    }
+    15 = {
+        set_global_flag = england_wins	
+    }
+    5 = {
+        set_global_flag = france_wins	
+    }
+}
+	}
+	
+	option = { # This is an example of an option that has no function
+		name = worldcup.99.a 
+	}
+}
+
+# 1934 WC
+news_event = {
+	id = worldcup.100
+	title = worldcup.100.t
+	desc = worldcup.100.d
+
+	picture = GFX_news_event_olympics_1940
+	
+	major = yes
+	
+	trigger = {
+		date > 1934.6.10
+		has_global_flag = hungary_wins
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	immediate = {
+		set_global_flag = worldcup_1934 
+	}
+	
+	option = {
+		name = worldcup.100.a
+		trigger = { 
+			NOT = { TAG = HUN }
+		}
+	}
+	option = {
+		name = worldcup.100.b
+		trigger = { TAG = HUN }
+	}
+}
+
+news_event = {
+	id = worldcup.101
+	title = worldcup.101.t
+	desc = worldcup.101.d
+
+	picture = GFX_news_event_olympics_1940
+	
+	major = yes
+	
+	trigger = {
+		date > 1934.6.10
+		has_global_flag = italy_wins
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	immediate = {
+		set_global_flag = worldcup_1934 
+	}
+	
+	option = {
+		name = worldcup.101.a
+		trigger = { 
+			NOT = { TAG = ITA }
+		}
+	}
+	option = {
+		name = worldcup.101.b
+		trigger = { TAG = ITA }
+	}
+}
+
+news_event = {
+	id = worldcup.102
+	title = worldcup.102.t
+	desc = worldcup.102.d
+
+	picture = GFX_news_event_olympics_1940
+	
+	major = yes
+	
+	trigger = {
+		date > 1934.6.10
+		has_global_flag = england_wins
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	immediate = {
+		set_global_flag = worldcup_1934 
+	}
+	
+	option = {
+		name = worldcup.102.a
+		trigger = { 
+			NOT = { TAG = ENG }
+		}
+	}
+	option = {
+		name = worldcup.102.b
+		trigger = { TAG = ENG }
+	}
+}
+
+news_event = {
+	id = worldcup.103
+	title = worldcup.103.t
+	desc = worldcup.103.d
+
+	picture = GFX_news_event_olympics_1940
+	
+	major = yes
+	
+	trigger = {
+		date > 1934.6.10
+		has_global_flag = france_wins
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	immediate = {
+		set_global_flag = france_1934 
+	}
+	
+	option = {
+		name = worldcup.103.a
+		trigger = { 
+			NOT = { TAG = FRA }
+		}
+	}
+	option = {
+		name = worldcup.103.b
+		trigger = { TAG = FRA }
+	}
+}

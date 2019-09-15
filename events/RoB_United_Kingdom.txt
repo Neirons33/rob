@@ -190,8 +190,10 @@ option = { ###Squash Reactionaries
 name = united_kingdom.6.a
 add_political_power = -80
 add_stability = -0.05
-hidden_effect = { country_event = { id = united_kingdom.7 days = 25 }
-country_event = { id = united_kingdom.9 days = 45 } }
+hidden_effect = { 
+country_event = { id = united_kingdom.7 days = 25 }
+country_event = { id = united_kingdom.9 days = 45 } 
+}
 add_popularity = { ideology = reactionary popularity = -0.07 }
 }
 }
@@ -421,6 +423,7 @@ has_country_flag = ENG_conservatives_independant
 hidden_effect = {
 set_cosmetic_tag = ENG_navy
 IRE = { country_event = { id = ireland.1 days = 20 } }
+ENG = { country_event = { id = united_kingdom.18 days = 5 } }
 BLF = { transfer_state = 861 }
 BLF = { transfer_state = 120 }
 BLF = { transfer_state = 1069 }
@@ -555,6 +558,12 @@ RAJ = {
  country_event = {
     id = raj.100
     days = 30
+}
+}
+BRJ = {
+ country_event = {
+    id = raj.105
+    days = 15
 }
 }
 end_puppet = BRJ
@@ -705,7 +714,13 @@ BRU = { transfer_state = 1044 }
 RAJ = {
  country_event = {
     id = raj.100
-    days = 30
+    days = 40
+}
+}
+BRJ = {
+ country_event = {
+    id = raj.105
+    days = 15
 }
 }
 end_puppet = BRJ

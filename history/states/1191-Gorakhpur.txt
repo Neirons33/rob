@@ -7,6 +7,9 @@ state={
 			infrastructure = 3
 
 		}
+		victory_points = {
+		4459 3
+		}
 		add_core_of = RAJ
 
 	}

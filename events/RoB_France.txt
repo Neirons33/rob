@@ -155,7 +155,7 @@ tag = FRA
 date > 1934.4.1
 NOT ={ 
 has_country_flag = FRA_radicals_dead
-FRA_pelekist_victory
+has_country_flag = FRA_pelekist_victory
 }
 }
 
@@ -166,8 +166,7 @@ name = france.7.a
 add_popularity = { ideology = pelekist popularity = -0.03 }
 add_political_power = -100
 add_stability = -0.04 
-hidden_effect = { country_event = { id = france.8 days = 20 }
-}
+hidden_effect = { country_event = { id = france.8 days = 20 } }
 }
 option = { ###blame socialists
 name = france.7.b

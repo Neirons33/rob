@@ -103,6 +103,9 @@ set_popularities = {
 }
 add_ideas = {
 limited_conscription
+brindian_army
+indian_nationalism
+pushed_back
 }
 set_convoys = 100
 

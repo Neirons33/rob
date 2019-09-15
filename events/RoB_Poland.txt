@@ -41,16 +41,16 @@ country_event = {
   declare_war_on = { type = annex_everything target = BLR }
   create_faction = "Belarusian-Polish Pact"
   add_to_faction = DBR
-  ai_will_do = {
-   base = 100
+  ai_chance = {
+   factor = 100
   }
  }
  
  option = {  ###leave them
   name = poland.1.b
   add_political_power = -50
-    ai_will_do = {
-   base = 10
+    ai_chance = {
+   factor = 10
   }
  }
 }

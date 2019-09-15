@@ -117,37 +117,32 @@ set_convoys = 50
 
 
 set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 15
-		}
-
-		fascism = {
-			popularity = 80
-		}
-		
-		communism = {
-			popularity = 5
-		}
-	}
-	
-	ruling_party = fascism
-	last_election = "1936.1.1"
+	ruling_party = pelekist
+	last_election = "1934.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
-
+set_popularities = {
+	national_socialist = 1
+	socialist = 1
+	democratic_socialist = 1
+	social_democracy = 1
+	social_liberal = 1
+	conservative = 2
+	authoritharian = 2
+	reactionary = 2
+	pelekist = 89
+}
 add_ideas = {
 	limited_conscription
 }
 
 create_country_leader = {
-	name = "Heinrich Himmler"
+	name = "Albert Speer"
 	desc = "POLITICS_HEINRICH_HIMMLER_DESC"
-	picture = "gfx/leaders/GER/Portrait_Germany_Heinrich_Himmler.dds"
+	picture = "Albert_Speer.tga"
 	expire = "1965.1.1"
-	ideology = nazism
+	ideology = pelekist
 	traits = {
 	}
 }

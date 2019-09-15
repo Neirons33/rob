@@ -2568,6 +2568,32 @@ france.1.t:0 "Third French Republic in 1934"
  mongolia.100.a:0 "Tannu What?"
  mongolia.100.b:0 "Death to Sternberg! (Play as Tuva)"
  
+ ###RAJ & BRJ
+ raj.101.t:0 "Collapse of the Indian Coalition"
+ raj.101.d:0 "The British loyalists have been pushed back to the Islands. With them being no threat to our glorious nation, the coalition has no purpose in existing. Several states have already seceeded from the union and more will be sure to come. With the coalition about to fall, one of your privates turns to you. 'The old India is dead. Where to sir?'"
+ raj.101.a:0 "To Delhi, the true successor of the Indian dream!"
+ raj.101.b:0 "To Mysore, the kingdom of the west!"
+ raj.101.c:0 "To Bengal, the bulwark of the east!"
+ raj.101.e:0 "To Punjab, for the dream of freedom!"
+ 
+ ###World Cup
+ worldcup.100.t:0 "The 1934 World Cup"
+ worldcup.100.d:0 "The Second world cup has concluded today, in a triumphant final in Rome, Italy. Hungary won the final, courtesy of two late goals, to beat Italy 2-1. The visitors had to be escorted on a private train through Serbia following their victory, with fears of an Italian attack."
+ worldcup.100.a:0 "We congratulate the victors."
+ worldcup.100.b:0 "We are the champions!"
+ worldcup.101.t:0 "The 1934 World Cup"
+ worldcup.101.d:0 "The Second world cup has concluded today, in a triumphant final in Rome, Italy. The host nation won the final, courtesy of a two first half goals, to beat Hungary 2-1. The entire nation is praising the champions as they parade across the nation."
+ worldcup.101.a:0 "We congratulate the victors."
+ worldcup.101.b:0 "We are the champions!"
+ worldcup.102.t:0 "The 1934 World Cup"
+ worldcup.102.d:0 "The Second world cup has concluded today, in a triumphant final in Rome, Italy. England won the final, 3-1 against hosts Italy. Their introduction itself a last minute replacement for Austria, on the verge of collapse. Despite England's own problems, the victory has united the country, at least for now."
+ worldcup.102.a:0 "We congratulate the victors."
+ worldcup.102.b:0 "We are the champions!"
+ worldcup.103.t:0 "The 1934 World Cup"
+ worldcup.103.d:0 "The Second world cup has concluded today, in a triumphant final in Rome, Italy. France won the final, a complete shock for a nation not considered good at the sport, defeating Egypt, Romania, and Italy on the way to the final, where they defeated Hungary 1-0, after extra time. The French nation stands united for the first time since the Great War."
+ worldcup.103.a:0 "We congratulate the victors."
+ worldcup.103.b:0 "We are the champions!"
+ 
  ###Ukraine
  ukraine.0.t:0 "Ukrainian People's Republic in 1934"
  ukraine.0.d:0 ""
@@ -2687,3 +2713,6 @@ france.1.t:0 "Third French Republic in 1934"
  ukraine.33.t:0 "Kaganovich Holds!"
  ukraine.33.d:0 ""
  ukraine.33.a:0 "Triumph of the Proletariat!"
+ 
+ ###Romanov Events
+ rom_tt_1:0 "§RWe shall search for allies...§!"
