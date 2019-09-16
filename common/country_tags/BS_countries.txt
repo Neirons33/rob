@@ -115,6 +115,7 @@ MNP = "countries/Manipur.txt"
 SNN = "countries/ShanCon.txt"
 KRN = "countries/Karen.txt"
 PNJ = "countries/Panjab.txt"
+FIC = "countries/Indochina.txt"
 ###German
 BDB = "countries/Brandenburg.txt"
 MSZ = "countries/Mecklenburg_Strelitz.txt"
