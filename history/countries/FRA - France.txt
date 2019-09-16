@@ -1,4 +1,4 @@
-﻿capital = 16
+capital = 16
 
 oob = "FRA_1936"
 if = {
@@ -225,6 +225,10 @@ set_popularities = {
 
 	set_autonomy = {
 		target = SYR
+		autonomous_state = autonomy_integrated_puppet
+	}
+	set_autonomy = {
+		target = FIC
 		autonomous_state = autonomy_integrated_puppet
 	}
 	
