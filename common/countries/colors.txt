@@ -806,3 +806,7 @@ SNN = {
     color = rgb { 82 76 46 }
 	color_ui = rgb { 82 76 46 }
 }
+BGN = {
+    color = rgb { 54 59 77 }
+	color_ui = rgb { 54 59 77 }
+}
