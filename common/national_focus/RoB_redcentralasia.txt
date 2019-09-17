@@ -1,0 +1,1066 @@
+focus_tree = {
+	id = redcentralasia
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = TRS
+		}
+	}
+	#Focus for Refresh our Command
+	focus = {
+		id = TRS_refreshourcommand
+		icon = GFX_goal_unknown
+		x = 3
+		y = 6
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = TRS_eliminatetheradicals }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	#Focus for Re-educate the Population
+	focus = {
+		id = TRS_reeducatethepopulation
+		icon = GFX_goal_unknown
+		x = 5
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = TRS_recoverpoliticalstrength }
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+		}
+	}
+
+	#Focus for Arm the Nation
+	focus = {
+		id = TRS_armthenation
+		icon = GFX_goal_unknown
+		x = 5
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = TRS_reeducatethepopulation }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+		}
+	}
+
+	#Focus for Eliminate the Radicals
+	focus = {
+		id = TRS_eliminatetheradicals
+		icon = GFX_goal_unknown
+		x = 3
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = TRS_eliminatejughashvili }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+		}
+	}
+
+	#Focus for Frunze Survives
+	focus = {
+		id = TRS_frunzesurvives
+		icon = GFX_goal_unknown
+		x = 13
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = TRS_thelongroadtoglory }
+		mutually_exclusive = { focus = TRS_newleadership }
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+		}
+	}
+
+	#Focus for March up the Coast
+	focus = {
+		id = TRS_marchupthecoast
+		icon = GFX_goal_unknown
+		x = 15
+		y = 8
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = TRS_abetterdefensiveline 
+		}
+		prerequisite = { 
+			focus = TRS_secureacaspiancoast 
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+		}
+	}
+
+	#Focus for Fortify the New Mountains
+	focus = {
+		id = TRS_fortifythenewmountains
+		icon = GFX_goal_generic_construct_military
+		x = 11
+		y = 8
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = TRS_abetterdefensiveline 
+		}
+		prerequisite = { 
+			focus = TRS_mountainfortress 
+		}
+		ai_will_do = {
+			factor = 7
+		}
+		completion_reward = {
+		}
+	}
+
+	#Focus for Battle for Krasnovodsk
+	focus = {
+		id = TRS_battleforkrasnovodsk
+		icon = GFX_goal_unknown
+		x = 15
+		y = 9
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = TRS_marchupthecoast }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+		}
+	}
+
+	#Focus for A Better Defensive Line
+	focus = {
+		id = TRS_abetterdefensiveline
+		icon = GFX_goal_generic_position_armies
+		x = 14
+		y = 7
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = TRS_threatenthecapital }
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+		}
+	}
+
+	#Focus for Secure a Caspian Coast
+	focus = {
+		id = TRS_secureacaspiancoast
+		icon = GFX_goal_unknown
+		x = 16
+		y = 7
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = TRS_threatenthecapital }
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+		}
+	}
+
+	#Focus for Bomb Turkmen Industry
+	focus = {
+		id = TRS_bombturkmenindustry
+		icon = GFX_goal_unknown
+		x = 15
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = TRS_bombturkmenroads }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	#Focus for Threaten the Capital
+	focus = {
+		id = TRS_threatenthecapital
+		icon = GFX_goal_generic_small_arms
+		x = 15
+		y = 6
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = TRS_bombturkmenindustry }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+		}
+	}
+
+	#Focus for Bomb Turkmen Roads
+	focus = {
+		id = TRS_bombturkmenroads
+		icon = GFX_goal_unknown
+		x = 15
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = TRS_infiltratethecoalition }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	#Focus for Invite Socialist Scientists
+	focus = {
+		id = TRS_invitesocialistscientists
+		icon = GFX_goal_tfv_generic_tech_sharing
+		x = 8
+		y = 8
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = TRS_betterourindustry }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+		}
+	}
+
+	#Focus for Infiltrate the Coalition
+	focus = {
+		id = TRS_infiltratethecoalition
+		icon = GFX_goal_unknown
+		x = 15
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = TRS_frunzesurvives 
+			focus = TRS_newleadership 
+		}
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+		}
+	}
+
+	#Focus for Better our Industry
+	focus = {
+		id = TRS_betterourindustry
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 8
+		y = 7
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = TRS_ideasfromacrossthesea 
+		}
+		prerequisite = { 
+			focus = TRS_industrializationcompleted 
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+		}
+	}
+
+	#Focus for Contact the Fifth
+	focus = {
+		id = TRS_contactthefifth
+		icon = GFX_goal_support_fourth_int
+		x = 13
+		y = 6
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = TRS_moveundergroundsupporters }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+		}
+	}
+
+	#Focus for Industrialization Completed
+	focus = {
+		id = TRS_industrializationcompleted
+		icon = GFX_goal_generic_construction2
+		x = 9
+		y = 6
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = TRS_prospectforoil }
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+		}
+	}
+
+	#Focus for Move Underground Supporters
+	focus = {
+		id = TRS_moveundergroundsupporters
+		icon = GFX_goal_unknown
+		x = 13
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = TRS_huntforsupporters }
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+		}
+	}
+
+	#Focus for Scavenge for Materials
+	focus = {
+		id = TRS_scavengeformaterials
+		icon = GFX_goal_unknown
+		x = 11
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = TRS_diggingin }
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+		}
+	}
+
+	#Focus for Ideas From Across the Sea
+	focus = {
+		id = TRS_ideasfromacrossthesea
+		icon = GFX_goal_generic_scientific_exchange
+		x = 7
+		y = 6
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = TRS_smugglinginiran }
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+		}
+	}
+
+	#Focus for Smuggling in Iran
+	focus = {
+		id = TRS_smugglinginiran
+		icon = GFX_goal_unknown
+		x = 7
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = TRS_aidthecivilians }
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+		}
+	}
+
+	#Focus for Prospect for Oil
+	focus = {
+		id = TRS_prospectforoil
+		icon = GFX_goal_generic_oil_refinery
+		x = 9
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = TRS_armsconversion }
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+		}
+	}
+
+	#Focus for Hunt for Supporters
+	focus = {
+		id = TRS_huntforsupporters
+		icon = GFX_goal_unknown
+		x = 13
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = TRS_diggingin }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+		}
+	}
+
+	#Focus for Digging In
+	focus = {
+		id = TRS_diggingin
+		icon = GFX_goal_generic_defence
+		x = 12
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = TRS_frunzesurvives }
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+		}
+	}
+
+	#Focus for Aid the Civilians
+	focus = {
+		id = TRS_aidthecivilians
+		icon = GFX_goal_unknown
+		x = 7
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = TRS_economicrecovery }
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+		}
+	}
+
+	#Focus for Mountain Fortress
+	focus = {
+		id = TRS_mountainfortress
+		icon = GFX_goal_generic_fortify_city
+		x = 11
+		y = 6
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = TRS_digmountainpasses }
+		ai_will_do = {
+			factor = 2
+		}
+		completion_reward = {
+		}
+	}
+
+	#Focus for Economic Recovery
+	focus = {
+		id = TRS_economicrecovery
+		icon = GFX_goal_unknown
+		x = 8
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = TRS_frunzesurvives }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+		}
+	}
+
+	#Focus for filler
+	focus = {
+		id = TRS_filler
+		icon = GFX_goal_unknown
+		x = 38
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Long Road to Glory
+	focus = {
+		id = TRS_thelongroadtoglory
+		icon = GFX_goal_unknown
+		x = 15
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+		}
+	}
+
+	#Focus for New Leadership
+	focus = {
+		id = TRS_newleadership
+		icon = GFX_goal_unknown
+		x = 17
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = TRS_thelongroadtoglory }
+		mutually_exclusive = { focus = TRS_frunzesurvives }
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+		}
+	}
+
+	#Focus for Dig Mountain Passes
+	focus = {
+		id = TRS_digmountainpasses
+		icon = GFX_goal_generic_construction2
+		x = 11
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = TRS_scavengeformaterials }
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+		}
+	}
+
+	#Focus for Arms Conversion
+	focus = {
+		id = TRS_armsconversion
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 9
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = TRS_economicrecovery }
+		ai_will_do = {
+			factor = 2
+		}
+		completion_reward = {
+		}
+	}
+
+	#Focus for Proclaim the Turkmen Soviet Republic
+	focus = {
+		id = TRS_proclaimtheturkmensovietrepublic
+		icon = GFX_goal_unknown
+		x = 15
+		y = 11
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = TRS_PbwzaWZx 
+			focus = TRS_victoryintheturkmenwar 
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+		}
+	}
+
+	#Focus for Finish the Job
+	focus = {
+		id = TRS_finishthejob
+		icon = GFX_goal_unknown
+		x = 17
+		y = 10
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = TRS_battleforkrasnovodsk }
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+		}
+	}
+
+	#Focus for Victory in the Central Asian War
+	focus = {
+		id = TRS_victoryinthecentralasianwar
+		icon = GFX_goal_unknown
+		x = 13
+		y = 10
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = TRS_battleforkrasnovodsk }
+		mutually_exclusive = { focus = TRS_victoryintheturkmenwar }
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+		}
+	}
+
+	#Focus for Victory in the Turkmen War
+	focus = {
+		id = TRS_victoryintheturkmenwar
+		icon = GFX_goal_unknown
+		x = 15
+		y = 10
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = TRS_battleforkrasnovodsk }
+		mutually_exclusive = { focus = TRS_victoryinthecentralasianwar }
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+		}
+	}
+
+	#Focus for Ready the Army
+	focus = {
+		id = TRS_readythearmy
+		icon = GFX_goal_unknown
+		x = 18
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = TRS_newleadership }
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+		}
+	}
+
+	#Focus for Two Year Plan
+	focus = {
+		id = TRS_twoyearplan
+		icon = GFX_goal_unknown
+		x = 22
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = TRS_newleadership }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+		}
+	}
+
+	#Focus for Military Drill
+	focus = {
+		id = TRS_militarydrill
+		icon = GFX_goal_unknown
+		x = 19
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = TRS_readythearmy }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	#Focus for Mass Conscription
+	focus = {
+		id = TRS_massconscription
+		icon = GFX_goal_unknown
+		x = 17
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = TRS_readythearmy }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+		}
+	}
+
+	#Focus for Regional Support
+	focus = {
+		id = TRS_regionalsupport
+		icon = GFX_goal_unknown
+		x = 17
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = TRS_massconscription }
+		ai_will_do = {
+			factor = 4
+		}
+		completion_reward = {
+		}
+	}
+
+	#Focus for Rekindle the Young Khivans
+	focus = {
+		id = TRS_rekindletheyoungkhivans
+		icon = GFX_goal_unknown
+		x = 17
+		y = 6
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = TRS_regionalsupport }
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+		}
+	}
+
+	#Focus for Not One Step Back!
+	focus = {
+		id = TRS_notonestepback
+		icon = GFX_goal_unknown
+		x = 19
+		y = 6
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = TRS_offensivedoctrine }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+		}
+	}
+
+	#Focus for Imports of Men
+	focus = {
+		id = TRS_importsofmen
+		icon = GFX_goal_unknown
+		x = 19
+		y = 8
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = TRS_secureacaspiancoast 
+		}
+		prerequisite = { 
+			focus = TRS_notonestepback 
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+		}
+	}
+
+	#Focus for The Military First
+	focus = {
+		id = TRS_themilitaryfirst
+		icon = GFX_goal_unknown
+		x = 23
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = TRS_twoyearplan }
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+		}
+	}
+
+	#Focus for Recover Political Strength
+	focus = {
+		id = TRS_recoverpoliticalstrength
+		icon = GFX_goal_unknown
+		x = 4
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = TRS_frunzesurvives }
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+		}
+	}
+
+	#Focus for Eliminate Jughashvili
+	focus = {
+		id = TRS_eliminatejughashvili
+		icon = GFX_goal_unknown
+		x = 3
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = TRS_recoverpoliticalstrength }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	#Focus for Man of Steel
+	focus = {
+		id = TRS_manofsteel
+		icon = GFX_goal_unknown
+		x = 27
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = TRS_purgefrunzessupporters }
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+		}
+	}
+
+	#Focus for Personality Cult
+	focus = {
+		id = TRS_personalitycult
+		icon = GFX_goal_unknown
+		x = 27
+		y = 6
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = TRS_manofsteel }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	#Focus for Jughashvili's Secret Police
+	focus = {
+		id = TRS_jughashvilissecretpolice
+		icon = GFX_goal_unknown
+		x = 25
+		y = 6
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = TRS_ethnicunification }
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+		}
+	}
+
+	#Focus for Purge Frunze's Supporters
+	focus = {
+		id = TRS_purgefrunzessupporters
+		icon = GFX_goal_unknown
+		x = 27
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = TRS_consolidationofpower }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+		}
+	}
+
+	#Focus for Vanguardist Doctrine
+	focus = {
+		id = TRS_vanguardistdoctrine
+		icon = GFX_goal_unknown
+		x = 25
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = TRS_consolidationofpower }
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+		}
+	}
+
+	#Focus for Form the Red Guard
+	focus = {
+		id = TRS_formtheredguard
+		icon = GFX_goal_unknown
+		x = 5
+		y = 6
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = TRS_armthenation }
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+		}
+	}
+
+	#Focus for Raid Persian Borderlands
+	focus = {
+		id = TRS_raidpersianborderlands
+		icon = GFX_goal_unknown
+		x = 23
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = TRS_themilitaryfirst }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+		}
+	}
+
+	#Focus for Force a Battle!
+	focus = {
+		id = TRS_forceabattle
+		icon = GFX_goal_unknown
+		x = 23
+		y = 6
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = TRS_raidpersianborderlands }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+		}
+	}
+
+	#Focus for Socialist Steelworks
+	focus = {
+		id = TRS_socialiststeelworks
+		icon = GFX_goal_unknown
+		x = 21
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = TRS_armyinfrastructure }
+		ai_will_do = {
+			factor = 2
+		}
+		completion_reward = {
+		}
+	}
+
+	#Focus for Exploit Persian Loyalties
+	focus = {
+		id = TRS_exploitpersianloyalties
+		icon = GFX_goal_unknown
+		x = 21
+		y = 6
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = TRS_socialiststeelworks }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+		}
+	}
+
+	#Focus for Civilian Projects
+	focus = {
+		id = TRS_civilianprojects
+		icon = GFX_goal_unknown
+		x = 22
+		y = 7
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = TRS_exploitpersianloyalties 
+		}
+		prerequisite = { 
+			focus = TRS_forceabattle 
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+		}
+	}
+
+	#Focus for Import Western Ideas
+	focus = {
+		id = TRS_importwesternideas
+		icon = GFX_goal_generic_scientific_exchange
+		x = 22
+		y = 8
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = TRS_civilianprojects }
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+		}
+	}
+
+	#Focus for Consolidation of Power
+	focus = {
+		id = TRS_consolidationofpower
+		icon = GFX_goal_unknown
+		x = 26
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = TRS_newleadership }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+		}
+	}
+
+	#Focus for Offensive Doctrine
+	focus = {
+		id = TRS_offensivedoctrine
+		icon = GFX_goal_unknown
+		x = 19
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = TRS_militarydrill }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	#Focus for Army Infrastructure
+	focus = {
+		id = TRS_armyinfrastructure
+		icon = GFX_goal_unknown
+		x = 21
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = TRS_twoyearplan }
+		ai_will_do = {
+			factor = 2
+		}
+		completion_reward = {
+		}
+	}
+
+	#Focus for Ethnic Unification
+	focus = {
+		id = TRS_ethnicunification
+		icon = GFX_goal_unknown
+		x = 25
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = TRS_vanguardistdoctrine }
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+		}
+	}
+
+#End of focuses 
+ }
