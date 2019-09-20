@@ -177,6 +177,7 @@ option = { ###Jonas Beržanskis
 		#
 	}
 }
+set_party_name = { ideology = pelekist long_name = LIT_pelekism_visoumis_long name = LIT_pelekism_visoumis}
 hidden_effect = {
  country_event = { id = lithuania.7 days = 700 } 
 }
@@ -392,9 +393,9 @@ add_political_power = 150
 add_stability = 0.05
 
  create_country_leader = {
-	name = "Domas Šidlauskas-Visuomis"
-	desc = ""
-	picture = ".tga"
+	name = "Gintautas I"
+	desc = "POLITICS_VISOUMIS_DESC"
+	picture = "LIT_Visuomis.tga"
 	expire = "1953.3.1"
 	ideology = pelekist
 	traits = {
