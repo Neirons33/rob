@@ -859,7 +859,7 @@ has_country_flag = zinoviev_meets_nkvd
 mean_time_to_happen = { days = 2 }
 
 option = {
-name = bolshevik_russia.32.a
+name = bolshevik_russia.33.a
 load_focus_tree = soviet_focus_zinoviev
 create_country_leader = {
 	name = "Grigory Yevseyevich Zinoviev"
@@ -878,5 +878,135 @@ elections_allowed = no
 }
 add_political_power = 120
 add_popularity = {ideology = socialist popularity = 0.3 }
+}
+}
+
+
+###Focus Tree Flavor
+country_event = { ###BBK construction starts
+id = bolshevik_russia.34
+title = bolshevik_russia.34.t
+desc = bolshevik_russia.34.d
+fire_only_once = yes
+is_triggered_only = yes
+
+
+option = {
+name = bolshevik_russia.1.a
+add_stability = 0.02
+hidden_effect = {
+ SOV = {
+  country_event = {
+   id = bolshevik_russia.35
+   days = 720
+  }
+ }
+}
+}
+}
+
+country_event = { ###BBK finished
+id = bolshevik_russia.35
+title = bolshevik_russia.35.t
+desc = bolshevik_russia.35.d
+fire_only_once = yes
+is_triggered_only = yes
+
+
+option = {
+name = bolshevik_russia.1.a
+add_stability = 0.05
+214 = {
+
+    if = {
+        limit = { is_controlled_by = ROOT }
+        add_building_construction = {
+            type = infrastructure
+            level = 5
+            instant_build = yes
+        }
+    }
+}
+216 = {
+
+    if = {
+        limit = { is_controlled_by = ROOT }
+        add_building_construction = {
+            type = infrastructure
+            level = 5
+            instant_build = yes
+        }
+    }
+}
+}
+}
+
+country_event = { ###5 year plan announced
+id = bolshevik_russia.36
+title = bolshevik_russia.36.t
+desc = bolshevik_russia.36.d
+fire_only_once = yes
+is_triggered_only = yes
+
+
+option = {
+name = bolshevik_russia.1.a
+add_stability = 0.05
+add_political_power = 100
+
+}
+}
+
+country_event = { ###electrification attempts
+id = bolshevik_russia.37
+title = bolshevik_russia.37.t
+desc = bolshevik_russia.37.d
+fire_only_once = yes
+is_triggered_only = yes
+
+
+option = {
+name = bolshevik_russia.1.a
+add_stability = 0.05
+
+
+}
+}
+
+country_event = { ###expanding cities
+id = bolshevik_russia.38
+title = bolshevik_russia.38.t
+desc = bolshevik_russia.38.d
+fire_only_once = yes
+is_triggered_only = yes
+
+
+option = {
+name = bolshevik_russia.1.a
+add_stability = 0.05
+
+
+}
+}
+
+country_event = { ###military
+id = bolshevik_russia.39
+title = bolshevik_russia.39.t
+desc = bolshevik_russia.39.d
+fire_only_once = yes
+is_triggered_only = yes
+
+
+option = { ###Shap plan
+name = bolshevik_russia.39.a
+add_stability = -0.05
+set_country_flag = SOV_shaposhnikovs_plan
+
+}
+option = { ###reform red guard
+name = bolshevik_russia.39.b
+add_stability = 0.05
+set_country_flag = SOV_reform_red_guard
+
 }
 }

@@ -263,5 +263,232 @@ ideas = {
 			}
   
   }
+  ###focus industry
+       labour_battalions_five_year = {
+  allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 picture = GFX_idea_famine_of_1933
+	 modifier = {
+           conscription_factor = -0.05
+			production_speed_buildings_factor = 0.1
+			}
+  
+  }
+  
+         peasants_replaced = {
+  allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 picture = GFX_idea_famine_of_1933
+	 modifier = {
+             industrial_capacity_factory = 0.1
+			production_speed_buildings_factor = 0.05
+			}
+  
+  }
+  
+           criminal_labour = {
+  allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 picture = GFX_idea_famine_of_1933
+	 modifier = {
+             stability_factor = -0.02
+			consumer_goods_factor = -0.07
+			}
+  
+  }
+             criminal_labour_2 = {
+  allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 picture = GFX_idea_famine_of_1933
+	 modifier = {
+             stability_factor = -0.03
+			consumer_goods_factor = -0.12
+			}
+  
+  }
+ immigration_to_cities_1 = {
+  allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 picture = GFX_idea_famine_of_1933
+	 modifier = {
+            production_factory_max_efficiency_factor = 0.05
+			production_factory_efficiency_gain_factor = 0.08
+			}
+  
+  }
+   immigration_to_cities_2 = {
+  allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 picture = GFX_idea_famine_of_1933
+	 modifier = {
+            production_factory_max_efficiency_factor = 0.09
+			production_factory_efficiency_gain_factor = 0.12
+			consumer_goods_factor = 0.04
+			}
+  
+  }
+  
+     red_youth_economics = {
+  allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 picture = GFX_idea_famine_of_1933
+	 modifier = {
+        production_speed_buildings_factor = 0.07
+			}
+  
+  }
+      agriculture_resources_bukarin = {
+  allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 picture = GFX_idea_famine_of_1933
+	 modifier = {
+        consumer_goods_factor = -0.05
+			}
+  
+  }
+        agricultural_research_bukharin_1 = {
+  allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 picture = GFX_idea_famine_of_1933
+	 modifier = {
+        research_speed_factor = 0.05
+			}
+  
+  }
+    bourgeoisie_influence_3 = {
+  allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 picture = GFX_idea_bourgeoisie_influence
+	  modifier = {
+				consumer_goods_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				
+			}
+  
+   }
+         agriculture_grants_bukarin = {
+  allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 picture = GFX_idea_famine_of_1933
+	 modifier = {
+        production_factory_max_efficiency_factor = 0.15
+			}
+  
+  }
+           rural_education = {
+  allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 picture = GFX_idea_famine_of_1933
+	 modifier = {
+        research_speed_factor = 0.025
+			}
+  
+  }
+  work_in_schools = {
+  allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 picture = GFX_idea_famine_of_1933
+	 modifier = {
+         production_speed_buildings_factor = 0.05
+		 consumer_goods_factor = -0.02
+			}
+  
+  }
+    more_export_bukharin = {
+  allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 picture = GFX_idea_famine_of_1933
+	 modifier = {
+         min_export = 0.25
+		 political_power_gain = -0.05
+			}
+  
+  }
+      more_work_bukharin = {
+  allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 picture = GFX_idea_famine_of_1933
+	 modifier = {
+         production_speed_buildings_factor = 0.05
+		 stability_factor = 0.05
+			}
+  
+  }
  }
+ 
 }
