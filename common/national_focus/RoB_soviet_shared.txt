@@ -473,7 +473,14 @@ prerequisite = { focus = SOV_defenceministervoroshilov }
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = {
+ add_tech_bonus = {
+	name = vorshilov
+	bonus = 1.0
+	uses = 2
+	category = cat_grand_battle_plan
+}
+}
  } 
 
 #Focus for Communication Modernization
@@ -488,7 +495,15 @@ prerequisite = { focus = SOV_refreshtheofficerpool }
 ai_will_do = { 
  factor = 1
  } 
-
+ completion_reward = {
+  add_tech_bonus = {
+	name = electronics_bonus
+	bonus = 0.5
+    ahead_reduction = 1
+	uses = 2
+	category = electronics
+}
+ }
  } 
 #Focus for Ramp up food imports
 shared_focus = { 
@@ -2083,7 +2098,15 @@ prerequisite = { focus = SOV_expanduseofartillery }
 ai_will_do = { 
  factor = 1
  } 
+completion_reward = {
+add_tech_bonus = {
+	name = more_arty
+	bonus = 1.0
+	uses = 1
+	technology = artillery1	
 
+}
+}
  } 
 
 #Focus for Comrades Abroad
@@ -2487,7 +2510,14 @@ prerequisite = { focus = SOV_reorganizehighcommand }
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = {
+ add_tech_bonus = {
+	name = sup_fire_3
+	bonus = 0.5
+	uses = 3
+	category = support_tech
+}
+ }
  } 
 
 #Focus for 76mm M1936 (F-22)
@@ -2502,8 +2532,15 @@ prerequisite = { focus = SOV_allocatingoldartilery }
 ai_will_do = { 
  factor = 1
  } 
-
- } 
+completion_reward = {
+ add_tech_bonus = {
+	name = sup_fire_2
+	bonus = 1.0
+	uses = 1
+	category = artillery
+}
+ }
+} 
 
 #Focus for Allocating Old Artilery
 shared_focus = { 
@@ -2517,8 +2554,16 @@ prerequisite = { focus = SOV_reorganizehighcommand }
 ai_will_do = { 
  factor = 1
  } 
+completion_reward = {
+ add_equipment_to_stockpile = {
+  type = artillery_equipment_1
+					amount = 432
+					producer = SOV
+ }
+}
 
- } 
+}
+ 
 
 #Focus for Reorganize High Command
 shared_focus = { 
@@ -2532,7 +2577,14 @@ prerequisite = { focus = SOV_defenceministershaposhnikov }
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = {
+ add_tech_bonus = {
+	name = sup_fire
+	bonus = 1.0
+	uses = 2
+	category = cat_superior_firepower
+}
+}
  } 
 
 #Focus for Ford-A Izhorskiy
@@ -2620,7 +2672,14 @@ prerequisite = { focus = SOV_massexercises }
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = {
+ add_tech_bonus = {
+	name = ppsh
+	bonus = 1.0
+	uses = 1
+	category = infantry_weapons
+}
+}
  } 
 
 #Focus for Mass Exercises
@@ -2636,7 +2695,14 @@ prerequisite = { focus = SOV_ds39 }
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = {
+ add_tech_bonus = {
+	name = doctrine
+	bonus = 1.0
+	uses = 2
+	category = cat_grand_battle_plan
+}
+}
  } 
 
 #Focus for Refit Old Rifles
@@ -2665,6 +2731,15 @@ available_if_capitulated = yes
 prerequisite = { focus = SOV_communicationmodernization} 
 ai_will_do = { 
  factor = 1
+ }
+  completion_reward = {
+  add_tech_bonus = {
+	name = recon_bonus
+	bonus = 1.0
+
+	uses = 2
+	category = recon_tech
+}
  }
  } 
 
@@ -2695,7 +2770,15 @@ prerequisite = { focus = SOV_modernizeinfantryequipment }
 ai_will_do = { 
  factor = 1
  } 
-
+  completion_reward = {
+  add_tech_bonus = {
+	name = infantry_bonus
+	bonus = 1.0
+    ahead_reduction = 2
+	uses = 1
+	category = infantry_tech
+}
+ }
  } 
 
 #Focus for Modernize Infantry Equipment
@@ -2710,7 +2793,15 @@ prerequisite = { focus = SOV_refreshtheofficerpool }
 ai_will_do = { 
  factor = 1
  } 
+  completion_reward = {
+  add_tech_bonus = {
+	name = infantry_bonus
+	bonus = 0.75
 
+	uses = 3
+	category = infantry_weapons
+}
+ }
  } 
 
 #Focus for Supplies For Army
@@ -2771,7 +2862,15 @@ prerequisite = { focus = SOV_expandsupportunits }
 ai_will_do = { 
  factor = 1
  } 
+completion_reward = {
+add_tech_bonus = {
+	name = anti_air
+	bonus = 1.0
+	uses = 1
+	technology = interwar_antiair	
 
+}
+}
 } 
 
 #Focus for Expand Use Of Artillery
@@ -2787,7 +2886,14 @@ prerequisite = { focus = SOV_anti_air }
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = {
+ add_tech_bonus = {
+	name = shap
+	bonus = 1.0
+	uses = 2
+	category = cat_superior_firepower
+}
+}
  } 
 
 #Focus for The New Soviet Army
@@ -2802,7 +2908,9 @@ prerequisite = { focus = SOV_107mmm1940m60 focus = SOV_ppsh41 focus = SOV_btproj
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = {
+ remove_ideas = { southern_defeat }
+}
  } 
 
 #Focus for Mosin–Nagant M38
