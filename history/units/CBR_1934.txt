@@ -51,7 +51,7 @@ start_equipment_factor = 0.5
 }
  division = {
 name = "3.Belarusian Red Infantry"
-location = 11217
+location = 6344
 division_template = "Belarusian Red Infantry"
 start_experience_factor = 0.3
 start_equipment_factor = 0.5
