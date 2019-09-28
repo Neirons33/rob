@@ -1,0 +1,19 @@
+state={
+	id=1213
+	name="STATE_1213"
+	history={
+		owner = GER
+		buildings = {
+			infrastructure = 6
+		}
+		add_core_of = GER
+		add_core_of = MSZ
+
+	}
+
+	provinces={
+		268 3258 3367 13566 13569 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}
