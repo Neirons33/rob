@@ -6,6 +6,10 @@ set_research_slots = 3
 
 add_ideas = {
 	limited_conscription
+	samogitian_identity
+	semi_loyal_military
+	pelekists_rising
+	pearl_of_stability
 }
 
 set_technology = {

@@ -404,3 +404,17 @@ add_stability = 0.05
 }
 }
 }
+###Beržanskis - National hero
+country_event = {
+id = lithuania.14
+title = lithuania.14.t
+desc = lithuania.14.d
+fire_only_once = yes
+is_triggered_only = yes
+
+option = {
+name = lithuania.14.a
+add_political_power = 150
+add_stability = 0.05
+}
+}
