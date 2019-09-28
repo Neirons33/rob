@@ -1,6 +1,20 @@
 state={
 	id=1205
 	name="STATE_1205"
+	history={
+		owner = GER
+		victory_points = {
+			6377 10 
+		}
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 1
+		}
+		add_core_of = GER
+		add_core_of = PRS
+		add_core_of = HAN
+	}
+
 	provinces={
 		3355 6377 11493 
 	}
