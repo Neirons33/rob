@@ -126,7 +126,9 @@ ai_will_do = {
  } 
  completion_reward = {
   242 = {
+  add_extra_state_shared_building_slots = 2
   add_building_construction = {
+  
 	type = industrial_complex
 	level = 2
 	instant_build = yes
@@ -402,6 +404,7 @@ ai_will_do = {
 completion_reward = {
  
 252 = {
+add_extra_state_shared_building_slots = 1
 add_building_construction = {
 	type = arms_factory
 	level = 1
@@ -1002,7 +1005,9 @@ mutually_exclusive = { focus = SOV_proclaimnepdead }
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = {
+ add_stability = 0.1
+}
  } 
 
 #Focus for Expand Industry in Moscow
@@ -1022,7 +1027,9 @@ hidden_effect = {
 country_event = { id = bolshevik_russia.38 days = 1 }
 }
 219 = { 
+add_extra_state_shared_building_slots = 3
  add_building_construction = {
+ 
 	type = industrial_complex
 	level = 3
 	instant_build = yes
@@ -1049,6 +1056,7 @@ country_event = { id = bolshevik_russia.37 days = 1 }
 }
 244 = { 
  add_building_construction = {
+ add_extra_state_shared_building_slots = 1
 	type = industrial_complex
 	level = 1
 	instant_build = yes
@@ -1344,6 +1352,7 @@ ai_will_do = {
  } 
 completion_reward = {
 195 = {
+add_extra_state_shared_building_slots = 4
 add_building_construction = {
 	type = industrial_complex
 	level = 2
@@ -1390,6 +1399,7 @@ ai_will_do = {
  } 
 completion_reward = {
  252 = {
+ add_extra_state_shared_building_slots = 2
   add_building_construction = {
 	type = arms_factory
 	level = 2
@@ -1414,6 +1424,7 @@ ai_will_do = {
  } 
 completion_reward = {
  263 = {
+ add_extra_state_shared_building_slots = 2
 add_building_construction = {
 	type = industrial_complex
 	level = 2
@@ -1660,6 +1671,7 @@ ai_will_do = {
  } 
 completion_reward = {
 263 = {
+add_extra_state_shared_building_slots = 2
  add_building_construction = {
 	type = industrial_complex
 	level = 2
@@ -1770,6 +1782,7 @@ ai_will_do = {
  } 
 completion_reward = {
  219 = {
+ add_extra_state_shared_building_slots = 4
   add_building_construction = {
 	type = industrial_complex
 	level = 4
@@ -1794,6 +1807,7 @@ ai_will_do = {
  } 
  completion_reward = {
  219 = {
+ add_extra_state_shared_building_slots = 1
   add_building_construction = {
 	type = industrial_complex
 	level = 1
@@ -1801,6 +1815,7 @@ ai_will_do = {
 }
 }
  195 = {
+ add_extra_state_shared_building_slots = 1
   add_building_construction = {
 	type = industrial_complex
 	level = 1
@@ -1808,6 +1823,7 @@ ai_will_do = {
 }
 }
  246 = {
+ add_extra_state_shared_building_slots = 1
   add_building_construction = {
 	type = industrial_complex
 	level = 1
@@ -2232,7 +2248,14 @@ prerequisite = { focus = SOV_defenceministerbudyonny }
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = {
+ add_tech_bonus = {
+	name = doctrine
+	bonus = 1.0
+	uses = 2
+	category = cat_mass_assault
+}
+}
  } 
 
 #Focus for Act Of Rural Education
@@ -2465,7 +2488,8 @@ ai_will_do = {
  } 
  completion_reward = {
 263 = {
-                add_building_construction = {
+                add_extra_state_shared_building_slots = 4
+				add_building_construction = {
 					type = arms_factory
 					level = 2
 					instant_build = yes
@@ -2717,7 +2741,13 @@ prerequisite = { focus = SOV_expandconscription }
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = {
+ add_equipment_to_stockpile = {
+  type = infantry_equipment_0
+					amount = 12000
+					producer = SOV
+ }
+}
  } 
 
 #Focus for Modernize Recon Units
@@ -2755,7 +2785,15 @@ prerequisite = { focus = SOV_refitoldrifles }
 ai_will_do = { 
  factor = 1
  } 
-
+  completion_reward = {
+  add_tech_bonus = {
+	name = infantry_bonus
+	bonus = 2.0
+    
+	uses = 1
+	category = infantry_weapons
+}
+ }
  } 
 
 #Focus for DS-39
@@ -2816,8 +2854,15 @@ prerequisite = { focus = SOV_rebuildsupplycorps }
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = { 
+ add_tech_bonus = {
+	name = infantry_bonus
+	bonus = 1.0  
+	uses = 1
+	category = infantry_tech
+}
  } 
+ }
 
 #Focus for Lower Age Of Conscription
 shared_focus = { 
@@ -2832,7 +2877,15 @@ prerequisite = { focus = SOV_suppliesforarmy }
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = {
+add_manpower = 100000
+ add_tech_bonus = {
+	name = doctrine_bonus
+	bonus = 1.0
+	uses = 2
+	category = cat_mass_assault
+}
+}
  } 
 
 #Focus for Rebuild Supply Corps
@@ -2847,7 +2900,15 @@ prerequisite = { focus = SOV_expandconscription }
 ai_will_do = { 
  factor = 1
  } 
+completion_reward = {
+add_tech_bonus = {
+	name = infantry_bonus
+	bonus = 1.0
+	uses = 3
+	category = logistics_tech	
 
+}
+}
  } 
 
 #Focus for 37mm M1939 (61-K)
@@ -2925,7 +2986,15 @@ prerequisite = { focus = SOV_lowerageofconscription }
 ai_will_do = { 
  factor = 1
  } 
+completion_reward = {
+add_tech_bonus = {
+	name = infantry_bonus
+	bonus = 1.0
+	uses = 1
+	category = infantry_weapons	
 
+}
+}
  } 
 
 #Focus for Proclaim Soviet Union
@@ -3026,7 +3095,12 @@ OR = {
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = {
+ country_event = { 
+  id = bolshevik_russia.40
+  days = 2
+ }
+}
  }
 
  #Focus for Novikov's Plan
@@ -3037,10 +3111,16 @@ x = 80
 y = 2
 cost = 5
 available_if_capitulated = yes 
+available = { 
+ has_country_flag = SOV_novikovs_plan
+ }
 prerequisite = { focus = SOV_bolshevikairforces } 
 mutually_exclusive = { focus = SOV_alksnisplan } 
 ai_will_do = { 
  factor = 1
+ }
+ completion_reward = {
+  air_experience = 25
  }
 } 
 
@@ -3052,12 +3132,20 @@ x = 88
 y = 2
 cost = 5
 available_if_capitulated = yes 
+available = { 
+ has_country_flag = SOV_alksnis_plan
+ }
 prerequisite = { focus = SOV_bolshevikairforces } 
 mutually_exclusive = { focus = SOV_novikovsplan } 
 ai_will_do = { 
  factor = 1
  } 
-
+ completion_reward = {
+  air_experience = 25
+  set_technology = {
+    early_bomber = 1 
+}
+ }
  } 
  
  #Focus for Operational Integrity Doctrine
@@ -3072,7 +3160,14 @@ prerequisite = { focus = SOV_alksnisplan }
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = {
+ add_tech_bonus = {
+	name = doctrine_bonus
+	bonus = 1.0
+	uses = 2
+	category = cat_operational_integrity
+}
+}
  } 
  
  #Focus for Refit Civilian Aircraft
@@ -3087,7 +3182,13 @@ prerequisite = { focus = SOV_operationalintegritydoctrine }
 ai_will_do = { 
  factor = 1
  } 
-
+  completion_reward = {
+  add_equipment_to_stockpile = {
+  type = tac_bomber_equipment_0
+					amount = 50
+					producer = SOV
+ }
+ }
  }
  
  #Focus for Ilyushin DB-3
@@ -3103,7 +3204,13 @@ prerequisite = { focus = SOV_bolkhovitinovdba }
 ai_will_do = { 
  factor = 1
  } 
-
+  completion_reward = {
+  add_equipment_to_stockpile = {
+  type = tac_bomber_equipment_0
+					amount = 45
+					producer = SOV
+ }
+ }
  }
  
  #Focus for Investigate Tsarist Designs
@@ -3118,7 +3225,15 @@ prerequisite = { focus = SOV_alksnisplan }
 ai_will_do = { 
  factor = 1
  } 
+completion_reward = {
+ add_tech_bonus = {
+	name = doctrine_bonus
+	bonus = 0.75
+	uses = 1
+	category = tactical_bomber
+}
 
+}
  } 
  
  #Focus for Bolkhovitinov DB-A
@@ -3133,7 +3248,14 @@ prerequisite = { focus = SOV_investigatetsaristdesigns }
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = {
+ add_tech_bonus = {
+	name = doctrine_bonus
+	bonus = 0.75
+	uses = 2
+	category = cat_strategic_bomber
+}
+}
  }
  
  #Focus for Battlefield Support Doctrine
@@ -3148,7 +3270,14 @@ prerequisite = { focus = SOV_novikovsplan }
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = {
+ add_tech_bonus = {
+	name = doctrine_bonus
+	bonus = 1.0
+	uses = 2
+	category = cat_battlefield_support
+}
+}
  }
  
  #Focus for Refit Training Planes
@@ -3163,7 +3292,14 @@ prerequisite = { focus = SOV_battlefieldsupportdoctrine }
 ai_will_do = { 
  factor = 1
  } 
+completion_reward = {
+ add_equipment_to_stockpile = {
+  type = CAS_equipment_1
+					amount = 60
+					producer = ENG
+ }
 
+}
  }
  
  #Focus for Buy Foreign Designs
@@ -3178,7 +3314,29 @@ prerequisite = { focus = SOV_novikovsplan }
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = {
+ add_equipment_to_stockpile = {
+  type = CAS_equipment_1
+					amount = 2
+					producer = USA
+ }
+ add_equipment_to_stockpile = {
+  type = CAS_equipment_1
+					amount = 3
+					producer = FRA
+ }
+  add_equipment_to_stockpile = {
+  type = CAS_equipment_1
+					amount = 1
+					producer = GER
+ }
+  add_tech_bonus = {
+	name = cas_bonus
+	bonus = 0.75
+	uses = 1
+	category = cas_bomber
+}
+}
  } 
  
  #Focus for Expand Aircraft Industry
@@ -3193,8 +3351,18 @@ prerequisite = { focus = SOV_buyforeigndesigns }
 ai_will_do = { 
  factor = 1
  } 
+completion_reward = {
+219 = {
+ add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
 
- } 
+}
+ }
+} 
  
  #Focus for Ilyushin Il-2
 shared_focus = { 
@@ -3209,7 +3377,14 @@ prerequisite = { focus = SOV_expandaircraftindustry }
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = {
+ add_tech_bonus = {
+	name = cas_bonus
+	bonus = 1.0
+	uses = 1
+	technology = CAS2
+}
+}
  }
  
  #Focus for Soviet Fighter Project
@@ -3224,7 +3399,21 @@ prerequisite = { focus = SOV_ilyushinil2 focus = SOV_ilyushindb3 }
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = {
+ add_tech_bonus = {
+	name = air_doctrine
+	bonus = 1.0
+	uses = 2
+	category = air_doctrine
+}
+  
+  add_equipment_to_stockpile = {
+  type = fighter_equipment_0
+					amount = 40
+					producer = SOV
+ }
+ 
+}
  } 
  
  #Focus for Polikarpov I-16
@@ -3239,5 +3428,12 @@ prerequisite = { focus = SOV_sovietfighterproject }
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = {
+ add_tech_bonus = {
+	name = fighter_bonus
+	bonus = 1.0
+	uses = 1
+	category = light_fighter
+}
+}
  }

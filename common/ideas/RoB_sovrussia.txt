@@ -489,6 +489,139 @@ ideas = {
 			}
   
   }
+  ###VLASLOV TREE
+ vlaslovit_economy_1 = {
+  allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 picture = GFX_idea_famine_of_1933
+	 modifier = {
+         political_power_gain = 0.1
+
+			}
+  
+  }
+   vlaslovit_economy_2 = {
+  allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 picture = GFX_idea_famine_of_1933
+	 modifier = {
+         political_power_gain = 0.1
+		 production_speed_buildings_factor = 0.15
+
+			}
+  
+  }
+     vlaslovit_economy_3 = {
+  allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 picture = GFX_idea_famine_of_1933
+	 modifier = {
+         political_power_gain = 0.1
+		 production_speed_buildings_factor = 0.15
+		 industrial_capacity_factory = 0.15
+
+			}
+  
+  }
+  
+       vlaslovit_militias = {
+  allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 picture = GFX_idea_famine_of_1933
+	 modifier = {
+         political_power_gain = 0.2
+
+
+			}
+  
+  }
+  
+         vlaslovit_expanded = {
+  allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 picture = GFX_idea_famine_of_1933
+	 modifier = {
+         political_power_gain = 0.4
+
+
+			}
+  
+  }
+  
+           slave_labour = {
+  allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 picture = GFX_idea_famine_of_1933
+	 modifier = {
+     production_speed_buildings_factor = 0.07
+
+
+			}
+  
+  }
+   vlaslov_russian_identiy = {
+  allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 picture = GFX_idea_famine_of_1933
+	 modifier = {
+  conscription = 0.005
+
+
+			}
+  
+  }
+     vlaslov_russian_identiy_2 = {
+  allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 picture = GFX_idea_famine_of_1933
+	 modifier = {
+  conscription = 0.02
+
+
+			}
+  
+  }
+      
  }
  
 }

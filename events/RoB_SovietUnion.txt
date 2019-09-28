@@ -1010,3 +1010,131 @@ set_country_flag = SOV_reform_red_guard
 
 }
 }
+
+country_event = { ###air
+id = bolshevik_russia.40
+title = bolshevik_russia.40.t
+desc = bolshevik_russia.40.d
+fire_only_once = yes
+is_triggered_only = yes
+
+
+option = { ###alksnis plan
+name = bolshevik_russia.40.a
+add_war_support = 0.05
+set_country_flag = SOV_alksnis_plan
+
+}
+option = { ###novikovs plan
+name = bolshevik_russia.40.b
+add_stability = 0.05
+set_country_flag = SOV_novikovs_plan
+
+}
+}
+
+###Vlaslovist events
+country_event = { ###vlaslovs coup
+id = bolshevik_russia.41
+title = "The New Dawn"
+desc = bolshevik_russia.41.d
+fire_only_once = yes
+is_triggered_only = yes
+
+
+option = {
+name = bolshevik_russia.1.a
+add_stability = 0.02
+}
+}
+
+country_event = { ###vlaslov meets with trade unions
+id = bolshevik_russia.42
+title = "Vlaslov Meets With Trade Unions"
+desc = bolshevik_russia.42.d
+fire_only_once = yes
+is_triggered_only = yes
+
+option = {
+name = bolshevik_russia.1.a
+add_stability = 0.02
+}
+}
+
+country_event = { ###vlaslov promises economic reforms
+id = bolshevik_russia.43
+title = "Vlaslovist Economic Reforms"
+desc = bolshevik_russia.43.d
+fire_only_once = yes
+is_triggered_only = yes
+
+
+option = {
+name = bolshevik_russia.1.a
+add_stability = 0.02
+}
+}
+
+country_event = { ###vlaslov rounds up bourgeoisie
+id = bolshevik_russia.44
+title = "Our Fiercest Enemy"
+desc = bolshevik_russia.44.d
+fire_only_once = yes
+is_triggered_only = yes
+
+
+option = {
+name = bolshevik_russia.1.a
+add_stability = 0.02
+
+
+}
+}
+
+country_event = { ###paramilitaries in cities
+id = bolshevik_russia.45
+title = "Vlaslovist Paramilitaries Mobilize"
+desc = bolshevik_russia.45.d
+fire_only_once = yes
+is_triggered_only = yes
+
+
+option = {
+name = bolshevik_russia.1.a
+add_stability = 0.02
+
+
+}
+}
+
+country_event = { ###paramilitaries in cities
+id = bolshevik_russia.46
+title = "Red Guard"
+desc = bolshevik_russia.46.d
+fire_only_once = yes
+is_triggered_only = yes
+
+
+option = {
+name = bolshevik_russia.1.a
+add_stability = 0.02
+
+
+}
+}
+
+country_event = { ###crushing the unrest
+id = bolshevik_russia.47
+title = "The Red Boot"
+desc = bolshevik_russia.47.d
+fire_only_once = yes
+is_triggered_only = yes
+
+
+option = {
+name = bolshevik_russia.1.a
+add_stability = 0.02
+
+
+}
+}
