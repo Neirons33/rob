@@ -61,20 +61,21 @@ if = {
 }
 
 set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 30
-		}
-		
-		communism = {
-			popularity = 40
-		}
-		
-		neutrality = {
-			popularity = 30
-		}		
-	}
+	ruling_party = social_liberal
+	last_election = "1930.11.9"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	national_socialist = 0
+	socialist = 0
+	democratic_socialist = 19
+	social_democracy = 5
+	social_liberal = 55
+	conservative = 21
+	authoritharian = 0
+	reactionary = 61
+	pelekist = 0
 }
 
 create_country_leader = {
@@ -82,7 +83,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
 	expire = "1953.3.1"
-	ideology = stalinism
+	ideology = democratic_socialist
 	traits = {
 		
 	}
@@ -93,7 +94,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
 	expire = "1953.3.1"
-	ideology = conservatism
+	ideology = social_liberal
 	traits = {
 		
 	}
@@ -104,7 +105,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
 	expire = "1953.3.1"
-	ideology = moderatism
+	ideology = conservative
 	traits = {
 		
 	}

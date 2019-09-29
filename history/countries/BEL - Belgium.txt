@@ -77,82 +77,87 @@ set_technology = {
 
 
 set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 83
-		}
-
-		fascism = {
-			popularity = 11
-		}
-		
-		communism = {
-			popularity = 6
-		}
-	}
-	
-	ruling_party = democratic
-	last_election = "1932.11.27"
+	ruling_party = reactionary
+	last_election = "1930.11.9"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
+}
+set_popularities = {
+	national_socialist = 0
+	socialist = 0
+	democratic_socialist = 0
+	social_democracy = 0
+	social_liberal = 0
+	conservative = 5
+	authoritharian = 5
+	reactionary = 85
+	pelekist = 5
 }
 
-1939.1.1 = {
-	set_politics = {
 
-		parties = {
-			democratic = { 
-				popularity = 87
-			}
-
-			fascism = {
-				popularity = 8
-			}
-			
-			communism = {
-				popularity = 5
-			}
-		}
-		
-		ruling_party = democratic
-		last_election = "1939.4.2"
-		election_frequency = 48
-		elections_allowed = yes
-	}
-}
 
 set_convoys = 80
 set_stability = 0.75
 
 create_country_leader = {
-	name = "Hubert Pierlot"
+	name = "Leopold III of Belgium"
 	desc = "POLITICS_HUBERT_PIERLOT_DESC"
 	picture = "Portrait_Belgium_Hubert_Pierlot.dds"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = reactionary
 	traits = {
 		#
 	}
 }
 
 create_country_leader = {
-	name = "Joseph Jacquemotte"
+	name = "Leopold III of Belgium"
 	desc = "POLITICS_JOSEPH_JACQUEMOTTE_DESC"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
 	expire = "1965.1.1"
-	ideology = anarchist_communism
+	ideology = authoritharian
 	traits = {
 		#
 	}
 }
 
 create_country_leader = {
-	name = "Léon Degrelle"
+	name = "Leopold III of Belgium"
 	desc = "POLITICS_LEON_DEGRELLE_DESC"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
 	expire = "1965.1.1"
-	ideology = rexism
+	ideology = pelekist
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Leopold III of Belgium"
+	desc = "POLITICS_LEON_DEGRELLE_DESC"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+	expire = "1965.1.1"
+	ideology = social_liberal
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Leopold III of Belgium"
+	desc = "POLITICS_LEON_DEGRELLE_DESC"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+	expire = "1965.1.1"
+	ideology = social_liberal
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Leopold III of Belgium"
+	desc = "POLITICS_LEON_DEGRELLE_DESC"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+	expire = "1965.1.1"
+	ideology = social_democracy
 	traits = {
 		#
 	}

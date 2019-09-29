@@ -117,37 +117,25 @@ set_convoys = 50
 
 
 set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 15
-		}
-
-		fascism = {
-			popularity = 80
-		}
-		
-		communism = {
-			popularity = 5
-		}
-	}
-	
-	ruling_party = fascism
-	last_election = "1936.1.1"
+	ruling_party = social_democracy
+	last_election = "1931.12.19"
 	election_frequency = 48
-	elections_allowed = no
+	elections_allowed = yes
 }
+set_popularities = {
+	national_socialist = 0
+	socialist = 0
+	democratic_socialist = 5
+	social_democracy = 45
+	social_liberal = 17
+	conservative = 27
+	authoritharian = 6
+	reactionary = 0
+	pelekist = 0
+}
+
 
 add_ideas = {
 	limited_conscription
 }
 
-create_country_leader = {
-	name = "Heinrich Himmler"
-	desc = "POLITICS_HEINRICH_HIMMLER_DESC"
-	picture = "gfx/leaders/GER/Portrait_Germany_Heinrich_Himmler.dds"
-	expire = "1965.1.1"
-	ideology = nazism
-	traits = {
-	}
-}

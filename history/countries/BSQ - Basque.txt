@@ -23,17 +23,30 @@ set_technology = {
 	transport = 1
 }
 
-set_popularities = {
-	fascism = 5
-	communism = 50
-	neutrality = 0
-	democratic = 45
-}
-
 set_politics = {
-	ruling_party = democratic
-	last_election = "1936.1.1"
+	ruling_party = conservative
+	last_election = "1930.10.9"
 	election_frequency = 48
 	elections_allowed = yes
 }
-
+set_popularities = {
+	national_socialist = 0
+	socialist = 6
+	democratic_socialist = 10
+	social_democracy = 0
+	social_liberal = 6
+	conservative = 78
+	authoritharian = 0
+	reactionary = 0
+	pelekist = 0
+}
+create_country_leader = {
+	name = "José Antonio Aguirre"
+	desc = "POLITICS_PLINIO_SALGADO_DESC"
+	picture = "Portrait_Brazil_Plinio_Salgado.dds"
+	expire = "1965.1.1"
+	ideology = conservative
+	traits = {
+		#
+	}
+}

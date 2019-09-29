@@ -171,34 +171,29 @@ if = {
 }
 
 set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 98
-		}
-
-		fascism = {
-			popularity = 0
-		}
-		
-		communism = {
-			popularity = 2
-			#banned = no #default is no
-		}
-	}
-	
-	ruling_party = democratic
-	last_election = "1934.9.15"
-	election_frequency = 36
+	ruling_party = conservative
+	last_election = "1931.12.19"
+	election_frequency = 48
 	elections_allowed = yes
+}
+set_popularities = {
+	national_socialist = 0
+	socialist = 0
+	democratic_socialist = 10
+	social_democracy = 27
+	social_liberal = 12
+	conservative = 45
+	authoritharian = 6
+	reactionary = 0
+	pelekist = 0
 }
 
 create_country_leader = {
-	name = "John Curtin"
+	name = "James Scullin"
 	desc = "POLITICS_JOHN_CURTIN_DESC"
 	picture = "Portrait_Australia_John_Curtin.dds"
 	expire = "1965.1.1"
-	ideology = socialism
+	ideology = social_democracy
 	traits = {
 		#
 	}
@@ -209,7 +204,7 @@ create_country_leader = {
 	desc = "POLITICS_ERIC_CAMPBELL_DESC"
 	picture = "GFX_AST_eric_campbell"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = reactionary
 	traits = {
 		#
 	}
@@ -220,61 +215,37 @@ create_country_leader = {
 	desc = "POLITICS_RICHARD_DIXON_DESC"
 	picture = "GFX_AST_richard_dixon"
 	expire = "1965.1.1"
-	ideology = stalinism
+	ideology = national_socialist
 	traits = {
 		#
 	}
 }
 
+create_country_leader = {
+	name = "Joseph Lyons"
+	desc = "POLITICS_EARLE_PAGE_DESC"
+	picture = "GFX_AST_earle_page"
+	expire = "1965.1.1"
+	ideology = conservative
+	traits = {
+		#
+	}
+}
 create_country_leader = {
 	name = "Earle Page"
 	desc = "POLITICS_EARLE_PAGE_DESC"
 	picture = "GFX_AST_earle_page"
 	expire = "1965.1.1"
-	ideology = centrism
+	ideology = social_liberal
 	traits = {
 		#
 	}
 }
 
-create_country_leader = {
-	name = "Rod Hull"
-	desc = ""
-	picture = "Portrait_Australia_Rod_Hull.dds"
-	expire = "1965.1.1"
-	ideology = despotism
-	traits = {
-		#
-	}
-}
 
 set_convoys = 100
 
-1939.1.1 = {
-	set_politics = {
 
-		parties = {
-			democratic = { 
-				popularity = 99
-			}
-
-			fascism = {
-				popularity = 0
-			}
-			
-			communism = {
-				popularity = 1
-				#banned = no #default is no
-			}
-		}
-		
-		ruling_party = democratic
-		last_election = "1937.10.23"
-		election_frequency = 36
-		elections_allowed = yes
-	}
-	set_convoys = 100
-}
 
 create_corps_commander = {
 	name = "Leslie Morshead"

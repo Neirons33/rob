@@ -45,30 +45,21 @@ set_convoys = 5
 	}
 }
 set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 0
-		}
-
-		fascism = {
-			popularity = 0
-		}
-		
-		communism = {
-			popularity = 0
-			#banned = no #default is no
-		}
-		
-		neutrality = { 
-			popularity = 100
-		}
-	}
-	
-	ruling_party = neutrality
-	last_election = "1936.1.1"
+	ruling_party = conservative
+	last_election = "1930.11.9"
 	election_frequency = 48
 	elections_allowed = no
+}
+set_popularities = {
+	national_socialist = 4
+	socialist = 4
+	democratic_socialist = 3
+	social_democracy = 2
+	social_liberal = 2
+	conservative = 81
+	authoritharian = 2
+	reactionary = 2
+	pelekist = 1
 }
 
 create_country_leader = {
@@ -76,7 +67,7 @@ create_country_leader = {
 	name = "Jonas Lote"
 	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
 	expire = "1965.1.1"
-	ideology = centrism
+	ideology = conservative
 	traits = {
 		#
 	}
@@ -86,33 +77,5 @@ create_country_leader = {
 }
 
 
-#Now a colony of Italy  However, if independent it would have
-1939.1.1 = {
-	set_politics = {
 
-		parties = {
-		democratic = { 
-			popularity = 0
-		}
-
-		fascism = {
-			popularity = 0
-		}
-		
-		communism = {
-			popularity = 0
-			#banned = no #default is no
-		}
-		
-		neutrality = { 
-			popularity = 100
-		}
-	}
-		
-		ruling_party = neutrality
-		last_election = "1936.1.1"
-		election_frequency = 48
-		elections_allowed = no
-	}
-}
 
