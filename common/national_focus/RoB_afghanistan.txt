@@ -155,7 +155,7 @@ owns_state = 1171
 		available_if_capitulated = yes
 		prerequisite = { focus = AFG_expandthekingdom }
 		ai_will_do = {
-			factor = 3
+			factor = 10
 		}
 available = { 
 	
