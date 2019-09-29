@@ -24,11 +24,6 @@ focus_tree = {
 		prerequisite = { 
 			focus = LIT_ 
 		}
-		completion_reward = {
-		add_ideas = {
-		new_baltic_culture
-		}
-		}
 	}
 
 	#Focus for Truly Gediminas Reborn!
@@ -59,8 +54,6 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_createaistija }
-		##completion_reward = {
-		##TBA
 	}
 
 	#Focus for Get Prussia to Join
@@ -72,8 +65,6 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_invitelatviatojoin }
-		##completion_reward = {
-		##TBA
 	}
 
 	#Focus for Declare Beržanskis a National Hero
@@ -85,12 +76,6 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_kunigaiktisvisuomis }
-		completion_reward = {
- country_event = { 
-  id = lithuania.14
-  days = 2
- }
-}
 		
 	}
 
