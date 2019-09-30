@@ -1,6 +1,6 @@
 state={
-	id=1218
-	name="STATE_1218"
+	id=1204
+	name="STATE_1204"
 	history={
 		owner = GER
 		buildings = {
