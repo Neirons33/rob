@@ -39,27 +39,22 @@ set_technology = {
 set_convoys = 30
 
 set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 92
-		}
-
-		fascism = {
-			popularity = 5
-		}
-		
-		communism = {
-			popularity = 3
-		}
-	}
-	
-	ruling_party = democratic
-	last_election = "1932.11.8"
+	ruling_party = social_liberal
+	last_election = "1931.12.19"
 	election_frequency = 48
-	elections_allowed = no
+	elections_allowed = yes
 }
-
+set_popularities = {
+	national_socialist = 0
+	socialist = 0
+	democratic_socialist = 5
+	social_democracy = 17
+	social_liberal = 45
+	conservative = 27
+	authoritharian = 6
+	reactionary = 0
+	pelekist = 0
+}
 add_ideas = {
 	disarmed_nation
 	free_trade
@@ -71,7 +66,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Portrait_California_Frank.dds"
 	expire = "1950.1.1"
-	ideology = liberalism
+	ideology = social_liberal
 	traits = {
 	}
 }
@@ -81,7 +76,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/USA/Portrait_USA_Generic_3.dds"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = reactionary
 	traits = {
 		
 	}
@@ -92,7 +87,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/USA/Portrait_USA_Generic_3.dds"
 	expire = "1965.1.1"
-	ideology = marxism
+	ideology = socialist
 	traits = {
 		
 	}

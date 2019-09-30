@@ -67,28 +67,21 @@ if = {
 }
 
 set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 40
-		}
-
-#		fascism = {
-#		
-#		}
-		
-		communism = {
-			popularity = 25
-		}
-		neutrality = {
-			popularity = 35
-		}
-	}
-
-	ruling_party = democratic
-	last_election = "1933.2.16"
-	election_frequency = 36
+	ruling_party = social_liberal
+	last_election = "1931.12.19"
+	election_frequency = 48
 	elections_allowed = yes
+}
+set_popularities = {
+	national_socialist = 0
+	socialist = 0
+	democratic_socialist = 5
+	social_democracy = 17
+	social_liberal = 45
+	conservative = 27
+	authoritharian = 6
+	reactionary = 0
+	pelekist = 0
 }
 
 create_country_leader = {
@@ -96,7 +89,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_warlord1.dds"
 	expire = "1953.3.1"
-	ideology = anarchist_communism #insanity
+	ideology = national_socialist #insanity
 	traits = {
 		
 	}
@@ -108,7 +101,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_4.dds"
 	expire = "1953.3.1"
-	ideology = liberalism
+	ideology = social_liberal
 	traits = {
 		
 	}
@@ -119,7 +112,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_2.dds"
 	expire = "1953.3.1"
-	ideology = conservatism
+	ideology = conservative
 	traits = {
 		
 	}

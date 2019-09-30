@@ -67,27 +67,23 @@ if = {
 }
 
 set_politics = {
-
-	parties = {
-		conservative = { 
-			popularity = 98
-		}
-
-		pelekist = {
-			popularity = 1
-		}
-		
-		socialist = {
-			popularity = 1
-			#banned = no #default is no
-		}
-	}
-	
 	ruling_party = conservative
-	last_election = "1935.10.14"
-	election_frequency = 60
+	last_election = "1931.12.19"
+	election_frequency = 48
 	elections_allowed = yes
 }
+set_popularities = {
+	national_socialist = 0
+	socialist = 0
+	democratic_socialist = 0
+	social_democracy = 27
+	social_liberal = 22
+	conservative = 45
+	authoritharian = 6
+	reactionary = 0
+	pelekist = 0
+}
+
 
 create_country_leader = {
 	name = "Richard Bedford Bennett"
