@@ -2,9 +2,11 @@ focus_tree = {
 	id = soviet_focus_blokhin
 	country = {
 		factor = 0
+			modifier = {
+			add = 10
+			tag = SWI
+		}
 	}
-
-default = no
 
 continuous_focus_position = { x = 50 y = 2000 }
 
@@ -21,11 +23,17 @@ id = SOV_premierblokhin
 icon = GFX_focus_SOV_Premier_Blokhin
 x = 5
 y = 1
-cost = 10
+cost = 1
 available_if_capitulated = yes 
 ai_will_do = { 
- factor = 1
+ factor = 100
  }
+ completion_reward = {
+ country_event  = {
+  id = bolshevik_russia.48
+  days = 1
+ }
+ } 
  }
 #Focus for Round up leaders of unions
 focus = { 
@@ -37,9 +45,14 @@ cost = 2
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_premierblokhin } 
 ai_will_do = { 
- factor = 1
+ factor = 100
  } 
-
+ completion_reward = {
+ country_event  = {
+  id = bolshevik_russia.49
+  days = 1
+ }
+ }
  }
  
  
@@ -53,9 +66,14 @@ cost = 2
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_premierblokhin } 
 ai_will_do = { 
- factor = 1
+ factor = 100
  } 
-
+ completion_reward = {
+ country_event  = {
+  id = bolshevik_russia.52
+  days = 1
+ }
+ }
  }
  
  #Focus for Use "Blokhinists"
@@ -70,7 +88,12 @@ prerequisite = { focus = SOV_sorvparamilitariesincities }
 ai_will_do = { 
  factor = 1
  } 
-
+ completion_reward = {
+ country_event  = {
+  id = bolshevik_russia.53
+  days = 1
+ }
+ }
  } 
  
  #Focus for Brutal Suppresion
@@ -85,7 +108,12 @@ prerequisite = { focus = SOV_useblokhinists }
 ai_will_do = { 
  factor = 1
  } 
-
+ completion_reward = {
+ country_event  = {
+  id = bolshevik_russia.54
+  days = 1
+ }
+ }
  }
  
  #Focus for Cracking down on Unions
@@ -98,7 +126,13 @@ cost = 2
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_roundupleadersofunions } 
 ai_will_do = { 
- factor = 1
+ factor = 100
+ }
+ completion_reward = {
+ country_event  = {
+  id = bolshevik_russia.50
+  days = 1
+ }
  } 
 } 
  #Focus for Crackdown on Strikes
@@ -111,9 +145,14 @@ cost = 2
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_crackingdownonunions } 
 ai_will_do = { 
- factor = 1
+ factor = 100
  } 
-
+ completion_reward = {
+ country_event  = {
+  id = bolshevik_russia.51
+  days = 1
+ }
+ }
  }
 #Focus for Red Russia
 focus = { 
@@ -121,14 +160,21 @@ id = SOV_redrussia
 icon = GFX_goal_unknown
 x = 5
 y = 5
-cost = 10
+cost = 5
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_crackdownonstrikes } 
 prerequisite = { focus = SOV_brutalsuppresion } 
 ai_will_do = { 
- factor = 1
+ factor = 100
  } 
-
+completion_reward = {
+ remove_ideas = {
+  mass_unrest
+ }
+  remove_ideas = {
+  bolshevik_strike 
+ }
+}
  } 
  
  #Focus for Ban the church
@@ -143,7 +189,10 @@ prerequisite = { focus = SOV_redrussia }
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = {
+ add_stability = -0.08
+ add_war_support = 0.08
+}
  }
  
  #Focus for Religious Repressions
@@ -158,7 +207,9 @@ prerequisite = { focus = SOV_banthechurch }
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = {
+ add_stability = -0.05
+}
  }
  
  #Focus for Atheist State
@@ -173,7 +224,12 @@ prerequisite = { focus = SOV_religiousrepressions }
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = {
+ add_war_support = 0.07
+ add_ideas = {
+  atheist_state
+ }
+}
  } 
  
  #Focus for Cultural Revolution
@@ -188,7 +244,12 @@ prerequisite = { focus = SOV_atheiststate }
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = {
+ country_event = {
+  id = bolshevik_russia.55
+  days = 3
+ }
+}
  }
  #Focus for People's Red Guard
 focus = { 
@@ -202,7 +263,11 @@ prerequisite = { focus = SOV_culturalrevolution }
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = {
+ add_ideas = {
+  peoples_red_guard
+ }
+}
  }
  #Focus for Purge in Party
 focus = { 
@@ -216,7 +281,11 @@ prerequisite = { focus = SOV_redrussia }
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = {
+ add_popularity = {ideology = socialist popularity =-0.40}
+add_popularity = {ideology = democratic_socialist popularity =-0.40}
+add_popularity = {ideology = social_democracy popularity =-0.10}
+}
  } 
  #Focus for Execute the Bourgeoisie
 focus = { 
@@ -230,7 +299,21 @@ prerequisite = { focus = SOV_purgeinparty }
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = {
+ if = {
+  limit = {
+   has_idea = bourgeoisie_influence
+  }
+  remove_ideas = {
+   bourgeoisie_influence
+  }
+ else = {
+  remove_ideas = {
+   bourgeoisie_influence_2
+  }
+ }
+}
+ }
  }
  #Focus for Curl Intellectuals
 focus = { 
@@ -244,7 +327,11 @@ prerequisite = { focus = SOV_executethebourgeoisie }
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = {
+ add_ideas = {
+  intelectualls_purged
+ }
+}
  } 
  #Focus for Re-education Camps
 focus = { 
@@ -258,7 +345,9 @@ prerequisite = { focus = SOV_curlintellectuals }
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = {
+ add_stability = 0.05
+}
  }
  #Focus for Expand prision system
 focus = { 
@@ -271,7 +360,10 @@ available_if_capitulated = yes
 prerequisite = { focus = SOV_reeducationcamps } 
 ai_will_do = { 
  factor = 1
- } 
+ }
+completion_reward = {
+ add_political_power = 120
+} 
 }
 
 #Focus for Collectivization
@@ -286,7 +378,11 @@ prerequisite = { focus = SOV_redrussia }
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = {
+ add_ideas = {
+  collective_economy
+ }
+}
  } 
  #Focus for Forced De-industralization
 focus = { 
@@ -300,7 +396,16 @@ prerequisite = { focus = SOV_collectivization }
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = {
+219 = { 
+	remove_building = { type = arms_factory  level = 2 } 
+	remove_building = { type = industrial_complex  level = 1 } 
+}
+195 = { 
+	remove_building = { type = arms_factory  level = 1 } 
+	remove_building = { type = industrial_complex  level = 1 } 
+}
+}
  }
  
  #Focus for Expand Collective Farms
@@ -315,7 +420,11 @@ prerequisite = { focus = SOV_forceddeindustralization }
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = {
+ add_ideas = {
+  collective_farming
+ }
+}
  }
  
  #Focus for Destroying foreign influence
@@ -330,7 +439,14 @@ prerequisite = { focus = SOV_expandcollectivefarms }
 ai_will_do = { 
  factor = 1
  } 
+completion_reward = {
+ 
+ country_event = {
+id = bolshevik_russia.56
+days = 2
+}
 
+}
  }
 
 #Focus for Aim for Autarky
@@ -345,7 +461,11 @@ prerequisite = { focus = SOV_destroyingforeigninfluence }
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = {
+ add_ideas = {
+ autarky_measures
+}
+}
  }
 
 #Focus for United We Suffer
@@ -354,7 +474,7 @@ id = SOV_unitedwesuffer
 icon = GFX_goal_unknown
 x = 5
 y = 11
-cost = 10
+cost = 5
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_expandprisionsystem } 
 prerequisite = { focus = SOV_peoplesredguard } 
@@ -362,7 +482,11 @@ prerequisite = { focus = SOV_aimforautarky }
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = {
+ add_ideas = {
+  united_we_suffer
+ }
+}
  } 
  
  }

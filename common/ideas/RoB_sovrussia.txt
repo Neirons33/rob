@@ -621,6 +621,116 @@ ideas = {
 			}
   
   }
+  
+    atheist_state = {
+  allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 picture = GFX_idea_famine_of_1933
+	 modifier = {
+         research_speed_factor = 0.025
+			}
+  
+  }
+  
+ peoples_red_guard = {
+  allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 picture = GFX_idea_famine_of_1933
+	 modifier = {
+         conscription = 0.015
+		 army_morale_factor = -0.1
+			}
+  
+  }
+ intelectualls_purged = {
+  allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 picture = GFX_idea_famine_of_1933
+	 modifier = {
+         research_speed_factor = -0.05
+		 stability_factor = 0.1
+			}
+  
+  }
+ collective_economy = {
+  allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 picture = GFX_idea_famine_of_1933
+	 modifier = {
+         production_factory_max_efficiency_factor = -0.08
+		 production_speed_buildings_factor = 0.25
+			}
+  
+  }
+  
+   collective_farming = {
+  allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 picture = GFX_idea_famine_of_1933
+	 modifier = {
+         production_factory_max_efficiency_factor = -0.1
+		 consumer_goods_factor = -0.2
+			}
+  
+  }
+  
+     autarky_measures = {
+  allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 picture = GFX_idea_famine_of_1933
+	 modifier = {
+         min_export = -0.5
+		 industrial_capacity_factory = -0.05
+			}
+  
+  }
+  
+       united_we_suffer = {
+  allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 picture = GFX_idea_famine_of_1933
+	 modifier = {
+         conscription = 0.05
+		 industrial_capacity_factory = -0.15
+		 line_change_production_efficiency_factor = -0.15
+			}
+  
+  }
       
  }
  

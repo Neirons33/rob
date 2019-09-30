@@ -1138,3 +1138,143 @@ add_stability = 0.02
 
 }
 }
+
+###TREE - BLOKHIN
+country_event = { ###Blokhins coup
+id = bolshevik_russia.48
+title = "The Bloody Morning"
+desc = bolshevik_russia.48.d
+fire_only_once = yes
+is_triggered_only = yes
+
+
+option = {
+name = bolshevik_russia.1.a
+add_stability = 0.02
+
+
+}
+}
+country_event = { ###yeeting on unions
+id = bolshevik_russia.49
+title = "Fast..."
+desc = bolshevik_russia.49.d
+fire_only_once = yes
+is_triggered_only = yes
+
+
+option = {
+name = bolshevik_russia.1.a
+add_stability = 0.02
+
+
+}
+}
+country_event = { ###yeeting on unions 2
+id = bolshevik_russia.50
+title = "Direct..."
+desc = bolshevik_russia.50.d
+fire_only_once = yes
+is_triggered_only = yes
+
+
+option = {
+name = bolshevik_russia.1.a
+add_stability = 0.02
+
+
+}
+}
+country_event = { ###yeeting on unions 3
+id = bolshevik_russia.51
+title = "Uncompromising!"
+desc = bolshevik_russia.51.d
+fire_only_once = yes
+is_triggered_only = yes
+
+
+option = {
+name = bolshevik_russia.1.a
+add_stability = 0.02
+
+
+}
+}
+
+country_event = { ###paramilitaries
+id = bolshevik_russia.52
+title = "Mobilizing SORV"
+desc = bolshevik_russia.52.d
+fire_only_once = yes
+is_triggered_only = yes
+
+
+option = {
+name = bolshevik_russia.1.a
+add_stability = 0.02
+
+
+}
+}
+country_event = { ###paramilitaries 2
+id = bolshevik_russia.53
+title = "The Red Schock Troops"
+desc = bolshevik_russia.53.d
+fire_only_once = yes
+is_triggered_only = yes
+
+
+option = {
+name = bolshevik_russia.1.a
+add_stability = 0.02
+
+
+}
+}
+country_event = { ###paramilitaries 3
+id = bolshevik_russia.54
+title = "The Streets Run Red"
+desc = bolshevik_russia.54.d
+fire_only_once = yes
+is_triggered_only = yes
+
+
+option = {
+name = bolshevik_russia.1.a
+add_stability = 0.02
+
+
+}
+}
+
+country_event = { ###cultural revolution
+id = bolshevik_russia.55
+title = "The Russian Cultural Revolution"
+desc = bolshevik_russia.55.d
+fire_only_once = yes
+is_triggered_only = yes
+
+
+option = {
+name = bolshevik_russia.1.a
+add_stability = 0.02
+
+
+}
+}
+
+country_event = { ###destroying foreign influence
+id = bolshevik_russia.56
+title = "The Foreigner Question"
+desc = bolshevik_russia.56.d
+fire_only_once = yes
+is_triggered_only = yes
+
+
+option = {
+name = bolshevik_russia.1.a
+add_stability = 0.02
+
+
+}
+}
