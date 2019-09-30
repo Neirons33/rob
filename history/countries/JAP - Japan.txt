@@ -263,6 +263,10 @@ if = {
 		target = MAN
 		autonomous_state = autonomy_integrated_puppet
 	}
+	set_autonomy = {
+		target = JVD
+		autonomous_state = autonomy_puppet
+	}
 	else = {
 		set_autonomy = {
 			target = MEN
@@ -270,6 +274,10 @@ if = {
 		}
 		set_autonomy = {
 			target = MAN
+			autonomous_state = autonomy_puppet
+		}
+	    set_autonomy = {
+			target = JVD
 			autonomous_state = autonomy_puppet
 		}
 	}
@@ -313,7 +321,7 @@ create_country_leader = {
 	desc = "POLITICS_Hirohito_DESC"
 	picture = "GFX_Portrait_kyuichi_tokuda"
 	expire = "1989.1.1"
-	ideology = marxism
+	ideology = socialist
 	traits = {
 	}
 }
@@ -323,7 +331,7 @@ create_country_leader = {
 	desc = "POLITICS_Hirohito_DESC"
 	picture = "GFX_Portrait_tetsu_katayama"
 	expire = "1989.1.1"
-	ideology = liberalism
+	ideology = social_liberal
 	traits = {
 	}
 }

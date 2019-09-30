@@ -2,27 +2,31 @@ capital = 580
 set_research_slots = 1
 
 set_politics = {
+	ruling_party = social_liberal
+	last_election = "1933.10.12"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	national_socialist = 0
+	socialist = 0
+	democratic_socialist = 10
+	social_democracy = 23
+	social_liberal = 45
+	conservative = 22
+	authoritharian = 0
+	reactionary = 0
+	pelekist = 0
+}
 
-	parties = {
-		democratic = { 
-			popularity = 100
-		}
 
-		fascism = {
-			popularity = 0
-		}
-		
-		communism = {
-			popularity = 0
-		}
-		
-		neutrality = {
-			popularity = 0
-		}
+create_country_leader = {
+	name = "Federal Council"
+	desc = "POLITICS_RICARDO_JIMENEZ_OREAMUNO_DESC"
+	picture = ""
+	expire = "1965.1.1"
+	ideology = social_liberal
+	traits = {
+		#
 	}
-	
-	ruling_party = democratic
-	last_election = "1960.1.1"
-	election_frequency = 50
-	elections_allowed = no
 }

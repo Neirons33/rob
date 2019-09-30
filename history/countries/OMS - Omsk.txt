@@ -23,25 +23,32 @@ set_technology = {
 	transport = 1
 }
 set_country_flag = RUS_warlord
+
 set_politics = {
+	ruling_party = national_socialist
+	last_election = "1934.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	national_socialist = 82
+	socialist = 10
+	democratic_socialist = 8
+	social_democracy = 0
+	social_liberal = 0
+	conservative = 0
+	authoritharian = 0
+	reactionary = 0
+	pelekist = 0
+}
 
-	parties = {
-		democratic = { 
-			popularity = 0
-		}
-
-		fascism = {
-			popularity = 0
-		}
-		
-		communism = {
-			popularity = 100
-		}
+create_country_leader = {
+	
+	name = "Konstantin Rokossovsky"
+	picture = "Konstantin_Rokossovsky.dds"
+	expire = "1965.1.1"
+	ideology = national_socialist
+	traits = {
 		
 	}
-	
-	ruling_party = communism
-	last_election = "1933.2.16"
-	election_frequency = 36
-	elections_allowed = no
 }
