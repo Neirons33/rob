@@ -109,7 +109,7 @@ set_politics = {
 }
 set_popularities = {
 	national_socialist = 0
-	socialist = 7
+	socialist = 0
 	democratic_socialist = 10
 	social_democracy = 14
 	social_liberal = 56

@@ -146,7 +146,16 @@ set_popularities = {
 	reactionary = 6
 	pelekist = 0
 }
-
+create_country_leader = {
+	name = "Hipólito Yrigoyen"
+	desc = "POLITICS_FANNY_JABCOVSKY_DESC"
+	picture = "Portrait_Argentina_Fanny_Jabcovsky.dds"
+	expire = "1965.1.1"
+	ideology = social_democracy
+	traits = {
+		#
+	}
+}
 create_country_leader = {
 	name = "Agustín Pedro Justo"
 	desc = "POLITICS_AGUSTIN_PEDRO_JUSTO_DESC"
@@ -205,16 +214,7 @@ create_country_leader = {
 		#
 	}
 }
-create_country_leader = {
-	name = "Hipólito Yrigoyen"
-	desc = "POLITICS_FANNY_JABCOVSKY_DESC"
-	picture = "Portrait_Argentina_Fanny_Jabcovsky.dds"
-	expire = "1965.1.1"
-	ideology = social_democracy
-	traits = {
-		#
-	}
-}
+
 
 create_field_marshal = {
 	name = "Arturo Rawson"
