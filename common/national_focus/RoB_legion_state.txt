@@ -1,157 +1,511 @@
-focus_tree = { 
-id = LESFocus
-country = { 
-factor = 0 
-modifier = { 
-add = 10 
-tag = LES 
-} 
-} 
-#Focus for A New Slav System
-focus = { 
-id = LES_anewslavsystem
-icon = GFX_focus_generic_self_management
-x = 7
-y = 0
-cost = 10
-available_if_capitulated = yes 
-ai_will_do = { 
- factor = 1
- } 
-completion_reward = { 
-add_stability= 0.10
-add_political_power= 100
-add_popularity= { 
-ideology = pelekist
-popularity = 0.1 
-}
- } 
+focus_tree = {
+	id = LESFocus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = LES
+		}
+	}
+	#Focus for Form the Occult Corps
+	focus = {
+		id = LES_formtheoccultcorps
+		icon = GFX_goal_unknown
+		x = 5
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LES_targettheheathens 
+			focus = LES_proclaimourdream 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
- } 
+	#Focus for Revive Chelyabinsk's economy
+	focus = {
+		id = LES_revivechelyabinskseconomy
+		icon = GFX_goal_unknown
+		x = 32
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
-#Focus for Gathering our Supporters
-focus = { 
-id = LES_gatheringoursupporters
-icon = GFX_goal_generic_small_arms
-x = 8
-y = 1
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = LES_anewslavsystem } 
-ai_will_do = { 
- factor = 1
- } 
-completion_reward = { 
-create_unit = { division = 'name = COOL_NAME division_template = COOL_TEMPLATE starting_experience_factor = 1.0' }
-create_unit = { division = 'name = COOL_NAME division_template = COOL_TEMPLATE starting_experience_factor = 1.0' }
- } 
+	#Focus for Free the local markets
+	focus = {
+		id = LES_freethelocalmarkets
+		icon = GFX_goal_unknown
+		x = 30
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_revivechelyabinskseconomy }
+		mutually_exclusive = { focus = LES_stateownedindustry }
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
- } 
+	#Focus for State-Owned Industry
+	focus = {
+		id = LES_stateownedindustry
+		icon = GFX_goal_unknown
+		x = 34
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_revivechelyabinskseconomy }
+		mutually_exclusive = { focus = LES_freethelocalmarkets }
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
-#Focus for Industrial Survival
-focus = { 
-id = LES_industrialsurvival
-icon = GFX_goal_generic_construct_mil_factory
-x = 6
-y = 1
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = LES_anewslavsystem } 
-ai_will_do = { 
- factor = 1
- } 
-completion_reward = { 
-random_owned_controlled_state = {
-limit = {
-free_building_slots = {
-building = industrial_complex
-size > 0
-include_locked = yes
-}
-}
-add_extra_state_shared_building_slots = 1
-add_building_construction = {
-type = industrial_complex
-level = 1
-instant_build = yes
-}
-set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
-}
-random_owned_controlled_state = {
-limit = {
-free_building_slots = {
-building = arms_factory
-size > 0
-include_locked = yes
-}
-}
-add_extra_state_shared_building_slots = 1
-add_building_construction = {
-type = arms_factory
-level = 1
-instant_build = yes
-}
-set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
-}
- } 
+	#Focus for Begin the Construction of a New System
+	focus = {
+		id = LES_begintheconstructionofanewsystem
+		icon = GFX_goal_unknown
+		x = 11
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
- } 
+	#Focus for Pray for our General
+	focus = {
+		id = LES_prayforourgeneral
+		icon = GFX_goal_unknown
+		x = 5
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
-#Focus for Contact the Southern Armies
-focus = { 
-id = LES_contactthesouthernarmies
-icon = GFX_goal_tripartite_pact
-x = 7
-y = 2
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = LES_industrialsurvival } 
-prerequisite = { focus = LES_gatheringoursupporters } 
-ai_will_do = { 
- factor = 1
- } 
+	#Focus for Revive Perun's Myth
+	focus = {
+		id = LES_reviveperunsmyth
+		icon = GFX_goal_unknown
+		x = 5
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LES_begintheconstructionofanewsystem 
+		}
+		prerequisite = { 
+			focus = LES_prayforourgeneral 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
- } 
+	#Focus for Destroy Christian symbols
+	focus = {
+		id = LES_destroychristiansymbols
+		icon = GFX_goal_unknown
+		x = 4
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_reviveperunsmyth }
+		mutually_exclusive = { focus = LES_achristianpaganism }
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
-#Focus for Arm the Rebellion
-focus = { 
-id = LES_armtherebellion
-icon = GFX_focus_prc_infiltration
-x = 7
-y = 3
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = LES_contactthesouthernarmies } 
-ai_will_do = { 
- factor = 1
- } 
+	#Focus for A christian paganism
+	focus = {
+		id = LES_achristianpaganism
+		icon = GFX_goal_unknown
+		x = 6
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_reviveperunsmyth }
+		mutually_exclusive = { focus = LES_destroychristiansymbols }
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
- } 
+	#Focus for Workers of a New World
+	focus = {
+		id = LES_workersofanewworld
+		icon = GFX_goal_unknown
+		x = 3
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_materialistnationalism }
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
-#Focus for To War !
-focus = { 
-id = LES_towar
-icon = GFX_goal_unknown
-x = 7
-y = 4
-cost = 5
-available_if_capitulated = yes 
-prerequisite = { focus = LES_armtherebellion } 
-ai_will_do = { 
- factor = 1
- } 
-completion_reward = { 
-create_wargoal= { 
-type = annex_everything 
-target = KAZ
-}
-country_event= {
-days = 1 
-id = riversofbloodahoimod.2 
-}
- } 
+	#Focus for Proclaim our Dream !
+	focus = {
+		id = LES_proclaimourdream
+		icon = GFX_goal_unknown
+		x = 4
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_workersofanewworld }
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
- } 
+	#Focus for Hunt the Jews
+	focus = {
+		id = LES_huntthejews
+		icon = GFX_goal_unknown
+		x = 5
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LES_anewspirituality 
+			focus = LES_materialistnationalism 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Target the Heathens !
+	focus = {
+		id = LES_targettheheathens
+		icon = GFX_goal_unknown
+		x = 6
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_exaltthepeasantry }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Materialist Nationalism
+	focus = {
+		id = LES_materialistnationalism
+		icon = GFX_goal_unknown
+		x = 4
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_destroychristiansymbols }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for A new spirituality
+	focus = {
+		id = LES_anewspirituality
+		icon = GFX_goal_unknown
+		x = 6
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_achristianpaganism }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Exalt the peasantry !
+	focus = {
+		id = LES_exaltthepeasantry
+		icon = GFX_goal_unknown
+		x = 7
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_anewspirituality }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Struggle for Russia !
+	focus = {
+		id = LES_struggleforrussia
+		icon = GFX_goal_unknown
+		x = 11
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_endthekhanate }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Convert the Muslim Populations
+	focus = {
+		id = LES_convertthemuslimpopulations
+		icon = GFX_goal_unknown
+		x = 9
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LES_anewspirituality 
+		}
+		prerequisite = { 
+			focus = LES_chargethesouthernborder 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Create a New Elite Force
+	focus = {
+		id = LES_createaneweliteforce
+		icon = GFX_goal_unknown
+		x = 18
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_rebuildthelegion }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Modernize the Troops
+	focus = {
+		id = LES_modernizethetroops
+		icon = GFX_goal_unknown
+		x = 14
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_rebuildthelegion }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Rebuild the Legion
+	focus = {
+		id = LES_rebuildthelegion
+		icon = GFX_goal_unknown
+		x = 14
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_begintheconstructionofanewsystem }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Start the Slavic Rebellion
+	focus = {
+		id = LES_starttheslavicrebellion
+		icon = GFX_goal_unknown
+		x = 11
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_chargethesouthernborder }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_state_owner= CHOOSE STATE
+		}
+	}
+
+	#Focus for Contact the Southern Armies
+	focus = {
+		id = LES_contactthesouthernarmies
+		icon = GFX_goal_unknown
+		x = 11
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_ourownreconquista }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Our own Reconquista
+	focus = {
+		id = LES_ourownreconquista
+		icon = GFX_goal_unknown
+		x = 11
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_begintheconstructionofanewsystem }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Charge the Southern Border
+	focus = {
+		id = LES_chargethesouthernborder
+		icon = GFX_goal_unknown
+		x = 11
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_contactthesouthernarmies }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for End the Khanate
+	focus = {
+		id = LES_endthekhanate
+		icon = GFX_goal_unknown
+		x = 11
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_starttheslavicrebellion }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Call for Serbian volunteers
+	focus = {
+		id = LES_callforserbianvolunteers
+		icon = GFX_goal_unknown
+		x = 24
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LES_callforslovacvolunteers 
+			focus = LES_callforczechvolunteers 
+			focus = LES_callforcroatiansvolunteers 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for A Home for all slavs
+	focus = {
+		id = LES_ahomeforallslavs
+		icon = GFX_goal_unknown
+		x = 24
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_callforserbianvolunteers }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Form Vostoslaviya
+	focus = {
+		id = LES_formvostoslaviya
+		icon = GFX_goal_unknown
+		x = 11
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_struggleforrussia }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Recruit foreign volunteers
+	focus = {
+		id = LES_recruitforeignvolunteers
+		icon = GFX_goal_unknown
+		x = 24
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_rebuildthelegion }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Focus on Infantry
+	focus = {
+		id = LES_focusoninfantry
+		icon = GFX_goal_unknown
+		x = 14
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_modernizethetroops }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Call for Slovac volunteers
+	focus = {
+		id = LES_callforslovacvolunteers
+		icon = GFX_goal_unknown
+		x = 24
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_recruitforeignvolunteers }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Call for Czech volunteers
+	focus = {
+		id = LES_callforczechvolunteers
+		icon = GFX_goal_unknown
+		x = 22
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_recruitforeignvolunteers }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Call for Croatians volunteers
+	focus = {
+		id = LES_callforcroatiansvolunteers
+		icon = GFX_goal_unknown
+		x = 26
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_recruitforeignvolunteers }
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
 #End of focuses 
  }

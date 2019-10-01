@@ -54,66 +54,29 @@ set_convoys = 20
 
 
 set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 25
-		}
-
-		fascism = {
-			popularity = 20
-		}
-		
-		communism = {
-			popularity = 5
-			#banned = no #default is no
-		}
-		
-		neutrality = { 
-			popularity = 50
-		}
-	}
-	
-	ruling_party = neutrality
-	last_election = "1936.1.1"
+	ruling_party = conservative
+	last_election = "1934.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
-
-1939.1.1 = {
-	set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 25
-		}
-
-		fascism = {
-			popularity = 20
-		}
-		
-		communism = {
-			popularity = 5
-			#banned = no #default is no
-		}
-		
-		neutrality = { 
-			popularity = 50
-		}
-	}
+set_popularities = {
+	national_socialist = 0
+	socialist = 0
+	democratic_socialist = 0
+	social_democracy = 0
+	social_liberal = 0
+	conservative = 33
+	authoritharian = 45
+	reactionary = 22
+	pelekist = 0
+}
 	
-	ruling_party = neutrality
-	last_election = "1936.1.1"
-	election_frequency = 48
-	elections_allowed = no
-	}
-}	
 
 create_country_leader = {
 	name = "Habib Bourguiba"
 	desc = ""
 	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_navy_3.dds"
-	ideology = centrism
+	ideology = conservative
 	traits = {
 		#
 	}
