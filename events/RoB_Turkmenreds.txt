@@ -116,7 +116,7 @@ option = {
 name = turkmenreds.103.b
 ai_chance = { factor = 25}
 add_political_power = -50
-hidden_effect = { country_event = { id = turkmenreds.106 days = 10 } }
+hidden_effect = { country_event = { id = turkmenreds.106 days = 20 } }
 }
 }
 }
@@ -186,7 +186,7 @@ option = {
 name = turkmenreds.106.b
 ai_chance = { factor = 50}
 add_manpower = -383
-hidden_effect = { country_event = { id = turkmenreds.107 days = 3 } }
+hidden_effect = { country_event = { id = turkmenreds.107 days = 10 } }
 }
 
 }
@@ -275,7 +275,7 @@ tag = TRS
 
 option = {
 name = turkmenreds.109.a
-ai_chance = { factor = 25}
+ai_chance = { factor = 75}
 set_politics = {
 	ruling_party = national_socialist
 }
