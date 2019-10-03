@@ -2445,6 +2445,10 @@ prerequisite = { focus = SOV_siberiancomrades }
 			    type = annex_everything
 			    target = UZB
 			}
+			create_wargoal = {
+			    type = annex_everything
+			    target = KYR
+			}
 		}
 ai_will_do = { 
  factor = 1
@@ -3041,6 +3045,32 @@ prerequisite = { focus = SOV_siberiancampaign }
 ai_will_do = { 
  factor = 1
  } 
+completion_reward = { 
+create_wargoal = {
+type = annex_everything
+target = WFE
+}
+create_wargoal = {
+type = annex_everything
+target = SFS
+}
+create_wargoal = {
+type = annex_everything
+target = IRK
+}
+create_wargoal = {
+type = annex_everything
+target = JVD
+}
+create_wargoal = {
+type = annex_everything
+target = JOB
+}
+create_wargoal = {
+type = annex_everything
+target = FER
+}
+}
 } 
 #Focus for Enemies on All Sides
 shared_focus = { 
