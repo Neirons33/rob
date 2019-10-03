@@ -1,0 +1,309 @@
+#################
+###Turkmen Red Events
+#################
+
+add_namespace = turkmenreds
+
+
+###Battle of Ashqabad
+
+
+country_event = {
+id = turkmenreds.100
+title = turkmenreds.100.t
+desc = turkmenreds.100.d
+is_triggered_only = yes
+fire_only_once = yes
+picture = GFX_picture_bosnian_revolt
+
+trigger = {
+tag = TRS
+}
+
+option = {
+name = turkmenreds.100.a
+ai_chance = { factor = 100}
+add_manpower = -1000
+TMS = { country_event = { id = turkmenreds.101 days = 3 } }
+}
+
+option = {
+name = turkmenreds.100.b
+ai_chance = { factor = 0}
+add_political_power = -100
+add_stability = -0.25
+
+
+}
+}
+
+country_event = {
+id = turkmenreds.101
+title = turkmenreds.101.t
+desc = turkmenreds.101.d
+is_triggered_only = yes
+fire_only_once = yes
+picture = GFX_picture_bosnian_revolt
+
+trigger = {
+tag = TMS
+}
+
+option = {
+name = turkmenreds.101.a
+ai_chance = { factor = 100}
+add_manpower = -2500
+TRS = { country_event = { id = turkmenreds.102 days = 3} }
+add_ideas = TMS_shell_shocked
+}
+
+}
+
+country_event = {
+id = turkmenreds.102
+title = turkmenreds.102.t
+desc = turkmenreds.102.d
+is_triggered_only = yes
+fire_only_once = yes
+picture = GFX_picture_bosnian_revolt
+
+trigger = {
+tag = TRS
+}
+
+option = {
+name = turkmenreds.102.a
+ai_chance = { factor = 100}
+add_manpower = 937
+add_ideas = TRS_big_win
+add_tech_bonus = {
+    bonus = 0.75
+    uses = 1
+    category = infantry_equipment
+}
+}
+
+}
+
+###Stalin Chain
+
+country_event = {
+id = turkmenreds.103
+title = turkmenreds.103.t
+desc = turkmenreds.103.d
+
+fire_only_once = yes
+picture = GFX_picture_bosnian_revolt
+
+trigger = {
+tag = TRS
+}
+
+option = {
+name = turkmenreds.103.a
+ai_chance = { factor = 50}
+add_manpower = -1000
+random_list = {
+    50 = {
+        hidden_effect = { country_event = { id = turkmenreds.104 days = 3 } } }
+    50 = {
+        hidden_effect = { country_event = { id = turkmenreds.105 days = 3 } } }
+    }
+}
+}
+
+option = {
+name = turkmenreds.103.b
+ai_chance = { factor = 25}
+add_political_power = -50
+hidden_effect = { country_event = { id = turkmenreds.106 days = 10 } }
+}
+}
+}
+
+country_event = {
+id = turkmenreds.104
+title = turkmenreds.104.t
+desc = turkmenreds.104.d
+is_triggered_only = yes
+fire_only_once = yes
+picture = GFX_picture_bosnian_revolt
+
+trigger = {
+tag = TRS
+}
+
+option = {
+name = turkmenreds.104.a
+ai_chance = { factor = 100}
+add_manpower = 974
+add_ideas = TRS_stalin_gone
+hidden_effect = { country_event = { id = turkmenreds.107 days = 5 } }
+}
+
+}
+
+country_event = {
+id = turkmenreds.105
+title = turkmenreds.105.t
+desc = turkmenreds.105.d
+is_triggered_only = yes
+fire_only_once = yes
+picture = GFX_picture_bosnian_revolt
+
+trigger = {
+tag = TRS
+}
+
+option = {
+name = turkmenreds.105.a
+ai_chance = { factor = 100}
+add_manpower = 573
+hidden_effect = { country_event = { id = turkmenreds.106 days = 5 } }
+}
+
+}
+
+country_event = {
+id = turkmenreds.106
+title = turkmenreds.106.t
+desc = turkmenreds.106.d
+is_triggered_only = yes
+fire_only_once = yes
+picture = GFX_picture_bosnian_revolt
+
+trigger = {
+tag = TRS
+}
+
+option = {
+name = turkmenreds.106.a
+ai_chance = { factor = 100}
+add_manpower = -257
+hidden_effect = { country_event = { id = turkmenreds.108 days = 1 } }
+}
+option = {
+name = turkmenreds.106.b
+ai_chance = { factor = 50}
+add_manpower = -383
+hidden_effect = { country_event = { id = turkmenreds.107 days = 3 } }
+}
+
+}
+
+country_event = {
+id = turkmenreds.107
+title = turkmenreds.107.t
+desc = turkmenreds.107.d
+is_triggered_only = yes
+fire_only_once = yes
+picture = GFX_picture_bosnian_revolt
+
+trigger = {
+tag = TRS
+}
+
+option = {
+name = turkmenreds.107.a
+ai_chance = { factor = 100}
+add_manpower = 1263
+create_field_marshal = {
+	name = "Ioseb Jughashvili"
+	picture = ""
+	traits = { offensive_doctrine old_guard trait_reckless }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 4
+}
+hidden_effect = { country_event = { id = turkmenreds.109 days = 5 } }
+}
+option = {
+name = turkmenreds.107.b
+ai_chance = { factor = 50}
+hidden_effect = { country_event = { id = turkmenreds.110 days = 5 } }
+}
+
+}
+
+
+country_event = {
+id = turkmenreds.108
+title = turkmenreds.108.t
+desc = turkmenreds.108.d
+is_triggered_only = yes
+fire_only_once = yes
+picture = GFX_picture_bosnian_revolt
+
+trigger = {
+tag = TRS
+}
+
+option = {
+name = turkmenreds.108.a
+ai_chance = { factor = 100}
+create_field_marshal = {
+	name = "Ioseb Jughashvili"
+	picture = ""
+	traits = { offensive_doctrine old_guard trait_reckless }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 4
+	id = 2
+}
+set_politics = {
+	ruling_party = national_socialist
+}
+}
+
+}
+
+country_event = {
+id = turkmenreds.109
+title = turkmenreds.109.t
+desc = turkmenreds.109.d
+is_triggered_only = yes
+fire_only_once = yes
+picture = GFX_picture_bosnian_revolt
+
+trigger = {
+tag = TRS
+}
+
+option = {
+name = turkmenreds.109.a
+ai_chance = { factor = 25}
+set_politics = {
+	ruling_party = national_socialist
+}
+}
+option = {
+name = turkmenreds.109.b
+ai_chance = { factor = 25}
+add_stability = -0.2
+add_manpower = -539
+}
+
+}
+
+country_event = {
+id = turkmenreds.110
+title = turkmenreds.110.t
+desc = turkmenreds.110.d
+is_triggered_only = yes
+fire_only_once = yes
+picture = GFX_picture_bosnian_revolt
+
+trigger = {
+tag = TRS
+}
+
+option = {
+name = turkmenreds.110.a
+ai_chance = { factor = 100}
+add_stability = 0.2
+
+}
