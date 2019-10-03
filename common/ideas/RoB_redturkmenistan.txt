@@ -1,0 +1,83 @@
+ideas = {
+  country = {
+  
+   TRS_digin = {
+    allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 picture = GFX_idea_famine_of_1933
+   
+    modifier = {
+	 army_morale_factor = 0.1
+	 army_defence_factor = 0.25
+	}
+   }
+   
+     TRS_industrialization_attepmts = {
+    allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 picture = GFX_idea_famine_of_1933
+   
+    modifier = {
+	 production_speed_buildings_factor = 0.35
+	}
+   }
+       TRS_welfare = {
+    allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 picture = GFX_idea_famine_of_1933
+   
+    modifier = {
+	 stability_factor = 0.1
+	 war_support_factor = 0.1
+	 consumer_goods_factor = 0.07
+	}
+   }
+   
+   TRS_industry = {
+    allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 picture = GFX_idea_famine_of_1933
+   
+    modifier = {
+     production_factory_max_efficiency_factor = 0.15
+	 industrial_capacity_factory = 0.1
+	 consumer_goods_factor = -0.15
+	}
+   }
+   TRS_mobilize_industry= {
+    allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 picture = GFX_idea_famine_of_1933
+   
+    modifier = {
+    industrial_capacity_factory =-1.0
+	}
+   }
+  
+  }
+ }

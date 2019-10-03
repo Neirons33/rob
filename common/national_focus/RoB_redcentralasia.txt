@@ -400,7 +400,9 @@ add_manpower = 2000
 			factor = 3
 		}
 		completion_reward = {
-add_ideas = TRS_industrialization
+add_ideas = {
+TRS_industry
+}
 		}
 	}
 
@@ -572,7 +574,9 @@ add_manpower = 3000
 			factor = 3
 		}
 		completion_reward = {
-add_ideas = TRS_digin
+    add_ideas = {
+	TRS_digin
+	}
 		}
 	}
 
@@ -589,7 +593,9 @@ add_ideas = TRS_digin
 			factor = 3
 		}
 		completion_reward = {
-add_ideas = TRS_helpcivilians
+add_ideas = {
+TRS_welfare
+}
 
 		}
 	}
@@ -633,7 +639,9 @@ add_ideas = TRS_helpcivilians
 			factor = 5
 		}
 		completion_reward = {
-	add_ideas = TRS_economics
+	add_ideas = {
+	TRS_industrialization_attepmts
+	}
 		}
 	}
 
@@ -728,7 +736,7 @@ add_ideas = TRS_helpcivilians
 			factor = 2
 		}
 		completion_reward = {
-		add_ideas = TRS_killingindustry
+		add_timed_idea = { idea = TRS_mobilize_industry  days = 30 }
 1175 = { add_building_construction = {
     type = industrial_complex
     level = 1
