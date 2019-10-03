@@ -116,7 +116,7 @@ news_event = {
 	picture = GFX_news_event_olympics_1940
 	
 	major = yes
-	
+	fire_only_once = yes 
 	trigger = {
 		date > 1934.6.10
 		has_global_flag = england_wins
