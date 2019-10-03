@@ -16,6 +16,7 @@ RUS_russian_reunification = {
   NOT = {
    is_in_faction_with = SOV
   }
+  has_war = no
  }
  cost = 50
  fire_only_once = yes
@@ -43,6 +44,7 @@ RUS_russian_reunification = {
     NOT = {
    is_in_faction_with = RUS
   }
+  has_war = no
  }
  cost = 50
  fire_only_once = yes
@@ -63,6 +65,7 @@ RUS_russian_reunification = {
 	   RDR = {
 	    exists = yes
 	   }
+
  }
  available = {
   is_neighbor_of = RDR 
@@ -70,6 +73,7 @@ RUS_russian_reunification = {
     NOT = {
    is_in_faction_with = RDR
   }
+  has_war = no
  }
  cost = 50
  fire_only_once = yes
@@ -97,6 +101,7 @@ RUS_russian_reunification = {
     NOT = {
    is_in_faction_with = LES
   }
+  has_war = no
  }
  ai_will_do = {
   base = 10
@@ -135,6 +140,7 @@ RUS_russian_reunification = {
     NOT = {
    is_in_faction_with = TOW
   }
+  has_war = no
  }
  ai_will_do = {
   base = 10
@@ -174,6 +180,7 @@ RUS_russian_reunification = {
     NOT = {
    is_in_faction_with = OMS
   }
+  has_war = no
  }
  ai_will_do = {
   base = 10
@@ -213,6 +220,7 @@ RUS_russian_reunification = {
     NOT = {
    is_in_faction_with = BWR
   }
+  has_war = no
  }
  ai_will_do = {
   base = 10
@@ -252,6 +260,7 @@ RUS_russian_reunification = {
     NOT = {
    is_in_faction_with = CAU
   }
+  has_war = no
  }
  ai_will_do = {
   base = 10
@@ -291,6 +300,7 @@ RUS_russian_reunification = {
     NOT = {
    is_in_faction_with = CAA
   }
+  has_war = no
  }
  ai_will_do = {
   base = 10
@@ -330,6 +340,7 @@ RUS_russian_reunification = {
     NOT = {
    is_in_faction_with = CRM
   }
+  has_war = no
  }
  ai_will_do = {
   base = 10
@@ -369,6 +380,7 @@ RUS_destroy_FER = {
     NOT = {
    is_in_faction_with = FER
   }
+  has_war = no
  }
  ai_will_do = {
   base = 10
@@ -408,6 +420,7 @@ RUS_destroy_FER = {
     NOT = {
    is_in_faction_with = WFE
   }
+  has_war = no
  }
  ai_will_do = {
   base = 10
@@ -448,6 +461,7 @@ RUS_destroy_FER = {
     NOT = {
    is_in_faction_with = JSW
   }
+  has_war = no
  }
  ai_will_do = {
   base = 10
@@ -488,6 +502,7 @@ RUS_destroy_FER = {
     NOT = {
    is_in_faction_with = JOB
   }
+  has_war = no
  }
  ai_will_do = {
   base = 10
@@ -527,6 +542,7 @@ RUS_destroy_FER = {
     NOT = {
    is_in_faction_with = KRW
   }
+  has_war = no
  }
  ai_will_do = {
   base = 10
@@ -566,6 +582,7 @@ RUS_destroy_FER = {
     NOT = {
    is_in_faction_with = BRW
   }
+  has_war = no
  }
  ai_will_do = {
   base = 10
@@ -605,6 +622,7 @@ RUS_destroy_FER = {
     NOT = {
    is_in_faction_with = UGC
   }
+  has_war = no
  }
  ai_will_do = {
   base = 10

@@ -92,5 +92,16 @@ create_country_leader = {
     }
 }
 
+create_country_leader = {
+    name = "Mykolas Biržiška"
+    desc = ""
+    picture = ""
+    expire = "1965.1.1"
+    ideology = authoritharian
+    traits = {
+        #
+    }
+}
+
 
 

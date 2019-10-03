@@ -1840,7 +1840,10 @@ icon = GFX_focus_SOV_bukharins_fuck_bourgeosie
 x = 43
 y = 10
 cost = 5
-available_if_capitulated = yes 
+available_if_capitulated = yes
+available = {
+ has_completed_focus = SOV_negotiationswithbourgeosie
+} 
 prerequisite = { focus = SOV_continuemoderatenationalization } 
 ai_will_do = { 
  factor = 1

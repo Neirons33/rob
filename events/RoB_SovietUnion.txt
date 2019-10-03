@@ -591,7 +591,7 @@ add_popularity = { ideology = democratic_socialist = 0.10 }
 create_country_leader = {
 	name = "Nikolai Ivanovich Bukharin"
 	desc = ""
-	picture = "NikolaiIvanovichBukharin.dds"
+	picture = "NikolaiIvanovichBukharin.tga"
 	expire = "1953.3.1"
 	ideology = market_socialism
 	traits = {
@@ -599,7 +599,7 @@ create_country_leader = {
 	}
 }
 set_country_flag = bukharin_seizes_power
-add_popularity = { ideology = democratic_socialist popularity = 0.4}
+add_popularity = { ideology = democratic_socialist popularity = 0.1}
 }
 }
 
@@ -1267,6 +1267,151 @@ country_event = { ###destroying foreign influence
 id = bolshevik_russia.56
 title = "The Foreigner Question"
 desc = bolshevik_russia.56.d
+fire_only_once = yes
+is_triggered_only = yes
+
+
+option = {
+name = bolshevik_russia.1.a
+add_stability = 0.02
+
+
+}
+}
+
+###BUKHARIN EVENTS
+
+country_event = { ###premier bukharin
+id = bolshevik_russia.57
+title = "The Opportunist"
+desc = bolshevik_russia.57.d
+fire_only_once = yes
+is_triggered_only = yes
+
+
+option = {
+name = bolshevik_russia.1.a
+add_stability = 0.02
+
+
+}
+}
+
+country_event = { ###meeting with trade unions
+id = bolshevik_russia.58
+title = "The Meeting"
+desc = bolshevik_russia.58.d
+fire_only_once = yes
+is_triggered_only = yes
+
+
+option = {
+name = bolshevik_russia.1.a
+add_stability = 0.02
+
+
+}
+}
+
+country_event = { ###promise reforms
+id = bolshevik_russia.59
+title = "The Promise"
+desc = bolshevik_russia.59.d
+fire_only_once = yes
+is_triggered_only = yes
+
+
+option = {
+name = bolshevik_russia.1.a
+add_stability = 0.02
+
+
+}
+}
+
+country_event = { ###strike ends
+id = bolshevik_russia.60
+title = "The Strike"
+desc = bolshevik_russia.60.d
+fire_only_once = yes
+is_triggered_only = yes
+
+
+option = {
+name = bolshevik_russia.1.a
+add_stability = 0.02
+
+
+}
+}
+
+country_event = { ###mobilize police
+id = bolshevik_russia.61
+title = "The Mobilization"
+desc = bolshevik_russia.61.d
+fire_only_once = yes
+is_triggered_only = yes
+
+
+option = {
+name = bolshevik_russia.1.a
+add_stability = 0.02
+
+
+}
+}
+
+country_event = { ###arm citizens
+id = bolshevik_russia.62
+title = "The Citizens"
+desc = bolshevik_russia.62.d
+fire_only_once = yes
+is_triggered_only = yes
+
+
+option = {
+name = bolshevik_russia.1.a
+add_stability = 0.02
+
+
+}
+}
+
+country_event = { ###unres tends
+id = bolshevik_russia.63
+title = "The Unrest"
+desc = bolshevik_russia.63.d
+fire_only_once = yes
+is_triggered_only = yes
+
+
+option = {
+name = bolshevik_russia.1.a
+add_stability = 0.02
+
+
+}
+}
+
+country_event = { ###unres tends
+id = bolshevik_russia.64
+title = "Towards a New Society"
+desc = bolshevik_russia.64.d
+fire_only_once = yes
+is_triggered_only = yes
+
+
+option = {
+name = bolshevik_russia.1.a
+add_stability = 0.02
+
+
+}
+}
+country_event = { ###bukharin becomes gay
+id = bolshevik_russia.65
+title = "Social Liberation"
+desc = bolshevik_russia.65.d
 fire_only_once = yes
 is_triggered_only = yes
 

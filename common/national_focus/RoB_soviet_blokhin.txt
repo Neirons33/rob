@@ -48,6 +48,7 @@ ai_will_do = {
   id = bolshevik_russia.49
   days = 1
  }
+ add_political_power = 50
  }
  }
  
@@ -170,6 +171,7 @@ completion_reward = {
   remove_ideas = {
   bolshevik_strike 
  }
+ add_political_power = 150
 }
  } 
  

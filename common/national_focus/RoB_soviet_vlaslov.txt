@@ -28,6 +28,7 @@ completion_reward = {
   id = bolshevik_russia.41
   days = 1
  }
+ add_political_power = 50
  } 
  }
  
@@ -171,6 +172,7 @@ completion_reward = {
   remove_ideas = {
   bolshevik_strike 
  }
+ add_political_power = 150
 }
  }
  
