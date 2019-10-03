@@ -566,7 +566,7 @@ BRJ = {
     days = 15
 }
 }
-end_puppet = BRJ
+ENG = { end_puppet = BRJ }
 BRJ = { leave_faction = yes }
 }
 }
@@ -723,7 +723,7 @@ BRJ = {
     days = 15
 }
 }
-end_puppet = BRJ
+ENG = { end_puppet = BRJ }
 BRJ = { leave_faction = yes }
 }
 }
@@ -771,7 +771,9 @@ BRL = { declare_war_on = { type = annex_everything target = BRU } }
 BLF = { declare_war_on = { type = annex_everything target = BRU } }
 if = {
   limit = {
-  BRC = exists
+  BRC = {
+  exists = yes
+  }
   }
 BRC = { declare_war_on = { type = annex_everything target = BRU } }
 BRC = { declare_war_on = { type = annex_everything target = BLF } }

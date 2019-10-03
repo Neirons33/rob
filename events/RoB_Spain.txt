@@ -1,0 +1,167 @@
+#################
+###SPANISH EVENTS
+#################
+
+
+add_namespace = rob_spain
+
+###January Coup
+ country_event = {
+  id = rob_spain.0
+  title = "January Coup!"
+  desc = rob_spain.0.d
+  is_triggered_only = yes
+  fire_only_once = yes
+  
+option = {
+ name = "Viva Espania!"
+ set_politics = {
+  ruling_party = pelekist
+  elections_allowed = no
+ }
+ add_popularity = {ideology = pelekist popularity = 0.3 }
+ country_event = {
+  id = rob_spain.1
+  days = 5
+  }
+ }
+}
+
+###Securing the state
+ 
+ country_event = {
+  id = rob_spain.1
+  title = "Consolidation of Power"
+  desc = rob_spain.1.d
+  is_triggered_only = yes
+  fire_only_once = yes
+  
+option = {
+ name = "Spread our Efforts!"
+
+ hidden_effect = {
+  country_event = {
+   id = rob_spain.2
+   days = 5
+   }
+  }
+ }
+option = {
+ name = "Secure Cities First!"
+
+ hidden_effect = {
+  country_event = {
+   id = rob_spain.5
+   days = 5
+   }
+  }
+ }
+}
+
+###Countryside 
+country_event = {
+  id = rob_spain.2
+  title = "Securing the Countryside"
+  desc = rob_spain.2.d
+  is_triggered_only = yes
+  fire_only_once = yes
+  
+  option = { ###Kill reactionaries
+   name = "Destroy Bourgeoisie Traitors"
+   add_popularity = {ideology = reactionary popularity = -0.15 }
+   add_popularity = {ideology = conservative popularity = -0.15 }
+   add_popularity = {ideology = social_liberal popularity = -0.15 }
+   hidden_effect = {
+    country_event = { id = rob_spain.3 days = 5 }
+    }
+   }
+   
+  option = { ###Kill reactionaries
+   name = "Socialists Get The Rope First!"
+   add_popularity = {ideology = socialist popularity = -0.1 }
+   add_popularity = {ideology = democratic_socialist popularity = -0.1 }
+   add_popularity = {ideology = national_socialist popularity = -0.1 }
+   }
+  }
+  
+ ###Falange march to cities
+ country_event = {
+  id = rob_spain.3
+  title = "National Syndicalists Mobilize"
+  desc = rob_spain.3.d
+  is_triggered_only = yes
+  fire_only_once = yes
+
+  option = { ###use militias
+   name = "Mobilize Militias!"
+   add_manpower =-10000
+   hidden_effect = {
+    country_event = { id = rob_spain.4 days = 2 }
+   }
+  }
+  
+  option = { ###use veterans
+   name = "Mobilize Veterans!"
+   add_popularity = {ideology = reactionary popularity = 0.05 }
+   hidden_effect = {
+    country_event = { id = rob_spain.6 days = 2 }
+   }
+  }
+ }
+ 
+ ###NatSyn Takeover
+  
+ country_event = {
+  id = rob_spain.4
+  title = "Falange de las JONS Countercoup"
+  desc = rob_spain.4.d
+  is_triggered_only = yes
+  fire_only_once = yes
+  
+  option = {
+   name = "Viva, Viva Falange de las JONS!"
+   set_politics = {
+    ruling_party = national_socialist
+    elections_allowed = no
+   }
+   set_country_flag = SPR_falange_regime   
+   add_popularity = {ideology = national_socialist popularity = 0.3 }
+  }
+  }
+  
+ ###Securing the Cities
+ 
+ country_event = {
+  id = rob_spain.5
+  title = "The Urban Question"
+  desc = rob_spain.5.d
+  is_triggered_only = yes
+  fire_only_once = yes
+ 
+ option = {
+  name = "Now, to the countryside..."
+  add_popularity = {ideology = national_socialist popularity = -0.1 }
+  add_popularity = {ideology = socialist popularity = -0.1 }
+  add_popularity = {ideology = social_liberal popularity = -0.1 }
+  country_event = { id = rob_spain.6 days = 5 }
+ }
+ 
+ }
+ 
+ ###Pelekist Regime Holds
+ 
+ country_event = {
+  id = rob_spain.6
+  title = "The New Spain"
+  desc = rob_spain.6.d
+  is_triggered_only = yes
+  fire_only_once = yes
+  
+ option = {
+  name = "Una Grande!"
+  add_stability = 0.2
+  set_country_flag = SPR_pelekist_regime
+  add_popularity = {ideology = reactionary popularity = -0.1 }
+ }
+  
+  }

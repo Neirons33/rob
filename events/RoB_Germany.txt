@@ -755,6 +755,7 @@ add_core_of = PRS
 }
 
 }
+}
 
 country_event = { ###Democratic Elections
 id = spartakus_germany.18
@@ -835,3 +836,249 @@ add_political_power = 150
 set_country_flag = socialists_hold
 }
 }
+
+###DIPLO SHIT
+
+###invade Rhineland while French in war
+country_event = {
+ id = spartakus_germany.20
+ title = "The French Aren't Watching"
+ desc = spartakus_germany.20.d
+ fire_only_once = yes
+
+ mean_time_to_happen = { days = 2 }
+ 
+trigger = {
+ tag = GER
+ RHN = {
+  exists = yes
+ }
+ FRA = {
+  has_war = yes
+ }
+}
+
+option = {
+ name = "Invade Rhineland!"
+ GER = { declare_war_on = { target = RHN  type = puppet_wargoal_focus } }
+ add_political_power = 100
+ ai_chance = {
+  factor = 10
+ }
+}
+
+option = {
+ name = "We Shall wait..."
+ add_political_power = -300
+  ai_chance = {
+  factor = 0
+   modifier = {
+    factor = 2000
+	GER = { has_government = democratic_socialist }
+   }
+ }
+}
+}
+
+###Unite With Austria
+
+country_event = {
+ id = spartakus_germany.21
+ title = "Austrian Brothers"
+ desc = spartakus_germany.21.d
+ fire_only_once = yes
+
+ mean_time_to_happen = { days = 1 }
+ 
+ trigger = {
+ tag = GER
+ AUS = {
+  exists = yes
+  has_war = no
+  OR = {
+  is_puppet = no
+  is_puppet_of = GER
+  }
+  OR = {
+  has_government = reactionary
+  has_government = authoritharian
+  has_government = conservative
+  has_government = social_democracy
+  has_government = social_liberal
+  }
+ }
+ 
+ GER = {
+  exists = yes
+  has_war = no
+  is_puppet = no
+  OR = {
+  has_government = reactionary
+  has_government = authoritharian
+  has_government = conservative
+  has_government = social_democracy
+  has_government = social_liberal
+  }
+ }
+ 
+ }
+ 
+ option = { ###Press for Anschluss
+  name = "We Shall Unite!"
+  AUS = { country_event = { id = spartakus_germany.23 days = 5 } }
+  ai_chance = { factor = 100 }
+ }
+ 
+ option = { ###We shall wait
+  name = "But that would violate the treaties!"
+  ai_chance = { factor = 0 modifier = { factor = 90 GER = { has_government = social_democracy } } modifier = { factor = 80 GER = { has_government = social_liberal }  } modifier = { factor = 70 GER = { has_government = conservative }  } }
+  add_political_power =-50
+ }
+ }
+ 
+ country_event = {
+ id = spartakus_germany.22
+ title = "Austrian Comrades"
+ desc = spartakus_germany.22.d
+ fire_only_once = yes
+
+ trigger = {
+ tag = GER
+ ACM = {
+  exists = yes
+  has_war = no
+  OR = {
+  is_puppet = no
+  is_puppet_of = GER
+  }
+  OR = {
+  has_government = socialist
+  has_government = national_socialist
+  has_government = democratic_socialist
+
+  }
+ }
+ 
+ GER = {
+  exists = yes
+  has_war = no
+  is_puppet = no
+  OR = {
+  has_government = socialist
+  has_government = national_socialist
+  has_government = democratic_socialist
+  }
+ }
+ 
+ }
+ 
+ option = { ###Press for Anschluss
+  name = "We Shall Unite!"
+  ACM = { country_event = { id = spartakus_germany.23 days = 5 } }
+  ai_chance = { factor = 100 }
+ }
+ 
+ option = { ###We shall wait
+  name = "But that would violate the treaties!"
+  ai_chance = { factor = 0 modifier = { factor = 90 GER = { has_government = democratic_socialist } } }
+  add_political_power =-50
+ }
+ }
+ 
+ ###Austrians get the event
+ 
+ country_event = {
+   id = spartakus_germany.23
+   title = "Germans Propse Unification"
+   desc = spartakus_germany.23.d
+   fire_only_once = yes
+   is_triggered_only = yes
+   
+   option = {
+    name = "Welcome Our New Brothers!"
+	GER = { country_event = { id = spartakus_germany.24 days = 3 } }
+	ai_chance = {
+	 factor = 20
+	}
+   }
+   
+   option = {
+    name = "Austria Won't Bend to Northern Will!"
+	GER = { country_event = { id = spartakus_germany.25 days = 3 } }
+    ai_chance = {
+	 factor = 1
+	}
+   }
+ }
+ 
+ country_event = {
+   id = spartakus_germany.24
+   title = "Austrians Accept!"
+   desc = spartakus_germany.24.d
+   fire_only_once = yes
+   is_triggered_only = yes
+ 
+   option = {
+   name = "Welcome!"
+   if = {
+    limit = { ACM ={ exists = yes } }
+    annex_country = { target = ACM transfer_troops = yes }
+    every_state = {
+    limit = { is_core_of = ACM }
+	add_core_of = GER
+}
+   else = {
+   annex_country = { target = AUS transfer_troops = yes }
+    every_state = {
+    limit = { is_core_of = AUS }
+	add_core_of = GER
+}
+   
+   }
+   }
+ 
+  }
+ }
+ 
+ ###Austrians refuse
+ 
+  country_event = {
+   id = spartakus_germany.25
+   title = "Austrians Refuse!"
+   desc = spartakus_germany.25.d
+   fire_only_once = yes
+   is_triggered_only = yes
+   
+   option = { ###back down
+   name = "We Should Back Down..."
+   ai_chance = {
+    factor = 1
+   }
+   add_political_power =-100
+   }
+   
+   option = {
+   name = "Fine.Prepare Invasion!"
+   ai_chance = {
+    factor = 200
+   }
+   if = {
+    limit = { 
+	 AUS = { exists = yes }
+   }
+   create_wargoal = { type = annex_everything target = AUS }
+   every_state = {
+    limit = { is_core_of = AUS }
+	add_core_of = GER
+}
+ else = {
+ create_wargoal = { type = annex_everything target = ACM }
+   every_state = {
+    limit = { is_core_of = ACM }
+	add_core_of = GER
+}
+ }
+
+   }
+   }
+   }
