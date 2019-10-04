@@ -991,20 +991,20 @@ add_stability = 0.05
 
 country_event = { ###military
 id = bolshevik_russia.39
-title = bolshevik_russia.39.t
+title = "The Question of Land Forces"
 desc = bolshevik_russia.39.d
 fire_only_once = yes
 is_triggered_only = yes
 
 
 option = { ###Shap plan
-name = bolshevik_russia.39.a
+name = "A Professional Force!"
 add_stability = -0.05
 set_country_flag = SOV_shaposhnikovs_plan
 
 }
 option = { ###reform red guard
-name = bolshevik_russia.39.b
+name = "Red Guard is Our Backbone!"
 add_stability = 0.05
 set_country_flag = SOV_reform_red_guard
 
@@ -1013,20 +1013,20 @@ set_country_flag = SOV_reform_red_guard
 
 country_event = { ###air
 id = bolshevik_russia.40
-title = bolshevik_russia.40.t
+title = "Bolshevik Air Forces"
 desc = bolshevik_russia.40.d
 fire_only_once = yes
 is_triggered_only = yes
 
 
 option = { ###alksnis plan
-name = bolshevik_russia.40.a
+name = "Alksnis Shall Lead It!"
 add_war_support = 0.05
 set_country_flag = SOV_alksnis_plan
 
 }
 option = { ###novikovs plan
-name = bolshevik_russia.40.b
+name = "Novikov is Right!"
 add_stability = 0.05
 set_country_flag = SOV_novikovs_plan
 
@@ -1418,6 +1418,120 @@ is_triggered_only = yes
 
 option = {
 name = bolshevik_russia.1.a
+add_stability = 0.02
+
+
+}
+}
+
+###KAMENEV POLITICAL EVENTS
+
+country_event = { ###kamenev assumes controll
+id = bolshevik_russia.66
+title = "Stand up, Damned of the Earth"
+desc = bolshevik_russia.66.d
+fire_only_once = yes
+is_triggered_only = yes
+
+
+option = {
+name = "Forwards!"
+add_stability = 0.02
+
+
+}
+}
+
+country_event = { ###kamenev yeets trade unions
+id = bolshevik_russia.67
+title = "Stand up, Prisoners of Starvation"
+desc = bolshevik_russia.67.d
+fire_only_once = yes
+is_triggered_only = yes
+
+
+option = {
+name = "They Got What They Asked For"
+add_stability = 0.02
+
+
+}
+}
+
+country_event = { ###kamenev apoints lotyal leaders
+id = bolshevik_russia.68
+title = "There are no Supreme Saviours"
+desc = bolshevik_russia.68.d
+fire_only_once = yes
+is_triggered_only = yes
+
+
+option = {
+name = "...Neither God, nor Caesar, nor tribune"
+add_stability = 0.02
+
+
+}
+}
+
+country_event = { ###kamenev ends the strike
+id = bolshevik_russia.69
+title = "No Rights Without Duties"
+desc = bolshevik_russia.69.d
+fire_only_once = yes
+is_triggered_only = yes
+
+
+option = {
+name = "Finally..."
+add_stability = 0.02
+
+
+}
+}
+
+country_event = { ###kamenev uses VckH
+id = bolshevik_russia.70
+title = "This is the Final Struggle"
+desc = bolshevik_russia.70.d
+fire_only_once = yes
+is_triggered_only = yes
+
+
+option = {
+name = "We will curb down on Traitors!"
+add_stability = 0.02
+
+
+}
+}
+
+country_event = { ###kamenev uses Red Guard
+id = bolshevik_russia.71
+title = "Let us group Together, and Tomorrow"
+desc = bolshevik_russia.71.d
+fire_only_once = yes
+is_triggered_only = yes
+
+
+option = {
+name = "Just a little bit..."
+add_stability = 0.02
+
+
+}
+}
+
+country_event = { ###kamenev ends unrest
+id = bolshevik_russia.72
+title = "Of the Past Let Us make a Clean Slate"
+desc = bolshevik_russia.72.d
+fire_only_once = yes
+is_triggered_only = yes
+
+
+option = {
+name = "It's Done."
 add_stability = 0.02
 
 

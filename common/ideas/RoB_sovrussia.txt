@@ -829,7 +829,73 @@ ideas = {
 	  
 			}
   
-  }  
+  } 
+ ###IDEAS FOR KAMENEV
+    land_distrubution = {
+  allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 picture = GFX_idea_famine_of_1933
+	 modifier = {
+      consumer_goods_factor = -0.07	 
+			}
+  
+  }
+  
+     workers_of_minorities = {
+  allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 picture = GFX_idea_famine_of_1933
+	 modifier = {
+      political_power_factor = 0.25
+	  production_factory_max_efficiency_factor = 0.03
+			}
+  
+  }
+      urbanization_kamenev = {
+  allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 picture = GFX_idea_famine_of_1933
+	 modifier = {
+      MONTHLY_POPULATION = 0.45
+	  
+			}
+  
+  }
+  
+       workers_unite_kamenev = {
+  allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 picture = GFX_idea_famine_of_1933
+	 modifier = {
+      justify_war_goal_time = -0.45
+	  subversive_activites_upkeep =-0.45
+	  war_support_factor = 0.2
+	  
+			}
+  
+  }
  }
+
+
  
 }

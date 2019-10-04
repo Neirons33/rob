@@ -21,7 +21,7 @@ set_popularities = {
 	national_socialist = 7
 	socialist = 8
 	democratic_socialist = 7
-	social_democracy = 13
+	social_democracy = 11
 	social_liberal = 8
 	conservative = 10
 	authoritharian = 4
@@ -52,7 +52,7 @@ create_country_leader = {
 	desc = ""
 	picture = ""
 	expire = "1960.1.1"
-	ideology = socialism
+	ideology = socialist
 	traits = {
 		
 	}

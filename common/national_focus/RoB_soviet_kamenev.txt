@@ -19,13 +19,21 @@ id = SOV_premierkamenev
 icon = GFX_goal_unknown
 x = 5
 y = 1
-cost = 10
+cost = 1
 available_if_capitulated = yes 
 ai_will_do = { 
  factor = 1
  } 
+completion_reward = {
 
+ country_event = {
+  id = bolshevik_russia.66
+  days = 2
  }
+}
+add_political_power = 50
+ }
+ 
 
  #Focus for Round up Union Leaders
 focus = { 
@@ -33,13 +41,18 @@ id = SOV_roundupunionleaders
 icon = GFX_goal_unknown
 x = 3
 y = 2
-cost = 10
+cost = 2
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_premierkamenev } 
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = {
+ country_event = {
+  id = bolshevik_russia.67
+  days = 2
+ }
+}
  }
  
  #Focus for Appoint Loyal Leaders
@@ -48,13 +61,18 @@ id = SOV_appointloyalleaders
 icon = GFX_goal_unknown
 x = 3
 y = 3
-cost = 10
+cost = 2
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_roundupunionleaders } 
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = {
+ country_event = {
+  id = bolshevik_russia.68
+  days = 2
+ }
+}
  }
 
 #Focus for End the Strike
@@ -63,13 +81,18 @@ id = SOV_endthestrike
 icon = GFX_goal_unknown
 x = 3
 y = 4
-cost = 10
+cost = 2
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_appointloyalleaders } 
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = {
+ country_event = {
+  id = bolshevik_russia.69
+  days = 2
+ }
+}
  }
 
 #Focus for Use VChK Squads
@@ -78,13 +101,18 @@ id = SOV_usevchksquads
 icon = GFX_goal_unknown
 x = 7
 y = 2
-cost = 10
+cost = 1
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_premierkamenev } 
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = {
+ country_event = {
+  id = bolshevik_russia.70
+  days = 2
+ }
+}
  }
 
 #Focus for Use Red Guard
@@ -93,13 +121,18 @@ id = SOV_useredguard
 icon = GFX_goal_unknown
 x = 7
 y = 3
-cost = 10
+cost = 1
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_usevchksquads } 
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = {
+ country_event = {
+  id = bolshevik_russia.71
+  days = 2
+ }
+}
  }
 
 #Focus for Curbing the Unrest
@@ -108,13 +141,18 @@ id = SOV_curbingtheunrest
 icon = GFX_goal_unknown
 x = 7
 y = 4
-cost = 10
+cost = 2
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_useredguard } 
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = {
+ country_event = {
+  id = bolshevik_russia.72
+  days = 2
+ }
+}
  }
 
 #Focus for International Russia
@@ -123,14 +161,22 @@ id = SOV_internationalrussia
 icon = GFX_goal_unknown
 x = 5
 y = 5
-cost = 10
+cost = 5
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_endthestrike } 
 prerequisite = { focus = SOV_curbingtheunrest } 
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = {
+ remove_ideas = {
+  mass_unrest
+ }
+  remove_ideas = {
+  bolshevik_strike 
+ }
+ add_political_power = 150
+}
  }
 
 #Focus for Destroying Urban Bourgeosie
@@ -139,13 +185,17 @@ id = SOV_destroyingurbanbourgeosie
 icon = GFX_goal_unknown
 x = 2
 y = 6
-cost = 10
+cost = 5
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_internationalrussia } 
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = {
+ remove_ideas = {
+  bourgeoisie_influence_2
+ }
+}
  }
 
 #Focus for Redistribute Land
@@ -154,13 +204,17 @@ id = SOV_redistributeland
 icon = GFX_goal_unknown
 x = 2
 y = 7
-cost = 10
+cost = 5
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_destroyingurbanbourgeosie } 
 ai_will_do = { 
  factor = 1
  } 
-
+ completion_reward = {
+  add_ideas = {
+   land_distrubution
+  }
+ }
  }
 
 #Focus for Farming Modernization
@@ -169,13 +223,21 @@ id = SOV_farmingmodernization
 icon = GFX_goal_unknown
 x = 2
 y = 8
-cost = 10
+cost = 5
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_redistributeland } 
 ai_will_do = { 
  factor = 1
  } 
+completion_reward = {
+ 			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
 
+}
  }
 
 
@@ -185,13 +247,69 @@ id = SOV_expandruralinfrastructure
 icon = GFX_goal_unknown
 x = 2
 y = 9
-cost = 10
+cost = 5
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_farmingmodernization } 
 ai_will_do = { 
  factor = 1
  } 
+completion_reward = {
+ random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			 random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
 
+}
  }
 
 #Focus for Enforced Education
@@ -200,13 +318,17 @@ id = SOV_enforcededucation
 icon = GFX_goal_unknown
 x = 2
 y = 10
-cost = 10
+cost = 5
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_expandruralinfrastructure } 
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = {
+ add_ideas = {
+ rural_education
+ }
+}
  }
 
 #Focus for Purging Disloyal Elements
@@ -215,7 +337,7 @@ id = SOV_purgingdisloyalelements
 icon = GFX_goal_unknown
 x = 5
 y = 6
-cost = 10
+cost = 5
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_internationalrussia } 
 ai_will_do = { 
@@ -230,13 +352,15 @@ id = SOV_expandcommunistyouth
 icon = GFX_goal_unknown
 x = 5
 y = 7
-cost = 10
+cost = 5
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_purgingdisloyalelements } 
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = {
+ add_popularity = {ideology = socialist popularity =0.07}
+}
  }
 
 #Focus for Expand Red Pionners
@@ -245,13 +369,15 @@ id = SOV_expandredpionners
 icon = GFX_goal_unknown
 x = 5
 y = 8
-cost = 10
+cost = 5
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_expandcommunistyouth } 
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = {
+ add_popularity = {ideology = socialist popularity =0.08}
+}
  }
 
 #Focus for Workers of Minorities
@@ -260,12 +386,17 @@ id = SOV_workersofminorities
 icon = GFX_goal_unknown
 x = 5
 y = 9
-cost = 10
+cost = 5
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_expandredpionners } 
 ai_will_do = { 
  factor = 1
- } 
+ }
+completion_reward = {
+ add_ideas = {
+ workers_of_minorities
+ }
+} 
 }
 
 #Focus for Soviet Identity
@@ -274,13 +405,15 @@ id = SOV_sovietidentity
 icon = GFX_goal_unknown
 x = 5
 y = 10
-cost = 10
+cost = 5
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_workersofminorities } 
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = {
+ add_stability = 0.1
+}
  }
 
 #Focus for Industrialization
@@ -289,13 +422,74 @@ id = SOV_industrialization
 icon = GFX_goal_unknown
 x = 8
 y = 6
-cost = 10
+cost = 5
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_internationalrussia } 
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+					random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
  }
 
 #Focus for Urbanization
@@ -304,13 +498,17 @@ id = SOV_urbanization
 icon = GFX_goal_unknown
 x = 8
 y = 7
-cost = 10
+cost = 5
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_industrialization } 
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = {
+ add_ideas = {
+  urbanization_kamenev
+ }
+}
  }
 
 #Focus for Forced Labor
@@ -319,13 +517,17 @@ id = SOV_forcedlabor
 icon = GFX_goal_unknown
 x = 8
 y = 8
-cost = 10
+cost = 5
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_urbanization } 
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = {
+ add_ideas = {
+  slave_labour
+ }
+}
  }
 
 #Focus for Buy Foreign Technology
@@ -334,13 +536,21 @@ id = SOV_buyforeigntechnology
 icon = GFX_goal_unknown
 x = 8
 y = 9
-cost = 10
+cost = 5
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_forcedlabor } 
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = {
+ add_tech_bonus = {
+	name = electronics_bonus
+	bonus = 0.75
+        
+	uses = 2
+	category = electronics
+}
+}
  }
 
 #Focus for Focusing on Civilian Industry
@@ -349,13 +559,15 @@ id = SOV_focusingoncivilianindustry
 icon = GFX_goal_unknown
 x = 8
 y = 10
-cost = 10
+cost = 5
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_buyforeigntechnology } 
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = {
+ add_political_power = 120
+}
  }
 
 #Focus for Workers of the World, Unite!
@@ -364,7 +576,7 @@ id = SOV_workersoftheworldunite
 icon = GFX_goal_unknown
 x = 5
 y = 11
-cost = 10
+cost = 5
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_enforcededucation } 
 prerequisite = { focus = SOV_sovietidentity } 
@@ -372,7 +584,11 @@ prerequisite = { focus = SOV_focusingoncivilianindustry }
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = {
+ add_ideas = {
+  workers_unite_kamenev
+ }
+}
  }  
   
 
