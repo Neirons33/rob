@@ -72,12 +72,13 @@ create_corps_commander = {
 			factor = 5
 		}
 		completion_reward = {
-add_equipment_to_stockpile = {
-    type = infantry_weapons
+add_manpower = 2000
+		add_equipment_to_stockpile = {
+    type = infantry_equipment
     amount = 2000
     producer = TRS
 }
-add_manpower = 2000
+
 		}
 	}
 
@@ -400,9 +401,7 @@ add_manpower = 2000
 			factor = 3
 		}
 		completion_reward = {
-add_ideas = {
-TRS_industry
-}
+add_ideas = TRS_industrialization
 		}
 	}
 
@@ -557,7 +556,7 @@ add_manpower = 3000
 			factor = 5
 		}
 		completion_reward = {
-		add_manpower = 5000
+		add_manpower = 2000
 		}
 	}
 
@@ -574,9 +573,7 @@ add_manpower = 3000
 			factor = 3
 		}
 		completion_reward = {
-    add_ideas = {
-	TRS_digin
-	}
+add_ideas = TRS_digin
 		}
 	}
 
@@ -593,9 +590,7 @@ add_manpower = 3000
 			factor = 3
 		}
 		completion_reward = {
-add_ideas = {
-TRS_welfare
-}
+add_ideas = TRS_helpcivilians
 
 		}
 	}
@@ -639,9 +634,7 @@ TRS_welfare
 			factor = 5
 		}
 		completion_reward = {
-	add_ideas = {
-	TRS_industrialization_attepmts
-	}
+	add_ideas = TRS_economics
 		}
 	}
 
@@ -684,6 +677,7 @@ TRS_welfare
 		available_if_capitulated = yes
 		prerequisite = { focus = TRS_thelongroadtoglory }
 		mutually_exclusive = { focus = TRS_frunzesurvives }
+		available = { has_government = national_socialist }
 		ai_will_do = {
 			factor = 3
 		}
@@ -736,7 +730,7 @@ TRS_welfare
 			factor = 2
 		}
 		completion_reward = {
-		add_timed_idea = { idea = TRS_mobilize_industry  days = 30 }
+		add_ideas = TRS_killingindustry
 1175 = { add_building_construction = {
     type = industrial_complex
     level = 1
