@@ -22,7 +22,7 @@ y = 1
 cost = 1
 available_if_capitulated = yes 
 ai_will_do = { 
- factor = 1
+ factor = 100
  } 
 completion_reward = {
 
@@ -45,7 +45,7 @@ cost = 2
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_premierkamenev } 
 ai_will_do = { 
- factor = 1
+ factor = 100
  } 
 completion_reward = {
  country_event = {
@@ -65,7 +65,7 @@ cost = 2
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_roundupunionleaders } 
 ai_will_do = { 
- factor = 1
+ factor = 100
  } 
 completion_reward = {
  country_event = {
@@ -85,7 +85,7 @@ cost = 2
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_appointloyalleaders } 
 ai_will_do = { 
- factor = 1
+ factor = 100
  } 
 completion_reward = {
  country_event = {
@@ -105,7 +105,7 @@ cost = 1
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_premierkamenev } 
 ai_will_do = { 
- factor = 1
+ factor = 100
  } 
 completion_reward = {
  country_event = {
@@ -125,7 +125,7 @@ cost = 1
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_usevchksquads } 
 ai_will_do = { 
- factor = 1
+ factor = 100
  } 
 completion_reward = {
  country_event = {
@@ -145,7 +145,7 @@ cost = 2
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_useredguard } 
 ai_will_do = { 
- factor = 1
+ factor = 100
  } 
 completion_reward = {
  country_event = {
@@ -166,7 +166,7 @@ available_if_capitulated = yes
 prerequisite = { focus = SOV_endthestrike } 
 prerequisite = { focus = SOV_curbingtheunrest } 
 ai_will_do = { 
- factor = 1
+ factor = 1000
  } 
 completion_reward = {
  remove_ideas = {

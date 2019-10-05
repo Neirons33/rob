@@ -414,6 +414,7 @@ trigger = {
  has_country_flag = ENG_conservatives_independant
 }
 }
+mean_time_to_happen = { days = 2 }
 option = { ###Rebels rise up
 name = united_kingdom.16.a
 add_political_power = -200
@@ -769,6 +770,7 @@ hidden = yes
 immediate = {
 BRL = { declare_war_on = { type = annex_everything target = BRU } }
 BLF = { declare_war_on = { type = annex_everything target = BRU } }
+news_event = { id = news_event.4 days = 1 }
 if = {
   limit = {
   BRC = {

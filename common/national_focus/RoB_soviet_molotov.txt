@@ -17,10 +17,14 @@ shared_focus = SOV_bolshevikairforces
 		icon = GFX_focus_SOV_Premier_Molotov
 		x = 5
 		y = 1
-		cost = 10
+		cost = 1
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+		 country_event = { id = bolshevik_russia.73 days = 2 } 
+		 add_political_power = 50
 		}
 	}
 	
@@ -30,11 +34,14 @@ shared_focus = SOV_bolshevikairforces
 		icon = GFX_focus_SOV_purge_trade_unions
 		x = 3
 		y = 2
-		cost = 10
+		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = SOV_premiermolotov }
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+		 country_event = { id = bolshevik_russia.74 days = 2 } 
 		}
 	}
 	
@@ -44,11 +51,14 @@ shared_focus = SOV_bolshevikairforces
 		icon = GFX_focus_SOV_form_camps
 		x = 3
 		y = 3
-		cost = 10
+		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = SOV_purgingunionleaders }
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+		 country_event = { id = bolshevik_russia.75 days = 2 } 
 		}
 	}
 	
@@ -58,11 +68,14 @@ shared_focus = SOV_bolshevikairforces
 		icon = GFX_focus_SOV_socialize_system
 		x = 3
 		y = 4
-		cost = 10
+		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = SOV_formcamps }
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+		 country_event = { id = bolshevik_russia.76 days = 2 } 
 		}
 	}
 	
@@ -72,11 +85,14 @@ shared_focus = SOV_bolshevikairforces
 		icon = GFX_focus_SOV_nkvd_units
 		x = 7
 		y = 2
-		cost = 10
+		cost = 1
 		available_if_capitulated = yes
 		prerequisite = { focus = SOV_premiermolotov }
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+		 country_event = { id = bolshevik_russia.77 days = 2 } 
 		}
 	}
 	
@@ -86,11 +102,14 @@ shared_focus = SOV_bolshevikairforces
 		icon = GFX_focus_SOV_commiser_officers
 		x = 7
 		y = 3
-		cost = 10
+		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = SOV_nkvdunitsinthecities }
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+	   completion_reward = {
+		 country_event = { id = bolshevik_russia.78 days = 2 } 
 		}
 	}
 	
@@ -100,11 +119,14 @@ shared_focus = SOV_bolshevikairforces
 		icon = GFX_focus_SOV_kill_all_traitors
 		x = 7
 		y = 4
-		cost = 10
+		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = SOV_commisarofficers }
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+		 country_event = { id = bolshevik_russia.79 days = 2 } 
 		}
 	}
 	
@@ -114,7 +136,7 @@ shared_focus = SOV_bolshevikairforces
 		icon = GFX_focus_SOV_molotovs_russia
 		x = 5
 		y = 5
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = SOV_socializethesystem 
@@ -125,6 +147,15 @@ shared_focus = SOV_bolshevikairforces
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+          remove_ideas = {
+            mass_unrest
+          }
+         remove_ideas = {
+           bolshevik_strike 
+         }
+         add_political_power = 150
+}
 	}
 	
 		#Focus for Use the camps for ''projects''
@@ -133,11 +164,16 @@ shared_focus = SOV_bolshevikairforces
 		icon = GFX_focus_SOV_use_camps_for_projects
 		x = 2
 		y = 6
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = SOV_molotovsrussia }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		 add_ideas = {
+		  molotov_camps
+		 }
 		}
 	}
 	
@@ -147,11 +183,16 @@ shared_focus = SOV_bolshevikairforces
 		icon = GFX_focus_SOV_mass_industry
 		x = 2
 		y = 7
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = SOV_usethecampsforprojects }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		 add_ideas = {
+		  molotov_industry
+		 }
 		}
 	}
 	
@@ -161,11 +202,74 @@ shared_focus = SOV_bolshevikairforces
 		icon = GFX_focus_SOV_increase_kolkhozes
 		x = 2
 		y = 8
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = SOV_massindustrilisation }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		 random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			 random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		
 		}
 	}
 	
@@ -175,11 +279,16 @@ shared_focus = SOV_bolshevikairforces
 		icon = GFX_focus_SOV_remind_the_workers
 		x = 2
 		y = 9
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = SOV_increasethekolkhozes }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		 add_ideas = {
+		  soviet_worker
+		 }
 		}
 	}
 
@@ -189,11 +298,14 @@ shared_focus = SOV_bolshevikairforces
 		icon = GFX_focus_SOV_work_for_all
 		x = 2
 		y = 10
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = SOV_remindtheworkers }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		 add_stability = 0.1
 		}
 	}
 	
@@ -203,11 +315,19 @@ shared_focus = SOV_bolshevikairforces
 		icon = GFX_focus_SOV_modernize_red_army
 		x = 5
 		y = 6
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = SOV_molotovsrussia }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		  	add_tech_bonus = {
+				name = doctrine_bonus
+				bonus = 0.5
+				uses = 1
+				category = land_doctrine
+			}
 		}
 	}
 	
@@ -217,11 +337,16 @@ shared_focus = SOV_bolshevikairforces
 		icon = GFX_focus_SOV_mass_mobilizations_molotov
 		x = 5
 		y = 7
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = SOV_modernizetheredarmy }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		 add_ideas = {
+		  mass_conscription
+		 }
 		}
 	}
 	
@@ -231,11 +356,16 @@ shared_focus = SOV_bolshevikairforces
 		icon = GFX_focus_SOV_freedom_for_blood
 		x = 5
 		y = 8
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = SOV_massconscription }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		 add_ideas = {
+		  mass_army
+		 }
 		}
 	}
 	
@@ -245,11 +375,17 @@ shared_focus = SOV_bolshevikairforces
 		icon = GFX_focus_SOV_SOV_indoctrinate_molotov
 		x = 5
 		y = 9
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = SOV_bloodforfreedom }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		 swap_ideas = {
+		  remove_idea = mass_army
+		  add_idea = mass_army_2
+		 }
 		}
 	}
 	
@@ -259,11 +395,17 @@ shared_focus = SOV_bolshevikairforces
 		icon = GFX_focus_SOV_liberational_army
 		x = 5
 		y = 10
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = SOV_indoctrinatethemen }
 		ai_will_do = {
 			factor = 1
+		}
+	   completion_reward = {
+		   swap_ideas = {
+		  remove_idea = mass_army_2
+		  add_idea = mass_army_3
+		 }
 		}
 	}
 	
@@ -273,11 +415,16 @@ shared_focus = SOV_bolshevikairforces
 		icon = GFX_focus_SOV_soviet_education
 		x = 8
 		y = 6
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = SOV_molotovsrussia }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		 add_ideas = {
+		 rural_education
+		 }
 		}
 	}
 	
@@ -287,11 +434,14 @@ shared_focus = SOV_bolshevikairforces
 		icon = GFX_focus_SOV_cult_of_persoanlity
 		x = 8
 		y = 7
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = SOV_asovieteducation }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		 add_popularity = {ideology = socialist popularity =0.18}
 		}
 	}
 	
@@ -301,11 +451,16 @@ shared_focus = SOV_bolshevikairforces
 		icon = GFX_focus_SOV_no_god
 		x = 8
 		y = 8
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = SOV_cultofpersonality }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		 add_ideas = {
+		  atheist_state
+		 }
 		}
 	}
 	
@@ -315,11 +470,16 @@ shared_focus = SOV_bolshevikairforces
 		icon = GFX_focus_SOV_get_rid_of_bourgeosie
 		x = 8
 		y = 9
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = SOV_thereisnogod }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		 remove_ideas = {
+		  bourgeoisie_influence_2
+		 }
 		}
 	}
 	
@@ -329,11 +489,14 @@ shared_focus = SOV_bolshevikairforces
 		icon = GFX_focus_SOV_soviet_identity
 		x = 8
 		y = 10
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = SOV_getridofthebourgeoisie }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		 add_stability = 0.15
 		}
 	}
 	
@@ -343,7 +506,7 @@ shared_focus = SOV_bolshevikairforces
 		icon = GFX_focus_SOV_march_til_our_death
 		x = 5
 		y = 11
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = SOV_workforall 
@@ -356,6 +519,11 @@ shared_focus = SOV_bolshevikairforces
 		}
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		 add_ideas = {
+		  march_until_death
+		 }
 		}
 	}
 

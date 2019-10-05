@@ -16,6 +16,7 @@ country_event = {
 		name = rob_austria.1.a
 		ai_chance = { factor = 1}
 		hidden_effect = { 
+		        news_event = { id = news_event.1 days = 1 }
 				ACM = { transfer_state = 1018 }
 				ACM = { transfer_state = 1021 }
 				ACM = { transfer_state = 1020 }
@@ -59,7 +60,8 @@ ACM = { load_oob = ACM_civil_war }
 	option = {
 		name = rob_austria.1.b
 		ai_chance = { factor = 1}
-				hidden_effect = { 
+				hidden_effect = {
+                news_event = { id = news_event.1 days = 1 }				
 				ACM = { transfer_state = 1018 }
 				ACM = { transfer_state = 1021 }
 				ACM = { transfer_state = 1020 }
@@ -99,7 +101,8 @@ ACM = { load_oob = ACM_civil_war }
 	option = {
 		name = rob_austria.1.c
 		ai_chance = { factor = 1}
-		hidden_effect = { 
+		hidden_effect = {
+                news_event = { id = news_event.1 days = 1 }		
 				ACM = { transfer_state = 1018 }
 				ACM = { transfer_state = 1021 }
 				ACM = { transfer_state = 1020 }

@@ -734,6 +734,7 @@ trigger = {
 	}
 	remove_core_of = FRA
 }
+ news_event = { id = news_event.3 days = 1 }
  FRL = { load_oob = FRL_civil_war }
  FRR = { load_oob = FRR_civil_war }
  FRP = { load_oob = FRP_civil_war }
@@ -782,6 +783,7 @@ trigger = {
 	}
 	remove_core_of = FRA
 }
+ news_event = { id = news_event.3 days = 1 }
  FRL = { load_oob = FRL_civil_war }
  FRR = { load_oob = FRR_civil_war }
  FRP = { load_oob = FRP_civil_war }
@@ -833,6 +835,7 @@ NOT = {
 	}
 	remove_core_of = FRA
 }
+ news_event = { id = news_event.3 days = 1 }
  FRR = { load_oob = FRR_civil_war }
  FRP = { load_oob = FRP_civil_war }
  FRS = { load_oob = FRS_civil_war }
@@ -876,6 +879,7 @@ NOT = {
 	}
 	remove_core_of = FRA
 }
+ news_event = { id = news_event.3 days = 1 }
  FRR = { load_oob = FRR_civil_war }
  FRP = { load_oob = FRP_civil_war }
  FRS = { load_oob = FRS_civil_war }
@@ -920,6 +924,7 @@ NOT = {
 	}
 	remove_core_of = FRA
 }
+ news_event = { id = news_event.3 days = 1 }
  FRR = { load_oob = FRR_civil_war }
  FRP = { load_oob = FRP_civil_war }
  FRS = { load_oob = FRS_civil_war }
@@ -961,6 +966,7 @@ trigger = {
 	}
 	remove_core_of = FRA
 }
+ news_event = { id = news_event.3 days = 1 }
  FRL = { load_oob = FRL_civil_war }
  FRR = { load_oob = FRR_civil_war }
  FRP = { load_oob = FRP_civil_war }

@@ -24,6 +24,9 @@ option = {
   id = rob_spain.1
   days = 5
   }
+  hidden_effect = {
+   news_event = { id = news_event.5 days = 1 }
+  }
  }
 }
 
@@ -123,6 +126,9 @@ country_event = {
    set_politics = {
     ruling_party = national_socialist
     elections_allowed = no
+   }
+   hidden_effect = {
+    news_event = { id = news_event.6 days = 1 }
    }
    set_country_flag = SPR_falange_regime   
    add_popularity = {ideology = national_socialist popularity = 0.3 }

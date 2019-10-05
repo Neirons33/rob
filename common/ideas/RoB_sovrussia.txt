@@ -894,6 +894,194 @@ ideas = {
 			}
   
   }
+  ###MOLOTOV IDEAS
+ molotov_camps = {
+  allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 picture = GFX_idea_famine_of_1933
+	 modifier = {
+      production_speed_buildings_factor = 0.15
+	   stability_factor =-0.08
+			}
+  
+  }
+ molotov_industry = {
+  allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 picture = GFX_idea_famine_of_1933
+	 modifier = {
+      production_speed_buildings_factor = 0.1
+	  production_factory_max_efficiency_factor = 0.15
+			}
+  
+  }
+  soviet_worker = {
+  allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 picture = GFX_idea_famine_of_1933
+	 modifier = {
+      production_factory_efficiency_gain_factor = 0.25
+	  war_support_factor = 0.06
+			}
+  
+  }
+  
+  mass_conscription = {
+  allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 picture = GFX_idea_famine_of_1933
+	 modifier = {
+      conscription = 0.025
+	  stability_factor =-0.15
+			}
+  
+  }
+  mass_army = {
+  allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 picture = GFX_idea_famine_of_1933
+	 modifier = {
+      army_morale_factor = 0.15
+			}
+  
+  }
+   mass_army_2 = {
+  allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 picture = GFX_idea_famine_of_1933
+	 modifier = {
+      army_morale_factor = 0.15
+	  army_attack_factor = 0.1
+			}
+  
+  }
+   mass_army_3 = {
+  allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 picture = GFX_idea_famine_of_1933
+	 modifier = {
+      army_morale_factor = 0.15
+	  army_attack_factor = 0.1
+	  planning_speed = 0.2
+			}
+  
+  }
+  
+     march_until_death = {
+  allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 picture = GFX_idea_famine_of_1933
+	 modifier = {
+        war_support_factor = 0.15
+		army_attack_factor = 0.1
+		recon_factor = 0.05
+			}
+  
+  }
+###TOMSKY IDEAS
+     rural_communes = {
+  allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 picture = GFX_idea_famine_of_1933
+	 modifier = {
+          consumer_goods_factor = -0.08
+		  stability_factor = 0.05
+			}
+  
+  }
+  
+       worker_self_managment = {
+  allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 picture = GFX_idea_famine_of_1933
+	 modifier = {
+          industrial_capacity_factory = 0.07
+			}
+  
+  }
+  
+         peoples_militia = {
+  allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 picture = GFX_idea_famine_of_1933
+	 modifier = {
+          conscription = 0.015
+		  army_org_factor =-0.07
+			}
+  
+  }
+          united_we_work = {
+  allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 picture = GFX_idea_famine_of_1933
+	 modifier = {
+          stability_factor = 0.15
+		  war_support_factor =0.15
+		  production_speed_buildings_factor = 0.25
+			}
+  
+  }
+ 
  }
 
 

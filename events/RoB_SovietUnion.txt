@@ -1537,3 +1537,260 @@ add_stability = 0.02
 
 }
 }
+
+###MOLOTOV TREE EVENTS
+country_event = { ###Molotov Coup
+id = bolshevik_russia.73
+title = "The Red Man of Steel"
+desc = bolshevik_russia.73.d
+fire_only_once = yes
+is_triggered_only = yes
+
+
+option = {
+name = bolshevik_russia.1.a
+add_stability = 0.02
+
+
+}
+}
+
+country_event = { ###Molotov dabs on unions
+id = bolshevik_russia.74
+title = "Outlawing The Unions"
+desc = bolshevik_russia.74.d
+fire_only_once = yes
+is_triggered_only = yes
+
+
+option = {
+name = "It's the only way..."
+add_stability = 0.02
+
+
+}
+}
+
+country_event = { ###Molotov forms camps
+id = bolshevik_russia.75
+title = "Concentration Camps"
+desc = bolshevik_russia.75.d
+fire_only_once = yes
+is_triggered_only = yes
+
+
+option = {
+name = "They are going to be better of this way."
+add_stability = 0.02
+
+
+}
+}
+
+country_event = { ###Molotov does something idk
+id = bolshevik_russia.76
+title = "The Soviet System"
+desc = bolshevik_russia.76.d
+fire_only_once = yes
+is_triggered_only = yes
+
+
+option = {
+name = "The Revolution Will Prevail!"
+add_stability = 0.02
+
+
+}
+}
+
+country_event = { ###Molotov uses nkvd
+id = bolshevik_russia.77
+title = "Mobilize NKVD Operatives"
+desc = bolshevik_russia.77.d
+fire_only_once = yes
+is_triggered_only = yes
+
+
+option = {
+name = "Soon..."
+add_stability = 0.02
+
+
+}
+}
+
+country_event = { ###Molotov does shit to army
+id = bolshevik_russia.78
+title = "NKVD in the Army"
+desc = bolshevik_russia.78.d
+fire_only_once = yes
+is_triggered_only = yes
+
+
+option = {
+name = "It's coming to the end."
+add_stability = 0.02
+
+
+}
+}
+
+country_event = { ###Molotov kills traitors
+id = bolshevik_russia.79
+title = "Nationwide Purge"
+desc = bolshevik_russia.79.d
+fire_only_once = yes
+is_triggered_only = yes
+
+
+option = {
+name = "Finally."
+add_stability = 0.02
+
+
+}
+}
+
+
+###TOMSKY TREE EVENTS
+
+country_event = { ###Tomsky Takes Over
+id = bolshevik_russia.80
+title = "A New Direction"
+desc = bolshevik_russia.80.d
+fire_only_once = yes
+is_triggered_only = yes
+
+
+option = {
+name = "Syndicalism is the way!"
+add_stability = 0.02
+
+
+}
+}
+
+country_event = { ###Tomsky Takes Over
+id = bolshevik_russia.80
+title = "A New Direction"
+desc = bolshevik_russia.80.d
+fire_only_once = yes
+is_triggered_only = yes
+
+
+option = {
+name = "Syndicalism is the way!"
+add_stability = 0.02
+
+
+}
+}
+country_event = { ###Tomsky calls upon worker niggas
+id = bolshevik_russia.81
+title = "The Russian Worker"
+desc = bolshevik_russia.81.d
+fire_only_once = yes
+is_triggered_only = yes
+
+
+option = {
+name = "Almost there..."
+add_stability = 0.02
+
+
+}
+}
+country_event = { ###Tomsky calls upon union niggas
+id = bolshevik_russia.82
+title = "Union Representatives"
+desc = bolshevik_russia.82.d
+fire_only_once = yes
+is_triggered_only = yes
+
+
+option = {
+name = "This WILL get better..."
+add_stability = 0.02
+
+
+}
+}
+country_event = { ###Tomsky announces end of strike
+id = bolshevik_russia.83
+title = "End of the Strike"
+desc = bolshevik_russia.83.d
+fire_only_once = yes
+is_triggered_only = yes
+
+
+option = {
+name = "For Socialism!"
+add_stability = 0.02
+
+
+}
+}
+
+country_event = { ###Tomsky calls for Red Guard
+id = bolshevik_russia.84
+title = "Red Guard"
+desc = bolshevik_russia.84.d
+fire_only_once = yes
+is_triggered_only = yes
+
+
+option = {
+name = "Forwards!"
+add_stability = 0.02
+
+
+}
+}
+
+country_event = { ###Tomsky calls for local militias
+id = bolshevik_russia.85
+title = "Local Militias"
+desc = bolshevik_russia.85.d
+fire_only_once = yes
+is_triggered_only = yes
+
+
+option = {
+name = "Forwards!"
+add_stability = 0.02
+
+
+}
+}
+
+country_event = { ###Tomsky calls for police
+id = bolshevik_russia.86
+title = "Red Police"
+desc = bolshevik_russia.86.d
+fire_only_once = yes
+is_triggered_only = yes
+
+
+option = {
+name = "Forwards!"
+add_stability = 0.02
+
+
+}
+}
+
+country_event = { ###Syndiaclist System
+id = bolshevik_russia.87
+title = "Syndicalist System"
+desc = bolshevik_russia.87.d
+fire_only_once = yes
+is_triggered_only = yes
+
+
+option = {
+name = "Forwards!"
+add_stability = 0.05
+add_popularity = { ideology = democratic_socialist popularity = 0.15 }
+
+}
+}

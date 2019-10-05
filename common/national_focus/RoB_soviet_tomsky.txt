@@ -2,6 +2,10 @@ focus_tree = {
 	id = soviet_focus_tomsky
 	country = {
 		factor = 0
+		modifier = {
+		 add = 10
+		 tag = SWI
+		}
 	}
 default = no
 
@@ -19,11 +23,15 @@ id = SOV_premiertomsky
 icon = GFX_goal_unknown
 x = 5
 y = 1
-cost = 10
+cost = 1
 available_if_capitulated = yes 
 ai_will_do = { 
- factor = 1
- } 
+ factor = 100
+ }
+completion_reward = {
+ country_event = { id = bolshevik_russia.80 days = 2 } 
+ add_political_power = 50
+		} 
  }
 #Focus for Calm down the workers
 focus = { 
@@ -31,13 +39,15 @@ id = SOV_calmdowntheworkers
 icon = GFX_goal_unknown
 x = 3
 y = 2
-cost = 10
+cost = 1
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_premiertomsky } 
 ai_will_do = { 
- factor = 1
+ factor = 100
  } 
-
+completion_reward = {
+ country_event = { id = bolshevik_russia.81 days = 2 }
+}
  }
 
 #Focus for Call upon Union representatives
@@ -46,13 +56,15 @@ id = SOV_calluponunionrepresentatives
 icon = GFX_goal_unknown
 x = 3
 y = 3
-cost = 10
+cost = 1
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_calmdowntheworkers } 
 ai_will_do = { 
- factor = 1
+ factor = 100
  } 
-
+completion_reward = {
+ country_event = { id = bolshevik_russia.82 days = 2 }
+}
  }
  
  
@@ -62,13 +74,15 @@ id = SOV_announceendofthestrike
 icon = GFX_goal_unknown
 x = 3
 y = 4
-cost = 10
+cost = 1
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_calluponunionrepresentatives } 
 ai_will_do = { 
- factor = 1
+ factor = 100
  } 
-
+completion_reward = {
+ country_event = { id = bolshevik_russia.83 days = 2 }
+}
  }
  
  #Focus for Call upon the Red Guard
@@ -81,9 +95,11 @@ cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_premiertomsky } 
 ai_will_do = { 
- factor = 1
+ factor = 100
  } 
-
+completion_reward = {
+ country_event = { id = bolshevik_russia.84 days = 2 }
+}
  } 
 
  #Focus for Call upon local militas
@@ -96,9 +112,11 @@ cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_callupontheredguard } 
 ai_will_do = { 
- factor = 1
+ factor = 100
  } 
-
+completion_reward = {
+ country_event = { id = bolshevik_russia.85 days = 2 }
+}
  }
 #Focus for Use spare police forces
 focus = { 
@@ -110,9 +128,11 @@ cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_calluponlocalmilitas } 
 ai_will_do = { 
- factor = 1
+ factor = 100
  } 
-
+completion_reward = {
+ country_event = { id = bolshevik_russia.86 days = 2 }
+}
  }
 
 #Focus for Syndicalist Russia
@@ -126,9 +146,17 @@ available_if_capitulated = yes
 prerequisite = { focus = SOV_announceendofthestrike } 
 prerequisite = { focus = SOV_usesparepoliceforces } 
 ai_will_do = { 
- factor = 1
+ factor = 100
  } 
-
+completion_reward = {
+ remove_ideas = {
+  mass_unrest
+ }
+  remove_ideas = {
+  bolshevik_strike 
+ }
+ add_political_power = 150
+}
  }  
 
  #Focus for Abolsih Private Property
@@ -143,7 +171,11 @@ prerequisite = { focus = SOV_syndicalistrussia }
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = {
+ remove_ideas = {
+  bourgeoisie_influence_2
+ }
+}
  }
  
  #Focus for Found rural communes
@@ -158,7 +190,11 @@ prerequisite = { focus = SOV_abolsihprivateproperty }
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = {
+ add_ideas = {
+  rural_communes
+ }
+}
  } 
 
 
@@ -174,7 +210,9 @@ prerequisite = { focus = SOV_foundruralcommunes }
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = {
+ add_political_power = 100
+}
  }
 
 #Focus for Worker Self-Managment
@@ -189,7 +227,9 @@ prerequisite = { focus = SOV_transformtradeunions }
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = {
+ add_ideas = { worker_self_managment }
+}
  }
 
  #Focus for Workplace Elections
@@ -204,7 +244,9 @@ prerequisite = { focus = SOV_workerselfmanagment }
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = {
+ add_stability = 0.05
+}
  }
 
  #Focus for Weaken VChK
@@ -219,7 +261,9 @@ prerequisite = { focus = SOV_syndicalistrussia }
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = {
+ add_ideas = { weakened_beuracrcy }
+}
  } 
 
  #Focus for Vlaslovist Purge
@@ -234,7 +278,9 @@ prerequisite = { focus = SOV_weakenvchk }
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = {
+ add_popularity = {ideology = national_socialist popularity =-0.1}
+}
  }
 
  #Focus for Arrest Old Bolsheviks
@@ -249,7 +295,9 @@ prerequisite = { focus = SOV_vlaslovistpurge }
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = {
+ add_popularity = {ideology = socialist popularity =-0.15}
+}
  }
  
  
@@ -265,7 +313,11 @@ prerequisite = { focus = SOV_arrestoldbolsheviks }
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = {
+ add_ideas = {
+  peoples_militia
+ }
+}
  } 
  
  #Focus for All-Russian Council of Workers
@@ -280,7 +332,9 @@ prerequisite = { focus = SOV_peoplesmilitia }
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = {
+ add_war_support = 0.1
+}
  }
 
  #Focus for Expand Rural Education
@@ -295,7 +349,11 @@ prerequisite = { focus = SOV_syndicalistrussia }
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = {
+ add_ideas = {
+  rural_education
+ }
+}
  } 
 
 #Focus for Build more schools
@@ -310,7 +368,62 @@ prerequisite = { focus = SOV_expandruraleducation }
 ai_will_do = { 
  factor = 1
  } 
-
+ completion_reward = {
+random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+ }
  }
 
 #Focus for Expand education possibilites
@@ -325,7 +438,9 @@ prerequisite = { focus = SOV_buildmoreschools }
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = {
+ add_research_slot = 1
+}
  }
 
  #Focus for Agrarian Syndicates
@@ -340,7 +455,69 @@ prerequisite = { focus = SOV_expandeducationpossibilites }
 ai_will_do = { 
  factor = 1
  } 
+completion_reward = {
+random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 
+}
  }
 
  #Focus for Implement Syndicalist Elections
@@ -355,7 +532,9 @@ prerequisite = { focus = SOV_agrariansyndicates }
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = {
+ country_event = { id = bolshevik_russia.87 days = 2 }
+}
  } 
 #Focus for United We Work
 focus = { 
@@ -371,7 +550,11 @@ prerequisite = { focus = SOV_workplaceelections }
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = {
+ add_ideas = {
+  united_we_work
+ }
+}
  }
 
 }
