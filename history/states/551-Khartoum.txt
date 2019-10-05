@@ -4,7 +4,7 @@ state={
 	name="STATE_551"
 
 	history={
-		owner = SUD
+		owner = EGY
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
@@ -22,7 +22,7 @@ state={
 			12725 1 
 		}
 		add_core_of = SUD
-
+        add_core_of = EGY
 	}
 
 	provinces={

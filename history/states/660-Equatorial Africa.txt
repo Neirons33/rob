@@ -7,9 +7,9 @@ state={
 	}
 
 	history={
-		owner = FCM
-		add_core_of = FCM
+		owner = FEA
 		add_core_of = CAR
+		set_demilitarized_zone = yes
 		victory_points = {
 			12830 1 
 		}
@@ -19,7 +19,7 @@ state={
 		}
 
 	}
-
+    
 	provinces={
 		1974 3165 5084 8078 11108 12719 12830 
 	}

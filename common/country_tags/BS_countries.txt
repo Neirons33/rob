@@ -127,3 +127,8 @@ SWH = "countries/schleswig_holstein.txt"
 TRG = "countries/Thuringia.txt"
 OLD = "countries/Oldenburg.txt"
 HAN = "countries/Hanover.txt"
+
+
+##Africa###
+FWA = "countries/French West Africa.txt"
+FEA = "countries/French Equatorial Africa.txt"

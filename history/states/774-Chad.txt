@@ -4,9 +4,9 @@ state={
 	name="STATE_774"
 
 	history={
-		owner = FCM
-		add_core_of = FCM
+		owner = FEA
 		add_core_of = CHA
+		set_demilitarized_zone = yes
 		victory_points = {
 			2081 1 
 		}
@@ -16,7 +16,7 @@ state={
 		}
 
 	}
-
+    
 	provinces={
 		1473 1883 2081 3123 3181 4897 4978 7919 9152 13138 13211 
 	}

@@ -231,6 +231,14 @@ set_popularities = {
 		target = FIC
 		autonomous_state = autonomy_integrated_puppet
 	}
+	set_autonomy = {
+		target = FEA
+		autonomous_state = autonomy_integrated_puppet
+	}
+	set_autonomy = {
+		target = FWA
+		autonomous_state = autonomy_integrated_puppet
+	}
 	
 add_ideas = {
 	FRA_victors_of_wwi
@@ -258,7 +266,7 @@ create_country_leader = {
 	desc = "POLITICS_MAURICE_THOREZ_DESC"
 	picture = "GFX_portrait_fra_maurice_thorez"
 	expire = "1965.1.1"
-	ideology = 	stalinism
+	ideology = 	socialist
 	traits = {
 		
 	}
@@ -269,7 +277,7 @@ create_country_leader = {
 	desc = "POLITICS_PHILIPPE_PÉTAIN_DESC"
 	picture = "Portrait_France_Philippe_Petain.dds"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = reactionary
 	traits = {
 		
 	}

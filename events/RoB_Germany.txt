@@ -693,12 +693,12 @@ mean_time_to_happen = { days = 2 }
 
 
 immediate = { 
-PRS = { transfer_state = 58 }
+PRS = { transfer_state = 797 }
 PRS = { transfer_state = 59 }
 PRS = { transfer_state = 63 }
 PRS = { transfer_state = 61 }
 PRS = { transfer_state = 62 }
-PRS = { transfer_state = 797 }
+PRS = { transfer_state = 58 }
 PRS = {
 declare_war_on = { target = GER  type = annex_everything }
 }
@@ -728,6 +728,7 @@ add_core_of = PRS
 }
 PRS = { change_tag_from = GER }
 }
+}
 
 option = { #we shall fight!
 name = spartakus_germany.17.b
@@ -755,7 +756,7 @@ add_core_of = PRS
 }
 
 }
-}
+
 
 country_event = { ###Democratic Elections
 id = spartakus_germany.18

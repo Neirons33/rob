@@ -3,16 +3,16 @@ state={
 	name="STATE_898"
 
 	history={
-		owner = FCM
-		add_core_of = FCM
+		owner = FEA
 		add_core_of = CHA
+		set_demilitarized_zone = yes
 		buildings = {
 			infrastructure = 2
 
 		}
 
 	}
-
+    
 	provinces={
 		1993 
 	}

@@ -8,7 +8,6 @@ state={
 	history={
 		owner = FWA
 		add_core_of = GNA
-		add_core_of = FWA
 		victory_points = {
 			1909 1 
 		}

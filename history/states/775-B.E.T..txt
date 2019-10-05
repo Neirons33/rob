@@ -6,14 +6,14 @@ state={
 	impassable = yes
 
 	history={
-		owner = FCM
+		owner = FEA
+		set_demilitarized_zone = yes
 		add_core_of = CHA
-		add_core_of = FCM
 		buildings = {
 			infrastructure = 0
 		}
 	}
-
+    
 	provinces={
 		4902 5136 10893
 	}

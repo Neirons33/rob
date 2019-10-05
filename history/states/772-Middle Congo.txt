@@ -7,8 +7,7 @@ state={
 	}
 
 	history={
-		owner = FCM
-		add_core_of = FCM
+		owner = FEA
 		add_core_of = RCG
 		victory_points = {
 			8193 2 
@@ -23,7 +22,7 @@ state={
 		}
 
 	}
-
+    
 	provinces={
 		2192 3109 8193 12975 
 	}

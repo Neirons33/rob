@@ -2,10 +2,6 @@ focus_tree = {
 	id = soviet_focus_tomsky
 	country = {
 		factor = 0
-		modifier = {
-		 add = 10
-		 tag = SWI
-		}
 	}
 default = no
 

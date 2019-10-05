@@ -4,16 +4,16 @@ state={
 
 
 	history={
-		owner = FCM
+		owner = FEA
 		add_core_of = CMR
-		add_core_of = FCM
+		set_demilitarized_zone = yes
 		buildings = {
 			infrastructure = 2
 
 		}
 
 	}
-
+    
 	provinces={
 		13261 
 	}

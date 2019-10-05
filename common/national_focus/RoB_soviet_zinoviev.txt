@@ -2,6 +2,10 @@ focus_tree = {
 	id = soviet_focus_zinoviev
 	country = {
 		factor = 0
+		modifier = {
+		 add = 10
+		 tag = SWI
+		}
 	}
 
 continuous_focus_position = { x = 50 y = 2000 }
