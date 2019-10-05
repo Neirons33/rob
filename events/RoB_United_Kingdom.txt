@@ -780,5 +780,50 @@ if = {
 BRC = { declare_war_on = { type = annex_everything target = BRU } }
 BRC = { declare_war_on = { type = annex_everything target = BLF } }
 }
+country_event = { id = united_kingdom.19 days = 15 }
 }
 }
+
+
+###Egypt declares independence
+country_event = {
+id = united_kingdom.19
+title = "Egypt Declares Independence"
+desc = united_kingdom.19.d
+fire_only_once = yes
+is_triggered_only = yes
+
+
+option = {
+ name = "We Can't Do Anything Now..."
+ ENG = { end_puppet = EGY }
+ EGY = { 
+ leave_faction = yes
+ drop_cosmetic_tag = yes
+ }
+ 
+ add_political_power =-30
+}
+}
+
+###Egypt declares independence
+country_event = {
+id = united_kingdom.21
+title = "Egypt Declares Independence"
+desc = united_kingdom.21.d
+fire_only_once = yes
+is_triggered_only = yes
+
+
+option = {
+ name = "We Can't Do Anything Now..."
+ FRA = { end_puppet = FWA }
+ FWA = { 
+ 
+ drop_cosmetic_tag = yes
+ }
+ 
+ add_political_power =-30
+}
+}
+

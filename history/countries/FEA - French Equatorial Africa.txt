@@ -1,7 +1,5 @@
-capital = 16
+capital = 539
 
-
-set_cosmetic_tag = FRA_FEA
 set_research_slots = 1
 set_stability = 0.02
 set_war_support = 0.02
@@ -71,11 +69,10 @@ if = {
 		basic_heavy_armor_scheme = 1
 		mtg_transport = 1
 	}
-	add_ideas = MTG_naval_treaty_adherent
 }
 
 
-
+set_cosmetic_tag = FRA_FEA
 set_politics = {
 	ruling_party = authoritharian
 	last_election = "1932.5.1"
