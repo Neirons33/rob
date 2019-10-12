@@ -88,7 +88,12 @@ ideas = {
 				#has_manpower_for_recruit_change_to = { value = 0.05 group = mobilization_laws }
 				
 				has_war_support > 0.35
-				
+				OR = {
+				 has_war = yes
+				 threat > 0.25
+				 has_government = national_socialist
+				 has_government = pelekist
+				}
 
 			}
 
@@ -128,11 +133,8 @@ ideas = {
 			
 			available = {
 				#has_manpower_for_recruit_change_to =  { value = 0.1 group = mobilization_laws }
-				
-				OR = {
-					has_war_support > 0.6
-					surrender_progress > 0
-				}
+				has_war_support > 0.5
+				has_war = yes
 
 
 			}

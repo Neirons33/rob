@@ -1081,7 +1081,37 @@ ideas = {
 			}
   
   }
- 
+  
+  ###ZINOVIEV
+            international_socialist_academy = {
+  allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 picture = GFX_idea_famine_of_1933
+	 modifier = {
+		  research_speed_factor = 0.05
+			}
+  
+  }
+             humanity_unite = {
+  allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 picture = GFX_idea_famine_of_1933
+	 modifier = {
+		  non_core_manpower = 0.1
+		  planning_speed = 0.2
+			}
+  
+  }
  }
 
 

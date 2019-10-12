@@ -70,3 +70,12 @@ BWR_publically_support_diethrikhs:0 "Announce Our Support for Diterikhs"
 BWR_publically_support_diethrikhs_desc:0 ""
 BWR_militarize_society:0 "Militarize Society"
 BWR_militarize_society_desc:0 ""
+
+###Romanov Reformation
+RUS_russian_reformation:0 "Russian Reformation"
+ROM_proclaim_empire_of_russia:0 "Restore Russian Empire!"
+ROM_proclaim_empire_of_russia_desc:0 "Restore Russian Empire!"
+ROM_proclaim_kingdom_of_russia:0 "Proclaim Kingdom of Russia"
+ROM_proclaim_kingdom_of_russia_desc:0 "Proclaim Kingdom of Russia"
+ROM_proclaim_kingdom_of_siberia:0 "Proclaim Siberian Hegemony"
+ROM_proclaim_kingdom_of_siberia_desc:0 "Proclaim Siberian Hegemony"

@@ -16,9 +16,16 @@ TOW_search_for_allies = {
 	timeout_effect = {
 	hidden_effect = {
 	TOW = { declare_war_on = { target = BWR type = annex_everything } }
-	}
-	}
- 
+	every_other_country = {
+ limit = { is_in_faction_with = TOW }
+ BWR = { declare_war_on = { target = PREV type = annex_everything }}
+}
+ 	every_other_country = {
+ limit = { is_in_faction_with = BWR }
+ TOW = { declare_war_on = { target = PREV type = annex_everything }}
+}
+ }
+ }
  }
  
  TOW_ally_Krasnoyarsk = {
@@ -249,6 +256,105 @@ exists = yes
  }
  }
 
+
+}
+RUS_russian_reformation = {
+ 
+ ROM_proclaim_kingdom_of_siberia = {
+ fire_only_once = yes
+  available = {
+ 
+ }
+ complete_effect = {
+  set_cosmetic_tag = ROM_SIB
+  every_state = {
+    limit = { 
+	OR = {
+	is_core_of = FER 
+	is_core_of = UGC
+    is_core_of = LES
+    is_core_of = OMS 
+    is_core_of = IRK
+    is_core_of = JSW
+    is_core_of = JOB
+    is_core_of = WFE   	   	
+	}
+	}
+	add_core_of = ROOT
+
+}
+ }
+ ai_will_do = {
+  base = 200
+ }
+ }
+ 
+  ROM_proclaim_kingdom_of_russia = {
+ fire_only_once = yes
+  available = {
+ has_cosmetic_tag = ROM_SIB
+ has_full_control_of_state = 219
+ has_full_control_of_state = 217
+ has_full_control_of_state = 572
+ has_full_control_of_state = 561
+ }
+ complete_effect = {
+  set_cosmetic_tag = ROM_KIN
+    every_state = {
+    limit = { 
+	OR = {
+	is_core_of = RDR 
+	is_core_of = RUS
+    is_core_of = SOV
+    is_core_of = OMS 
+    is_core_of = CAA
+    is_core_of = CRM
+    is_core_of = CAU
+    is_core_of = DAG
+    is_core_of = CHE
+    is_core_of = MRP	
+	}
+	}
+	add_core_of = ROOT
+
+}
+ }
+ ai_will_do = {
+  base = 200
+ }
+ }
+ 
+   ROM_proclaim_empire_of_russia = {
+ fire_only_once = yes
+  available = {
+ has_cosmetic_tag = ROM_KIN
+ has_full_control_of_state = 195
+ has_full_control_of_state = 202
+ has_full_control_of_state = 206
+ has_full_control_of_state = 561
+ has_full_control_of_state = 12
+ }
+ complete_effect = {
+  set_cosmetic_tag = ROM_EMP
+      every_state = {
+    limit = { 
+	OR = {
+	is_core_of = FIN 
+	is_core_of = EST
+    is_core_of = LIT
+    is_core_of = UKR 
+    is_core_of = DCU
+    is_core_of = BLR
+	}
+	}
+	add_core_of = ROOT
+
+}
+ }
+ ai_will_do = {
+  base = 200
+ }
+ }
 
 }
 

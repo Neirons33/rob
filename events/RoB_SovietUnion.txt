@@ -1794,3 +1794,109 @@ add_popularity = { ideology = democratic_socialist popularity = 0.15 }
 
 }
 }
+
+###ZINOVIEC EVENTS
+country_event = { ###zinoviec takes onver
+id = bolshevik_russia.88
+title = "Path to Revolution"
+desc = bolshevik_russia.88.d
+fire_only_once = yes
+is_triggered_only = yes
+
+
+option = {
+name = "Forwards!"
+add_stability = 0.05
+
+}
+}
+
+country_event = { ###zinoviecv calms down the workers
+id = bolshevik_russia.89
+title = "Speak Softly..."
+desc = bolshevik_russia.89.d
+fire_only_once = yes
+is_triggered_only = yes
+
+
+option = {
+name = "Forwards!"
+add_stability = 0.02
+
+}
+}
+
+country_event = { ###zinoviecv calms down the workers
+id = bolshevik_russia.90
+title = "...but carry a big stick"
+desc = bolshevik_russia.90.d
+fire_only_once = yes
+is_triggered_only = yes
+
+
+option = {
+name = "Forwards!"
+add_stability = 0.02
+
+}
+}
+
+country_event = { ###zinoviecv calms down the workers
+id = bolshevik_russia.91
+title = "The Bolshevik Worker"
+desc = bolshevik_russia.91.d
+fire_only_once = yes
+is_triggered_only = yes
+
+
+option = {
+name = "Forwards!"
+add_stability = 0.02
+
+}
+}
+
+country_event = { ###zinoviecv calms down the workers
+id = bolshevik_russia.92
+title = "Country-wide Mobilization"
+desc = bolshevik_russia.92.d
+fire_only_once = yes
+is_triggered_only = yes
+
+
+option = {
+name = "Forwards!"
+add_stability = 0.02
+
+}
+}
+
+country_event = { ###zinoviecv calms down the workers
+id = bolshevik_russia.93
+title = "The Future - Our Children"
+desc = bolshevik_russia.93.d
+fire_only_once = yes
+is_triggered_only = yes
+
+
+option = {
+name = "Forwards!"
+add_stability = 0.02
+
+}
+}
+
+country_event = { ###zinoviecv calms down the workers
+id = bolshevik_russia.94
+title = "Iron Boot"
+desc = bolshevik_russia.94.d
+fire_only_once = yes
+is_triggered_only = yes
+
+
+option = {
+name = "We WILL win!"
+add_stability = 0.02
+
+}
+}
