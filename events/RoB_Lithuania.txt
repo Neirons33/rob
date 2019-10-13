@@ -417,6 +417,7 @@ name = lithuania.14.a
 add_political_power = 150
 add_stability = 0.05
 }
+}
 
 ###To join Aistija or nah
 country_event = { 
@@ -457,7 +458,7 @@ id = lithuania.17
 title = "Lithuania bans Usury"
 desc = lithuania.17.d
 fire_only_once = yes
-mean_time_to_happen = { days = 1 }
+is_triggered_only = yes
 
 option = {
  name = "What's a "usury"?"
@@ -541,4 +542,4 @@ option = {
  name = "So huh, never knew the Poles were serfs to Lithuanians."
  }
 }
-}
+

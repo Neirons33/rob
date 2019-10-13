@@ -22,7 +22,7 @@ focus_tree = {
 			focus = LIT_samogitianautonomy 
 		}
 		prerequisite = { 
-			focus = LIT_ 
+			focus = LIT_politicizethejaunalietuviai
 		}
 		completion_reward = {
 		add_ideas = {
@@ -46,7 +46,7 @@ focus_tree = {
 			focus = LIT_returnofthebalts 
 		}
 		completion_reward = { 
-        		add_stability = 0.6
+        		add_stability = 0.1
 		add_popularity = {ideology = pelekist popularity =0.10}
 		add_political_power = 120
  }
@@ -182,7 +182,7 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_legacyofthecrusades }
-		add_completion reward = {
+		completion_reward = {
         11 = {
         add_extra_state_shared_building_slots = 2
                 add_building_construction = {
@@ -206,7 +206,7 @@ focus_tree = {
 		prerequisite = { focus = LIT_cultofpersonality }
 		completion_reward = {
 		add_popularity = {ideology = pelekist popularity =0.18}
-        add_stability = 0.6
+        add_stability = 0.06
 		}
 	}
 
@@ -327,7 +327,7 @@ target = BLR
 			focus = LIT_formtheministryofpropaganda 
 		}
 			completion_reward = {
-			add_stability = 0.6
+			add_stability = 0.06
 
 		}
 	}
@@ -341,8 +341,10 @@ target = BLR
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_awardthearmy }
-        add_ideas = {
+        completion_reward = {
+		add_ideas = {
         paramilitarism
+ }
  }
  }
 
@@ -407,7 +409,7 @@ target = BLR
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_pulloutfromlatvia }
 		completion_reward = {
-		BEL = { remove_ideas = { lithuanian_influence } }
+		BLR = { remove_ideas = { BLR_lithuanian_influence } }
 	}
 	}
 
@@ -448,6 +450,11 @@ target = BLR
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_relithunizethepoles }
+		completion_reward = {
+		 add_political_power = 120
+add_popularity = {ideology = authoritharian popularity =0.10}
+
+		}
 	}
 
 	#Focus for Legion of Foreign Lithuanians
@@ -538,7 +545,7 @@ target = BLR
 			focus = LIT_economicgrowth 
 		}
         completion_reward = {
-		add_popularity = {ideology = reactionary popularity =0.10}
+		add_popularity = {ideology = authoritharian popularity =0.10}
 		}
 		}
 	
@@ -603,7 +610,7 @@ target = BLR
 		prerequisite = { focus = LIT_tautosvadasmironas }
 		completion_reward = {
 		add_popularity = {ideology = pelekist popularity =0.18}
-        add_stability = 0.6
+        add_stability = 0.06
 	}
 	}
 
@@ -715,9 +722,9 @@ target = BLR
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_edittheeducationsystem }
 		completion_reward = {
-		add_popularity = {ideology = reactionary popularity =0.5}
-        add_popularity = {ideology = pelekist popularity =0.5}
-	    add_popularity = {ideology = authoritarian popularity =0.5}
+		add_popularity = {ideology = reactionary popularity =0.05}
+        add_popularity = {ideology = pelekist popularity =0.05}
+	    add_popularity = {ideology = authoritharian popularity =0.05}
     }
 	}
 
@@ -772,7 +779,7 @@ target = BLR
 			focus = LIT_easegunlaws 
 		}
 		completion_reward = {
-		add_stability = 0.6
+		add_stability = 0.06
 		add_popularity = {ideology = reactionary popularity =0.10}
     }
 	}
@@ -787,7 +794,7 @@ target = BLR
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_vytautasthegreatreborn }
 		completion_reward = {
-			    add_idea = {
+			    add_ideas = {
 		corporativist_economics
         }
 		}
@@ -803,7 +810,7 @@ target = BLR
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_vytautasthegreatreborn }
 		completion_reward = {
-	    add_idea = {
+	    add_ideas = {
 		agriculturalism
         }
 		}
@@ -914,7 +921,7 @@ add_political_power = 120
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_paganbias }
 				completion_reward = {
-		add_stability = 0.6
+		add_stability = 0.06
 		add_popularity = {ideology = pelekist popularity =0.10}
     }
 	}
@@ -1849,7 +1856,7 @@ add_political_power = 120
 		prerequisite = { focus = LIT_thestatestable }
 		completion_reward = {
 		army_experience = 10
-		manpower = 15000
+		add_manpower = 15000
 	}
 	}
 
@@ -1881,7 +1888,7 @@ add_political_power = 120
 		prerequisite = { focus = LIT_purgeanyonenotpartoftheperknininkai }
 		completion_reward = {
 		army_experience = 20
-		manpower = 10000
+		add_manpower = 10000
     }
 	}
 
@@ -1895,7 +1902,7 @@ add_political_power = 120
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_banusuryvisoumis }
 				completion_reward = {
-		add_stability = 0.6
+		add_stability = 0.06
 		add_popularity = {ideology = pelekist popularity =0.10}
     }
 	}
@@ -1927,7 +1934,7 @@ add_political_power = 120
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_kunigaiktisvisuomis }
 		completion_reward = {
-		add_stability = 0.6
+		add_stability = 0.06
 		add_popularity = {ideology = pelekist popularity =0.10}
     }
 	}
@@ -1986,15 +1993,20 @@ target = PRS
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_prepareforancampaign }
-		completion_reward = [
+		completion_reward = {
 				create_wargoal = {
 type = annex_everything
-target = UBD
+target = EST
 }
+if = {
+ limit = { LAT = { exists = yes } }
+ 
 		create_wargoal = {
 type = annex_everything
 target = LAT
 }
+		}
+		}
 		}
 
 	#Focus for Invade Belarus
@@ -2107,7 +2119,7 @@ target = BLR
 		prerequisite = { focus = LIT_kirposjaunimas }
 		completion_reward = {
         add_popularity = {ideology = reactionary popularity =0.10}
-        add_stability = 0.5
+        add_stability = 0.05
 		}
 	}
 
@@ -2123,7 +2135,7 @@ target = BLR
 			focus = LIT_thearmywithastate
 		}
 		completion_reward = {
-		add_stability = 0.5
+		add_stability = 0.05
 		}
 	}
 
@@ -2192,11 +2204,11 @@ completion_reward = {
 			focus = LIT_supportforminorityrights 
 			focus = LIT_interveneinbelarus
 }			
-			completion_reward = {
+			
 					completion_reward = {
-			army_experience = 5
+			army_experience = 15
 			}
-		}
+		
 	}
 
 
@@ -2295,7 +2307,7 @@ completion_reward = {
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_encouragemilitarism }
 		completion_reward = {
-		add_popularity = {ideology = authoritarian popularity =0.10}
+		add_popularity = {ideology = authoritharian popularity =0.10}
     }
 	}
 
@@ -2406,6 +2418,7 @@ completion_reward = {
     name = doctrine_bonus
     bonus = 0.50
     uses = 3
+	category = land_doctrine
 	}
 	}
 	}
@@ -2560,7 +2573,7 @@ completion_reward = {
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_industrilization }
 				completion_reward = {
-		BEL = { remove_ideas = { lithuanian_influence } }
+		BLR = { remove_ideas = { BLR_lithuanian_influence } }
 	}
 	}
 
@@ -2689,7 +2702,7 @@ add_extra_state_shared_building_slots = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_aidulmanisforgurantees }
 		completion_reward = {
-		UKR = { add_ideas = { lithuanian_influence } }
+		UKR = { add_ideas = { BLR_lithuanian_influence } }
 		}
 	}
 
