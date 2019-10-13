@@ -79,3 +79,7 @@ ROM_proclaim_kingdom_of_russia:0 "Proclaim Kingdom of Russia"
 ROM_proclaim_kingdom_of_russia_desc:0 "Proclaim Kingdom of Russia"
 ROM_proclaim_kingdom_of_siberia:0 "Proclaim Siberian Hegemony"
 ROM_proclaim_kingdom_of_siberia_desc:0 "Proclaim Siberian Hegemony"
+
+###Russian Reunification
+RUS_destroy_SOV:0 "Destroy the Bolsheviks!"
+

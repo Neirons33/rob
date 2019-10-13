@@ -89,6 +89,7 @@ focus_tree = {
 		completion_reward = {
 		PRS = { country_event = { id = lithuania.15 days = 2 } }
 	}
+	}
 
 	#Focus for Declare Beržanskis a National Hero
 	focus = {
@@ -392,7 +393,7 @@ target = BLR
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_purgeeveryone }
 		completion_reward = {
-		remove_ideas = samogitian_identity
+		remove_ideas = { samogitian_identity }
 		}
 		}
 
@@ -406,7 +407,7 @@ target = BLR
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_pulloutfromlatvia }
 		completion_reward = {
-		BEL = remove_ideas = lithuanian_influence
+		BEL = { remove_ideas = { lithuanian_influence } }
 	}
 	}
 
@@ -674,6 +675,7 @@ target = BLR
         completion_reward = {
 		add_popularity = {ideology = democratic_socialist popularity =-0.18}
 	}
+	}
 
 	#Focus for "Edit" the Education System
 	focus = {
@@ -749,6 +751,7 @@ target = BLR
 				add_ideas = {
 		loyal_military
 		}
+	}
 	}
 
 	#Focus for Vytautas the Great Reborn!
@@ -872,6 +875,7 @@ add_political_power = 120
 		763 = { add_core_of = LIT}
         1010 = { add_core_of = LIT}		
 	}
+	}
 
 	#Focus for Economic Rise
 	focus = {
@@ -897,6 +901,7 @@ add_political_power = 120
 		        add_ideas = {
         socialism_of_duty
  }
+	}
 	}
 
 	#Focus for Politicize the Jaunalietuviai
@@ -949,6 +954,7 @@ add_political_power = 120
   days = 2
  }
 	}
+	}
 
 	#Focus for Curbing Unemployment
 	focus = {
@@ -964,9 +970,7 @@ add_political_power = 120
 		prerequisite = { 
 			focus = LIT_ourowncementandceramics 
 		}
-		prerequisite = { 
-			focus = LIT_ 
-		}
+
 	}
 
 	#Focus for Chamber of Agriculture
@@ -1952,7 +1956,7 @@ add_political_power = 120
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_grandfederationoflithuania }
 		completion_reward = {
-		remove_ideas = samogitian_identity
+		remove_ideas = { samogitian_identity }
 		}
 	}
 
@@ -1992,7 +1996,6 @@ type = annex_everything
 target = LAT
 }
 		}
-	}
 
 	#Focus for Invade Belarus
 	focus = {
@@ -2008,6 +2011,7 @@ target = LAT
 type = annex_everything
 target = BLR
 		}
+	}
 	}
 
 	#Focus for Economic Boom
@@ -2073,6 +2077,7 @@ target = BLR
 		add_ideas = {
 		agriculturalism
 		}
+	}
 	}
 
 	#Focus for Fanatical Army
@@ -2185,13 +2190,15 @@ completion_reward = {
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = LIT_supportforminorityrights 
-			focus = LIT_interveneinbelarus 
+			focus = LIT_interveneinbelarus
+}			
 			completion_reward = {
 					completion_reward = {
 			army_experience = 5
 			}
 		}
 	}
+
 
 	#Focus for Farmer President
 	focus = {
@@ -2239,6 +2246,7 @@ completion_reward = {
 		BLR = { country_event = { id = lithuania.15 days = 2 } }
 
 	}
+	}
 
 	#Focus for Disband the Seimas
 	focus = {
@@ -2275,7 +2283,7 @@ completion_reward = {
  }
 	}
 	}
-	}
+
 
 	#Focus for Encourage Lithuanian Nationalism
 	focus = {
@@ -2288,8 +2296,9 @@ completion_reward = {
 		prerequisite = { focus = LIT_encouragemilitarism }
 		completion_reward = {
 		add_popularity = {ideology = authoritarian popularity =0.10}
-    ]
+    }
 	}
+
 
 	#Focus for The Red Scare
 	focus = {
@@ -2363,6 +2372,7 @@ completion_reward = {
 		militarism
 		}
 	}
+	}
 
 	#Focus for Allow Paramilitaries for Allies
 	focus = {
@@ -2376,6 +2386,7 @@ completion_reward = {
 		completion_reward = {
 		manpower = 3000
 		army_experience = 25
+	}
 	}
 
 	#Focus for Grant Power to the Younger Officers
@@ -2433,6 +2444,7 @@ completion_reward = {
 		}
     completion_reward = {
 	add_political_power = 120
+	}
 	}
 
 	#Focus for Glory Restored!
@@ -2536,6 +2548,7 @@ completion_reward = {
 		 semi_loyal_military
 		 }
 	}
+	}
 
 	#Focus for Reverse the Interventionalism
 	focus = {
@@ -2547,7 +2560,7 @@ completion_reward = {
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_industrilization }
 				completion_reward = {
-		BEL = remove_ideas = lithuanian_influence
+		BEL = { remove_ideas = { lithuanian_influence } }
 	}
 	}
 
@@ -2575,6 +2588,7 @@ add_extra_state_shared_building_slots = 2
 	instant_build = yes
 }
 }
+	}
 	}
 
 	#Focus for The Land Without Corruption
@@ -2675,7 +2689,7 @@ add_extra_state_shared_building_slots = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_aidulmanisforgurantees }
 		completion_reward = {
-		UKR = add_ideas = lithuanian_influence
+		UKR = { add_ideas = { lithuanian_influence } }
 		}
 	}
 
