@@ -12,6 +12,9 @@ state={
 			infrastructure = 4
 
 		}
+		victory_points = {
+		10284 3
+		}
 		
 		add_core_of = KAZ
 	}

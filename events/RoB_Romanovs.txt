@@ -204,3 +204,72 @@ factor = 100
 }
 }
 }
+
+
+###victory in the scramble for Siberia
+country_event = {
+id = romanov.7
+title = romanov.7.t
+desc = romanov.7.d
+fire_only_once = yes
+
+trigger = {
+OR = {
+ tag = TOW
+ tag = BWR
+}
+OR = {
+ TOW = {
+	has_full_control_of_state = 578
+	has_full_control_of_state = 570
+	has_full_control_of_state = 40
+	has_full_control_of_state = 569 
+	has_full_control_of_state = 654
+	has_war = no
+	}
+BWR = {
+	has_full_control_of_state = 578
+	has_full_control_of_state = 570
+	has_full_control_of_state = 40
+	has_full_control_of_state = 569 
+	has_full_control_of_state = 654
+	has_war = no
+	}
+}
+}
+
+mean_time_to_happen = { days = 1 }
+
+option = {
+name = "Russia Rises Again!"
+set_country_flag = ROM_victory_in_war
+add_stability = 0.15
+add_war_support = 0.15
+
+if = {
+ limit = {
+  any_other_country = { 
+    is_in_faction_with = ROOT
+} 
+}
+every_other_country = {
+ limit = { is_in_faction_with = ROOT }
+ ROOT = { annex_country = { target = PREV transfer_troops = yes }}
+}
+every_state = {
+    limit = { 
+	OR = {
+	is_core_of = BWR 
+	is_core_of = TOW
+    is_core_of = BRW
+    is_core_of = KRW  	
+	}
+	}
+	remove_core_of = PREV
+	add_core_of = ROOT
+
+}
+}
+}
+}
+

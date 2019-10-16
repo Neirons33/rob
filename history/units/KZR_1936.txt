@@ -63,96 +63,72 @@ division_template = {
 units = {
 	#Kazakh Army
 	division = {
-		name = "Kazakh Guard"
-		location = 10218
-		division_template = "Cavalry with Tanks"
-		start_experience_factor = 0.5
-	}
-	division = {
-		name = "Russian Brigade"
-		location = 10218
+		name = "Republican Guard"
+		location = 10284
 		division_template = "Kazakh Infantry"
 		start_experience_factor = 0.5
 	}
 
 
 	division = {
-		name = "1st Kazakh Cavalry"
-		location = 10202
+		name = "1st Kazakh Republican Cavalry"
+		location = 12257
 		division_template = "Kazakh Cavalry"
 		start_equipment_factor = 0.9
 	}
 	division = {
-		name = "2nd Kazakh Cavalry"
-		location = 1840
+		name = "2nd Kazakh Republican Cavalry"
+		location = 1331
 		division_template = "Kazakh Cavalry"
 		start_equipment_factor = 0.9
 	}
 	division = {
-		name = "3rd Kazakh Cavalry"
-		location = 1554
+		name = "3rd Kazakh Republican Cavalry"
+		location = 12139
 		division_template = "Kazakh Cavalry"
 		start_equipment_factor = 0.5
 	}
 	division = {
-		name = "4th Kazakh Cavalry"
-		location = 10348
+		name = "4th Kazakh Republican Cavalry"
+		location = 7354
 		division_template = "Kazakh Cavalry"
 		start_equipment_factor = 0.5
 	}
 	division = {
-		name = "5th Kazakh Cavalry"
-		location = 11455
+		name = "5th Kazakh Republican Cavalry"
+		location = 4337
 		division_template = "Kazakh Cavalry"
 		start_equipment_factor = 0.5
 	}
 	division = {
-		name = "6th Kazakh Cavalry"
-		location = 508
+		name = "6th Kazakh Republican Cavalry"
+		location = 4311
 		division_template = "Kazakh Cavalry"
 		start_equipment_factor = 0.5
 	}
 	division = {
-		name = "7th Kazakh Cavalry"
-		location = 12229
-		division_template = "Kazakh Cavalry"
-		start_equipment_factor = 0.5
-	}
-	division = {
-		name = "8th Kazakh Cavalry"
-		location = 12185
-		division_template = "Kazakh Cavalry"
-		start_equipment_factor = 0.5
-	}
-	division = {
-		name = "9th Kazakh Cavalry"
-		location = 1694
-		division_template = "Kazakh Cavalry"
-		start_equipment_factor = 0.5
-	}
-	division = {
-		name = "1st Kazakh Infantry"
-		location = 1591
+		name = "1st Kazakh Republican Infantry"
+		location = 1272
 		division_template = "Kazakh Infantry"
 		start_equipment_factor = 0.5
+		start_experience_factor = 0.5
+
 	}
 	division = {
-		name = "2nd Kazakh Infantry"
-		location = 4294
+		name = "2nd Kazakh Republican Infantry"
+		location = 3618
 		division_template = "Kazakh Infantry"
 		start_equipment_factor = 0.5
+		start_experience_factor = 0.5
+
 	}
 	division = {
-		name = "3rd Kazakh Infantry"
-		location = 12619
+		name = "3rd Kazakh Republican Infantry"
+		location = 10284
 		division_template = "Kazakh Infantry"
 		start_equipment_factor = 0.5
-	}
-	division = {
-		name = "Kirghiz Garrison"
-		location = 1384
-		division_template = "Kazakh Infantry"
-		start_equipment_factor = 0.5
+		start_experience_factor = 0.5
+
 	}
 
 
@@ -161,7 +137,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = infantry_equipment_0
-			creator = "KAZ"
+			creator = "KZR"
 		}
 		requested_factories = 1
 		progress = 0.28

@@ -79,8 +79,74 @@ RUS_russian_reunification = {
   icon = GFX_decision_category_military_operation
   picture = GFX_decision_germany_partisans
 	visible = {
-    has_country_flag = RUS_warlord
-	num_of_factories > 9
+    OR = {
+	 tag = TOW
+	 tag = BWR
+	}
+	}
+	available = {
+	ROOT = {
+	has_full_control_of_state = 578
+	has_full_control_of_state = 570
+	has_full_control_of_state = 40
+	has_full_control_of_state = 569 
+	has_full_control_of_state = 654
+	}
+	has_country_flag = ROM_victory_in_war
+	}
+		  priority = {
+		  base = 100
+		  }
+
+
+}
+
+RUS_russian_reformation = {
+  icon = GFX_decision_category_military_operation
+  picture = GFX_decision_germany_partisans
+	visible = {
+    OR = {
+	 tag = TOW
+	 tag = BWR
+	}
+	}
+	available = {
+	ROOT = {
+	has_full_control_of_state = 570
+	has_full_control_of_state = 40
+	has_full_control_of_state = 580 
+	has_full_control_of_state = 571
+	}
+	has_country_flag = ROM_victory_in_war
+	}
+		  priority = {
+		  base = 100
+		  }
+
+
+}
+
+RUS_russian_revolution_siberia = {
+  icon = GFX_decision_category_military_operation
+  picture = GFX_decision_germany_partisans
+	visible = {
+    OR = {
+	 has_government = national_socialist
+	 has_government = socialist
+	 has_government = democratic_socialist
+	}
+	OR = {
+	tag = OMS
+	tag = JSW
+	}
+	}
+	available = {
+	ROOT = {
+	has_full_control_of_state = 570
+	has_full_control_of_state = 40
+	has_full_control_of_state = 580 
+	has_full_control_of_state = 571
+	}
 	}
 		  priority = {
 		  base = 100

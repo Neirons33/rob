@@ -70,3 +70,22 @@ BWR_publically_support_diethrikhs:0 "Announce Our Support for Diterikhs"
 BWR_publically_support_diethrikhs_desc:0 ""
 BWR_militarize_society:0 "Militarize Society"
 BWR_militarize_society_desc:0 ""
+
+###Romanov Reformation
+RUS_russian_reformation:0 "Russian Reformation"
+ROM_proclaim_empire_of_russia:0 "Restore Russian Empire!"
+ROM_proclaim_empire_of_russia_desc:0 "Restore Russian Empire!"
+ROM_proclaim_kingdom_of_russia:0 "Proclaim Kingdom of Russia"
+ROM_proclaim_kingdom_of_russia_desc:0 "Proclaim Kingdom of Russia"
+ROM_proclaim_kingdom_of_siberia:0 "Proclaim Siberian Hegemony"
+ROM_proclaim_kingdom_of_siberia_desc:0 "Proclaim Siberian Hegemony"
+
+###Russian Reunification
+RUS_destroy_SOV:0 "Destroy the Bolsheviks!"
+
+
+###Siberian Socialists
+RUS_russian_revolution_siberia:0 "Finish the Russian Revolution!"
+RUS_proclaim_socialist_republic_of_siberia:0 "Announce Socialist Republic of Siberia"
+RUS_proclaim_eastern_russian_socialist_republic:0 "Proclaim Eastern Russian Socialist Republic"
+RUS_proclaim_united_russian_socialist:0 "Revolution Triumphmant!"

@@ -32,7 +32,7 @@ units = {
 			ship = { name = "Utka" definition = submarine equipment = { submarine_1 = { amount = 1 owner = WFE version_name = "Tyulen Class" } } }
 			}
 		task_force = {
-			name = "Twin Battleships"
+			name = "Third Fleet"
 			location = 12559 # Scapa Flow
 			ship = { name = "Petropavlovsk" definition = battleship equipment = { battleship_1 = { amount = 1 owner = WFE version_name = "Petropavlovsk Class" } } }
 			ship = { name = "Sevastopol" definition = battleship equipment = { battleship_1 = { amount = 1 owner = WFE version_name = "Petropavlovsk Class" } } } 

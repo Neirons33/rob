@@ -16,7 +16,7 @@ ideas = {
  
  }
   semi_loyal_military = {
-  picture = 
+  picture = GFX_idea_minority_troubles
   allowed = {
        always = no
      }
@@ -33,7 +33,7 @@ ideas = {
  }
 
    pelekists_rising = {
-   picture =
+   picture = GFX_idea_minority_troubles
    allowed = {
        always = no
 	   }
@@ -47,7 +47,7 @@ ideas = {
  }
  
    pearl_of_stability = {
-   picture =
+   picture = GFX_idea_minority_troubles
    allowed = {
        always = no
 	   }
@@ -74,7 +74,8 @@ ideas = {
 				army_defense_factor = 0.1
 				war_support_factor = 0.1
 				}
-  lithuanian_crusaders
+				}
+  lithuanian_crusaders = {
   picture = GFX_idea_minority_troubles
  allowed = {
        always = no
@@ -89,4 +90,140 @@ ideas = {
 				army_defense_factor = 0.1
 				war_support_factor = 0.1
 				}
+				}
+				  loyal_military = {
+  picture = GFX_idea_minority_troubles
+  allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 modifier = {
+	            war_support_factor = 0.1
+				}
+ }
+ corruptionless_society = {
+   picture = GFX_idea_minority_troubles
+   allowed = {
+       always = no
+	   }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 modifier = {
+				political_power_gain = 0.16
+				}
+ }
+ agriculturalism = {
+   picture = GFX_idea_minority_troubles
+   allowed = {
+       always = no
+	   }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 modifier = {
+		  stability_factor = 0.05
+				onsumer_goods_factor = -0.08
+				}
+ }
+  socialism_of_duty = {
+  picture = GFX_idea_minority_troubles
+ allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 modifier = {
+				conscription = 0.015
+				army_attack_factor = 0.1
+				army_defense_factor = 0.1
+				war_support_factor = 0.1
+				political_power_gain = 0.16
+				}
+				}
+				
+				  military_state = {
+  picture = GFX_idea_minority_troubles
+  allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 modifier = {
+	            war_support_factor = 0.1
+				stability_factor = 0.05
+				political_power_gain = 0.25
+				}
+				}
+				
+				
+				  fanatical_army = {
+  picture = GFX_idea_minority_troubles
+ allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 modifier = {
+				conscription = 0.015
+				army_attack_factor = 0.1
+				army_defense_factor = 0.1
+				war_support_factor = 0.1
+				}
+				}
+				every_man_a_gun = {
+  picture = GFX_idea_minority_troubles
+  allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 modifier = {
+	            war_support_factor = 0.1
+				}
+				}
+				
+				corporativist_economics = {
+  picture = GFX_idea_minority_troubles
+  allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 modifier = {
+         production_factory_max_efficiency_factor = 0.08
+		 production_speed_buildings_factor = 0.25
+				}
+				}
+ corporativist_economics_2 = {
+   picture = GFX_idea_minority_troubles
+  allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 modifier = {
+         production_factory_max_efficiency_factor = 0.08
+		 production_speed_buildings_factor = 0.25
+		 industrial_capacity_factory = 0.15
+				}
+ }
+ }
  }

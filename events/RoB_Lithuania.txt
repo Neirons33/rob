@@ -418,3 +418,128 @@ add_political_power = 150
 add_stability = 0.05
 }
 }
+
+###To join Aistija or nah
+country_event = { 
+id = lithuania.15
+title = "Lithuania invites us to the Aistija"
+desc = lithuania.15.d
+fire_only_once = yes
+mean_time_to_happen = { days = 1 }
+
+option = {
+ name = "Balts need to stay togheter"
+ LIT = { add_to_faction = PRS }
+}
+option = {
+name = "We must protect our independance"
+}
+}
+
+###To join Aistija or nah
+country_event = { 
+id = lithuania.16
+title = "Lithuania invites us to the Aistija"
+desc = lithuania.16.d
+fire_only_once = yes
+mean_time_to_happen = { days = 1 }
+
+option = {
+ name = "Balts need to stay togheter"
+ LIT = { add_to_faction = LAT }
+}
+option = {
+name = "We must protect our independance"
+}
+}
+###usury big gay - visuomis
+country_event = { 
+id = lithuania.17
+title = "Lithuania bans Usury"
+desc = lithuania.17.d
+fire_only_once = yes
+is_triggered_only = yes
+
+option = {
+ name = "What's a "usury"?"
+ add_stability = 0.05
+}
+}
+###jesus big gay - visuomis
+country_event = { 
+id = lithuania.18
+title = "Major Churches Closed in Lithuania!"
+desc = lithuania.18.d
+fire_only_once = yes
+mean_time_to_happen = { days = 1 }
+
+option = {
+ name = "So we returning to Perkūnas?"
+ }
+}
+###Belarusians? You mean Dnepr Balts?
+country_event = { 
+id = lithuania.19
+title = "Visuomis Declares the Rebirth of the Dnepr Balts!"
+desc = lithuania.19.d
+fire_only_once = yes
+mean_time_to_happen = { days = 1 }
+
+option = {
+ name = "Does he think he can create ethnicities from nothing?"
+ }
+}
+###Seimas Disbanded
+country_event = { 
+id = lithuania.20
+title = "General Škirpa Disbands the Seimas"
+desc = lithuania.20.d
+fire_only_once = yes
+mean_time_to_happen = { days = 1 }
+
+option = {
+ name = "Next he'll conscript Stulginskis..."
+ }
+}
+##Škirpa Wants to be Further involved...
+country_event = { 
+id = lithuania.21
+title = "General Škirpa asks permission to intervene into our affairs"
+desc = lithuania.21.d
+fire_only_once = yes
+mean_time_to_happen = { days = 1 }
+
+option = {
+ name = "If it means victory"
+ 		create_faction = "Škirpa's Block"
+
+ }
+ option = {
+name = "We must protect our independance"
+}
+}
+###The New Constitution
+country_event = { 
+id = lithuania.22
+title = "General Škirpa Creates a New Constitution"
+desc = lithuania.22.d
+fire_only_once = yes
+mean_time_to_happen = { days = 1 }
+
+option = {
+ name = "Why does it state he can shoot anyone..."
+ }
+}
+###Revisionalism
+country_event = { 
+id = lithuania.23
+title = "New History Textbooks"
+desc = lithuania.23.d
+fire_only_once = yes
+mean_time_to_happen = { days = 1 }
+
+option = {
+ name = "So huh, never knew the Poles were serfs to Lithuanians."
+ }
+}
+

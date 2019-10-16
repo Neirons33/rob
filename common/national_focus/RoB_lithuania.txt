@@ -22,7 +22,7 @@ focus_tree = {
 			focus = LIT_samogitianautonomy 
 		}
 		prerequisite = { 
-			focus = LIT_ 
+			focus = LIT_politicizethejaunalietuviai
 		}
 		completion_reward = {
 		add_ideas = {
@@ -45,9 +45,12 @@ focus_tree = {
 		prerequisite = { 
 			focus = LIT_returnofthebalts 
 		}
-		prerequisite = { 
-			focus = LIT_ 
-		}
+		completion_reward = { 
+        		add_stability = 0.1
+		add_popularity = {ideology = pelekist popularity =0.10}
+		add_political_power = 120
+ }
+		
 	}
 
 	#Focus for Invite Latvia to Join
@@ -59,8 +62,9 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_createaistija }
-		##completion_reward = {
-		##TBA
+		completion_reward = {
+		LAT = { country_event = { id = lithuania.16 days = 2 } }
+	}
 	}
 
 	#Focus for Get Prussia to Join
@@ -72,8 +76,19 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_invitelatviatojoin }
-		##completion_reward = {
-		##TBA
+		bypass = {
+        PRS = {
+        OR = {
+        has_country_flag = kaiser_controls_everything
+		has_country_flag = jungersjunta
+		has_country_flag = hess_victory
+		has_country_flag = rosenberg_victory
+		}
+		}
+		}
+		completion_reward = {
+		PRS = { country_event = { id = lithuania.15 days = 2 } }
+	}
 	}
 
 	#Focus for Declare Beržanskis a National Hero
@@ -90,8 +105,7 @@ focus_tree = {
   id = lithuania.14
   days = 2
  }
-}
-		
+}	
 	}
 
 	#Focus for Kunigaikštis Visuomis
@@ -124,9 +138,9 @@ focus_tree = {
 		prerequisite = { 
 			focus = LIT_battalionpriests 
 		}
-		prerequisite = { 
-			focus = LIT_ 
-		}
+		completion_reward = {
+		add_political_power = 150
+	}
 	}
 
 	#Focus for Legacy of the Crusades
@@ -138,6 +152,11 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_godiswithus }
+		completion_reward = {
+		add_ideas = {
+		lithuanian_crusaders
+		}
+		}
 	}
 
 	#Focus for Cult of Personality
@@ -149,6 +168,9 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_godiswithus }
+		completion_reward = {
+		add_popularity = {ideology = pelekist popularity =0.18}
+		}
 	}
 
 	#Focus for A New Baltic Crusade
@@ -160,6 +182,17 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_legacyofthecrusades }
+		completion_reward = {
+        11 = {
+        add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				}
+				 army_experience = 25
+}
 	}
 
 	#Focus for Priests in the Saugumas
@@ -171,6 +204,10 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_cultofpersonality }
+		completion_reward = {
+		add_popularity = {ideology = pelekist popularity =0.18}
+        add_stability = 0.06
+		}
 	}
 
 	#Focus for Move into Belarus
@@ -182,6 +219,12 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_anewbalticcrusade }
+				completion_reward = {
+		create_wargoal = {
+type = annex_everything
+target = BLR
+	}
+	}
 	}
 
 	#Focus for Battalion-Priests
@@ -193,6 +236,9 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_priestsinthesaugumas }
+		completion_reward = {
+		army_experience = 25
+		}
 	}
 
 	#Focus for Retake Belarus
@@ -204,6 +250,12 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_legacyofthedneperbalts }
+		completion_reward = {
+		create_wargoal = {
+type = annex_everything
+target = BLR
+	}
+	}
 	}
 
 	#Focus for Form a Dnepr Balt Identity
@@ -215,6 +267,11 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_retakebelarus }
+		completion_reward = {
+		933 = { add_core_of = LIT}
+		95 = { add_core_of = LIT}
+        96 = { add_core_of = LIT}
+    }
 	}
 
 	#Focus for Grand Federation of Lithuania
@@ -226,6 +283,7 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_formadneprbaltidentity }
+		completion_reward = { set_cosmetic_tag = LDK }
 	}
 
 	#Focus for Aid Latvian Pelekists!
@@ -248,6 +306,10 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_christianlithuaniannationalism }
+		completion_reward = {
+		add_political_power = 50
+		add_popularity = {ideology = pelekist popularity =0.18}
+		}
 	}
 
 	#Focus for The State Stable!
@@ -264,8 +326,9 @@ focus_tree = {
 		prerequisite = { 
 			focus = LIT_formtheministryofpropaganda 
 		}
-		prerequisite = { 
-			focus = LIT_ 
+			completion_reward = {
+			add_stability = 0.06
+
 		}
 	}
 
@@ -278,7 +341,12 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_awardthearmy }
-	}
+        completion_reward = {
+		add_ideas = {
+        paramilitarism
+ }
+ }
+ }
 
 	#Focus for Economic Growth
 	focus = {
@@ -289,6 +357,32 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_specializetheministryofeconomics }
+		completion_reward = {
+		 879 = {
+ add_extra_state_shared_building_slots = 1
+  add_building_construction = {
+	type = industrial_complex
+	level = 1
+	instant_build = yes
+}
+}
+ 189 = {
+ add_extra_state_shared_building_slots = 1
+  add_building_construction = {
+	type = industrial_complex
+	level = 1
+	instant_build = yes
+}
+}
+ 11 = {
+ add_extra_state_shared_building_slots = 1
+  add_building_construction = {
+	type = industrial_complex
+	level = 1
+	instant_build = yes
+}
+ }
+}
 	}
 
 	#Focus for Start to Hunt the Minorities
@@ -300,7 +394,10 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_purgeeveryone }
-	}
+		completion_reward = {
+		remove_ideas = { samogitian_identity }
+		}
+		}
 
 	#Focus for Pull out of Belarus
 	focus = {
@@ -311,6 +408,9 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_pulloutfromlatvia }
+		completion_reward = {
+		BLR = { remove_ideas = { BLR_lithuanian_influence } }
+	}
 	}
 
 	#Focus for Arm Lithuanians in Smolensk, Minsk and Latvia
@@ -322,6 +422,9 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_vytautasthegreatreborn }
+		completion_reward = {
+		custom_effect_tooltip = lit_tt_1
+		}
 	}
 
 	#Focus for Relithunize the Poles
@@ -333,6 +436,9 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_ruralideals }
+		completion_reward = {
+		add_stability = 0.1
+		}
 	}
 
 	#Focus for Use GDL Nostalgia
@@ -344,6 +450,11 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_relithunizethepoles }
+		completion_reward = {
+		 add_political_power = 120
+add_popularity = {ideology = authoritharian popularity =0.10}
+
+		}
 	}
 
 	#Focus for Legion of Foreign Lithuanians
@@ -355,6 +466,10 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_armlithuaniansinsmolenskminskandlatvia }
+		completion_reward = {
+        add_manpower = 10000
+		army_experience = 5
+    }
 	}
 
 	#Focus for God is with us!
@@ -374,8 +489,8 @@ focus_tree = {
 		prerequisite = { 
 			focus = LIT_clericalpelekism 
 		}
-		prerequisite = { 
-			focus = LIT_ 
+        completion_reward = {
+		add_political_power = 120
 		}
 	}
 
@@ -388,6 +503,11 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_legionofforeignlithuanians }
+		completion_reward = {
+    add_ideas = {
+	fanatical_army
+	}
+		}
 	}
 
 	#Focus for Specialize the Ministry of Economics
@@ -399,6 +519,12 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_corporativisteconomics }
+		completion_reward = {
+		 swap_ideas = {
+  remove_idea = corporativist_economics
+  add_idea = corporativist_economics_2
+ }
+		}
 	}
 
 	#Focus for Lithuania Great Again!
@@ -418,10 +544,11 @@ focus_tree = {
 		prerequisite = { 
 			focus = LIT_economicgrowth 
 		}
-		prerequisite = { 
-			focus = LIT_ 
+        completion_reward = {
+		add_popularity = {ideology = authoritharian popularity =0.10}
 		}
-	}
+		}
+	
 
 	#Focus for Tautos Vadas - Mironas
 	focus = {
@@ -448,6 +575,12 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_tautosvadasmironas }
+		completion_reward = {
+		 add_stability = 0.03
+		 add_popularity = {ideology = pelekist popularity =0.18}
+
+         
+		}
 	}
 
 	#Focus for Christianize History
@@ -459,6 +592,11 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_tautosvadasmironas }
+		completion_reward = {
+		###becoming hell###
+		add_popularity = {ideology = pelekist popularity =0.18}
+		add_political_power = 120
+	}
 	}
 
 	#Focus for Strengthen the Church
@@ -470,6 +608,10 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_tautosvadasmironas }
+		completion_reward = {
+		add_popularity = {ideology = pelekist popularity =0.18}
+        add_stability = 0.06
+	}
 	}
 
 	#Focus for Christian-Lithuanian Nationalism
@@ -481,6 +623,10 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_strengthenthechurch }
+		completion_reward = {
+		add_popularity = {ideology = pelekist popularity =0.18}
+		add_manpower = 1000
+		}
 	}
 
 	#Focus for Pull out from Latvia
@@ -503,6 +649,9 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_starttohunttheminorities }
+		completion_reward = {
+        add_stability = 0.03
+		}
 	}
 
 	#Focus for President Antanas Smetona
@@ -530,6 +679,9 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_presidentantanassmetona }
+        completion_reward = {
+		add_popularity = {ideology = democratic_socialist popularity =-0.18}
+	}
 	}
 
 	#Focus for "Edit" the Education System
@@ -541,6 +693,9 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_presidentantanassmetona }
+		completion_reward = {
+		add_popularity = {ideology = reactionary popularity =0.18}
+    }
 	}
 
 	#Focus for Ease Gun Laws
@@ -552,6 +707,9 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_awardtheriflemen }
+		completion_reward = {
+		add_ideas = { every_man_a_gun }
+		}
 	}
 
 	#Focus for Lithuanian Nationalism
@@ -563,6 +721,11 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_edittheeducationsystem }
+		completion_reward = {
+		add_popularity = {ideology = reactionary popularity =0.05}
+        add_popularity = {ideology = pelekist popularity =0.05}
+	    add_popularity = {ideology = authoritharian popularity =0.05}
+    }
 	}
 
 	#Focus for Historical Revisionalism
@@ -574,7 +737,13 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_lithuaniannationalism }
-	}
+		completion_reward = {
+		 country_event = { 
+  id = lithuania.23
+  days = 2
+ }
+		}
+		}
 
 	#Focus for Guranteed Loyalty
 	focus = {
@@ -585,6 +754,11 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_destroyvoldemaras }
+		completion_reward = {
+				add_ideas = {
+		loyal_military
+		}
+	}
 	}
 
 	#Focus for Vytautas the Great Reborn!
@@ -604,9 +778,10 @@ focus_tree = {
 		prerequisite = { 
 			focus = LIT_easegunlaws 
 		}
-		prerequisite = { 
-			focus = LIT_ 
-		}
+		completion_reward = {
+		add_stability = 0.06
+		add_popularity = {ideology = reactionary popularity =0.10}
+    }
 	}
 
 	#Focus for Corporativist Economics
@@ -618,6 +793,11 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_vytautasthegreatreborn }
+		completion_reward = {
+			    add_ideas = {
+		corporativist_economics
+        }
+		}
 	}
 
 	#Focus for Rural ideals
@@ -629,6 +809,11 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_vytautasthegreatreborn }
+		completion_reward = {
+	    add_ideas = {
+		agriculturalism
+        }
+		}
 	}
 
 	#Focus for Award the Army
@@ -640,6 +825,11 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_presidentantanassmetona }
+		completion_reward = {
+		remove_ideas = {
+		semi_loyal_military
+		}
+		}
 	}
 
 	#Focus for Destroy Voldemaras
@@ -651,6 +841,9 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_purgetheleft }
+		completion_reward = {
+				add_popularity = {ideology = pelekist popularity =-0.18}
+    }
 	}
 
 	#Focus for Duty for All!
@@ -662,6 +855,17 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_encouragesocialismofduty }
+		completion_reward = {
+		11 = {
+add_extra_state_shared_building_slots = 1
+add_building_construction = {
+	type = arms_factory
+	level = 1
+	instant_build = yes
+}
+}
+add_political_power = 120
+		}
 	}
 
 	#Focus for Baltification of the Lands
@@ -673,6 +877,11 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_getprussiatojoin }
+		completion_reward = {
+		188 = { add_core_of = LIT}
+		763 = { add_core_of = LIT}
+        1010 = { add_core_of = LIT}		
+	}
 	}
 
 	#Focus for Economic Rise
@@ -695,6 +904,11 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_thestatestable }
+		completion_reward = {
+		        add_ideas = {
+        socialism_of_duty
+ }
+	}
 	}
 
 	#Focus for Politicize the Jaunalietuviai
@@ -706,6 +920,10 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_paganbias }
+				completion_reward = {
+		add_stability = 0.06
+		add_popularity = {ideology = pelekist popularity =0.10}
+    }
 	}
 
 	#Focus for The New Nationalist Generation!
@@ -722,9 +940,10 @@ focus_tree = {
 		prerequisite = { 
 			focus = LIT_baltificationofthelands 
 		}
-		prerequisite = { 
-			focus = LIT_ 
-		}
+        		completion_reward = {
+     add_political_power = 120
+	 add_popularity = {ideology = pelekist popularity =0.10}
+    }
 	}
 
 	#Focus for Legacy of the Dneper Balts
@@ -736,6 +955,12 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_thestatestable }
+		completion_reward = {
+		 country_event = { 
+  id = lithuania.19
+  days = 2
+ }
+	}
 	}
 
 	#Focus for Curbing Unemployment
@@ -752,9 +977,7 @@ focus_tree = {
 		prerequisite = { 
 			focus = LIT_ourowncementandceramics 
 		}
-		prerequisite = { 
-			focus = LIT_ 
-		}
+
 	}
 
 	#Focus for Chamber of Agriculture
@@ -1631,6 +1854,10 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_thestatestable }
+		completion_reward = {
+		army_experience = 10
+		add_manpower = 15000
+	}
 	}
 
 	#Focus for Pagan Bias
@@ -1642,6 +1869,12 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_economicrise }
+		completion_reward = {
+		 country_event = { 
+  id = lithuania.18
+  days = 2
+ }
+	}
 	}
 
 	#Focus for Expand the Military
@@ -1653,6 +1886,10 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_purgeanyonenotpartoftheperknininkai }
+		completion_reward = {
+		army_experience = 20
+		add_manpower = 10000
+    }
 	}
 
 	#Focus for Form the Ministry of Propaganda
@@ -1664,6 +1901,10 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_banusuryvisoumis }
+				completion_reward = {
+		add_stability = 0.06
+		add_popularity = {ideology = pelekist popularity =0.10}
+    }
 	}
 
 	#Focus for Ban Usury
@@ -1675,6 +1916,12 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_declareberanskisanationalhero }
+		completion_reward = {
+		 country_event = { 
+  id = lithuania.17
+  days = 2
+ }
+	}
 	}
 
 	#Focus for Purge anyone not part of the Perkūnininkai
@@ -1686,6 +1933,10 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_kunigaiktisvisuomis }
+		completion_reward = {
+		add_stability = 0.06
+		add_popularity = {ideology = pelekist popularity =0.10}
+    }
 	}
 
 	#Focus for Create Aistija
@@ -1711,6 +1962,9 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_grandfederationoflithuania }
+		completion_reward = {
+		remove_ideas = { samogitian_identity }
+		}
 	}
 
 	#Focus for Free the Prussian Lithuanians!
@@ -1722,6 +1976,12 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_prepareforancampaign }
+		completion_reward = {
+				create_wargoal = {
+type = annex_everything
+target = PRS
+}
+}
 	}
 
 	#Focus for Take the Northern Lands
@@ -1733,7 +1993,21 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_prepareforancampaign }
-	}
+		completion_reward = {
+				create_wargoal = {
+type = annex_everything
+target = EST
+}
+if = {
+ limit = { LAT = { exists = yes } }
+ 
+		create_wargoal = {
+type = annex_everything
+target = LAT
+}
+		}
+		}
+		}
 
 	#Focus for Invade Belarus
 	focus = {
@@ -1744,6 +2018,12 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_prepareforancampaign }
+		completion_reward = {
+				create_wargoal = {
+type = annex_everything
+target = BLR
+		}
+	}
 	}
 
 	#Focus for Economic Boom
@@ -1758,6 +2038,17 @@ focus_tree = {
 			focus = LIT_industrialisation 
 			focus = LIT_ruralvalues 
 		}
+		completion_reward = {
+		11 = {
+ add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+
+}
+		}
 	}
 
 	#Focus for Industrialisation
@@ -1770,6 +2061,18 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_secularstate }
 		mutually_exclusive = { focus = LIT_ruralvalues }
+		completion_reward = {
+		  11 = {
+  add_extra_state_shared_building_slots = 2
+  add_building_construction = {
+  
+	type = industrial_complex
+	level = 3
+	instant_build = yes
+}
+
+ }
+		}
 	}
 
 	#Focus for Rural Values
@@ -1782,6 +2085,11 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_secularstate }
 		mutually_exclusive = { focus = LIT_industrialisation }
+		completion_reward = {
+		add_ideas = {
+		agriculturalism
+		}
+	}
 	}
 
 	#Focus for Fanatical Army
@@ -1793,6 +2101,11 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_formthelithuanianforeignlegion }
+		completion_reward = {
+		add_ideas = {
+		fanatical_army
+		}
+		}
 	}
 
 	#Focus for Indoctrinate the Youth
@@ -1804,6 +2117,10 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_kirposjaunimas }
+		completion_reward = {
+        add_popularity = {ideology = reactionary popularity =0.10}
+        add_stability = 0.05
+		}
 	}
 
 	#Focus for Secular State
@@ -1816,6 +2133,9 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = LIT_thearmywithastate
+		}
+		completion_reward = {
+		add_stability = 0.05
 		}
 	}
 
@@ -1836,6 +2156,10 @@ focus_tree = {
 		prerequisite = { 
 			focus = LIT_declaremobilization 
 		}
+		completion_reward = { 
+		add_ideas = {
+		military_state }
+		}
 
 	}
 
@@ -1848,6 +2172,9 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_thearmywithastate }
+		completion_reward = {
+				add_popularity = {ideology = reactionary popularity =0.10}
+    }
 	}
 
 	#Focus for Support for Minority Rights
@@ -1860,6 +2187,9 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_generalkirpa }
 		mutually_exclusive = { focus = LIT_interveneinbelarus }
+completion_reward = {
+ add_stability = 0.05
+}
 	}
 
 	#Focus for The Old Guard
@@ -1872,9 +2202,15 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = LIT_supportforminorityrights 
-			focus = LIT_interveneinbelarus 
-		}
+			focus = LIT_interveneinbelarus
+}			
+			
+					completion_reward = {
+			army_experience = 15
+			}
+		
 	}
+
 
 	#Focus for Farmer President
 	focus = {
@@ -1900,6 +2236,12 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_allowparamilitariesforallies }
+		completion_reward = {
+		add_ideas = {
+		war_economy
+		extensive_conscription
+		}
+		}
 	}
 
 	#Focus for Intervene in Belarus
@@ -1912,6 +2254,10 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_generalkirpa }
 		mutually_exclusive = { focus = LIT_supportforminorityrights }
+		completion_reward = {
+		BLR = { country_event = { id = lithuania.15 days = 2 } }
+
+	}
 	}
 
 	#Focus for Disband the Seimas
@@ -1923,6 +2269,14 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_purgetheleftskirpa }
+		completion_reward = {
+				completion_reward = {
+		 country_event = { 
+  id = lithuania.20
+  days = 2
+ }
+	}
+	}
 	}
 
 	#Focus for The New Constitution
@@ -1934,7 +2288,14 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_disbandtheseimas }
+						completion_reward = {
+		 country_event = { 
+  id = lithuania.22
+  days = 2
+ }
 	}
+	}
+
 
 	#Focus for Encourage Lithuanian Nationalism
 	focus = {
@@ -1945,7 +2306,11 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_encouragemilitarism }
+		completion_reward = {
+		add_popularity = {ideology = authoritharian popularity =0.10}
+    }
 	}
+
 
 	#Focus for The Red Scare
 	focus = {
@@ -1971,6 +2336,7 @@ focus_tree = {
 		}
 		completion_reward = {
 		add_political_power = 150
+		remove_ideas = { semi_loyal_military }
 		}
 	}
 
@@ -1983,6 +2349,10 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_generalkirpa }
+		completion_reward = {
+		 add_popularity = {ideology = democratic_socialist popularity =-0.02}
+ add_popularity = {ideology = socialist popularity =-0.02}
+ }
 	}
 
 	#Focus for Pelekist and Reactionary Allies
@@ -1994,6 +2364,10 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_generalkirpa }
+		completion_reward = {
+				add_popularity = {ideology = reactionary popularity =0.10}
+		add_popularity = {ideology = pelekist popularity =0.10}
+}
 	}
 
 	#Focus for Encourage Militarism
@@ -2005,6 +2379,11 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_generalkirpa }
+		completion_reward = {
+		add_ideas = {
+		militarism
+		}
+	}
 	}
 
 	#Focus for Allow Paramilitaries for Allies
@@ -2016,6 +2395,10 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_pelekistandreactionaryallies }
+		completion_reward = {
+		manpower = 3000
+		army_experience = 25
+	}
 	}
 
 	#Focus for Grant Power to the Younger Officers
@@ -2030,6 +2413,14 @@ focus_tree = {
 			focus = LIT_interveneinbelarus 
 			focus = LIT_supportforminorityrights 
 		}
+				completion_reward = {
+		add_tech_bonus = {
+    name = doctrine_bonus
+    bonus = 0.50
+    uses = 3
+	category = land_doctrine
+	}
+	}
 	}
 
 	#Focus for Form the Lithuanian Foreign Legion
@@ -2041,6 +2432,10 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_thearmywithastate }
+		completion_reward = {
+		manpower = 10000
+		army_experience = 50
+		}
 	}
 
 	#Focus for Prepare for an Campaign
@@ -2060,9 +2455,9 @@ focus_tree = {
 		prerequisite = { 
 			focus = LIT_indoctrinatetheyouth 
 		}
-		prerequisite = { 
-			focus = LIT_ 
-		}
+    completion_reward = {
+	add_political_power = 120
+	}
 	}
 
 	#Focus for Glory Restored!
@@ -2081,9 +2476,14 @@ focus_tree = {
 		}
 		prerequisite = { 
 			focus = LIT_takethenorthernlands 
-		}
-		prerequisite = { 
-			focus = LIT_ 
+		} 
+		completion_reward = {
+		188 = { add_core_of = LIT}
+		763 = { add_core_of = LIT}
+        1010 = { add_core_of = LIT}		
+		933 = { add_core_of = LIT}
+		95 = { add_core_of = LIT}
+        96 = { add_core_of = LIT}
 		}
 	}
 
@@ -2111,6 +2511,21 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_thepresidentwholivesasapeasant }
+		 completion_reward = {
+784 = {
+                add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+}
+ }
 	}
 
 	#Focus for Free Speach for All...
@@ -2122,6 +2537,10 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_thepresidentwholivesasapeasant }
+		completion_reward = {
+ add_popularity = {ideology = democratic_socialist popularity =0.02}
+ add_popularity = {ideology = socialist popularity =0.02}
+}
 	}
 
 	#Focus for Fight Corruption!
@@ -2133,6 +2552,15 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_buttheright }
+		completion_reward = {
+		 add_popularity = {ideology = socialist popularity =0.02}
+       add_ideas = { 
+	   loyal_military
+	   }
+		 remove_ideas = {
+		 semi_loyal_military
+		 }
+	}
 	}
 
 	#Focus for Reverse the Interventionalism
@@ -2144,6 +2572,9 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_industrilization }
+				completion_reward = {
+		BLR = { remove_ideas = { BLR_lithuanian_influence } }
+	}
 	}
 
 	#Focus for State-Aided Modernization
@@ -2155,6 +2586,22 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_reversetheinterventionalism }
+		completion_reward = {
+		 add_tech_bonus = {
+	name = oil
+	bonus = 0.5
+    uses = 2
+	category = industry
+}
+11 = {
+add_extra_state_shared_building_slots = 2
+ add_building_construction = {
+	type = industrial_complex
+	level = 2
+	instant_build = yes
+}
+}
+	}
 	}
 
 	#Focus for The Land Without Corruption
@@ -2171,10 +2618,12 @@ focus_tree = {
 		prerequisite = { 
 			focus = LIT_stateaidedmodernization 
 		}
-		prerequisite = { 
-			focus = LIT_ 
-		}
-	}
+		completion_reward = {
+ add_ideas = {
+   corruptionless_society
+  }
+  }
+  }
 
 	#Focus for A Example of Democracy!
 	focus = {
@@ -2188,6 +2637,9 @@ focus_tree = {
 			focus = LIT_apatrioticconservativestate 
 			focus = LIT_thelandwithoutcorruption 
 		}
+		completion_reward = {
+		add_political_power = 120
+		}
 	}
 
 	#Focus for Encourage Agriculturalism
@@ -2199,6 +2651,19 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_farmerpresident }
+		completion_reward = {
+		 add_ideas = { agriculturalism }
+189 = {
+    if = {
+        limit = { is_controlled_by = ROOT }
+        add_building_construction = {
+            type = infrastructure
+            level = 2
+            instant_build = yes
+        }
+    }
+}
+		}
 	}
 
 	#Focus for Encourage Christian Values
@@ -2210,6 +2675,10 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_encourageagriculturalism }
+		completion_reward = {
+		 add_popularity = {ideology = conservative popularity =0.02}
+		 add_political_power = 100
+		}
 	}
 
 	#Focus for Aid Ulmanis for Gurantees
@@ -2232,6 +2701,9 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_aidulmanisforgurantees }
+		completion_reward = {
+		UKR = { add_ideas = { BLR_lithuanian_influence } }
+		}
 	}
 
 	#Focus for The Democratic State
@@ -2256,6 +2728,38 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_farmerpresident }
+		completion_reward = {
+		784 = {
+    if = {
+        limit = { is_controlled_by = ROOT }
+        add_building_construction = {
+            type = bunker
+            level = 3
+            instant_build = yes
+        }
+    }
+}
+		879 = {
+    if = {
+        limit = { is_controlled_by = ROOT }
+        add_building_construction = {
+            type = bunker
+            level = 3
+            instant_build = yes
+        }
+    }
+}
+		189 = {
+    if = {
+        limit = { is_controlled_by = ROOT }
+        add_building_construction = {
+            type = bunker
+            level = 3
+            instant_build = yes
+        }
+    }
+}
+}
 	}
 
 	#Focus for Ban the Perkūnininkai
@@ -2267,6 +2771,9 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_encouragechristianvalues }
+		completion_reward = {
+		 add_popularity = {ideology = pelekist popularity =-0.05}
+}
 	}
 
 	#Focus for A Patriotic Conservative State
@@ -2286,6 +2793,9 @@ focus_tree = {
 		prerequisite = { 
 			focus = LIT_ 
 		}
+		completion_reward = {
+		add_political_power = 120
+		}
 	}
 
 	#Focus for ...But the Right
@@ -2297,6 +2807,10 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_freespeachforall }
+completion_reward = {
+ add_popularity = {ideology = pelekist popularity =-0.02}
+ add_popularity = {ideology = conservative popularity =-0.02}
+}
 	}
 
 	#Focus for Free Education!
@@ -2716,6 +3230,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_contractcompaniestoaidthearmy }
 	}
+	
 
 	#Focus for Modern Lithuanian Equipment
 	focus = {
