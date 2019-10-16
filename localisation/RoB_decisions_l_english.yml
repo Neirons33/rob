@@ -83,3 +83,9 @@ ROM_proclaim_kingdom_of_siberia_desc:0 "Proclaim Siberian Hegemony"
 ###Russian Reunification
 RUS_destroy_SOV:0 "Destroy the Bolsheviks!"
 
+
+###Siberian Socialists
+RUS_russian_revolution_siberia:0 "Finish the Russian Revolution!"
+RUS_proclaim_socialist_republic_of_siberia:0 "Announce Socialist Republic of Siberia"
+RUS_proclaim_eastern_russian_socialist_republic:0 "Proclaim Eastern Russian Socialist Republic"
+RUS_proclaim_united_russian_socialist:0 "Revolution Triumphmant!"

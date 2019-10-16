@@ -647,6 +647,106 @@ RUS_destroy_FER = {
  }
  
  }
+ 
+ RUS_russian_revolution_siberia = {
+ 
+  RUS_proclaim_socialist_republic_of_siberia = {
+ fire_only_once = yes
+  available = {
+ 
+ }
+ complete_effect = {
+  set_cosmetic_tag = RUS_SIB
+  every_state = {
+    limit = { 
+	OR = {
+	is_core_of = FER 
+	is_core_of = UGC
+    is_core_of = LES
+    is_core_of = OMS 
+    is_core_of = IRK
+    is_core_of = JSW
+    is_core_of = JOB
+    is_core_of = WFE   	   	
+	}
+	}
+	add_core_of = ROOT
+
+}
+ }
+ ai_will_do = {
+  base = 200
+ }
+ }
+ 
+  RUS_proclaim_eastern_russian_socialist_republic = {
+ fire_only_once = yes
+  available = {
+ has_cosmetic_tag = RUS_SIB
+ has_full_control_of_state = 217
+ has_full_control_of_state = 572
+ has_full_control_of_state = 561
+ }
+ complete_effect = {
+  set_cosmetic_tag = RUS_EAS
+    every_state = {
+    limit = { 
+	OR = {
+	is_core_of = RDR 
+	is_core_of = RUS
+    is_core_of = SOV
+    is_core_of = OMS 
+    is_core_of = CAA
+    is_core_of = CRM
+    is_core_of = CAU
+    is_core_of = DAG
+    is_core_of = CHE
+    is_core_of = MRP	
+	}
+	}
+	add_core_of = ROOT
+
+}
+ }
+ ai_will_do = {
+  base = 200
+ }
+ }
+ 
+   RUS_proclaim_united_russian_socialist = {
+ fire_only_once = yes
+  available = {
+ has_cosmetic_tag = RUS_EAS
+ has_full_control_of_state = 219
+ has_full_control_of_state = 195
+ has_full_control_of_state = 202
+ has_full_control_of_state = 206
+ has_full_control_of_state = 561
+ has_full_control_of_state = 12
+ }
+ complete_effect = {
+  set_cosmetic_tag = RUS_UNI
+      every_state = {
+    limit = { 
+	OR = {
+	is_core_of = FIN 
+	is_core_of = EST
+    is_core_of = LIT
+    is_core_of = UKR 
+    is_core_of = DCU
+    is_core_of = BLR
+	}
+	}
+	add_core_of = ROOT
+
+}
+ }
+ ai_will_do = {
+  base = 200
+ }
+ }
+ 
+ }
 
 
 
