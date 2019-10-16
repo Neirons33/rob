@@ -30,6 +30,8 @@
 #[tag]_authoritharian_ADJ:0 "Lithuanian"
 #[tag]_pelekist_ADJ:0 "Lithuanian"
  
+ ROB_OVEREXTENSION:0 "[?overextension]"
+
  ##Europa
  LIT_pelekist:0 "Lithuanian State"
  LIT_pelekist_DEF:0 "The Lithuanian State" 
