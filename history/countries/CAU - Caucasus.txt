@@ -1,5 +1,5 @@
 capital = 657
-
+oob = "CAU_1934"
 set_research_slots = 3
 
 set_technology = {

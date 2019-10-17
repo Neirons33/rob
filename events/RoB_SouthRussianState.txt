@@ -184,9 +184,9 @@ option = {
 
 ###Expansion Question
 country_event = {
- id = south_russian.5
+ id = south_russian.6
  title = "Question Of Expansion"
- desc = south_russian.5.d
+ desc = south_russian.6.d
  fire_only_once = yes
  is_triggered_only = yes
 
@@ -205,9 +205,9 @@ option = {
 
 ###Socialists busy
 country_event = {
- id = south_russian.6
+ id = south_russian.7
  title = "The Socialists Are Busy"
- desc = south_russian.6.d
+ desc = south_russian.7.d
  fire_only_once = yes
  mean_time_to_happen = { days = 2 }
 
@@ -241,9 +241,9 @@ country_event = {
  
  ###NIGGER NIFFEGER NIFGGER NIGEGRE NREIFHERASFDAS
  country_event = {
- id = south_russian.7
+ id = south_russian.8
  title = "Reactionaries Push In!"
- desc = south_russian.7.d
+ desc = south_russian.8.d
  fire_only_once = yes
  is_triggered_only = yes
  
@@ -281,9 +281,9 @@ country_event = {
 
  ###FUCK FUCK FUCK FUCK FUCK FUCK
  country_event = {
-  id = south_russian.8
+  id = south_russian.9
   title = "Socialists Fall Back!"
-  desc = south_russian.8.d
+  desc = south_russian.9.d
   fire_only_once = yes
   is_triggered_only = yes
   
@@ -295,15 +295,15 @@ country_event = {
   
   ###Socialist push back.hard.
   country_event = {
-   id = south_russian.9
+   id = south_russian.10
    title = "Socialists Push Back!"
-   desc = south_russian.8.d
+   desc = south_russian.10.d
    fire_only_once = yes
    is_triggered_only = yes
    
    option = {
     name = "War It Is Then!"
-    RDR = { declare_war_on = RUS }
+    RDR = { declare_war_on = { target = RUS type = annex_everything } }
 	add_manpower = 15000
 	add_war_support = 0.05
 	ai_chance = {
