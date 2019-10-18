@@ -179,12 +179,6 @@ RUS_southern_initiative = {
 	visible = {
     tag = RUS
 	}
-	available = {
-	ROOT = {
-	 has_full_control_of_state = 217
-	 has_full_control_of_state = 257
-	 }
-	}
 		  priority = {
 		  base = 100
 		  }

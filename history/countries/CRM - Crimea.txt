@@ -1,6 +1,5 @@
 ﻿capital = 375 #LA
 oob = "CRM_1934"
-oob = "TEX_1936"
 
 set_research_slots = 3
 
@@ -59,7 +58,8 @@ set_popularities = {
 }
 
 add_ideas = {
-	disarmed_nation
+    extensive_conscription
+	civil_war_attrition
 	free_trade
 }
 

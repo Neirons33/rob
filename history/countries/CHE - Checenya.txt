@@ -1,6 +1,7 @@
-capital = 985
+capital = 233
+oob = "CHE_1934"
 
-set_research_slots = 2
+set_research_slots = 1
 
 set_technology = {
 	infantry_weapons = 1

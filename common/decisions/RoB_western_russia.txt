@@ -13,9 +13,8 @@ RUS_expansion_question = {
  RUS_expand_southwards = {
   available = {
    has_country_flag = RUS_SOU_caucasus
-  }
-  available = {
    date > 1935.6.6
+   RUS = { exists = no }
   }
   fire_only_once = yes
   days_remove = 25
@@ -50,7 +49,15 @@ RUS_expansion_question = {
   }
  days_remove = 25
   available = {
+   OR = {
    has_country_flag = RUS_SOU_traitor
+   AND = {
+    DAG = { exists = no }
+    CHE = { exists = no }
+    GEO = { exists = no }
+    AZR = { exists = no }
+    MRP = { exists = no }
+   }
   }
  remove_effect = {
    create_wargoal = { type = annex_everything target = RUS }
@@ -64,12 +71,19 @@ RUS_expansion_question = {
 			}
  }
 }
+}
 
 RUS_southern_initiative = {
 
 RUS_integrate_southern_lands = {
  fire_only_once = yes
  days_remove = 50
+ available = {
+	ROOT = {
+	 has_full_control_of_state = 217
+	 has_full_control_of_state = 257
+	 }
+	}
  remove_effect = {
     set_cosmetic_tag = RUS_SOU
     every_state = {
@@ -85,4 +99,18 @@ RUS_integrate_southern_lands = {
   }
 }
 
+}
+
+RUS_mobilize_militias = {
+fire_only_once = yes
+available = {
+ has_war = yes
+}
+ai_will_do = {
+			base = 200
+		}
+complete_effect = {
+RUS = { load_oob = "RUS_militias" }
+}
+}
 }
