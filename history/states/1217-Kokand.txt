@@ -1,31 +1,32 @@
 
 state={
-	id=732
-	name="STATE_732"
+	id=1217
+	name="STATE_1217"
 
 resources={
 
-chromium=2.000
+chromium=3.000
 	}
 
 	history={
 		add_core_of = KYR
 		owner = KYR
 		victory_points = {
-			12583 1 
+			10488 3 
 		}
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
+			arms_factory = 1
 
 		}
 
 	}
 
 	provinces={
-		1675 1825 4224 4316 4391 4768 10408 10530 10660 12511 12583 13147 
+		1483 5062 10187 10488 12370
 	}
-	manpower=223120
+	manpower=241290
 	buildings_max_level_factor=1.000
 	state_category=rural
 }
