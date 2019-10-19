@@ -55,6 +55,8 @@ weak_king
 prussian_army
 prussian_high_command
 extensive_conscription
+isolation
+the_great_depression
 }
 
 create_country_leader = {

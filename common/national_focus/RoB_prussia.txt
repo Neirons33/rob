@@ -582,11 +582,16 @@ focus_tree = {
 		icon = GFX_focus_PRS_increase_conscription
 		x = 11
 		y = 13
-		cost = 5
+		cost = 1
 		available_if_capitulated = yes
 		prerequisite = { focus = PRS_agermanarmy }
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+		 add_ideas = {
+		  PRS_fanatic_army
+		 }
 		}
 	}
 
@@ -598,26 +603,28 @@ focus_tree = {
 		y = 14
 		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { 
-			focus = PRS_burnthevillages 
-		}
-		prerequisite = { 
-			focus = PRS_importforignersforthearmy 
-		}
-		prerequisite = { 
-			focus = PRS_encourageanticommunism 
-		}
-		prerequisite = { 
-			focus = PRS_adealwiththelithuanians 
-		}
-		prerequisite = { 
-			focus = PRS_assassinateexiledenemies 
-		}
-		prerequisite = { 
-			focus = PRS_afanaticarmy 
+		prerequisite = { focus = PRS_theethnicquestion }
+        available = {
+		 OR = {
+		  AND = {
+		   has_completed_focus = PRS_encourageanticommunism
+		   has_completed_focus = PRS_importforignersforthearmy
+		   has_completed_focus = PRS_adealwiththelithuanians
+		  }
+		  AND = {
+		   has_completed_focus = PRS_assassinateexiledenemies
+		   has_completed_focus = PRS_afanaticarmy
+		   has_completed_focus = PRS_burnthevillages
+		  }
+		 }
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+		 remove_ideas = {
+		  minority_troubles
+		 }
 		}
 	}
 
@@ -627,11 +634,14 @@ focus_tree = {
 		icon = GFX_focus_PRS_burn_villiages
 		x = 13
 		y = 13
-		cost = 5
+		cost = 1
 		available_if_capitulated = yes
 		prerequisite = { focus = PRS_executepolishinteligencia }
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+		add_stability =-0.07
 		}
 	}
 
@@ -641,11 +651,14 @@ focus_tree = {
 		icon = GFX_focus_PRS_purge_lith_leaders
 		x = 9
 		y = 12
-		cost = 5
+		cost = 1
 		available_if_capitulated = yes
 		prerequisite = { focus = PRS_executedissentinggroups }
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+		 add_stability =-0.03
 		}
 	}
 
@@ -655,11 +668,14 @@ focus_tree = {
 		icon = GFX_focus_PRS_assasinate_exiled_enemies
 		x = 9
 		y = 13
-		cost = 5
+		cost = 1
 		available_if_capitulated = yes
 		prerequisite = { focus = PRS_purgetheminorities }
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+		 add_political_power = 50
 		}
 	}
 
@@ -671,9 +687,18 @@ focus_tree = {
 		y = 11
 		cost = 5
 		available_if_capitulated = yes
+		available = {
+		 OR = {
+		  has_government = social_democracy
+		  has_government = social_liberal
+		 }
+		}
 		prerequisite = { focus = PRS_placatetheminorities }
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+		 add_stability = 0.05
 		}
 	}
 
@@ -683,11 +708,14 @@ focus_tree = {
 		icon = GFX_focus_PRS_execute_dissidents
 		x = 9
 		y = 11
-		cost = 5
+		cost = 1
 		available_if_capitulated = yes
 		prerequisite = { focus = PRS_purgetheminorities }
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+		 add_stability =-0.03
 		}
 	}
 
@@ -697,11 +725,15 @@ focus_tree = {
 		icon = GFX_focus_PRS_disband_ethnic_units
 		x = 11
 		y = 11
-		cost = 5
+		cost = 1
 		available_if_capitulated = yes
 		prerequisite = { focus = PRS_purgetheminorities }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		 add_stability =-0.03
+		 add_manpower =-7214
 		}
 	}
 
@@ -711,11 +743,15 @@ focus_tree = {
 		icon = GFX_focus_PRS_fantical_for_kaiser
 		x = 11
 		y = 12
-		cost = 5
+		cost = 1
 		available_if_capitulated = yes
 		prerequisite = { focus = PRS_disbandtheethnicunits }
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+		 add_war_support = 0.05
+		 add_popularity = { ideology = reactionary popularity = 0.05 }
 		}
 	}
 
@@ -725,12 +761,20 @@ focus_tree = {
 		icon = GFX_goal_continuous_suppression 
 		x = 11
 		y = 10
-		cost = 5
+		cost = 2
 		available_if_capitulated = yes
+		available = {
+		has_country_flag = jungersjunta
+		has_country_flag = hess_victory
+		has_country_flag = kaiser_controls_everything
+		}
 		prerequisite = { focus = PRS_theethnicquestion }
 		mutually_exclusive = { focus = PRS_placatetheminorities }
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+		 add_stability =-0.03
 		}
 	}
 
@@ -742,9 +786,19 @@ focus_tree = {
 		y = 11
 		cost = 5
 		available_if_capitulated = yes
+		available = {
+		 OR = {
+		  has_government = social_democracy
+		  has_government = social_liberal
+		 }
+		}
 		prerequisite = { focus = PRS_placatetheminorities }
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+		 add_manpower =-145
+		 add_war_support =0.01
 		}
 	}
 
@@ -756,9 +810,18 @@ focus_tree = {
 		y = 13
 		cost = 5
 		available_if_capitulated = yes
+		available = {
+		 OR = {
+		  has_government = social_democracy
+		  has_government = social_liberal
+		 }
+		}
 		prerequisite = { focus = PRS_themenmustbefanatics }
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+		add_manpower = 23872
 		}
 	}
 
@@ -768,11 +831,16 @@ focus_tree = {
 		icon = GFX_focus_PRS_junger_germanisation
 		x = 13
 		y = 11
-		cost = 5
+		cost = 1
 		available_if_capitulated = yes
 		prerequisite = { focus = PRS_purgetheminorities }
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+		 5 = { add_manpower =-32541 }
+		 763 = { add_manpower = -23125 }
+		 188 = { add_manpower = -3121 }
 		}
 	}
 
@@ -784,9 +852,20 @@ focus_tree = {
 		y = 12
 		cost = 5
 		available_if_capitulated = yes
+		available = {
+		 OR = {
+		  has_government = social_democracy
+		  has_government = social_liberal
+		 }
+		}
 		prerequisite = { focus = PRS_purgethefewtraitors }
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+		 add_ideas = {
+		  agriculture_resources_bukarin
+		 }
 		}
 	}
 
@@ -798,9 +877,20 @@ focus_tree = {
 		y = 13
 		cost = 5
 		available_if_capitulated = yes
+		available = {
+		 OR = {
+		  has_government = social_democracy
+		  has_government = social_liberal
+		 }
+		}
 		prerequisite = { focus = PRS_encourageruralvalues }
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+		 add_popularity = { ideology = national_socialist popularity =-0.1 }
+		 add_popularity = { ideology = socialist popularity =-0.1 }
+		 add_popularity = { ideology = democratic_socialist popularity =-0.1 }
 		}
 	}
 
@@ -812,9 +902,18 @@ focus_tree = {
 		y = 12
 		cost = 5
 		available_if_capitulated = yes
+		available = {
+		 OR = {
+		  has_government = social_democracy
+		  has_government = social_liberal
+		 }
+		}
 		prerequisite = { focus = PRS_supportminoritycustoms }
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+		 add_political_power = 40
 		}
 	}
 
@@ -826,9 +925,18 @@ focus_tree = {
 		y = 13
 		cost = 5
 		available_if_capitulated = yes
+		available = {
+		 OR = {
+		  has_government = social_democracy
+		  has_government = social_liberal
+		 }
+		}
 		prerequisite = { focus = PRS_adealwiththepoles }
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+		 add_war_support = 0.05
 		}
 	}
 
@@ -838,10 +946,23 @@ focus_tree = {
 		icon = GFX_goal_continuous_restrict_freedom
 		x = 8
 		y = 9
-		cost = 5
+		cost = 1
 		available_if_capitulated = yes
+		available = {
+		 OR = {
+		  has_country_flag = jungersjunta
+		  has_country_flag = vyddunas_victory
+		  has_country_flag = rosenberg_victory
+		  has_country_flag = hess_victory
+		  has_country_flag = kaiser_controls_everything
+		  has_country_flag = democratic_elections
+		 }
+		}
 		ai_will_do = {
-			factor = 1
+			factor = 1000
+		}
+		completion_reward = {
+		 add_stability = 0.03
 		}
 	}
 
@@ -851,12 +972,23 @@ focus_tree = {
 		icon = GFX_goal_continuous_increase_nu
 		x = 5
 		y = 10
-		cost = 5
+		cost = 2
 		available_if_capitulated = yes
+		available = {
+		has_government = social_democracy
+		has_government = social_liberal
+		has_government = conservative
+		has_country_flag = vyddunas_victory
+		has_country_flag = rosenberg_victory
+		has_country_flag = kaiser_controls_everything
+		}
 		prerequisite = { focus = PRS_theethnicquestion }
 		mutually_exclusive = { focus = PRS_purgetheminorities }
 		ai_will_do = {
-			factor = 1
+			factor = 200
+		}
+		completion_reward = {
+		 add_war_support = 0.03
 		}
 	}
 
@@ -866,11 +998,21 @@ focus_tree = {
 		icon = GFX_focus_PRS_purge_few_traitors
 		x = 3
 		y = 11
-		cost = 5
+		cost = 2
 		available_if_capitulated = yes
+		available = {
+		 OR = {
+		  has_government = social_democracy
+		  has_government = social_liberal
+		 }
+		}
 		prerequisite = { focus = PRS_placatetheminorities }
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+		 add_popularity = { ideology = pelekist popularity = -0.05 }
+		 add_popularity = { ideology = reactionary popularity = -0.05 }
 		}
 	}
 
@@ -882,9 +1024,18 @@ focus_tree = {
 		y = 12
 		cost = 5
 		available_if_capitulated = yes
+		available = {
+		 OR = {
+		  has_government = social_democracy
+		  has_government = social_liberal
+		 }
+		}
 		prerequisite = { focus = PRS_sendinthearmytothetowns }
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+		 add_war_support = 0.05
 		}
 	}
 
@@ -894,11 +1045,14 @@ focus_tree = {
 		icon = GFX_focus_PRS_execute_poles
 		x = 13
 		y = 12
-		cost = 5
+		cost = 1
 		available_if_capitulated = yes
 		prerequisite = { focus = PRS_enforcegermanisationordeath }
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+		 add_manpower =-3275
 		}
 	}
 
@@ -2207,7 +2361,12 @@ focus_tree = {
 		cost = 5
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 1
+			factor = 10
+		}
+		completion_reward = {
+		 add_ideas = {
+		  civilian_economy
+		 }
 		}
 	}
 
@@ -2221,7 +2380,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = PRS_theprussianeconomy }
 		ai_will_do = {
-			factor = 1
+			factor = 10
+		}
+		completion_reward = {
+		 add_ideas= {
+		  PRS_industrialization
+		 }
 		}
 	}
 
@@ -2235,8 +2399,30 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = PRS_theprussianeconomy }
 		ai_will_do = {
-			factor = 1
+			factor = 10
 		}
+      completion_reward = {
+	    188 = {
+        if = {
+        limit = { is_controlled_by = ROOT }
+        add_building_construction = {
+            type = infrastructure
+            level = 1
+            instant_build = yes
+        }
+    }
+}
+	    763 = {
+        if = {
+        limit = { is_controlled_by = ROOT }
+        add_building_construction = {
+            type = infrastructure
+            level = 1
+            instant_build = yes
+        }
+    }
+}
+	  }
 	}
 
 	#Focus for The Big Industrialists
@@ -2249,7 +2435,10 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = PRS_pkjmrzKw }
 		ai_will_do = {
-			factor = 1
+			factor = 10
+		}
+		completion_reward = {
+		 add_stability = 0.05
 		}
 	}
 
@@ -2263,7 +2452,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = PRS_ouragriculturalroots }
 		ai_will_do = {
-			factor = 1
+			factor = 10
+		}
+		completion_reward = {
+		 add_ideas = {
+		  PRS_land_reforms_1
+		 }
 		}
 	}
 
@@ -2277,7 +2471,13 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = PRS_startthelandreform }
 		ai_will_do = {
-			factor = 1
+			factor = 10
+		}
+		completion_reward = {
+		 swap_ideas = {
+		  remove_idea = PRS_land_reforms_1
+		  add_idea = PRS_land_reforms_2
+		 }
 		}
 	}
 
@@ -2291,8 +2491,19 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = PRS_thebigindustrialists }
 		ai_will_do = {
-			factor = 1
+			factor = 10
 		}
+       completion_reward = {
+	   188 = { 
+        add_extra_state_shared_building_slots = 1
+        add_building_construction = {
+ 
+	   type = industrial_complex
+	   level = 1
+	   instant_build = yes
+}
+}
+}
 	}
 
 	#Focus for Prussian Socialism
@@ -2305,7 +2516,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = PRS_theprussianeconomy }
 		ai_will_do = {
-			factor = 1
+			factor = 10
+		}
+	   completion_reward = {
+		 add_ideas= {
+		  PRS_pruss_soc
+		 }
 		}
 	}
 
@@ -2319,7 +2535,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = PRS_theprussianeconomy }
 		ai_will_do = {
-			factor = 1
+			factor = 10
+		}
+		completion_reward = {
+		 add_ideas = {
+		  PRS_eco_reforms_1
+		 }
 		}
 	}
 
@@ -2333,8 +2554,30 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = PRS_prussiansocialism }
 		ai_will_do = {
-			factor = 1
+			factor = 10
 		}
+      completion_reward = {
+	    188 = {
+        if = {
+        limit = { is_controlled_by = ROOT }
+        add_building_construction = {
+            type = infrastructure
+            level = 1
+            instant_build = yes
+        }
+    }
+}
+	    763 = {
+        if = {
+        limit = { is_controlled_by = ROOT }
+        add_building_construction = {
+            type = infrastructure
+            level = 1
+            instant_build = yes
+        }
+    }
+}
+	  }
 	}
 
 	#Focus for Controling the Inflation
@@ -2347,7 +2590,13 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = PRS_reformthebankingsector }
 		ai_will_do = {
-			factor = 1
+			factor = 10
+		}
+		completion_reward = {
+		swap_ideas = {
+		 add_idea = PRS_eco_reforms_2
+		 remove_idea = PRS_eco_reforms_1
+		}
 		}
 	}
 
@@ -2361,7 +2610,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = PRS_publicworkprojects }
 		ai_will_do = {
-			factor = 1
+			factor = 10
+		}
+		completion_reward = {
+		 add_ideas = {
+		  PRS_no_unemployment
+		 }
 		}
 	}
 
@@ -2380,8 +2634,19 @@ focus_tree = {
 			focus = PRS_daimlerag 
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 10
 		}
+		      completion_reward = {
+			  763 = { 
+        add_extra_state_shared_building_slots = 1
+        add_building_construction = {
+ 
+	   type = arms_factory
+	   level = 1
+	   instant_build = yes
+}
+}
+}
 	}
 
 	#Focus for Revise the State Budget
@@ -2394,7 +2659,13 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = PRS_controlingtheinflation }
 		ai_will_do = {
-			factor = 1
+			factor = 10
+		}
+		completion_reward = {
+		 swap_ideas = {
+		  remove_idea = PRS_eco_reforms_2
+		  add_idea = PRS_eco_reforms_3
+		 }
 		}
 	}
 
@@ -2415,6 +2686,17 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+	      completion_reward ={
+		  5 = { 
+        add_extra_state_shared_building_slots = 1
+        add_building_construction = {
+ 
+	   type = industrial_complex
+	   level = 1
+	   instant_build = yes
+}
+}
+}
 	}
 
 	#Focus for Braun GmbH
@@ -2434,6 +2716,17 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+       completion_reward = {
+	   85 = { 
+        add_extra_state_shared_building_slots = 1
+        add_building_construction = {
+ 
+	   type = industrial_complex
+	   level = 1
+	   instant_build = yes
+}
+}
+}
 	}
 
 	#Focus for Massive Infrastructure Program
@@ -2451,7 +2744,39 @@ focus_tree = {
 			focus = PRS_claas 
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+		  188 = {
+        if = {
+        limit = { is_controlled_by = ROOT }
+        add_building_construction = {
+            type = infrastructure
+            level = 2
+            instant_build = yes
+        }
+    }
+}
+ 5 = {
+    if = {
+        limit = { is_controlled_by = ROOT }
+        add_building_construction = {
+            type = infrastructure
+            level = 2
+            instant_build = yes
+        }
+    }
+}
+ 763 = {
+    if = {
+        limit = { is_controlled_by = ROOT }
+        add_building_construction = {
+            type = infrastructure
+            level = 2
+            instant_build = yes
+        }
+    }
+}
 		}
 	}
 
@@ -2470,7 +2795,25 @@ focus_tree = {
 			focus = PRS_braungmbh 
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 10
+		}
+		completion_reward = {
+		 763 = {
+add_extra_state_shared_building_slots = 2
+add_building_construction = {
+	type = arms_factory
+	level = 2
+	instant_build = yes
+}
+}
+5 = {
+add_extra_state_shared_building_slots = 2
+add_building_construction = {
+	type = arms_factory
+	level = 2
+	instant_build = yes
+}
+}
 		}
 	}
 
@@ -2489,7 +2832,12 @@ focus_tree = {
 			focus = PRS_massiveinfrastructureprogram 
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+		 remove_ideas = {
+		 the_great_depression
+		 }
 		}
 	}
 
