@@ -764,9 +764,11 @@ focus_tree = {
 		cost = 2
 		available_if_capitulated = yes
 		available = {
+		OR = {
 		has_country_flag = jungersjunta
 		has_country_flag = hess_victory
 		has_country_flag = kaiser_controls_everything
+		}
 		}
 		prerequisite = { focus = PRS_theethnicquestion }
 		mutually_exclusive = { focus = PRS_placatetheminorities }
@@ -975,12 +977,14 @@ focus_tree = {
 		cost = 2
 		available_if_capitulated = yes
 		available = {
+		OR = {
 		has_government = social_democracy
 		has_government = social_liberal
 		has_government = conservative
 		has_country_flag = vyddunas_victory
 		has_country_flag = rosenberg_victory
 		has_country_flag = kaiser_controls_everything
+		}
 		}
 		prerequisite = { focus = PRS_theethnicquestion }
 		mutually_exclusive = { focus = PRS_purgetheminorities }
