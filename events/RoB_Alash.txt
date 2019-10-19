@@ -142,11 +142,15 @@ start_border_war = {
 732 = { create_unit = {
     division = "name = \"1st Kirghiz Militia\" division_template = \"Militia Forces\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
     owner = KYR
+prioritize_location = 1825
+
 }
 }
 732 = { create_unit = {
     division = "name = \"2nd Kirghiz Militia\" division_template = \"Militia Forces\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
     owner = KYR
+prioritize_location = 4224
+
 }
 }
 add_manpower = 5000
@@ -245,11 +249,9 @@ NOT = { KYR = { owns_state = 732 } }
 option = {
 name = alash.105.a
 ai_chance = { factor = 100}
-annex_country = {
-    target = KYR
-    transfer_troops = yes
-}
+
 742 = { add_core_of = UZB }
+UZB = { transfer_state = 742 } 
 
 }
 
