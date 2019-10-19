@@ -83,6 +83,11 @@ ROM_proclaim_kingdom_of_siberia_desc:0 "Proclaim Siberian Hegemony"
 ###Russian Reunification
 RUS_destroy_SOV:0 "Destroy the Bolsheviks!"
 
+###Sretenskan Return
+SFS_german_reformation:0 "Return of the Exiles"
+SFS_german_reformation_desc:0 "With our national homeland secured the old soldiers of Sretensk are finally home. It is finally time to restore the old order to the world."
+SFS_german_empire:0 "Restore the German Empire"
+SFS_austria_empire:0 "Restore the Austro-Hungarian Empire"
 
 ###Siberian Socialists
 RUS_russian_revolution_siberia:0 "Finish the Russian Revolution!"
