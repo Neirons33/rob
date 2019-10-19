@@ -707,9 +707,9 @@ set_country_flag = rosenberg_victory
 }
 
 country_event = {
-id = prussia.19
-title = prussia.19.t
-desc = prussia.19.d
+id = prussia.20
+title = prussia.20.t
+desc = prussia.20.d
 fire_only_once = yes
 hidden = yes
 
@@ -729,6 +729,163 @@ value > 1
 has_country_flag = debate_done
 }
 mean_time_to_happen = { days = 2 }
+
+immediate = { PRS = { country_event = { id = prussia.18 days = 1 } } }
 }
-immediate = { PRS = { country_event = { id = prussia.18 } } }
+
+#####FOCUS TREE EVENTS
+country_event = {
+ id = prussia.21
+ title = "Church and Partisans"
+ desc = prussia.21.d
+ fire_only_once = yes
+ is_triggered_only = yes
+ 
+ option = {
+  name = "Repress The Church!"
+  add_stability = -0.15
+  add_to_variable = { var = northern_partisan_strenght value =-10 } 
+  ai_chance = {
+   factor = 100
+  }
+ }
+ 
+ option = {
+  name = "We Can't Attack Church!"
+  add_political_power = -100
+ }
 }
+
+###Nordicism
+country_event = {
+ id = prussia.22
+ title = "Nordic Direction"
+ desc = prussia.22.d
+ fire_only_once = yes
+ is_triggered_only = yes
+ 
+ option = {
+  name = "The Nordic State is Coming!"
+  set_country_flag = PRS_nordic_direction
+  add_war_support = 0.1
+  ai_chance = {
+   factor = 100
+  }
+ }
+ }
+ 
+ ###Positive Christianity
+ country_event = {
+ id = prussia.23
+ title = "Positive Christianity"
+ desc = prussia.23.d
+ fire_only_once = yes
+ is_triggered_only = yes
+ 
+ option = {
+  name = "The Aryan Marches Forwards"
+  add_popularity = { ideology = pelekist popularity = 0.06 }
+  ai_chance = {
+   factor = 100
+  }
+ }
+ }
+ 
+ ###vydunas hess meeting
+ country_event = {
+ id = prussia.24
+ title = "A Meeting in Konigsberg"
+ desc = prussia.24.d
+ fire_only_once = yes
+ is_triggered_only = yes
+ 
+ option = {
+  name = "The Aryan Marches Forwards"
+  add_popularity = { ideology = pelekist popularity = 0.1 }
+  ai_chance = {
+   factor = 100
+  }
+ }
+ }
+ 
+ ###religious question
+ country_event = {
+ id = prussia.25
+ title = "The Question of Religion"
+ desc = prussia.25.d
+ fire_only_once = yes
+ is_triggered_only = yes
+ 
+ option = {
+  name = "We Should Reform Christianity..."
+  add_popularity = { ideology = reactionary popularity = 0.05 }
+  add_popularity = { ideology = authoritharian popularity = 0.05 }
+  add_ideas = {
+   PRS_positive_christianity
+  }
+  ai_chance = {
+   factor = 100
+  }
+ }
+  option = {
+  name = "Bring Back Odinism!"
+  add_popularity = { ideology = pelekist popularity = 0.15 }
+  add_ideas = {
+   PRS_odinism
+  }
+  ai_chance = {
+   factor = 100
+  }
+ }
+ }
+ 
+ ###Prussian Brahmins
+  country_event = {
+ id = prussia.26
+ title = "A New Aristocracy"
+ desc = prussia.26.d
+ fire_only_once = yes
+ is_triggered_only = yes
+ 
+ option = {
+  name = "Prussia Stands Strong!"
+  add_popularity = { ideology = pelekist popularity = 0.1 }
+  ai_chance = {
+   factor = 100
+  }
+ }
+ }
+ 
+ ###Prussian Brahmins
+  country_event = {
+   id = prussia.27
+   title = "Council of Brammans"
+   desc = prussia.27.d
+   fire_only_once = yes
+   is_triggered_only = yes
+ 
+  option = {
+   name = "Soon, All Baltic Lands Will Shine Again!"
+   add_popularity = { ideology = pelekist popularity = 0.1 }
+   ai_chance = {
+    factor = 100
+   }
+  }
+ }
+ 
+  ###Prussian Support Arrives
+  country_event = {
+   id = prussia.28
+   title = "Latvian Partisans Recieve Backing From Prussia"
+   desc = prussia.28.d
+   fire_only_once = yes
+   is_triggered_only = yes
+ 
+  option = {
+   name = "And Local Germans Will Just Stand By?"
+   add_stability =-0.1
+   ai_chance = {
+    factor = 100
+   }
+  }
+ }

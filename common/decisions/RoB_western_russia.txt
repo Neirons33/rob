@@ -12,9 +12,13 @@ RUS_expansion_question = {
 
  RUS_expand_southwards = {
   available = {
+   OR = {
+   AND = {
    has_country_flag = RUS_SOU_caucasus
    date > 1935.6.6
+   }
    RUS = { exists = no }
+  }
   }
   fire_only_once = yes
   days_remove = 25
