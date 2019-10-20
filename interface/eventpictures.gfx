@@ -2010,6 +2010,11 @@ spriteTypes = {
 		name = "GFX_picture_willhelm_iii"
 		texturefile = "gfx/event_pictures/willhelm_iii.tga"
 	}
+				spriteType = {
+		name = "GFX_picture_PRS_baltic_ritual"
+		texturefile = "gfx/event_pictures/PRS_baltic_ritual.tga"
+	}
+	
 	}
 
 	

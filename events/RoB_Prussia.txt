@@ -89,7 +89,9 @@ mean_time_to_happen = { days = 1 }
 
 option = {  ###Kaiser Dies!
 name = prussia.3.a
-
+remove_ideas = {
+ weak_king
+}
 set_country_flag = kaiser_dead
 
 
@@ -326,6 +328,7 @@ set_politics = {
 ruling_party = social_democracy
 elections_allowed = yes
 }
+set_country_flag = spd_victory
 add_popularity = {ideology = social_democracy popularity =0.25}
 add_political_power = 100
 add_stability = 0.03
@@ -359,7 +362,7 @@ elections_allowed = yes
 add_popularity = {ideology = conservative popularity =0.25}
 add_political_power = 100
 add_stability = 0.1
-set_country_flag = spd_victory
+set_country_flag = dnvp_victory
 }
 }
 
@@ -391,6 +394,10 @@ name = prussia.11.a
 set_politics = {
 ruling_party = pelekist
 elections_allowed = no
+}
+if = {
+ limit = { has_cosmetic_tag = PRS_REP }
+ drop_cosmetic_tag = yes
 }
 add_popularity = {ideology = pelekist popularity =0.4}
 add_political_power = 120
@@ -611,6 +618,7 @@ add_political_power = 50
 custom_effect_tooltip = prs_tt_2
 
 hidden_effect = {
+set_cosmetic_tag = PRS_VYD
 create_country_leader = {
 	name = "Vydūnas"
 	desc = ""
@@ -768,6 +776,7 @@ country_event = {
   name = "The Nordic State is Coming!"
   set_country_flag = PRS_nordic_direction
   add_war_support = 0.1
+  create_faction = "Nordic Pact"
   ai_chance = {
    factor = 100
   }
@@ -863,6 +872,7 @@ country_event = {
    desc = prussia.27.d
    fire_only_once = yes
    is_triggered_only = yes
+   picture = GFX_picture_PRS_baltic_ritual
  
   option = {
    name = "Soon, All Baltic Lands Will Shine Again!"

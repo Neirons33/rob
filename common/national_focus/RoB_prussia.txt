@@ -247,8 +247,10 @@ focus_tree = {
 		cost = 5
 		available_if_capitulated = yes
 		available = {
+		OR = {
 		 has_government = social_liberal
 		 has_government = conservative
+		 }
 		}
 		prerequisite = { focus = PRS_supporttheprussiannobility }
 		ai_will_do = {
@@ -688,9 +690,9 @@ focus_tree = {
 		cost = 5
 		available_if_capitulated = yes
 		available = {
-		 OR = {
-		  has_government = social_democracy
-		  has_government = social_liberal
+		 NOT = {
+		  has_country_flag = hess_victory
+		  has_country_flag = jungersjunta
 		 }
 		}
 		prerequisite = { focus = PRS_placatetheminorities }
@@ -789,9 +791,9 @@ focus_tree = {
 		cost = 5
 		available_if_capitulated = yes
 		available = {
-		 OR = {
-		  has_government = social_democracy
-		  has_government = social_liberal
+		 NOT = {
+		  has_country_flag = hess_victory
+		  has_country_flag = jungersjunta
 		 }
 		}
 		prerequisite = { focus = PRS_placatetheminorities }
@@ -813,9 +815,9 @@ focus_tree = {
 		cost = 5
 		available_if_capitulated = yes
 		available = {
-		 OR = {
-		  has_government = social_democracy
-		  has_government = social_liberal
+		 NOT = {
+		  has_country_flag = hess_victory
+		  has_country_flag = jungersjunta
 		 }
 		}
 		prerequisite = { focus = PRS_themenmustbefanatics }
@@ -855,9 +857,9 @@ focus_tree = {
 		cost = 5
 		available_if_capitulated = yes
 		available = {
-		 OR = {
-		  has_government = social_democracy
-		  has_government = social_liberal
+		 NOT = {
+		  has_country_flag = hess_victory
+		  has_country_flag = jungersjunta
 		 }
 		}
 		prerequisite = { focus = PRS_purgethefewtraitors }
@@ -880,9 +882,9 @@ focus_tree = {
 		cost = 5
 		available_if_capitulated = yes
 		available = {
-		 OR = {
-		  has_government = social_democracy
-		  has_government = social_liberal
+		 NOT = {
+		  has_country_flag = hess_victory
+		  has_country_flag = jungersjunta
 		 }
 		}
 		prerequisite = { focus = PRS_encourageruralvalues }
@@ -905,9 +907,9 @@ focus_tree = {
 		cost = 5
 		available_if_capitulated = yes
 		available = {
-		 OR = {
-		  has_government = social_democracy
-		  has_government = social_liberal
+		 NOT = {
+		  has_country_flag = hess_victory
+		  has_country_flag = jungersjunta
 		 }
 		}
 		prerequisite = { focus = PRS_supportminoritycustoms }
@@ -928,9 +930,9 @@ focus_tree = {
 		cost = 5
 		available_if_capitulated = yes
 		available = {
-		 OR = {
-		  has_government = social_democracy
-		  has_government = social_liberal
+		 NOT = {
+		  has_country_flag = hess_victory
+		  has_country_flag = jungersjunta
 		 }
 		}
 		prerequisite = { focus = PRS_adealwiththepoles }
@@ -1005,9 +1007,9 @@ focus_tree = {
 		cost = 2
 		available_if_capitulated = yes
 		available = {
-		 OR = {
-		  has_government = social_democracy
-		  has_government = social_liberal
+		 NOT = {
+		  has_country_flag = hess_victory
+		  has_country_flag = jungersjunta
 		 }
 		}
 		prerequisite = { focus = PRS_placatetheminorities }
@@ -1029,9 +1031,9 @@ focus_tree = {
 		cost = 5
 		available_if_capitulated = yes
 		available = {
-		 OR = {
-		  has_government = social_democracy
-		  has_government = social_liberal
+		 NOT = {
+		  has_country_flag = hess_victory
+		  has_country_flag = jungersjunta
 		 }
 		}
 		prerequisite = { focus = PRS_sendinthearmytothetowns }
@@ -2269,8 +2271,10 @@ focus_tree = {
 		cost = 5
 		available_if_capitulated = yes
 		available = {
+		OR = {
 		 has_government = social_democracy
 		 has_government = social_liberal
+		 }
 		}
 		prerequisite = { focus = PRS_getridofreactionaryelements }
 		ai_will_do = {
@@ -2856,6 +2860,9 @@ add_building_construction = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		 army_experience = 25
+		}
 	}
 
 	#Focus for Prussian Elite
@@ -2866,10 +2873,20 @@ add_building_construction = {
 		y = 10
 		cost = 5
 		available_if_capitulated = yes
+		available = {
+		 NOT = {
+		  has_tech = mass_assault
+		   }
+		  }
 		prerequisite = { focus = PRS_kaiserlichearmee }
 		mutually_exclusive = { focus = PRS_massivearmyexpansion }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		 add_ideas = {
+		  PRS_elite_army
+		 }
 		}
 	}
 
@@ -2880,11 +2897,21 @@ add_building_construction = {
 		x = 48
 		y = 10
 		cost = 5
+		available = {
+		 NOT = {
+		  has_tech = mobile_warfare
+		   }
+		  }
 		available_if_capitulated = yes
 		prerequisite = { focus = PRS_kaiserlichearmee }
 		mutually_exclusive = { focus = PRS_prussianelite }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		 add_ideas = {
+		  PRS_massive_army
+		 }
 		}
 	}
 
@@ -2896,6 +2923,15 @@ add_building_construction = {
 		y = 11
 		cost = 5
 		available_if_capitulated = yes
+		available = {
+		 NOT = {
+		  OR = {
+		  has_tech = mass_assault
+		  has_tech = superior_firepower
+		  has_tech = trench_warfare
+		  }
+		  }
+		}
 		prerequisite = { focus = PRS_prussianelite }
 		mutually_exclusive = { 
 			focus = PRS_artilleryfocus 
@@ -2909,6 +2945,14 @@ add_building_construction = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		 add_tech_bonus = {
+	      name = doctrine_bonus
+	      bonus = 1.0
+	      uses = 2
+	      category = cat_mobile_warfare
+           }    
+		}
 	}
 
 	#Focus for Emphasize Large Operations
@@ -2919,6 +2963,15 @@ add_building_construction = {
 		y = 11
 		cost = 5
 		available_if_capitulated = yes
+		available = {
+		 NOT = {
+		  OR = {
+		  has_tech = mass_assault
+		  has_tech = superior_firepower
+		  has_tech = mobile_warfare
+		  }
+		  }
+		}
 		prerequisite = { focus = PRS_massivearmyexpansion }
 		mutually_exclusive = { 
 			focus = PRS_lightningwar 
@@ -2928,6 +2981,14 @@ add_building_construction = {
 		}
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		 add_tech_bonus = {
+	      name = doctrine_bonus
+	      bonus = 1.0
+	      uses = 2
+	      category = cat_grand_battle_plan
+           }    
 		}
 	}
 
@@ -2939,6 +3000,15 @@ add_building_construction = {
 		y = 11
 		cost = 5
 		available_if_capitulated = yes
+		available = {
+		 NOT = {
+		  OR = {
+		  has_tech = mass_assault
+		  has_tech = trench_warfare
+		  has_tech = mobile_warfare
+		  }
+		  }
+		}
 		prerequisite = { 
 			focus = PRS_prussianelite 
 			focus = PRS_massivearmyexpansion 
@@ -2955,6 +3025,14 @@ add_building_construction = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		 add_tech_bonus = {
+	      name = doctrine_bonus
+	      bonus = 1.0
+	      uses = 2
+	      category = cat_superior_firepower
+           }    
+		}
 	}
 
 	#Focus for Tank Experiments
@@ -2968,6 +3046,14 @@ add_building_construction = {
 		prerequisite = { focus = PRS_lightningwar }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		 add_tech_bonus = {
+	      name = armor_bonus
+	      bonus = 0.7
+	      uses = 1
+	      category = armor
+           }    
 		}
 	}
 
@@ -2983,6 +3069,19 @@ add_building_construction = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		 add_tech_bonus = {
+	      name = motorized_bonus
+	      bonus = 1.0
+	      uses = 1
+	      category = cat_mechanized_equipment
+           }
+        add_equipment_to_stockpile = {
+         type = motorized_equipment_1
+					amount = 250
+					producer = PRS
+             }		   
+		}
 	}
 
 	#Focus for German Tank Corps
@@ -2996,6 +3095,11 @@ add_building_construction = {
 		prerequisite = { focus = PRS_motorizedinfantry }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		 add_ideas = {
+		  PRS_prussian_tank_corps
+		 }
 		}
 	}
 
@@ -3011,6 +3115,14 @@ add_building_construction = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		 add_tech_bonus = {
+	      name = armor_bonus
+	      bonus = 1.0
+	      uses = 1
+	      category = armor
+           }    
+		}
 	}
 
 	#Focus for Train the Artillerymen
@@ -3024,6 +3136,19 @@ add_building_construction = {
 		prerequisite = { focus = PRS_newartilleryprojects }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		 add_tech_bonus = {
+	      name = doctrine_bonus
+	      bonus = 1.0
+	      uses = 2
+	      category = cat_superior_firepower
+           }
+        add_equipment_to_stockpile = {
+         type = artillery_equipment_1
+					amount = 400
+					producer = PRS
+             }		   
 		}
 	}
 
@@ -3039,6 +3164,14 @@ add_building_construction = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		 add_tech_bonus = {
+	      name = artillery_bonus
+	      bonus = 0.75
+	      uses = 1
+	      category = artillery
+           }    
+		}
 	}
 
 	#Focus for Core of our Army
@@ -3052,6 +3185,11 @@ add_building_construction = {
 		prerequisite = { focus = PRS_traintheartillerymen }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		 add_ideas = {
+		  PRS_core_army
+		 }
 		}
 	}
 
@@ -3067,6 +3205,14 @@ add_building_construction = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		 add_tech_bonus = {
+	      name = artillery_bonus
+	      bonus = 1.0
+	      uses = 1
+	      category = artillery
+           }    
+		}
 	}
 
 	#Focus for Fresh Officers
@@ -3080,6 +3226,14 @@ add_building_construction = {
 		prerequisite = { focus = PRS_emphasizelargeoperations }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		 add_tech_bonus = {
+	      name = electronics_bonus
+	      bonus = 0.6
+	      uses = 2
+	      category = electronics
+           }    
 		}
 	}
 
@@ -3095,6 +3249,20 @@ add_building_construction = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		 add_tech_bonus = {
+	      name = encryption_bonus
+	      bonus = 0.7
+	      uses = 1
+	      category = encryption_tech
+           }
+		 add_tech_bonus = {
+	      name = decryption_bonus
+	      bonus = 0.7
+	      uses = 1
+	      category = decryption_tech
+           }    		   
+		}
 	}
 
 	#Focus for Infantry Primacy
@@ -3109,6 +3277,17 @@ add_building_construction = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+        add_equipment_to_stockpile = {
+         type = infantry_equipment_1
+					amount = 15000
+					producer = PRS
+             }
+		add_ideas = {
+		PRS_infantry_primacy
+		 }			 
+		}
+
 	}
 
 	#Focus for Maschinengewehr 34
@@ -3122,6 +3301,14 @@ add_building_construction = {
 		prerequisite = { focus = PRS_infantryprimacy }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		 add_tech_bonus = {
+	      name = infantry_bonus
+	      bonus = 1.0
+	      uses = 2
+	      category = infantry_weapons
+           } 
 		}
 	}
 
@@ -3141,6 +3328,17 @@ add_building_construction = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		 add_ideas = {
+		 PRS_new_age
+		 }
+		 add_tech_bonus = {
+	      name = doctrine_bonus
+	      bonus = 0.85
+	      uses = 2
+	      category = land_doctrine
+           }
+		}
 	}
 
 	#Focus for Old Methods
@@ -3159,6 +3357,17 @@ add_building_construction = {
 		ai_will_do = {
 			factor = 1
 		}
+	   completion_reward = {
+		 add_ideas = {
+		 PRS_old_methods
+		 }
+		 add_tech_bonus = {
+	      name = doctrine_bonus
+	      bonus = 0.85
+	      uses = 2
+	      category = land_doctrine
+           }
+		}
 	}
 
 	#Focus for We March Forwards
@@ -3176,6 +3385,14 @@ add_building_construction = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		 add_tech_bonus = {
+	      name = doctrine_bonus
+	      bonus = 1.0
+	      uses = 3
+	      category = land_doctrine
+           }
+		}
 	}
 
 	#Focus for Kaiserliche Luftwaffe
@@ -3189,6 +3406,9 @@ add_building_construction = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		 air_experience = 75
+		}
 	}
 
 	#Focus for Kaiserliche Kriegsmarine
@@ -3201,6 +3421,18 @@ add_building_construction = {
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		 navy_experience = 100
+		188 = {
+        add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+
+}
 		}
 	}
 
@@ -3217,6 +3449,14 @@ add_building_construction = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		 add_tech_bonus = {
+	      name = fighter_bonus
+	      bonus = 1.0
+	      uses = 1
+	      category = light_fighter
+           }
+		}
 	}
 
 	#Focus for Offensive Role
@@ -3232,6 +3472,14 @@ add_building_construction = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		 add_tech_bonus = {
+	      name = cas_bonus
+	      bonus = 1.0
+	      uses = 1
+	      category = cas_bomber
+           }
+		}
 	}
 
 	#Focus for Modernize Our Fighter Wings
@@ -3245,6 +3493,11 @@ add_building_construction = {
 		prerequisite = { focus = PRS_defensiverole }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		 add_ideas = {
+		  PRS_fighter_modernaztion
+		 }
 		}
 	}
 
@@ -3260,7 +3513,38 @@ add_building_construction = {
 		ai_will_do = {
 			factor = 1
 		}
-	}
+		completion_reward = {
+           add_ace = {
+             name = "Ernst"
+             surname = "Udet"
+             callsign = "Lighting"
+             type = fighter_genius
+             is_female = no
+}
+           add_ace = {
+             name = "Josef"
+             surname = "Jacobs"
+             callsign = "Schoolboy"
+             type = fighter_genius
+             is_female = no
+}
+           add_ace = {
+             name = "Bruno"
+             surname = "Loerzer"
+             callsign = "Hauptmann"
+             type = fighter_genius
+             is_female = no
+}
+		 add_tech_bonus = {
+	      name = doctrine_bonus
+	      bonus = 1.0
+	      uses = 2
+	      category = air_doctrine
+           }
+		}
+		
+		}
+	
 
 	#Focus for Heinkel He 112
 	focus = {
@@ -3273,6 +3557,14 @@ add_building_construction = {
 		prerequisite = { focus = PRS_greatwaraces }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		 add_tech_bonus = {
+	      name = fighter_bonus
+	      bonus = 1.0
+	      uses = 1
+	      category = light_fighter
+           }
 		}
 	}
 
@@ -3288,6 +3580,14 @@ add_building_construction = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		 add_tech_bonus = {
+	      name = doctrine_bonus
+	      bonus = 1.0
+	      uses = 2
+	      category = air_doctrine
+           }
+		}
 	}
 
 	#Focus for Trained Staff
@@ -3301,6 +3601,15 @@ add_building_construction = {
 		prerequisite = { focus = PRS_airexperiments }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		 add_tech_bonus = {
+	      name = doctrine_bonus
+	      bonus = 1.0
+	      uses = 1
+	      category = air_doctrine
+           }
+		air_experience = 75
 		}
 	}
 
@@ -3316,6 +3625,18 @@ add_building_construction = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+        763 = {
+        add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+
+}
+		
+		}
 	}
 
 	#Focus for Revitalize Our Bomber Forces
@@ -3329,6 +3650,11 @@ add_building_construction = {
 		prerequisite = { focus = PRS_offensiverole }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		add_ideas = {
+		 PRS_bomber_modernaztion
+		}
 		}
 	}
 
@@ -3344,6 +3670,15 @@ add_building_construction = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		 add_tech_bonus = {
+	      name = doctrine_bonus
+	      bonus = 1.0
+	      uses = 2
+	      category = air_doctrine
+           }
+		
+		}
 	}
 
 	#Focus for Junkers Ju 87
@@ -3357,6 +3692,15 @@ add_building_construction = {
 		prerequisite = { focus = PRS_tacticalsupport }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		 add_tech_bonus = {
+	      name = CAS_bonus
+	      bonus = 1.0
+	      uses = 1
+	      category = cas_bomber
+           }
+		
 		}
 	}
 
@@ -3377,6 +3721,15 @@ add_building_construction = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		 add_tech_bonus = {
+	      name = bomber_bonus
+	      bonus = 1.0
+	      uses = 1
+	      category = tactical_bomber
+           }
+		
+		}
 	}
 
 	#Focus for Blohm & Voss Ha 140
@@ -3396,6 +3749,15 @@ add_building_construction = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		 add_tech_bonus = {
+	      name = bomber_bonus
+	      bonus = 1.0
+	      uses = 1
+	      category = naval_bomber
+           }
+		
+		}
 	}
 
 	#Focus for We Rule the Skies
@@ -3413,6 +3775,15 @@ add_building_construction = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		 add_tech_bonus = {
+	      name = doctrine_bonus
+	      bonus = 1.0
+	      uses = 3
+	      category = air_doctrine
+           }
+		
+		}
 	}
 
 	#Focus for Loyal navy
@@ -3426,6 +3797,23 @@ add_building_construction = {
 		prerequisite = { focus = PRS_skilledcrew }
 		ai_will_do = {
 			factor = 1
+		}
+	  completion_reward = {
+		 add_tech_bonus = {
+	      name = doctrine_bonus
+	      bonus = 1.0
+	      uses = 1
+	      category = naval_doctrine
+           }
+      763 = {
+      add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+
+} 		   
 		}
 	}
 
@@ -3441,6 +3829,11 @@ add_building_construction = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		 add_ideas = {
+		  PRS_submarine_modernaztion
+		 }
+		}
 	}
 
 	#Focus for Modernization of the navy
@@ -3454,6 +3847,11 @@ add_building_construction = {
 		prerequisite = { focus = PRS_focusonbiggerships }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		 add_ideas = {
+		 PRS_navy_modernaztion
+		 }
 		}
 	}
 
@@ -3469,6 +3867,11 @@ add_building_construction = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		 add_ideas = {
+		   PRS_plan_z
+		 }
+		}
 	}
 
 	#Focus for A U-Boat Flotille
@@ -3483,6 +3886,11 @@ add_building_construction = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		 add_ideas = {
+		  PRS_better_subs
+		 }
+		}
 	}
 
 	#Focus for Form a marine core
@@ -3494,16 +3902,18 @@ add_building_construction = {
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { 
-			focus = PRS_auboatflotille 
+			focus = PRS_auboatflotille focus = PRS_zplan
 		}
 		prerequisite = { 
 			focus = PRS_loyalnavy 
 		}
-		prerequisite = { 
-			focus = PRS_zplan 
-		}
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		 add_ideas = {
+		  PRS_marine_core
+		 }
 		}
 	}
 
@@ -3516,16 +3926,36 @@ add_building_construction = {
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { 
-			focus = PRS_auboatflotille 
+			focus = PRS_auboatflotille focus = PRS_zplan 
 		}
 		prerequisite = { 
 			focus = PRS_loyalnavy 
 		}
-		prerequisite = { 
-			focus = PRS_zplan 
-		}
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		add_equipment_to_stockpile = {
+         type = convoy_1
+					amount = 20
+					producer = ENG
+             }
+		add_equipment_to_stockpile = {
+         type = convoy_1
+					amount = 40
+					producer = USA
+             }
+		add_equipment_to_stockpile = {
+         type = convoy_1
+					amount = 20
+					producer = FRA
+             }
+		 add_tech_bonus = {
+	      name = marine_bonus
+	      bonus = 1.0
+	      uses = 1
+	      category = marine_tech
+           }			 
 		}
 	}
 
@@ -3545,6 +3975,14 @@ add_building_construction = {
 		}
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		 add_tech_bonus = {
+	      name = doctrine_bonus
+	      bonus = 1.0
+	      uses = 4
+	      category = naval_doctrine
+           }	
 		}
 	}
 
@@ -3811,6 +4249,14 @@ add_building_construction = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		 add_tech_bonus = {
+	      name = submarine_bonus
+	      bonus = 1.0
+	      uses = 1
+	      category = ss_tech
+           }
+		}
 	}
 
 	#Focus for Doctrine focus
@@ -3824,6 +4270,14 @@ add_building_construction = {
 		prerequisite = { focus = PRS_kaiserlichekriegsmarine }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		 add_tech_bonus = {
+	      name = doctrine_bonus
+	      bonus = 1.0
+	      uses = 2
+	      category = naval_doctrine
+           }	
 		}
 	}
 
@@ -3840,6 +4294,17 @@ add_building_construction = {
 		ai_will_do = {
 			factor = 1
 		}
+	   completion_reward = {
+		 add_tech_bonus = {
+	      name = naval_bonus
+	      bonus = 1.0
+	      uses = 2
+	      category = bb_tech
+		  category = dd_tech
+		  category = cl_tech
+		  category = bc_tech
+           }	
+		}
 	}
 
 	#Focus for Skilled Crew
@@ -3853,6 +4318,14 @@ add_building_construction = {
 		prerequisite = { focus = PRS_doctrinefocus }
 		ai_will_do = {
 			factor = 1
+		}
+			completion_reward = {
+		 add_tech_bonus = {
+	      name = doctrine_bonus
+	      bonus = 1.0
+	      uses = 2
+	      category = naval_doctrine
+           }	
 		}
 	}
 

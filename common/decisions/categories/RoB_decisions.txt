@@ -22,6 +22,24 @@ BLR_power_struggle = {
 		  }
 }
 
+PRS_foreign_policy = {
+  icon = GFX_decision_oppression
+	visible = {
+    tag = PRS
+          }
+		  priority = {
+		  base = 10
+		  }
+}
+PRS_german_expansion = {
+  icon = GFX_decision_oppression
+	visible = {
+    tag = PRS
+          }
+		  priority = {
+		  base = 10
+		  }
+}
 BLR_raids = {
   icon = GFX_decision_oppression
   picture = GFX_decision_germany_partisans
