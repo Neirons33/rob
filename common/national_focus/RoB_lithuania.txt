@@ -46,7 +46,7 @@ focus_tree = {
 			focus = LIT_returnofthebalts 
 		}
 		completion_reward = { 
-        		add_stability = 0.1
+        		add_stability = 0.01
 		add_popularity = {ideology = pelekist popularity =0.10}
 		add_political_power = 120
  }
@@ -206,7 +206,7 @@ focus_tree = {
 		prerequisite = { focus = LIT_cultofpersonality }
 		completion_reward = {
 		add_popularity = {ideology = pelekist popularity =0.18}
-        add_stability = 0.06
+        add_stability = 0.006
 		}
 	}
 
@@ -327,7 +327,7 @@ target = BLR
 			focus = LIT_formtheministryofpropaganda 
 		}
 			completion_reward = {
-			add_stability = 0.06
+			add_stability = 0.006
 
 		}
 	}
@@ -437,7 +437,7 @@ target = BLR
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_ruralideals }
 		completion_reward = {
-		add_stability = 0.1
+		add_stability = 0.01
 		}
 	}
 
@@ -576,7 +576,7 @@ add_popularity = {ideology = authoritharian popularity =0.10}
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_tautosvadasmironas }
 		completion_reward = {
-		 add_stability = 0.03
+		 add_stability = 0.003
 		 add_popularity = {ideology = pelekist popularity =0.18}
 
          
@@ -610,7 +610,7 @@ add_popularity = {ideology = authoritharian popularity =0.10}
 		prerequisite = { focus = LIT_tautosvadasmironas }
 		completion_reward = {
 		add_popularity = {ideology = pelekist popularity =0.18}
-        add_stability = 0.06
+        add_stability = 0.006
 	}
 	}
 
@@ -650,7 +650,7 @@ add_popularity = {ideology = authoritharian popularity =0.10}
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_starttohunttheminorities }
 		completion_reward = {
-        add_stability = 0.03
+        add_stability = 0.003
 		}
 	}
 
@@ -779,7 +779,7 @@ add_popularity = {ideology = authoritharian popularity =0.10}
 			focus = LIT_easegunlaws 
 		}
 		completion_reward = {
-		add_stability = 0.06
+		add_stability = 0.006
 		add_popularity = {ideology = reactionary popularity =0.10}
     }
 	}
@@ -893,6 +893,14 @@ add_political_power = 120
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_dutyforall }
+				completion_reward = {
+		11 = {
+ add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
 	}
 
 	#Focus for Encourage Socialism of Duty
@@ -921,7 +929,7 @@ add_political_power = 120
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_paganbias }
 				completion_reward = {
-		add_stability = 0.06
+		add_stability = 0.006
 		add_popularity = {ideology = pelekist popularity =0.10}
     }
 	}
@@ -977,7 +985,9 @@ add_political_power = 120
 		prerequisite = { 
 			focus = LIT_ourowncementandceramics 
 		}
-
+        completion_reward = {
+		add_ideas = {work_for_all}
+		}
 	}
 
 	#Focus for Chamber of Agriculture
@@ -989,6 +999,9 @@ add_political_power = 120
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_nationalchamberofresources }
+		completion_reward = {
+		add_ideas = {agriarian_state}
+		}
 	}
 
 	#Focus for National Retail Union
@@ -1000,6 +1013,9 @@ add_political_power = 120
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_nationalizebanks }
+		completion_reward = {
+		add_ideas = { national_retail_union }
+		}
 	}
 
 	#Focus for National Syndicates
@@ -1011,6 +1027,9 @@ add_political_power = 120
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_nationalchamberofindustry }
+		completion_reward = {
+		add_stability = 0.006
+		}
 	}
 
 	#Focus for National Chamber of Industry
@@ -1021,7 +1040,18 @@ add_political_power = 120
 		y = 8
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = LIT_formtheeconomicchambers }
+		prerequisite = { focus = LIT_formtheeconomicchambers }		
+ completion_reward = {
+  189 = {
+  add_extra_state_shared_building_slots = 2
+  add_building_construction = {
+  
+	type = industrial_complex
+	level = 2
+	instant_build = yes
+}
+ }
+ }
 	}
 
 	#Focus for Nationalize Key Industries
@@ -1033,6 +1063,18 @@ add_political_power = 120
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_thecomingcorporatestate }
+ completion_reward = {
+  11 = {
+  add_extra_state_shared_building_slots = 2
+  add_building_construction = {
+  
+	type = industrial_complex
+	level = 2
+	instant_build = yes
+}
+
+ }
+ }
 	}
 
 	#Focus for National Chamber of Resources
@@ -1043,7 +1085,11 @@ add_political_power = 120
 		y = 8
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = LIT_formtheeconomicchambers }
+		prerequisite = { focus = LIT_formtheeconomicchambers 
+		completion_reward = {
+		add_ideas = {resource_chambers}
+		}
+		}
 	}
 
 	#Focus for Work for All!
@@ -1055,6 +1101,9 @@ add_political_power = 120
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_movepeopleintocities }
+		completion_reward = {
+		add_ideas = { work_for_all }
+		}
 	}
 
 	#Focus for Our Own Cement and Ceramics!
@@ -1066,6 +1115,9 @@ add_political_power = 120
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_chamberofagriculture }
+		completion_reward = {
+		add_ideas = {lithuanian_cement}
+		}
 	}
 
 	#Focus for The Rich State
@@ -1085,8 +1137,8 @@ add_political_power = 120
 		prerequisite = { 
 			focus = LIT_lietkis 
 		}
-		prerequisite = { 
-			focus = LIT_ 
+		completion_reward = {
+		add_political_power = 120
 		}
 	}
 
@@ -1099,6 +1151,9 @@ add_political_power = 120
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_thelithuanianeconomy }
+		completion_reward = {
+		add_political_power = 120
+		}
 	}
 
 	#Focus for The Bourgeoisie Class
@@ -1110,6 +1165,9 @@ add_political_power = 120
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_decreasesafetyregulations }
+		completion_reward = {
+		add_ideas = { ultra_wealthy_upper_class }
+		}
 	}
 
 	#Focus for Materialistic Mentality
@@ -1121,6 +1179,9 @@ add_political_power = 120
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_thebourgeoisieclass }
+		completion_reward = {
+		add_ideas = { materialistic_mentality }
+		}
 	}
 
 	#Focus for Martial Society
@@ -1139,6 +1200,17 @@ add_political_power = 120
 		}
 		prerequisite = { 
 			focus = LIT_ 
+		}
+		completion_reward = {
+		add_ideas = { martial_society }
+		189 = {
+add_extra_state_shared_building_slots = 1
+add_building_construction = {
+	type = arms_factory
+	level = 1
+	instant_build = yes
+}
+}
 		}
 	}
 
@@ -1159,6 +1231,9 @@ add_political_power = 120
 		prerequisite = { 
 			focus = LIT_ 
 		}
+		completion_reward = {
+		add_ideas = { needless_society }
+		}
 	}
 
 	#Focus for Collectivist State
@@ -1170,6 +1245,9 @@ add_political_power = 120
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_thesocialiststate }
+		completion_reward = {
+		add_ideas = { collectivist_state }
+		}
 	}
 
 	#Focus for The Lithuanian Economy
@@ -1194,6 +1272,9 @@ add_political_power = 120
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_thelithuanianeconomy }
+		completion_reward = {
+		add_political_power = 120
+		}
 	}
 
 	#Focus for Encourage the Formation of Lithuanian Companies
@@ -1204,7 +1285,18 @@ add_political_power = 120
 		y = 6
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = LIT_thecapitaliststate }
+		prerequisite = { focus = LIT_thecapitaliststate } 
+		completion_reward = {
+		 11 = { 
+          add_extra_state_shared_building_slots = 2
+          add_building_construction = {
+ 
+	    type = industrial_complex
+	    level = 2
+	    instant_build = yes
+          }
+          }
+		}
 	}
 
 	#Focus for Kolhoze System
@@ -1216,6 +1308,11 @@ add_political_power = 120
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_thesocialistgem }
+		completion_reward = {
+		add_ideas = {
+		kolhoze_system
+		}
+		}
 	}
 
 	#Focus for A Home for All!
@@ -1231,6 +1328,9 @@ add_political_power = 120
 		}
 		prerequisite = { 
 			focus = LIT_workforall 
+		}
+				completion_reward = {
+		add_ideas = { work_for_all }
 		}
 	}
 
@@ -1248,8 +1348,8 @@ add_political_power = 120
 		prerequisite = { 
 			focus = LIT_freeeducation 
 		}
-		prerequisite = { 
-			focus = LIT_ 
+		completion_reward = {
+		add_ideas = { agriculturalism }
 		}
 	}
 
@@ -1262,6 +1362,9 @@ add_political_power = 120
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_aryansocialism }
+		completion_reward = {
+		add_ideas = {army_like_people}
+		}
 	}
 
 	#Focus for Hiearchical Society
@@ -1273,6 +1376,9 @@ add_political_power = 120
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_antiindividualistic }
+		completion_reward = {
+		add_ideas = { hiearchical_society }
+		}
 	}
 
 	#Focus for Mass Public Spending
@@ -1284,6 +1390,17 @@ add_political_power = 120
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_antiequality }
+		completion_reward = {
+		11 = { 
+add_extra_state_shared_building_slots = 3
+ add_building_construction = {
+ 
+	type = industrial_complex
+	level = 3
+	instant_build = yes
+}
+}
+		}
 	}
 
 	#Focus for Stiprybė iš Džiaugsmo
@@ -1294,7 +1411,18 @@ add_political_power = 120
 		y = 8
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = LIT_anticollectivism }
+		prerequisite = { focus = LIT_anticollectivism }		
+ completion_reward = {
+  11 = {
+  add_extra_state_shared_building_slots = 2
+  add_building_construction = {
+  
+	type = industrial_complex
+	level = 2
+	instant_build = yes
+ }
+ }
+		}
 	}
 
 	#Focus for The Red Military Complex
@@ -1306,7 +1434,20 @@ add_political_power = 120
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_thesocialistgem }
+		completion_reward = {
+		
+		 11 = { 
+          add_extra_state_shared_building_slots = 2
+          add_building_construction = {
+ 
+	    type = arms_factory
+	    level = 2
+	    instant_build = yes
+          }
+          }
+		}
 	}
+		
 
 	#Focus for Planned Economy
 	focus = {
@@ -1317,6 +1458,17 @@ add_political_power = 120
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_thesocialistgem }
+		completion_reward = {
+				 763 = { 
+          add_extra_state_shared_building_slots = 2
+          add_building_construction = {
+ 
+	    type = industrial_complex
+	    level = 2
+	    instant_build = yes
+          }
+          }
+	}
 	}
 
 	#Focus for Pure Society!
@@ -1328,6 +1480,9 @@ add_political_power = 120
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_aryansocialism }
+		completion_reward = {
+		add_stability = 0.006
+		}
 	}
 
 	#Focus for United as a Shieldwall!
@@ -1347,8 +1502,8 @@ add_political_power = 120
 		prerequisite = { 
 			focus = LIT_puresociety 
 		}
-		prerequisite = { 
-			focus = LIT_ 
+				completion_reward = {
+		add_political_power = 200
 		}
 	}
 
@@ -1361,6 +1516,20 @@ add_political_power = 120
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_nationalsyndicates }
+		completion_reward = {
+				 784 = { 
+          add_extra_state_shared_building_slots = 2
+          add_building_construction = {
+ 
+	    type = arms_factory
+	    level = 2
+	    instant_build = yes
+          }
+          }
+		   add_ideas = {
+		  war_economy
+		 }
+		}
 	}
 
 	#Focus for Nationalize Banks
@@ -1372,6 +1541,9 @@ add_political_power = 120
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_nationalchamberofservices }
+		completion_reward = {
+		add_ideas = { no_banks }
+		}
 	}
 
 	#Focus for Lithuanian Chamber of Infrastructure
@@ -1388,8 +1560,27 @@ add_political_power = 120
 		prerequisite = { 
 			focus = LIT_ourowncementandceramics 
 		}
-		prerequisite = { 
-			focus = LIT_ 
+		completion_reward = {
+			    11 = {
+        if = {
+        limit = { is_controlled_by = ROOT }
+        add_building_construction = {
+            type = infrastructure
+            level = 1
+            instant_build = yes
+        }
+    }
+}
+	    189 = {
+        if = {
+        limit = { is_controlled_by = ROOT }
+        add_building_construction = {
+            type = infrastructure
+            level = 1
+            instant_build = yes
+        }
+    }
+}
 		}
 	}
 
@@ -1402,6 +1593,9 @@ add_political_power = 120
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_formtheeconomicchambers }
+		completion_reward = {
+		add_ideas = { chamber_of_service }
+		}
 	}
 
 	#Focus for The Beauty of Struggle
@@ -1413,6 +1607,9 @@ add_political_power = 120
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_lietuvikassocializmas }
+		completion_reward = {
+		add_ideas = { struggle }
+		}
 	}
 
 	#Focus for Lietūkis
@@ -1424,6 +1621,9 @@ add_political_power = 120
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_capitalisticinspirations }
+		completion_reward = {
+		add_ideas = {lietukis}
+		}
 	}
 
 	#Focus for Vadoprincipas
@@ -1435,6 +1635,11 @@ add_political_power = 120
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_lietuvikassocializmas }
+		completion_reward = {
+		add_ideas = {
+		vadoprincipas
+		}
+		}
 	}
 
 	#Focus for Anti-Collectivism
@@ -1446,6 +1651,8 @@ add_political_power = 120
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_thebeautyofstruggle }
+		completion_reward = {
+		add_ideas = { anti_collectivism }
 	}
 
 	#Focus for Anti-Individualistic
@@ -1457,6 +1664,9 @@ add_political_power = 120
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_vadoprincipas }
+		completion_reward = {
+		add_ideas = {anti_individualism}
+		}
 	}
 
 	#Focus for Anti-Equality
@@ -1468,6 +1678,9 @@ add_political_power = 120
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_spiritofduty }
+		completion_reward = {
+		add_ideas = { anti_equality }
+		}
 	}
 
 	#Focus for Move People into Cities!
@@ -1479,6 +1692,16 @@ add_political_power = 120
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_massindustrilization }
+		completion_reward = {
+		879 = {
+add_extra_state_shared_building_slots = 1
+add_building_construction = {
+	type = industrial_complex
+	level = 1
+	instant_build = yes
+}
+}
+		}
 	}
 
 	#Focus for Aryan Socialism!
@@ -1495,8 +1718,8 @@ add_political_power = 120
 		prerequisite = { 
 			focus = LIT_martialsociety 
 		}
-		prerequisite = { 
-			focus = LIT_ 
+		completion_reward = {
+		add_political_power = 200
 		}
 	}
 
@@ -1514,8 +1737,8 @@ add_political_power = 120
 		prerequisite = { 
 			focus = LIT_entrepreneursledeconomy 
 		}
-		prerequisite = { 
-			focus = LIT_ 
+		completion_reward = {
+		add_political_power = 120
 		}
 	}
 
@@ -1528,6 +1751,17 @@ add_political_power = 120
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_capitalisticinspirations }
+		completion_reward = {
+				 784 = { 
+          add_extra_state_shared_building_slots = 2
+          add_building_construction = {
+ 
+	    type = arms_factory
+	    level = 2
+	    instant_build = yes
+          }
+          }
+		}
 	}
 
 	#Focus for Drobė
@@ -1539,6 +1773,17 @@ add_political_power = 120
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_capitalisticinspirations }
+		completion_reward = {
+				 763 = { 
+          add_extra_state_shared_building_slots = 2
+          add_building_construction = {
+ 
+	    type = industrial_complex
+	    level = 11
+	    instant_build = yes
+          }
+          }
+		}
 	}
 
 	#Focus for To Autarky and Beyond!
@@ -1555,8 +1800,8 @@ add_political_power = 120
 		prerequisite = { 
 			focus = LIT_curbingunemployment 
 		}
-		prerequisite = { 
-			focus = LIT_ 
+		completion_reward = {
+		add_ideas = { autarky }
 		}
 	}
 
@@ -1577,6 +1822,9 @@ add_political_power = 120
 		prerequisite = { 
 			focus = LIT_nationalizekeyindustries 
 		}
+		completion_reward = {
+		add_ideas = { economic_chambers }
+		}
 	}
 
 	#Focus for Destroy Foreign Influence
@@ -1588,6 +1836,10 @@ add_political_power = 120
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_thecomingcorporatestate }
+		completion_reward = {
+        add_political_power = 100
+		add_ideas = { no_foreign_influences }
+		}
 	}
 
 	#Focus for Ban Trade Unions
@@ -1599,6 +1851,9 @@ add_political_power = 120
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_thecomingcorporatestate }
+		completion_reward = {
+		add_ideas = { banned_trade_unions }
+		}
 	}
 
 	#Focus for Lietuviškas Socializmas
@@ -1621,6 +1876,9 @@ add_political_power = 120
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_thelithuanianeconomy }
+		completion_reward = {
+		add_political_power = 120
+		}
 	}
 
 	#Focus for Encourage Family Buisnesses
@@ -1632,6 +1890,17 @@ add_political_power = 120
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_driveforproduction }
+		completion_reward = {
+		 764 = { 
+          add_extra_state_shared_building_slots = 2
+          add_building_construction = {
+ 
+	    type = industrial_complex
+	    level = 2
+	    instant_build = yes
+          }
+          }
+		}
 	}
 
 	#Focus for Entrepreneurs-Led Economy
@@ -1648,9 +1917,9 @@ add_political_power = 120
 		prerequisite = { 
 			focus = LIT_powertothecompanies 
 		}
-		prerequisite = { 
-			focus = LIT_ 
-		}
+		completion_reward = { 
+		add_ideas = { entrepreneurs_cult }
+	}
 	}
 
 	#Focus for Culture of Work
@@ -1667,8 +1936,8 @@ add_political_power = 120
 		prerequisite = { 
 			focus = LIT_powertothecompanies 
 		}
-		prerequisite = { 
-			focus = LIT_ 
+		completion_reward = {
+		add_ideas = { culture_of_work }
 		}
 	}
 
@@ -1681,6 +1950,9 @@ add_political_power = 120
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_thecapitaliststate }
+		completion_reward = {
+		add_ideas = {no_welfare}
+		}
 	}
 
 	#Focus for Laissez-faire Economics
@@ -1692,6 +1964,9 @@ add_political_power = 120
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_weakenwelfare }
+		completion_reward = {
+		add_ideas = {laissez_faire_economics}
+		}
 	}
 
 	#Focus for Spirit of Duty
@@ -1703,6 +1978,9 @@ add_political_power = 120
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_lietuvikassocializmas }
+		completion_reward = {
+		add_political_power 120
+		}
 	}
 
 	#Focus for Power to the Companies!
@@ -1714,6 +1992,17 @@ add_political_power = 120
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_laissezfaireeconomics }
+		completion_reward = {
+				 879 = { 
+          add_extra_state_shared_building_slots = 2
+          add_building_construction = {
+ 
+	    type = arms_factory
+	    level = 2
+	    instant_build = yes
+          }
+          }
+		}
 	}
 
 	#Focus for Decrease Safety Regulations
@@ -1725,6 +2014,10 @@ add_political_power = 120
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_thecapitaliststate }
+		completion_reward = {
+		add_ideas = {little_to_no_regulations} 
+		manpower = -1000
+		}
 	}
 
 	#Focus for Drive for Production
@@ -1736,6 +2029,17 @@ add_political_power = 120
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_encouragetheformationoflithuaniancompanies }
+		completion_reward = {
+				 189 = { 
+          add_extra_state_shared_building_slots = 2
+          add_building_construction = {
+ 
+	    type = arms_factory
+	    level = 2
+	    instant_build = yes
+          }
+          }
+		}
 	}
 
 	#Focus for Corruptionless Society
@@ -1747,6 +2051,7 @@ add_political_power = 120
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_equalityforall }
+		add_ideas = { no_bribes }
 	}
 
 	#Focus for Equality for All!
@@ -1758,6 +2063,9 @@ add_political_power = 120
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_thesocialiststate }
+		completion_reward = {
+		add_stability = 0.01
+		}
 	}
 
 	#Focus for Mass Industrilization
@@ -1769,6 +2077,32 @@ add_political_power = 120
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_thesocialiststate }
+		completion_reward = {
+		11 = {
+add_extra_state_shared_building_slots = 1
+add_building_construction = {
+	type = arms_factory
+	level = 1
+	instant_build = yes
+}
+}
+189 = {
+add_extra_state_shared_building_slots = 1
+add_building_construction = {
+	type = industrial_complex
+	level = 1
+	instant_build = yes
+}
+}
+784 = {
+add_extra_state_shared_building_slots = 1
+add_building_construction = {
+	type = arms_factory
+	level = 1
+	instant_build = yes
+}
+}
+		}
 	}
 
 	#Focus for The Socialist Gem
@@ -1785,8 +2119,8 @@ add_political_power = 120
 		prerequisite = { 
 			focus = LIT_peasantssociety 
 		}
-		prerequisite = { 
-			focus = LIT_ 
+		completion_reward = {
+		add_political_power = 150
 		}
 	}
 
@@ -1799,6 +2133,18 @@ add_political_power = 120
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_collectiviststate }
+		completion_reward = {
+		add_political_power = 120
+			   11 = { 
+        add_extra_state_shared_building_slots = 1
+        add_building_construction = {
+ 
+	   type = industrial_complex
+	   level = 1
+	   instant_build = yes
+}
+}
+		}
 	}
 
 	#Focus for Nationalize the Land
@@ -1810,6 +2156,26 @@ add_political_power = 120
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_lowermilitaryfunding }
+		completion_reward = {
+		 879 = { 
+          add_extra_state_shared_building_slots = 2
+          add_building_construction = {
+ 
+	    type = industrial_complex
+	    level = 2
+	    instant_build = yes
+          }
+          }
+		 784 = { 
+          add_extra_state_shared_building_slots = 2
+          add_building_construction = {
+ 
+	    type = arms_factory
+	    level = 2
+	    instant_build = yes
+          }
+		}
+		}
 	}
 
 	#Focus for Ban Usury!
@@ -1821,6 +2187,9 @@ add_political_power = 120
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_aryansocialism }
+		completion_reward = {
+		add_ideas = { no_usury }
+		add_political_power = -40
 	}
 
 	#Focus for Spread the Revoliution Outwards!
@@ -1840,8 +2209,8 @@ add_political_power = 120
 		prerequisite = { 
 			focus = LIT_plannedeconomy 
 		}
-		prerequisite = { 
-			focus = LIT_ 
+		completion_reward = {
+		
 		}
 	}
 
@@ -1902,7 +2271,7 @@ add_political_power = 120
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_banusuryvisoumis }
 				completion_reward = {
-		add_stability = 0.06
+		add_stability = 0.006
 		add_popularity = {ideology = pelekist popularity =0.10}
     }
 	}
@@ -1934,7 +2303,7 @@ add_political_power = 120
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_kunigaiktisvisuomis }
 		completion_reward = {
-		add_stability = 0.06
+		add_stability = 0.006
 		add_popularity = {ideology = pelekist popularity =0.10}
     }
 	}
@@ -2119,7 +2488,7 @@ target = BLR
 		prerequisite = { focus = LIT_kirposjaunimas }
 		completion_reward = {
         add_popularity = {ideology = reactionary popularity =0.10}
-        add_stability = 0.05
+        add_stability = 0.005
 		}
 	}
 
@@ -2135,7 +2504,7 @@ target = BLR
 			focus = LIT_thearmywithastate
 		}
 		completion_reward = {
-		add_stability = 0.05
+		add_stability = 0.005
 		}
 	}
 
@@ -2188,7 +2557,7 @@ target = BLR
 		prerequisite = { focus = LIT_generalkirpa }
 		mutually_exclusive = { focus = LIT_interveneinbelarus }
 completion_reward = {
- add_stability = 0.05
+ add_stability = 0.005
 }
 	}
 
@@ -2321,6 +2690,10 @@ completion_reward = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_encouragelithuaniannationalism }
+				completion_reward = {
+ add_popularity = {ideology = democratic_socialist popularity =-0.02}
+ add_popularity = {ideology = socialist popularity =-0.02}
+}
 	}
 
 	#Focus for General Škirpa
@@ -2822,6 +3195,10 @@ completion_reward = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_corruptionlesssociety }
+		completion_reward = {
+		 add_research_slot = 1
+
+		}
 	}
 
 	#Focus for Offensive Doctrine
@@ -2834,6 +3211,9 @@ completion_reward = {
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_lietuvoskariuomen }
 		mutually_exclusive = { focus = LIT_defensivedoctrine }
+completion_reward = {
+ army_experience = 25
+		}
 	}
 
 	#Focus for Mass Artillery Fire
@@ -2857,6 +3237,14 @@ completion_reward = {
 		mutually_exclusive = { 
 			focus = LIT_ 
 		}
+						completion_reward = {
+		 add_tech_bonus = {
+	name = mass_artillery
+	bonus = 1.0
+	uses = 2
+	category = cat_superior_firepower
+		}
+		}
 	}
 
 	#Focus for End the ANBO Monpoly
@@ -2869,6 +3257,15 @@ completion_reward = {
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_lietuvosoropajgos }
 		mutually_exclusive = { focus = LIT_grantanbomoreprivledges }
+		completion_reward = {
+		  air_experience = -25
+ add_tech_bonus = {
+	name = cas_bonus
+	bonus = 1.0
+	uses = 1
+	technology = CAS2
+}
+		}
 	}
 
 	#Focus for Grant ANBO More Privledges
@@ -2893,7 +3290,15 @@ completion_reward = {
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_endtheanbomonpoly }
 		mutually_exclusive = { focus = LIT_encouragelithuanianmadeplanes }
-	}
+		completion_reward = {
+		 add_equipment_to_stockpile = {
+  type = fighter_equipment_1
+					amount = 60
+					producer = ENG
+ }
+
+}
+		}
 
 	#Focus for Encourage Lithuanian Made Planes
 	focus = {
@@ -2905,6 +3310,14 @@ completion_reward = {
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_endtheanbomonpoly }
 		mutually_exclusive = { focus = LIT_importforeignmodels }
+		completion_reward = {
+ add_tech_bonus = {
+	name = fighter_bonus
+	bonus = 2.0
+	uses = 2
+	category = light_fighter
+}
+		}
 	}
 
 	#Focus for Focus on CAS
@@ -2928,6 +3341,14 @@ completion_reward = {
 		mutually_exclusive = { 
 			focus = LIT_ 
 		}
+		completion_reward = {
+		 add_tech_bonus = {
+	name = cas_bonus
+	bonus = 1.0
+	uses = 1
+	technology = CAS2
+}
+		}
 	}
 
 	#Focus for Focus on Fighters
@@ -2943,6 +3364,14 @@ completion_reward = {
 			focus = LIT_importforeignmodels 
 		}
 		mutually_exclusive = { focus = LIT_focusoncas }
+		completion_reward = {
+ add_tech_bonus = {
+	name = fighter_bonus
+	bonus = 1.0
+	uses = 1
+	category = light_fighter
+}
+		}
 	}
 
 	#Focus for Lithuanians in the air!
@@ -2957,6 +3386,11 @@ completion_reward = {
 			focus = LIT_focusonfighters 
 			focus = LIT_focusoncas 
 			focus = LIT_focusonbombers 
+		}		
+ completion_reward = {
+  air_experience = 50
+}
+ }
 		}
 	}
 
@@ -2969,6 +3403,19 @@ completion_reward = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_lithuanianquality }
+				completion_reward = {
+		PRS = {   add_equipment_to_stockpile = {
+  type = fighter_equipment_1
+					amount = 45
+					producer = LIT
+ }
+		}
+		add_timed_idea = {aircraft_deals days = 90}
+		add_equipment_to_stockpile = {
+  type = fighter_equipment_1
+					amount = 45
+					producer = LIT
+		}
 	}
 
 	#Focus for Focus on Bombers
@@ -2984,6 +3431,16 @@ completion_reward = {
 			focus = LIT_focusoncas 
 			focus = LIT_ 
 		}
+		
+ completion_reward = {
+  set_technology = {
+    early_bomber = 1 
+}
+  set_technology = {
+    early_bomber = 2
+}
+ }
+ } 
 	}
 
 	#Focus for Air Doctrine Focus I
@@ -2995,7 +3452,16 @@ completion_reward = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_lietuvosoropajgos }
-	}
+		completion_reward = {
+ add_tech_bonus = {
+	name = doctrine_bonus
+	bonus = 1.0
+	uses = 2
+	category = cat_battlefield_support
+}
+}
+		}
+	
 
 	#Focus for Air Doctrine Focus II
 	focus = {
@@ -3006,6 +3472,14 @@ completion_reward = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_airdoctrinefocusi }
+		completion_reward = {
+ add_tech_bonus = {
+	name = doctrine_bonus
+	bonus = 1.0
+	uses = 2
+	category = cat_battlefield_support
+}
+}
 	}
 
 	#Focus for Defend the Sea!
@@ -3017,6 +3491,16 @@ completion_reward = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_thesmallfleet }
+		completion_reward = {
+  add_tech_bonus = {
+	name = defend_the_sea
+	bonus = 1
+    ahead_reduction = 1
+	uses = 1
+	category = dd_tech
+}
+naval_experience = 50
+		}
 	}
 
 	#Focus for Modernize the Ship "Prezidentas Antanas Smetona"
@@ -3028,6 +3512,9 @@ completion_reward = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_leaveitasitis }
+		completion_reward = {
+		
+		}
 	}
 
 	#Focus for The Small Fleet
@@ -3039,7 +3526,19 @@ completion_reward = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_buymoredestroyers }
-	}
+		completion_reward = {
+		navy_experience = 25
+		completion_reward = {
+  add_tech_bonus = {
+	name = small_fleet
+	bonus = 0.5
+    ahead_reduction = 1
+	uses = 1
+	category = dd_tech
+}
+ }
+		}
+		}
 
 	#Focus for Buy Foreign Submarines
 	focus = {
@@ -3077,6 +3576,9 @@ completion_reward = {
 			focus = LIT_buyforeignsubmarines 
 			focus = LIT_makelithuaniansubmarines 
 		}
+		completion_reward = {
+		add_ideas = { submarine_attack }
+		}
 	}
 
 	#Focus for Leave it as it is
@@ -3089,6 +3591,9 @@ completion_reward = {
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_theprussiandeal }
 		mutually_exclusive = { focus = LIT_reformthenavy }
+		completion_reward = {
+		
+		}
 	}
 
 	#Focus for Experts from Prussia
@@ -3110,7 +3615,21 @@ completion_reward = {
 		y = 16
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = LIT_reformthenavy }
+		prerequisite = { focus = LIT_reformthenavy }		
+completion_reward = {
+hidden_effect = {
+country_event = { id = bolshevik_russia.38 days = 1 }
+}
+189 = { 
+add_extra_state_shared_building_slots = 2
+ add_building_construction = {
+ 
+	type = dockyard
+	level = 2
+	instant_build = yes
+}
+}
+}
 	}
 
 	#Focus for Raid German Strongholds!
@@ -3152,6 +3671,9 @@ completion_reward = {
 		prerequisite = { 
 			focus = LIT_ 
 		}
+		completion_reward = {
+ army_experience = 100
+		}
 	}
 
 	#Focus for Lithuanian Tanks!
@@ -3164,6 +3686,14 @@ completion_reward = {
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_lithuanianstormtroopers }
 		mutually_exclusive = { focus = LIT_importgermantanks }
+		completion_reward = {
+		 add_tech_bonus = {
+	name = lithuanian_tanks
+	bonus = 1.00
+	uses = 2
+	category = armor
+}
+		}
 	}
 
 	#Focus for Import German Tanks
@@ -3176,6 +3706,13 @@ completion_reward = {
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_lithuanianstormtroopers }
 		mutually_exclusive = { focus = LIT_lithuaniantanks }
+		completion_reward = {
+				completion_reward = {
+  type = light_tanks_0
+					amount = 40
+					producer = LIT
+ }
+		}
 	}
 
 	#Focus for Lightning Attacks!
@@ -3190,6 +3727,13 @@ completion_reward = {
 			focus = LIT_lithuaniantanks 
 			focus = LIT_importgermantanks 
 		}
+		completion_reward = {
+ add_ideas = {
+  lightning_attacks
+ }
+}
+}
+
 	}
 
 	#Focus for Aid Lithuanians in Belarus!
@@ -3218,6 +3762,14 @@ completion_reward = {
 		mutually_exclusive = { 
 			focus = LIT_massartilleryfire 
 		}
+		        completion_reward = {
+ add_tech_bonus = {
+	name = mobile_doctrine
+	bonus = 1.0
+	uses = 2
+	category = cat_mobile_warfare
+}
+}
 	}
 
 	#Focus for Grant Power to the Lithuanian Riflemen
@@ -3229,6 +3781,9 @@ completion_reward = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_contractcompaniestoaidthearmy }
+		completion_reward = {
+		manpower = 20000
+		}
 	}
 	
 
@@ -3242,6 +3797,15 @@ completion_reward = {
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_grantpowertothelithuanianriflemen }
 		mutually_exclusive = { focus = LIT_importforeignequipment }
+  completion_reward = {
+  add_tech_bonus = {
+	name = infantry_bonus
+	bonus = 2.0
+    
+	uses = 1
+	category = infantry_weapons
+}
+ }
 	}
 
 	#Focus for Prepare for Partisan Warfare
@@ -3255,6 +3819,9 @@ completion_reward = {
 		prerequisite = { 
 			focus = LIT_importforeignequipment 
 			focus = LIT_modernlithuanianequipment 
+		}
+		completion_reward = {
+		add_ideas = { partizanai }
 		}
 	}
 
@@ -3275,6 +3842,9 @@ completion_reward = {
 		prerequisite = { 
 			focus = LIT_ 
 		}
+				completion_reward = {
+ army_experience = 100
+		}
 	}
 
 	#Focus for The Pride of Lithuania!
@@ -3289,6 +3859,9 @@ completion_reward = {
 			focus = LIT_lionofdefence 
 			focus = LIT_lionofoffense 
 		}
+		completion_reward = {
+		add_ideas = { pride_of_lithuania}
+		}
 	}
 
 	#Focus for Lithuanian Stormtroopers!
@@ -3300,6 +3873,11 @@ completion_reward = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_preparetomotorizethearmy }
+		completion_reward = {
+		 add_ideas = {
+  lithuanian_stormtroopers
+ }
+		}
 	}
 
 	#Focus for Aid the Baltic Partisans!
@@ -3325,6 +3903,8 @@ completion_reward = {
 			focus = LIT_offensivedoctrine 
 			focus = LIT_defensivedoctrine 
 		}
+		completion_reward = {
+		
 	}
 
 	#Focus for Trench Warfare II
@@ -3336,8 +3916,16 @@ completion_reward = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_trenchwarfare }
+		completion_reward = {
+		 add_tech_bonus = {
+	name = trench_doctrine
+	bonus = 1.0
+	uses = 2
+	category = cat_grand_battle_plan
+}
 	}
-
+	}
+	
 	#Focus for Mass Artillery II
 	focus = {
 		id = LIT_massartilleryii
@@ -3346,7 +3934,15 @@ completion_reward = {
 		y = 16
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = LIT_massartilleryfire }
+		prerequisite = { focus = LIT_massartilleryfire } 
+				completion_reward = {
+		 add_tech_bonus = {
+	name = mass_artillery
+	bonus = 1.0
+	uses = 2
+	category = cat_superior_firepower
+		}
+		}
 	}
 
 	#Focus for Prolong the Russian Civil War
@@ -3372,6 +3968,18 @@ completion_reward = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_defensivedoctrine }
+				completion_reward = {
+		784 = {
+    if = {
+        limit = { is_controlled_by = ROOT }
+        add_building_construction = {
+            type = infrastructure
+            level = 3
+            instant_build = yes
+        }
+    }
+}
+		}
 	}
 
 	#Focus for Forts along the Latvian Border
@@ -3383,6 +3991,18 @@ completion_reward = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_fortsalongthebelarusianborder }
+				completion_reward = {
+		11 = {
+    if = {
+        limit = { is_controlled_by = ROOT }
+        add_building_construction = {
+            type = infrastructure
+            level = 3
+            instant_build = yes
+        }
+    }
+}
+		}
 	}
 
 	#Focus for Forts on the Prussian Border
@@ -3394,6 +4014,18 @@ completion_reward = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_fortsalongthelatvianborder }
+				completion_reward = {
+		189 = {
+    if = {
+        limit = { is_controlled_by = ROOT }
+        add_building_construction = {
+            type = infrastructure
+            level = 3
+            instant_build = yes
+        }
+    }
+}
+		}
 	}
 
 	#Focus for Forts along the Polish Border
@@ -3405,6 +4037,18 @@ completion_reward = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_defensivedoctrine }
+		completion_reward = {
+		879 = {
+    if = {
+        limit = { is_controlled_by = ROOT }
+        add_building_construction = {
+            type = infrastructure
+            level = 3
+            instant_build = yes
+        }
+    }
+}
+		}
 	}
 
 	#Focus for Contract Companies to Aid the Army
@@ -3416,6 +4060,9 @@ completion_reward = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_defensivedoctrine }
+		completion_reward = {
+		add_ideas = { contract_companies }
+		}
 	}
 
 	#Focus for Lietuvos Laivynas
@@ -3426,6 +4073,9 @@ completion_reward = {
 		y = 13
 		cost = 10
 		available_if_capitulated = yes
+		completion_reward = {
+		 navy_experience = 25
+		}
 	}
 
 	#Focus for Lietuvos Oro Pajėgos
@@ -3436,6 +4086,9 @@ completion_reward = {
 		y = 13
 		cost = 10
 		available_if_capitulated = yes
+		completion_reward = {
+		  air_experience = 25
+		}
 	}
 
 	#Focus for Defensive Doctrine
@@ -3468,6 +4121,14 @@ completion_reward = {
 		mutually_exclusive = { 
 			focus = LIT_ 
 		}
+		completion_reward = {
+		 add_tech_bonus = {
+	name = trench_doctrine
+	bonus = 1.0
+	uses = 2
+	category = cat_grand_battle_plan
+}
+		}
 	}
 
 	#Focus for Mobile Doctrine
@@ -3480,6 +4141,15 @@ completion_reward = {
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_offensivedoctrine }
 		mutually_exclusive = { focus = LIT_massartilleryfire }
+		mutually_exclusive = { focus = LIT_trenchwarfare }
+        completion_reward = {
+ add_tech_bonus = {
+	name = mobile_doctrine
+	bonus = 1.0
+	uses = 2
+	category = cat_mobile_warfare
+}
+		}
 	}
 
 	#Focus for Lietuvos Kariuomenė
@@ -3510,6 +4180,13 @@ completion_reward = {
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_grantpowertothelithuanianriflemen }
 		mutually_exclusive = { focus = LIT_modernlithuanianequipment }
+		completion_reward = {
+  type = infantry_equipment_0
+					amount = 100
+					producer = LIT
+ }
+		
+		}
 	}
 
 	#Focus for Raids into Russia
@@ -3535,6 +4212,15 @@ completion_reward = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_offensivedoctrine }
+		completion_reward = {
+add_tech_bonus = {
+	name = zhukov_mot
+	bonus = 1.0
+	uses = 1
+	technology = motorised_infantry	
+	technology = mechanised_infantry
+}
+	}
 	}
 
 	#Focus for The Prussian Deal
@@ -3546,6 +4232,9 @@ completion_reward = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_lietuvoslaivynas }
+		completion_reward = {
+		
+		}
 	}
 
 	#Focus for Reform the Navy
@@ -3558,7 +4247,10 @@ completion_reward = {
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_theprussiandeal }
 		mutually_exclusive = { focus = LIT_leaveitasitis }
-	}
+		completion_reward = {
+		naval_experience = 25
+		}
+		}
 
 	#Focus for Form the Lithuanian Marines
 	focus = {
@@ -3571,6 +4263,15 @@ completion_reward = {
 		prerequisite = { 
 			focus = LIT_reformthenavy 
 			focus = LIT_leaveitasitis 
+		}
+		completion_reward = {
+		add_ideas = {lithuanian_marines }
+ add_tech_bonus = {
+	name = marine_bonus
+	bonus = 1.0
+	uses = 1
+	technology = marine_tech
+}
 		}
 	}
 
@@ -3588,8 +4289,14 @@ completion_reward = {
 		prerequisite = { 
 			focus = LIT_createanmilitaryport 
 		}
-		prerequisite = { 
-			focus = LIT_ 
+		completion_reward = {
+		  add_tech_bonus = {
+	name = submarine_fleet
+	bonus = 1
+    ahead_reduction = 1
+	uses = 1
+	category = ss_tech
+}
 		}
 	}
 
@@ -3607,6 +4314,9 @@ completion_reward = {
 		prerequisite = { 
 			focus = LIT_modernizetheshipprezidentasantanassmetona 
 		}
+		completion_reward = {
+		add_political_power = -100
+		}
 	}
 
 	#Focus for The Pearl of Lithuania!
@@ -3621,6 +4331,9 @@ completion_reward = {
 			focus = LIT_defendthesea 
 			focus = LIT_underwaterattack 
 		}
+		completion_reward = {
+				naval_experience = 50
+		}
 	}
 
 	#Focus for Sell Lithuanian Aircrafts to Foreigners
@@ -3632,7 +4345,16 @@ completion_reward = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_encouragelithuanianmadeplanes }
-	}
+		completion_reward = {
+		PRS = {   add_equipment_to_stockpile = {
+  type = fighter_equipment_1
+					amount = 45
+					producer = LIT
+ }
+		}
+		add_timed_idea = {aircraft_deals days = 90}
+		}
+		}
 
 	#Focus for Lithuanian Quality
 	focus = {
@@ -3643,6 +4365,14 @@ completion_reward = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_grantanbomoreprivledges }
+		completion_reward = {
+		 add_tech_bonus = {
+	name = doctrine_bonus
+	bonus = 0.75
+	uses = 1
+	category = tactical_bomber
+}
+		}
 	}
 
 #End of focuses 
