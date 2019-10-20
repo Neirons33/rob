@@ -19,6 +19,11 @@ HUN_EMPIRE = {
 	color_ui = rgb { 255 255 255 }
 }
 
+SFS_AUH = {
+	color = rgb { 194 198 215 }
+	color_ui = rgb { 255 255 255 }
+}
+
 AUS_NOT_WHITE = {	
 	color = rgb { 249 126 98 }
 	color_ui = rgb { 255 164 127 }
@@ -150,6 +155,11 @@ GER_provisional_gvt = {
 }
 
 GER_german_empire = {
+	color = rgb { 128 128 128 }
+	color_ui = rgb { 115 115 115 }
+}
+
+SFS_GER = {
 	color = rgb { 128 128 128 }
 	color_ui = rgb { 115 115 115 }
 }
