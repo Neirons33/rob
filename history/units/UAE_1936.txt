@@ -53,22 +53,10 @@ units = {
 
 	}
 	division = {
-		#name = "3 Alfurqat"
-		division_name = {    # New syntax for compatibility with name lists
-			is_name_ordered = yes
-			name_order = 3
-		}
-		location = 8051
-		division_template = "Arab Militia"	
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
-
-	}
-	division = {
 		#name = "4 Alfurqat"
 		division_name = {    # New syntax for compatibility with name lists
 			is_name_ordered = yes
-			name_order = 4
+			name_order = 3
 		}
 		location = 13218
 		division_template = "Arab Militia"	
@@ -80,7 +68,7 @@ units = {
 		#name = "5 Alfurqat"
 		division_name = {    # New syntax for compatibility with name lists
 			is_name_ordered = yes
-			name_order = 5
+			name_order = 4
 		}
 		location = 5074
 		division_template = "Arab Militia"	
