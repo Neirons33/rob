@@ -348,7 +348,7 @@ tag = TMS
 
 option = {
 name = turkmenreds.112.a
-ai_chance = { factor = 50}
+ai_chance = { factor = 25}
 create_field_marshal = {
 	name = "Ioseb Jughashvili"
 	picture = ""
@@ -362,6 +362,10 @@ create_field_marshal = {
 }
 set_politics = {
 	ruling_party = national_socialist
+}
+add_popularity = {
+    ideology = national_socialist
+    popularity = 0.2
 }
 create_country_leader = {
 	name = "Ioseb Jughashvili"
@@ -377,9 +381,11 @@ hidden_effect = { country_event = { id = turkmenreds.113 days = 10 } }
 }
 option = {
 name = turkmenreds.112.b
-ai_chance = { factor = 50}
+ai_chance = { factor = 75}
 add_stability = -0.2
 add_manpower = -539
+hidden_effect = { JSW = { country_event = { id = turkmenreds.114 days = 100 } } }
+
 }
 
 }
@@ -402,6 +408,48 @@ ai_chance = { factor = 100}
 end_puppet = KHV
 declare_war_on = {
     target = KHV
-    type = annex_everything
+    type = puppet_wargoal_focus
 }
+}
+}
+
+country_event = {
+id = turkmenreds.114
+title = turkmenreds.114.t
+desc = turkmenreds.114.d
+is_triggered_only = yes
+fire_only_once = yes
+picture = GFX_picture_bosnian_revolt
+
+trigger = {
+tag = JSW
+}
+
+option = {
+name = turkmenreds.114.a
+ai_chance = { factor = 100}
+create_field_marshal = {
+	name = "Ioseb Jughashvili"
+	picture = ""
+	traits = { offensive_doctrine old_guard trait_reckless }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 4
+	id = 2
+}
+add_manpower = 543
+add_popularity = {
+    ideology = national_socialist
+    popularity = 0.1
+}
+}
+option = {
+name = turkmenreds.114.b
+ai_chance = { factor = 0}
+add_manpower = -25
+
+}
+
 }
