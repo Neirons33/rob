@@ -75,7 +75,7 @@ AUS = {
 	color_ui = rgb { 255 255 255 }
 }
 LIT = {
-	color = rgb { 114 73 107 }
+	color = rgb { 169 150 64 }
 	color_ui = rgb { 169 150 64 }
 }
 EST = {
@@ -103,7 +103,7 @@ ROM = {
 	color_ui = rgb { 255 255 120 }
 }
 YUG = {
-	color = rgb { 113 85 79 }
+	color = rgb { 94 95 164 }
 	color_ui = rgb { 94 95 164 }
 }
 SWI = {
@@ -151,7 +151,7 @@ IRE = {
 	color_ui = rgb { 71 152 77 }
 }
 HUN = {
-	color = rgb { 80 93 84 }
+	color = rgb { 255 164 127 }
 	color_ui = rgb { 255 164 127 }
 }
 AFG = {
@@ -400,7 +400,7 @@ SYR = {
 }
 
 SER = {
-	color = rgb { 119 91 103 }
+	color = rgb { 23 94 125 }
 	color_ui = rgb { 23 94 125 }
 }
 

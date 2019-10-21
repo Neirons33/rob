@@ -133,7 +133,145 @@ complete_effect = {
  PRS = { add_to_faction = EST }
 }
 }
+
+}
+
+PRS_german_expansion = {
+
+ PRS_destroy_the_french = {
+  cost = 25
+ fire_only_once = yes
  
+ available = {
+  has_war = no
+  NOT = {
+  28 = { is_owned_by = PRS }
+  }
+  GER = { exists = no }
+  has_full_control_of_state = 790
+  has_full_control_of_state = 50
+ }
+ complete_effect = {
+  every_country = {
+	limit = { controls_state = 28 }
+	PRS = { 
+		create_wargoal = {
+			type = annex_everything		
+			target = PREV
+		}			
+	}
+}
+ }
+ }
+
+  PRS_invade_rhineland = {
+  cost = 25
+ fire_only_once = yes
+ 
+ available = {
+  has_war = no
+  NOT = {
+  1089 = { is_owned_by = PRS }
+  }
+  GER = { exists = no }
+  has_full_control_of_state = 790
+  has_full_control_of_state = 50
+ }
+ complete_effect = {
+  every_country = {
+	limit = { controls_state = 1089 }
+	PRS = { 
+		create_wargoal = {
+			type = annex_everything		
+			target = PREV
+		}			
+	}
+}
+ }
+ }
+  PRS_destroy_danes = {
+  cost = 25
+ fire_only_once = yes
+ 
+ available = {
+  has_war = no
+  NOT = {
+  796 = { is_owned_by = PRS }
+  804 = { is_owned_by = PRS }
+  }
+  GER = { exists = no }
+  has_full_control_of_state = 58
+ }
+ complete_effect = {
+ 796 = { add_core_of = PRS }
+ 804 = { add_core_of = PRS }
+  every_country = {
+	limit = { controls_state = 796 }
+	PRS = { 
+		create_wargoal = {
+			type = annex_everything		
+			target = PREV
+		}			
+	}
+}
+ }
+ }
+ PRS_retake_luxembourg = {
+  cost = 25
+ fire_only_once = yes
+ 
+ available = {
+  has_war = no
+  NOT = {
+  8 = { is_owned_by = PRS }
+  }
+  GER = { exists = no }
+  has_full_control_of_state = 792
+  has_full_control_of_state = 42
+ }
+ complete_effect = {
+  every_country = {
+	limit = { controls_state = 8 }
+	PRS = { 
+		create_wargoal = {
+			type = annex_everything		
+			target = PREV
+		}			
+	}
+}
+ }
+ }
+ PRS_attack_wallonia = {
+  cost = 25
+ fire_only_once = yes
+ 
+ available = {
+  has_war = no
+  NOT = {
+  813 = { is_owned_by = PRS }
+  812 = { is_owned_by = PRS }
+  }
+  GER = { exists = no }
+  has_full_control_of_state = 1089
+ }
+ complete_effect = {
+ 813 = { add_core_of = PRS }
+ 812 = { add_core_of = PRS }
+  every_country = {
+	limit = { controls_state = 812 }
+	PRS = { 
+		create_wargoal = {
+			type = annex_everything		
+			target = PREV
+		}			
+	}
+}
+ }
+ }
+}
+
+PRS_baltic_ambition = {
+
  PRS_free_lithuania = {
  cost = 25
  fire_only_once = yes
@@ -208,6 +346,11 @@ PRS_proclaim_baltic_unity = {
 }
 complete_effect = {
   set_cosmetic_tag = PRS_BAL
+  12 = { add_core_of = PRS }
+  190 = {add_core_of = PRS }
+  881 = { add_core_of = PRS }
+  1010 = { add_core_of = PRS }
+  880 = { add_core_of = PRS }
     every_state = {
     limit = {  
 	OR = {
@@ -243,26 +386,21 @@ complete_effect = {
 }
 }
 
-}
-
-PRS_german_expansion = {
-
- PRS_destroy_the_french = {
-  cost = 25
+PRS_retake_belarus = {
+ cost = 25
  fire_only_once = yes
- 
  available = {
-  has_war = no
-  NOT = {
-  28 = { is_owned_by = PRS }
-  }
-  GER = { exists = no }
-  has_full_control_of_state = 790
-  has_full_control_of_state = 50
+ has_cosmetic_tag = PRS_BAL
+ NOT = {
+  96 = { is_owned_by = PRS } 
+  has_war = yes  
  }
+ }
+ 
  complete_effect = {
+ 96 = { add_core_of = PRS } 
   every_country = {
-	limit = { controls_state = 28 }
+	limit = { controls_state = 96 }
 	PRS = { 
 		create_wargoal = {
 			type = annex_everything		
@@ -271,25 +409,25 @@ PRS_german_expansion = {
 	}
 }
  }
- }
 
-  PRS_invade_rhineland = {
-  cost = 25
+}
+
+PRS_retake_western_belarus = {
+ cost = 25
  fire_only_once = yes
- 
  available = {
-  has_war = no
-  NOT = {
-  1089 = { is_owned_by = PRS }
-  }
-  GER = { exists = no }
-  RHN = { exists = yes }
-  has_full_control_of_state = 790
-  has_full_control_of_state = 50
+ has_cosmetic_tag = PRS_BAL
+ NOT = {
+  95 = { is_owned_by = PRS } 
+  933 = { is_owned_by = PRS }
+  has_war = yes  
  }
- complete_effect = {
+ }
+  complete_effect = {
+ 95 = { add_core_of = PRS }
+ 933 = { add_core_of = PRS }  
   every_country = {
-	limit = { controls_state = 1089 }
+	limit = {  OR = { controls_state = 95 controls_state = 933 } }
 	PRS = { 
 		create_wargoal = {
 			type = annex_everything		
@@ -298,6 +436,31 @@ PRS_german_expansion = {
 	}
 }
  }
+
+}
+
+PRS_retake_polish_lands = {
+ cost = 25
+ fire_only_once = yes
+ available = {
+ has_cosmetic_tag = PRS_BAL
+ NOT = {
+  97 = { is_owned_by = PRS } 
+  has_war = yes  
+ }
+ }
+  complete_effect = {
+ 97 = { add_core_of = PRS }
+  every_country = {
+	limit = {  OR = { controls_state = 97 } }
+	PRS = { 
+		create_wargoal = {
+			type = annex_everything		
+			target = PREV
+		}			
+	}
+}
  }
 
+}
 }

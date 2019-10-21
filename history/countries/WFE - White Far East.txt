@@ -53,7 +53,7 @@ set_convoys = 50
 
 
 create_country_leader = {
-	name = "Mikhail Alexandrovich Kedrov"
+	name = "Mikhail Kedrov"
 	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
 	picture = "sayid_abdullah.tga"
 	expire = "1965.1.1"

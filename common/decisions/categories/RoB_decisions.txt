@@ -31,6 +31,15 @@ PRS_foreign_policy = {
 		  base = 10
 		  }
 }
+PRS_baltic_ambition = {
+  icon = GFX_decision_oppression
+	visible = {
+    tag = PRS
+          }
+		  priority = {
+		  base = 10
+		  }
+}
 PRS_german_expansion = {
   icon = GFX_decision_oppression
 	visible = {
