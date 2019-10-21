@@ -5,11 +5,18 @@
 		icon = GFX_goal_unknown
 		x = 8
 		y = 16
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_eFiPJRUs }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		 add_equipment_to_stockpile = {
+         type = artillery_equipment_1
+					amount = 250
+					producer = USA
+             }
 		}
 	}
 
@@ -19,25 +26,19 @@
 		icon = GFX_goal_unknown
 		x = 0
 		y = 15
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_increasetransportplaneproduction }
 		ai_will_do = {
 			factor = 1
 		}
-	}
-
-	#Focus for Blitzkrieg tactics
-	focus = {
-		id = GER_blitzkriegtactics
-		icon = GFX_goal_unknown
-		x = 10
-		y = 16
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = GER_motorizetheinfantry }
-		ai_will_do = {
-			factor = 1
+	completion_reward = {
+		 add_tech_bonus = {
+	      name = para_bonus
+	      bonus = 1.0
+	      uses = 1
+	      category = para_tech
+           }    
 		}
 	}
 
@@ -47,25 +48,53 @@
 		icon = GFX_goal_unknown
 		x = 8
 		y = 15
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_increaserifleproduction }
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		 add_tech_bonus = {
+	      name = artillery_bonus
+	      bonus = 0.75
+	      uses = 1
+	      category = artillery
+           }    
+		}
 	}
-
+	#Focus for Military reforms
+	shared_focus = {
+		id = GER_blitzkriegtactics
+		icon = GFX_goal_unknown
+		x = 10
+		y = 16
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_motorizetheinfantry }
+		ai_will_do = {
+			factor = 1
+		}
+	}
 	#Focus for Military reforms
 	shared_focus = {
 		id = GER_militaryreforms
 		icon = GFX_goal_unknown
 		x = 4
 		y = 10
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_rotevolksarmee }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		 add_tech_bonus = {
+	      name = doctrine_bonus
+	      bonus = 0.5
+	      uses = 1
+	      category = land_doctrine
+           }    
 		}
 	}
 
@@ -75,7 +104,7 @@
 		icon = GFX_goal_unknown
 		x = 6
 		y = 12
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = GER_rapidpromotions 
@@ -89,6 +118,9 @@
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		 country_event = { id = spartakus_germany.26 days = 1 }
+		}
 	}
 
 	#Focus for Improve training
@@ -97,11 +129,19 @@
 		icon = GFX_goal_unknown
 		x = 8
 		y = 11
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_YjfSNHTm }
 		ai_will_do = {
 			factor = 1
+		}
+	  completion_reward = {
+		 add_tech_bonus = {
+	      name = support_bonus
+	      bonus = 0.7
+	      uses = 1
+	      category = support_tech
+           }    
 		}
 	}
 
@@ -111,7 +151,7 @@
 		icon = GFX_goal_unknown
 		x = 12
 		y = 15
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_increasepanzerproduction }
 		ai_will_do = {
@@ -125,7 +165,7 @@
 		icon = GFX_goal_unknown
 		x = 12
 		y = 16
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_formthepanzerkorps }
 		ai_will_do = {
@@ -139,7 +179,7 @@
 		icon = GFX_goal_unknown
 		x = 11
 		y = 17
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = GER_blitzkriegtactics 
@@ -158,7 +198,7 @@
 		icon = GFX_goal_unknown
 		x = 10
 		y = 15
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_increasepanzerproduction }
 		ai_will_do = {
@@ -172,7 +212,7 @@
 		icon = GFX_goal_unknown
 		x = 6
 		y = 17
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = GER_offensivetactics 
@@ -183,6 +223,14 @@
 		ai_will_do = {
 			factor = 1
 		}
+	completion_reward = {
+		 add_tech_bonus = {
+	      name = doctrine_bonus
+	      bonus = 1.0
+	      uses = 4
+	      category = cat_grand_battle_plan
+           }    
+		}
 	}
 
 	#Focus for Stormtrooper tactics
@@ -191,11 +239,19 @@
 		icon = GFX_goal_unknown
 		x = 4
 		y = 15
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_increaserifleproduction }
 		ai_will_do = {
 			factor = 1
+		}
+	completion_reward = {
+		 add_tech_bonus = {
+	      name = infantry_bonus
+	      bonus = 0.75
+	      uses = 2
+	      category = infantry_weapons
+           }    
 		}
 	}
 
@@ -205,11 +261,19 @@
 		icon = GFX_goal_unknown
 		x = 4
 		y = 16
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_stormtroopertactics }
 		ai_will_do = {
 			factor = 1
+		}
+	completion_reward = {
+		 add_tech_bonus = {
+	      name = doctrine_bonus
+	      bonus = 1.0
+	      uses = 2
+	      category = cat_grand_battle_plan
+           }    
 		}
 	}
 
@@ -219,11 +283,19 @@
 		icon = GFX_goal_unknown
 		x = 2
 		y = 15
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_increasetransportplaneproduction }
 		ai_will_do = {
 			factor = 1
+		}
+	completion_reward = {
+		 add_tech_bonus = {
+	      name = doctrine_bonus
+	      bonus = 1.0
+	      uses = 2
+	      category = cat_mass_assault
+           }    
 		}
 	}
 
@@ -233,11 +305,16 @@
 		icon = GFX_goal_unknown
 		x = 0
 		y = 16
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_attentiononparatroopers }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		 add_ideas = {
+		  GER_paratroopers
+		 }
 		}
 	}
 
@@ -247,11 +324,16 @@
 		icon = GFX_goal_unknown
 		x = 2
 		y = 16
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_massassaulttactics }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		 add_ideas = {
+		  extensive_conscription
+		 }
 		}
 	}
 
@@ -261,7 +343,7 @@
 		icon = GFX_goal_unknown
 		x = 1
 		y = 17
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = GER_TcYFGjMz 
@@ -272,6 +354,22 @@
 		ai_will_do = {
 			factor = 1
 		}
+		 	completion_reward = {
+		 add_tech_bonus = {
+	      name = doctrine_bonus
+	      bonus = 1.0
+	      uses = 3
+	      category = cat_mass_assault
+           }    
+		}
+		completion_reward = {
+		 add_tech_bonus = {
+	      name = para_bonus
+	      bonus = 1.0
+	      uses = 1
+	      category = para_tech
+           }    
+		}
 	}
 
 	#Focus for Increase transport plane production
@@ -280,11 +378,16 @@
 		icon = GFX_goal_unknown
 		x = 1
 		y = 14
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_studentplan }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		 add_ideas = {
+		  GER_more_airplanes
+		 }
 		}
 	}
 
@@ -294,11 +397,14 @@
 		icon = GFX_goal_unknown
 		x = 4
 		y = 11
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_militaryreforms }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		 add_command_power = 100
 		}
 	}
 
@@ -308,11 +414,19 @@
 		icon = GFX_goal_unknown
 		x = 6
 		y = 11
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_rotevolksarmee }
 		ai_will_do = {
 			factor = 1
+		}
+	  completion_reward = {
+		 add_tech_bonus = {
+	      name = doctrine_bonus
+	      bonus = 0.75
+	      uses = 1
+	      category = land_doctrine
+           }    
 		}
 	}
 
@@ -322,10 +436,11 @@
 		icon = GFX_goal_unknown
 		x = 6
 		y = 13
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_armeeplan }
 		mutually_exclusive = { focus = GER_studentplan }
+		mutually_exclusive = { focus = GER_rommelplan }
 		ai_will_do = {
 			factor = 1
 		}
@@ -337,10 +452,11 @@
 		icon = GFX_goal_unknown
 		x = 11
 		y = 13
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_armeeplan }
 		mutually_exclusive = { focus = GER_studentplan }
+		mutually_exclusive = { focus = GER_seydlitzplan }
 		ai_will_do = {
 			factor = 1
 		}
@@ -352,11 +468,16 @@
 		icon = GFX_goal_unknown
 		x = 6
 		y = 14
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_seydlitzplan }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		 add_ideas = {
+		  GER_more_guns
+		 }
 		}
 	}
 
@@ -366,10 +487,13 @@
 		icon = GFX_goal_unknown
 		x = 6
 		y = 9
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		 army_experience = 25
 		}
 	}
 
@@ -379,11 +503,16 @@
 		icon = GFX_goal_unknown
 		x = 8
 		y = 10
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_rotevolksarmee }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		 add_ideas = {
+		  limited_conscription
+		 }
 		}
 	}
 
@@ -393,7 +522,7 @@
 		icon = GFX_goal_unknown
 		x = 1
 		y = 13
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_armeeplan }
 		mutually_exclusive = { 
@@ -401,9 +530,6 @@
 		}
 		mutually_exclusive = { 
 			focus = GER_rommelplan 
-		}
-		mutually_exclusive = { 
-			focus = GER_ 
 		}
 		ai_will_do = {
 			factor = 1
@@ -416,7 +542,7 @@
 		icon = GFX_goal_unknown
 		x = 11
 		y = 14
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_rommelplan }
 		ai_will_do = {
@@ -430,7 +556,7 @@
 		icon = GFX_goal_unknown
 		x = 17
 		y = 13
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_volksmarine }
 		ai_will_do = {
@@ -444,7 +570,7 @@
 		icon = GFX_goal_unknown
 		x = 15
 		y = 14
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = GER_specialtraining 
@@ -463,7 +589,7 @@
 		icon = GFX_goal_unknown
 		x = 15
 		y = 12
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = GER_xvmgqaYK 
@@ -480,7 +606,7 @@
 		icon = GFX_goal_unknown
 		x = 15
 		y = 15
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_rebuildthenavy }
 		ai_will_do = {
@@ -494,7 +620,7 @@
 		icon = GFX_goal_unknown
 		x = 21
 		y = 9
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 1
@@ -507,7 +633,7 @@
 		icon = GFX_goal_unknown
 		x = 19
 		y = 10
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_roteluftwaffe }
 		mutually_exclusive = { focus = GER_bomberfocus }
@@ -522,7 +648,7 @@
 		icon = GFX_goal_unknown
 		x = 21
 		y = 11
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = GER_fighterfocus 
@@ -541,7 +667,7 @@
 		icon = GFX_goal_unknown
 		x = 19
 		y = 12
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_aerialdoctrinefocus }
 		ai_will_do = {
@@ -555,7 +681,7 @@
 		icon = GFX_goal_unknown
 		x = 23
 		y = 12
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_aerialdoctrinefocus }
 		ai_will_do = {
@@ -569,7 +695,7 @@
 		icon = GFX_goal_unknown
 		x = 23
 		y = 13
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_luftwaffedivisions }
 		ai_will_do = {
@@ -583,7 +709,7 @@
 		icon = GFX_goal_unknown
 		x = 21
 		y = 14
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = GER_increaseplaneproduction 
@@ -602,7 +728,7 @@
 		icon = GFX_goal_unknown
 		x = 19
 		y = 13
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_increasedpilottraining }
 		ai_will_do = {
@@ -616,7 +742,7 @@
 		icon = GFX_goal_unknown
 		x = 15
 		y = 9
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 1
@@ -629,7 +755,7 @@
 		icon = GFX_goal_unknown
 		x = 13
 		y = 11
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = GER_standardisethenavaldoctrine 
@@ -652,7 +778,7 @@
 		icon = GFX_goal_unknown
 		x = 15
 		y = 11
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = GER_standardisethenavaldoctrine 
@@ -660,8 +786,11 @@
 		}
 		mutually_exclusive = { 
 			focus = GER_xvmgqaYK 
-			focus = GER_ 
 		}
+		mutually_exclusive = { 
+			focus = GER_focusondestroyers
+		}
+		 
 		ai_will_do = {
 			factor = 1
 		}
@@ -673,7 +802,7 @@
 		icon = GFX_goal_unknown
 		x = 17
 		y = 11
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = GER_standardisethenavaldoctrine 
@@ -683,7 +812,7 @@
 			focus = GER_xvmgqaYK 
 		}
 		mutually_exclusive = { 
-			focus = GER_ 
+			focus = GER_focusonbattleships
 		}
 		ai_will_do = {
 			factor = 1
@@ -696,7 +825,7 @@
 		icon = GFX_goal_unknown
 		x = 17
 		y = 10
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_rotevolksflotte }
 		ai_will_do = {
@@ -710,7 +839,7 @@
 		icon = GFX_goal_unknown
 		x = 13
 		y = 10
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_rotevolksflotte }
 		ai_will_do = {
@@ -724,7 +853,7 @@
 		icon = GFX_goal_unknown
 		x = 13
 		y = 13
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_volksmarine }
 		ai_will_do = {
@@ -738,7 +867,7 @@
 		icon = GFX_goal_unknown
 		x = 23
 		y = 10
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_roteluftwaffe }
 		mutually_exclusive = { focus = GER_fighterfocus }
@@ -753,7 +882,7 @@
 		icon = GFX_goal_unknown
 		x = 33
 		y = 9
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 1
@@ -766,7 +895,7 @@
 		icon = GFX_goal_unknown
 		x = 27
 		y = 10
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_germaneconomy }
 		mutually_exclusive = { 
@@ -789,7 +918,7 @@
 		icon = GFX_goal_unknown
 		x = 33
 		y = 10
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_germaneconomy }
 		mutually_exclusive = { 
@@ -812,7 +941,7 @@
 		icon = GFX_goal_unknown
 		x = 39
 		y = 10
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_germaneconomy }
 		mutually_exclusive = { 
@@ -846,7 +975,7 @@
 		icon = GFX_goal_unknown
 		x = 25
 		y = 12
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_germanagriculture }
 		ai_will_do = {
@@ -860,7 +989,7 @@
 		icon = GFX_goal_unknown
 		x = 33
 		y = 11
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_keepthecurrentline }
 		ai_will_do = {
@@ -874,7 +1003,7 @@
 		icon = GFX_goal_unknown
 		x = 39
 		y = 11
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_democraticsocialisteconomy }
 		ai_will_do = {
@@ -888,7 +1017,7 @@
 		icon = GFX_goal_unknown
 		x = 30
 		y = 11
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = GER_nationalbolshevikeconomy 
@@ -905,7 +1034,7 @@
 		icon = GFX_goal_unknown
 		x = 27
 		y = 11
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_nationalbolshevikeconomy }
 		ai_will_do = {
@@ -919,7 +1048,7 @@
 		icon = GFX_goal_unknown
 		x = 27
 		y = 12
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_increaseresourceoutput }
 		ai_will_do = {
@@ -933,7 +1062,7 @@
 		icon = GFX_goal_unknown
 		x = 27
 		y = 13
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_whatlittlewehave }
 		ai_will_do = {
@@ -947,7 +1076,7 @@
 		icon = GFX_goal_unknown
 		x = 25
 		y = 13
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_decentralization }
 		ai_will_do = {
@@ -961,7 +1090,7 @@
 		icon = GFX_goal_unknown
 		x = 30
 		y = 12
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_ruralinfrastructure }
 		ai_will_do = {
@@ -975,7 +1104,7 @@
 		icon = GFX_goal_unknown
 		x = 30
 		y = 14
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_ruralschools }
 		ai_will_do = {
@@ -989,7 +1118,7 @@
 		icon = GFX_goal_unknown
 		x = 36
 		y = 11
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = GER_keepthecurrentline 
@@ -1006,7 +1135,7 @@
 		icon = GFX_goal_unknown
 		x = 36
 		y = 12
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_heavyindustry }
 		ai_will_do = {
@@ -1020,7 +1149,7 @@
 		icon = GFX_goal_unknown
 		x = 36
 		y = 14
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_deutscheindustriegenossenschaft }
 		ai_will_do = {
@@ -1034,7 +1163,7 @@
 		icon = GFX_goal_unknown
 		x = 33
 		y = 12
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_germanindustry }
 		ai_will_do = {
@@ -1048,7 +1177,7 @@
 		icon = GFX_goal_unknown
 		x = 39
 		y = 12
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_forcedindustrialization }
 		ai_will_do = {
@@ -1062,7 +1191,7 @@
 		icon = GFX_goal_unknown
 		x = 39
 		y = 13
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_expandthecities }
 		ai_will_do = {
@@ -1076,7 +1205,7 @@
 		icon = GFX_goal_unknown
 		x = 41
 		y = 11
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_democraticsocialisteconomy }
 		ai_will_do = {
@@ -1090,7 +1219,7 @@
 		icon = GFX_goal_unknown
 		x = 41
 		y = 12
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_rebuildgermanrailways }
 		ai_will_do = {
@@ -1104,7 +1233,7 @@
 		icon = GFX_goal_unknown
 		x = 41
 		y = 13
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_volklufthansa }
 		ai_will_do = {
@@ -1118,7 +1247,7 @@
 		icon = GFX_goal_unknown
 		x = 28
 		y = 15
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = GER_autarky 
@@ -1137,7 +1266,7 @@
 		icon = GFX_goal_unknown
 		x = 33
 		y = 15
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = GER_rebuildingwardamage 
@@ -1159,7 +1288,7 @@
 		icon = GFX_goal_unknown
 		x = 26
 		y = 14
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = GER_nationalarmsindustry 
@@ -1178,7 +1307,7 @@
 		icon = GFX_goal_unknown
 		x = 33
 		y = 14
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_industrialresearch }
 		ai_will_do = {
@@ -1192,7 +1321,7 @@
 		icon = GFX_goal_unknown
 		x = 40
 		y = 14
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = GER_workercooperatives 
@@ -1211,7 +1340,7 @@
 		icon = GFX_goal_unknown
 		x = 38
 		y = 15
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = GER_deutschekriegsindustrie 

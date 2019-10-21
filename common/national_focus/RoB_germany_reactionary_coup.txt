@@ -2,7 +2,10 @@ focus_tree = {
 	id = GER_reactionary_coup
 	country = {
 		factor = 0
-
+    		modifier = {
+			add = 100
+			tag = SWE
+		}
 }
 continuous_focus_position = { x = 50 y = 4000 }
 

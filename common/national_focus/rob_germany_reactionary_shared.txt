@@ -218,7 +218,7 @@
 
 	#Focus for Stormtrooper Tactics
 	shared_focus = {
-		id = GER_stormtroopertactics
+		id = GER_rea_stormtroopertactics
 		icon = GFX_goal_unknown
 		x = 8
 		y = 11
@@ -247,7 +247,7 @@
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { 
-			focus = GER_stormtroopertactics 
+			focus = GER_rea_stormtroopertactics 
 		}
 		prerequisite = { 
 			focus = GER_focusonartilleryproduction 
@@ -436,7 +436,7 @@
 
 	#Focus for Aerial Doctrine focus
 	shared_focus = {
-		id = GER_aerialdoctrinefocus
+		id = GER_rea_aerialdoctrinefocus
 		icon = GFX_goal_unknown
 		x = 25
 		y = 9
@@ -530,7 +530,7 @@
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { 
-			focus = GER_aerialdoctrinefocus 
-			focus = GER_ 
+			focus = GER_rea_aerialdoctrinefocus 
+ 
 		}
 	}

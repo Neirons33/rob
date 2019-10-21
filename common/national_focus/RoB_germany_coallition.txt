@@ -2,7 +2,10 @@ focus_tree = {
 	id = german_focus_coallition
 		country = {
 		factor = 0
-
+        modifier = {
+			add = 100
+			tag = SWI
+		}
 	}
 
 	continuous_focus_position = { x = 50 y = 3000 }
@@ -246,7 +249,7 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { 
-			focus = GER_NUVOWPFm 
+			focus = GER_agriculturalgrants 
 		}
 		prerequisite = { 
 			focus = GER_countrysidesupporters 

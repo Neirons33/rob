@@ -1083,3 +1083,33 @@ country_event = {
    }
    }
    }
+   
+   
+ #####FOCUS TREE
+ 
+  country_event = {
+   id = spartakus_germany.26
+   title = "Volksarmee Question"
+   desc = spartakus_germany.26.d
+   fire_only_once = yes
+   is_triggered_only = yes
+  
+  option = {
+   name = "Rommel Will Bring Us Into 20th Century"
+   hidden_effect = {
+   complete_national_focus = GER_rommelplan
+   }
+  }
+  option = {
+   name = "Seydlitz Is Right Here"
+   hidden_effect = {
+   complete_national_focus = GER_seydlitzplan
+   }
+  }
+  option = {
+   name = "Student Is More Experienced"
+   hidden_effect = {
+   complete_national_focus = GER_studentplan
+   }
+  }
+  }
