@@ -7,7 +7,7 @@
  STATE_6:0 "Vlaanderen"
  STATE_7:0 "Holland"
  STATE_8:0 "Luxemburg"
- STATE_9:0 "Bohemia"
+ STATE_9:1 "Praha"
  STATE_10:0 "Warszawa"
  STATE_11:0 "Kaunas"
  STATE_12:0 "Vidzeme"
@@ -1216,3 +1216,4 @@
  STATE_1215:0 "Karlsruhe"
  STATE_1217:0 "Kokand"
  STATE_1218:0 "Osh"
+ STATE_1216:0 "STATE_1216"

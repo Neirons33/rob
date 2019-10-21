@@ -128,6 +128,8 @@ SWH = "countries/schleswig_holstein.txt"
 TRG = "countries/Thuringia.txt"
 OLD = "countries/Oldenburg.txt"
 HAN = "countries/Hanover.txt"
+SIL = "countries/Silizia.txt"
+SUD = "countries/Sudetenland.txt"
 
 
 ##Africa###
