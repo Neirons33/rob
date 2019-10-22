@@ -9,11 +9,15 @@ state={
 
 		}
 		victory_points = {
-			6690 7 
+			6690 3 
 		}
 		victory_points = {
-			13352 10
+			13352 5
 		}
+		victory_points = {
+			9679 1
+		}
+
 
 		add_core_of = AUS
 
@@ -25,6 +29,6 @@ state={
 	}
 	manpower=1281973
 	buildings_max_level_factor=1.000
-	state_category=town
+	state_category= rural
 
 }

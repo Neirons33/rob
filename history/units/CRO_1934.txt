@@ -75,4 +75,32 @@ division_template = "Croatian Revolutionary Guard"
 start_experience_factor = 0.8
 start_equipment_factor = 0.7
 }
+division = {
+name = "5.Croatian Infantry Division"
+location = 3596
+division_template = "Croatian Infantry Division"
+start_experience_factor = 0.3
+start_equipment_factor = 0.9
+}
+division = {
+name = "6.Croatian Infantry Division"
+location = 3596
+division_template = "Croatian Infantry Division"
+start_experience_factor = 0.3
+start_equipment_factor = 0.9
+}
+division = {
+name = "7.Croatian Infantry Division"
+location = 3596
+division_template = "Croatian Infantry Division"
+start_experience_factor = 0.3
+start_equipment_factor = 0.9
+}
+division = {
+name = "8.Croatian Infantry Division"
+location = 3596
+division_template = "Croatian Infantry Division"
+start_experience_factor = 0.3
+start_equipment_factor = 0.9
+}
 }

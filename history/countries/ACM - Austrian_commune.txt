@@ -1,4 +1,4 @@
-capital = 4
+capital = 1018
 
 oob = ""
 
@@ -32,6 +32,7 @@ set_technology = {
 add_ideas = {
 	extensive_conscription
 	austrian_civil_war
+	austrian_bad_econ
 }
 
 set_stability = 0.80

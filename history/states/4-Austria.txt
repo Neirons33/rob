@@ -9,12 +9,15 @@ state={
 	history={
 		owner = AUS
 		victory_points = {
-			9648 5 
+			9648 10
+		}
+		victory_points = {
+			13379 1
 		}
 		buildings = {
 			infrastructure = 7
 			arms_factory = 1
-			industrial_complex = 3
+			industrial_complex = 1
 			air_base = 6
 
 		}
@@ -27,5 +30,5 @@ state={
 	}
 	manpower=1115611
 	buildings_max_level_factor=1.000
-	state_category=large_city
+	state_category=city
 }

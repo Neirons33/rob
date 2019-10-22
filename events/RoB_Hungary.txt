@@ -51,6 +51,43 @@ country_event = {
 		ai_chance = { factor = 5}
 			hidden_effect = { 	
 				HUN = { declare_war_on = { target = AUS  type = annex_everything } }
-		}		
+				HUN = { declare_war_on = { target = ACM  type = annex_everything } }
+				HUN = { declare_war_on = { target = THR  type = annex_everything } }
+	}
+}
+}
+###niggas stop fightin
+country_event = {
+	id = rob_hungary.3
+	title = rob_hungary.3.t
+	desc = rob_hungary.3.d
+	picture = GFX_report_event_second_vienna_award_pact
+	fire_only_once = yes
+	trigger = {
+	original_tag = HUN
+	has_offensive_war = yes
+	controls_state = 810
+
+	}
+	#take their shit and leave
+	option = {
+		name = rob_hungary.3.a
+		ai_chance = { factor = 10}
+		hidden_effect = { 	
+		HUN = { transfer_state = 810 }	
+		every_country = {
+				limit = {
+					has_war_with = HUN
+				}
+				white_peace = HUN
+			}
+	}
+}
+#niggas be wantin more
+option = {
+		name = rob_hungary.3.b
+		ai_chance = { factor = 0}
+		add_political_power = -200
+		add_stability = -0.05
 	}
 }

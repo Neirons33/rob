@@ -47,6 +47,11 @@ country_event = {
 				add_ideas = {
 					AUS_civilwar
 				}
+				remove_ideas = {
+				austrian_socialist_paramilitaries
+				austrian_brownshirt_terror
+
+				}
 				HUN = { 
 				country_event = { id = rob_hungary.1 days = 7 } 			
 				}
@@ -90,6 +95,11 @@ ACM = { load_oob = ACM_civil_war }
 				add_ideas = {
 					AUS_civilwar
 				}
+				remove_ideas = {
+				austrian_socialist_paramilitaries
+				austrian_brownshirt_terror
+
+				}
 				HUN = { 
 				country_event = { id = rob_hungary.1 days = 7 } 
 				}
@@ -130,6 +140,11 @@ ACM = { load_oob = ACM_civil_war }
 				set_country_flag = AUS_CIVIL_WAR
 				add_ideas = {
 					AUS_civilwar
+				}
+				remove_ideas = {
+				austrian_socialist_paramilitaries
+				austrian_brownshirt_terror
+
 				}
 				HUN = { 
 				country_event = { id = rob_hungary.1 days = 7 } 
