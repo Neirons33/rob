@@ -2686,5 +2686,150 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/LIT_visoumis.tga"
 	}
 
+	###LIT - ECO
+	SpriteType = { 
+		name = "GFX_focus_LIT_vadoprincipas"
+		texturefile = "gfx/interface/goals/LIT_vadoprincipas.tga"
+	}
+		SpriteType = { 
+		name = "GFX_focus_LIT_unitedasshield"
+		texturefile = "gfx/interface/goals/LIT_unitedasshield.tga"
+	}
+		SpriteType = { 
+		name = "GFX_focus_LIT_spread_revolution"
+		texturefile = "gfx/interface/goals/LIT_spread_revolution.tga"
+	}
+		SpriteType = { 
+		name = "GFX_focus_LIT_spirituality"
+		texturefile = "gfx/interface/goals/LIT_spirituality.tga"
+	}
+		SpriteType = { 
+		name = "GFX_focus_LIT_spiritofduty"
+		texturefile = "gfx/interface/goals/LIT_spiritofduty.tga"
+	}
+		SpriteType = { 
+		name = "GFX_focus_LIT_socialistgem"
+		texturefile = "gfx/interface/goals/LIT_socialistgem.tga"
+	}
+		SpriteType = { 
+		name = "GFX_focus_LIT_soc_state"
+		texturefile = "gfx/interface/goals/LIT_soc_state.tga"
+	}
+		SpriteType = { 
+		name = "GFX_focus_LIT_richstate"
+		texturefile = "gfx/interface/goals/LIT_richstate.tga"
+	}
+		SpriteType = { 
+		name = "GFX_focus_LIT_pure_state"
+		texturefile = "gfx/interface/goals/LIT_pure_state.tga"
+	}
+		SpriteType = { 
+		name = "GFX_focus_LIT_nationalretailunion"
+		texturefile = "gfx/interface/goals/LIT_nationalretailunion.tga"
+	}
+		SpriteType = { 
+		name = "GFX_focus_LIT_nationalizekeyindustries"
+		texturefile = "gfx/interface/goals/LIT_nationalizekeyindustries.tga"
+	}
+		SpriteType = { 
+		name = "GFX_focus_LIT_nationalizebanks"
+		texturefile = "gfx/interface/goals/LIT_nationalizebanks.tga"
+	}
+			SpriteType = { 
+		name = "GFX_focus_LIT_chamberofservices"
+		texturefile = "gfx/interface/goals/LIT_chamberofservices.tga"
+	}
+			SpriteType = { 
+		name = "GFX_focus_LIT_corp_state"
+		texturefile = "gfx/interface/goals/LIT_corp_state.tga"
+	}
+			SpriteType = { 
+		name = "GFX_focus_LIT_crushingunemployment"
+		texturefile = "gfx/interface/goals/LIT_crushingunemployment.tga"
+	}
+			SpriteType = { 
+		name = "GFX_focus_LIT_destroyforeigninfluence"
+		texturefile = "gfx/interface/goals/LIT_destroyforeigninfluence.tga"
+	}
+			SpriteType = { 
+		name = "GFX_focus_LIT_drobe"
+		texturefile = "gfx/interface/goals/LIT_drobe.tga"
+	}
+			SpriteType = { 
+		name = "GFX_focus_LIT_fam_stuff"
+		texturefile = "gfx/interface/goals/LIT_fam_stuff.tga"
+	}
+			SpriteType = { 
+		name = "GFX_focus_LIT_hierarchy"
+		texturefile = "gfx/interface/goals/LIT_hierarchy.tga"
+	}
+			SpriteType = { 
+		name = "GFX_focus_LIT_litsoc_state"
+		texturefile = "gfx/interface/goals/LIT_litsoc_state.tga"
+	}
+			SpriteType = { 
+		name = "GFX_focus_LIT_lietukis"
+		texturefile = "gfx/interface/goals/LIT_lietukis.tga"
+	}
+			SpriteType = { 
+		name = "GFX_focus_LIT_lower_regulations"
+		texturefile = "gfx/interface/goals/LIT_lower_regulations.tga"
+	}
+			SpriteType = { 
+		name = "GFX_focus_LIT_lower_welfare"
+		texturefile = "gfx/interface/goals/LIT_lower_welfare.tga"
+	}
+			SpriteType = { 
+		name = "GFX_focus_LIT_martial"
+		texturefile = "gfx/interface/goals/LIT_martial.tga"
+	}
+				SpriteType = { 
+		name = "GFX_focus_LIT_agriculturechamber"
+		texturefile = "gfx/interface/goals/LIT_agriculturechamber.tga"
+	}
+				SpriteType = { 
+		name = "GFX_focus_LIT_anbo"
+		texturefile = "gfx/interface/goals/LIT_anbo.tga"
+	}
+				SpriteType = { 
+		name = "GFX_focus_LIT_antiequality"
+		texturefile = "gfx/interface/goals/LIT_antiequality.tga"
+	}
+				SpriteType = { 
+		name = "GFX_focus_LIT_antiindividualism"
+		texturefile = "gfx/interface/goals/LIT_antiindividualism.tga"
+	}
+				SpriteType = { 
+		name = "GFX_focus_LIT_autarkyandbeyond"
+		texturefile = "gfx/interface/goals/LIT_autarkyandbeyond.tga"
+	}
+				SpriteType = { 
+		name = "GFX_focus_LIT_ban_usury"
+		texturefile = "gfx/interface/goals/LIT_ban_usury.tga"
+	}
+				SpriteType = { 
+		name = "GFX_focus_LIT_bantradeunions"
+		texturefile = "gfx/interface/goals/LIT_bantradeunions.tga"
+	}
+				SpriteType = { 
+		name = "GFX_focus_LIT_beautyofstruggle"
+		texturefile = "gfx/interface/goals/LIT_beautyofstruggle.tga"
+	}
+				SpriteType = { 
+		name = "GFX_focus_LIT_bourgie_class"
+		texturefile = "gfx/interface/goals/LIT_bourgie_class.tga"
+	}
+				SpriteType = { 
+		name = "GFX_focus_LIT_cap_state"
+		texturefile = "gfx/interface/goals/LIT_cap_state.tga"
+	}
+				SpriteType = { 
+		name = "GFX_focus_LIT_chamberofindustry"
+		texturefile = "gfx/interface/goals/LIT_chamberofindustry.tga"
+	}
+				SpriteType = { 
+		name = "GFX_focus_LIT_chamberofresources"
+		texturefile = "gfx/interface/goals/LIT_chamberofresources.tga"
+	}
 	
 }

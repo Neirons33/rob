@@ -16,7 +16,7 @@ ideas = {
  
  }
   semi_loyal_military = {
-  picture = 
+  picture = GFX_idea_minority_troubles
   allowed = {
        always = no
      }
@@ -47,7 +47,7 @@ ideas = {
  }
  
    pearl_of_stability = {
-   picture =
+   picture = GFX_idea_minority_troubles
    allowed = {
        always = no
 	   }
@@ -71,7 +71,7 @@ ideas = {
 	 modifier = {
 				conscription = 0.015
 				army_attack_factor = 0.1
-				army_defense_factor = 0.1
+				army_defence_factor = 0.1
 				war_support_factor = 0.1
 				}
 				}
@@ -87,7 +87,7 @@ ideas = {
 	 modifier = {
 				conscription = 0.015
 				army_attack_factor = 0.1
-				army_defense_factor = 0.1
+				army_defence_factor = 0.1
 				war_support_factor = 0.1
 				}
 				}
@@ -105,7 +105,7 @@ ideas = {
 				}
  }
  corruptionless_society = {
-   picture =
+   picture = GFX_idea_minority_troubles
    allowed = {
        always = no
 	   }
@@ -118,7 +118,7 @@ ideas = {
 				}
  }
  agriculturalism = {
-   picture =
+   picture = GFX_idea_minority_troubles
    allowed = {
        always = no
 	   }
@@ -133,7 +133,7 @@ ideas = {
  }
  
  kolhoze_system = {
-   picture =
+   picture = GFX_idea_minority_troubles
    allowed = {
        always = no
 	   }
@@ -157,7 +157,7 @@ ideas = {
 	 modifier = {
 				conscription = 0.015
 				army_attack_factor = 0.1
-				army_defense_factor = 0.1
+				army_defence_factor = 0.1
 				war_support_factor = 0.1
 				political_power_gain = 0.16
 				}
@@ -177,9 +177,10 @@ ideas = {
 				stability_factor = 0.05
 				political_power_gain = 0.25
 				}
+				}
 				
 				
-				  fanatical_army = {
+	fanatical_army = {
   picture = GFX_idea_minority_troubles
  allowed = {
        always = no
@@ -191,7 +192,7 @@ ideas = {
 	 modifier = {
 				conscription = 0.015
 				army_attack_factor = 0.1
-				army_defense_factor = 0.1
+				army_defence_factor = 0.1
 				war_support_factor = 0.1
 				}
 				}
@@ -207,6 +208,7 @@ ideas = {
 	 modifier = {
 	            war_support_factor = 0.1
 				}
+				}
 				
 				corporativist_economics = {
   picture = 
@@ -220,6 +222,7 @@ ideas = {
 	 modifier = {
          production_factory_max_efficiency_factor = 0.08
 		 production_speed_buildings_factor = 0.25
+				}
 				}
  corporativist_economics_2 = {
    picture = 
@@ -238,7 +241,7 @@ ideas = {
  }
  
  contract_companies = {
-   picture = 
+   picture = GFX_idea_minority_troubles
   allowed = {
        always = no
      }
@@ -265,6 +268,7 @@ ideas = {
         war_support_factor = 0.15
 		army_attack_factor = 0.1
 		recon_factor = 0.05
+			}
 			}
 			
      lightning_attacks = {
