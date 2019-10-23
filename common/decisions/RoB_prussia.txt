@@ -14,7 +14,9 @@ PRS_foreign_policy = {
  has_full_control_of_state = 58
  has_full_control_of_state = 28
  }
- 
+ ai_will_do = {
+  base = 200
+ }
  complete_effect = {
   add_stability = 0.2
   set_cosmetic_tag = PRS_EMP
@@ -59,6 +61,9 @@ PRS_foreign_policy = {
    } 
   }
  }
+  ai_will_do = {
+  base = 200
+ }
  complete_effect = {
   PRS = { declare_war_on = { target = POL type = annex_everything } }
  865 = { add_core_of = PRS }
@@ -85,7 +90,9 @@ PRS_invade_lithuania = {
    }
  LIT = { exists = yes }
 }
-
+ ai_will_do = {
+  base = 200
+ }
 complete_effect = {
  PRS = { declare_war_on = { target = LIT type = annex_everything } }
 }
@@ -117,7 +124,9 @@ complete_effect = {
 PRS_invite_ubd = {
  cost = 25
  fire_only_once = yes
- 
+  ai_will_do = {
+  base = 200
+ }
  available = {
  date > 1935.3.1
    NOT = { 
@@ -141,7 +150,9 @@ PRS_german_expansion = {
  PRS_destroy_the_french = {
   cost = 25
  fire_only_once = yes
- 
+  ai_will_do = {
+  base = 200
+ }
  available = {
   has_war = no
   NOT = {
@@ -167,9 +178,13 @@ PRS_german_expansion = {
   PRS_invade_rhineland = {
   cost = 25
  fire_only_once = yes
- 
+  ai_will_do = {
+  base = 200
+ }
  available = {
   has_war = no
+  796 = { is_owned_by = PRS }
+  804 = { is_owned_by = PRS }
   NOT = {
   1089 = { is_owned_by = PRS }
   }
@@ -192,7 +207,9 @@ PRS_german_expansion = {
   PRS_destroy_danes = {
   cost = 25
  fire_only_once = yes
- 
+  ai_will_do = {
+  base = 200
+ }
  available = {
   has_war = no
   NOT = {
@@ -219,7 +236,9 @@ PRS_german_expansion = {
  PRS_retake_luxembourg = {
   cost = 25
  fire_only_once = yes
- 
+  ai_will_do = {
+  base = 200
+ }
  available = {
   has_war = no
   NOT = {
@@ -244,9 +263,12 @@ PRS_german_expansion = {
  PRS_attack_wallonia = {
   cost = 25
  fire_only_once = yes
- 
+  ai_will_do = {
+  base = 200
+ }
  available = {
   has_war = no
+  8 = { is_owned_by = PRS }
   NOT = {
   813 = { is_owned_by = PRS }
   812 = { is_owned_by = PRS }
@@ -274,6 +296,9 @@ PRS_baltic_ambition = {
 
  PRS_free_lithuania = {
  cost = 25
+  ai_will_do = {
+  base = 200
+ }
  fire_only_once = yes
  available = {
   date > 1936.1.1
@@ -301,6 +326,9 @@ LIT = {
  
   PRS_free_latvia = {
  cost = 25
+  ai_will_do = {
+  base = 200
+ }
  fire_only_once = yes
  available = {
   date > 1936.1.1
@@ -325,6 +353,9 @@ LAT = {
  
 PRS_proclaim_baltic_unity = {
  cost = 25
+  ai_will_do = {
+  base = 200
+ }
  fire_only_once = yes
  available = {
     has_country_leader = {
@@ -364,6 +395,9 @@ complete_effect = {
 }
 PRS_join_lith_faction = {
  cost = 25
+  ai_will_do = {
+  base = 200
+ }
  fire_only_once = yes
  available = {
  date > 1935.1.1
@@ -388,6 +422,9 @@ complete_effect = {
 
 PRS_retake_belarus = {
  cost = 25
+  ai_will_do = {
+  base = 200
+ }
  fire_only_once = yes
  available = {
  has_cosmetic_tag = PRS_BAL
@@ -414,6 +451,9 @@ PRS_retake_belarus = {
 
 PRS_retake_western_belarus = {
  cost = 25
+  ai_will_do = {
+  base = 200
+ }
  fire_only_once = yes
  available = {
  has_cosmetic_tag = PRS_BAL
@@ -441,6 +481,9 @@ PRS_retake_western_belarus = {
 
 PRS_retake_polish_lands = {
  cost = 25
+  ai_will_do = {
+  base = 200
+ }
  fire_only_once = yes
  available = {
  has_cosmetic_tag = PRS_BAL

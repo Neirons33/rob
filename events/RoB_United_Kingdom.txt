@@ -771,6 +771,7 @@ immediate = {
 BRL = { declare_war_on = { type = annex_everything target = BRU } }
 BLF = { declare_war_on = { type = annex_everything target = BRU } }
 news_event = { id = news_event.4 days = 1 }
+set_country_flag = ENG_civil_war
 if = {
   limit = {
   BRC = {

@@ -3208,7 +3208,7 @@ completion_reward = {
 	#Focus for Offensive Doctrine
 	focus = {
 		id = LIT_offensivedoctrine
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_build_tank
 		x = 19
 		y = 14
 		cost = 10
@@ -3965,7 +3965,7 @@ add_extra_state_shared_building_slots = 2
 	#Focus for Forts along the Belarusian Border
 	focus = {
 		id = LIT_fortsalongthebelarusianborder
-		icon = GFX_goal_unknown
+		icon = GFX_goal_continuous_non_factory_construct
 		x = 3
 		y = 16
 		cost = 10
@@ -3988,7 +3988,7 @@ add_extra_state_shared_building_slots = 2
 	#Focus for Forts along the Latvian Border
 	focus = {
 		id = LIT_fortsalongthelatvianborder
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_fortify_city
 		x = 3
 		y = 17
 		cost = 10
@@ -4011,7 +4011,7 @@ add_extra_state_shared_building_slots = 2
 	#Focus for Forts on the Prussian Border
 	focus = {
 		id = LIT_fortsontheprussianborder
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_coastal_fort
 		x = 3
 		y = 18
 		cost = 10
@@ -4034,7 +4034,7 @@ add_extra_state_shared_building_slots = 2
 	#Focus for Forts along the Polish Border
 	focus = {
 		id = LIT_fortsalongthepolishborder
-		icon = GFX_goal_unknown
+		icon = GFX_goal_fortify_the_westwall
 		x = 3
 		y = 15
 		cost = 10
@@ -4097,7 +4097,7 @@ add_extra_state_shared_building_slots = 2
 	#Focus for Defensive Doctrine
 	focus = {
 		id = LIT_defensivedoctrine
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_defence
 		x = 7
 		y = 14
 		cost = 10
@@ -4158,7 +4158,7 @@ add_extra_state_shared_building_slots = 2
 	#Focus for Lietuvos Kariuomenė
 	focus = {
 		id = LIT_lietuvoskariuomen
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_axis_build_infantry
 		x = 13
 		y = 13
 		cost = 5

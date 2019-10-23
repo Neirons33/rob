@@ -19,7 +19,7 @@ news_event = {
 }
 
 ##Event: War for Turkestan
-country_event = {
+news_event = {
  id = news_event.2
  title = news_event.2.title
  desc = news_event.2.desc
@@ -31,14 +31,11 @@ country_event = {
 		name = news_event.2.a
 		ai_chance = { factor = 90}
 	}
-	option = {
-		name = news_event.2.b
-		ai_chance = { factor = 10}
-	}
+
 }
 
 ##Event: French Civil War
-country_event = {
+news_event = {
  id = news_event.3
  title = "French Civil War"
  desc = news_event.3.desc
@@ -50,14 +47,11 @@ country_event = {
 		name = news_event.2.a
 		ai_chance = { factor = 90}
 	}
-	option = {
-		name = news_event.2.b
-		ai_chance = { factor = 10}
-	}
+
 }
 
 ##Event: British Civil War
-country_event = {
+news_event = {
  id = news_event.4
  title = "British Civil War"
  desc = news_event.4.desc
@@ -69,14 +63,11 @@ country_event = {
 		name = news_event.2.a
 		ai_chance = { factor = 90}
 	}
-	option = {
-		name = news_event.2.b
-		ai_chance = { factor = 10}
-	}
+
 }
 
 ##Event: Pelekist Coup in Spain
-country_event = {
+news_event = {
  id = news_event.5
  title = "Pelekist Coup in Spain"
  desc = news_event.5.desc
@@ -88,14 +79,11 @@ country_event = {
 		name = news_event.2.a
 		ai_chance = { factor = 90}
 	}
-	option = {
-		name = news_event.2.b
-		ai_chance = { factor = 10}
-	}
+
 }
 
 ##Event: National Syndicalist Counter Coup 
-country_event = {
+news_event = {
  id = news_event.6
  title = "National Syndicalist Counter Coup"
  desc = news_event.6.desc
@@ -107,8 +95,5 @@ country_event = {
 		name = news_event.2.a
 		ai_chance = { factor = 90}
 	}
-	option = {
-		name = news_event.2.b
-		ai_chance = { factor = 10}
-	}
+
 }

@@ -6,3 +6,14 @@
  rosenberg_victory:0 "Alfred Rosenberg has been elected!"
  kaiser_controls_everything:0 "Willhelm III reigns supreme!"
  democratic_elections:0 "Prussia has been liberalized!"
+ ###United Kingdom
+ ENG_civil_war:0 "English Civil War Has Started"
+ ###Soviets
+ SOV_rykov_holds_on:0 "Rykov Has Secured Control Over Country"
+ bukharin_seizes_power:0 "Bukharin Is The New Premier"
+ tomsky_seizes_power:0 "Tomsky Is The New Premier"
+ SOV_novikovs_plan:0 "Novikov's Plan Has Been Put In Motion"
+ SOV_alksnis_plan:0 "Alksnis's Plan Has Been Put In Motion"
+ SOV_reform_red_guard:0 "We've Decided To Reform Red Guard"
+ SOV_shaposhnikovs_plan:0 "Plan By Shaposhnikov Has Been Accepted"
+ 
