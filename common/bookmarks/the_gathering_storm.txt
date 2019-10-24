@@ -7,22 +7,18 @@ bookmarks = {
 		default_country = "GER"
 		default = yes
 		
-		"FRA"={
+		"LES"={
 			history = "FRA_GATHERING_STORM_DESC"
-			ideology = social_liberal
+			ideology = pelekist
 			ideas = {
-				FRA_victors_of_wwi
-				FRA_disjointed_government
-				FRA_protected_by_the_maginot_line
+
 			}
 			focuses = {
-				FRA_initiate_government_reform
-				FRA_support_status_quo
-				FRA_revise_versailles
+
 			}
 		}
         "PRS" = {
-		  history = ""
+		  history = "GER_GATHERING_STORM_DESC"
 		  ideology = reactionary
 		  ideas = {
 		     minority_troubles
@@ -35,24 +31,24 @@ bookmarks = {
 		     PRS_rosenbergspresidency
 		  }
 		}
-		"ENG"={
+		"LIT"={
 			history = "ENG_GATHERING_STORM_DESC"
-			ideology = social_democracy
+			ideology = conservative
 			ideas = {
-				stiff_upper_lip
-				ENG_the_war_to_end_all_wars
-				george_v
+           samogitian_identity
+		   pelekists_rising
+		   pearl_of_stability
 			}
 			focuses = {
-				tizard_mission_focus
-				ENG_war_with_germany
-				ENG_war_with_italy
+            LIT_kunigaiktisvisuomis
+			LIT_tautosvadasmironas
+			LIT_thepresidentwholivesasapeasant
 			}
 		}
 
 		"GER"={
 			history = "GER_GATHERING_STORM_DESC"
-			ideology = fascism
+			ideology = socialist
 			ideas = {
 				deutsche_volksarmee
 				german_partisans
@@ -64,18 +60,12 @@ bookmarks = {
 				GER_ussr_war_goal
 			}
 		}
-		"ITA"={
+		"TRS"={
 			history = "ITA_GATHERING_STORM_DESC"
-			ideology = social_liberal
+			ideology = socialist
 			ideas = {
-				italia_irredenta
-				horrors_of_war
-				overstretched_empire
 			}	
 			focuses = {
-				ITA_pact_of_steel
-				ITA_spanish_italian_faction
-				ITA_italy_first
 			}		
 		}
 		"SOV"={
@@ -97,51 +87,6 @@ bookmarks = {
 			history = "OTHER_GATHERING_STORM_DESC"
 		}
 
-
-		 "LES" = {
-		  minor = yes
-		  history = ""
-		  ideology = pelekist
-		  ideas = {
-		  
-		  }
-		  focuses = {
-		  
-		  }
-		}
-	   "CRO" = {
-		  minor = yes
-		  history = ""
-		  ideology = pelekist
-		  ideas = {
-		  
-		  }
-		  focuses = {
-		  
-		  }
-		}
-	   "LIT" = {
-		  minor = yes
-		  history = ""
-		  ideology = conservative
-		  ideas = {
-		  
-		  }
-		  focuses = {
-		  
-		  }
-		}
-		 "POL" = {
-		  minor = yes
-		  history = ""
-		  ideology = conservative
-		  ideas = {
-		  
-		  }
-		  focuses = {
-		  
-		  }
-		}
 		
 		effect = {
 			randomize_weather = 22345 # <- Obligatory in every bookmark !

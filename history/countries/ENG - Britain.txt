@@ -206,40 +206,67 @@ add_to_faction = MAL
 # Order matters - here Chamberlain becomes starting leader
 
 create_country_leader = {
-	name = "Ramsay MacDonald"
+	name = "George V"
 	desc = "POLITICS_STANLEY_BALDWIN_DESC"
-	picture = "Portrait_ENG_Ramsay_MacDonald.tga"
+	picture = "ENG_George_V.tga"
 	expire = "1935.6.7"
 	ideology = social_democracy
 	traits = {
-		conservative_grandee
+		
 	}
 }
 
 
 create_country_leader = {
-	name = "Oswald Mosley"
+	name = "George V"
 	desc = "POLITICS_OSWALD_MOSLEY_DESC"
-	picture = "Portrait_Britain_Oswald_Mosley.dds"
+	picture = "ENG_George_V.tga"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = pelekist
 	traits = {
-		champion_of_peace_1
-		economic_reformer
 	}
 }
 
 create_country_leader = {
-	name = "Harry Pollitt"
+	name = "George V"
 	desc = "POLITICS_HARRY_POLLITT_DESC"
-	picture = "portrait_eng_harry_pollitt.dds"
+	picture = "ENG_George_V.tga"
 	expire = "1965.1.1"
-	ideology = leninism
+	ideology = social_liberal
 	traits = {
-		staunch_stalinist
+		
 	}
 }
-
+create_country_leader = {
+	name = "George V"
+	desc = "POLITICS_HARRY_POLLITT_DESC"
+	picture = "ENG_George_V.tga"
+	expire = "1965.1.1"
+	ideology = conservative
+	traits = {
+		
+	}
+}
+create_country_leader = {
+	name = "George V"
+	desc = "POLITICS_HARRY_POLLITT_DESC"
+	picture = "ENG_George_V.tga"
+	expire = "1965.1.1"
+	ideology = reactionary
+	traits = {
+		
+	}
+}
+create_country_leader = {
+	name = "George V"
+	desc = "POLITICS_HARRY_POLLITT_DESC"
+	picture = "ENG_George_V.tga"
+	expire = "1965.1.1"
+	ideology = authoritharian
+	traits = {
+		
+	}
+}
 #create_country_leader = {
 #	name = "Rajani Palme Dutt"
 #	desc = "POLITICS_PALME_DUTT_DESC"

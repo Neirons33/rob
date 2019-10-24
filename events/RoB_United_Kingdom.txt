@@ -62,7 +62,7 @@ hidden_effect = { country_event = { id = united_kingdom.3 days = 5 }
 }
 }
 
-###Speech by George V
+###Speech by Edward VIII
 country_event = {
 id = united_kingdom.3
 title = united_kingdom.3.t
@@ -71,13 +71,6 @@ fire_only_once = yes
 is_triggered_only = yes
 
 option = { ###Denounce reactionaries
-name = united_kingdom.3.a
-add_political_power = -50
-add_popularity = { ideology = reactionary popularity = -0.08 }
-set_country_flag = ENG_reactionaries_denounced
-country_event = { id = united_kingdom.4 days = 2 } 
-}
-option = { ###Denounce reactionaries
 name = united_kingdom.3.b
 add_political_power = 50
 add_popularity = { ideology = reactionary popularity = 0.03 }
@@ -85,7 +78,7 @@ set_country_flag = ENG_reactionaries_supported
 }
 }
 
-###Edward VIII supports reactionaries
+###George V dies
 country_event = {
 id = united_kingdom.4
 title = united_kingdom.4.t
@@ -94,14 +87,63 @@ fire_only_once = yes
 is_triggered_only = yes
 
 option = {
-name = united_kingdom.4.a
-add_popularity = { ideology = reactionary popularity = 0.01 }
+name = "Rest In Peace."
 create_country_leader = {
-	name = "Edward Patrick David"
+	name = "Edward VIII"
 	desc = ""
-	picture = "edwardviii.dds"
+	picture = "ENG_Edward_VIII.tga"
 	expire = "1953.3.1"
 	ideology = reactionary
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Edward VIII"
+	desc = ""
+	picture = "ENG_Edward_VIII.tga"
+	expire = "1953.3.1"
+	ideology = authoritharian
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Edward VIII"
+	desc = ""
+	picture = "ENG_Edward_VIII.tga"
+	expire = "1953.3.1"
+	ideology = pelekist
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Edward VIII"
+	desc = ""
+	picture = "ENG_Edward_VIII.tga"
+	expire = "1953.3.1"
+	ideology = social_democracy
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Edward VIII"
+	desc = ""
+	picture = "ENG_Edward_VIII.tga"
+	expire = "1953.3.1"
+	ideology = social_liberal
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Edward VIII"
+	desc = ""
+	picture = "ENG_Edward_VIII.tga"
+	expire = "1953.3.1"
+	ideology = conservative
 	traits = {
 		#
 	}
@@ -272,6 +314,7 @@ if = {
 add_popularity = { ideology = socialist popularity = 0.16 }
 add_popularity = { ideology = social_democracy popularity = -0.16 }
 set_country_flag = ENG_labour_absorbed
+hidden_effect = { country_event = { id = united_kingdom.11 days = 20 } }
 }
 
 }
@@ -422,7 +465,106 @@ trigger = {
 has_country_flag = ENG_conservatives_independant
 }
 hidden_effect = {
+BRU = { load_oob = "BRU_1934" }
+BLF = { load_oob = "BLF_1934" }
+BRC = { load_oob = "BRC_1934" }
+BRL = { load_oob = "BRL_1934" }
 set_cosmetic_tag = ENG_navy
+ENG = {
+create_country_leader = {
+	name = "Ernle Chatfield"
+	desc = ""
+	picture = ".tga"
+	expire = "1953.3.1"
+	ideology = pelekist
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Ernle Chatfield"
+	desc = ""
+	picture = ".tga"
+	expire = "1953.3.1"
+	ideology = reactionary
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Ernle Chatfield"
+	desc = ""
+	picture = ".tga"
+	expire = "1953.3.1"
+	ideology = authoritharian
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Ernle Chatfield"
+	desc = ""
+	picture = ".tga"
+	expire = "1953.3.1"
+	ideology = conservative
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Ernle Chatfield"
+	desc = ""
+	picture = ".tga"
+	expire = "1953.3.1"
+	ideology = social_liberal
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Ernle Chatfield"
+	desc = ""
+	picture = ".tga"
+	expire = "1953.3.1"
+	ideology = social_democracy
+	traits = {
+		#
+	}
+}
+}
+
+BRU = {
+create_country_leader = {
+	name = "Edward VIII"
+	desc = ""
+	picture = "ENG_Edward_VIII.tga"
+	expire = "1953.3.1"
+	ideology = pelekist
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Edward VIII"
+	desc = ""
+	picture = "ENG_Edward_VIII.tga"
+	expire = "1953.3.1"
+	ideology = authoritharian
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Edward VIII"
+	desc = ""
+	picture = "ENG_Edward_VIII.tga"
+	expire = "1953.3.1"
+	ideology = reactionary
+	traits = {
+		#
+	}
+}
+}
 IRE = { country_event = { id = ireland.1 days = 20 } }
 ENG = { country_event = { id = united_kingdom.18 days = 5 } }
 BLF = { transfer_state = 861 }
@@ -579,7 +721,106 @@ trigger = {
 has_country_flag = ENG_conservatives_absorbed
 }
 hidden_effect = {
+BRU = { load_oob = "BRU_1934" }
+BLF = { load_oob = "BLF_1934" }
+BRC = { load_oob = "BRC_1934" }
+BRL = { load_oob = "BRL_1934" }
 set_cosmetic_tag = ENG_navy
+ENG = {
+create_country_leader = {
+	name = "Ernle Chatfield"
+	desc = ""
+	picture = ".tga"
+	expire = "1953.3.1"
+	ideology = pelekist
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Ernle Chatfield"
+	desc = ""
+	picture = ".tga"
+	expire = "1953.3.1"
+	ideology = reactionary
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Ernle Chatfield"
+	desc = ""
+	picture = ".tga"
+	expire = "1953.3.1"
+	ideology = authoritharian
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Ernle Chatfield"
+	desc = ""
+	picture = ".tga"
+	expire = "1953.3.1"
+	ideology = conservative
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Ernle Chatfield"
+	desc = ""
+	picture = ".tga"
+	expire = "1953.3.1"
+	ideology = social_liberal
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Ernle Chatfield"
+	desc = ""
+	picture = ".tga"
+	expire = "1953.3.1"
+	ideology = social_democracy
+	traits = {
+		#
+	}
+}
+}
+
+BRU = {
+create_country_leader = {
+	name = "Edward VIII"
+	desc = ""
+	picture = "ENG_Edward_VIII.tga"
+	expire = "1953.3.1"
+	ideology = pelekist
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Edward VIII"
+	desc = ""
+	picture = "ENG_Edward_VIII.tga"
+	expire = "1953.3.1"
+	ideology = authoritharian
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Edward VIII"
+	desc = ""
+	picture = "ENG_Edward_VIII.tga"
+	expire = "1953.3.1"
+	ideology = reactionary
+	traits = {
+		#
+	}
+}
+}
 IRE = { country_event = { id = ireland.1 days = 20 } }
 ENG = { country_event = { id = united_kingdom.18 days = 5 } }
 BLF = { transfer_state = 861 }
@@ -828,3 +1069,140 @@ option = {
 }
 }
 
+
+###British Admirality is annexed
+country_event = {
+id = united_kingdom.22
+title = "Talks With British Admirality"
+desc = united_kingdom.22.d
+fire_only_once = yes
+
+
+trigger = {
+OR = { 
+ has_country_flag = BRU_victory 
+ has_country_flag = BLF_victory 
+ has_country_flag = BRC_victory 
+ has_country_flag = BRL_victory 
+ }
+}
+ mean_time_to_happen = { days = 1 }
+ 
+ option = {
+  name = "Britain Stands Strong Again"
+    every_state = {
+    limit = { is_core_of = ENG }
+	add_core_of = ROOT
+	remove_core_of = ENG
+}
+  ROOT = {
+   annex_country = {
+    target = ENG
+    transfer_troops = yes
+}
+
+  }
+ }
+}
+
+
+###END of civil war
+country_event = {
+id = united_kingdom.23
+title = "Civil War Ends!"
+desc = united_kingdom.23.d
+fire_only_once = yes
+
+trigger = {
+ ENG = { has_country_flag = ENG_civil_war }
+ OR = {
+  BRU = { has_war = no }
+  BRL = { has_war = no }
+  BRC = { has_war = no }
+  BLF = { has_war = no }
+}
+}
+
+mean_time_to_happen = { days = 1 }
+
+option = {
+ name = "The Will Of Worker Has Prevailed!"
+ trigger = { tag = BLF }
+ set_country_flag = BLF_victory
+  every_state = {
+    limit = { is_core_of = BRU }
+	add_core_of = BLF
+	remove_core_of = BRU
+}
+  every_state = {
+    limit = { is_core_of = BRC }
+	add_core_of = BLF
+	remove_core_of = BRC
+}
+  every_state = {
+    limit = { is_core_of = BRL }
+	add_core_of = BLF
+	remove_core_of = BRL
+}
+}
+option = {
+ name = "British Empire Will Rise Again!"
+ trigger = { tag = BRU }
+ set_country_flag = BRU_victory
+   every_state = {
+    limit = { is_core_of = BLF }
+	add_core_of = BRU
+	remove_core_of = BLF
+}
+  every_state = {
+    limit = { is_core_of = BRC }
+	add_core_of = BRU
+	remove_core_of = BRC
+}
+  every_state = {
+    limit = { is_core_of = BRL }
+	add_core_of = BRU
+	remove_core_of = BRL
+}
+}
+option = {
+ name = "For Britain, Free and United!"
+ trigger = { tag = BRC }
+ set_country_flag = BRC_victory
+    every_state = {
+    limit = { is_core_of = BLF }
+	add_core_of = BRC
+	remove_core_of = BLF
+}
+  every_state = {
+    limit = { is_core_of = BRU }
+	add_core_of = BRC
+	remove_core_of = BRU
+}
+  every_state = {
+    limit = { is_core_of = BRL }
+	add_core_of = BRU
+	remove_core_of = BRL
+}
+}
+option = {
+ name = "For Britain, Free and United!"
+ trigger = { tag = BRL }
+ set_country_flag = BRL_victory
+     every_state = {
+    limit = { is_core_of = BLF }
+	add_core_of = BRL
+	remove_core_of = BLF
+}
+  every_state = {
+    limit = { is_core_of = BRU }
+	add_core_of = BRL
+	remove_core_of = BRU
+}
+  every_state = {
+    limit = { is_core_of = BRC }
+	add_core_of = BRL
+	remove_core_of = BRC
+}
+}
+}

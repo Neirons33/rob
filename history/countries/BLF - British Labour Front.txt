@@ -113,13 +113,13 @@ set_popularities = {
 
 
 create_country_leader = {
-	name = "Ramsay MacDonald"
+	name = "Wal Hannington"
 	desc = "POLITICS_STANLEY_BALDWIN_DESC"
 	picture = "Portrait_ENG_Ramsay_MacDonald.tga"
 	expire = "1935.6.7"
-	ideology = social_democracy
+	ideology = socialist
 	traits = {
-		conservative_grandee
+		
 	}
 }
 
