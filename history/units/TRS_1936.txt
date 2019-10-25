@@ -1,5 +1,5 @@
 division_template = {
-	name = "Russian Guards"
+	name = "Russian Infantry"
 
 	division_names_group = TMS_INF_01
 
@@ -14,10 +14,10 @@ division_template = {
 		infantry = { x = 2 y = 1 }
 		infantry = { x = 2 y = 2 }
 	}
-	priority = 2
+	priority = 1
 }
 division_template = {
-	name = "Militia"				# Militia units (lowest experience, oldest equipment)
+	name = "Transcapian Infantry"				# Militia units (lowest experience, oldest equipment)
 
 	division_names_group = TMS_INF_01
 
@@ -29,30 +29,38 @@ division_template = {
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
 	}
-	priority = 0
+	priority = 1
 }
 
 units = {
 	#TRS Army
 	division = {
-		name = "1st Russian Brigade"
+		name = "1st Russian Infantry"
 		location = 10510
-		division_template = "Russian Guards"
+		division_template = "Russian Infantry"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
 	division = {
-		name = "2nd Russian Brigade"
+		name = "2nd Russian Infantry"
 		location = 10510
-		division_template = "Russian Guards"
+		division_template = "Russian Infantry"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 
 	}
 	division = {
-		name = "1st Turkmen Brigade"
+		name = "1st Transcapian Infantry"
 		location = 10510
-		division_template = "Militia"
+		division_template = "Transcapian Infantry"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+
+	}
+	division = {
+		name = "2nd Transcapian Infantry"
+		location = 10510
+		division_template = "Transcapian Infantry"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 
