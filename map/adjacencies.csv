@@ -169,16 +169,16 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 10417;12653;impassable;-1;-1;-1;-1;-1;;stalinabad mountains
 8027;12653;impassable;-1;-1;-1;-1;-1;;stalinabad mountains
 7224;12653;impassable;-1;-1;-1;-1;-1;;stalinabad mountains
-12805;4923;impassable;-1;-1;-1;-1;-1;;stalinabad mountains
 8027;4923;impassable;-1;-1;-1;-1;-1;;stalinabad mountains
 8027;4467;impassable;-1;-1;-1;-1;-1;;stalinabad mountains
 8027;4542;impassable;-1;-1;-1;-1;-1;;stalinabad mountains
 7224;4542;impassable;-1;-1;-1;-1;-1;;stalinabad mountains
 7224;12250;impassable;-1;-1;-1;-1;-1;;stalinabad mountains
 7224;1384;impassable;-1;-1;-1;-1;-1;;stalinabad mountains
-12722;1216;impassable;-1;-1;-1;-1;-1;;stalinabad mountains
-10671;1216;impassable;-1;-1;-1;-1;-1;;stalinabad mountains
-10671;1919;impassable;-1;-1;-1;-1;-1;;stalinabad mountains
+1384;1919;impassable;-1;-1;-1;-1;-1;;stalinabad mountains
+12430;1919;impassable;-1;-1;-1;-1;-1;;stalinabad mountains
+12430;11687;impassable;-1;-1;-1;-1;-1;;stalinabad mountains
+1384;1216;impassable;-1;-1;-1;-1;-1;;stalinabad mountains
 10821;5087;impassable;-1;-1;-1;-1;-1;;nhimalayas
 10821;1970;impassable;-1;-1;-1;-1;-1;;nhimalayas
 10821;8112;impassable;-1;-1;-1;-1;-1;;nhimalayas
