@@ -56,6 +56,10 @@ create_corps_commander = {
 			factor = 3
 		}
 		completion_reward = {
+		swap_ideas = {
+    remove_idea = TRS_research_not_priority
+    add_idea = TRS_research_kinda
+}
 		}
 	}
 
@@ -117,6 +121,12 @@ add_manpower = 2000
 			factor = 3
 		}
 		completion_reward = {
+		add_popularity = {
+    ideology = socialist
+    popularity = 0.1
+}
+add_political_power = 25
+add_stability = 0.1
 		}
 	}
 
@@ -196,6 +206,9 @@ add_manpower = 2000
 			factor = 5
 		}
 		completion_reward = {
+		country_event = {
+    id = turkmenreds.116
+}
 		}
 	}
 
@@ -385,6 +398,11 @@ add_manpower = 2000
 			factor = 5
 		}
 		completion_reward = {
+		OMS = { country_event = {
+    id = turkmenreds.115
+    days = 10
+}
+}
 		}
 	}
 
@@ -740,6 +758,9 @@ add_timed_idea = {
 		y = 10
 		cost = 5
 		available_if_capitulated = yes
+		available = { 
+		has_war = no 
+		}
 		prerequisite = { focus = TRS_battleforkrasnovodsk }
 		ai_will_do = {
 			factor = 10
@@ -918,6 +939,7 @@ create_wargoal = {
 			factor = 3
 		}
 		completion_reward = {
+		add_political_power = 50
 		}
 	}
 
@@ -1040,7 +1062,12 @@ create_country_leader = {
 			factor = 100
 		}
 		completion_reward = {
-		}
+		add_manpower = -3000
+		1175 = { create_unit = {
+    division = "name = \"Frunze's Red Guard\" division_template = \"Russian Infantry\" start_experience_factor = 0.5 start_equipment_factor = 1.0"
+    owner = TRS
+}
+}		}
 	}
 
 	#Focus for Raid Persian Borderlands
@@ -1461,6 +1488,10 @@ create_country_leader = {
 		ai_will_do = {
 			factor = 100
 		}
+		completion_reward = {
+		set_cosmetic_tag = TRS_USSR
+		add_war_support = 0.25
+		}
 	}
 
 	#Focus for Bend Knee to Moscow
@@ -1473,17 +1504,9 @@ create_country_leader = {
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = TRS_warwiththekazakhs 
-		}
-		prerequisite = { 
 			focus = TRS_destroykhiva 
-		}
-		prerequisite = { 
 			focus = TRS_invadekirghizia 
-		}
-		prerequisite = { 
 			focus = TRS_bringtherevolutiontobukhara 
-		}
-		prerequisite = { 
 			focus = TRS_khorezmianpeoplesrepublic 
 		}
 		mutually_exclusive = { focus = TRS_ourownsovietunion }
@@ -1910,8 +1933,13 @@ create_country_leader = {
 		y = 1
 		cost = 1
 		available_if_capitulated = yes
+		available = { TMS = { exists = no } }
 		ai_will_do = {
 			factor = 100
+		}
+		completion_reward = { 
+		add_political_power = 100
+		add_war_support = 0.15
 		}
 	}
 
