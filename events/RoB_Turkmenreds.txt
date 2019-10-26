@@ -54,7 +54,7 @@ name = turkmenreds.101.a
 ai_chance = { factor = 100}
 add_manpower = -2500
 TRS = { country_event = { id = turkmenreds.102 days = 3} }
-add_ideas = TMS_shell_shocked
+add_ideas = TRS_shell_shocked
 }
 
 }
@@ -75,11 +75,10 @@ option = {
 name = turkmenreds.102.a
 ai_chance = { factor = 100}
 add_manpower = 937
-add_ideas = TRS_big_win
 add_tech_bonus = {
     bonus = 0.75
     uses = 1
-    category = infantry_equipment
+    category = infantry_weapons
 }
 }
 
@@ -103,24 +102,26 @@ option = {
 name = turkmenreds.103.a
 ai_chance = { factor = 50}
 add_manpower = -1000
-random_list = {
+hidden_effect = { random_list = {
     50 = {
         hidden_effect = { country_event = { id = turkmenreds.104 days = 3 } } }
     50 = {
         hidden_effect = { country_event = { id = turkmenreds.105 days = 3 } } }
     }
 }
+}
 
 option = {
 name = turkmenreds.103.b
 ai_chance = { factor = 25}
 add_political_power = -50
-random_list = {
+hidden_effect = { random_list = {
     50 = {
         hidden_effect = { country_event = { id = turkmenreds.106 days = 20 } } }
     50 = {
         hidden_effect = { country_event = { id = turkmenreds.111 days = 3 } } }
     }
+}
 }
 }
 }
@@ -450,6 +451,194 @@ name = turkmenreds.114.b
 ai_chance = { factor = 0}
 add_manpower = -25
 
+}
+
+}
+
+country_event = {
+id = turkmenreds.115
+title = turkmenreds.115.t
+desc = turkmenreds.115.d
+is_triggered_only = yes
+fire_only_once = yes
+picture = GFX_picture_bosnian_revolt
+
+trigger = {
+tag = OMS
+}
+
+option = {
+name = turkmenreds.115.a
+ai_chance = { factor = 100}
+diplomatic_relation = {
+    country = TRS
+    relation = non_aggression_pact
+    active = no
+}
+add_opinion_modifier = {
+    target = TRS
+    modifier = large_increase
+}
+}
+option = {
+name = turkmenreds.115.b
+ai_chance = { factor = 0}
+add_opinion_modifier = {
+    target = TRS
+    modifier = large_decrease
+}
+
+}
+
+}
+
+country_event = {
+id = turkmenreds.116
+title = turkmenreds.116.t
+desc = turkmenreds.116.d
+is_triggered_only = yes
+fire_only_once = yes
+picture = GFX_picture_bosnian_revolt
+
+trigger = {
+tag = TRS
+}
+
+option = {
+name = turkmenreds.116.a
+ai_chance = { factor = 50}
+start_border_war = {
+    change_state_after_war = yes
+    attacker = {
+        state = 1184
+        num_provinces = 2
+        on_win = alash.102
+        on_lose = alash.103
+        on_cancel = alash.104
+    }
+				
+    defender = {
+        state = 1181
+        num_provinces = 2
+        on_win = alash.103
+        on_lose = alash.102
+        on_cancel = alash.104
+    }
+}
+}
+option = {
+name = turkmenreds.116.b
+ai_chance = { factor = 50}
+hidden_effect = { random_list = {
+    50 = {
+        hidden_effect = { country_event = { id = turkmenreds.117 days = 3 } } }
+    50 = {
+        hidden_effect = { country_event = { id = turkmenreds.118 days = 3 } } }
+    }
+}
+
+}
+
+}
+
+country_event = {
+id = turkmenreds.117
+title = turkmenreds.117.t
+desc = turkmenreds.117.d
+is_triggered_only = yes
+fire_only_once = yes
+picture = GFX_picture_bosnian_revolt
+
+trigger = {
+tag = TRS
+}
+
+option = {
+name = turkmenreds.117.a
+ai_chance = { factor = 25}
+transfer_state = 1181
+
+}
+
+}
+
+country_event = {
+id = turkmenreds.118
+title = turkmenreds.118.t
+desc = turkmenreds.118.d
+is_triggered_only = yes
+fire_only_once = yes
+picture = GFX_picture_bosnian_revolt
+
+trigger = {
+tag = TRS
+}
+
+option = {
+name = turkmenreds.118.a
+ai_chance = { factor = 25}
+add_stability = -0.1
+add_manpower = -50
+ hidden_effect = { TMS = { { country_event = { id = turkmenreds.119 days = 3 } } }
+
+}
+
+}
+
+}
+
+country_event = {
+id = turkmenreds.119
+title = turkmenreds.119.t
+desc = turkmenreds.119.d
+is_triggered_only = yes
+fire_only_once = yes
+picture = GFX_picture_bosnian_revolt
+
+trigger = {
+tag = TMS
+}
+
+option = {
+name = turkmenreds.119.a
+ai_chance = { factor = 100}
+declare_war_on = {
+    target = TRS
+    type = annex_everything
+}
+
+}
+option = {
+name = turkmenreds.119.b
+ai_chance = { factor = 0}
+add_war_support = -0.15
+}
+
+}
+
+country_event = {
+id = turkmenreds.120
+title = turkmenreds.120.t
+desc = turkmenreds.120.d
+fire_only_once = yes
+picture = GFX_picture_bosnian_revolt
+
+trigger = {
+tag = KHV
+has_war = yes
+}
+
+option = {
+name = turkmenreds.119.a
+ai_chance = { factor = 100}
+TMS = { end_puppet = KHV }
+white_peace = TRS
+
+}
+option = {
+name = turkmenreds.119.b
+ai_chance = { factor = 0}
+add_political_power = -50
 }
 
 }

@@ -260,3 +260,35 @@ ai_chance = { factor = 100}
 }
 
 }
+
+###Afghan Takes Merv
+
+
+country_event = {
+id = afghanistan.109
+title = afghanistan.109.t
+desc = afghanistan.109.d
+is_triggered_only = yes
+fire_only_once = yes
+picture = GFX_picture_bosnian_revolt
+
+trigger = {
+tag = AFG
+TRS = { controls_state = 584 }
+}
+mean_time_to_happen = { days = 1 }
+
+option = {
+name = afghanistan.109.a
+ai_chance = { factor = 66}
+transfer_state = 1179
+add_manpower = -500
+}
+
+option = {
+name = afghanistan.109.b
+ai_chance = { factor = 33}
+add_stability = -0.1
+}
+
+}
