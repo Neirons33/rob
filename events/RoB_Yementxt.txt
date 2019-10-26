@@ -370,7 +370,8 @@ picture = GFX_picture_bosnian_revolt
 
 trigger = {
 tag = EGY
-ISR = { controlls_state = 453 }
+ISR = { controls_state = 453 }
+has_war = yes
 }
 
 option = {
