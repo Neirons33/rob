@@ -78,6 +78,51 @@ ideas = {
     industrial_capacity_factory =-1.0
 	}
    }
+   TRS_backs_to_the_wall= {
+    allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 picture = GFX_idea_famine_of_1933
+   
+    modifier = {
+  	army_defence_factor = 0.25
+	supply_consumption_factor = -0.25
+	}
+   }
+   TRS_legacy_of_the_red_army= {
+    allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 picture = GFX_idea_famine_of_1933
+   
+    modifier = {
+   	conscription = 0.1
+	non_core_manpower = 0.08
+	}
+   }
+   TRS_research_not_priority= {
+    allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 picture = GFX_idea_famine_of_1933
+   
+    modifier = {
+    research_speed_factor = -0.5
+
+	}
+   }
   
   }
  }
