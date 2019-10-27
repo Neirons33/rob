@@ -43,7 +43,7 @@ create_country_leader = {
 	desc = ""
 	picture = "dmitri_pavlovich.tga"
 	expire = "1965.1.1"
-	ideology = authoritharian 
+	ideology = authoritharian_subtype 
 	traits = {
 		#
 	}

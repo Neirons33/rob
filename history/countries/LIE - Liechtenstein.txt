@@ -44,7 +44,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Portrait_Liechtenstein_franz.dds"
 	expire = "1965.1.1"
-	ideology = reactionary
+	ideology = reactionary_subtype
 	traits = {
 		#
 	}

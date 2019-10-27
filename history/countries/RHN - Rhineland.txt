@@ -41,18 +41,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Portrait_Germany_Konrad_Adenauer"
 	expire = "1960.1.1"
-	ideology = conservative
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = "Wilhelm Buck"
-	desc = ""
-	picture = ""
-	expire = "1960.1.1"
-	ideology = socialist
+	ideology = conservative_subtype
 	traits = {
 		
 	}
@@ -63,7 +52,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Georg_Donatus.tga"
 	expire = "1951.1.1"
-	ideology = authoritharian
+	ideology = authoritharian_subtype
 	traits = {
 	}
 }
@@ -72,7 +61,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Hans_Adam_Dorten.tga"
 	expire = "1951.1.1"
-	ideology = reactionary
+	ideology = reactionary_subtype
 	traits = {
 	}
 }
@@ -81,43 +70,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Robert_Ley.tga"
 	expire = "1951.1.1"
-	ideology = pelekist
-	traits = {
-	}
-}
-create_country_leader = {
-	name = "Wilhelm Pieck"
-	desc = ""
-	picture = ""
-	expire = "1951.1.1"
-	ideology = german_socialism
-	traits = {
-	}
-}
-create_country_leader = {
-	name = "Kurt Schumacher"
-	desc = ""
-	picture = ""
-	expire = "1951.1.1"
-	ideology = democratic_socialist
-	traits = {
-	}
-}
-create_country_leader = {
-	name = "Heinrich Brüning"
-	desc = ""
-	picture = ""
-	expire = "1951.1.1"
-	ideology = social_democracy
-	traits = {
-	}
-}
-create_country_leader = {
-	name = "Ernst Cassirer"
-	desc = ""
-	picture = ""
-	expire = "1951.1.1"
-	ideology = social_liberal
+	ideology = pelekist_subtype
 	traits = {
 	}
 }
