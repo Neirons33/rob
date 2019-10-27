@@ -33,7 +33,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/GER/Portrait_Germany_Generic_3.dds"
 	expire = "1960.1.1"
-	ideology = nazism
+	ideology = pagan_pelekism
 	traits = {
 		#
 	}
@@ -44,7 +44,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/GER/Portrait_Germany_Generic_1.dds"
 	expire = "1960.1.1"
-	ideology = stalinism
+	ideology = national_socialist_subtype
 	traits = {
 		
 	}
@@ -55,7 +55,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/GER/Portrait_Germany_Generic_2.dds"
 	expire = "1960.1.1"
-	ideology = socialism
+	ideology = socialist_subtype
 	traits = {
 		
 	}

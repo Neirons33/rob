@@ -135,7 +135,7 @@ create_country_leader = {
 	desc = "POLITICS_RISTO_HEIKKI_RYT_DESC"
 	picture = "Portrait_FIN_Toivo_Mikael_Kivimaki.tga"
 	expire = "1965.1.1"
-	ideology = social_democracy
+	ideology = social_democracy_subtype
 	traits = {
 		#
 	}
@@ -146,7 +146,7 @@ create_country_leader = {
 	desc = "POLITICS_AIMO_AALTONEN_DESC"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
 	expire = "1965.1.1"
-	ideology = socialist
+	ideology = socialist_subtype
 	traits = {
 		#
 	}
@@ -157,7 +157,7 @@ create_country_leader = {
 	desc = "POLITICS_VILHO_ANNALA_DESC"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
 	expire = "1965.1.1"
-	ideology = pelekist
+	ideology = pelekist_subtype
 	traits = {
 		#
 	}
@@ -168,7 +168,7 @@ create_country_leader = {
 	desc = "POLITICS_KYÖSTI_KALLIO_DESC"
 	picture = "gfx/leaders/FIN/Portrait_Finland_Kyosti_Kallio.dds"
 	expire = "1965.1.1"
-	ideology = social_liberal
+	ideology = social_liberal_subtype
 	traits = {
 		#
 	}

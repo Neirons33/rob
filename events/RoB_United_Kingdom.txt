@@ -732,7 +732,7 @@ create_country_leader = {
 	desc = ""
 	picture = ".tga"
 	expire = "1953.3.1"
-	ideology = pelekist
+	ideology = pelekist_subtype
 	traits = {
 		#
 	}
@@ -742,7 +742,7 @@ create_country_leader = {
 	desc = ""
 	picture = ".tga"
 	expire = "1953.3.1"
-	ideology = reactionary
+	ideology = reactionary_subtype
 	traits = {
 		#
 	}
@@ -752,7 +752,7 @@ create_country_leader = {
 	desc = ""
 	picture = ".tga"
 	expire = "1953.3.1"
-	ideology = authoritharian
+	ideology = authoritharian_subtype
 	traits = {
 		#
 	}
@@ -762,7 +762,7 @@ create_country_leader = {
 	desc = ""
 	picture = ".tga"
 	expire = "1953.3.1"
-	ideology = conservative
+	ideology = conservative_subtype
 	traits = {
 		#
 	}
@@ -772,7 +772,7 @@ create_country_leader = {
 	desc = ""
 	picture = ".tga"
 	expire = "1953.3.1"
-	ideology = social_liberal
+	ideology = social_liberal_subtype
 	traits = {
 		#
 	}
@@ -782,7 +782,7 @@ create_country_leader = {
 	desc = ""
 	picture = ".tga"
 	expire = "1953.3.1"
-	ideology = social_democracy
+	ideology = social_democracy_subtype
 	traits = {
 		#
 	}
@@ -795,7 +795,7 @@ create_country_leader = {
 	desc = ""
 	picture = "ENG_Edward_VIII.tga"
 	expire = "1953.3.1"
-	ideology = pelekist
+	ideology = pelekist_subtype
 	traits = {
 		#
 	}
@@ -805,7 +805,7 @@ create_country_leader = {
 	desc = ""
 	picture = "ENG_Edward_VIII.tga"
 	expire = "1953.3.1"
-	ideology = authoritharian
+	ideology = authoritharian_subtype
 	traits = {
 		#
 	}
@@ -815,7 +815,7 @@ create_country_leader = {
 	desc = ""
 	picture = "ENG_Edward_VIII.tga"
 	expire = "1953.3.1"
-	ideology = reactionary
+	ideology = reactionary_subtype
 	traits = {
 		#
 	}

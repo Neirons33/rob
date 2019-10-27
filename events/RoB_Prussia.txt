@@ -101,7 +101,7 @@ hidden_effect = { create_country_leader = {
 	desc = ""
 	picture = "Reichstag.tga"
 	expire = "1953.3.1"
-	ideology = reactionary
+	ideology = reactionary_subtype
 	traits = {
 		#
 	}
@@ -296,7 +296,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Portrait_PRS_ernst_juenger.tga"
 	expire = "1998.2.17"
-	ideology = reactionary
+	ideology = military_junta
 	traits = {
 		#
 	}
@@ -624,7 +624,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Vydūnas.tga"
 	expire = "1953.3.1"
-	ideology = pelekist
+	ideology = pagan_pelekism
 	traits = {
 		#
 	}
@@ -672,7 +672,7 @@ create_country_leader = {
 	desc = ""
 	picture = "PRS_Rudolf_Hess.tga"
 	expire = "1953.3.1"
-	ideology = pelekist
+	ideology = pagan_pelekism
 	traits = {
 		#
 	}
@@ -712,7 +712,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Alfred_Rosenberg.tga"
 	expire = "1953.3.1"
-	ideology = pelekist
+	ideology = pagan_pelekism
 	traits = {
 		#
 	}

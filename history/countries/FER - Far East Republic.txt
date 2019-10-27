@@ -48,7 +48,7 @@ create_country_leader = {
 	name = "Viktor Pepelyayev"
 	picture = ""
 	expire = "1965.1.1"
-	ideology = social_liberal
+	ideology = social_liberal_subtype
 	traits = {
 		
 	}
@@ -58,7 +58,7 @@ create_country_leader = {
 	name = "Alexei Kosygin"
 	picture = ""
 	expire = "1965.1.1"
-	ideology = social_democracy
+	ideology = social_democracy_subtype
 	traits = {
 		
 	}
@@ -68,7 +68,7 @@ create_country_leader = {
 	name = "Yui Mitsu"
 	picture = ""
 	expire = "1965.1.1"
-	ideology = conservative
+	ideology = conservative_subtype
 	traits = {
 		
 	}
@@ -78,7 +78,7 @@ create_country_leader = {
 	name = "Grand Duchess Olga Alexandrovna"
 	picture = ""
 	expire = "1965.1.1"
-	ideology = authoritharian
+	ideology = authoritharian_subtype
 	traits = {
 		
 	}

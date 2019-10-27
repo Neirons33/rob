@@ -75,7 +75,7 @@ create_country_leader = {
 	name = "Ahmed Ben Bella"
 	desc = ""
 	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_1.dds"
-	ideology = authoritharian
+	ideology = authoritharian_subtype
 	traits = {
 		#
 	}

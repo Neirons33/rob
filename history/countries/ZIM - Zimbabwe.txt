@@ -45,30 +45,21 @@ set_convoys = 5
 	}
 }
 set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 0
-		}
-
-		fascism = {
-			popularity = 0
-		}
-		
-		communism = {
-			popularity = 0
-			#banned = no #default is no
-		}
-		
-		neutrality = { 
-			popularity = 100
-		}
-	}
-	
-	ruling_party = neutrality
-	last_election = "1936.1.1"
-	election_frequency = 48
+	ruling_party = reactionary
+	last_election = "1926.6.7"
+	election_frequency = 72
 	elections_allowed = yes
+}
+set_popularities = {
+	national_socialist = 0
+	socialist = 0
+	democratic_socialist = 0
+	social_democracy = 0
+	social_liberal = 0
+	conservative = 0
+	authoritharian = 0
+	reactionary = 91
+	pelekist = 9
 }
 
 create_country_leader = {
@@ -76,7 +67,7 @@ create_country_leader = {
 	name = " Marcus James Hugins"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
 	expire = "1965.1.1"
-	ideology = nazism
+	ideology = reactionary_subtype
 	traits = { 
 		prince_of_terror
 		
@@ -87,33 +78,4 @@ create_country_leader = {
 }
 
 
-#Now a colony of Italy  However, if independent it would have
-1939.1.1 = {
-	set_politics = {
-
-		parties = {
-		democratic = { 
-			popularity = 0
-		}
-
-		fascism = {
-			popularity = 0
-		}
-		
-		communism = {
-			popularity = 0
-			#banned = no #default is no
-		}
-		
-		neutrality = { 
-			popularity = 100
-		}
-	}
-		
-		ruling_party = neutrality
-		last_election = "1936.1.1"
-		election_frequency = 48
-		elections_allowed = no
-	}
-}
 

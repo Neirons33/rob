@@ -67,7 +67,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Muhamed_Hadzifenfic.tga"
 	expire = "1953.3.1"
-	ideology = reactionary
+	ideology = reactionary_subtype
 	traits = {
 		#
 	}

@@ -307,7 +307,7 @@ create_country_leader = {
 	desc = "POLITICS_Hirohito_DESC"
 	picture = "Portrait_Japan_Hirohito.dds"
 	expire = "1989.1.1"
-	ideology = authoritharian
+	ideology = authoritharian_subtype
 	traits = {
 		warrior_code
 		emperor_showa
@@ -321,7 +321,7 @@ create_country_leader = {
 	desc = "POLITICS_Hirohito_DESC"
 	picture = "GFX_Portrait_kyuichi_tokuda"
 	expire = "1989.1.1"
-	ideology = socialist
+	ideology = socialist_subtype
 	traits = {
 	}
 }
@@ -331,7 +331,7 @@ create_country_leader = {
 	desc = "POLITICS_Hirohito_DESC"
 	picture = "GFX_Portrait_tetsu_katayama"
 	expire = "1989.1.1"
-	ideology = social_liberal
+	ideology = social_liberal_subtype
 	traits = {
 	}
 }
