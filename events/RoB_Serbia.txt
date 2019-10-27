@@ -30,12 +30,17 @@ add_political_power = -100
 add_stability = -0.1
 set_country_flag = bosnia_has_revolted
 SER = { country_event = { id = serbia.101 days = 10 }}
+HUN = { 
+country_event = { id = rob_hungary.5 days = 7 }}
 }
 option = {
 name = serbia.100.b
 set_country_flag = bosnia_has_revolted
 BOS = { change_tag_from = SER }
 SER = { country_event = { id = serbia.101 days = 10 }}
+HUN = { 
+country_event = { id = rob_hungary.5 days = 7 } 
+	  }
 }
 }
 

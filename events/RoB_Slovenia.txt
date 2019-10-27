@@ -1,0 +1,109 @@
+#################
+###Slovene Events
+#################
+
+add_namespace = rob_slovenia
+
+
+
+###Gunzzzz
+country_event = {
+ id = rob_slovenia.1
+ title = rob_slovenia.1.t
+ desc = rob_slovenia.1.d
+ picture = GFX_report_event_french_resistance_02
+ fire_only_once = yes
+ trigger = {
+    tag = SLV
+    }
+    option = {
+    name = rob_slovenia.1.a
+    add_equipment_to_stockpile = {
+    type = infantry_equipment
+    amount = 1000
+    producer = AUS
+                                }
+    } 
+    
+ }
+###slovenia under control
+country_event = {
+    id = rob_slovenia.2
+    title = rob_slovenia.2.t
+    desc = rob_slovenia.2.d
+    picture = GFX_report_event_second_vienna_award_pact
+    fire_only_once = yes
+    trigger = {
+    original_tag = SLV
+    has_full_control_of_state = 934
+    has_full_control_of_state = 1127
+    has_full_control_of_state = 1128
+    }
+
+    option = {
+        name = rob_slovenia.2.a
+      SLV = { load_oob = SLV_milita }
+    }
+}
+
+
+
+
+
+###we win enough
+country_event = {
+    id = rob_slovenia.3
+    title = rob_slovenia.3.t
+    desc = rob_slovenia.3.d
+    picture = GFX_report_event_second_vienna_award_pact
+    fire_only_once = yes
+
+    trigger = {
+    original_tag = SLV
+    has_offensive_war = yes
+    SLV = {
+    controls_state = 1016
+    has_full_control_of_state = 934
+    has_full_control_of_state = 1127
+    has_full_control_of_state = 1128
+    }
+    OR = {
+    original_tag = SLV
+    has_offensive_war = yes
+    SLV = {
+    controls_state = 4
+    has_full_control_of_state = 934
+    has_full_control_of_state = 1127
+    has_full_control_of_state = 1128
+        }
+    }
+        mean_time_to_happen = { days = 7}
+    }
+
+
+    #take their shit and leave
+    option = {
+        name = rob_slovenia.3.a
+        ai_chance = { factor = 10}
+        hidden_effect = {   
+        SLV = { transfer_state = 1127 } 
+        SLV = { transfer_state = 934 }  
+        every_country = {
+                limit = {
+                    has_war_with = SLV
+                }
+                white_peace = SLV
+            }
+            remove_ideas = {
+                extensive_conscription
+                austrian_civil_war
+                }
+            add_ideas = {   
+            limited_conscription
+            }
+    }
+}
+}
+
+
+

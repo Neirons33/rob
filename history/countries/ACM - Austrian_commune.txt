@@ -1,6 +1,5 @@
 capital = 1018
 
-oob = ""
 
 set_research_slots = 3
 set_politics = {
@@ -31,8 +30,8 @@ set_technology = {
 }
 add_ideas = {
 	extensive_conscription
-	austrian_civil_war
 	austrian_bad_econ
+	austrian_civil_war
 }
 
 set_stability = 0.80
@@ -48,13 +47,26 @@ create_country_leader = {
 	}
 }
 
+create_field_marshal = {
+	name = "Alfred Klahr"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dd"
+	traits = {
+		politically_connected
+	}
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
 create_corps_commander = {
-	name = ""
+	name = "Josef Plieseis"
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
 	traits = { trait_mountaineer trickster }
-	skill = 3
-	attack_skill = 2
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 2
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
 }
+

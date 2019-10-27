@@ -4,8 +4,33 @@
 
 add_namespace = rob_hungary
 
-#magyar niggas want da burgenland
+
 country_event = {
+id = rob_hungary.5
+title = hungary.5.t
+desc = hungary.5.d
+fire_only_once = yes
+picture = GFX_picture_bosnian_revolt
+is_triggered_only = yes
+option = {
+ name = hungary.5.a
+
+ remove_ideas = {
+ occupied_country
+ }
+
+}
+}
+
+
+
+
+
+####Currently disabled
+
+
+#magyar niggas want da burgenland
+###country_event = {
 	id = rob_hungary.1
 	title = rob_hungary.1.t
 	desc = rob_hungary.1.d
@@ -20,7 +45,7 @@ country_event = {
 			hidden_effect = {
 				AUS = {
 				 country_event = {
-				    id = rob_austria.4 
+				    id = rob_austria.9
 				    days = 3
 				}
 		}
@@ -37,7 +62,7 @@ country_event = {
 
 
 # rob_hungary declares war on rob_austria
-country_event = {
+###country_event = {
 	id = rob_hungary.2
 	title = rob_hungary.2.t
 	desc = rob_hungary.2.d
@@ -48,16 +73,25 @@ country_event = {
 	#invades rob_austria
 	option = {
 		name = rob_hungary.2.a
-		ai_chance = { factor = 5}
+		ai_chance = { factor = 7}
 			hidden_effect = { 	
 				HUN = { declare_war_on = { target = AUS  type = annex_everything } }
 				HUN = { declare_war_on = { target = ACM  type = annex_everything } }
 				HUN = { declare_war_on = { target = THR  type = annex_everything } }
 	}
 }
+option = {
+		name = rob_hungary.2.b
+		ai_chance = { factor = 3}
+		add_political_power = -50
+		add_popularity = {
+    ideology = reactionary
+    popularity = -0.10
+}
+	}
 }
 ###niggas stop fightin
-country_event = {
+###country_event = {
 	id = rob_hungary.3
 	title = rob_hungary.3.t
 	desc = rob_hungary.3.d
@@ -65,9 +99,10 @@ country_event = {
 	fire_only_once = yes
 	trigger = {
 	original_tag = HUN
+	has_war_with = AUS
 	has_offensive_war = yes
-	controls_state = 810
-
+	has_full_control_of_state = 810
+	mean_time_to_happen = { days = 7}
 	}
 	#take their shit and leave
 	option = {
@@ -87,7 +122,39 @@ country_event = {
 option = {
 		name = rob_hungary.3.b
 		ai_chance = { factor = 0}
-		add_political_power = -200
+		add_political_power = -100
 		add_stability = -0.05
 	}
+}
+##we lost
+###country_event = {
+	id = rob_hungary.4
+	title = rob_hungary.4.t
+	desc = rob_hungary.4.d
+	picture = GFX_report_event_second_vienna_award_pact
+	fire_only_once = yes
+	trigger = {
+	original_tag = HUN
+	has_war_with = AUS
+	has_offensive_war = yes
+	surrender_progress > 0.30
+	}
+	#bail out
+	option = {
+		name = rob_hungary.4.a
+		ai_chance = { factor = 10}
+		hidden_effect = { 	
+		every_country = {
+				limit = {
+					has_war_with = HUN
+				}
+				white_peace = HUN
+			}
+			add_political_power = -250
+		add_popularity = {
+    ideology = reactionary
+    popularity = -0.20
+	}
+}
+}
 }

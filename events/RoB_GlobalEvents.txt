@@ -13,7 +13,7 @@ news_event = {
  
 	mean_time_to_happen = { days = 1 }
 	option = {
-		name = "Another Country Falls..."
+		name = ""Tragedy for some, an opportunity for many""
 		ai_chance = { factor = 1}
 	}
 }

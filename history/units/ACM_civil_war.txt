@@ -13,39 +13,24 @@ division_template = {
         
 	}
 	
-	support = {
-        artillery = { x = 0 y = 0 }
-	}
-}
-
-division_template = {
-	name = "Gebirgs-Brigade"		# Gebirgsbrigade
-	#Note: precursor to Gebirgs-Divisions
-	division_names_group = GER_Mnt_01
-
-	regiments = {
-		mountaineers = { x = 0 y = 0 }
-	    mountaineers = { x = 0 y = 1 }
-		mountaineers = { x = 0 y = 2 }
-		mountaineers = { x = 1 y = 0 }
-		mountaineers = { x = 1 y = 1 }
-		mountaineers = { x = 1 y = 2 }
-	}
 }
 division_template = {
-	name = "Kavallerie-Brigade"
-
-	division_names_group = GER_Cav_01
+	name = "Infanterie Division"
+	division_names_group = ACM_INF_01
 
 	regiments = {
-		cavalry = { x = 0 y = 0 }
-        cavalry = { x = 0 y = 1 }
-        cavalry = { x = 1 y = 0 }
-		cavalry = { x = 1 y = 1 }
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
 	}
 	support = {
-	    recon = { x = 0 y = 0 }
-	    artillery = { x = 0 y = 1 }
+		engineer = { x = 0 y = 0 }   # Pioneer Bn
 	}
 }
 
@@ -55,17 +40,27 @@ units = {
 	division= {	
 		division_name = {
 				is_name_ordered = yes
-				name_order = 2
+				name_order = 1
 		}
 		location = 13313
 		division_template = "Volksbefreiungsarmee"
-		start_experience_factor = 0.7
+		start_experience_factor = 0.3
 		start_equipment_factor 1
 	}
 	division= {	
 		division_name = {
 				is_name_ordered = yes
-				name_order = 12
+				name_order = 2
+		}
+		location = 13379
+		division_template = "Volksbefreiungsarmee"
+		start_experience_factor = 0.3
+		start_equipment_factor 0.3
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
 		}
 		location = 13313
 		division_template = "Volksbefreiungsarmee"
@@ -76,7 +71,7 @@ units = {
 	division= {	
 		division_name = {
 				is_name_ordered = yes
-				name_order = 3
+				name_order = 4
 		}
 		location = 13313
 		division_template = "Volksbefreiungsarmee"
@@ -86,29 +81,17 @@ units = {
 	division= {	
 		division_name = {
 				is_name_ordered = yes
-				name_order = 23
+				name_order = 5
 		}
 		location = 13314
 		division_template = "Volksbefreiungsarmee"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 	}
-	# Panzertruppenkommando
 	division= {	
 		division_name = {
 				is_name_ordered = yes
-				name_order = 1
-		}
-		location = 11666
-		division_template = "Panzertruppen"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.9
-		force_equipment_variants = { light_tank_equipment_1 = { owner = "ACM" } }
-	}
-	division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 2
+				name_order = 6
 		}
 		location = 13315
 		division_template = "Volksbefreiungsarmee"
@@ -118,7 +101,7 @@ units = {
 	division= {	
 		division_name = {
 				is_name_ordered = yes
-				name_order = 3
+				name_order = 7
 		}
 		location = 13315
 		division_template = "Volksbefreiungsarmee"
@@ -130,11 +113,11 @@ units = {
 	division= {	
 		division_name = {
 				is_name_ordered = yes
-				name_order = 1
+				name_order = 8
 		}
 		location = 13352
 		division_template = "Volksbefreiungsarmee"
-		start_experience_factor = 0.4
+		start_experience_factor = 0.2
 		start_equipment_factor = 0.9
 
 	}
@@ -142,7 +125,7 @@ units = {
 	division= {	
 		division_name = {
 				is_name_ordered = yes
-				name_order = 4
+				name_order = 9
 		}
 		location = 13354
 		division_template = "Volksbefreiungsarmee"
@@ -152,7 +135,7 @@ units = {
 	division= {	
 		division_name = {
 				is_name_ordered = yes
-				name_order = 14
+				name_order = 10
 		}
 		location = 13356
 		division_template = "Volksbefreiungsarmee"
@@ -162,11 +145,21 @@ units = {
 	division= {	
 		division_name = {
 				is_name_ordered = yes
-				name_order = 24
+				name_order = 11
 		}
 		location = 6739
-		division_template = "Infanterie-Division"
+		division_template = "Volksbefreiungsarmee"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
 	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 12
+		}
+		location = 9648
+		division_template = "Volksbefreiungsarmee"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
 	}
+}

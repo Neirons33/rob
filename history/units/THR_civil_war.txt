@@ -8,7 +8,6 @@ division_template = {
 		infantry = { x = 0 y = 1 }
         infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
   		}
 	}
 division_template = {
@@ -28,26 +27,6 @@ division_template = {
 }
 
 division_template = {
-	name = "Panzertruppen"
-
-	division_names_group = THR_Arm_01
-
-	regiments = {
-		light_armor = { x = 0 y = 0 }
-		light_armor = { x = 0 y = 1 }
-        motorized = { x = 1 y = 0 }
-		motorized = { x = 1 y = 1 }
-		motorized = { x = 2 y = 0 }
-        motorized = { x = 2 y = 1 }
-	}
-	support = {
-        recon = { x = 0 y = 0 }
-        engineer = { x = 0 y = 1 }
-        artillery = { x = 0 y = 2 }
-	}
-}
-
-division_template = {
 	name = "Gebirgs-Brigade"		# Gebirgsbrigade
 	#Note: precursor to Gebirgs-Divisions
 	division_names_group = THR_Mnt_01
@@ -61,26 +40,12 @@ division_template = {
 		mountaineers = { x = 1 y = 2 }
 	}
 }
-division_template = {
-	name = "Kavallerie-Brigade"
 
-	division_names_group = THR_Cav_01
-
-	regiments = {
-		cavalry = { x = 0 y = 0 }
-        cavalry = { x = 0 y = 1 }
-        cavalry = { x = 1 y = 0 }
-		cavalry = { x = 1 y = 1 }
-	}
-	support = {
-	    recon = { x = 0 y = 0 }
-	    artillery = { x = 0 y = 1 }
-	}
-}
 
 units = {
 
-	#####Sturmabteilung Infanterie#####
+	#####Volkspolizei#####
+
 	division= {	
 		division_name = {
 				is_name_ordered = yes
@@ -88,7 +53,7 @@ units = {
 		}
 		location = 13372
 		division_template = "Volkspolizei"
-		start_experience_factor = 0.7
+		start_experience_factor = 0.2
 		start_equipment_factor 1
 	}
 	division= {	
@@ -98,7 +63,7 @@ units = {
 		}
 		location = 6680
 		division_template = "Volkspolizei"
-		start_experience_factor = 0.4
+		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 	}
 	division= {	
@@ -106,9 +71,9 @@ units = {
 				is_name_ordered = yes
 				name_order = 3
 		}
-		location = 688
+		location = 3675
 		division_template = "Volkspolizei"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.1
 		start_equipment_factor = 0.6
 	}
 	division= {	
@@ -118,7 +83,7 @@ units = {
 		}
 		location = 732
 		division_template = "Volkspolizei"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 	}
 	division= {	
@@ -128,9 +93,12 @@ units = {
 		}
 		location = 6723
 		division_template = "Volkspolizei"
-		start_experience_factor = 0.1
+		start_experience_factor = 0.2
 		start_equipment_factor = 0.9
 	}
+
+		#####Sturmabteilung Infanterie#####
+
 	division= {	
 		division_name = {
 				is_name_ordered = yes
@@ -150,7 +118,15 @@ units = {
 		}
 		location = 13390
 		division_template = "Volkspolizei"
-		start_experience_factor = 0.4
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+
+	}
+	division= {	
+		name = "Volkspolizei Salzbrug"				
+		location = 13380 #Salzburg
+		division_template = "Volkspolizei"
+		start_experience_factor = 0.2
 		start_equipment_factor = 0.9
 
 	}
@@ -205,8 +181,6 @@ units = {
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
 	}
-
-
 
 
 

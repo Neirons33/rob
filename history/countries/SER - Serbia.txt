@@ -1,8 +1,9 @@
 ﻿capital = 107
 
-oob = "YUG_1936"
+oob = "SER_1934"
 
 set_research_slots = 3
+
 set_politics = {
 	ruling_party = authoritharian
 	last_election = "1933.7.1"

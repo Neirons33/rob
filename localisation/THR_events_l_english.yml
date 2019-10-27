@@ -1,40 +1,16 @@
 ﻿l_english:
 
- #New Slovenia event
- germany.940.t:0 "The London Surrender"
- germany.940.d:0 "London have surrender to our claim for Slovenia. Now we can consider two options, divide slovenia with our friends or take all of it."
- germany.940.a:0 "divide Slovenia with Italy and Hungary."
- germany.940.b:0 "Take all!"
- 
- germany.941.t:0 "Germany ceded part of Slovenia"
- germany.941.d:0 "Germany gave part of slovenia to us."
- germany.941.a:0 "Great!"
+ #Third Reich Civil War event
+ third_reich.1.t:0 "The Civil War Begins"
+ third_reich.1.d:0 "For too long us Germans have been completely on the edge of being whiped out by judio-bolshivism, luckly for us their hand of cards will help ours! Recently communists and socialists alike have risen up against Eingelbert. If we make a move now in building up this civil war, we might have a chance of finally reuniting the German peoples."
+ third_reich.1.a:0 "Ein Volk, ein Reich, ein Führer!"
 
- germany.942.t:0 "Germany ceded part of Slovenia"
- germany.942.d:0 "Germany gave part of slovenia to us."
- germany.942.a:0 "Great!"
- 
- #Burgenland Question
- bs.1.t:0 "Hungary requests Burgenland"
- bs.1.d:0 "Burgenland was part of Hungary until 1921, after which a general election was held and the territory was ceded to Austria. Despite the fact that the majority of the population is German-speaking, Hungary wishes to have the territory back."
- bs.1.a:0 "Hungarians are just a minority in there."
- bs.1.b:0 "Let them have it."
- 
- bs.100.t:0 "Germany accepted our request"
- bs.100.d:0 "German government accepts our request. Hungarians came back to home!"
- bs.100.a:0 "Germans are our best friend ever!"
- 
- bs.101.t:0 "Germany refused our request"
- bs.101.d:0 "The German government refused our request. Probably it was reckless request."
- bs.101.a:0 "It was an absurd request, withdraw it."
- bs.101.b:0 "We won't step backward."
- 
- #Separate Burma
- bs_burma_separate_tt:0 "§YBurma§! will be separate from §Y[RAJ.GetName]§!"
- BRM_separated:0 "Burma separated"
- 
- #Pope Died
- bs.3.t:0 "Pope Pius XI died" #Copied from Wikipedia https://en.wikipedia.org/wiki/Pope_Pius_XI#Death_and_burial
- bs.3.d:0 "Pope Pius XI had been ill for some time when, on 25 November 1938, he suffered two heart attacks within several hours. He had serious breathing problems and could not leave his apartment. \nMedical specialists reported that heart insufficiency combined with bronchial attacks had hopelessly complicated his already poor prospects. \nPope Pius XI died at 5:31 A.M. (Rome Time) of a third heart attack on 10 February 1939, at the age of 81. His last words to those near him at the time of his death were spoken with clarity and firmness: "My soul parts from you all in peace." "
- bs.3.a:0 "Oh, dear..."
- bs.3.b:0 "Pius XII is next Pope"
+ third_reich.2.t:0 "The Civil War Ends"
+ third_reich.2.d:0 "Mien Fuhrer, the final traces of communist and austro fascist resistance have finally been crushed. Vienna is ours along with the nearly the rest of Austria. One must recommend to you though that you play your next hand of cards carefully, many Austrians workers still sympathize with the wretched socialists and communists."
+ third_reich.2.a:0 "Ein Endsieg"
+
+ #aftermath/what to do with badies
+ third_reich.3.t:0 "What To Do With Fascists"
+ third_reich.3.d:0 "Mien Fuhrer, what shall we do with the many fascists prisoners which we have obtained throughout this war? Many are willing to fight for the glory of a new Germanic empire."
+ third_reich.3.a:0 "We can't risk it, kill them or imprision them!"
+ third_reich.3.b:0 "They are of the same blood fool, if they will cooperate, then so will I!"

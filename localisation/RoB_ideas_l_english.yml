@@ -536,7 +536,15 @@
  austrian_socialist_paramilitaries_desc:0 "Socialists in our country are preparing to overthrow us, we must act now! "
  austrian_brownshirt_terror:0 "Brown Shirt Terror"
  austrian_brownshirt_terror_desc:0 "Hitler's Austrian Worker's Party has become quite a troublesome foe." 
- 
+ austrian_civil_war:0 "Austrian Civil War"
+ austrian_civil_war_desc:0 "The war continues"
+ slovenian_autonomy:0 "Slovenian Autonomy"
+ slovenian_autonomy_desc:0 "Slovenians are just barely remaining in our Republic"
+
+ ###HUN
+ occupied_country:0 "Occupied Country"
+ occupied_country_desc:0 "Our nation is under joint occupation of Romanian and Serbian forces."
+
  ###GER
  deutsche_volksarmee:0 "Deutsche Volksarmee"
  deutsche_volksarmee_desc:0 "Deutsche Volksarmee, meaning "German People's Army" is the main force behind Socialist regime in Germany. Made up mostly of loyal revolutionary supporters and former imperial soldiers, DVA is fanatical in defence of it's ideals. Despite their loyality, the German Army is poorly trained and is lacking a strong general core in it's High Command." 

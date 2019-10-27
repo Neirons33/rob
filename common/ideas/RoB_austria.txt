@@ -8,7 +8,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				always = yes
+				always = no
 			}
 
 			removal_cost = -1
@@ -48,7 +48,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				always = yes
+				always = no
 			}
 
 			removal_cost = -1
@@ -114,6 +114,25 @@ ideas = {
 				consumer_goods_factor = 0.10
 				min_export = -0.15
 			}
+		}	
+
+		slovenian_autonomy = {
+        picture = GFX_idea_minority_troubles	
+			allowed = {
+			always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.20
+				conscription_factor = -0.10
+				consumer_goods_factor = 0.15
+
+			}
 		}
-	}
 }

@@ -12,7 +12,7 @@ division_template = {
 units = {
 	division = {
 		name = "I Ostmärkische Sturmscharen"
-		location = 13348  
+		location =  11618
 		division_template = "Ostmärkische Sturmscharen"
 	}
 	division = {
@@ -22,7 +22,7 @@ units = {
 	}
 	division = {
 		name = "III Ostmärkische Sturmscharen"
-		location = 934
+		location = 9648
 		division_template = "Ostmärkische Sturmscharen"
 	}
 
