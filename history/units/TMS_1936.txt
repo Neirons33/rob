@@ -1,7 +1,7 @@
 division_template = {
 	name = "Turkmen Cavalry"
 
-	division_names_group = AFG_ARM_01
+	division_names_group = TMS_INF_01
 
 	regiments = {
 		cavalry = { x = 0 y = 0 }
@@ -16,7 +16,7 @@ division_template = {
 division_template = {
 	name = "Militia"				# Militia units (lowest experience, oldest equipment)
 
-	division_names_group = AFG_GAR_01
+	division_names_group = TMS_INF_01
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -33,6 +33,12 @@ units = {
 	#TRS Army
 	division = {
 		name = "Ashgabat Cavalry"
+		location = 12333
+		division_template = "Turkmen Cavalry"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Southwest Cavalry"
 		location = 12333
 		division_template = "Turkmen Cavalry"
 		start_experience_factor = 0.3
