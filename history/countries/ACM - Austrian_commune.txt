@@ -10,8 +10,8 @@ set_politics = {
 }
 set_popularities = {
 	national_socialist = 9
-	socialist = 81
-	democratic_socialist = 10
+	socialist = 10
+	democratic_socialist = 81
 	social_democracy = 0
 	social_liberal = 0
 	conservative = 0
@@ -41,7 +41,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Anarchic_Goverment.dds"
 	expire = "1965.1.1"
-	ideology = socialist 
+	ideology = anarcho_socialism
 	traits = {
 		#
 	}

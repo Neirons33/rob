@@ -54,7 +54,7 @@ create_country_leader = {
 	desc = "POLITICS_MATYAS_RAKOSKI_DESC"
 	picture = "Gyula_Gombos.dds"
 	expire = "1965.1.1"
-	ideology = pelekism_ideology
+	ideology = pelekist_subtype
 	traits = {
 		#
 	}
@@ -65,7 +65,7 @@ create_country_leader = {
 	desc = "POLITICS_MATYAS_RAKOSKI_DESC"
 	picture = "miklos_horthy.dds"
 	expire = "1965.1.1"
-	ideology = reactionary
+	ideology = reactionary_subtype
 	traits = {
 		#
 	}
@@ -87,7 +87,7 @@ create_country_leader = {
 	desc = "POLITICS_ARPAD_SZAKASITS_DESC"
 	picture = "Istvan_Bethlen.dds"
 	expire = "1965.1.1"
-	ideology = conservative_ideology
+	ideology = conservative_subtype
 	traits = {
 		#
 	}
