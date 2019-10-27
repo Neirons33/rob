@@ -373,7 +373,7 @@ create_country_leader = {
 	desc = ""
 	picture = ""
 	expire = "1965.1.1"
-	ideology = national_socialist_subtype
+	ideology = national_socialist
 	traits = {
 		
 	}
@@ -489,6 +489,7 @@ add_opinion_modifier = {
 }
 
 }
+
 
 }
 
@@ -629,16 +630,130 @@ has_war = yes
 }
 
 option = {
-name = turkmenreds.119.a
+name = turkmenreds.120.a
 ai_chance = { factor = 100}
 TMS = { end_puppet = KHV }
 white_peace = TRS
 
 }
 option = {
-name = turkmenreds.119.b
+name = turkmenreds.120.b
 ai_chance = { factor = 0}
 add_political_power = -50
+}
+
+}
+
+###Second Basmachi Revolt
+
+country_event = {
+id = turkmenreds.121
+title = turkmenreds.121.t
+desc = turkmenreds.121.d
+fire_only_once = yes
+picture = GFX_picture_bosnian_revolt
+
+trigger = {
+tag = TRS
+NOT = { KAZ = { exists = yes } } 
+NOT = { KYR = { exists = yes } } 
+NOT = { UZB = { exists = yes } } 
+NOT = { KHV = { exists = yes } } 
+NOT = { KZR = { exists = yes } } 
+NOT = { TMS = { exists = yes } } 
+NOT = { has_completed_focus = TRS_alliancewithbasmachi }
+NOT = { has_completed_focus = TRS_destroypanturkists }
+}
+
+option = {
+name = turkmenreds.121.a
+ai_chance = { factor = 75}
+TAJ = { transfer_state = 742 } 
+TAJ = { set_province_controller = 1573 }
+TAJ = { set_province_controller = 10488 }
+TAJ = { set_province_controller = 10187 }
+TAJ = { set_province_controller = 10660 }
+TAJ = { set_province_controller = 1459 }
+TAJ = { set_province_controller = 10408 }
+TAJ = { set_province_controller = 1216 }
+TAJ = { set_province_controller = 4482 }
+TAJ = { set_province_controller = 1591 }
+TAJ = { set_province_controller = 1483 }
+TAJ = { add_state_core = 742 }
+TAJ = { add_state_core = 1217 }
+TAJ = { add_state_core = 732 }
+TAJ = { add_state_core = 1218 }
+TAJ = { add_state_core = 1177 }
+TAJ = { add_state_core = 1178 }
+TAJ = { add_state_core = 1179 }
+TAJ = { add_state_core = 1180 }
+TAJ = { add_state_core = 1185 }
+TAJ = { add_state_core = 1181 }
+TAJ = { add_state_core = 1175 }
+TAJ = { add_state_core = 1184 }
+TAJ = { add_state_core = 1183 }
+TAJ = { add_state_core = 1182 }
+TAJ = { add_state_core = 1176 }
+TAJ = { add_state_core = 984 }
+TAJ = { add_state_core = 405 }
+TAJ = { add_state_core = 586 }
+TAJ = { add_state_core = 1174 }
+TAJ = { add_state_core = 587 }
+TAJ = { add_state_core = 585 }
+TAJ = { load_oob = "TAJ_1936" }
+TAJ = { add_manpower = 50000 } 
+TAJ = { declare_war_on = {
+    target = TRS
+    type = annex_everything
+}
+}
+}
+
+
+option = {
+name = turkmenreds.121.b
+ai_chance = { factor = 0}
+TAJ = { transfer_state = 742 } 
+TAJ = { set_province_controller = 1573 }
+TAJ = { set_province_controller = 10488 }
+TAJ = { set_province_controller = 10187 }
+TAJ = { set_province_controller = 10660 }
+TAJ = { set_province_controller = 1459 }
+TAJ = { set_province_controller = 10408 }
+TAJ = { set_province_controller = 1216 }
+TAJ = { set_province_controller = 4482 }
+TAJ = { set_province_controller = 1591 }
+TAJ = { set_province_controller = 1483 }
+TAJ = { add_state_core = 742 }
+TAJ = { add_state_core = 1217 }
+TAJ = { add_state_core = 732 }
+TAJ = { add_state_core = 1218 }
+TAJ = { add_state_core = 1177 }
+TAJ = { add_state_core = 1178 }
+TAJ = { add_state_core = 1179 }
+TAJ = { add_state_core = 1180 }
+TAJ = { add_state_core = 1185 }
+TAJ = { add_state_core = 1181 }
+TAJ = { add_state_core = 1175 }
+TAJ = { add_state_core = 1184 }
+TAJ = { add_state_core = 1183 }
+TAJ = { add_state_core = 1182 }
+TAJ = { add_state_core = 1176 }
+TAJ = { add_state_core = 984 }
+TAJ = { add_state_core = 405 }
+TAJ = { add_state_core = 586 }
+TAJ = { add_state_core = 1174 }
+TAJ = { add_state_core = 587 }
+TAJ = { add_state_core = 585 }
+TAJ = { load_oob = "TAJ_1936" }
+TAJ = { add_manpower = 50000 } 
+TAJ = { declare_war_on = {
+    target = TRS
+    type = annex_everything
+}
+}
+TAJ = { change_tag_from = TRS }
+
 }
 
 }
