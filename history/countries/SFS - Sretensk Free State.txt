@@ -35,7 +35,7 @@ create_country_leader = {
 	desc = "POLITICS_ROBERT_KOSCH_DESC"
 	picture = "Robert_Kosch.tga"
 	expire = "1965.1.1"
-	ideology = military_junta
+	ideology = reactionary
 	traits = {
 		#
 	}

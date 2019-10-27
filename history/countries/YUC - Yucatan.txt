@@ -24,3 +24,13 @@ set_popularities = {
 	reactionary = 0
 	pelekist = 0
 }
+
+create_country_leader = {
+	name = "Nestor Makhno"
+	desc = ""
+	picture = "Portrait_FTT_Nestor_Makhno.tga"
+	ideology = anarchism
+	traits = {
+		#
+	}
+}

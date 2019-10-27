@@ -66,21 +66,28 @@ if = {
 }
 
 set_politics = {
-	ruling_party = socialist
-	last_election = "1926.6.7"
-	election_frequency = 72
+
+	parties = {
+		democratic = { 
+			popularity = 35
+		}
+
+		fascism = {
+			popularity = 15
+		}
+		
+		communism = {
+			popularity = 15
+		}
+		neutrality = {
+			popularity = 35
+		}
+	}
+
+	ruling_party = democratic
+	last_election = "1933.2.16"
+	election_frequency = 36
 	elections_allowed = yes
-}
-set_popularities = {
-	national_socialist = 13
-	socialist = 46
-	democratic_socialist = 7
-	social_democracy = 20
-	social_liberal = 0
-	conservative = 7
-	authoritharian = 0
-	reactionary = 7
-	pelekist = 0
 }
 
 #NOTICE# please watch out for spelling, im using Vietnamese names as they spell them, game might not support these characters!
@@ -90,7 +97,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_warlord2.dds"
 	expire = "1953.3.1"
-	ideology = reactionary_subtype 
+	ideology = fascism_ideology 
 	traits = {
 		
 	}
@@ -112,12 +119,22 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_2.dds"
 	expire = "1953.3.1"
-	ideology = conservative_subtype
+	ideology = conservatism
 	traits = {
 		
 	}
 }
 
+create_country_leader = {
+	name = "Nguyen Tuong Tam"
+	desc = ""
+	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_3.dds"
+	expire = "1953.3.1"
+	ideology = moderatism
+	traits = {
+		
+	}
+}
 
 
 

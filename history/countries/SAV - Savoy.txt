@@ -61,7 +61,7 @@ create_country_leader = {
 	name = "Pierre Chevallier"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
 	expire = "1965.1.1"
-	ideology = social_democracy_subtype
+	ideology = social_democracy
 	traits = {
 		#
 	}
@@ -71,7 +71,7 @@ create_country_leader = {
 	name = "Virgile Barel"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
 	expire = "1965.1.1"
-	ideology = socialist_subtype
+	ideology = socialist
 	traits = {
 		#
 	}
@@ -81,7 +81,7 @@ create_country_leader = {
 	name = "Ezio Garibaldi"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
 	expire = "1965.1.1"
-	ideology = pelekist_subtype
+	ideology = pelekist
 	traits = {
 		#
 	}

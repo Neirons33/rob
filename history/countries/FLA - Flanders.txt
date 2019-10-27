@@ -103,7 +103,7 @@ create_country_leader = {
 	desc = "POLITICS_HUBERT_PIERLOT_DESC"
 	picture = "Portrait_FLA_Henri_Jaspar.tga"
 	expire = "1965.1.1"
-	ideology = conservative_subtype
+	ideology = conservative
 	traits = {
 		#
 	}
@@ -114,7 +114,7 @@ create_country_leader = {
 	desc = "POLITICS_HUBERT_PIERLOT_DESC"
 	picture = "Portrait_FLA_Charles_de_Broqueville.tga"
 	expire = "1965.1.1"
-	ideology = social_liberal_subtype
+	ideology = social_liberal
 	traits = {
 		#
 	}
@@ -125,7 +125,7 @@ create_country_leader = {
 	desc = "POLITICS_HUBERT_PIERLOT_DESC"
 	picture = "Portrait_FLA_Leon_Degrelle.tga"
 	expire = "1965.1.1"
-	ideology = pagan_pelekism
+	ideology = pelekist
 	traits = {
 		#
 	}

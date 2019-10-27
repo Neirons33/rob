@@ -84,7 +84,7 @@ create_country_leader = {
 	desc = "POLITICS_JOSEPH_BECH_DESC"
 	picture = "Portrait_LUX_Josepth_Bech.tga"
 	expire = "1965.1.1"
-	ideology = conservative_subtype
+	ideology = conservative
 	traits = {
 		#
 	}

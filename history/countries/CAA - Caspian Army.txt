@@ -49,7 +49,7 @@ create_country_leader = {
 	desc = ""
 	picture = ""
 	expire = "1950.1.1"
-	ideology = military_junta
+	ideology = reactionary
 	traits = {
 	}
 }

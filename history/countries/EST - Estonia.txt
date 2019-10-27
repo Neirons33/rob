@@ -136,7 +136,7 @@ create_country_leader = {
 	desc = "POLITICS_KONSTANTIN_PATS_DESC"
 	picture = "Portrait_UBD_Adolf_Friedrich_Albrecht_Heinrich.tga"
 	expire = "1965.1.1"
-	ideology = reactionary_subtype
+	ideology = reactionary
 	traits = {
 		#
 	}

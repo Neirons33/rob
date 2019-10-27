@@ -24,7 +24,7 @@ create_country_leader = {
 	desc = "POLITICS_RICARDO_JIMENEZ_OREAMUNO_DESC"
 	picture = ""
 	expire = "1965.1.1"
-	ideology = democratic_socialist_subtype
+	ideology = democratic_socialist
 	traits = {
 		#
 	}
@@ -34,7 +34,7 @@ create_country_leader = {
 	desc = "POLITICS_RICARDO_JIMENEZ_OREAMUNO_DESC"
 	picture = ""
 	expire = "1965.1.1"
-	ideology = socialist_subtype
+	ideology = socialist
 	traits = {
 		#
 	}

@@ -142,7 +142,7 @@ create_country_leader = {
 	desc = "POLITICS_HEINRICH_HIMMLER_DESC"
 	picture = "Albert_Speer.tga"
 	expire = "1965.1.1"
-	ideology = pelekist_subtype
+	ideology = pelekist
 	traits = {
 	}
 }

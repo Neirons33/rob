@@ -83,7 +83,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Symon_Petliura.tga"
 	expire = "1953.3.1"
-	ideology = reactionary_subtype
+	ideology = reactionary
 	traits = {
 		
 	}
@@ -96,12 +96,22 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
 	expire = "1953.3.1"
-	ideology = pelekist_subtype
+	ideology = pelekist
 	traits = {
 		
 	}
 }
 
+#create_country_leader = {
+#	name = ""
+#	desc = ""
+#	picture = ""
+#	expire = "1953.3.1"
+#	ideology = oligarchism
+#	traits = {
+#		
+#	}
+#}
 
 
 

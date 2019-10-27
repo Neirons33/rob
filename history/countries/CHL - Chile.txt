@@ -75,7 +75,7 @@ create_country_leader = {
 	desc = ""
 	picture = ""
 	expire = "1960.1.1"
-	ideology = conservative_subtype
+	ideology = conservative
 	traits = {
 		
 	}
@@ -86,7 +86,7 @@ create_country_leader = {
 	desc = ""
 	picture = ""
 	expire = "1960.1.1"
-	ideology = socialist_subtype
+	ideology = socialism
 	traits = {
 		
 	}
@@ -97,7 +97,7 @@ create_country_leader = {
 	desc = ""
 	picture = ""
 	expire = "1951.1.1"
-	ideology = authoritharian_subtype
+	ideology = authoritharian
 	traits = {
 	}
 }
@@ -106,7 +106,7 @@ create_country_leader = {
 	desc = ""
 	picture = ""
 	expire = "1951.1.1"
-	ideology = reactionary_subtype
+	ideology = reactionary
 	traits = {
 	}
 }
@@ -115,7 +115,7 @@ create_country_leader = {
 	desc = ""
 	picture = ""
 	expire = "1951.1.1"
-	ideology = pelekist_subtype
+	ideology = pelekist
 	traits = {
 	}
 }
@@ -124,7 +124,7 @@ create_country_leader = {
 	desc = ""
 	picture = ""
 	expire = "1951.1.1"
-	ideology = national_socialist_subtype
+	ideology = national_socialist
 	traits = {
 	}
 }
@@ -133,7 +133,7 @@ create_country_leader = {
 	desc = ""
 	picture = ""
 	expire = "1951.1.1"
-	ideology = democratic_socialist_subtype
+	ideology = democratic_socialist
 	traits = {
 	}
 }
@@ -142,7 +142,7 @@ create_country_leader = {
 	desc = ""
 	picture = ""
 	expire = "1951.1.1"
-	ideology = social_democracy_subtype
+	ideology = social_democracy
 	traits = {
 	}
 }
@@ -151,7 +151,7 @@ create_country_leader = {
 	desc = ""
 	picture = ""
 	expire = "1951.1.1"
-	ideology = social_liberal_subtype
+	ideology = social_liberal
 	traits = {
 	}
 }

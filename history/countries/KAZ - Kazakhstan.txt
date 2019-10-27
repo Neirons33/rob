@@ -36,7 +36,7 @@ create_country_leader = {
 	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
 	picture = "alikhan_bukeikhanov.tga"
 	expire = "1965.1.1"
-	ideology = authoritharian_subtype
+	ideology = authoritharian
 	traits = {
 		#
 	}

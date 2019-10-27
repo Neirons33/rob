@@ -47,7 +47,7 @@ create_country_leader = {
 	name = "Konstantin Rokossovsky"
 	picture = "Konstantin_Rokossovsky.dds"
 	expire = "1965.1.1"
-	ideology = national_socialist_subtype
+	ideology = national_socialist
 	traits = {
 		
 	}

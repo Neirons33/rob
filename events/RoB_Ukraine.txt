@@ -183,7 +183,7 @@ create_country_leader = {
 	desc = ""
 	picture = ".tga"
 	expire = "1953.3.1"
-	ideology = national_socialist_subtype
+	ideology = national_socialist
 	traits = {
 		#
 	}
@@ -201,7 +201,7 @@ create_country_leader = {
 	desc = ""
 	picture = ".tga"
 	expire = "1953.3.1"
-	ideology = national_socialist_subtype
+	ideology = national_socialist
 	traits = {
 		#
 	}
@@ -236,7 +236,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Portrait_UKR_Nikita_Kruschev.dds"
 	expire = "1953.3.1"
-	ideology = national_socialist_subtype
+	ideology = national_socialist
 	traits = {
 		#
 	}
@@ -267,7 +267,7 @@ create_country_leader = {
 	desc = ""
 	picture = ".tga"
 	expire = "1953.3.1"
-	ideology = socialist_subtype
+	ideology = socialist
 	traits = {
 		#
 	}
@@ -285,7 +285,7 @@ create_country_leader = {
 	desc = ""
 	picture = ".tga"
 	expire = "1953.3.1"
-	ideology = democratic_socialist_subtype
+	ideology = democratic_socialist
 	traits = {
 		#
 	}
@@ -315,7 +315,7 @@ create_country_leader = {
 	desc = ""
 	picture = ".tga"
 	expire = "1953.3.1"
-	ideology = authoritharian_subtype
+	ideology = authoritharian
 	traits = {
 		#
 	}
@@ -505,7 +505,7 @@ create_country_leader = {
 	desc = ""
 	picture = ".tga"
 	expire = "1953.3.1"
-	ideology = military_junta
+	ideology = reactionary
 	traits = {
 		#
 	}
@@ -723,7 +723,7 @@ create_country_leader = {
 	desc = ""
 	picture = ".tga"
 	expire = "1953.3.1"
-	ideology = reactionary_subtype
+	ideology = reactionary
 	traits = {
 		#
 	}
@@ -751,7 +751,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Portrait_Ukraine_Stepan.dds"
 	expire = "1953.3.1"
-	ideology = pelekist_subtype
+	ideology = pelekist
 	traits = {
 		#
 	}
@@ -773,7 +773,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Portrait_Ukraine_Mykhailo_Omelianovych_Pavlenko.tga"
 	expire = "1953.3.1"
-	ideology = reactionary_subtype
+	ideology = reactionary
 	traits = {
 		#
 	}
@@ -815,7 +815,7 @@ create_country_leader = {
 	desc = ""
 	picture = ".tga"
 	expire = "1953.3.1"
-	ideology = authoritharian_subtype
+	ideology = authoritharian
 	traits = {
 		#
 	}
@@ -840,7 +840,7 @@ create_country_leader = {
 	desc = ""
 	picture = ".tga"
 	expire = "1953.3.1"
-	ideology = reactionary_subtype
+	ideology = reactionary
 	traits = {
 		#
 	}
@@ -856,7 +856,7 @@ create_country_leader = {
 	desc = ""
 	picture = ".tga"
 	expire = "1953.3.1"
-	ideology = reactionary_subtype
+	ideology = reactionary
 	traits = {
 		#
 	}
@@ -1083,7 +1083,7 @@ create_country_leader = {
 	desc = ""
 	picture = ".tga"
 	expire = "1953.3.1"
-	ideology = military_junta
+	ideology = authoritharian
 	traits = {
 		#
 	}

@@ -41,7 +41,7 @@ create_country_leader = {
 	desc = "POLITICS_BORIS_III_DESC"
 	picture = "rashko_atanasov.tga"
 	expire = "1965.1.1"
-	ideology = military_junta
+	ideology = reactionary
 	traits = {
 		#
 	}
@@ -52,7 +52,7 @@ create_country_leader = {
 	desc = "POLITICS_GEORGI_DIMITROV_DESC"
 	picture = "Portrait_Bulgaria_Georgi_Dimitrov.dds"
 	expire = "1965.1.1"
-	ideology = socialist_subtype
+	ideology = socialism
 	traits = {
 		#
 	}
@@ -63,7 +63,7 @@ create_country_leader = {
 	desc = "POLITICS_NIKOLA_PETKOV_DESC"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
 	expire = "1965.1.1"
-	ideology = social_democracy_subtype
+	ideology = social_democracy
 	traits = {
 		#
 	}
@@ -74,7 +74,7 @@ create_country_leader = {
 	desc = "POLITICS_HRISTO_LUKOV_DESC"
 	picture = "GFX_Portrait_bulgaria_hristo_lukov"
 	expire = "1965.1.1"
-	ideology = pelekist_subtype
+	ideology = pelekist
 	traits = {
 		#
 	}

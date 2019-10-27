@@ -83,7 +83,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
 	expire = "1953.3.1"
-	ideology = democratic_socialist_subtype
+	ideology = democratic_socialist
 	traits = {
 		
 	}
@@ -94,7 +94,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
 	expire = "1953.3.1"
-	ideology = social_liberal_subtype
+	ideology = social_liberal
 	traits = {
 		
 	}
@@ -105,7 +105,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
 	expire = "1953.3.1"
-	ideology = conservative_subtype
+	ideology = conservative
 	traits = {
 		
 	}

@@ -30,21 +30,37 @@ set_technology = {
 	fleet_in_being = 1
 }
 
+set_popularities = {
+	fascism = 73
+	communism = 2
+	neutrality = 0
+	democratic = 25
+}
+
 set_politics = {
-	ruling_party = reactionary
-	last_election = "1934.1.1"
+
+	parties = {
+		democratic = { 
+			popularity = 25
+		}
+
+		fascism = {
+			popularity = 73
+		}
+		
+		communism = {
+			popularity = 2
+			#banned = no #default is no
+		}
+		
+		neutrality = { 
+			popularity = 0
+		}
+	}
+	
+	ruling_party = fascism
+	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
-}
-set_popularities = {
-	national_socialist = 0
-	socialist = 10
-	democratic_socialist = 0
-	social_democracy = 0
-	social_liberal = 0
-	conservative = 0
-	authoritharian = 0
-	reactionary = 90
-	pelekist = 0
 }
 

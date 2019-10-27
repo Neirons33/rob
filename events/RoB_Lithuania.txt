@@ -172,7 +172,7 @@ option = { ###Jonas Beržanskis
 	desc = ""
 	picture = ".tga"
 	expire = "1953.3.1"
-	ideology = pagan_pelekism
+	ideology = pelekist
 	traits = {
 		#
 	}
@@ -195,7 +195,7 @@ option = { ###Augustinas Voldemaras
 	desc = ""
 	picture = ".tga"
 	expire = "1953.3.1"
-	ideology = pelekist_subtype
+	ideology = pelekist
 	traits = {
 		#
 	}
@@ -237,7 +237,7 @@ option = { ###Smentona Dictaotshiop
 	desc = ""
 	picture = ".tga"
 	expire = "1953.3.1"
-	ideology = reactionary_subtype
+	ideology = reactionary
 	traits = {
 		#
 	}
@@ -263,7 +263,7 @@ add_political_power = -100
 	desc = ""
 	picture = ".tga"
 	expire = "1953.3.1"
-	ideology = pelekist_subtype
+	ideology = pelekist
 	traits = {
 		#
 	}
@@ -288,7 +288,7 @@ kill_country_leader = yes
 	desc = "POLITICS_VLADAS_MIRONAS_DESC"
 	picture = "LIT_Mironas.tga"
 	expire = "1953.3.1"
-	ideology = christian_pelekism
+	ideology = pelekist
 	traits = {
 		#
 	}
@@ -330,7 +330,7 @@ kill_country_leader = yes
 	desc = ""
 	picture = ".tga"
 	expire = "1953.3.1"
-	ideology = social_democracy_subtype
+	ideology = social_democracy
 	traits = {
 		#
 	}
@@ -397,7 +397,7 @@ add_stability = 0.05
 	desc = "POLITICS_VISOUMIS_DESC"
 	picture = "LIT_Visuomis.tga"
 	expire = "1953.3.1"
-	ideology = pagan_pelekism
+	ideology = pelekist
 	traits = {
 		#
 	}

@@ -128,7 +128,7 @@ create_country_leader = {
 	desc = "POLITICS_BENITO_MUSSOLINI_DESC"
 	picture = "Portrait_Italy_Benito_Mussolini.dds"
 	expire = "1965.1.1"
-	ideology = pelekist_subtype
+	ideology = pelekist
 	traits = {
 		
 	}
@@ -139,7 +139,7 @@ create_country_leader = {
 	desc = "POLITICS_BENITO_MUSSOLINI_DESC"
 	picture = "Portrait_Rome_Ivanoe_Bonomi.tga"
 	expire = "1965.1.1"
-	ideology = social_democracy_subtype
+	ideology = social_democracy
 	traits = {
 		
 	}
@@ -150,7 +150,7 @@ create_country_leader = {
 	desc = "POLITICS_BENITO_MUSSOLINI_DESC"
 	picture = "RandolfoPacciardi.tga"
 	expire = "1965.1.1"
-	ideology = social_liberal_subtype
+	ideology = social_liberal
 	traits = {
 		
 	}
@@ -161,7 +161,7 @@ create_country_leader = {
 	desc = "POLITICS_BENITO_MUSSOLINI_DESC"
 	picture = "Portrait_Italy_Vittorio_Emmanuele.tga"
 	expire = "1965.1.1"
-	ideology = authoritharian_subtype
+	ideology = authoritharian
 	traits = {	
 	}
 }
@@ -191,7 +191,7 @@ create_country_leader = {
 	desc = "POLITICS_BENITO_MUSSOLINI_DESC"
 	picture = "GFX_portrait_ita_palmiro_togliatti"
 	expire = "1965.1.1"
-	ideology = military_junta
+	ideology = reactionary
 	traits = {
 		
 	}
@@ -202,7 +202,7 @@ create_country_leader = {
 	desc = "POLITICS_BENITO_MUSSOLINI_DESC"
 	picture = "GFX_portrait_ita_palmiro_togliatti"
 	expire = "1965.1.1"
-	ideology = conservative_subtype
+	ideology = conservative
 	traits = {
 		
 	}

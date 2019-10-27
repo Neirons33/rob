@@ -458,7 +458,7 @@ create_country_leader = {
 	desc = ""
 	picture = "CharlesdeGaulle.tga"
 	expire = "1953.3.1"
-	ideology = authoritharian_subtype
+	ideology = authoritharian
 	traits = {
 		#
 	}
@@ -481,7 +481,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Portrait_FRA_philippe_petain_politician.tga"
 	expire = "1953.3.1"
-	ideology = military_junta
+	ideology = reactionary
 	traits = {
 		#
 	}

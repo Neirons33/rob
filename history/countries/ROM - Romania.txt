@@ -14,7 +14,7 @@ create_country_leader = {
 	desc = "POLITICS_GHEORGHE_TATARESCU_DESC"
 	picture = "Portrait_ROM_Carol_II.tga"
 	expire = "1965.1.1"
-	ideology = conservative_subtype
+	ideology = conservative
 	traits = {
 		#
 	}
@@ -24,7 +24,7 @@ create_country_leader = {
 	desc = "POLITICS_GHEORGHE_TATARESCU_DESC"
 	picture = "Portrait_ROM_Carol_II.tga"
 	expire = "1965.1.1"
-	ideology = social_democracy_subtype
+	ideology = social_democracy
 	traits = {
 		#
 	}
@@ -34,7 +34,7 @@ create_country_leader = {
 	desc = "POLITICS_GHEORGHE_TATARESCU_DESC"
 	picture = "Portrait_ROM_Carol_II.tga"
 	expire = "1965.1.1"
-	ideology = social_liberal_subtype
+	ideology = social_liberal
 	traits = {
 		#
 	}
@@ -45,17 +45,17 @@ create_country_leader = {
 	desc = "POLITICS_CONSTANTIN_PARHON_DESC"
 	picture = "Portrait_Romania_Constantin_Parhon.dds"
 	expire = "1965.1.1"
-	ideology = socialist_subtype
+	ideology = socialist
 	traits = {
 		#
 	}
 }
 create_country_leader = {
-	name = "Corneliu Zelea Codreanu"
+	name = "Octavian Goga"
 	desc = "POLITICS_OCTAVIAN_GOGA_DESC"
 	picture = "Portrait_Romania_Octavian_Goga.dds"
 	expire = "1965.1.1"
-	ideology = christian_pelekism
+	ideology = pelekist
 	traits = {
 		#
 	}
@@ -66,7 +66,7 @@ create_country_leader = {
 	desc = "POLITICS_ION_ANTONESCU_DESC"
 	picture = "Portrait_Romania_Ion_Antonescu.dds"
 	expire = "1965.1.1"
-	ideology = military_junta
+	ideology = reactionary
 	traits = {
 		#
 	}

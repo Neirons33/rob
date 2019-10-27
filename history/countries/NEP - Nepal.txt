@@ -33,7 +33,7 @@ create_country_leader = {
 	desc = ""
 	picture = ""
 	expire = "1965.1.1"
-	ideology = reactionary_subtype
+	ideology = reactionary
 	traits = {
 		#
 	}

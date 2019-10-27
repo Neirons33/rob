@@ -4,7 +4,7 @@ oob = "USA_1936"
 
 set_research_slots = 3
 set_stability = 0.75
-set_war_support = 0.5
+set_war_support = 0
 set_variable = { var = senators_support value = 48 }
 set_variable = { var = senators_total value = 96 }
 set_variable = { var = representatives_support value = 218 }
@@ -28,12 +28,21 @@ set_technology = {
 	naval_bomber1 = 1
 	CAS1 = 1
 	early_bomber = 1
+	early_submarine = 1
+	basic_submarine = 1
+	early_destroyer = 1
+	early_light_cruiser = 1
+	basic_light_cruiser = 1
+	early_heavy_cruiser = 1
+	early_battleship = 1
+	early_battlecruiser = 1
+	early_carrier = 1
+	basic_carrier = 1
+	transport = 1
 	superior_firepower = 1
 	base_strike = 1
 
 }
-
-
 
 1939.1.1 = {
 
@@ -57,7 +66,7 @@ set_technology = {
 	}
 
 	#focuses
-
+	
 	oob = "USA_1939"
 	set_technology = {
 		fighter1 = 1
@@ -74,6 +83,10 @@ set_technology = {
 		support_weapons = 1
 		support_weapons2 = 1
 		marines = 1
+		improved_submarine = 1
+		basic_destroyer = 1
+		basic_heavy_cruiser = 1
+		basic_battlecruiser = 1
 
 		#doctrines
 		#Air
@@ -124,31 +137,27 @@ set_technology = {
 
 
 
-set_convoys = 400
+set_convoys = 100
 
 
 set_politics = {
 
 	parties = {
 		democratic = { 
-			popularity = 0
-		}
-
-		neutrality = {
-			popularity = 99
+			popularity = 80
 		}
 
 		fascism = {
-			popularity = 0
+			popularity = 10
 		}
 		
 		communism = {
-			popularity = 1
+			popularity = 10
 			#banned = no #default is no
 		}
 	}
 	
-	ruling_party = neutrality
+	ruling_party = democratic
 	last_election = "1932.11.8"
 	election_frequency = 48
 	elections_allowed = yes
@@ -156,10 +165,9 @@ set_politics = {
 
 add_ideas = {
 	civilian_economy
-	limited_conscription
+	volunteer_only
 	free_trade
 	home_of_the_free
-	neutrality_idea
 }
 
 1939.1.1 = {
@@ -168,11 +176,9 @@ add_ideas = {
 
 		parties = {
 			democratic = { 
-				popularity = 0
-			}
-			neutrality = {
 				popularity = 99
 			}
+
 			fascism = {
 				popularity = 0
 			}
@@ -183,14 +189,23 @@ add_ideas = {
 			}
 		}
 		
-		ruling_party = neutrality
+		ruling_party = democratic
 		last_election = "1936.11.3"
 		election_frequency = 48
 		elections_allowed = yes
 	}
 }
 
-
+create_country_leader = {
+	name = "William Dudley Pelley"
+	desc = "POLITICS_WILLIAM_DUDLEY_PELLEY_DESC"
+	picture = "Portrait_USA_William_Dudley_Pelley.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		
+	}
+}
 
 
 

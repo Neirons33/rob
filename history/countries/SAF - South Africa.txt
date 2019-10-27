@@ -160,7 +160,7 @@ create_country_leader = {
 	desc = "POLITICS_J_B_M_HERTZOG_DESC"
 	picture = "GFX_SAF_james_hertzog"
 	expire = "1965.1.1"
-	ideology = conservative_subtype
+	ideology = conservatism
 	traits = {
 		#
 	}

@@ -90,7 +90,7 @@ create_country_leader = {
 	desc = "POLITICS_WINCENTY_WITOS_DESC"
 	picture = "GFX_POL_wincenty_witos.tga"
 	expire = "1965.1.1"
-	ideology = conservative_subtype 
+	ideology = conservative 
 	traits = {}
 }
 
@@ -99,10 +99,18 @@ create_country_leader = {
 	desc = "POLITICS_VASYL_DESC"
 	picture = "Portrait_POL_Pilsudski.tga"
 	expire = "1965.1.1"
-	ideology = military_junta
+	ideology = reactionary
 	traits = {}
 }
 
+create_country_leader = {
+	name = "Roman Dmowski"
+	desc = "POLITICS_BOLESLAW_PIASECKI_DESC"
+	picture = "Portrait_Poland_Roman_Dmowski.tga"
+	expire = "1965.1.1"
+	ideology = reactionary
+	traits = { dictator }
+}
 
 
 ## Army

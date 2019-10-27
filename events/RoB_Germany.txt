@@ -435,7 +435,7 @@ create_country_leader = {
 	desc = ""
 	picture = "GregorStrasser.tga"
 	expire = "1953.3.1"
-	ideology = marxism_leninism
+	ideology = socialist
 	traits = {
 		#
 	}
@@ -467,7 +467,7 @@ create_country_leader = {
 	desc = ""
 	picture = "OttoGrotewohl.tga"
 	expire = "1953.3.1"
-	ideology = marxism
+	ideology = socialism
 	traits = {
 		#
 	}
@@ -609,7 +609,7 @@ create_country_leader = {
 	desc = ""
 	picture = "ReactionaryCouncil.tga"
 	expire = "1953.3.1"
-	ideology = reactionary_subtype
+	ideology = reactionary
 	traits = {
 		#
 	}
@@ -640,7 +640,7 @@ create_country_leader = {
 	desc = ""
 	picture = "ReactionaryCouncil.tga"
 	expire = "1953.3.1"
-	ideology = military_junta
+	ideology = reactionary
 	traits = {
 		#
 	}
@@ -659,7 +659,7 @@ create_country_leader = {
 	desc = ""
 	picture = "PhilippAlbrecht.tga"
 	expire = "1953.3.1"
-	ideology = reactionary_subtype
+	ideology = reactionary
 	traits = {
 		#
 	}

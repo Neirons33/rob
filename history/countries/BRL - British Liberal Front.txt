@@ -118,7 +118,7 @@ create_country_leader = {
 	desc = "POLITICS_STANLEY_BALDWIN_DESC"
 	picture = "Portrait_ENG_Ramsay_MacDonald.tga"
 	expire = "1935.6.7"
-	ideology = social_liberal_subtype
+	ideology = social_liberal
 	traits = {
 		conservative_grandee
 	}

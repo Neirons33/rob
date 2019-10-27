@@ -66,7 +66,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Portrait_California_Frank.dds"
 	expire = "1950.1.1"
-	ideology = social_liberal_subtype
+	ideology = social_liberal
 	traits = {
 	}
 }
@@ -76,7 +76,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/USA/Portrait_USA_Generic_3.dds"
 	expire = "1965.1.1"
-	ideology = reactionary_subtype
+	ideology = reactionary
 	traits = {
 		
 	}
@@ -87,7 +87,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/USA/Portrait_USA_Generic_3.dds"
 	expire = "1965.1.1"
-	ideology = socialist_subtype
+	ideology = socialist
 	traits = {
 		
 	}

@@ -41,7 +41,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Georg_Crown_Prince_of_Saxony.tga"
 	expire = "1960.1.1"
-	ideology = authoritharian_subtype
+	ideology = authoritharian
 	traits = {
 		#
 	}
@@ -52,7 +52,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/GER/Portrait_Germany_Generic_1.dds"
 	expire = "1960.1.1"
-	ideology = national_socialist_subtype
+	ideology = stalinism
 	traits = {
 		
 	}
@@ -63,7 +63,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/GER/Portrait_Germany_Generic_2.dds"
 	expire = "1960.1.1"
-	ideology = socialist_subtype
+	ideology = socialism
 	traits = {
 		
 	}

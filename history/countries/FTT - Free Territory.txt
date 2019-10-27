@@ -46,7 +46,7 @@ create_country_leader = {
 	name = "Nestor Makhno"
 	desc = ""
 	picture = "Portrait_FTT_Nestor_Makhno.tga"
-	ideology = anarcho_socialism
+	ideology = anarchism
 	traits = {
 		#
 	}

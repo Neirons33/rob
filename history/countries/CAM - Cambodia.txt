@@ -84,6 +84,16 @@ set_popularities = {
 	pelekist = 0
 }
 
+create_country_leader = {
+	name = "Pol Pot" 
+	desc = ""
+	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_warlord1.dds"
+	expire = "1953.3.1"
+	ideology = national_socialist #insanity
+	traits = {
+		
+	}
+}
 
 #non standard english alphabet character
 create_country_leader = {
@@ -91,7 +101,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_4.dds"
 	expire = "1953.3.1"
-	ideology = social_liberal_subtype
+	ideology = social_liberal
 	traits = {
 		
 	}
@@ -102,7 +112,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_2.dds"
 	expire = "1953.3.1"
-	ideology = conservative_subtype
+	ideology = conservative
 	traits = {
 		
 	}

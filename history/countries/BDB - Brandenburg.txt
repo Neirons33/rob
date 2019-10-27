@@ -49,7 +49,7 @@ create_country_leader = {
 	desc = "POLITICS_KING_ZOG_DESC"
 	picture = "Kurt_von_Schleicher.tga"
 	expire = "1965.1.1"
-	ideology = authoritharian_subtype
+	ideology = authoritharian
 	traits = {
 		
 	}
@@ -60,7 +60,7 @@ create_country_leader = {
 	desc = "POLITICS_KING_ZOG_DESC"
 	picture = "Portrait_Albania_Zog_I.tga"
 	expire = "1965.1.1"
-	ideology = conservative_subtype
+	ideology = conservative
 	traits = {
 		
 	}
@@ -71,7 +71,7 @@ create_country_leader = {
 	desc = "POLITICS_KING_ZOG_DESC"
 	picture = "Oskar_Hergt.tga"
 	expire = "1965.1.1"
-	ideology = reactionary_subtype
+	ideology = reactionary
 	traits = {
 		
 	}

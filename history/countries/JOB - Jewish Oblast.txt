@@ -33,7 +33,7 @@ create_country_leader = {
 	desc = ""
 	picture = "isaac_steinberg.tga"
 	expire = "1947.1.1"
-	ideology = socialist_subtype
+	ideology = socialist
 	traits = {
 		#
 	}

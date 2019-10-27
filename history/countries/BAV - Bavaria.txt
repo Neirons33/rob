@@ -52,7 +52,18 @@ create_country_leader = {
 	desc = "ANTE_PAVELIC_DESC"
 	picture = "HeinrichHimmler.tga"
 	expire = "1965.1.1"
-	ideology = pelekist_subtype
+	ideology = pelekist
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Heinrich Himmler"
+	desc = "ANTE_PAVELIC_DESC"
+	picture = "HeinrichHimmler.tga"
+	expire = "1965.1.1"
+	ideology = pelekist
 	traits = {
 		#
 	}
@@ -63,7 +74,7 @@ create_country_leader = {
 	desc = "ANTE_PAVELIC_DESC"
 	picture = "HeinrichHimmler.tga"
 	expire = "1965.1.1"
-	ideology = reactionary_subtype
+	ideology = reactionary
 	traits = {
 		#
 	}

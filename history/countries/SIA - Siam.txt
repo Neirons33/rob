@@ -114,21 +114,30 @@ set_convoys = 15
 
 
 set_politics = {
-	ruling_party = reactionary
-	last_election = "1926.6.7"
-	election_frequency = 72
-	elections_allowed = yes
-}
-set_popularities = {
-	national_socialist = 0
-	socialist = 0
-	democratic_socialist = 0
-	social_democracy = 10
-	social_liberal = 10
-	conservative = 10
-	authoritharian = 12
-	reactionary = 58
-	pelekist = 0
+
+	parties = {
+		democratic = { 
+			popularity = 0
+		}
+
+		fascism = {
+			popularity = 20
+		}
+		
+		communism = {
+			popularity = 0
+			#banned = no #default is no
+		}
+		
+		neutrality = {
+			popularity = 80
+		}
+	}
+	
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
 }
 
 create_country_leader = {
@@ -136,12 +145,47 @@ create_country_leader = {
 	desc = "POLITICS_PHRAYA_PHAHON_DESC"
 	picture = "Portrait_Siam_Phraya_Phahon.dds"
 	expire = "1965.1.1"
-	ideology = reactionary_subtype
+	ideology = despotism
 	traits = {
 		#
 	}
 }
 
+1939.1.1 = {
+	set_politics = {
+
+		parties = {
+			democratic = { 
+				popularity = 0
+			}
+
+			fascism = {
+				popularity = 100
+			}
+			
+			communism = {
+				popularity = 0
+				#banned = no #default is no
+			}
+		}
+		
+		ruling_party = fascism
+		last_election = "1936.1.1"
+		election_frequency = 48
+		elections_allowed = no
+	}
+
+	create_country_leader = {
+		name = "Plaek Phibunsongkhram"
+		desc = "POLITICS_PLAEK_PHIBUNSONGKHRAM_DESC"
+		picture = "gfx/leaders/Asia/Portrait_Asia_Generic_3.dds"
+		expire = "1965.1.1"
+		ideology = fascism_ideology
+		traits = {
+			#
+		}
+	}
+}
 
 ### VARIANTS ###
 # 1936 Start #

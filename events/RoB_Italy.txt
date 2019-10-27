@@ -410,7 +410,7 @@ option = {
 	desc = ""
 	picture = "Giovanni Messe.tga"
 	expire = "1953.3.1"
-	ideology = military_junta
+	ideology = reactionary
 	traits = {
 		#
 	}
@@ -420,7 +420,7 @@ option = {
 	desc = ""
 	picture = "Giovanni Messe.tga"
 	expire = "1953.3.1"
-	ideology = authoritharian_subtype
+	ideology = authoritharian
 	traits = {
 		#
 	}
@@ -517,7 +517,7 @@ option = {
 	desc = ""
 	picture = "Rodolfo Graziani.tga"
 	expire = "1953.3.1"
-	ideology = military_junta
+	ideology = reactionary
 	traits = {
 		#
 	}
@@ -527,7 +527,7 @@ option = {
 	desc = ""
 	picture = "Rodolfo Graziani.tga"
 	expire = "1953.3.1"
-	ideology = authoritharian_subtype
+	ideology = authoritharian
 	traits = {
 		#
 	}
@@ -598,7 +598,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Rodolfo Graziani.tga"
 	expire = "1953.3.1"
-	ideology = military_junta
+	ideology = reactionary
 	traits = {
 		#
 	}
@@ -638,7 +638,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Giovanni Messe.tga"
 	expire = "1953.3.1"
-	ideology = authoritharian_subtype
+	ideology = authoritharian
 	traits = {
 		#
 	}
@@ -806,7 +806,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Julius Evola.tga"
 	expire = "1953.3.1"
-	ideology = pagan_pelekism
+	ideology = pelekist
 	traits = {
 		#
 	}
@@ -831,7 +831,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Pietro La Fontaine.tga"
 	expire = "1953.3.1"
-	ideology = christian_pelekism
+	ideology = pelekist
 	traits = {
 		#
 	}
@@ -856,7 +856,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Filipo Tommasi Marrineti.tga"
 	expire = "1953.3.1"
-	ideology = futuristic_pelekism
+	ideology = pelekist
 	traits = {
 		#
 	}
