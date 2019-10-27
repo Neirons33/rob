@@ -64,8 +64,14 @@ bookmarks = {
 			history = "ITA_GATHERING_STORM_DESC"
 			ideology = socialist
 			ideas = {
+			TRS_backs_to_the_wall
+			TRS_legacy_of_the_red_army
+			TRS_research_not_priority
 			}	
 			focuses = {
+			TRS_battleforkrasnovodsk
+			TRS_proclaimthetranscapiansovietrepublic
+			TRS_ourownsovietunion
 			}		
 		}
 		"SOV"={
