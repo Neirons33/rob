@@ -157,7 +157,7 @@ create_country_leader = {
 	desc = "POLITICS_FRANKLIN_DELANO_ROOSEVELT_DESC"
 	picture = "herbert_hoover_Colorized_HOI42.dds"
 	expire = "1960.1.1"
-	ideology = conservative
+	ideology = conservative_subtype
 	traits = {
 		dislikes_germany
 	}
@@ -168,7 +168,7 @@ create_country_leader = {
 	desc = "POLITICS_WILLIAM_DUDLEY_PELLEY_DESC"
 	picture = "Portrait_USA_William_Dudley_Pelley.dds"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = christian_pelekism
 	traits = {
 		
 	}

@@ -88,10 +88,6 @@ if = {
 	set_naval_oob = "GER_1936_naval_mtg"
 }
 
-set_variable = { var = ger_gateway_to_europe_influence value = 0 }
-
-set_variable = { var = wehrmacht_anger value = 0 }
-set_variable = { var = ss_anger value = 0 }
 set_research_slots = 4
 set_convoys = 200
 set_stability = 0.75 
@@ -104,93 +100,6 @@ create_import = {
 		exporter = SWE
 }
 
-1939.1.1 = {
-	add_named_threat = { threat = 40 name = 1939_bookmark_threat }
-	set_war_support = 0.7
-
-	add_political_power = 1197
-	
-	#adding ministers
-	add_ideas = {
-		henschel
-		ig_faben
-		heinrich_himmler
-		rudolf_hess
-		ludwig_beck
-		gerd_von_rundstedt
-		GER_autarky_idea
-
-		#laws
-		war_economy
-		extensive_conscription
-	}
-	
-	oob = "GER_1939"
-	
-	set_autonomy = {
-		target = SLO
-		autonomous_state = autonomy_puppet
-	}
-	
-	give_military_access = SLO
-	create_wargoal = {
-		type = take_state_focus
-		target = POL
-		generator = { 72 88 90 87 86 } # Zaolzie Krakow Kielce Lodz Poznan
-	}
-
-#Trade
-	create_import = {
-			resource = oil
-			factories = 2
-			exporter = SOV
-	}
-
-	#MR pact effect, Also has a part scripted in soviet history file
-	unlock_national_focus = GER_mol_rib_pact
-	every_other_country = {
-		limit = {
-			has_government = fascism 
-		}
-		add_opinion_modifier = { target = GER modifier = MR_pact_fascists }
-	}
-	diplomatic_relation = { country = SOV relation = non_aggression_pact }
-	add_opinion_modifier = { target = SOV modifier = MR_pact }
-	#MR pact end
-
-	#Soviet treaty
-	unlock_national_focus = GER_soviet_treaty
-	add_tech_bonus = {
-		bonus = 1.0
-		uses = 2
-		category = armor
-	}
-	SOV = {
-		add_opinion_modifier = { target = GER modifier = sov_ger_treaty }
-		add_opinion_modifier = { target = GER modifier = sov_ger_treaty_trade }
-	}
-	#Soviet treaty end
-	
-	unlock_national_focus = GER_rhineland
-	unlock_national_focus = GER_anschluss
-	unlock_national_focus = GER_demand_sudetenland
-	unlock_national_focus = GER_first_vienna_award
-	unlock_national_focus = GER_end_of_czechoslovakia
-	unlock_national_focus = GER_demand_memel
-	unlock_national_focus = GER_four_year_plan
-	unlock_national_focus = GER_autarky
-	unlock_national_focus = GER_synthetic_rubber
-
-	set_global_flag = end_of_czechoslovakia
-	set_global_flag = olympics_1936
-	set_variable = { var = GER_mefo_bill_counter value = 90 }
-	complete_national_focus = GER_autobahn
-	complete_national_focus = GER_west_wall
-	complete_national_focus = GER_army_innovation
-	complete_national_focus = GER_hermann_goring_werke
-	complete_national_focus = GER_kdf_wagen
-	complete_national_focus = GER_coal_liquidization
-	complete_national_focus = GER_extra_tech_slot
 
 	#BUILDINGS
 	
@@ -279,7 +188,7 @@ create_import = {
 		}
 		set_naval_oob = "GER_1939_naval_mtg"
 	}
-}
+
 
 
 
@@ -301,8 +210,6 @@ set_popularities = {
 	pelekist = 11
 }
 
-
-
 add_ideas = {
 	deutsche_volksarmee
 	german_partisans
@@ -311,16 +218,14 @@ add_ideas = {
 	limited_exports
 	limited_conscription
 }
-add_ideas = GER_mefo_bills_1
 
-activate_mission = GER_mefo_bills_mission
 
 create_country_leader = {
 	name = "George Grosz"
 	desc = "POLITICS_KONRAD_ADENAUER_DESC"
 	picture = ""
 	expire = "1965.1.1"
-	ideology = democratic_socialist
+	ideology = democratic_socialist_subtype
 	traits = {
 	}
 }
@@ -329,7 +234,7 @@ create_country_leader = {
 	desc = "POLITICS_KONRAD_ADENAUER_DESC"
 	picture = "Georg_Ledebour"
 	expire = "1965.1.1"
-	ideology = social_democracy
+	ideology = social_democracy_subtype
 	traits = {
 	}
 }
@@ -338,7 +243,7 @@ create_country_leader = {
 	desc = "POLITICS_ERNST_THALMANN_DESC"
 	picture = "Portriat_GRC_Roza_Luksemburg.tga"
 	expire = "1956.1.1"
-	ideology = marxism_leninism
+	ideology = marxism
 	traits = {
 	}
 }
@@ -356,7 +261,7 @@ create_country_leader = {
 	desc = "POLITICS_ERNST_THALMANN_DESC"
 	picture = "Portriat_GRC_Roza_Luksemburg.tga"
 	expire = "1956.1.1"
-	ideology = pelekist
+	ideology = pelekist_subtype
 	traits = {
 	}
 }
@@ -365,7 +270,7 @@ create_country_leader = {
 	desc = "POLITICS_ERNST_THALMANN_DESC"
 	picture = "Portriat_GRC_Roza_Luksemburg.tga"
 	expire = "1956.1.1"
-	ideology = reactionary
+	ideology = reactionary_subtype
 	traits = {
 	}
 }
@@ -374,7 +279,7 @@ create_country_leader = {
 	desc = "POLITICS_ERNST_THALMANN_DESC"
 	picture = "Portriat_GRC_Roza_Luksemburg.tga"
 	expire = "1956.1.1"
-	ideology = authoritharian
+	ideology = authoritharian_subtype
 	traits = {
 	}
 }
@@ -383,7 +288,7 @@ create_country_leader = {
 	desc = "POLITICS_ERNST_THALMANN_DESC"
 	picture = "Portriat_GRC_Roza_Luksemburg.tga"
 	expire = "1956.1.1"
-	ideology = conservative
+	ideology = conservative_subtype
 	traits = {
 	}
 }

@@ -86,7 +86,7 @@ create_country_leader = {
     desc = ""
     picture = "Radaslaa_Astrouski.dds"
     expire = "1965.1.1"
-    ideology = reactionary
+    ideology = reactionary_subtype
     traits = {
         #
     }
@@ -97,7 +97,7 @@ create_country_leader = {
     desc = ""
     picture = ""
     expire = "1965.1.1"
-    ideology = authoritharian
+    ideology = authoritharian_subtype
     traits = {
         #
     }

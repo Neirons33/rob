@@ -128,30 +128,21 @@ set_convoys = 400
 
 
 set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 0
-		}
-
-		neutrality = {
-			popularity = 99
-		}
-
-		fascism = {
-			popularity = 0
-		}
-		
-		communism = {
-			popularity = 1
-			#banned = no #default is no
-		}
-	}
-	
-	ruling_party = neutrality
-	last_election = "1932.11.8"
-	election_frequency = 48
+	ruling_party = reactionary
+	last_election = "1926.6.7"
+	election_frequency = 72
 	elections_allowed = yes
+}
+set_popularities = {
+	national_socialist = 0
+	socialist = 0
+	democratic_socialist = 0
+	social_democracy = 0
+	social_liberal = 0
+	conservative = 0
+	authoritharian = 0
+	reactionary = 91
+	pelekist = 9
 }
 
 add_ideas = {
@@ -162,33 +153,6 @@ add_ideas = {
 	neutrality_idea
 }
 
-1939.1.1 = {
-
-	set_politics = {
-
-		parties = {
-			democratic = { 
-				popularity = 0
-			}
-			neutrality = {
-				popularity = 99
-			}
-			fascism = {
-				popularity = 0
-			}
-			
-			communism = {
-				popularity = 1
-				#banned = no #default is no
-			}
-		}
-		
-		ruling_party = neutrality
-		last_election = "1936.11.3"
-		election_frequency = 48
-		elections_allowed = yes
-	}
-}
 
 
 

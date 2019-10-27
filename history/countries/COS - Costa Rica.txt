@@ -82,7 +82,7 @@ create_country_leader = {
 	desc = "POLITICS_RICARDO_JIMENEZ_OREAMUNO_DESC"
 	picture = "GFX_portrait_costa_rica_ricardo_jiminez_oreamuno"
 	expire = "1965.1.1"
-	ideology = social_liberal
+	ideology = social_liberal_subtype
 	traits = {
 		#
 	}

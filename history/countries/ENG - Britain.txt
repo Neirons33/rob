@@ -210,7 +210,7 @@ create_country_leader = {
 	desc = "POLITICS_STANLEY_BALDWIN_DESC"
 	picture = "ENG_George_V.tga"
 	expire = "1935.6.7"
-	ideology = social_democracy
+	ideology = social_democracy_subtype
 	traits = {
 		
 	}
@@ -222,7 +222,7 @@ create_country_leader = {
 	desc = "POLITICS_OSWALD_MOSLEY_DESC"
 	picture = "ENG_George_V.tga"
 	expire = "1965.1.1"
-	ideology = pelekist
+	ideology = pelekist_subtype
 	traits = {
 	}
 }
@@ -232,7 +232,7 @@ create_country_leader = {
 	desc = "POLITICS_HARRY_POLLITT_DESC"
 	picture = "ENG_George_V.tga"
 	expire = "1965.1.1"
-	ideology = social_liberal
+	ideology = social_liberal_subtype
 	traits = {
 		
 	}
@@ -242,7 +242,7 @@ create_country_leader = {
 	desc = "POLITICS_HARRY_POLLITT_DESC"
 	picture = "ENG_George_V.tga"
 	expire = "1965.1.1"
-	ideology = conservative
+	ideology = conservative_subtype
 	traits = {
 		
 	}
@@ -252,7 +252,7 @@ create_country_leader = {
 	desc = "POLITICS_HARRY_POLLITT_DESC"
 	picture = "ENG_George_V.tga"
 	expire = "1965.1.1"
-	ideology = reactionary
+	ideology = reactionary_subtype
 	traits = {
 		
 	}
@@ -262,7 +262,7 @@ create_country_leader = {
 	desc = "POLITICS_HARRY_POLLITT_DESC"
 	picture = "ENG_George_V.tga"
 	expire = "1965.1.1"
-	ideology = authoritharian
+	ideology = authoritharian_subtype
 	traits = {
 		
 	}

@@ -33,7 +33,7 @@ create_country_leader = {
 	name = "Hashim al-Atassi"
 	desc = ""
 	picture = "gfx/leaders/SYR/Portrait_Arabia_Generic_navy_1.dds"
-	ideology = social_liberal
+	ideology = social_liberal_subtype
 	traits = {
 		#
 	}
@@ -43,7 +43,7 @@ create_country_leader = {
 	name = "Antun Saadeh"
 	desc = ""
 	picture = "gfx/leaders/SYR/Portrait_Arabia_Generic_land_3.dds"
-	ideology = pelekist
+	ideology = pelekist_subtype
 	traits = {
 		#
 	}
@@ -53,7 +53,7 @@ create_country_leader = {
 	name = "Ghazi bin Faisal"
 	desc = ""
 	picture = "gfx/leaders/SYR/Portrait_Arabia_Generic_2.dds"
-	ideology = reactionary
+	ideology = reactionary_subtype
 	traits = {
 		#
 	}
@@ -63,7 +63,7 @@ create_country_leader = {
 	name = "Khalid Bakdash"
 	desc = ""
 	picture = "gfx/leaders/SYR/Portrait_Arabia_Generic_1.dds"
-	ideology = socialist
+	ideology = socialist_subtype
 	traits = {
 		#
 	}

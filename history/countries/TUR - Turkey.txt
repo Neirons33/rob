@@ -201,7 +201,7 @@ set_stability = 0.55
 		desc = "POLITICS_ISMET_INÖNÜ_DESC"
 		picture = "Portrait_TUR_Ismet_Pasha.tga"
 		expire = "1965.1.1"
-		ideology = social_democracy
+		ideology = social_democracy_subtype
 		traits = {
 			#
 		}
@@ -212,7 +212,7 @@ create_country_leader = {
 	desc = "POLITICS_MUSTAFA_KEMAL_ATATÜRK_DESC"
 	picture = "Portrait_TUR_Abdülmecid_II.tga"
 	expire = "1965.1.1"
-	ideology = reactionary
+	ideology = reactionary_subtype
 	traits = {
 		#
 	}
@@ -234,17 +234,7 @@ create_country_leader = {
 	desc = "POLITICS_CELAL_BAYAR_DESC"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
 	expire = "1965.1.1"
-	ideology = conservative_ideology
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-	name = "Enver Pasha"
-	desc = "POLITICS_OGUZ_REMZI_ARIK_DESC"
-	picture = "Portrait_TUR_Enver_Pasha.tga"
-	expire = "1965.1.1"
-	ideology = reactionarism
+	ideology = conservative_subtype
 	traits = {
 		#
 	}

@@ -9,7 +9,7 @@ national_socialist = {
   }
   vlaslovism = {
   }
-  national_socialist = {
+  national_socialist_subtype = {
   }
  }
  rules = {
@@ -42,11 +42,11 @@ socialist = {
  
   marxism_leninism = {
   }
+  marxism = {
+  }
   left_communism = {
   }
-  socialist = {
-  }
-  anarcho = {
+  socialist_subtype = {
   }
 }
 rules = {
@@ -79,11 +79,9 @@ democratic_socialist = {
   }
   syndicalism = {
   }
-  anarchism = {
-  }
   market_socialism = {
   }
-  democratic_socialist = {
+  democratic_socialist_subtype = {
   }
  
  }
@@ -114,7 +112,7 @@ democratic_socialist = {
 social_democracy = {
  types = {
  
- social_democracy = {
+ social_democracy_subtype = {
  }
  
  }
@@ -146,7 +144,7 @@ social_democracy = {
 social_liberal = {
  types = {
  
- social_liberal = {
+ social_liberal_subtype = {
  }
  
  }
@@ -179,7 +177,7 @@ social_liberal = {
 conservative = {
  types = {
  
- conservative = {
+ conservative_subtype = {
  }
  
  }
@@ -213,7 +211,7 @@ conservative = {
 authoritharian = {
  types = {
  
- authoritharian = {
+ authoritharian_subtype = {
  }
  
  }
@@ -242,7 +240,7 @@ authoritharian = {
 reactionary = {
  types = {
  
- reactionary = {
+ reactionary_subtype = {
  }
  military_junta = {
  }
@@ -275,9 +273,14 @@ reactionary = {
 pelekist = {
  types = {
  
- pelekist = {
+ pelekist_subtype = {
  }
- 
+ pagan_pelekism = {
+ }
+ christian_pelekism = {
+ }
+ futuristic_pelekism = {
+ }
  }
  rules = {
 			can_declare_war_on_same_ideology = yes
