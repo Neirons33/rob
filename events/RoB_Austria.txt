@@ -19,11 +19,12 @@ news_event = {
     ideology = reactionary
     popularity = 0.05
 }
+hidden_effect = { 
 		country_event = {
 		    id = rob_austria.2
 		    days = 5
 		    random = 15
-		}
+		}}
 
 }
 }
@@ -38,11 +39,12 @@ news_event = {
  is_triggered_only = yes
 	option = {
 		name = rob_austria.2.a
+		hidden_effect = { 
             country_event = {
 		    id = rob_austria.3
 		    days = 5
 		    random = 25
-		}
+		}}
 		 }
 	}
 
@@ -62,7 +64,7 @@ country_event = {
 			desc = ""
 			picture = "Kurt_Schuschnigg.dds"
 			expire = "1965.1.1"
-			ideology = reactionary
+			ideology = reactionary_subtype
 			traits = {
 				}
 			}
@@ -76,10 +78,12 @@ country_event = {
 			planning_skill = 1
 			logistics_skill = 1
 }
+hidden_effect = { 
             country_event = {
 		    id = rob_austria.4
 		    days = 5
 		    random = 25
+		}
 		}
 		 
 	}
@@ -97,7 +101,6 @@ country_event = {
  is_triggered_only = yes
 	option = {
 		name = rob_austria.4.a
-		ai_chance = { factor = 1}
 		hidden_effect = { 
 		        news_event = { id = news_event.1 days = 1 }
 				ACM = { transfer_state = 1018 }
@@ -141,7 +144,7 @@ country_event = {
 
 				}
 				AUS = { 
-				country_event = { id = rob_austria.6 days = 2 } 
+				country_event = { id = rob_austria.6 days = 5 } 
 				}
 
 	}
@@ -150,7 +153,6 @@ country_event = {
 	
 	option = {
 		name = rob_austria.4.b
-		ai_chance = { factor = 1}
 				hidden_effect = {
                 news_event = { id = news_event.1 days = 1 }		
 				ACM = { transfer_state = 1018 }
@@ -194,7 +196,7 @@ country_event = {
 
 				}
 				AUS = { 
-				country_event = { id = rob_austria.6 days = 2 } 
+				country_event = { id = rob_austria.6 days = 5 } 
 				}
 	}
 		THR = { change_tag_from = AUS }
@@ -260,15 +262,22 @@ country_event = {
  fire_only_once = yes
 	trigger = {
 		tag = AUS
-		has_war_with = ACM
 		has_war_with = THR
+		AUS = { surrender_progress > 0.4 }
+		OR = {
+		tag = AUS
+		has_war_with = THR
+		AUS = { surrender_progress > 0.4 }
+		}
+
 }
-mean_time_to_happen = { days = 6}
+mean_time_to_happen = { days = 1}
 		option = {
 		name = rob_austria.5.a
 		ai_chance = { factor = 1}
+		hidden_effect = { 
 		AUS = { load_oob = ostmarksche_volunteers }
-		 }
+		 }}
 	}	
 
 ##Slovenia demands autonomy
@@ -284,7 +293,7 @@ country_event = {
 
 	    ###Gives autonomy
 		name = rob_austria.6.a
-		ai_chance = { factor = 2}
+		ai_chance = { factor = 3}
 			hidden_effect = {
 				AUS = {
 				 country_event = {
@@ -298,7 +307,7 @@ country_event = {
 		###Fuck off
 		option = {
 		name = rob_austria.6.b
-		ai_chance = { factor = 8}
+		ai_chance = { factor = 7}
 			hidden_effect = {
 				AUS = {
 				 country_event = {
@@ -322,10 +331,11 @@ country_event = {
  	option = {
  	name = rob_austria.7.a
  	Hidden_effect = { 	
+ 	AUS = { 
 	add_ideas = {
 					slovenian_autonomy
 				}
-		}		
+		}}		
 	}
 }
 
@@ -380,4 +390,54 @@ country_event = {
 			}
 		
 	}
+}
+
+
+
+###Civil War Ends
+country_event = {
+ id = rob_austria.10
+ title = rob_austria.10.t
+ desc = rob_austria.10.d
+ picture = GFX_report_event_french_resistance_02
+ fire_only_once = yes
+ trigger = {
+	tag = AUS
+	has_idea = austrian_civil_war
+	has_full_control_of_state = 4
+	has_full_control_of_state = 152
+	has_full_control_of_state = 153
+	has_full_control_of_state = 806
+	has_full_control_of_state = 807
+	has_full_control_of_state = 1015
+	has_full_control_of_state = 1016
+	has_full_control_of_state = 1017
+	has_full_control_of_state = 1018
+	has_full_control_of_state = 1020
+	has_full_control_of_state = 1021
+	has_full_control_of_state = 1022
+	has_full_control_of_state = 1023
+	}
+	option = {
+		name = rob_austria.10.a
+		ai_chance = { factor = 1}
+		hidden_effect = {
+		AUS = {
+		annex_country = {
+    	target = ACM
+    	transfer_troops = NO
+		}
+		annex_country = {
+    	target = THR
+    	transfer_troops = NO
+		}
+		remove_ideas = {
+		austrian_civil_war
+		extensive_conscription
+		}
+		 add_ideas = {   
+            limited_conscription
+            }
+	}}
+}
 }

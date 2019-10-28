@@ -36,6 +36,35 @@ country_event = {
 		}
 	}
 }
+
+
+### youth_volunteers
+country_event = {
+ id = third_reich.13
+ title = third_reich.13.t
+ desc = third_reich.13.d
+ picture = GFX_report_event_generic_read_write
+ fire_only_once = yes
+	trigger = {
+		tag = THR
+		has_war_with = ACM
+		THR = { surrender_progress > 0.4 }
+		OR = {
+   		tag = THR
+		has_war_with = AUS
+		THR = { surrender_progress > 0.4 }
+}
+}
+mean_time_to_happen = { days = 1}
+		option = {
+		name = third_reich.13.a
+		ai_chance = { factor = 1}
+		hidden_effect = {
+		THR = { load_oob = youth_volunteers }
+		 }}
+	}	
+
+
 ###Civil War Ends
 country_event = {
  id = third_reich.2
@@ -45,12 +74,12 @@ country_event = {
  fire_only_once = yes
  trigger = {
 	tag = THR
+	has_idea = austrian_civil_war
 	has_full_control_of_state = 4
 	has_full_control_of_state = 152
 	has_full_control_of_state = 153
 	has_full_control_of_state = 806
 	has_full_control_of_state = 807
-	has_full_control_of_state = 934
 	has_full_control_of_state = 1015
 	has_full_control_of_state = 1016
 	has_full_control_of_state = 1017
@@ -64,14 +93,23 @@ country_event = {
 		name = third_reich.2.a
 		ai_chance = { factor = 1}
 		hidden_effect = {
-		tag = THR
+		THR = {
+		annex_country = {
+    	target = AUS
+    	transfer_troops = NO
+		}
+		annex_country = {
+    	target = ACM
+    	transfer_troops = NO
+		}
 		remove_ideas = {
 		austrian_civil_war
 		extensive_conscription
 		}
-		add_ideas = {   
+		 add_ideas = {   
             limited_conscription
             }
+	}}
 		country_event = {
 		    id = third_reich.3
 		    days = 1
@@ -80,7 +118,7 @@ country_event = {
 			
 		}
 	}
-}
+
 ###what to do with austro fascists
 country_event = {
 	 id = third_reich.3

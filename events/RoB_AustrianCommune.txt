@@ -37,21 +37,49 @@ country_event = {
 	}
 }
 
-###Civil War Ends
+### communist_volunteers
 country_event = {
  id = Austrian_commune.2
  title = Austrian_commune.2.t
  desc = Austrian_commune.2.d
+ picture = GFX_report_event_generic_read_write
+ fire_only_once = yes
+	trigger = {
+		tag = ACM
+		has_war_with = THR
+		ACM = { surrender_progress > 0.4 }
+		OR = {
+		tag = ACM
+		has_war_with = AUS
+		ACM = { surrender_progress > 0.4 }
+		}
+}
+mean_time_to_happen = { days = 1}
+		option = {
+		name = Austrian_commune.2.a
+		ai_chance = { factor = 1}
+		hidden_effect = {
+		ACM = { load_oob = communist_volunteers }
+		 }}
+	}	
+
+
+
+###Civil War Ends
+country_event = {
+ id = Austrian_commune.3
+ title = Austrian_commune.3.t
+ desc = Austrian_commune.3.d
  picture = GFX_report_event_french_resistance_02
  fire_only_once = yes
  trigger = {
 	tag = ACM
+	has_idea = austrian_civil_war
 	has_full_control_of_state = 4
 	has_full_control_of_state = 152
 	has_full_control_of_state = 153
 	has_full_control_of_state = 806
 	has_full_control_of_state = 807
-	has_full_control_of_state = 934
 	has_full_control_of_state = 1015
 	has_full_control_of_state = 1016
 	has_full_control_of_state = 1017
@@ -62,9 +90,18 @@ country_event = {
 	has_full_control_of_state = 1023
 	}
 	option = {
-		name = Austrian_commune.2.a
+		name = Austrian_commune.3.a
 		ai_chance = { factor = 1}
 		hidden_effect = {
+		ACM = {
+		annex_country = {
+    	target = AUS
+    	transfer_troops = NO
+		}
+		annex_country = {
+    	target = THR
+    	transfer_troops = NO
+		}
 		remove_ideas = {
 		austrian_civil_war
 		extensive_conscription
@@ -72,7 +109,7 @@ country_event = {
 		 add_ideas = {   
             limited_conscription
             }
-	}
+	}}
 }
 }
 
