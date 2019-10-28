@@ -44,7 +44,7 @@ create_country_leader = {
 	desc = "POLITICS_Engelbert_Dollfuss_DESC"
 	picture = "Engelbert_Dollfuss.dds"
 	expire = "1965.1.1"
-	ideology = reactionary 
+	ideology = reactionary_subtype
 	traits = {
 		#
 	}
