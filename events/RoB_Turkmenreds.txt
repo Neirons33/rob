@@ -349,7 +349,7 @@ tag = TMS
 
 option = {
 name = turkmenreds.112.a
-ai_chance = { factor = 25}
+ai_chance = { factor = 15}
 create_field_marshal = {
 	name = "Ioseb Jughashvili"
 	picture = ""
@@ -382,7 +382,7 @@ hidden_effect = { country_event = { id = turkmenreds.113 days = 10 } }
 }
 option = {
 name = turkmenreds.112.b
-ai_chance = { factor = 75}
+ai_chance = { factor = 85}
 add_stability = -0.2
 add_manpower = -539
 hidden_effect = { JSW = { country_event = { id = turkmenreds.114 days = 100 } } }
@@ -756,4 +756,36 @@ TAJ = { change_tag_from = TRS }
 
 }
 
+}
+
+country_event = {
+id = turkmenreds.122
+title = turkmenreds.122.t
+desc = turkmenreds.122.d
+is_triggered_only = yes
+fire_only_once = yes
+picture = GFX_picture_bosnian_revolt
+
+trigger = {
+tag = TMS
+has_government = national_socialist
+NOT = { country_exists = KHV }
+
+
+}
+
+option = {
+name = turkmenreds.122.a
+ai_chance = { factor = 95}
+declare_war_on = {
+    target = TRS
+    type = annex_everything
+}
+}
+
+option = {
+name = turkmenreds.122.b
+ai_chance = { factor = 5}
+add_stability = -0.2
+}
 }

@@ -1085,6 +1085,11 @@ OR = {
  has_country_flag = BRC_victory 
  has_country_flag = BRL_victory 
  }
+OR = {
+tag = BLF
+tag = BRC
+tag = BRL
+}
 }
  mean_time_to_happen = { days = 1 }
  
