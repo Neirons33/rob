@@ -223,8 +223,9 @@ focus_tree = {
 		cost = 5
 		available_if_capitulated = yes
 		available = {
-		 has_government = conservative
+		OR = { has_government = conservative
 		 has_government = social_liberal
+		}
 		}
 		prerequisite = { 
 			focus = PRS_ddpvictory 
