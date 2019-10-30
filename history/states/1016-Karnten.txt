@@ -14,15 +14,14 @@ state={
 			3673 3 
 		}
 		victory_points = {
-			13375 2
+			13375 2 
 		}
-		
 		add_core_of = AUS
 
 	}
 
 	provinces={
-		668 3673 3674 6673 11612 13358 13375 13376 
+		668 3673 3674 6673 13358 13375 13376 
 	}
 	manpower=427688
 	buildings_max_level_factor=1.000
