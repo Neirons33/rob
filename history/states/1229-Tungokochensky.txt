@@ -10,11 +10,8 @@ state={
 		add_core_of = WFE
 		victory_points = {
 			13597 5 
-
 		}
-
 	}
-
 
 	provinces={
 		10574 12556 13594 13597 13598 

@@ -1,12 +1,10 @@
 state={
 	id=1225
 	name="STATE_1225"
-
 	history={
 		owner = SFS
 		buildings = {
 			infrastructure = 4
-
 		}
 		victory_points = {
 			4719 5
@@ -20,6 +18,6 @@ state={
 	}
 	manpower=64532
 	buildings_max_level_factor=1.000
-	state_category=city
+	state_category=town
 
 }

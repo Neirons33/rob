@@ -1,20 +1,23 @@
 state={
-	id=1227
-	name="STATE_1227"
+	id=1223
+	name="STATE_1223"
 	history={
-		owner = MON
+		owner = SFS
 		buildings = {
-			infrastructure = 4
+			infrastructure = 3
+
 		}
 		victory_points = {
-			12507 1 
+			10559 2
 		}
-		add_core_of = MON
+		add_core_of = SFS
+
 	}
+
 	provinces={
-		7860 12507 
+		10559 13603 
 	}
-	manpower=45434
+	manpower=25508
 	buildings_max_level_factor=1.000
 	state_category=rural
 

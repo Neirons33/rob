@@ -10,7 +10,6 @@ state={
 		add_core_of = WFE
 		victory_points = {
 			13602 1 
-
 		}
 
 	}
