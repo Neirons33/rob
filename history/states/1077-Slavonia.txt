@@ -16,9 +16,9 @@ state={
 	}
 
 	provinces={
-		3627 6647 6647 9595 9595 13523 13530 13531 
+		3627 6647 6647 9595 9595 13523 13530 13531 9624
 	}
-	manpower=563100
+	manpower=700580.848
 	buildings_max_level_factor=1.250
-	state_category=large_town
+	state_category=town
 }

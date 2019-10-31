@@ -10,7 +10,6 @@ state={
 		}
 		buildings = {
 			infrastructure = 5
-			industrial_complex = 1
 
 		}
 		add_core_of = ITA
@@ -19,9 +18,9 @@ state={
 	}
 
 	provinces={
-		591 6611 11901 13452 
+	 6611 11901 13452 
 	}
-	manpower=612011
+	manpower=150106
 	buildings_max_level_factor=1.000
-	state_category=town
+	state_category=rural
 }

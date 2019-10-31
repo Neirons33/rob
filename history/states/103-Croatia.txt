@@ -10,17 +10,6 @@ state={
 		}
 		buildings = {
 			infrastructure = 5
-			dockyard = 1
-			industrial_complex = 2
-			3924 = {
-				naval_base = 3
-
-			}
-			6889 = {
-				naval_base = 1
-
-			}
-
 		}
 		add_core_of = ITA
 		add_core_of = CRO
@@ -30,7 +19,7 @@ state={
 	provinces={
 		984 3943 3974 
 	}
-	manpower=816518
+	manpower=147166
 	buildings_max_level_factor=1.000
-	state_category=town
+	state_category=rural
 }
