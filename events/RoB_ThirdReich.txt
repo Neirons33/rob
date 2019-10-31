@@ -33,6 +33,7 @@ country_event = {
 			add_state_core = 1019
 			add_state_core = 1127
 			add_state_core = 1128
+			add_state_core = 1219
 		}
 	}
 }

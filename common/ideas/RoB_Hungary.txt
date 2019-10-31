@@ -9,7 +9,7 @@ country{
 				always = no
 			}
      removal_cost = -1
-	 picture = idea_minority_troubles
+	 picture = GFX_saf_history_of_segregation
 	 modifier = {
 				political_power_gain = -0.50
 				stability_factor = -0.25

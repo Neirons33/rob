@@ -18,6 +18,7 @@ state={
 			infrastructure = 7
 			industrial_complex = 1
 			air_base = 6
+			arms_factory = 1
 
 		}
 		add_core_of = AUS
@@ -27,7 +28,7 @@ state={
 	provinces={
 		653 6687 6691 9646 9648 13317 13347 13377 13378 13379 
 	}
-	manpower=1115611
+	manpower=1116539
 	buildings_max_level_factor=1.000
 	state_category=city
 }

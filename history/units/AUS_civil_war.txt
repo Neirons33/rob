@@ -96,7 +96,7 @@ units = {
 		location = 13880  
 		division_template = "Infanterie Division"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.5
+		start_equipment_factor = 0.6
 
 	}
 	division= {	# "3. Division"			
@@ -107,7 +107,7 @@ units = {
 		location = 13369 #near eisenerz and liezen
 		division_template = "Infanterie Division"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.6
 
 	}
 
@@ -119,7 +119,7 @@ units = {
 		location = 673 # near innsbruck
 		division_template = "Alpenjäger Division"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.6
 
 	}
 	division= {	# "6. Division"			
@@ -130,7 +130,7 @@ units = {
 		location = 671 # Lienz
 		division_template = "Alpenjäger Division"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.6
 
 	}
 	division= {	# "7. Division"			
@@ -141,7 +141,7 @@ units = {
 		location = 6691 # near tamsweg
 		division_template = "Alpenjäger Division"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.6
 
 	}
 
@@ -151,7 +151,7 @@ units = {
 		location = 9679  # Eisenerz
 		division_template = "Alpenjäger Division"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.6
 
 	}
 
@@ -187,7 +187,7 @@ units = {
 		location = 9661 # between wien neusradt and eisensdat
 		division_template = "Gendarmerie"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.2
+		start_equipment_factor = 0.7
 
 	}
 

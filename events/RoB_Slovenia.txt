@@ -32,7 +32,7 @@ country_event = {
     } 
     
  }
-###slovenia under control
+###milita at southern carinth
 country_event = {
     id = rob_slovenia.2
     title = rob_slovenia.2.t
@@ -43,12 +43,10 @@ country_event = {
     tag = SLV
     SLV = {
     has_war_with = AUS
-    has_full_control_of_state = 934
-    has_full_control_of_state = 1127
-    has_full_control_of_state = 1128
+    has_full_control_of_state = 1219
     }
 
-    mean_time_to_happen = { days = 7}
+    mean_time_to_happen = { days = 1}
 
     }
 
@@ -62,15 +60,41 @@ country_event = {
     }
 }
 
+###milita at maribor
+country_event = {
+    id = rob_slovenia.3
+    title = rob_slovenia.3.t
+    desc = rob_slovenia.3.d
+    picture = GFX_report_event_second_vienna_award_pact
+    fire_only_once = yes
+    trigger = {
+    tag = SLV
+    SLV = {
+    has_war_with = AUS
+    has_full_control_of_state = 934
+    }
 
+    mean_time_to_happen = { days = 1}
+
+    }
+
+    option = {
+        name = rob_slovenia.3.a
+        SLV = {
+        hidden_effect = {  
+      SLV = { load_oob = SLV_milita2 }
+      }
+      }
+    }
+}
 
 
 
 ###we win enough
 country_event = {
-    id = rob_slovenia.3
-    title = rob_slovenia.3.t
-    desc = rob_slovenia.3.d
+    id = rob_slovenia.4
+    title = rob_slovenia.4.t
+    desc = rob_slovenia.4.d
     picture = GFX_report_event_second_vienna_award_pact
     fire_only_once = yes
 
@@ -89,14 +113,16 @@ country_event = {
 
     #take their shit and leave
     option = {
-        name = rob_slovenia.3.a
+        name = rob_slovenia.4.a
         ai_chance = { factor = 10}
         hidden_effect = {   
         SLV = { transfer_state = 1127 } 
         SLV = { transfer_state = 934 }  
+        SLV = { transfer_state = 1219 }
         AUS = {  white_peace = SLV}
         ACM = {  white_peace = SLV}
         THR = {  white_peace = SLV}
+        }
         SLV = {
             remove_ideas = {
                 extensive_conscription
@@ -109,6 +135,5 @@ country_event = {
     }
 }
 }
-
 
 

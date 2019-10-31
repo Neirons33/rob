@@ -540,6 +540,8 @@
  austrian_civil_war_desc:0 "The war continues"
  slovenian_autonomy:0 "Slovenian Autonomy"
  slovenian_autonomy_desc:0 "Slovenians are just barely remaining in our Republic"
+ loose_coalition:0 "Loose Coalition"
+ loose_coalition_desc:0 "With the current political climate, there is no way for us to influence economy"
 
  ###HUN
  occupied_country:0 "Occupied Country"

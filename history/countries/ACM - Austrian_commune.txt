@@ -32,6 +32,7 @@ add_ideas = {
 	extensive_conscription
 	austrian_bad_econ
 	austrian_civil_war
+	loose_coalition
 }
 
 set_stability = 0.80

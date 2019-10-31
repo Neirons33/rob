@@ -113,6 +113,7 @@ ideas = {
 				production_speed_buildings_factor = -0.15
 				consumer_goods_factor = 0.10
 				min_export = -0.15
+				conversion_cost_mil_to_civ_factor = 0.70
 			}
 		}	
 

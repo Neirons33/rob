@@ -12,6 +12,6 @@ division_template = {
 units = {
 	division = {
 		name = "Milita"
-		location =  11612
+		location =  596
 		division_template = "Milita"
 	}
