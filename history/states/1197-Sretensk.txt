@@ -1,25 +1,27 @@
+
 state={
 	id=1197
 	name="STATE_1197"
-	resources = {
-	steel = 3.000
+	resources={
+		steel=13.000
 	}
+
 	history={
 		owner = SFS
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
-			arms_factory = 1
 
 		}
 		victory_points = {
-		7725 5
+			13591 2 
 		}
 		add_core_of = SFS
 
 	}
+
 	provinces={
-		7725 10559 12622 4719 4677
+		13591 13592 
 	}
 	manpower=346173
 	buildings_max_level_factor=1.000
