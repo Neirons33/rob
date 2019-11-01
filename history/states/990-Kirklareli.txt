@@ -21,7 +21,7 @@ set_demilitarized_zone = yes
 	provinces={
 		922 6895 13320 
 	}
-	manpower=0
+	manpower=172144
 	buildings_max_level_factor=1.000
 	state_category=rural
 }

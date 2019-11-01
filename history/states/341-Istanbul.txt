@@ -37,7 +37,7 @@ state={
 		849 922 3879 3893 6895 9833 11842 
 >>>>>>> parent of a550398... Gfx and GUI edits
 	}
-	manpower=802209
+	manpower=570119
 	buildings_max_level_factor=1.000
 	state_category=city
 }

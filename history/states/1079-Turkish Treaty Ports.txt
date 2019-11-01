@@ -30,8 +30,8 @@ state={
 
 	}
 
-	manpower=11933
+	manpower=16933
 	buildings_max_level_factor=1.000
-	state_category=large_city
+	state_category=exclave
 }
 
