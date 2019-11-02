@@ -1,6 +1,13 @@
 capital = 580
 set_research_slots = 1
 
+OOB = "UGC_1934"
+
+add_ideas = {
+	beakon_of_hope
+	limited_conscription
+}
+
 set_politics = {
 	ruling_party = social_liberal
 	last_election = "1933.10.12"

@@ -1,0 +1,60 @@
+division_template = {
+	name = "Infantry brigade"
+
+	division_names_group = UGC_Inf_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		
+        
+	}
+	
+}
+
+
+units = {
+
+division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 1812
+		division_template = "Infantry brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+		}
+division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 10604
+		division_template = "Infantry brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+		}
+division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 4771
+		division_template = "Infantry brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+		}
+division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 4
+		}
+		location = 12639
+		division_template = "Infantry brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+		}
+}

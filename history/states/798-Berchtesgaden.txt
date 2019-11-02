@@ -15,9 +15,9 @@ state={
 	}
 
 	provinces={
-		707 3688 13367 13386 
+	 13367 707 3688 13386
 	}
-	manpower=23002
+	manpower=329063
 	buildings_max_level_factor=1.000
-	state_category=pastoral
+	state_category=small_island
 }

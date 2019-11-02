@@ -7,7 +7,7 @@ state={
 		oil=14
 	}
 	
-	state_category = wasteland
+	state_category = 4817
 
 	history={
 		owner = UGC
