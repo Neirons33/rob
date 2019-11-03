@@ -136,4 +136,22 @@ ideas = {
 
 			}
 		}
+ 		
+ 		festung_bregenz = {
+        picture = GFX_idea_minority_troubles	
+			allowed = {
+			always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+		conscription_factor	= 0.25
+		army_core_attack_factor = 0.3
+		army_core_defence_factor = 0.3
+			}
 }

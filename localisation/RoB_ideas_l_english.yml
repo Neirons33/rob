@@ -526,7 +526,7 @@
  bolshevik_strike_desc:0 "The All-Russian Central Council of Trade Unions has announced the general strike in the Soviet Republic. Workers, who believe they have been treated unequaly, have taken matters into their own hands."
  ###UGC
  beakon_of_hope:0 "Beakon of Hope"
- beakon_of_hope_desc:0 "The Ugric Federation was the only state Finno-Ugric people managed to enstablish during the Russian Civil War. Like the Northern Star, it shines bright for many Ugric migrants and refugees from all over former Russian Empire. It shall be defended to the last man."
+ beakon_of_hope_desc:0 "The Finno-Ugrics only managed to establish one state during the Russian Civil War - The Ugric Federation. Like the Northern Star, it lights the way for many ugric peoples across the once great Russian Empire. It shall be defended to the last man."
  ###AUS
  austrian_bad_econ:0 "Great Depression Woes"
  austrian_bad_econ_desc:0 "The great depression has reached our country! If we do not act now, only devistation awaits. "
@@ -544,7 +544,8 @@
  slovenian_autonomy_desc:0 "Slovenians are just barely remaining in our Republic"
  loose_coalition:0 "Loose Coalition"
  loose_coalition_desc:0 "With the current political climate, there is no way for us to influence economy"
-
+ festung_bregenz:0 "Fortress Bregenz"
+ festung_bregenz_desc:0 "Festung Bregenz\nÖsterreich muss halten\nFestung Bregenz muss halten!"
  ###HUN
  occupied_country:0 "Occupied Country"
  occupied_country_desc:0 "Our nation is under joint occupation of Romanian and Serbian forces."

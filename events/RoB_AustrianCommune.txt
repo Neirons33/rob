@@ -37,7 +37,7 @@ country_event = {
 	}
 }
 
-### communist_volunteers
+### worker_volunteers
 country_event = {
  id = Austrian_commune.2
  title = Austrian_commune.2.t
@@ -59,7 +59,7 @@ mean_time_to_happen = { days = 1}
 		name = Austrian_commune.2.a
 		ai_chance = { factor = 1}
 		hidden_effect = {
-		ACM = { load_oob = communist_volunteers }
+		ACM = { load_oob = worker_volunteers }
 		 }}
 	}	
 
