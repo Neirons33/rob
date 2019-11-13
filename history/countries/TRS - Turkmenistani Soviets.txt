@@ -40,7 +40,7 @@ TRS_research_not_priority
 create_country_leader = {
 	name = "Mikhail Frunze"
 	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-	picture = ""
+	picture = "Mikhail_Frunze.tga"
 	expire = "1965.1.1"
 	ideology = socialist_subtype
 	traits = {
