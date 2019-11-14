@@ -29,6 +29,8 @@ set_popularities = {
 }
 add_ideas = {
 limited_conscription
+KAZ_triumverate
+KAZ_overextended_state
 }
 
 create_country_leader = {

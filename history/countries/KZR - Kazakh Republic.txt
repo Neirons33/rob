@@ -27,6 +27,8 @@ set_popularities = {
 }
 add_ideas = {
 limited_conscription
+KZR_freedom_fighting
+KZR_kazakh_war
 }
 
 create_country_leader = {

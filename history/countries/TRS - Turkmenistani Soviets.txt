@@ -101,3 +101,14 @@ create_corps_commander = {
 	planning_skill = 1
 	logistics_skill = 2
 }
+
+create_corps_commander = {
+	name = "Yosh Buxoroliklar"
+	picture = ""
+	traits = { defensive_doctrine cavalry_officer }
+	skill = 1
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}
