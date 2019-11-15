@@ -50,7 +50,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Ioseb Jughashvili"
 	desc = "POLITICS_JOSEPH_STALIN_DESC"
-	picture = "Portrait_Soviet_Joseph_Stalin.dds"
+	picture = "Portrait_Soviet_Joseph_Stalin.tga"
 	expire = "1965.1.1"
 	ideology = national_socialist_subtype
 	traits = {
@@ -60,7 +60,7 @@ create_country_leader = {
 
 create_field_marshal = {
 	name = "Mikhail Frunze"
-	picture = ""
+	picture = "Mikhail_Frunze.dds"
 	traits = { defensive_doctrine trait_cautious politically_connected }
 	skill = 4
 	attack_skill = 1
