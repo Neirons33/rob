@@ -27,8 +27,6 @@ set_popularities = {
 }
 add_ideas = {
 limited_conscription
-UZB_afghan_domination
-UZB_young_bukharans
 }
 
 create_country_leader = {
@@ -46,8 +44,8 @@ create_field_marshal = {
 	name = "Mohammed Alim Khan"
 	picture = "mohammed_alim_khan.dds"
 	traits = { old_guard trait_cautious }
-	skill = 2
-	attack_skill = 2
+	skill = 1
+	attack_skill = 1
 	defense_skill = 2
 	planning_skill = 2
 	logistics_skill = 1

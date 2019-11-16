@@ -317,9 +317,6 @@ white_peace = BUL
 add_stability = 0.2
 add_war_support = 0.2
 add_manpower = 10000
-SER = { transfer_state = 106 }
-SER = { transfer_state = 870 }
-SER = { transfer_state = 871 }
 BUL = { country_event = { id = bulgaria.109 days = 1 } } 
 
 }

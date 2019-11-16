@@ -29,8 +29,6 @@ set_popularities = {
 }
 add_ideas = {
 limited_conscription
-KYR_mountain_peoples
-TMS_basmachi_remnant
 }
 
 create_country_leader = {
