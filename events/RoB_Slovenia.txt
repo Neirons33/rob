@@ -43,11 +43,7 @@ country_event = {
     tag = SLV
     SLV = {
     has_war_with = AUS
-    has_full_control_of_state = 1219
-    }
-
-    mean_time_to_happen = { days = 1}
-
+    has_full_control_of_state = 1219 }
     }
 
     option = {
@@ -60,7 +56,7 @@ country_event = {
     }
 }
 
-###milita at maribor
+### milita at maribor
 country_event = {
     id = rob_slovenia.3
     title = rob_slovenia.3.t
@@ -71,11 +67,7 @@ country_event = {
     tag = SLV
     SLV = {
     has_war_with = AUS
-    has_full_control_of_state = 934
-    }
-
-    mean_time_to_happen = { days = 1}
-
+    has_full_control_of_state = 934 }
     }
 
     option = {
