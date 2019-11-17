@@ -2139,21 +2139,8 @@ available_if_capitulated = yes
 prerequisite = { focus = SOV_lookoutwards } 
 available_if_capitulated = yes 
 		completion_reward = {
-			add_opinion_modifier = {
-			    target = GER
-			    modifier = similar_ruling_party 
-			}
-			add_opinion_modifier = {
-			    target = OMS
-			    modifier = similar_ruling_party 
-			}
-			add_opinion_modifier = {
-			    target = CBR
-			    modifier = similar_ruling_party 
-			}
-			add_opinion_modifier = {
-			    target = DSU
-			    modifier = similar_ruling_party 
+			add_ideas = {
+			 SOV_comrades_abroad
 			}
 		}
 ai_will_do = { 
@@ -2173,11 +2160,36 @@ available_if_capitulated = yes
 prerequisite = { focus = SOV_enemiesonallsides } 
 prerequisite = { focus = SOV_comradesabroad } 
 		completion_reward = {
-			country_event = {
-			    id = OMR_event.1
-			    days = 10
-			    random = 50
-			}
+         OMS = {
+		  if = {
+		   limit = { exists = yes }
+		   		add_equipment_to_stockpile = {
+                type = infantry_equipment_0
+					amount = 5000
+					producer = SOV
+             }
+		  }
+		 }
+		 JOB = {
+		  if = {
+		   limit = { exists = yes }
+		   		add_equipment_to_stockpile = {
+                type = infantry_equipment_0
+					amount = 5000
+					producer = SOV
+             }
+		  }
+		 }
+		 JSW = {
+		  if = {
+		   limit = { exists = yes }
+		   		add_equipment_to_stockpile = {
+                type = infantry_equipment_0
+					amount = 5000
+					producer = SOV
+             }
+		  }
+		 }
 		}
 ai_will_do = { 
  factor = 1
@@ -2226,11 +2238,11 @@ prerequisite = { focus = SOV_siberiancomrades }
 		completion_reward = {
 			create_wargoal = {
 			    type = puppet_wargoal_focus
-			    target = FIN
+			    target = RUS
 			}
 			create_wargoal = {
 			    type = annex_everything
-			    target = FTT
+			    target = RDR
 			}
 		}
 ai_will_do = { 
@@ -2451,6 +2463,14 @@ prerequisite = { focus = SOV_siberiancomrades }
 			create_wargoal = {
 			    type = annex_everything
 			    target = KYR
+			}
+			create_wargoal = {
+			    type = annex_everything
+			    target = KHV
+			}
+			create_wargoal = {
+			    type = annex_everything
+			    target = TRS
 			}
 		}
 ai_will_do = { 
@@ -3017,7 +3037,56 @@ prerequisite = { focus = SOV_socialistinternationale }
 ai_will_do = { 
  factor = 1
  } 
+completion_reward = {
+ set_cosmetic_tag = TRS_USSR
+ every_state = {
+    limit = { 
+	OR = {
+	is_core_of = RDR 
+	is_core_of = RUS
+    is_core_of = SOV
+    is_core_of = OMS 
+    is_core_of = CAA
+    is_core_of = CRM
+    is_core_of = CAU
+    is_core_of = DAG
+    is_core_of = CHE
+    is_core_of = MRP
+    is_core_of = KAZ
+    is_core_of = TRS
+    is_core_of = KHV
+	is_core_of = TMS
+	is_core_of = UZB
+	is_core_of = KYR
+	is_core_of = LES
+	is_core_of = UGC
+	is_core_of = TOW
+	is_core_of = KRW
+	is_core_of = JSW
+	is_core_of = FER
+	is_core_of = WFE
+	is_core_of = SFS
+	is_core_of = JVD
+	is_core_of = AZR
+	is_core_of = GEO
+	is_core_of = ARM
+	is_core_of = FTT
+	is_core_of = DSU
+	is_core_of = UKR
+	is_core_of = CBR
+	is_core_of = BLR
+	is_core_of = DBR
+	is_core_of = EST
+	is_core_of = FIN
+	is_core_of = LIT
+	is_core_of = IRK
+	is_core_of = TAN
+	}
+	}
+	add_core_of = ROOT
 
+}
+}
  } 
 
 #Focus for Socialist Internationale
@@ -3029,12 +3098,22 @@ y = 13
 cost = 5
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_sovietgermanpact } 
-
+bypass = {
+ is_in_faction = yes
+}
 ai_will_do = { 
  factor = 1
  } 
-
- } 
+completion_reward = {
+if = {
+ limit = { SOV = { has_government = national_socialist } }
+ create_faction = "Internationale of National Liberation"
+ else = {
+ create_faction = "Socialist Internationale"
+     }
+   }
+  }
+ }
 
 #Focus for The Far East
 shared_focus = { 
@@ -3085,7 +3164,7 @@ cost = 5
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_lookoutwards } 
 		completion_reward = {
-			add_war_support = 0.03
+			add_war_support = 0.1
 			}
 ai_will_do = { 
  factor = 1
@@ -3105,7 +3184,26 @@ prerequisite = { focus = SOV_comradesabroad }
 
 ai_will_do = { 
  factor = 1
- } 
+ }
+bypass = {
+ GER = {
+  NOT = {
+   has_government = national_socialist
+   has_government = socialist
+   has_government = democratic_socialist
+  }
+ }
+} 
+ completion_reward = {
+  GER = { give_guarantee = SOV }
+  SOV = { give_guarantee = GER }
+  diplomatic_relation = {
+    country = GER
+    relation = non_aggression_pact
+    active = yes
+}
+
+ }
 } 
 
 #Focus for Bolshevik Air Forces

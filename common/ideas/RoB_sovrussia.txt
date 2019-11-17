@@ -1112,6 +1112,22 @@ ideas = {
 			}
   
   }
+  
+####DIPLO
+ SOV_comrades_abroad = {
+  allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 picture = GFX_idea_famine_of_1933
+	 modifier = {
+		  justify_war_goal_time = -0.15
+			}
+  
+  }
  }
 
 
