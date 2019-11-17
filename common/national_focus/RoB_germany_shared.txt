@@ -75,14 +75,6 @@
 		ai_will_do = {
 			factor = 1
 		}
-		completion_reward = {
-		 add_tech_bonus = {
-	      name = armor_bonus
-	      bonus = 1.0
-	      uses = 1
-	      category = armor
-           }    
-		}
 	}
 	#Focus for Military reforms
 	shared_focus = {
@@ -165,11 +157,6 @@
 		ai_will_do = {
 			factor = 1
 		}
-		completion_reward = {
-		 add_ideas = {
-		  GER_tanks_elite
-		 }
-		}
 	}
 
 	#Focus for elite training
@@ -184,15 +171,7 @@
 		ai_will_do = {
 			factor = 1
 		}
-		 	  completion_reward = {
-		 add_tech_bonus = {
-	      name = doctrine_bonus
-	      bonus = 1.0
-	      uses = 2
-	      category = cat_mobile_warfare
-           }    
-		}
-		}
+	}
 
 	#Focus for Panzer, vorwarts!
 	shared_focus = {
@@ -211,14 +190,6 @@
 		ai_will_do = {
 			factor = 1
 		}
-				 	  completion_reward = {
-		 add_tech_bonus = {
-	      name = doctrine_bonus
-	      bonus = 1.0
-	      uses = 2
-	      category = cat_mobile_warfare
-           }    
-		}
 	}
 
 	#Focus for Motorize the infantry
@@ -227,18 +198,11 @@
 		icon = GFX_goal_unknown
 		x = 10
 		y = 15
-		cost = 7
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_increasepanzerproduction }
 		ai_will_do = {
 			factor = 1
-		}
-		completion_reward = {
-		 add_equipment_to_stockpile = {
-         type = motorized_equipment
-					amount = 450
-					producer = GER
-             }
 		}
 	}
 
@@ -480,9 +444,6 @@
 		ai_will_do = {
 			factor = 1
 		}
-		completion_reward = {
-         army_experience = 10
-		}
 	}
 
 	#Focus for Rommelplan
@@ -498,9 +459,6 @@
 		mutually_exclusive = { focus = GER_seydlitzplan }
 		ai_will_do = {
 			factor = 1
-		}
-		completion_reward = {
-         army_experience = 10
 		}
 	}
 
@@ -576,10 +534,7 @@
 		ai_will_do = {
 			factor = 1
 		}
-		completion_reward = {
-         army_experience = 10
-		}
-		}
+	}
 
 	#Focus for Increase panzer production
 	shared_focus = {
@@ -592,11 +547,6 @@
 		prerequisite = { focus = GER_rommelplan }
 		ai_will_do = {
 			factor = 1
-		}
-		completion_reward = {
-		 add_ideas = {
-		  GER_more_tanks
-		 }
 		}
 	}
 
@@ -611,13 +561,6 @@
 		prerequisite = { focus = GER_volksmarine }
 		ai_will_do = {
 			factor = 1
-		}
-		completion_reward = {
-		 add_equipment_to_stockpile = {
-         type = convoy
-					amount = 100
-					producer = GER
-             }
 		}
 	}
 
@@ -638,11 +581,6 @@
 		ai_will_do = {
 			factor = 1
 		}
-		completion_reward = {
-		 add_ideas = {
-		  GER_rebuild_navy
-		 }
-		}
 	}
 
 	#Focus for Volksmarine
@@ -660,11 +598,6 @@
 		ai_will_do = {
 			factor = 1
 		}
-		completion_reward = {
-		 add_ideas = {
-		  GER_navy_elite
-		 }
-		}
 	}
 
 	#Focus for Prepare to retake Prussia
@@ -679,11 +612,6 @@
 		ai_will_do = {
 			factor = 1
 		}
-		completion_reward = {
-		 add_ideas = {
-		  GER_red_marines
-		 }
-		}
 	}
 
 	#Focus for Rote Luftwaffe
@@ -696,9 +624,6 @@
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 1
-		}
-		completion_reward = {
-		 air_experience = 30
 		}
 	}
 
@@ -714,15 +639,6 @@
 		mutually_exclusive = { focus = GER_bomberfocus }
 		ai_will_do = {
 			factor = 1
-		}
-		completion_reward = {
-		 add_tech_bonus = {
-	      name = air_bonus
-	      bonus = 1.0
-	      uses = 1
-	      category = light_fighter
-		  category = cat_heavy_fighter
-           }    
 		}
 	}
 
@@ -743,14 +659,6 @@
 		ai_will_do = {
 			factor = 1
 		}
-		completion_reward = {
-		 add_tech_bonus = {
-	      name = air_bonus
-	      bonus = 1.0
-	      uses = 2
-	      category = air_doctrine
-           }    
-		}
 	}
 
 	#Focus for Increased pilot training
@@ -764,11 +672,6 @@
 		prerequisite = { focus = GER_aerialdoctrinefocus }
 		ai_will_do = {
 			factor = 1
-		}
-		completion_reward = {
-		 add_ideas = {
-		  GER_elite_pilots
-		 }
 		}
 	}
 
@@ -784,14 +687,6 @@
 		ai_will_do = {
 			factor = 1
 		}
-		completion_reward = {
-		 add_tech_bonus = {
-	      name = air_bonus
-	      bonus = 1.0
-	      uses = 2
-	      category = air_doctrine
-           }    
-		}
 	}
 
 	#Focus for Build more AA
@@ -805,13 +700,6 @@
 		prerequisite = { focus = GER_luftwaffedivisions }
 		ai_will_do = {
 			factor = 1
-		}
-        completion_reward = {
-		 add_equipment_to_stockpile = {
-         type = anti_air_equipment_1
-					amount = 180
-					producer = GER
-             }
 		}
 	}
 
@@ -832,11 +720,6 @@
 		ai_will_do = {
 			factor = 1
 		}
-		completion_reward = {
-		 add_ideas = {
-		  GER_elite_airforce
-		 }
-		}
 	}
 
 	#Focus for Increase plane production
@@ -851,11 +734,6 @@
 		ai_will_do = {
 			factor = 1
 		}
-		completion_reward = {
-		 add_ideas = {
-		  GER_more_planes
-		 }
-		}
 	}
 
 	#Focus for Rote Volksflotte
@@ -868,9 +746,6 @@
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 1
-		}
-		completion_reward = {
-		 navy_experience = 50
 		}
 	}
 
@@ -894,14 +769,6 @@
 		}
 		ai_will_do = {
 			factor = 1
-		}
-		completion_reward = {
-		 add_tech_bonus = {
-	      name = naval_bonus
-	      bonus = 1.0
-	      uses = 1
-	      category = ss_tech
-           }    
 		}
 	}
 
@@ -927,14 +794,6 @@
 		ai_will_do = {
 			factor = 1
 		}
-	   completion_reward = {
-		 add_tech_bonus = {
-	      name = naval_bonus
-	      bonus = 1.0
-	      uses = 1
-	      category = bb_tech
-           }    
-		}
 	}
 
 	#Focus for Focus on destroyers
@@ -958,14 +817,6 @@
 		ai_will_do = {
 			factor = 1
 		}
-	   completion_reward = {
-		 add_tech_bonus = {
-	      name = naval_bonus
-	      bonus = 1.0
-	      uses = 1
-	      category = dd_tech
-           }    
-		}
 	}
 
 	#Focus for Focus on ship design
@@ -979,17 +830,6 @@
 		prerequisite = { focus = GER_rotevolksflotte }
 		ai_will_do = {
 			factor = 1
-		}
-	    completion_reward = {
-		 add_tech_bonus = {
-	      name = naval_bonus
-	      bonus = 0.75
-	      uses = 2
-	      category = dd_tech
-		  category = cl_tech
-		  category = ca_tech
-		  category = bb_tech
-           }    
 		}
 	}
 
@@ -1005,14 +845,6 @@
 		ai_will_do = {
 			factor = 1
 		}
-	   completion_reward = {
-		 add_tech_bonus = {
-	      name = doctrine_bonus
-	      bonus = 1.0
-	      uses = 3
-	      category = naval_doctrine
-           }    
-		}
 	}
 
 	#Focus for Special training
@@ -1026,14 +858,6 @@
 		prerequisite = { focus = GER_volksmarine }
 		ai_will_do = {
 			factor = 1
-		}
-	   completion_reward = {
-		 add_tech_bonus = {
-	      name = doctrine_bonus
-	      bonus = 0.75
-	      uses = 2
-	      category = naval_doctrine
-           }    
 		}
 	}
 
@@ -1050,15 +874,6 @@
 		ai_will_do = {
 			factor = 1
 		}
-		completion_reward = {
-		 add_tech_bonus = {
-	      name = air_bonus
-	      bonus = 1.0
-	      uses = 1
-	      category = tactical_bomber
-		  category = cat_strategic_bomber
-           }    
-		}
 	}
 
 	#Focus for German Economy
@@ -1072,15 +887,6 @@
 		ai_will_do = {
 			factor = 1
 		}
-		completion_reward = {
-		 add_tech_bonus = {
-	      name = air_bonus
-	      bonus = 0.5
-	      uses = 1
-	      category = industry
-		  
-           } 
-		}
 	}
 
 	#Focus for National Bolshevik Economy
@@ -1092,14 +898,14 @@
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_germaneconomy }
-		available = {
-		 has_country_flag = GER_ns_economy
-		}
 		mutually_exclusive = { 
 			focus = GER_keepthecurrentline 
 		}
 		mutually_exclusive = { 
 			focus = GER_democraticsocialisteconomy 
+		}
+		mutually_exclusive = { 
+			focus = GER_ 
 		}
 		ai_will_do = {
 			factor = 1
@@ -1114,15 +920,15 @@
 		y = 10
 		cost = 5
 		available_if_capitulated = yes
-		available = {
-		 has_country_flag = GER_lux_economy
-		}
 		prerequisite = { focus = GER_germaneconomy }
 		mutually_exclusive = { 
 			focus = GER_nationalbolshevikeconomy 
 		}
 		mutually_exclusive = { 
 			focus = GER_democraticsocialisteconomy 
+		}
+		mutually_exclusive = { 
+			focus = GER_ 
 		}
 		ai_will_do = {
 			factor = 1
@@ -1137,9 +943,6 @@
 		y = 10
 		cost = 5
 		available_if_capitulated = yes
-		available = {
-		 has_country_flag = GER_ds_economy
-		}
 		prerequisite = { focus = GER_germaneconomy }
 		mutually_exclusive = { 
 			focus = GER_nationalbolshevikeconomy 
