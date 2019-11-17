@@ -1,7 +1,7 @@
 ﻿capital = 64
 
 oob = "GER_1936"
-
+set_naval_oob = "GER_1936_naval"
 set_fuel_ratio = 0.8
 
 # Starting tech
@@ -216,7 +216,7 @@ add_ideas = {
 	spartakus_triumphant
 	rampant_corruption
 	limited_exports
-	limited_conscription
+	volunteer_only
 }
 
 
