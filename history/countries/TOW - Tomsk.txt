@@ -40,7 +40,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Portrait_RUS_Kyril_I.tga"
 	expire = "1965.1.1"
-	ideology = authoritharian _subtype
+	ideology = authoritharian_subtype
 	traits = {
 		#
 	}
