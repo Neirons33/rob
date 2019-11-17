@@ -204,6 +204,10 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 4391;4828;impassable;-1;-1;-1;-1;-1;;pamir mountains
 4391;1703;impassable;-1;-1;-1;-1;-1;;pamir mountains
 4391;12526;impassable;-1;-1;-1;-1;-1;;pamir mountains
+1384;12430;impassable;-1;-1;-1;-1;-1;;pamir mountains
+12250;12430;impassable;-1;-1;-1;-1;-1;;pamir mountains
+12250;12581;impassable;-1;-1;-1;-1;-1;;pamir mountains
+4542;12581;impassable;-1;-1;-1;-1;-1;;pamir mountains
 3314;6336;sea;2752;2885;1578;2890;1581;;Afsluitdijk
 7265;10201;sea;7479;-1;-1;-1;-1;;Srilanka-Tamilland
 -1;-1;;-1;-1;-1;-1;-1;-1

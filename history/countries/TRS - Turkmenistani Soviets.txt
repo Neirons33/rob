@@ -40,7 +40,7 @@ TRS_research_not_priority
 create_country_leader = {
 	name = "Mikhail Frunze"
 	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-	picture = ""
+	picture = "Mikhail_Frunze.tga"
 	expire = "1965.1.1"
 	ideology = socialist_subtype
 	traits = {
@@ -50,7 +50,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Ioseb Jughashvili"
 	desc = "POLITICS_JOSEPH_STALIN_DESC"
-	picture = "Portrait_Soviet_Joseph_Stalin.dds"
+	picture = "Portrait_Soviet_Joseph_Stalin.tga"
 	expire = "1965.1.1"
 	ideology = national_socialist_subtype
 	traits = {
@@ -60,7 +60,7 @@ create_country_leader = {
 
 create_field_marshal = {
 	name = "Mikhail Frunze"
-	picture = ""
+	picture = "Mikhail_Frunze.dds"
 	traits = { defensive_doctrine trait_cautious politically_connected }
 	skill = 4
 	attack_skill = 1
@@ -100,4 +100,15 @@ create_corps_commander = {
 	defense_skill = 3
 	planning_skill = 1
 	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Yosh Buxoroliklar"
+	picture = ""
+	traits = { defensive_doctrine cavalry_officer }
+	skill = 1
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
 }
