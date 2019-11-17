@@ -118,7 +118,7 @@ country_event = {
         SLV = {
             remove_ideas = {
                 extensive_conscription
-                austrian_civil_war
+                slovenian_uprising
                 }
             add_ideas = {   
             limited_conscription

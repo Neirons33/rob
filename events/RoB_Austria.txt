@@ -530,6 +530,7 @@ country_event = {
 		 add_ideas = {   
             limited_conscription
             }
+        set_country_flag = AUS_civil_war_ended
 	}}
 }
 }
