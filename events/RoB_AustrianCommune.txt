@@ -1,10 +1,10 @@
 add_namespace = Austrian_commune
 
-##Event: Austrian_commune_OOB
+##Event: rob_austrian_commune
 country_event = {
- id = Austrian_commune.1
- title = Austrian_commune.1.t
- desc = Austrian_commune.1.d
+ id = rob_austrian_commune.1
+ title = rob_austrian_commune.1.t
+ desc = rob_austrian_commune.1.d
  picture = GFX_report_event_french_resistance_02
  fire_only_once = yes
  trigger = {
@@ -12,7 +12,7 @@ country_event = {
 	tag = ACM
 	}
 	option = {
-		name = Austrian_commune.1.a
+		name = rob_austrian_commune.1.a
 		ai_chance = { factor = 1}
 		hidden_effect = { 
 			add_state_core = 807
@@ -40,37 +40,67 @@ country_event = {
 
 ### worker_volunteers
 country_event = {
- id = Austrian_commune.2
- title = Austrian_commune.2.t
- desc = Austrian_commune.2.d
+ id = rob_austrian_commune.2
+ title = rob_austrian_commune.2.t
+ desc = rob_austrian_commune.2.d
  picture = GFX_report_event_generic_read_write
  fire_only_once = yes
 	trigger = {
-		tag = ACM
-		has_war_with = THR
-		ACM = { surrender_progress > 0.4 }
 		OR = {
-		tag = ACM
-		has_war_with = AUS
-		ACM = { surrender_progress > 0.4 }
+			AND = {
+  				tag = ACM
+ 				 ACM = { surrender_progress > 0.2 } 
+ 				 has_war_with = THR
+ 				} 
+			AND = {
+ 				tag = ACM
+  				ACM = { surrender_progress > 0.2 } 
+  				has_war_with = AUS
+ 				} 
+			}
 		}
-}
+
 mean_time_to_happen = { days = 1}
 		option = {
-		name = Austrian_commune.2.a
+		name = rob_austrian_commune.2.a
 		ai_chance = { factor = 1}
 		hidden_effect = {
-		ACM = { load_oob = worker_volunteers }
-		 }}
-	}	
+		ACM = { load_oob = worker_volunteers }}
+		}
+}
 
-
+###Gunzzzz
+country_event = {
+ id = rob_austrian_commune.3
+ title = rob_austrian_commune.3.t
+ desc = rob_austrian_commune.3.d
+ picture = GFX_report_event_french_resistance_02
+ fire_only_once = yes
+ trigger = {
+    tag = ACM
+    ACM = {
+    has_war_with = AUS
+    }
+    mean_time_to_happen = { days = 3}
+    }
+    option = {
+    name = rob_austrian_commune.3a
+    ACM = {
+    add_equipment_to_stockpile = {
+    type = infantry_equipment
+    amount = 2000
+    producer = AUS
+                                }
+                                }
+    } 
+    
+ }	
 
 ###Civil War Ends
 country_event = {
- id = Austrian_commune.3
- title = Austrian_commune.3.t
- desc = Austrian_commune.3.d
+ id = rob_austrian_commune.4
+ title = rob_austrian_commune.4.t
+ desc = rob_austrian_commune.4.d
  picture = GFX_report_event_french_resistance_02
  fire_only_once = yes
  trigger = {
@@ -91,7 +121,7 @@ country_event = {
 	has_full_control_of_state = 1023
 	}
 	option = {
-		name = Austrian_commune.3.a
+		name = rob_austrian_commune.4.a
 		ai_chance = { factor = 1}
 		hidden_effect = {
 		ACM = {
@@ -113,4 +143,6 @@ country_event = {
 	}}
 }
 }
+
+}#end
 

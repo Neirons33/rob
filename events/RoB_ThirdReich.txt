@@ -46,24 +46,55 @@ country_event = {
  desc = third_reich.13.d
  picture = GFX_report_event_generic_read_write
  fire_only_once = yes
-	trigger = {
-		tag = THR
-		has_war_with = ACM
-		THR = { surrender_progress > 0.4 }
+ trigger = {
 		OR = {
-   		tag = THR
-		has_war_with = AUS
-		THR = { surrender_progress > 0.4 }
-}
-}
-mean_time_to_happen = { days = 1}
+			AND = {
+  				tag = THR
+  				THR = { surrender_progress > 0.2 } 
+  				has_war_with = ACM
+ 				} 
+			AND = {
+  				tag = THR
+ 				THR = { surrender_progress > 0.2 } 
+  				has_war_with = AUS
+ 				} 
+			}
+		}
+		mean_time_to_happen = { days = 1}
 		option = {
 		name = third_reich.13.a
 		ai_chance = { factor = 1}
 		hidden_effect = {
-		THR = { load_oob = youth_volunteers }
-		 }}
-	}	
+		THR = { load_oob = youth_volunteers }}
+		}
+}	
+
+###Gunzzzz
+country_event = {
+ id = third_reich.16
+ title = third_reich.16.t
+ desc = third_reich.16.d
+ picture = GFX_report_event_french_resistance_02
+ fire_only_once = yes
+ trigger = {
+    tag = THR
+    THR = {
+    has_war_with = AUS
+    }
+    mean_time_to_happen = { days = 3}
+    }
+    option = {
+    name = third_reich.16.a
+    THR = {
+    add_equipment_to_stockpile = {
+    type = infantry_equipment
+    amount = 2000
+    producer = AUS
+                                }
+                                }
+    } 
+    
+ }
 
 ###Do we give up?
 country_event = {
@@ -132,16 +163,14 @@ country_event = {
 	}
 }
 mean_time_to_happen = { days = 1}
-		option = {
-		name = third_reich.15.a
-		ai_chance = { factor = 1}
-		hidden_effect = {
-		remove_ideas{
-		 festung_bregenz 
-		}
-		 }
-		 }
-	}	
+	option = {
+			name = third_reich.15.a
+			ai_chance = { factor = 1}
+			hidden_effect = {
+			remove_ideas{
+		 	festung_bregenz }}
+		 	}
+}	
 
 
 ###Civil War Ends
@@ -169,35 +198,35 @@ country_event = {
 	has_full_control_of_state = 1023
 	}
 	option = {
-		name = third_reich.2.a
-		ai_chance = { factor = 1}
-		hidden_effect = {
-		THR = {
-		annex_country = {
-    	target = AUS
-    	transfer_troops = NO
-		}
-		annex_country = {
-    	target = ACM
-    	transfer_troops = NO
-		}
-		remove_ideas = {
-		austrian_civil_war
-		extensive_conscription
-		}
-		 add_ideas = {   
-            limited_conscription
-            }
-        set_country_flag = AUS_civil_war_ended
-	}}
+			name = third_reich.2.a
+			ai_chance = { factor = 1}
+			hidden_effect = {
+				THR = {
+				annex_country = {
+    			target = AUS
+    			transfer_troops = NO
+				}
+				annex_country = {
+    			target = ACM
+    			transfer_troops = NO
+				}
+				remove_ideas = {
+				austrian_civil_war
+				extensive_conscription
+				}
+				add_ideas = {   
+            	limited_conscription
+            	}
+        		set_country_flag = AUS_civil_war_ended
+					}}
 		country_event = {
 		    id = third_reich.3
 		    days = 1
 		    random = 1
-		}
+			}
 			
 		}
-	}
+}
 
 ###what to do with austro fascists
 country_event = {
