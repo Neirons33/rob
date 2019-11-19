@@ -1,4 +1,4 @@
-﻿capital = 46
+capital = 46
 
 oob = "ROM_1936"
 if = {
@@ -122,9 +122,6 @@ if = {
 	add_ideas = {
 		ROM_king_carol_ii_hedonist
 	}
-	give_guarantee = CZE
-	give_guarantee = GRE
-	give_guarantee = TUR
 }
 add_ideas = neutrality_idea
 

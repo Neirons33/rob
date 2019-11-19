@@ -1,9 +1,9 @@
-﻿capital = 48
+capital = 48
 
 oob = "BUL_1936"
 
 add_ideas = {
-	limited_conscription
+	extensive_conscription
 }
 
 set_technology = {
@@ -16,23 +16,23 @@ set_technology = {
 	fuel_silos = 1
 }
 
-set_convoys = 5
+set_convoys = 15
 
 set_politics = {
-	ruling_party = reactionary
+	ruling_party = authoritharian
 	last_election = "1933.7.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	national_socialist = 8
-	socialist = 21
-	democratic_socialist = 2
-	social_democracy = 5
-	social_liberal = 6
-	conservative = 6
-	authoritharian = 0
-	reactionary = 52
+	national_socialist = 0
+	socialist = 10
+	democratic_socialist = 0
+	social_democracy = 0
+	social_liberal = 0
+	conservative = 21
+	authoritharian = 22
+	reactionary = 47
 	pelekist = 0
 }
 
@@ -41,7 +41,18 @@ create_country_leader = {
 	desc = "POLITICS_BORIS_III_DESC"
 	picture = "rashko_atanasov.tga"
 	expire = "1965.1.1"
-	ideology = military_junta
+	ideology = authoritharian_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Boris III"
+	desc = "POLITICS_BORIS_III_DESC"
+	picture = "Portrait_Bulgaria_Boris_III.tga"
+	expire = "1965.1.1"
+	ideology = reactionary_subtype
 	traits = {
 		#
 	}
@@ -89,6 +100,28 @@ create_corps_commander = {
 	defense_skill = 3
 	planning_skill = 2
 	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Vladimir Stoychev"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+	traits = { cavalry_officer trait_reckless }
+	skill = 3
+	attack_skill = 5
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Kiril Stanchev"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+	traits = { infantry_officer }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 4
 }
 
 create_field_marshal = {
