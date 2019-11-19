@@ -1,6 +1,5 @@
 state={
 	id=1155
-	state_category = city
 	name="STATE_1155"
 	history={
 		owner = CAT
@@ -23,6 +22,7 @@ state={
 	provinces={
 		962 4098 9889 
 	}
-	manpower=0
+	manpower=485838
 	buildings_max_level_factor=1.000
+	state_category=rural
 }

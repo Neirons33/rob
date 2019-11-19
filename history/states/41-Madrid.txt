@@ -26,9 +26,9 @@ state={
 	}
 
 	provinces={
-		858 896 939 977 3794 3845 3858 3938 3986 6914 9767 11820 
+		896 977 3794 3858 3938 9767 
 	}
-	manpower=2269659
+	manpower=762401
 	buildings_max_level_factor=1.000
-	state_category=city
+	state_category=town
 }

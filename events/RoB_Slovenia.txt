@@ -114,7 +114,6 @@ country_event = {
         AUS = {  white_peace = SLV}
         ACM = {  white_peace = SLV}
         THR = {  white_peace = SLV}
-        }
         SLV = {
             remove_ideas = {
                 extensive_conscription
@@ -124,6 +123,7 @@ country_event = {
             limited_conscription
             }
             }
+        }
     }
 }
 }

@@ -1,10 +1,10 @@
 state={
-	id=1167
-	name="STATE_1167"
+	id=1161
+	name="STATE_1161"
 	history={
 		owner = SPR
 		buildings = {
-			infrastructure = 6
+			infrastructure = 5
 
 		}
 		add_core_of = SPR
@@ -12,8 +12,9 @@ state={
 	}
 
 	provinces={
-		885 903 9700 9872 11684 11852 11854 
+		915 9840 9842 11838 
 	}
-	manpower=1
+	manpower=172958
 	buildings_max_level_factor=1.000
+	state_category=pastoral
 }

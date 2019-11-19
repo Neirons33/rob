@@ -12,8 +12,9 @@ state={
 	}
 
 	provinces={
-		885 903 9700 9872 11684 11852 11854 
+		885 903 9700 9870 9872 11684 11852 11854 
 	}
-	manpower=1
+	manpower=462845
 	buildings_max_level_factor=1.000
+	state_category=rural
 }
