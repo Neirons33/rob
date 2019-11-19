@@ -11,6 +11,7 @@ id = bulgaria.100
 title = bulgaria.100.t
 desc = bulgaria.100.d
 fire_only_once = yes
+is_triggered_only = yes
 trigger = {
 tag = BUL
 SER = { has_war = yes }
@@ -353,5 +354,411 @@ add_political_power = -150
 
 }
 
+
+}
+
+# Plovdiv Pact
+
+country_event = {
+id = bulgaria.111
+title = bulgaria.111.t
+desc = bulgaria.111.d
+fire_only_once = yes
+is_triggered_only = yes
+trigger = {
+tag = TUR
+}
+picture = GFX_picture_bosnian_revolt
+option = {
+ name = bulgaria.111.a
+ai_chance = { factor = 90}
+
+BUL = { country_event = { id = bulgaria.112 days = 1 } }
+
+
+
+}
+
+option = {
+ name = bulgaria.111.b
+ai_chance = { factor = 10}
+
+BUL = { country_event = { id = bulgaria.113 days = 1 } }
+add_political_power = -50
+
+}
+}
+
+# Bulgaria Pact formed
+
+country_event = {
+id = bulgaria.112
+title = bulgaria.112.t
+desc = bulgaria.112.d
+fire_only_once = yes
+is_triggered_only = yes
+picture = GFX_picture_bosnian_revolt
+option = {
+ name = bulgaria.112.a
+create_faction = Plovdiv_Pact
+add_opinion_modifier = {
+    target = TUR
+    modifier = unstable_alliance
+}
+add_opinion_modifier = {
+    target = TUR
+    modifier = huge_increase
+}
+add_to_faction = TUR
+
+}
+
+
+}
+
+# Bulgaria no pact
+
+country_event = {
+id = bulgaria.113
+title = bulgaria.113.t
+desc = bulgaria.113.d
+fire_only_once = yes
+is_triggered_only = yes
+picture = GFX_picture_bosnian_revolt
+option = {
+ name = bulgaria.113.a
+
+add_political_power = -50
+add_opinion_modifier = {
+    target = TUR
+    modifier = medium_decrease
+}
+
+
+}
+
+
+}
+
+# Greek Ultimatum
+
+country_event = {
+id = bulgaria.114
+title = bulgaria.114.t
+desc = bulgaria.114.d
+fire_only_once = yes
+is_triggered_only = yes
+trigger = {
+tag = BUL
+}
+picture = GFX_picture_bosnian_revolt
+option = {
+ name = bulgaria.114.a
+ai_chance = { factor = 100}
+
+GRE = { country_event = { id = bulgaria.115 days = 1 } }
+
+
+
+}
+
+option = {
+ name = bulgaria.114.b
+ai_chance = { factor = 0}
+
+
+add_political_power = -250
+add_stability = -0.2
+add_war_support = -0.2
+
+
+}
+}
+
+# Greek Ultimatum 2
+
+country_event = {
+id = bulgaria.115
+title = bulgaria.115.t
+desc = bulgaria.115.d
+fire_only_once = yes
+is_triggered_only = yes
+trigger = {
+tag = GRE
+}
+picture = GFX_picture_bosnian_revolt
+option = {
+ name = bulgaria.114.a
+ai_chance = { factor = 90}
+
+BUL = { country_event = { id = bulgaria.116 days = 1 } }
+
+
+
+}
+
+option = {
+ name = bulgaria.114.b
+ai_chance = { factor = 10}
+
+
+add_political_power = -250
+add_stability = -0.2
+add_war_support = -0.2
+BUL = { country_event = { id = bulgaria.117 days = 1 } }
+
+
+}
+}
+
+# Greek Ultimatum Rejected
+
+country_event = {
+id = bulgaria.116
+title = bulgaria.116.t
+desc = bulgaria.116.d
+fire_only_once = yes
+is_triggered_only = yes
+trigger = {
+tag = BUL
+}
+picture = GFX_picture_bosnian_revolt
+option = {
+ name = bulgaria.116.a
+ai_chance = { factor = 95}
+declare_war_on = {
+    target = GRE
+    type = annex_everything
+}
+add_war_support = 0.1
+
+
+}
+
+option = {
+ name = bulgaria.116.b
+ai_chance = { factor = 5}
+
+
+add_political_power = -250
+add_stability = -0.2
+add_war_support = -0.2
+
+
+}
+}
+
+# Greek Ultimatum Accepted
+
+country_event = {
+id = bulgaria.117
+title = bulgaria.117.t
+desc = bulgaria.117.d
+fire_only_once = yes
+is_triggered_only = yes
+trigger = {
+tag = BUL
+}
+picture = GFX_picture_bosnian_revolt
+option = {
+ name = bulgaria.117.a
+ai_chance = { factor = 100}
+
+184 = { add_core_of = BUL }
+731 = { add_core_of = BUL }
+BUL = { transfer_state = 184 }
+BUL = { transfer_state = 731 }
+339 = { add_core_of = TUR }
+989 = { add_core_of = TUR }
+990 = { add_core_of = TUR }
+991 = { add_core_of = TUR }
+TUR = { transfer_state = 339 }
+TUR = { transfer_state = 989 }
+TUR = { transfer_state = 990 }
+TUR = { transfer_state = 991 }
+976 = { add_core_of = ALB }
+1013 = { add_core_of = ALB }
+ALB = { transfer_state = 976 }
+ALB = { transfer_state = 1013 }
+
+add_stability = 0.1
+
+
+}
+
+}
+
+# Revolt in Macedonia
+
+country_event = {
+id = bulgaria.118
+title = bulgaria.118.t
+desc = bulgaria.118.d
+fire_only_once = yes
+is_triggered_only = yes
+trigger = {
+tag = BUL
+}
+picture = GFX_picture_bosnian_revolt
+option = {
+ name = bulgaria.118.a
+ai_chance = { factor = 100}
+
+731 = { create_unit = {
+    division = "name = \"1st Macedonian Volunteers\" division_template = \"Pekhotna Divizija\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+    owner = BUL
+prioritize_location = 3936
+} }
+731 = { create_unit = {
+    division = "name = \"2nd Macedonian Volunteers\" division_template = \"Pekhotna Divizija\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+    owner = BUL
+prioritize_location = 3526
+} }
+
+add_manpower = 10000
+
+}
+
+}
+
+# Albanian Pact
+
+country_event = {
+id = bulgaria.119
+title = bulgaria.119.t
+desc = bulgaria.119.d
+fire_only_once = yes
+is_triggered_only = yes
+trigger = {
+tag = ALB
+}
+picture = GFX_picture_bosnian_revolt
+option = {
+ name = bulgaria.119.a
+ai_chance = { factor = 90}
+
+BUL = { country_event = { id = bulgaria.120 days = 1 } }
+
+
+
+}
+
+option = {
+ name = bulgaria.119.b
+ai_chance = { factor = 10}
+
+BUL = { country_event = { id = bulgaria.120 days = 1 } }
+add_political_power = -50
+
+}
+}
+
+# Albanian Pact formed
+
+country_event = {
+id = bulgaria.120
+title = bulgaria.120.t
+desc = bulgaria.120.d
+fire_only_once = yes
+is_triggered_only = yes
+picture = GFX_picture_bosnian_revolt
+option = {
+ name = bulgaria.120.a
+add_opinion_modifier = {
+    target = ALB
+    modifier = huge_increase
+}
+add_to_faction = ALB
+
+}
+
+
+}
+
+# Albanian no pact
+
+country_event = {
+id = bulgaria.121
+title = bulgaria.121.t
+desc = bulgaria.121.d
+fire_only_once = yes
+is_triggered_only = yes
+picture = GFX_picture_bosnian_revolt
+option = {
+ name = bulgaria.121.a
+
+add_political_power = -50
+add_opinion_modifier = {
+    target = ALB
+    modifier = medium_decrease
+}
+
+
+}
+
+
+}
+
+# Revolt in W Thrace
+
+country_event = {
+id = bulgaria.122
+title = bulgaria.122.t
+desc = bulgaria.122.d
+fire_only_once = yes
+is_triggered_only = yes
+trigger = {
+tag = BUL
+}
+picture = GFX_picture_bosnian_revolt
+option = {
+ name = bulgaria.122.a
+ai_chance = { factor = 100}
+
+184 = { create_unit = {
+    division = "name = \"1st Thracian Volunteers\" division_template = \"Pekhotna Divizija\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+    owner = BUL
+prioritize_location = 11905
+} }
+184 = { create_unit = {
+    division = "name = \"2nd Thracian Volunteers\" division_template = \"Pekhotna Divizija\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+    owner = BUL
+prioritize_location = 13305
+} }
+
+add_manpower = 10000
+
+}
+
+}
+
+# Men in Albania
+
+country_event = {
+id = bulgaria.123
+title = bulgaria.123.t
+desc = bulgaria.123.d
+fire_only_once = yes
+is_triggered_only = yes
+trigger = {
+tag = BUL
+}
+picture = GFX_picture_bosnian_revolt
+option = {
+ name = bulgaria.123.a
+ai_chance = { factor = 100}
+
+44 = { create_unit = {
+    division = "name = \"1st Albanian-Bulgarian Division\" division_template = \"Pekhotna Divizija\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+    owner = BUL
+} }
+44\ = { create_unit = {
+    division = "name = \"2nd Albanian-Bulgarian Volunteers\" division_template = \"Pekhotna Divizija\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+    owner = BUL
+} }
+
+add_manpower = -10000
+
+}
 
 }
