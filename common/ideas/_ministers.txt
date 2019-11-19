@@ -1,0 +1,362 @@
+ideas = {
+ 
+ #########################
+ ###Ministers
+ #########################
+ head_of_government = {
+ 
+ #########################
+ ###Prussia
+ #########################
+  PRS_hindenburg_hog = {
+   allowed = { original_tag = PRS }
+   available = { 
+   custom_trigger_tooltip = { 
+    tooltip = replace_hog 
+    has_country_flag = can_replace_head_of_government 
+	}
+	}
+   traits = {
+    reactionary_min
+    head_of_government
+    hog_old_guard
+   }   
+  }
+  PRS_otto_braun_hog = {
+   allowed = { original_tag = PRS }
+   available = { 
+   custom_trigger_tooltip = { 
+    tooltip = replace_hog 
+    has_country_flag = can_replace_head_of_government 
+	}
+	}
+   traits = {
+    social_democracy_min
+    head_of_government
+    hog_agrarian
+   }   
+  }
+ }
+ interior_minister = {
+ #######################
+ ###Prussia
+ #######################
+  PRS_erich_kochweser_im = {
+   allowed = { original_tag = PRS }
+   available = { 
+   custom_trigger_tooltip = { 
+    tooltip = minister_available 
+    DEMOCRATIC_ALIGNED_GOVERNMENT = yes 
+	}
+	}
+   traits = {
+    social_liberal_min
+    interior_minister
+    im_capitalist
+    }   
+   }
+ 
+  PRS_arthur_crispien_im = {
+   allowed = { original_tag = PRS }
+   available = { 
+   custom_trigger_tooltip = { 
+    tooltip = minister_available 
+    DEMOCRATIC_ALIGNED_GOVERNMENT = yes 
+	}
+	}
+   traits = {
+    social_democracy_min
+    interior_minister
+    im_progressive
+    }   
+   }
+ 
+   PRS_oskar_hergt_im = {
+   allowed = { original_tag = PRS }
+   available = { 
+   custom_trigger_tooltip = { 
+    tooltip = minister_available 
+    DEMOCRATIC_ALIGNED_GOVERNMENT = yes 
+	}
+	}
+   traits = {
+    conservative_min
+    interior_minister
+    im_inexperienced_buercrat
+    }   
+   }
+   
+   PRS_franz_halder_im = {
+   allowed = { original_tag = PRS }
+   available = { 
+   custom_trigger_tooltip = { 
+    tooltip = minister_available 
+    ANTI_LIBERAL_ALIGNED_GOVERNMENT = yes 
+	}
+	}
+   traits = {
+    reactionary_min
+    interior_minister
+    im_militarist
+    }   
+   }
+   
+   PRS_vydūnas_im = {
+   allowed = { original_tag = PRS }
+   available = { 
+   custom_trigger_tooltip = { 
+    tooltip = minister_available 
+    has_government = pelekist 
+	}
+	}
+   traits = {
+    pelekist_min
+    interior_minister
+    im_feudalist
+    }   
+   }
+   
+   PRS_hans_frank_im = {
+   allowed = { original_tag = PRS }
+   available = { 
+   custom_trigger_tooltip = { 
+    tooltip = minister_available 
+    has_government = pelekist 
+	}
+	}
+   traits = {
+    pelekist_min
+    interior_minister
+    im_harsh_tyrannt
+    }   
+   }
+   
+   PRS_vilius_gaigalaitis_im = {
+   allowed = { original_tag = PRS }
+   available = { 
+   custom_trigger_tooltip = { 
+    tooltip = minister_available 
+    has_government = pelekist 
+	}
+	}
+   traits = {
+    pelekist_min
+    interior_minister
+    im_efficent_planner
+    }   
+   }
+  }
+  
+  foreign_minister = {
+
+  #######################
+  ###Prussia
+  #######################
+   PRS_viktoras_gailius_im = {
+   allowed = { original_tag = PRS }
+   available = { 
+   custom_trigger_tooltip = { 
+    tooltip = minister_available 
+    has_government = pelekist 
+	}
+	}
+   traits = {
+    pelekist_min
+    foreign_minister
+    fm_realpolitik
+    }   
+   }
+
+   PRS_konrad_hallgren_im = {
+   allowed = { original_tag = PRS }
+   available = { 
+   custom_trigger_tooltip = { 
+    tooltip = minister_available 
+    has_government = pelekist 
+	}
+	}
+   traits = {
+    pelekist_min
+    foreign_minister
+    fm_imperialist
+    }   
+   }    
+ 
+   PRS_max_erwin_von_scheubner_richter_im = {
+   allowed = { original_tag = PRS }
+   available = { 
+   custom_trigger_tooltip = { 
+    tooltip = minister_available 
+    has_government = pelekist 
+	}
+	}
+   traits = {
+    pelekist_min
+    foreign_minister
+    fm_imperialist
+    }   
+   }
+   
+   PRS_theodor_duesterberg_im = {
+   allowed = { original_tag = PRS }
+   available = { 
+   custom_trigger_tooltip = { 
+    tooltip = minister_available 
+    OR = {
+	has_government = reactionary
+	has_government = conservative
+	has_government = authoritharian
+	}
+	}
+   traits = {
+    reactionary_min
+    foreign_minister
+    fm_imperialist
+    }   
+   }
+  }
+  
+   PRS_ulrich_von_hassell_im = {
+   allowed = { original_tag = PRS }
+   available = { 
+   custom_trigger_tooltip = { 
+    tooltip = minister_available 
+    DEMOCRATIC_ALIGNED_GOVERNMENT = yes 
+	}
+   traits = {
+    conservative_min
+    foreign_minister
+    fm_imperialist
+    }   
+   }
+  }
+
+   PRS_ulrich_von_hassell_im = {
+   allowed = { original_tag = PRS }
+   available = { 
+   custom_trigger_tooltip = { 
+    tooltip = minister_available 
+    DEMOCRATIC_ALIGNED_GOVERNMENT = yes 
+	}
+   traits = {
+    social_liberal_min
+    foreign_minister
+    fm_realpolitik
+    }   
+   }
+  }
+  
+   PRS_hermann_muller_im = {
+   allowed = { original_tag = PRS }
+   available = { 
+   custom_trigger_tooltip = { 
+    tooltip = minister_available 
+    DEMOCRATIC_ALIGNED_GOVERNMENT = yes 
+	}
+   traits = {
+    social_democracy_min
+    foreign_minister
+    fm_neutral_bystander
+    }   
+   }
+  }
+ }
+ 
+ economy_minister = {
+ 
+  PRS_hans_staudinger_im = {
+   allowed = { original_tag = PRS }
+   available = { 
+   custom_trigger_tooltip = { 
+    tooltip = minister_available 
+    DEMOCRATIC_ALIGNED_GOVERNMENT = yes 
+	}
+   traits = {
+    social_democracy_min
+    economy_minister
+    em_welfare_supporter
+    }   
+   }
+  }
+ 
+  PRS_hjalmar_schacht_im = {
+   allowed = { original_tag = PRS }
+   available = { 
+   custom_trigger_tooltip = { 
+    tooltip = minister_available 
+    DEMOCRATIC_ALIGNED_GOVERNMENT = yes 
+	}
+   traits = {
+    social_liberal_min
+    economy_minister
+    em_laissez_faire
+    }   
+   }
+  }
+ 
+  PRS_johannes_popitz_im = {
+   allowed = { original_tag = PRS }
+   available = { 
+   custom_trigger_tooltip = { 
+    tooltip = minister_available 
+    DEMOCRATIC_ALIGNED_GOVERNMENT = yes 
+	}
+   traits = {
+    conservative_min
+    economy_minister
+    em_robber_baron
+    }   
+   }
+  }
+  
+  PRS_richard_walther_darre_im = {
+   allowed = { original_tag = PRS }
+   available = { 
+   custom_trigger_tooltip = { 
+    tooltip = minister_available 
+    has_government = pelekist 
+	}
+   traits = {
+    pelekist_min
+    economy_minister
+    em_pelekist_economist
+    }   
+   }
+  }
+  
+  PRS_vilhelms_kuze_im = {
+   allowed = { original_tag = PRS }
+   available = { 
+   custom_trigger_tooltip = { 
+    tooltip = minister_available 
+    has_government = pelekist 
+	}
+   traits = {
+    pelekist_min
+    economy_minister
+    em_feudalist
+    }   
+   }
+  }
+  
+  PRS_franz_seldte_im = {
+   allowed = { original_tag = PRS }
+   available = { 
+   custom_trigger_tooltip = { 
+    tooltip = minister_available 
+    OR = {
+     has_government = authoritharian
+	 has_government = reactionary
+    }	
+	}
+	}
+   traits = {
+    reactionary_min
+    economy_minister
+    em_corporatist
+    }   
+   }
+  }
+ }
+ 
+ 

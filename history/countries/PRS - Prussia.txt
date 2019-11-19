@@ -64,6 +64,8 @@ prussian_high_command
 limited_conscription
 isolation
 the_great_depression
+PRS_hindenburg_hog
+PRS_erich_kochweser_im
 }
 
 create_country_leader = {

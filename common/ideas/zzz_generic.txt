@@ -1,6 +1,0 @@
-ideas = {
-
-	hidden_ideas = {
-
-
-}

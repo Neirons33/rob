@@ -1,4 +1,9 @@
 ideas = {
+ 
+ 
+ #######################
+ ###National Spirits
+ #######################
  country = {
  
  minority_troubles = {

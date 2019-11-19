@@ -2,7 +2,10 @@ focus_tree = {
 	id = german_focus_no_coallition
 		country = {
 		factor = 0
-
+        modifier = {
+			add = 1000
+			tag = SWI
+		}
 	}
 
 	continuous_focus_position = { x = 50 y = 3000 }

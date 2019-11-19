@@ -17,3 +17,9 @@
  SOV_reform_red_guard:0 "We've Decided To Reform Red Guard"
  SOV_shaposhnikovs_plan:0 "Plan By Shaposhnikov Has Been Accepted"
  
+ 
+ 
+ ###Scripted Triggers
+ minister_available:0 "Minister Available For This Government Type"
+ democratic_aligned_government:0 "Government is Democratic Aligned"
+ replace_hog:0 "Can't Replace Head of Government"
