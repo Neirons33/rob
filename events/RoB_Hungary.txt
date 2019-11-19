@@ -14,7 +14,8 @@ picture = GFX_picture_bosnian_revolt
 is_triggered_only = yes
 option = {
  name = hungary.5.a
-
+ drop_cosmetic_tag = yes
+ ROM = { end_puppet = HUN }
  remove_ideas = {
  occupied_country
  }

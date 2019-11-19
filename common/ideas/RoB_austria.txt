@@ -117,6 +117,48 @@ ideas = {
 			}
 		}	
 
+		austrian_bad_econ_1 = {
+            picture = GFX_idea_austrian_bad_econ		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.20
+				production_factory_max_efficiency_factor = -0.10
+				production_speed_buildings_factor = -0.10
+				consumer_goods_factor = 0.075
+				min_export = -0.15
+				conversion_cost_mil_to_civ_factor = 0.25
+			}
+		}	
+		austrian_bad_econ_2 = {
+            picture = GFX_idea_austrian_bad_econ		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.10
+				production_factory_max_efficiency_factor = -0.05
+				production_speed_buildings_factor = -0.05
+				consumer_goods_factor = 0.05
+			}
+		}	
+	
+
 		slovenian_autonomy = {
         picture = GFX_idea_minority_troubles	
 			allowed = {
@@ -154,4 +196,57 @@ ideas = {
 		army_core_attack_factor = 0.3
 		army_core_defence_factor = 0.3
 			}
+		}
+
+
+		rebuilding_cities = {
+        picture = GFX_idea_minority_troubles	
+			allowed = {
+			always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			production_speed_buildings_factor = 0.1
+			}
+		}
+
+		trust_gov = {
+        picture = GFX_idea_minority_troubles	
+			allowed = {
+			always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			political_power_gain = 0.10
+			}
+		}
+
+		healthcare = {
+        picture = GFX_idea_minority_troubles	
+			allowed = {
+			always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			conscription_factor = 0.025
+			}
+		}
 }

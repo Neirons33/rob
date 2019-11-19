@@ -10,6 +10,7 @@ state={
 			12507 1 
 		}
 		add_core_of = MON
+		add_core_of = FER
 	}
 	provinces={
 		7860 12507 

@@ -13,8 +13,7 @@ set_technology = {
 }
 add_ideas = {
 extensive_conscription
-austrian_civil_war
-austrian_bad_econ
+slovenian_uprising
 }
 
 set_politics = {

@@ -465,10 +465,6 @@ trigger = {
 has_country_flag = ENG_conservatives_independant
 }
 hidden_effect = {
-BRU = { load_oob = "BRU_1934" }
-BLF = { load_oob = "BLF_1934" }
-BRC = { load_oob = "BRC_1934" }
-BRL = { load_oob = "BRL_1934" }
 set_cosmetic_tag = ENG_navy
 ENG = {
 create_country_leader = {
@@ -697,6 +693,10 @@ BRU = { transfer_state = 1044 }
 1045 = { add_core_of = BRU }
 1053 = { add_core_of = BRU }
 1044 = { add_core_of = BRU }
+BRU = { load_oob = "BRU_1934" }
+BLF = { load_oob = "BLF_1934" }
+BRC = { load_oob = "BRC_1934" }
+BRL = { load_oob = "BRL_1934" }
 RAJ = { 
  country_event = {
     id = raj.100
@@ -721,10 +721,6 @@ trigger = {
 has_country_flag = ENG_conservatives_absorbed
 }
 hidden_effect = {
-BRU = { load_oob = "BRU_1934" }
-BLF = { load_oob = "BLF_1934" }
-BRC = { load_oob = "BRC_1934" }
-BRL = { load_oob = "BRL_1934" }
 set_cosmetic_tag = ENG_navy
 ENG = {
 create_country_leader = {
@@ -953,6 +949,10 @@ BRU = { transfer_state = 1044 }
 1045 = { add_core_of = BRU }
 1053 = { add_core_of = BRU }
 1044 = { add_core_of = BRU }
+BRU = { load_oob = "BRU_1934" }
+BLF = { load_oob = "BLF_1934" }
+BRC = { load_oob = "BRC_1934" }
+BRL = { load_oob = "BRL_1934" }
 RAJ = {
  country_event = {
     id = raj.100
