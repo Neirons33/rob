@@ -600,5 +600,9 @@ spriteTypes = {
 		allwaystransparent = yes
 		effectFile = "gfx/FX/buttonstate_blendframes.lua"
 	}
-	
+	spriteType = {
+		name = "GFX_economy_button"
+		textureFile = "gfx/interface/economy_button.dds"
+		noOfFrames = 4
+	}
 }
