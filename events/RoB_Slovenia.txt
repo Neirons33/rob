@@ -15,11 +15,9 @@ country_event = {
  fire_only_once = yes
  trigger = {
     tag = SLV
-    SLV = {
-    has_war_with = AUS
+    SLV = { has_war_with = AUS }
     }
     mean_time_to_happen = { days = 3}
-    }
     option = {
     name = rob_slovenia.1.a
     SLV = {
@@ -45,7 +43,7 @@ country_event = {
     has_war_with = AUS
     has_full_control_of_state = 1219 }
     }
-
+    mean_time_to_happen = { days = 1}
     option = {
         name = rob_slovenia.2.a
         SLV = {
@@ -67,9 +65,9 @@ country_event = {
     tag = SLV
     SLV = {
     has_war_with = AUS
-    has_full_control_of_state = 934 }
+    controls_state = 934 }
     }
-
+    mean_time_to_happen = { days = 1}
     option = {
         name = rob_slovenia.3.a
         SLV = {
@@ -91,18 +89,25 @@ country_event = {
     fire_only_once = yes
 
     trigger = {
+    OR = {
+    AND = {
+        tag = SLV
+        has_war_with = AUS
+        SLV = {
+        has_full_control_of_state = 934
+        has_full_control_of_state = 1127
+        has_full_control_of_state = 1128
+        has_full_control_of_state = 1219
+            }
+        } 
+    AND = {
     tag = SLV
     has_war_with = AUS
-    AUS = { surrender_progress > 0.4 }
-    SLV = {
-    has_full_control_of_state = 934
-    has_full_control_of_state = 1127
-    has_full_control_of_state = 1128
+    AUS = { surrender_progress > 0.6 } 
+        } 
     }
-        mean_time_to_happen = { days = 7}
-    }
-
-
+}
+    mean_time_to_happen = { days = 3}
     #take their shit and leave
     option = {
         name = rob_slovenia.4.a
@@ -126,6 +131,6 @@ country_event = {
         }
     }
 }
-}
+}###END
 
 

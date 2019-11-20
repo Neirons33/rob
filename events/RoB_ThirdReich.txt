@@ -50,12 +50,12 @@ country_event = {
 		OR = {
 			AND = {
   				tag = THR
-  				THR = { surrender_progress > 0.2 } 
+  				THR = { surrender_progress > 0.3 } 
   				has_war_with = ACM
  				} 
 			AND = {
   				tag = THR
- 				THR = { surrender_progress > 0.2 } 
+ 				THR = { surrender_progress > 0.3 } 
   				has_war_with = AUS
  				} 
 			}
@@ -96,6 +96,23 @@ country_event = {
     
  }
 
+###Shall we fuck Slovenia as well?
+country_event = {
+ id = third_reich.17
+ title = third_reich.17.t
+ desc = third_reich.17.d
+ picture = GFX_report_event_french_resistance_02
+ is_triggered_only = yes
+    option = {
+    name = third_reich.17.a
+    ai_chance = { factor = 4}
+    THR = { declare_war_on = { target = SLV  type = annex_everything } }
+    } 
+    option = {
+    name = third_reich.17.b
+    ai_chance = { factor = 6}
+    }
+ }
 ###Do we give up?
 country_event = {
  id = third_reich.14

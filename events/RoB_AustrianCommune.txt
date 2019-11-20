@@ -1,4 +1,4 @@
-add_namespace = Austrian_commune
+add_namespace = rob_austrian_commune
 
 ##Event: rob_austrian_commune
 country_event = {
@@ -49,12 +49,12 @@ country_event = {
 		OR = {
 			AND = {
   				tag = ACM
- 				 ACM = { surrender_progress > 0.2 } 
+ 				 ACM = { surrender_progress > 0.3 } 
  				 has_war_with = THR
  				} 
 			AND = {
  				tag = ACM
-  				ACM = { surrender_progress > 0.2 } 
+  				ACM = { surrender_progress > 0.3 } 
   				has_war_with = AUS
  				} 
 			}
@@ -96,11 +96,33 @@ country_event = {
     
  }	
 
-###Civil War Ends
+###Shall we fuck Slovenia as well?
 country_event = {
  id = rob_austrian_commune.4
  title = rob_austrian_commune.4.t
  desc = rob_austrian_commune.4.d
+ picture = GFX_report_event_french_resistance_02
+ fire_only_once = yes
+ is_triggered_only = yes
+
+    ###yes
+    option = {
+    name = rob_austrian_commune.4.a
+    ai_chance = { factor = 4}
+    ACM = { declare_war_on = { target = SLV  type = annex_everything } }
+    } 
+    ###later
+    option = {
+    ai_chance = { factor = 6}
+    name = rob_austrian_commune.4.b
+    } 
+    
+ }	
+###Civil War Ends
+country_event = {
+ id = rob_austrian_commune.5
+ title = rob_austrian_commune.5.t
+ desc = rob_austrian_commune.5.d
  picture = GFX_report_event_french_resistance_02
  fire_only_once = yes
  trigger = {
@@ -121,7 +143,7 @@ country_event = {
 	has_full_control_of_state = 1023
 	}
 	option = {
-		name = rob_austrian_commune.4.a
+		name = rob_austrian_commune.5.a
 		ai_chance = { factor = 1}
 		hidden_effect = {
 		ACM = {

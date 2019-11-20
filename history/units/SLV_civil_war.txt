@@ -40,8 +40,8 @@ units = {
 		}
 		location = 13537 # next to Ljubljana
 		division_template = "Volunteers"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.4
 	}
 
 

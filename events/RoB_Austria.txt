@@ -290,12 +290,12 @@ country_event = {
 		OR = {
 			AND = {
   				tag = AUS
-  				AUS = { surrender_progress > 0.2 } 
+  				AUS = { surrender_progress > 0.3 } 
   				has_war_with = ACM
  				} 
 			AND = {
   				tag = AUS
-  				AUS = { surrender_progress > 0.2 } 
+  				AUS = { surrender_progress > 0.3 } 
   				has_war_with = THR
  				} 
 			}
@@ -383,8 +383,6 @@ country_event = {
 		hidden_effect = { 	
 		SLV = { transfer_state = 1128 }	
 		SLV = { declare_war_on = { target = AUS  type = annex_everything } }
-		SLV = { declare_war_on = { target = THR  type = annex_everything } }
-		SLV = { declare_war_on = { target = ACM  type = annex_everything } }
         SLV = { load_oob = SLV_civil_war }
         AUS = {
         remove_state_core = 934
@@ -416,6 +414,12 @@ country_event = {
         add_claim_by = ACM
         add_claim_by = AUS
 			}
+	    THR = {
+	    country_event = {  id = third_reich.17 days = 3}
+	    }
+	    ACM = {
+	    country_event = { id = rob_austrian_commune.4 days = 3 } 
+		}
 		}
         }
 		

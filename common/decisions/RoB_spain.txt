@@ -130,13 +130,19 @@ SPR_spanish_revanschism = {
    NOT = {
    is_in_faction_with = CAT
    is_puppet = yes
+        }
   }
   complete_effect = {
-   every_state = {
-    limit = { is_core_of = CAT }
-	add_core_of = SPR
-}
-   every_country = {
+   165 = { add_core_of = SPR }
+   167 = { add_core_of = SPR }
+   177 = { add_core_of = SPR }
+   1151 = { add_core_of = SPR }
+   1152 = { add_core_of = SPR }
+   1153 = { add_core_of = SPR }
+   1154 = { add_core_of = SPR }
+   1155 = { add_core_of = SPR }
+  
+  every_country = {
 	limit = { controls_state = 165 }
 	SPR = { 
 		create_wargoal = {
@@ -146,5 +152,5 @@ SPR_spanish_revanschism = {
 	}
 }
   }
- }
+ 
 }

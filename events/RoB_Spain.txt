@@ -196,6 +196,7 @@ country_event = {
    SPR = { white_peace = POR }
    add_stability =-0.05
    SPR = { transfer_state = 171 }
+   SPR = { transfer_state = 178 }
    SPR = { transfer_state = 1162 }
    SPR = { transfer_state = 178 }
    SPR = { transfer_state = 697 }
