@@ -700,6 +700,14 @@ JOB = {
     color = rgb { 214 188 124 }
 	color_ui = rgb { 214 188 124 }
 }
+AGR = {
+    color = rgb { 36 60 128 }
+	color_ui = rgb { 36 60 128 }
+}
+KAR = {
+    color = rgb { 125 65 69 }
+	color_ui = rgb { 125 65 69 }
+}
 CHE = {
     color = rgb { 71 171 14 }
 	color_ui = rgb { 71 171 14 }

@@ -18,7 +18,6 @@ SAX = "countries/Saxony.txt"
 DAN = "countries/Danzig.txt"
 FLA = "countries/Flanders.txt"
 WLL = "countries/Wallonia.txt"
-KAR = "countries/Karelia.txt"
 BGN = "countries/Burgundy.txt"
 RHN = "countries/Rhineland.txt"
 BRT = "countries/Brittany.txt"
@@ -79,7 +78,8 @@ BWR = "countries/Barnaul.txt"
 JOB = "countries/Jewish Oblast.txt"
 IRK = "countries/Irkutsk.txt"
 SFS = "countries/Sretensk Free State.txt"
-
+AGR = "countries/Avant Garde Russia.txt"
+KAR = "countries/Karels Regiment.txt"
 
 ##European Russia##
 RDR = "countries/Russian Democratic Republic.txt"

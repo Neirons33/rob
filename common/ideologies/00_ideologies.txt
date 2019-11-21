@@ -18,7 +18,7 @@ national_socialist = {
 			can_send_volunteers = yes
 			can_puppet = no
 			can_join_factions = no
-			can_leave_factions = no
+			
 			can_create_factions = no
 			can_lower_tension = no
 			can_only_justify_war_on_threat_country = no
@@ -54,7 +54,7 @@ rules = {
 			can_force_government = no
 			can_send_volunteers = yes
 			can_puppet = no
-			can_leave_factions = no
+			
 			can_join_factions = no
 			can_create_factions = no
 			can_lower_tension = no
@@ -90,7 +90,7 @@ democratic_socialist = {
 			can_force_government = no
 			can_send_volunteers = yes
 			can_puppet = no
-			can_leave_factions = no
+			
 			can_join_factions = no
 			can_create_factions = no
 			can_lower_tension = no
@@ -121,7 +121,7 @@ social_democracy = {
 			can_force_government = no
 			can_send_volunteers = yes
 			can_puppet = no
-			can_leave_factions = no
+			
 			can_join_factions = no
 			can_create_factions = no
 			can_lower_tension = no
@@ -153,7 +153,7 @@ social_liberal = {
 			can_force_government = no
 			can_send_volunteers = yes
 			can_puppet = no
-			can_leave_factions = no
+			
 			can_join_factions = no
 			can_create_factions = no
 			can_lower_tension = no
@@ -186,7 +186,7 @@ conservative = {
 			can_force_government = no
 			can_send_volunteers = yes
 			can_puppet = no
-			can_leave_factions = no
+			
 			can_join_factions = no
 			can_create_factions = no
 			can_lower_tension = no
@@ -220,7 +220,7 @@ authoritharian = {
 			can_force_government = no
 			can_send_volunteers = yes
 			can_puppet = no
-			can_leave_factions = no
+			
 			can_join_factions = no
 			can_create_factions = no
 			can_lower_tension = no
@@ -251,7 +251,7 @@ reactionary = {
 			can_force_government = no
 			can_send_volunteers = yes
 			can_puppet = no
-			can_leave_factions = no
+			
 			can_join_factions = no
 			can_create_factions = no
 			can_lower_tension = no
@@ -287,7 +287,7 @@ pelekist = {
 			can_force_government = no
 			can_send_volunteers = yes
 			can_puppet = no
-			can_leave_factions = no
+			
 			can_join_factions = no
 			can_create_factions = no
 			can_lower_tension = no
