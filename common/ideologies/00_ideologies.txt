@@ -32,7 +32,7 @@ national_socialist = {
 			
 		}
  
- color = { 61 5 10 }
+ color = { 102 6 15 }
  ai_fascist = yes
 }
 
