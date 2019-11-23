@@ -66,6 +66,9 @@ isolation
 the_great_depression
 PRS_hindenburg_hog
 PRS_erich_kochweser_im
+PRS_theodor_duesterberg_fm
+PRS_hjalmar_schacht_em
+PRS_otto_gessler_dm
 }
 
 create_country_leader = {

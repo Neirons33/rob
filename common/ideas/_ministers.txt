@@ -9,12 +9,15 @@ ideas = {
      available = { 
      custom_trigger_tooltip = { 
       tooltip = replace_hog 
-      has_country_flag = can_replace_head_of_government 
+      has_country_flag = can_replace_head_of_government
+      NOT = {
+       has_country_flag = PRS_hindenburg_dead
+      }	  
   	 }
   	}
      traits = {
-      reactionary_min
-      head_of_government
+      authoritharian_min
+      goverment_head
       hog_old_guard
      }   
     }
@@ -28,7 +31,81 @@ ideas = {
   	}
      traits = {
       social_democracy_min
-      head_of_government
+      goverment_head
+      hog_agrarian
+     }   
+    }
+    PRS_alfred_hugenberg_hog = {
+     allowed = { original_tag = PRS }
+     available = { 
+     custom_trigger_tooltip = { 
+      tooltip = replace_hog 
+      has_country_flag = can_replace_head_of_government 
+  	 }
+  	}
+     traits = {
+      conservative_min
+      goverment_head
+      hog_reactionary
+     }   
+    }
+	
+    PRS_ernst_junger_hog = {
+     allowed = { original_tag = PRS }
+     available = { 
+     custom_trigger_tooltip = { 
+      tooltip = replace_hog 
+      has_country_flag = can_replace_head_of_government 
+  	 }
+  	}
+     traits = {
+      reactionary_min
+      goverment_head
+      hog_war_hero
+     }   
+    }
+	
+    PRS_alfred_rosenberg_hog = {
+     allowed = { original_tag = PRS }
+     available = { 
+     custom_trigger_tooltip = { 
+      tooltip = replace_hog 
+      has_country_flag = can_replace_head_of_government 
+  	 }
+  	}
+     traits = {
+      pelekist_min
+      goverment_head
+      hog_pelekist
+     }   
+    }
+	
+    PRS_rudolf_hess_hog = {
+     allowed = { original_tag = PRS }
+     available = { 
+     custom_trigger_tooltip = { 
+      tooltip = replace_hog 
+      has_country_flag = can_replace_head_of_government 
+  	 }
+  	}
+     traits = {
+      pelekist_min
+      goverment_head
+      hog_pelekist
+     }   
+    }
+	
+    PRS_vydunas_hog = {
+     allowed = { original_tag = PRS }
+     available = { 
+     custom_trigger_tooltip = { 
+      tooltip = replace_hog 
+      has_country_flag = can_replace_head_of_government 
+  	 }
+  	}
+     traits = {
+      pelekist_min
+      goverment_head
       hog_agrarian
      }   
     }
@@ -359,6 +436,128 @@ ideas = {
     reactionary_min
     economy_minister
     em_corporatist
+    }   
+   }
+  }
+  
+  defense_minister = {
+  ######################
+  #Prussia
+  ######################
+  
+   PRS_kurt_schumacher_dm = {
+   allowed = { original_tag = PRS }
+   available = { 
+   custom_trigger_tooltip = { 
+    tooltip = minister_available 
+    DEMOCRATIC_ALIGNED_GOVERNMENT = yes	
+	}
+	}
+	
+   traits = {
+    social_democracy_min
+    defense_minister
+    dm_civilian_administator
+    }   
+   }
+   
+   PRS_otto_gessler_dm = {
+   allowed = { original_tag = PRS }
+   available = { 
+   custom_trigger_tooltip = { 
+    tooltip = minister_available 
+    DEMOCRATIC_ALIGNED_GOVERNMENT = yes	
+	}
+	}
+	
+   traits = {
+    social_democracy_min
+    defense_minister
+    dm_inept_administator
+    }   
+   }
+  
+   PRS_gustav_ritter_von_kahr_dm = {
+   allowed = { original_tag = PRS }
+   available = { 
+   custom_trigger_tooltip = { 
+    tooltip = minister_available 
+    DEMOCRATIC_ALIGNED_GOVERNMENT = yes	
+	}
+	}
+	
+   traits = {
+    authoritharian_min
+    defense_minister
+    dm_mass_conscription_supporter
+    }   
+   }
+  
+   PRS_fedor_von_bock_dm = {
+   allowed = { original_tag = PRS }
+   available = { 
+   custom_trigger_tooltip = { 
+    tooltip = minister_available 
+    OR = {
+	DEMOCRATIC_ALIGNED_GOVERNMENT = yes	
+	has_government = reactionary
+	}
+	}
+	}
+	
+   traits = {
+    reactionary_min
+    defense_minister
+    dm_experienced_soldier
+    }   
+   }
+  
+   
+   PRS_rudolf_hess_dm = {
+   allowed = { original_tag = PRS }
+   available = { 
+   custom_trigger_tooltip = { 
+    tooltip = minister_available 
+	has_government = pelekist
+	}
+	}
+	
+   traits = {
+    pelekist_min
+    defense_minister
+    dm_militarist
+    }   
+   }
+   
+   PRS_reinhard_heydrich_dm = {
+   allowed = { original_tag = PRS }
+   available = { 
+   custom_trigger_tooltip = { 
+    tooltip = minister_available 
+	has_government = pelekist
+	}
+	}
+	
+   traits = {
+    pelekist_min
+    defense_minister
+    dm_elitist
+    }   
+   }
+   
+   PRS_zygfrydas_milius_dm = {
+   allowed = { original_tag = PRS }
+   available = { 
+   custom_trigger_tooltip = { 
+    tooltip = minister_available 
+	has_government = pelekist
+	}
+	}
+	
+   traits = {
+    pelekist_min
+    defense_minister
+    dm_elitist
     }   
    }
   }

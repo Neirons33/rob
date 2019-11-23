@@ -742,6 +742,11 @@
  ###Prussia
  PRS_hindenburg_hog:0 "Paul von Hindenburg"
  PRS_otto_braun_hog:0 "Otto Braun"
+ PRS_alfred_hugenberg_hog:0 "Alfred Hugenberg"
+ PRS_ernst_junger_hog:0 "Ernst Jünger  "
+ PRS_alfred_rosenberg_hog:0 "Alfred Rosenberg"
+ PRS_rudolf_hess_hog:0 "Rudolf Hess"
+ PRS_vydunas_hog:0 "Vydūnas"
  PRS_erich_kochweser_im:0 "Erich Kochweser"
  PRS_arthur_crispien_im:0 "Arthur Crispien"
  PRS_oskar_hergt_im:0 "Oskar Hergt"
@@ -762,3 +767,12 @@
  PRS_johannes_popitz_em:0 "Johannes Popitz"
  PRS_hjalmar_schacht_em:0 "Hjalmar Schacht"
  PRS_hans_staudinger_em:0 "Hans Staudinger"
+ PRS_kurt_schumacher_dm:0 "Kurt Schumacher"
+ PRS_otto_gessler_dm:0 "Otto Gessler"
+ PRS_gustav_ritter_von_kahr_dm:0 "Gustav Ritter von Kahr"
+ PRS_fedor_von_bock_dm:0 "Feodor von Bock"
+ PRS_rudolf_hess_dm:0 "Rudolf Hess"
+ PRS_reinhard_heydrich_dm:0 "Reinhard Heydrich"
+ PRS_zygfrydas_milius_dm:0 "Zygfrydas Milius"
+ 
+ 

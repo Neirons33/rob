@@ -18,10 +18,10 @@ pelekist_min = {}
 #Minister Types
 #####################
 
-head_of_government = {}
+goverment_head = {}
 interior_minister = {}
-foreign_minister = {}
-economy_minister = {}
+foreign_head = {}
+economy_head = {}
 defense_minister = {}
 
 #####################
@@ -320,4 +320,11 @@ dm_civilian_administator = {
  random = no 
 }
 
+dm_inept_administator = {
+ consumer_goods_factor = 0.03
+ army_attack_factor = -0.03
+ 
+ 
+ random = no 
+}
 }
