@@ -12,7 +12,8 @@ ideas = {
       has_country_flag = can_replace_head_of_government
       NOT = {
        has_country_flag = PRS_hindenburg_dead
-      }	  
+      }
+      DEMOCRATIC_ALIGNED_GOVERNMENT = yes  
   	 }
   	}
      traits = {
@@ -242,7 +243,7 @@ ideas = {
    
    traits = {
     pelekist_min
-    foreign_minister
+    foreign_head
     fm_realpolitik
     }   
    }
@@ -258,7 +259,7 @@ ideas = {
    
    traits = {
     pelekist_min
-    foreign_minister
+    foreign_head
     fm_imperialist
     }   
    }    
@@ -274,7 +275,7 @@ ideas = {
    
    traits = {
     pelekist_min
-    foreign_minister
+    foreign_head
     fm_imperialist
     }   
    }
@@ -293,7 +294,7 @@ ideas = {
    }
    traits = {
     reactionary_min
-    foreign_minister
+    foreign_head
     fm_imperialist
     }   
   }
@@ -308,7 +309,7 @@ ideas = {
    }
    traits = {
     conservative_min
-    foreign_minister
+    foreign_head
     fm_imperialist
     }   
   }
@@ -323,7 +324,7 @@ ideas = {
    }
    traits = {
     social_liberal_min
-    foreign_minister
+    foreign_head
     fm_realpolitik
     }   
   }
@@ -338,7 +339,7 @@ ideas = {
    }
    traits = {
     social_democracy_min
-    foreign_minister
+    foreign_head
     fm_neutral_bystander
     }   
    }
@@ -355,7 +356,7 @@ ideas = {
    }
    traits = {
     social_democracy_min
-    economy_minister
+    economy_head
     em_welfare_supporter
     }   
   }
@@ -370,7 +371,7 @@ ideas = {
    }	
    traits = {
     social_liberal_min
-    economy_minister
+    economy_head
     em_laissez_faire
     }   
   }
@@ -385,7 +386,7 @@ ideas = {
    }
    traits = {
     conservative_min
-    economy_minister
+    economy_head
     em_robber_baron
     }   
   }
@@ -400,7 +401,7 @@ ideas = {
   }
    traits = {
     pelekist_min
-    economy_minister
+    economy_head
     em_pelekist_economist
     }   
   }
@@ -415,7 +416,7 @@ ideas = {
 }
    traits = {
     pelekist_min
-    economy_minister
+    economy_head
     em_feudalist
     }   
   }
@@ -434,7 +435,7 @@ ideas = {
 	
    traits = {
     reactionary_min
-    economy_minister
+    economy_head
     em_corporatist
     }   
    }

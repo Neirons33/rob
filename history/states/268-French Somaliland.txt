@@ -7,8 +7,7 @@ state={
 	state_category = enclave
 
 	history={
-		owner = ITA
-		add_core_of = DJI
+		owner = ETH
 		victory_points = {
 			8124 1
 		}
