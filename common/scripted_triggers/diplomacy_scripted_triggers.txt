@@ -138,7 +138,6 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 			}
 			NOT = { FROM = { tag = KUW } }
 			NOT = { FROM = { tag = QAT } }
-			NOT = { FROM = { tag = BAH } }
 			NOT = { FROM = { tag = UAE } }
 			NOT = { FROM = { tag = BLZ } }
 			NOT = { FROM = { tag = BAH } }
@@ -204,7 +203,6 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 			NOT = { FROM = { tag = EGY } }
 			NOT = { FROM = { tag = KUW } }
 			NOT = { FROM = { tag = QAT } }
-			NOT = { FROM = { tag = BAH } }
 			NOT = { FROM = { tag = UAE } }
 			NOT = { FROM = { tag = BLZ } }
 			NOT = { FROM = { tag = BAH } }
@@ -661,31 +659,7 @@ DIPLOMACY_BOOST_PARTY_POPULARITY_ENABLE_TRIGGER = {
 DIPLOMACY_STAGE_COUP_ENABLE_TRIGGER = {
 	if = {
 		limit = {
-			has_game_rule = {
-				rule = allow_coups
-				option = FREE
-			}
-		}
-		always = yes
-	}
-	if = {
-		limit = {
-			has_game_rule = {
-				rule = allow_coups
-				option = AI_ONLY
-			}
-		}
-		custom_trigger_tooltip = {
-			tooltip = RULE_COUP_AI_ONLY_TT
-			FROM = { is_ai = yes }
-		}
-	}
-	if = {
-		limit = {
-			has_game_rule = {
-				rule = allow_coups
-				option = BLOCKED
-			}
+           always = yes
 		}
 		custom_trigger_tooltip = {
 			tooltip = RULE_COUP_BLOCKED_TT
@@ -696,10 +670,7 @@ DIPLOMACY_STAGE_COUP_ENABLE_TRIGGER = {
 DIPLOMACY_LEAVE_FACTION_ENABLE_TRIGGER = {
 	if = {
 		limit = {
-			has_game_rule = {
-				rule = allow_leave_faction
-				option = BLOCKED
-			}
+           always = yes
 		}
 		custom_trigger_tooltip = {
 			tooltip = RULE_ALLOW_LEAVE_FACTION_BLOCKED_TOOLTIP

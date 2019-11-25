@@ -3,7 +3,7 @@ capital = 272
 set_research_slots = 1
 set_stability = 0.02
 set_war_support = 0.02
-
+set_cosmetic_tag = FRA_FWA
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -70,7 +70,7 @@ if = {
 		mtg_transport = 1
 	}
 }
-set_cosmetic_tag = FRA_FWA
+
 set_politics = {
 	ruling_party = authoritharian
 	last_election = "1932.5.1"

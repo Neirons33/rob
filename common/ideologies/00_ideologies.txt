@@ -34,6 +34,7 @@ national_socialist = {
  
  color = { 102 6 15 }
  ai_fascist = yes
+ can_be_boosted = no
 }
 
 
@@ -69,6 +70,7 @@ rules = {
 		}
 color = { 204 8 25 }
 ai_fascist = yes
+can_be_boosted = no
 }
 
 
@@ -105,7 +107,7 @@ democratic_socialist = {
 		}
  color = { 216 52 66 }
  ai_fascist = yes
-
+can_be_boosted = no
 }
 
 
@@ -121,7 +123,6 @@ social_democracy = {
 			can_force_government = no
 			can_send_volunteers = yes
 			can_puppet = no
-			
 			can_join_factions = no
 			can_create_factions = no
 			can_lower_tension = no
@@ -138,7 +139,7 @@ social_democracy = {
 		}
  color = { 239 139 147 }
  ai_fascist = yes
- 
+ can_be_boosted = no
 }
 
 social_liberal = {
@@ -170,7 +171,7 @@ social_liberal = {
 		}
  color = { 209 162 52 }
  ai_fascist = yes
- 
+ can_be_boosted = no
 }
 
 
@@ -203,7 +204,7 @@ conservative = {
 		}
  color = { 226 200 138 }
  ai_fascist = yes
- 
+ can_be_boosted = no
 }
 
 
@@ -220,7 +221,6 @@ authoritharian = {
 			can_force_government = no
 			can_send_volunteers = yes
 			can_puppet = no
-			
 			can_join_factions = no
 			can_create_factions = no
 			can_lower_tension = no
@@ -234,7 +234,7 @@ authoritharian = {
 		}
  color = { 183 177 163 }
  ai_fascist = yes
- 
+ can_be_boosted = no
 }
 
 reactionary = {
@@ -266,7 +266,7 @@ reactionary = {
 		}
  color = { 51 49 45 }
  ai_fascist = yes
- 
+ can_be_boosted = no
 }
 
 
@@ -287,7 +287,6 @@ pelekist = {
 			can_force_government = no
 			can_send_volunteers = yes
 			can_puppet = no
-			
 			can_join_factions = no
 			can_create_factions = no
 			can_lower_tension = no
@@ -302,7 +301,7 @@ pelekist = {
 		}
  color = { 14 40 104 }
  ai_fascist = yes
- 
+ can_be_boosted = no
 }
 
 }

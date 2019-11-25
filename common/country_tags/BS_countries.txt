@@ -26,7 +26,6 @@ CAU = "countries/Caucasus.txt"
 CBR = "countries/Communist Belarus.txt"
 DSU = "countries/Democratic Socialist Ukraine.txt"
 DBR = "countries/Democratic Belarus.txt"
-AWS = "countries/Communist Austria.txt"
 FRS = "countries/Socialist France.txt"
 FRR = "countries/Sorelian France.txt"
 FRP = "countries/Pelekist France.txt"
@@ -58,7 +57,7 @@ NWG = "countries/Norwegen.txt"
 NID = "countries/Niederlande.txt"
 GGO = "countries/Generalgouvernement.txt"
 PBM = "countries/Bohmen un Mahren.txt"
-BNF = "countries/Belgien-Nordfrankreich.txt"
+
 
 ##Russian Far East##
 JVD = "countries/Japanese Vladivostok.txt"

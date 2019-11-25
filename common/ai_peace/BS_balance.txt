@@ -37,7 +37,6 @@ bs_balance = {
 					tag = NID
 					tag = GGO
 					tag = PBM
-					tag = BNF
 					tag = CAT
 					tag = SLO
 				}
