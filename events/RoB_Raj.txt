@@ -710,6 +710,7 @@ annex_country = {
     target = ORS
     transfer_troops = yes
 }
+set_cosmetic_tag = ASM_eastindia
 }
 }
 
@@ -727,7 +728,7 @@ ORS = { exists = no }
 
 option = {
 name = raj.111.a
-ai_chance = { factor = 100}
+ai_chance = { factor = 50}
 declare_war_on = {
     target = BHU
     type = annex_everything
@@ -746,7 +747,7 @@ country_event = {
 }
 option = {
 name = raj.111.b
-ai_chance = { factor = 10}
+ai_chance = { factor = 50}
 add_political_power = -50
 }
 
@@ -767,7 +768,7 @@ is_triggered_only = yes
 
 option = {
 name = raj.112.a
-ai_chance = { factor = 100}
+ai_chance = { factor = 60}
 
 BHU = {
 country_event = {
@@ -782,7 +783,7 @@ NEP = { annex_country = {
 }
 option = {
 name = raj.112.b
-ai_chance = { factor = 10}
+ai_chance = { factor = 40}
 add_political_power = -50
 }
 
@@ -799,7 +800,7 @@ is_triggered_only = yes
 
 option = {
 name = raj.113.a
-ai_chance = { factor = 100}
+ai_chance = { factor = 70}
 NEP = { annex_country = {
     target = ROOT
     transfer_troops = yes
@@ -816,7 +817,7 @@ country_event = {
 }
 option = {
 name = raj.113.b
-ai_chance = { factor = 10}
+ai_chance = { factor = 30}
 add_war_support = 0.25
 }
 }
@@ -835,17 +836,18 @@ is_triggered_only = yes
 
 option = {
 name = raj.114.a
-ai_chance = { factor = 100}
+ai_chance = { factor = 60}
 declare_war_on = {
     target = NEP
     type = annex_everything
 }
 }
 option = {
-name = raj.112.b
-ai_chance = { factor = 10}
+name = raj.114.b
+ai_chance = { factor = 40}
 add_political_power = -50
 }
 
 
 }
+
