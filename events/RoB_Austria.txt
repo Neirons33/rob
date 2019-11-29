@@ -8,9 +8,9 @@ news_event = {
  picture = GFX_news_event_generic_parliament
   trigger = {
     date > 1934.1.12
-    mean_time_to_happen = { days = 1}
 	tag = AUS
 	}
+ mean_time_to_happen = { days = 1}
  fire_only_once = yes
  major = yes
  option = {
@@ -130,9 +130,9 @@ country_event = {
 				delete_unit_template_and_units = { division_template = "Alpenjäger Division" }
 				delete_unit_template_and_units = { division_template = "Infanterie Division" }
 				delete_unit_template_and_units = { division_template = "Schnelle Division" }
-				THR = { load_oob = THR_civil_war }
-                ACM = { load_oob = ACM_civil_war }
-                AUS = { load_oob = AUS_civil_war }
+				AUS = { load_oob = "AUS_civil_war" }
+				THR = { load_oob = "THR_civil_war" }
+				ACM = { load_oob = "ACM_civil_war" }
                 set_country_flag = AUS_CIVIL_WAR
 				add_ideas = {
 				    extensive_conscription
@@ -182,9 +182,9 @@ country_event = {
 				delete_unit_template_and_units = { division_template = "Alpenjäger Division" }
 				delete_unit_template_and_units = { division_template = "Infanterie Division" }
 				delete_unit_template_and_units = { division_template = "Schnelle Division" }
-				AUS = { load_oob = AUS_civil_war }
-				THR = { load_oob = THR_civil_war }
-				ACM = { load_oob = ACM_civil_war }
+				AUS = { load_oob = "AUS_civil_war" }
+				THR = { load_oob = "THR_civil_war" }
+				ACM = { load_oob = "ACM_civil_war" }
 				set_country_flag = AUS_CIVIL_WAR
 				add_ideas = {
 				    extensive_conscription
@@ -233,9 +233,9 @@ country_event = {
 				delete_unit_template_and_units = { division_template = "Alpenjäger Division" }
 				delete_unit_template_and_units = { division_template = "Infanterie Division" }
 				delete_unit_template_and_units = { division_template = "Schnelle Division" }
-				AUS = { load_oob = AUS_civil_war }
-				THR = { load_oob = THR_civil_war }
-				ACM = { load_oob = ACM_civil_war }
+				AUS = { load_oob = "AUS_civil_war" }
+				THR = { load_oob = "THR_civil_war" }
+				ACM = { load_oob = "ACM_civil_war" }
 				set_country_flag = AUS_CIVIL_WAR
 				add_ideas = {
 				    extensive_conscription
@@ -259,13 +259,13 @@ country_event = {
  desc = rob_austria.13.d
  picture = GFX_report_event_french_resistance_02
  fire_only_once = yes
+ mean_time_to_happen = { days = 1}
  trigger = {
     tag = AUS
     AUS = {
     has_war_with = ACM
     has_war_with = THR
     }
-    mean_time_to_happen = { days = 3}
     }
     option = {
     name = rob_austria.13.a
@@ -383,7 +383,7 @@ country_event = {
 		hidden_effect = { 	
 		SLV = { transfer_state = 1128 }	
 		SLV = { declare_war_on = { target = AUS  type = annex_everything } }
-        SLV = { load_oob = SLV_civil_war }
+        SLV = { load_oob = "SLV_civil_war" }
         AUS = {
         remove_state_core = 934
     	remove_state_core = 1127
@@ -435,7 +435,7 @@ country_event = {
 	trigger = {
 	AUS = {
 	controls_state = 1017
-	num_of_controlled_states = 1
+	num_of_controlled_states < 2
 	}
 }
 mean_time_to_happen = { days = 1}
@@ -488,7 +488,7 @@ country_event = {
 	trigger = {
 	THR = {
 	has_idea = festung_bregenz
-	num_of_controlled_states = 3
+	num_of_controlled_states > 3
 	}
 }
 mean_time_to_happen = { days = 1}
