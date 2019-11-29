@@ -1089,6 +1089,7 @@ OR = {
 tag = BLF
 tag = BRC
 tag = BRL
+tag = BRU
 }
 }
  mean_time_to_happen = { days = 1 }
