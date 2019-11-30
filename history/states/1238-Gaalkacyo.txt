@@ -2,10 +2,15 @@ state={
 	id=1238
 	name="STATE_1238"
 	history = { 
-	owner = ITA
+	owner = DRV
+	add_core_of = DRV
+	add_claim_by = ITA
 			buildings = {
 			infrastructure = 1
 }
+		victory_points = {
+			1964 1 
+		}
 	}
 	provinces={
 		1964 2063 2020 
