@@ -46,7 +46,7 @@ portrait_Afrikan Bogaevsky.tga
 create_country_leader = {
 	name = "Pyotr Wrangel"
 	desc = "POLITICS_Afrikan_Bogaevsky_DESC"
-	picture = "portrait_Afrikan Bogaevsky.tga"
+	picture = "Portrait_Soviet_Pjotr_Nikolajewitsch_Wrangel_3.tga"
 	expire = "1965.1.1"
 	ideology = military_junta
 	traits = {
