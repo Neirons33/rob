@@ -1,5 +1,7 @@
 capital = 576
 set_research_slots = 1
+OOB = "JSW_1934"
+
 
 set_politics = {
 	ruling_party = democratic_socialist
