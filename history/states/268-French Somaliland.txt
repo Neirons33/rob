@@ -7,7 +7,7 @@ state={
 	state_category = enclave
 
 	history={
-		owner = ETH
+		owner = FRA
 		victory_points = {
 			8124 1
 		}
