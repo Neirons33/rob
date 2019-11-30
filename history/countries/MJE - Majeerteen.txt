@@ -1,6 +1,6 @@
-capital = 271
+capital = 1240
 
-oob = "ETH_1936"
+oob = "MJE_1936"
 
 # Starting tech
 set_technology = {
@@ -18,35 +18,25 @@ set_politics = {
 
 set_popularities = {
 	national_socialist = 0
-	socialist = 17
+	socialist = 19
 	democratic_socialist = 0
 	social_democracy = 0
 	social_liberal = 0
-	conservative = 9
+	conservative = 15
 	authoritharian = 0
-	reactionary = 72
+	reactionary = 66
 	pelekist = 0
 }
 
+give_guarantee = DRV
+
 create_country_leader = {
-	name = "Haile Selassie"
-	desc = "POLITICS_HAILE_SELASSIE_DESC"
+	name = "Iyasu I"
+	desc = ""
 	picture = "Portrait_Ethiopia_Haile_Selassie.dds"
 	expire = "1965.1.1"
 	ideology = reactionary_subtype
 	traits = {
 		#
 	}
-}
-
-
-create_corps_commander = {
-	name = "Seyoum Mengesha"
-	portrait_path = "gfx/leaders/Africa/Portrait_Africa_Generic_land_3.dds"
-	traits = {  desert_fox }
-	skill = 2
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 1
 }
