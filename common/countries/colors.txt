@@ -28,6 +28,18 @@ BSQ = {
 	color = rgb { 168 77 35 }
 	color_ui = rgb { 168 77 35 }
 }
+DRV = {
+	color = rgb { 33 36 94 }
+	color_ui = rgb { 33 36 94 }
+}
+HBO = {
+	color = rgb { 45 92 87 }
+	color_ui = rgb { 45 92 87 }
+}
+MJE = {
+	color = rgb { 105 51 9 }
+	color_ui = rgb { 105 51 9 }
+}
 FRA = {
 	color = rgb { 36 114 146 }
 	color_ui = rgb { 36 114 146 }
