@@ -134,3 +134,6 @@ SUD = "countries/Sudetenland.txt"
 ##Africa###
 FWA = "countries/French West Africa.txt"
 FEA = "countries/French Equatorial Africa.txt"
+MJE = "countries/Majeerteen.txt"
+HBO = "countries/Hobyo.txt"
+DRV = "countries/Dervish State.txt"
