@@ -214,7 +214,7 @@ ai_chance = { factor = 100}
 add_manpower = 1263
 create_field_marshal = {
 	name = "Ioseb Jughashvili"
-	picture = ""
+	picture = "Portrait_SOV_Papa_Stalin.tga"
 	traits = { offensive_doctrine old_guard trait_reckless }
 	skill = 4
 	attack_skill = 4
@@ -250,7 +250,7 @@ name = turkmenreds.108.a
 ai_chance = { factor = 100}
 create_field_marshal = {
 	name = "Ioseb Jughashvili"
-	picture = ""
+	picture = "Portrait_SOV_Papa_Stalin.tga"
 	traits = { offensive_doctrine old_guard trait_reckless }
 	skill = 4
 	attack_skill = 4
@@ -352,7 +352,7 @@ name = turkmenreds.112.a
 ai_chance = { factor = 15}
 create_field_marshal = {
 	name = "Ioseb Jughashvili"
-	picture = ""
+	picture = "Portrait_TMS_Papa_Stalin.tga"
 	traits = { offensive_doctrine old_guard trait_reckless }
 	skill = 4
 	attack_skill = 4
@@ -371,7 +371,7 @@ add_popularity = {
 create_country_leader = {
 	name = "Ioseb Jughashvili"
 	desc = ""
-	picture = ""
+	picture = "Portrait_TMS_Papa_Stalin.tga"
 	expire = "1965.1.1"
 	ideology = national_socialist
 	traits = {
