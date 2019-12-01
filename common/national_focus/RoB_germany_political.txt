@@ -23,7 +23,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 35
 		y = 3
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_autobahn }
 		ai_will_do = {
@@ -37,7 +37,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 33
 		y = 3
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_weakengermanidentity }
 		ai_will_do = {
@@ -51,7 +51,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 30
 		y = 2
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_empowercouncil }
 		ai_will_do = {
@@ -65,10 +65,16 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 63
 		y = 0
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
+		available = {
+		 has_country_flag = GER_dem_victory
+		}
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+		 add_political_power = 60
 		}
 	}
 
@@ -80,7 +86,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 2
 		y = 1
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_nationalbolshevikmajority }
 		ai_will_do = {
@@ -94,7 +100,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 12
 		y = 1
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_nationalbolshevikmajority }
 		ai_will_do = {
@@ -108,7 +114,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 7
 		y = 1
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_nationalbolshevikmajority }
 		ai_will_do = {
@@ -122,7 +128,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 5
 		y = 2
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_nationalbolshevikmajority }
 		ai_will_do = {
@@ -136,7 +142,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 9
 		y = 2
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_nationalbolshevikmajority }
 		ai_will_do = {
@@ -150,7 +156,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 7
 		y = 2
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_agrariansocialism }
 		ai_will_do = {
@@ -164,7 +170,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 2
 		y = 2
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_empowerthechairman }
 		ai_will_do = {
@@ -178,7 +184,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 12
 		y = 2
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_strengthenvolksarmee }
 		ai_will_do = {
@@ -192,7 +198,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 2
 		y = 3
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_expandssd }
 		ai_will_do = {
@@ -206,7 +212,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 9
 		y = 3
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_cruelantipartisanmeasures }
 		ai_will_do = {
@@ -220,7 +226,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 6
 		y = 4
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = GER_unitewithourbrothers 
@@ -239,7 +245,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 35
 		y = 5
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = GER_liberatorsofeurope 
@@ -258,7 +264,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 38
 		y = 5
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = GER_peoplesmilitias 
@@ -277,7 +283,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 34
 		y = 6
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = GER_proletariatstate 
@@ -296,7 +302,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 32
 		y = 5
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = GER_reshapegermanculture 
@@ -321,7 +327,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 6
 		y = 6
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = GER_allseeingstate 
@@ -340,7 +346,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 8
 		y = 6
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = GER_germanmilitaryindustry 
@@ -359,7 +365,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 4
 		y = 5
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = GER_nationalautarky 
@@ -378,7 +384,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 7
 		y = 5
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = GER_clearthecountryside 
@@ -397,7 +403,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 3
 		y = 4
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = GER_unitewithourbrothers 
@@ -416,7 +422,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 11
 		y = 4
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = GER_reforminggeneralstaff 
@@ -435,7 +441,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 8
 		y = 4
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = GER_collectivefarms 
@@ -454,7 +460,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 35
 		y = 0
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 1
@@ -467,7 +473,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 40
 		y = 3
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_modernizeequipment }
 		ai_will_do = {
@@ -481,7 +487,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 30
 		y = 3
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_expelopposition }
 		ai_will_do = {
@@ -497,7 +503,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 7
 		y = 0
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 1
@@ -510,7 +516,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 5
 		y = 3
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_germanrevanchism }
 		ai_will_do = {
@@ -524,7 +530,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 7
 		y = 3
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_diversifyourproduction }
 		ai_will_do = {
@@ -538,7 +544,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 12
 		y = 3
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_promotenoteworthyofficers }
 		ai_will_do = {
@@ -552,7 +558,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 10
 		y = 5
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = GER_clearthecountryside 
@@ -571,7 +577,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 7
 		y = 7
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = GER_cheapweapons 
@@ -590,7 +596,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 40
 		y = 2
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_focusonrotkorps }
 		ai_will_do = {
@@ -604,7 +610,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 35
 		y = 1
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_luxembourgistmajority }
 		ai_will_do = {
@@ -618,7 +624,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 33
 		y = 2
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_luxembourgistmajority }
 		ai_will_do = {
@@ -632,7 +638,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 37
 		y = 2
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_luxembourgistmajority }
 		ai_will_do = {
@@ -646,7 +652,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 35
 		y = 2
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_focusonheavyindustry }
 		ai_will_do = {
@@ -660,7 +666,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 34
 		y = 4
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = GER_exportingtherevolution 
@@ -679,7 +685,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 39
 		y = 4
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = GER_antipartisanunits 
@@ -698,7 +704,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 36
 		y = 4
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = GER_militaryindustry 
@@ -717,7 +723,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 31
 		y = 4
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = GER_anticorruptionmeasures 
@@ -736,7 +742,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 30
 		y = 1
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_luxembourgistmajority }
 		ai_will_do = {
@@ -750,7 +756,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 37
 		y = 3
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_keepthecurrentmeasures }
 		ai_will_do = {
@@ -789,7 +795,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 40
 		y = 1
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_luxembourgistmajority }
 		ai_will_do = {
@@ -808,7 +814,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 36
 		y = 6
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = GER_massarmamentproduction 
@@ -827,7 +833,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 35
 		y = 7
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = GER_socialisteducation 
@@ -846,11 +852,19 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 58
 		y = 1
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_democraticsocialistmajority }
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
 		}
 	}
 
@@ -860,11 +874,14 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 63
 		y = 1
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_democraticsocialistmajority }
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+		 add_ideas = GER_worker_eco
 		}
 	}
 
@@ -874,11 +891,14 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 61
 		y = 2
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_democraticsocialistmajority }
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+		 add_ideas = GER_isolation
 		}
 	}
 
@@ -888,11 +908,14 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 65
 		y = 2
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_democraticsocialistmajority }
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+		 add_ideas = GER_reeducation
 		}
 	}
 
@@ -902,11 +925,73 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 63
 		y = 2
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_workercenteredeconomy }
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+         random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+         random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -916,11 +1001,14 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 58
 		y = 2
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_reorganizetradeunions }
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+		 add_stability = 0.07
 		}
 	}
 
@@ -930,11 +1018,16 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 58
 		y = 3
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_empowertheworkers }
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+		 add_ideas = {
+		  GER_dem_soc
+		 }
 		}
 	}
 
@@ -944,11 +1037,14 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 61
 		y = 3
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_isolationism }
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+		 add_ideas = GER_socialist_science
 		}
 	}
 
@@ -958,11 +1054,14 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 68
 		y = 2
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_localdefenseforces }
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+		 add_war_support = 0.1
 		}
 	}
 
@@ -972,11 +1071,44 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 63
 		y = 3
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_supportcivilianindustry }
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+         random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}		
+		
 		}
 	}
 
@@ -986,11 +1118,17 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 68
 		y = 3
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_liberalizegunlaws }
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+		 swap_ideas = {
+		  add_idea = deutsche_volksarmee_ds
+		  remove_idea = deutsche_volksarmee
+		 }
 		}
 	}
 
@@ -1000,7 +1138,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 59
 		y = 4
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = GER_democraticsocialism 
@@ -1009,7 +1147,10 @@ focus_tree = {
 			focus = GER_socialistscienceinstitute 
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+		 add_ideas = GER_proletarian_culture
 		}
 	}
 
@@ -1019,7 +1160,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 62
 		y = 4
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = GER_socialistscienceinstitute 
@@ -1028,7 +1169,10 @@ focus_tree = {
 			focus = GER_volkswagen 
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+		 add_ideas = GER_modern_education
 		}
 	}
 
@@ -1038,7 +1182,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 64
 		y = 4
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = GER_volkswagen 
@@ -1047,7 +1191,11 @@ focus_tree = {
 			focus = GER_immunityforsomepartisans 
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+		 add_stability = 0.09
+		 add_war_support = 0.09
 		}
 	}
 
@@ -1057,8 +1205,12 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 67
 		y = 4
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
+		available = {
+         has_country_flag = GER_south_secured
+         has_country_flag = GER_north_secured 		 
+		}
 		prerequisite = { 
 			focus = GER_immunityforsomepartisans 
 		}
@@ -1066,7 +1218,10 @@ focus_tree = {
 			focus = GER_volksarmeeofficers 
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+		 remove_idea = german_partisans
 		}
 	}
 
@@ -1076,7 +1231,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 60
 		y = 5
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = GER_proletarianculture 
@@ -1085,7 +1240,10 @@ focus_tree = {
 			focus = GER_modernizeeducation 
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+		add_ideas = GER_modernist_art
 		}
 	}
 
@@ -1095,7 +1253,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 63
 		y = 5
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = GER_modernizeeducation 
@@ -1104,7 +1262,10 @@ focus_tree = {
 			focus = GER_propogandacampaing 
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+		 add_ideas = GER_new_socialist_man
 		}
 	}
 
@@ -1114,7 +1275,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 66
 		y = 5
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = GER_propogandacampaing 
@@ -1123,7 +1284,10 @@ focus_tree = {
 			focus = GER_crushingresistance 
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 1000
+		}
+		completion_reward = {
+		 remove_idea = rampant_corruption
 		}
 	}
 
@@ -1133,7 +1297,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 62
 		y = 6
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = GER_modernistart 
@@ -1142,7 +1306,69 @@ focus_tree = {
 			focus = GER_themodernman 
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 1000
+		}
+		completion_reward = {
+		random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -1152,7 +1378,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 64
 		y = 6
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = GER_themodernman 
@@ -1161,7 +1387,10 @@ focus_tree = {
 			focus = GER_crushingcorruption 
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+		 add_popularity = { ideology = democratic_socialist popularity = 0.1 }
 		}
 	}
 
@@ -1171,7 +1400,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 63
 		y = 7
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = GER_armamentindustry 
@@ -1180,7 +1409,10 @@ focus_tree = {
 			focus = GER_weakingchairman 
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+		 add_stability = 0.2
 		}
 	}
 
@@ -1190,11 +1422,14 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 68
 		y = 1
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_democraticsocialistmajority }
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+		 add_ideas = GER_local_defense
 		}
 	}
 
@@ -1204,11 +1439,15 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 65
 		y = 3
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_reeducationcamps }
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+		 add_stability = 0.08
+		 add_war_support = 0.08
 		}
 	}
 	

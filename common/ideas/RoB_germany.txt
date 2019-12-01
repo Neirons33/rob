@@ -19,6 +19,24 @@ ideas = {
  
  }
  
+deutsche_volksarmee_ds = {
+ picture = GFX_idea_deutsche_volksarmee
+ allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 modifier = {
+				army_org_factor = -0.05
+				army_attack_factor = -0.05
+				army_morale_factor = 0.15
+				army_defence_factor = 0.05
+				}
+ 
+ }
+ 
  german_partisans = {
  picture = GFX_idea_german_partisans
  allowed = {
@@ -395,6 +413,177 @@ ideas = {
 		consumer_goods_factor = 0.02
 		industrial_capacity_factory = 0.05
 		production_factory_start_efficiency_factor = 0.03
+}	
+ 
+ }
+
+ GER_dem_soc = {
+ picture = GFX_idea_rampant_corruption
+ allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+		modifier = {
+		consumer_goods_factor = 0.05
+		line_change_production_efficiency_factor = 0.15
+		surrender_limit = 0.05
+}	
+ 
+ } 
+ 
+  GER_worker_eco = {
+ picture = GFX_idea_rampant_corruption
+ allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+		modifier = {
+		consumer_goods_factor = 0.08
+		industrial_capacity_factory = 0.1
+		
+}	
+ 
+ }
+
+GER_isolation = {
+ picture = GFX_idea_rampant_corruption
+ allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+		modifier = {
+		justify_war_goal_time = 0.35
+		production_speed_buildings_factor = 0.15
+		
+}	
+ 
+ }
+
+GER_socialist_science = {
+ picture = GFX_idea_rampant_corruption
+ allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+		modifier = {
+		research_speed_factor = 0.05
+		stability_factor =-0.05
+		
+}	
+ 
+ }
+
+ GER_proletarian_culture = {
+ picture = GFX_idea_rampant_corruption
+ allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+		modifier = {
+		industrial_capacity_factory = 0.1
+		production_factory_max_efficiency_factor =0.07
+		
+}	
+ 
+ }
+ 
+  GER_modernist_art = {
+ picture = GFX_idea_rampant_corruption
+ allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+		modifier = {
+		stability_factor = -0.05
+		political_power_factor =0.25
+		
+}	
+ 
+ }
+ 
+   GER_new_socialist_man = {
+ picture = GFX_idea_rampant_corruption
+ allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+		modifier = {
+		 industrial_capacity_factory = 0.05
+		 army_attack_factor = 0.05
+		
+}	
+ 
+ }
+ 
+ GER_modern_education = {
+ picture = GFX_idea_rampant_corruption
+ allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+		modifier = {
+		research_speed_factor = 0.03
+		stability_factor =-0.02
+		
+}	
+ 
+ }
+ 
+GER_reeducation = {
+ picture = GFX_idea_rampant_corruption
+ allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+		modifier = {
+		production_speed_buildings_factor = 0.1
+		stability_factor =-0.08
+		
+}	
+ 
+ }
+
+GER_local_defense = {
+ picture = GFX_idea_rampant_corruption
+ allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+		modifier = {
+		army_core_attack_factor = 0.15
+		army_core_defence_factor = 0.15
+		conscription = 0.005
+		
 }	
  
  } 

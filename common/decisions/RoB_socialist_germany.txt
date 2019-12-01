@@ -24,6 +24,7 @@ GER_german_partisans = {
 	complete_effect = {
 	add_to_variable = { var = northern_partisan_strenght value =-20 }
 	set_country_flag = north_holds
+	set_country_flag = GER_north_secured
 	add_equipment_to_stockpile = {
     type = infantry_equipment
     amount = -3000
@@ -67,6 +68,7 @@ GER_german_partisans = {
 	complete_effect = {
 	add_to_variable = { var = southern_partisan_strenght value =-25 }
 	set_country_flag = south_holds
+	set_country_flag = GER_south_secured
 add_equipment_to_stockpile = {
     type = infantry_equipment
     amount = -4000
