@@ -2,10 +2,6 @@ focus_tree = {
 	id = german_focus_coallition
 		country = {
 		factor = 0
-        modifier = {
-			add = 0
-			tag = SWI
-		}
 	}
 
 	continuous_focus_position = { x = 50 y = 3000 }
@@ -24,8 +20,14 @@ focus_tree = {
 		y = 0
 		cost = 10
 		available_if_capitulated = yes
+		available = {
+		 has_country_flag = GER_lux_nb_victory
+		}
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+		 add_political_power = 80
 		}
 	}
 	
@@ -39,7 +41,11 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_lnbmajority }
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+		 add_popularity = {ideology = national_socialist popularity =0.05}
+		 add_popularity = {ideology = socialist popularity =0.05}
 		}
 	}
 		#Focus for Rotkorps Priority
@@ -52,7 +58,10 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_lnbmajority }
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+	   completion_reward = {
+		 add_popularity = {ideology = socialist popularity =0.05} 
 		}
 	}
 		#Focus for Continue Our Economic Policiy
@@ -65,7 +74,69 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_lnbmajority }
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+         random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+        random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}			
 		}
 	}
 		#Focus for Strengthen the Chairman
@@ -78,7 +149,10 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_lnbmajority }
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+		 add_political_power = 80
 		}
 	}
 		#Focus for Purge Reactionaries
@@ -91,7 +165,11 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_strengthenthechairman }
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+		 add_popularity = {ideology = reactionary popularity =-0.1}
+		 add_popularity = {ideology = conservative popularity =-0.1}
 		}
 	}
 		#Focus for Socialist Security Services
@@ -104,7 +182,10 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_purgereactionaries }
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+		 add_popularity = {ideology = socialist popularity = 0.08}
 		}
 	}
 	
@@ -118,7 +199,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_germanpatriotism }
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+		 custom_effect_tooltip = GER_tt_1
+		 set_country_flag = GER_expansion
+		 add_war_support = 0.1
 		}
 	}
 		#Focus for The Spearhead
@@ -131,7 +217,16 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_rotkorpspriority }
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+		  add_tech_bonus = {
+	       name = armor_bonus
+	       bonus = 1.0
+	       uses = 1
+	       category = armor
+		   category = artillery
+}
 		}
 	}
 
@@ -145,7 +240,13 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_thespearhead }
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+	   completion_reward = {
+		 swap_ideas = {
+		  remove_idea = deutsche_volksarmee
+		  add_idea = deutsche_volksarmee_lux
+		 }
 		}
 	}
 	
@@ -159,7 +260,10 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_lnbmajority }
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+		add_manpower =-15621
 		}
 	}
 		#Focus for Fight with Consumer Good Shortages
@@ -172,7 +276,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_continueoureconomicpoliciy }
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+		 add_ideas = {
+		  GER_fight_consumer_goods
+		 }
 		}
 	}
 	#Focus for Agricultural Grants
@@ -185,7 +294,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_fightwithconsumergoodshortages }
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+		 add_ideas = {
+		  GER_german_agriculture
+		 }
 		}
 	}
 
@@ -199,7 +313,10 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_expandantipartisanwarfare }
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+		 add_popularity = { ideology = socialist popularity = 0.05 }
 		}
 	}
 
@@ -218,7 +335,16 @@ focus_tree = {
 			focus = GER_europeanpolitics 
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+		 remove_ideas = {
+		  rampant_corruption
+		 }
+		 add_timed_idea = {
+		  idea = rampant_corruption_lux
+		  days = 460
+		 }
 		}
 	}
 
@@ -237,7 +363,12 @@ focus_tree = {
 			focus = GER_agriculturalgrants 
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+         add_ideas = {
+            GER_eco_indep
+           } 		 
 		}
 	}
 		#Focus for Connecting Rural Communes
@@ -255,7 +386,117 @@ focus_tree = {
 			focus = GER_countrysidesupporters 
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}		
+random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}		
 		}
 	}
 		#Focus for Medium-scale Operations
@@ -266,6 +507,10 @@ focus_tree = {
 		y = 4
 		cost = 10
 		available_if_capitulated = yes
+		available = {
+         has_country_flag = GER_south_secured
+         has_country_flag = GER_north_secured 		 
+		}
 		prerequisite = { 
 			focus = GER_countrysidesupporters 
 		}
@@ -273,7 +518,13 @@ focus_tree = {
 			focus = GER_controlovervolksarmee 
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+
+		  remove_ideas =  { german_partisans }
+		  add_timed_idea = { idea = german_partisans_luxnb days = 200 }
+
 		}
 	}
 	
@@ -292,7 +543,11 @@ focus_tree = {
 			focus = GER_economicindependence 
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+		 add_popularity = {ideology = socialist popularity =0.1}
+		 add_popularity = {ideology = national_socialist popularity =0.05}
 		}
 	}
 	#Focus for Local Socialist Militias
@@ -310,7 +565,12 @@ focus_tree = {
 			focus = GER_conscriptpeasants 
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+		 add_ideas = {
+		  GER_anti_partisan_units
+		 }
 		}
 	}
 
@@ -329,7 +589,11 @@ focus_tree = {
 			focus = GER_gunsforourarmy 
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+		 add_popularity = {ideology = socialist popularity =0.05}
+		 add_ideas = { GER_political_commisars }
 		}
 	}
 
@@ -348,7 +612,11 @@ focus_tree = {
 			focus = GER_localsocialistmilitias 
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+		 add_war_support = 0.15
+		 add_stability = 0.15
 		}
 	}
 	#Focus for Guns for Our Army!
@@ -366,7 +634,12 @@ focus_tree = {
 			focus = GER_connectingruralcommunes 
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+		 add_ideas = {
+		  GER_cheap_guns
+		 }
 		}
 	}
 
@@ -385,7 +658,12 @@ focus_tree = {
 			focus = GER_connectingruralcommunes 
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+		 add_ideas = {
+		  GER_peoples_units
+		 }
 		}
 	}
 	
@@ -398,8 +676,14 @@ focus_tree = {
 		y = 0
 		cost = 10
 		available_if_capitulated = yes
+		available = {
+		 has_country_flag = GER_lux_ds_victory
+		}
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+		 add_political_power = 80
 		}
 	}
 		#Focus for Strenghten the Rotkorps
@@ -412,7 +696,15 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_dslmajority }
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+			completion_reward = {
+				add_tech_bonus = {
+					name = doctrine_bonus
+					bonus = 0.75
+					uses = 1
+					category = land_doctrine
+				}		 
 		}
 	}
 		#Focus for Forgive partisans...
@@ -425,7 +717,10 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_dslmajority }
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+		 add_stability = 0.05
 		}
 	}
 		#Focus for Cultural marxism
@@ -438,7 +733,10 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_dslmajority }
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+		 add_popularity = { ideology = socialist popularity = 0.1 }
 		}
 	}
 		#Focus for Further industrilization
@@ -451,7 +749,69 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_dslmajority }
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+		random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 		#Focus for Liberalize the council
@@ -464,7 +824,11 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_dslmajority }
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+		 add_popularity = { ideology = socialist popularity = 0.05 }
+		 add_popularity = { ideology = democratic_socialist popularity = 0.05 }
 		}
 	}
 	
@@ -478,9 +842,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_liberalizethecouncil }
 		ai_will_do = {
-			factor = 1
+			factor = 100
 		}
-	}
+		completion_reward = {
+           add_ideas =  { GER_worker_eco }
+		}
+		}
 		#Focus for Extreme anti-coruption measures
 	focus = {
 		id = GER_extremeanticoruptionmeasures
@@ -491,8 +858,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_morepowertothetradeunions }
 		ai_will_do = {
-			factor = 1
+			factor = 100
 		}
+		completion_reward = {
+		 remove_ideas = { rampant_corruption }
+		 add_stability =-0.1
+		 }
 	}
 		#Focus for Destroy German Identity
 	focus = {
@@ -504,7 +875,10 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_culturalmarxism }
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+		 add_stability = 0.07
 		}
 	}
 		#Focus for Build the Autobahn
@@ -519,6 +893,116 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		 	794 = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+	     1093 = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			793 = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		58 = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
 	}
 
 	#Focus for Focus on the worker
@@ -531,7 +1015,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_buildtheautobahn }
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+		 add_ideas = {
+		  GER_dem_soc
+		 }
 		}
 	}
 	
@@ -545,7 +1034,11 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_forgivepartisans }
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+		 add_manpower = -36753
+		 add_stability = 0.08
 		}
 	}
 		#Focus for Dominate the Volksarmee
@@ -558,7 +1051,13 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_importforeignrevoliutionaries }
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+	   completion_reward = {
+		 swap_ideas = {
+		  add_idea = deutsche_volksarmee_ds
+		  remove_idea = deutsche_volksarmee
+		 }
 		}
 	}
 
@@ -572,7 +1071,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_strenghtentherotkorps }
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+		 add_ideas = {
+		  GER_foreign_revolutionaries
+		 }
 		}
 	}
 	#Focus for Volksmilitia
@@ -590,7 +1094,12 @@ focus_tree = {
 			focus = GER_dominatethevolksarmee 
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+		 add_ideas = {
+		  GER_volksmilitia
+		 }
 		}
 	}
 
@@ -609,7 +1118,10 @@ focus_tree = {
 			focus = GER_executetherest 
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+		 add_popularity = { ideology = socialist popularity = 0.05 }
 		}
 	}
 		#Focus for The new education
@@ -627,7 +1139,12 @@ focus_tree = {
 			focus = GER_focusontheworker 
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+		 add_ideas = {
+		   GER_modern_education
+		 }
 		}
 	}
 	#Focus for The Communist Man
@@ -645,8 +1162,13 @@ focus_tree = {
 			focus = GER_destroygermanidentity 
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 100
 		}
+		completion_reward = {
+         add_ideas = {
+		  GER_new_socialist_man
+		 } 
+		}	 	
 	}
 	#Focus for Undeniable rule
 	focus = {
@@ -663,8 +1185,11 @@ focus_tree = {
 			focus = GER_theloyalpeople 
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 100
 		}
+		completion_reward = {
+		 remove_ideas = { german_partisans } 
+		} 
 	}
 	#Focus for The workers state
 	focus = {
@@ -681,7 +1206,11 @@ focus_tree = {
 			focus = GER_theweakchairman 
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+		 add_stability = 0.2
+		 add_war_support = 0.05
 		}
 	}
 		#Focus for The weak chairman
@@ -699,7 +1228,12 @@ focus_tree = {
 			focus = GER_undeniablerule 
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+		 add_ideas = {
+		  GER_weak_chairman
+		 }
 		}
 	}
 		#Focus for Guns for party members
@@ -717,7 +1251,12 @@ focus_tree = {
 			focus = GER_theloyalpeople 
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+		 add_ideas = {
+		  GER_guns_for_party
+		 }
 		}
 	}
 		#Focus for Communist youth
@@ -735,7 +1274,12 @@ focus_tree = {
 			focus = GER_arbeitstaat 
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+		 add_ideas = {
+		  GER_communist_youth
+		 }
 		}
 	}
 		#Focus for Arbeitstaat
@@ -753,7 +1297,12 @@ focus_tree = {
 			focus = GER_theneweducation 
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 100
+		}
+		completion_reward = {
+		 add_ideas = {
+		  GER_proletarian_culture
+		 }
 		}
 	}
 	}

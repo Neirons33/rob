@@ -2772,6 +2772,10 @@ france.1.t:0 "Third French Republic in 1934"
  ###Romanov Events
  rom_tt_1:0 "§RWe shall search for allies...§!"
  
+ ###German Events
+ GER_tt_1:0 "§R	Unlocks decisions to export socialist revolution to our neighbors.§!\n"
+ GER_tt_2:0 "§R	Unlocks decisions to regain lost German lands.§!\n"
+ 
  ###Lithuanian Events
  lithuania.13.t:0 "Coronation of Visuomis"
  lithuania.13.d:0 "Today, at 12:34, Visuomis, also known as his true name, Domas Šidlauskas, has been crowned under the regnal name Gintautas, an old pagan name meaning defender of the nation. While he probably will use his older nickname Visuomis as the public is more used to it, it is an interesting new ritual.\n\nAfter the crowning Visuomis took to the streets and held a massive military parade, where the public was shown the newest tanks, the fanciest weapons Lithuania had to offer, and even it’s newest planes in an elaborate ceremony inspired by the ancient Roman triumphs. After that the public was shown the riches the state had gained from its interventions, which had amassed to quite the amount. After that he was led to the palace of the grand dukes, nearly destroyed by now and held an oath of soldiers and generals, all swearing loyalty to the new king, to defend him and their Lithuania by the name of Dundulis, a folk name for the Baltic god of thunder Perkūnas used by those deemed not worthy of the real name, and Jesus.\n\nAfter the elaborate ceremony, Visuomis held a speech, lasting for 3 hours, and he had ended it by taking an old sword, which he had claimed was the sword of Kęstutis, the last ruler of Lithuania to die a pagan, and swore an oath, to Perkūnas, that he shall lead Lithuania loyally under the example of his ancestors."
