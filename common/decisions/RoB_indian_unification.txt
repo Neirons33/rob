@@ -20,9 +20,9 @@ is_neighbor_of = BNL
   
   }
   complete_effect = {
-		create_wargoal = {
-			type = annex_everything		
-			target = BNL
+		declare_war_on = {
+    target = BNl
+    type = annex_everything
 }
   }
  }
@@ -47,9 +47,9 @@ is_neighbor_of = ORS
   
   }
   complete_effect = {
-		create_wargoal = {
-			type = annex_everything		
-			target = ORS
+		declare_war_on = {
+    target = ORS
+    type = annex_everything
 }
   }
  }
@@ -74,11 +74,11 @@ is_neighbor_of = PRF
   
   }
   complete_effect = {
-		create_wargoal = {
-			type = annex_everything		
-			target = PRF
+		declare_war_on = {
+    target = PRF
+    type = annex_everything
+}  
 }
-  }
  }
 
  IND_invade_rpf = {
@@ -101,11 +101,11 @@ is_neighbor_of = RPF
   
   }
   complete_effect = {
-		create_wargoal = {
-			type = annex_everything		
-			target = RPF
-}
-  }
+		declare_war_on = {
+    target = RPF
+    type = annex_everything
+} 
+ }
  }
 
  IND_invade_mysore = {
@@ -128,11 +128,10 @@ is_neighbor_of = MYS
   
   }
   complete_effect = {
-		create_wargoal = {
-			type = annex_everything		
-			target = MYS
-}
-  }
+		declare_war_on = {
+    target = MYS
+    type = annex_everything
+}  }
  }
 
  IND_invade_tamfed = {
@@ -155,11 +154,10 @@ is_neighbor_of = TML
   
   }
   complete_effect = {
-		create_wargoal = {
-			type = annex_everything		
-			target = TML
-}
-  }
+		declare_war_on = {
+    target = TML
+    type = annex_everything
+}  }
  }
 
  IND_invade_madras = {
@@ -182,11 +180,10 @@ is_neighbor_of = MRS
   
   }
   complete_effect = {
-		create_wargoal = {
-			type = annex_everything		
-			target = MRS
-}
-  }
+		declare_war_on = {
+    target = MRS
+    type = annex_everything
+}  }
  }
 
  IND_invade_kashmir = {
@@ -209,11 +206,10 @@ is_neighbor_of = JAK
   
   }
   complete_effect = {
-		create_wargoal = {
-			type = annex_everything		
-			target = JAK
-}
-  }
+		declare_war_on = {
+    target = JAK
+    type = annex_everything
+}  }
  }
 
  IND_invade_gujarat = {
@@ -236,11 +232,10 @@ is_neighbor_of = GUJ
   
   }
   complete_effect = {
-		create_wargoal = {
-			type = annex_everything		
-			target = GUJ
-}
-  }
+		declare_war_on = {
+    target = GUJ
+    type = annex_everything
+}  }
  }
 
  IND_invade_hyderabad = {
@@ -263,11 +258,10 @@ is_neighbor_of = HYD
   
   }
   complete_effect = {
-		create_wargoal = {
-			type = annex_everything		
-			target = HYD
-}
-  }
+		declare_war_on = {
+    target = HYD
+    type = annex_everything
+}  }
  }
 
 
@@ -291,11 +285,10 @@ is_neighbor_of = BBY
   
   }
   complete_effect = {
-		create_wargoal = {
-			type = annex_everything		
-			target = BBY
-}
-  }
+	declare_war_on = {
+    target = BBY
+    type = annex_everything
+}  }
  }
 
  IND_invade_cir = {
@@ -318,11 +311,10 @@ is_neighbor_of = CIR
   
   }
   complete_effect = {
-		create_wargoal = {
-			type = annex_everything		
-			target = CIR
-}
-  }
+		declare_war_on = {
+    target = CIR
+    type = annex_everything
+}  }
  }
 
  IND_invade_sind = {
@@ -345,11 +337,10 @@ is_neighbor_of = SNH
   
   }
   complete_effect = {
-		create_wargoal = {
-			type = annex_everything		
-			target = SNH
-}
-  }
+		declare_war_on = {
+    target = SNH
+    type = annex_everything
+}  }
  }
 
  IND_invade_baluchistan = {
@@ -372,11 +363,10 @@ is_neighbor_of = BAL
   
   }
   complete_effect = {
-		create_wargoal = {
-			type = annex_everything		
-			target = BAL
-}
-  }
+	declare_war_on = {
+    target = BAL
+    type = annex_everything
+}  }
  }
 
  IND_invade_bihar = {
@@ -399,11 +389,10 @@ is_neighbor_of = BIH
   
   }
   complete_effect = {
-		create_wargoal = {
-			type = annex_everything		
-			target = BIH
-}
-  }
+		declare_war_on = {
+    target = BIH
+    type = annex_everything
+}  }
  }
 
  IND_invade_punjab = {
@@ -426,11 +415,10 @@ is_neighbor_of = PNJ
   
   }
   complete_effect = {
-		create_wargoal = {
-			type = annex_everything		
-			target = PNJ
-}
-  }
+		declare_war_on = {
+    target = PNJ
+    type = annex_everything
+}  }
  }
 
  IND_invade_delhi = {
@@ -456,11 +444,10 @@ date < 1939.01.01
   
   }
   complete_effect = {
-		create_wargoal = {
-			type = annex_everything		
-			target = DEL
-}
-  }
+		declare_war_on = {
+    target = DEL
+    type = annex_everything
+}  }
  }
 
  IND_invade_assam = {
@@ -486,11 +473,10 @@ date < 1939.01.01
   
   }
   complete_effect = {
-		create_wargoal = {
-			type = annex_everything		
-			target = ASM
-}
-  }
+		declare_war_on = {
+    target = ASM
+    type = annex_everything
+}  }
  }
 
  IND_invade_braj = {
@@ -516,11 +502,10 @@ date < 1939.01.01
   
   }
   complete_effect = {
-		create_wargoal = {
-			type = annex_everything		
-			target = BRJ
-}
-  }
+		declare_war_on = {
+    target = BRJ
+    type = annex_everything
+}  }
  }
 
 
