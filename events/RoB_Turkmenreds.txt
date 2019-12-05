@@ -21,6 +21,7 @@ tag = TRS
 }
 
 option = {
+###The Time Has Come
 name = turkmenreds.100.a
 ai_chance = { factor = 100}
 add_manpower = -1000
@@ -28,6 +29,7 @@ TMS = { country_event = { id = turkmenreds.101 days = 3 } }
 }
 
 option = {
+###Lets not
 name = turkmenreds.100.b
 ai_chance = { factor = 0}
 add_political_power = -100
@@ -37,6 +39,7 @@ add_stability = -0.25
 }
 }
 
+###TMS' reaction to TRS incursion
 country_event = {
 id = turkmenreds.101
 title = turkmenreds.101.t
@@ -50,6 +53,7 @@ tag = TMS
 }
 
 option = {
+###They can do that?
 name = turkmenreds.101.a
 ai_chance = { factor = 100}
 add_manpower = -2500
@@ -59,6 +63,7 @@ add_ideas = TRS_shell_shocked
 
 }
 
+###Raid successful
 country_event = {
 id = turkmenreds.102
 title = turkmenreds.102.t
@@ -72,6 +77,7 @@ tag = TRS
 }
 
 option = {
+###gimme the loot
 name = turkmenreds.102.a
 ai_chance = { factor = 100}
 add_manpower = 937
@@ -86,6 +92,8 @@ add_tech_bonus = {
 
 ###Stalin Chain
 
+###Events 103 - 110 have completed loc, but you can redo them if you wish
+###Ioseb Jughashvili (stalin) Found
 country_event = {
 id = turkmenreds.103
 title = turkmenreds.103.t
@@ -99,6 +107,7 @@ tag = TRS
 }
 
 option = {
+###destroy him
 name = turkmenreds.103.a
 ai_chance = { factor = 50}
 add_manpower = -1000
@@ -112,6 +121,7 @@ hidden_effect = { random_list = {
 }
 
 option = {
+###he poses no threat
 name = turkmenreds.103.b
 ai_chance = { factor = 25}
 add_political_power = -50
@@ -126,6 +136,7 @@ hidden_effect = { random_list = {
 }
 }
 
+###Victory over Jughashvili
 country_event = {
 id = turkmenreds.104
 title = turkmenreds.104.t
@@ -139,6 +150,7 @@ tag = TRS
 }
 
 option = {
+###Burn in hell, traitor
 name = turkmenreds.104.a
 ai_chance = { factor = 100}
 add_manpower = 974
@@ -148,6 +160,7 @@ hidden_effect = { country_event = { id = turkmenreds.107 days = 5 } }
 
 }
 
+###A crushing defeat
 country_event = {
 id = turkmenreds.105
 title = turkmenreds.105.t
@@ -161,6 +174,7 @@ tag = TRS
 }
 
 option = {
+###W-what!?
 name = turkmenreds.105.a
 ai_chance = { factor = 100}
 add_manpower = 573
@@ -169,6 +183,7 @@ hidden_effect = { country_event = { id = turkmenreds.106 days = 5 } }
 
 }
 
+###Jughashvili Attacks us
 country_event = {
 id = turkmenreds.106
 title = turkmenreds.106.t
@@ -182,12 +197,14 @@ tag = TRS
 }
 
 option = {
+###Guard is routed
 name = turkmenreds.106.a
 ai_chance = { factor = 100}
 add_manpower = -257
 hidden_effect = { country_event = { id = turkmenreds.108 days = 1 } }
 }
 option = {
+###Jughashvili slips away 
 name = turkmenreds.106.b
 ai_chance = { factor = 50}
 add_manpower = -383
@@ -196,6 +213,7 @@ hidden_effect = { country_event = { id = turkmenreds.107 days = 10 } }
 
 }
 
+###Jughashvili returns offering his surrender
 country_event = {
 id = turkmenreds.107
 title = turkmenreds.107.t
@@ -209,6 +227,7 @@ tag = TRS
 }
 
 option = {
+###Let him be a general
 name = turkmenreds.107.a
 ai_chance = { factor = 100}
 add_manpower = 1263
@@ -225,6 +244,7 @@ create_field_marshal = {
 hidden_effect = { country_event = { id = turkmenreds.109 days = 5 } }
 }
 option = {
+###he cannot be trusted
 name = turkmenreds.107.b
 ai_chance = { factor = 50}
 hidden_effect = { country_event = { id = turkmenreds.110 days = 5 } }
@@ -232,7 +252,7 @@ hidden_effect = { country_event = { id = turkmenreds.110 days = 5 } }
 
 }
 
-
+###Jughashvili proclaims himself leader
 country_event = {
 id = turkmenreds.108
 title = turkmenreds.108.t
@@ -246,6 +266,7 @@ tag = TRS
 }
 
 option = {
+###We will be victorious
 name = turkmenreds.108.a
 ai_chance = { factor = 100}
 create_field_marshal = {
@@ -266,6 +287,7 @@ set_politics = {
 
 }
 
+###Jughashvili coup
 country_event = {
 id = turkmenreds.109
 title = turkmenreds.109.t
@@ -279,6 +301,7 @@ tag = TRS
 }
 
 option = {
+###Didnt see that coming...
 name = turkmenreds.109.a
 ai_chance = { factor = 25}
 set_politics = {
@@ -286,6 +309,7 @@ set_politics = {
 }
 }
 option = {
+###We will defeat him again!
 name = turkmenreds.109.b
 ai_chance = { factor = 25}
 add_stability = -0.2
@@ -294,6 +318,7 @@ add_manpower = -539
 
 }
 
+###Jughashvili reported North
 country_event = {
 id = turkmenreds.110
 title = turkmenreds.110.t
@@ -307,6 +332,7 @@ tag = TRS
 }
 
 option = {
+###And don't come back
 name = turkmenreds.110.a
 ai_chance = { factor = 100}
 add_stability = 0.2
@@ -314,6 +340,8 @@ add_stability = 0.2
 }
 }
 
+
+###Reports Jughashvil fled
 country_event = {
 id = turkmenreds.111
 title = turkmenreds.111.t
@@ -327,6 +355,7 @@ tag = TRS
 }
 
 option = {
+###Okay
 name = turkmenreds.111.a
 ai_chance = { factor = 100}
  hidden_effect = { country_event = { id = turkmenreds.110 days = 1 } }
@@ -336,6 +365,7 @@ ai_chance = { factor = 100}
 }
 
 country_event = {
+###A raid in Ashkabad
 id = turkmenreds.112
 title = turkmenreds.112.t
 desc = turkmenreds.112.d
@@ -348,6 +378,7 @@ tag = TMS
 }
 
 option = {
+###This can't be happening...
 name = turkmenreds.112.a
 ai_chance = { factor = 15}
 create_field_marshal = {
@@ -381,6 +412,7 @@ create_country_leader = {
 hidden_effect = { country_event = { id = turkmenreds.113 days = 10 } }
 }
 option = {
+###He has been defeated
 name = turkmenreds.112.b
 ai_chance = { factor = 85}
 add_stability = -0.2
@@ -391,6 +423,7 @@ hidden_effect = { JSW = { country_event = { id = turkmenreds.114 days = 100 } } 
 
 }
 
+###First order of business
 country_event = {
 id = turkmenreds.113
 title = turkmenreds.113.t
@@ -404,6 +437,7 @@ tag = TMS
 }
 
 option = {
+###Destroy Khiva
 name = turkmenreds.113.a
 ai_chance = { factor = 100}
 end_puppet = KHV
@@ -413,6 +447,8 @@ declare_war_on = {
 }
 }
 }
+
+###An exile from transcapia
 
 country_event = {
 id = turkmenreds.114
@@ -427,6 +463,7 @@ tag = JSW
 }
 
 option = {
+###Let him join our ranks
 name = turkmenreds.114.a
 ai_chance = { factor = 100}
 create_field_marshal = {
@@ -447,6 +484,7 @@ add_popularity = {
 }
 }
 option = {
+###No way.
 name = turkmenreds.114.b
 ai_chance = { factor = 0}
 add_manpower = -25
@@ -454,6 +492,8 @@ add_manpower = -25
 }
 
 }
+
+###Transcapia offers alliance
 
 country_event = {
 id = turkmenreds.115
@@ -468,6 +508,8 @@ tag = OMS
 }
 
 option = {
+###Accept
+
 name = turkmenreds.115.a
 ai_chance = { factor = 100}
 diplomatic_relation = {
@@ -481,6 +523,8 @@ add_opinion_modifier = {
 }
 }
 option = {
+###decline
+
 name = turkmenreds.115.b
 ai_chance = { factor = 0}
 add_opinion_modifier = {
@@ -492,6 +536,8 @@ add_opinion_modifier = {
 
 
 }
+
+###Battle of Krasnovodsk
 
 country_event = {
 id = turkmenreds.116
@@ -506,6 +552,8 @@ tag = TRS
 }
 
 option = {
+###Seize the region
+
 name = turkmenreds.116.a
 ai_chance = { factor = 50}
 start_border_war = {
@@ -528,6 +576,8 @@ start_border_war = {
 }
 }
 option = {
+###Take it using spies
+
 name = turkmenreds.116.b
 ai_chance = { factor = 50}
 hidden_effect = { random_list = {
@@ -542,6 +592,8 @@ hidden_effect = { random_list = {
 
 }
 
+###Spies seize Krasnovodsk
+
 country_event = {
 id = turkmenreds.117
 title = turkmenreds.117.t
@@ -555,6 +607,8 @@ tag = TRS
 }
 
 option = {
+###Great
+
 name = turkmenreds.117.a
 ai_chance = { factor = 25}
 transfer_state = 1181
@@ -562,6 +616,8 @@ transfer_state = 1181
 }
 
 }
+
+###plot discovered
 
 country_event = {
 id = turkmenreds.118
@@ -576,6 +632,8 @@ tag = TRS
 }
 
 option = {
+###Oh no
+
 name = turkmenreds.118.a
 ai_chance = { factor = 25}
 add_stability = -0.1
@@ -587,6 +645,8 @@ add_manpower = -50
 }
 
 }
+
+###Transcapia reds tried to take krasnovodsk
 
 country_event = {
 id = turkmenreds.119
@@ -601,6 +661,8 @@ tag = TMS
 }
 
 option = {
+###destroy this this instant
+
 name = turkmenreds.119.a
 ai_chance = { factor = 100}
 declare_war_on = {
@@ -610,12 +672,16 @@ declare_war_on = {
 
 }
 option = {
+###lmao no
+
 name = turkmenreds.119.b
 ai_chance = { factor = 0}
 add_war_support = -0.15
 }
 
 }
+
+###Declaring independence
 
 country_event = {
 id = turkmenreds.120
@@ -630,6 +696,8 @@ has_war = yes
 }
 
 option = {
+###khiva is free
+
 name = turkmenreds.120.a
 ai_chance = { factor = 100}
 TMS = { end_puppet = KHV }
@@ -637,6 +705,8 @@ white_peace = TRS
 
 }
 option = {
+###status quo
+
 name = turkmenreds.120.b
 ai_chance = { factor = 0}
 add_political_power = -50
@@ -666,6 +736,8 @@ NOT = { has_completed_focus = TRS_destroypanturkists }
 }
 
 option = {
+###Destroy these turkists
+
 name = turkmenreds.121.a
 ai_chance = { factor = 75}
 TAJ = { transfer_state = 742 } 
@@ -711,6 +783,8 @@ TAJ = { declare_war_on = {
 
 
 option = {
+###Turkestan will be free (play as basmachi)
+
 name = turkmenreds.121.b
 ai_chance = { factor = 0}
 TAJ = { transfer_state = 742 } 
@@ -758,6 +832,8 @@ TAJ = { change_tag_from = TRS }
 
 }
 
+###Second order of business
+
 country_event = {
 id = turkmenreds.122
 title = turkmenreds.122.t
@@ -775,6 +851,8 @@ NOT = { country_exists = KHV }
 }
 
 option = {
+###Look who's back
+
 name = turkmenreds.122.a
 ai_chance = { factor = 95}
 declare_war_on = {
@@ -784,8 +862,132 @@ declare_war_on = {
 }
 
 option = {
+###nah
+
 name = turkmenreds.122.b
 ai_chance = { factor = 5}
 add_stability = -0.2
+}
+}
+
+###Move capital to Moscow?
+
+country_event = {
+id = turkmenreds.123
+title = turkmenreds.123.t
+desc = turkmenreds.123.d
+is_triggered_only = yes
+fire_only_once = yes
+picture = GFX_picture_bosnian_revolt
+
+trigger = {
+tag = TRS
+}
+
+option = {
+###MOSS COW MOSS COW
+		trigger = {
+			owns_state = 123
+		}
+name = turkmenreds.123.a
+ai_chance = { factor = 60}
+set_capital = 123
+add_political_power = -100
+add_manpower = -20000
+123 = { add_building_construction = {
+    type = industrial_complex
+    level = 1
+    instant_build = yes
+}
+}
+}
+
+option = {
+###Tsaritsyn
+		trigger = {
+			owns_state = 217
+		}
+
+name = turkmenreds.123.b
+ai_chance = { factor = 15}
+set_capital = 217
+add_political_power = -100
+add_manpower = -20000
+217 = { add_building_construction = {
+    type = industrial_complex
+    level = 1
+    instant_build = yes
+}
+}
+}
+
+option = {
+###Leningrad
+		trigger = {
+			owns_state = 195
+		}
+name = turkmenreds.123.c
+ai_chance = { factor = 20}
+set_capital = 195
+add_political_power = -100
+add_manpower = -20000
+195 = { add_building_construction = {
+    type = industrial_complex
+    level = 1
+    instant_build = yes
+}
+}
+}
+
+option = {
+###Improve the existing capital
+
+name = turkmenreds.123.d
+ai_chance = { factor = 5}
+584 = { add_building_construction = {
+    type = industrial_complex
+    level = 2
+    instant_build = yes
+}
+}
+584 = { add_building_construction = {
+    type = arms_complex
+    level = 1
+    instant_build = yes
+}
+}
+}
+}
+
+#Soviet offers alliance
+country_event = {
+id = turkmenreds.124
+title = turkmenreds.124.t
+desc = turkmenreds.124.d
+is_triggered_only = yes
+picture = GFX_picture_bosnian_revolt
+
+trigger = {
+tag = TMS
+has_government = national_socialist
+NOT = { country_exists = KHV }
+
+
+}
+
+option = {
+###yes
+
+name = turkmenreds.124.a
+ai_chance = { factor = 100}
+TRS = { add_to_faction = ROOT }
+}
+
+option = {
+###nah (should never happen)
+
+name = turkmenreds.124.b
+ai_chance = { factor = 0}
+add_stability = -0.1
 }
 }
