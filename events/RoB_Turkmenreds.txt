@@ -967,14 +967,6 @@ desc = turkmenreds.124.d
 is_triggered_only = yes
 picture = GFX_picture_bosnian_revolt
 
-trigger = {
-tag = TMS
-has_government = national_socialist
-NOT = { country_exists = KHV }
-
-
-}
-
 option = {
 ###yes
 
