@@ -2221,6 +2221,9 @@ create_country_leader = {
 		ai_will_do = {
 			factor = 25
 		}
+		completion_reward = {
+		create_faction = Moscow_Pact
+		}
 	}
 
 	#Focus for Occupy Northern Persia
@@ -2244,12 +2247,35 @@ create_country_leader = {
 		x = 3
 		y = 14
 		cost = 5
+		available = {
+		OR = {
+is_neighbor_of = UKR
+is_neighbor_of = DSU
+is_neighbor_of = FTT
+
+		}
+		}
 		available_if_capitulated = yes
 		prerequisite = { focus = TRS_invadesouthrussia }
 		mutually_exclusive = { focus = TRS_theukrainiansovietrepublic }
 		ai_will_do = {
 			factor = 10
 		}
+		completion_reward = {
+
+		create_wargoal = {
+    type = annex_everything
+    target = UKR
+}
+create_wargoal = {
+    type = annex_everything
+    target = DSU
+}
+create_wargoal = {
+    type = annex_everything
+    target = FTT
+}		}
+		
 	}
 
 	#Focus for Assist our Allies
@@ -2259,6 +2285,10 @@ create_country_leader = {
 		x = 4
 		y = 15
 		cost = 5
+		available = {
+		is_in_faction_with = CBR
+		is_in_faction_with = DSU
+		}
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = TRS_theukrainiansovietrepublic 
@@ -2269,6 +2299,24 @@ create_country_leader = {
 		ai_will_do = {
 			factor = 25
 		}
+		completion_reward = {
+		create_wargoal = {
+    type = annex_everything
+    target = DBR
+}	
+create_wargoal = {
+    type = annex_everything
+    target = BEL
+}	
+create_wargoal = {
+    type = annex_everything
+    target = UKR
+}	
+create_wargoal = {
+    type = annex_everything
+    target = FTT
+}	
+		}
 	}
 
 	#Focus for Allies in Vietnam
@@ -2278,10 +2326,18 @@ create_country_leader = {
 		x = 6
 		y = 16
 		cost = 5
+		available = { 
+		country_exists = VIN
+		}
 		available_if_capitulated = yes
 		prerequisite = { focus = TRS_alliesinindia }
 		ai_will_do = {
 			factor = 25
+		}
+		completion_reward = {
+		country_event = {
+    id = turkmenreds.124
+}
 		}
 	}
 
@@ -2306,10 +2362,24 @@ create_country_leader = {
 		x = 9
 		y = 14
 		cost = 5
+		available = { 
+		is_neighbor_of = JAP
+		owns_state = 408
+		JAP = { owns_state = 527 }
+		}
 		available_if_capitulated = yes
 		prerequisite = { focus = TRS_easterndirection }
 		ai_will_do = {
 			factor = 25
+		}
+		completion_reward = {
+		declare_war_on = {
+    target = JAP
+    type = annex_everything
+}
+KOR = { transfer_state = 527 }
+puppet = KOR
+
 		}
 	}
 
@@ -2553,9 +2623,17 @@ create_country_leader = {
 		x = 21
 		y = 12
 		cost = 1
+		available = {
+		owns_state = 219
+		has_war = no
+		}
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 1000
+		}
+		completion_reward = {
+		add_stability = 0.25
+		add_war_support = 0.25
 		}
 	}
 
@@ -2594,10 +2672,18 @@ create_country_leader = {
 		x = 21
 		y = 14
 		cost = 5
+		available = {
+		owns_state = 219
+		}
 		available_if_capitulated = yes
 		prerequisite = { focus = TRS_firstwaveofreforms }
 		ai_will_do = {
 			factor = 25
+		}
+		completion_reward = {
+		country_event = {
+    id = turkmenreds.123
+}
 		}
 	}
 
@@ -2650,9 +2736,15 @@ create_country_leader = {
 		x = 6
 		y = 12
 		cost = 5
+		available = {
+		has_completed_focus = TRS_beaconofcommunism
+		}
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 10
+		}
+		completion_reward = {
+		add_political_power = 100
 		}
 	}
 
@@ -2663,11 +2755,21 @@ create_country_leader = {
 		x = 5
 		y = 14
 		cost = 5
+		available = {
+		country_exists = DSU
+		is_faction_leader = yes
+		}
 		available_if_capitulated = yes
 		prerequisite = { focus = TRS_moscowpact }
 		mutually_exclusive = { focus = TRS_retaketheukraine }
 		ai_will_do = {
 			factor = 25
+		}
+		completion_reward = {
+				DSU = { country_event = {
+    id = turkmenreds.124
+}
+}
 		}
 	}
 
@@ -2678,10 +2780,20 @@ create_country_leader = {
 		x = 7
 		y = 14
 		cost = 5
+		available = {
+		country_exists = CBR
+		is_faction_leader = yes
+		}
 		available_if_capitulated = yes
 		prerequisite = { focus = TRS_moscowpact }
 		ai_will_do = {
 			factor = 25
+		}
+		completion_reward = {	
+		CBR = { country_event = {
+    id = turkmenreds.124
+}
+}
 		}
 	}
 
