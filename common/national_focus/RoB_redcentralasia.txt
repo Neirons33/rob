@@ -149,6 +149,10 @@ add_stability = 0.1
 		}
 		completion_reward = {
 		set_state_owner = 1183
+		TMS = { country_event = {
+    id = turkmenreds.126
+}
+}
 		}
 	}
 
@@ -226,7 +230,10 @@ add_stability = 0.1
 		}
 		completion_reward = {
 		set_state_owner = 1184
-
+		TMS = { country_event = {
+    id = turkmenreds.127
+}
+}
 		}
 	}
 
@@ -244,7 +251,10 @@ add_stability = 0.1
 		}
 		completion_reward = {
 		set_state_owner = 1182
-
+		TMS = { country_event = {
+    id = turkmenreds.125
+}
+}
 		}
 	}
 
