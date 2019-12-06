@@ -133,7 +133,7 @@ focus_tree = {
 	#Focus for Democratic Socialist Majority
 	focus = {
 		id = GER_democraticsocialistmajority
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_demsoc_majority
 		x = 63
 		y = 0
 		cost = 5
@@ -1441,7 +1441,7 @@ focus_tree = {
 	#Focus for Worker-Centered Economy
 	focus = {
 		id = GER_workercenteredeconomy
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_worker_eco
 		x = 63
 		y = 1
 		cost = 5
@@ -1492,7 +1492,7 @@ focus_tree = {
 	#Focus for Support Civilian Industry
 	focus = {
 		id = GER_supportcivilianindustry
-		icon = GFX_goal_unknown
+		icon = GFX_SOV_heavy_industry
 		x = 63
 		y = 2
 		cost = 5
@@ -1604,7 +1604,7 @@ focus_tree = {
 	#Focus for Socialist Science Institute
 	focus = {
 		id = GER_socialistscienceinstitute
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_bukharins_madatory_education
 		x = 61
 		y = 3
 		cost = 5
@@ -1621,7 +1621,7 @@ focus_tree = {
 	#Focus for Liberalize Gun Laws
 	focus = {
 		id = GER_liberalizegunlaws
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_liberalize_gun_laws
 		x = 68
 		y = 2
 		cost = 5
@@ -1638,7 +1638,7 @@ focus_tree = {
 	#Focus for Volkswagen
 	focus = {
 		id = GER_volkswagen
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_volkswagen
 		x = 63
 		y = 3
 		cost = 5
@@ -1685,7 +1685,7 @@ focus_tree = {
 	#Focus for Volksarmee Officers
 	focus = {
 		id = GER_volksarmeeofficers
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_volksarmee_officers_ds
 		x = 68
 		y = 3
 		cost = 5
@@ -1727,7 +1727,7 @@ focus_tree = {
 	#Focus for Modernize Education
 	focus = {
 		id = GER_modernizeeducation
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_red_youth
 		x = 62
 		y = 4
 		cost = 5
@@ -1749,7 +1749,7 @@ focus_tree = {
 	#Focus for Propoganda Campaing
 	focus = {
 		id = GER_propogandacampaing
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_propoganda_campaing_ds
 		x = 64
 		y = 4
 		cost = 5
@@ -1798,7 +1798,7 @@ focus_tree = {
 	#Focus for Modernist Art
 	focus = {
 		id = GER_modernistart
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_modernist_art
 		x = 60
 		y = 5
 		cost = 5
@@ -1842,7 +1842,7 @@ focus_tree = {
 	#Focus for Crushing Corruption
 	focus = {
 		id = GER_crushingcorruption
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_crushing_corrpution_ds
 		x = 66
 		y = 5
 		cost = 5
@@ -1945,7 +1945,7 @@ focus_tree = {
 	#Focus for Weaking Chairman
 	focus = {
 		id = GER_weakingchairman
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_weaken_chairman
 		x = 64
 		y = 6
 		cost = 5
@@ -1967,7 +1967,7 @@ focus_tree = {
 	#Focus for The Socialist Republic
 	focus = {
 		id = GER_thesocialistrepublic
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_demsoc_state
 		x = 63
 		y = 7
 		cost = 5
@@ -1989,7 +1989,7 @@ focus_tree = {
 	#Focus for Local Defense Forces
 	focus = {
 		id = GER_localdefenseforces
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_local_defense
 		x = 68
 		y = 1
 		cost = 5

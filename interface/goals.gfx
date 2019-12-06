@@ -2914,5 +2914,49 @@ spriteTypes = {
 		name = "GFX_focus_GER_anti_corrpoution_lux"
 		texturefile = "gfx/interface/goals/GER_anti_corrpoution_lux.tga"
 	}
+						SpriteType = { 
+		name = "GFX_focus_GER_worker_eco"
+		texturefile = "gfx/interface/goals/GER_worker_eco.tga"
+	}
+					SpriteType = { 
+		name = "GFX_focus_GER_weaken_chairman"
+		texturefile = "gfx/interface/goals/GER_weaken_chairman.tga"
+	}
+				SpriteType = { 
+		name = "GFX_focus_GER_volkswagen"
+		texturefile = "gfx/interface/goals/GER_volkswagen.tga"
+	}
+				SpriteType = { 
+		name = "GFX_focus_GER_volksarmee_officers_ds"
+		texturefile = "gfx/interface/goals/GER_volksarmee_officers_ds.tga"
+	}
+					SpriteType = { 
+		name = "GFX_focus_GER_propoganda_campaing_ds"
+		texturefile = "gfx/interface/goals/GER_propoganda_campaing_ds.tga"
+	}
+						SpriteType = { 
+		name = "GFX_focus_GER_modernist_art"
+		texturefile = "gfx/interface/goals/GER_modernist_art.tga"
+	}
+					SpriteType = { 
+		name = "GFX_focus_GER_local_defense"
+		texturefile = "gfx/interface/goals/GER_local_defense.tga"
+	}
+				SpriteType = { 
+		name = "GFX_focus_GER_liberalize_gun_laws"
+		texturefile = "gfx/interface/goals/GER_liberalize_gun_laws.tga"
+	}
+				SpriteType = { 
+		name = "GFX_focus_GER_demsoc_state"
+		texturefile = "gfx/interface/goals/GER_demsoc_state.tga"
+	}
+					SpriteType = { 
+		name = "GFX_focus_GER_demsoc_majority"
+		texturefile = "gfx/interface/goals/GER_demsoc_majority.tga"
+	}
+						SpriteType = { 
+		name = "GFX_focus_GER_crushing_corrpution_ds"
+		texturefile = "gfx/interface/goals/GER_crushing_corrpution_ds.tga"
+	}
 	
 }
