@@ -983,3 +983,60 @@ ai_chance = { factor = 0}
 add_stability = -0.1
 }
 }
+
+#Reds take caspian coast
+country_event = {
+id = turkmenreds.125
+title = turkmenreds.125.t
+desc = turkmenreds.125.d
+is_triggered_only = yes
+picture = GFX_picture_bosnian_revolt
+
+option = {
+###yes
+
+name = turkmenreds.125.a
+ai_chance = { factor = 100}
+add_political_power = -50
+add_stability = -0.05
+}
+
+}
+
+#Reds take West balkans
+country_event = {
+id = turkmenreds.126
+title = turkmenreds.126.t
+desc = turkmenreds.126.d
+is_triggered_only = yes
+picture = GFX_picture_bosnian_revolt
+
+option = {
+###yes
+
+name = turkmenreds.126.a
+ai_chance = { factor = 100}
+add_political_power = -50
+add_stability = -0.05
+}
+
+}
+
+#Reds take East balkans
+country_event = {
+id = turkmenreds.127
+title = turkmenreds.127.t
+desc = turkmenreds.127.d
+is_triggered_only = yes
+picture = GFX_picture_bosnian_revolt
+
+option = {
+###yes
+
+name = turkmenreds.127.a
+ai_chance = { factor = 100}
+add_political_power = -50
+add_stability = -0.05
+}
+
+}
