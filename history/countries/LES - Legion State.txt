@@ -46,6 +46,8 @@ add_ideas = {
 extensive_conscription
 }
 
+puppet = AGR
+
 
 create_country_leader = {
 	name = "Radola Gajda"

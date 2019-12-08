@@ -1,6 +1,6 @@
 capital = 1231
 
-#oob = "LES_1934"
+oob = "AGR_1934"
 
 set_research_slots = 2
 

@@ -9,7 +9,7 @@ regiments = {
 	}
 }
 division_template = {
-name = "Russian Partisans"
+name = "Socialist Millita"
 regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -24,56 +24,40 @@ regiments = {
 }
 units = {
 division = {
-name = "Ist Czech Volunteers"
-location = 9292
+location = 10696
 division_template = "Czech Volunteers"
 start_experience_factor = 0.2
 start_equipment_factor = 0.6
 }
 
-
 division = {
-name = "IInd Czech Volunteers"
-location = 12157
+location = 12580
 division_template = "Czech Volunteers"
 start_experience_factor = 0.2
 start_equipment_factor = 0.6
 }
 
-
 division = {
-name = "IIIrd Czech Volunteers"
-location = 1775
-division_template = "Czech Volunteers"
+location = 7800
+division_template = "Socialist Millita"
 start_experience_factor = 0.2
-start_equipment_factor = 0.6
+start_equipment_factor = 0.5
 }
 
 
 division = {
-name = "IVth Czech Volunteers"
-location = 12106
-division_template = "Czech Volunteers"
+location = 12546
+division_template = "Socialist Millita"
 start_experience_factor = 0.2
-start_equipment_factor = 0.6
+start_equipment_factor = 0.5
+
 }
 
-
 division = {
-name = "Ist Russian Partisans"
-location = 12287
-division_template = "Russian Partisans"
+location = 10568
+division_template = "Socialist Millita"
 start_experience_factor = 0.2
-start_equipment_factor = 0.6
-}
-
-
-division = {
-name = "IInd Russian Partisans"
-location = 10170
-division_template = "Russian Partisans"
-start_experience_factor = 0.2
-start_equipment_factor = 0.6
+start_equipment_factor = 0.5
 }
 
 }
