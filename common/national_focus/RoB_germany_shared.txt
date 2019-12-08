@@ -531,9 +531,6 @@
 		y = 9
 		cost = 5
 		available_if_capitulated = yes
-		available = {
-		 has_country_flag = lol
-		}
 		ai_will_do = {
 			factor = 1
 		}
