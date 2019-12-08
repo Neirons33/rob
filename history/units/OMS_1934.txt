@@ -47,6 +47,18 @@ start_equipment_factor = 0.6
 }
 
 division = {
+location = 1821
+division_template = "Red Rifleman Regiment"
+start_experience_factor = 0.3
+start_equipment_factor = 0.4
+}
+division = {
+location = 10600
+division_template = "Red Rifleman Regiment"
+start_experience_factor = 0.3
+start_equipment_factor = 0.4
+}
+division = {
 location = 1808
 division_template = "Socialist Millita"
 start_experience_factor = 0.2
@@ -58,7 +70,7 @@ division = {
 location = 1821
 division_template = "Socialist Millita"
 start_experience_factor = 0.2
-start_equipment_factor = 0.4
+start_equipment_factor = 0.2
 
 }
 
@@ -66,7 +78,7 @@ division = {
 location = 6787
 division_template = "Socialist Millita"
 start_experience_factor = 0.2
-start_equipment_factor = 0.4
+start_equipment_factor = 0.2
 }
 
 division = {
@@ -79,7 +91,18 @@ division = {
 location = 1659
 division_template = "Socialist Millita"
 start_experience_factor = 0.2
-start_equipment_factor = 0.4
+start_equipment_factor = 0.2
 }
-
+division = {
+location = 1841
+division_template = "Socialist Millita"
+start_experience_factor = 0.2
+start_equipment_factor = 0.2
+}
+division = {
+location = 10659
+division_template = "Socialist Millita"
+start_experience_factor = 0.2
+start_equipment_factor = 0.2
+}
 }
