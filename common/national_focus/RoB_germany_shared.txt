@@ -2,7 +2,7 @@
 	#Focus for Import foreign artillery pieces
 	shared_focus = {
 		id = GER_importforeignartillerypieces
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_import_cannons
 		x = 8
 		y = 16
 		cost = 5
@@ -23,7 +23,7 @@
 	#Focus for Attention on paratroopers
 	shared_focus = {
 		id = GER_attentiononparatroopers
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_attention_to_paratroopers
 		x = 0
 		y = 15
 		cost = 5
@@ -45,7 +45,7 @@
 	#Focus for Artillery focus
 	shared_focus = {
 		id = GER_eFiPJRUs
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_artillery_focus
 		x = 8
 		y = 15
 		cost = 5
@@ -66,7 +66,7 @@
 	#Focus for Military reforms
 	shared_focus = {
 		id = GER_blitzkriegtactics
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_blitzkrieg_tactics
 		x = 10
 		y = 16
 		cost = 5
@@ -87,7 +87,7 @@
 	#Focus for Military reforms
 	shared_focus = {
 		id = GER_militaryreforms
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_military_reforms
 		x = 4
 		y = 10
 		cost = 5
@@ -109,7 +109,7 @@
 	#Focus for Armeeplan
 	shared_focus = {
 		id = GER_armeeplan
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_armeeplan
 		x = 6
 		y = 12
 		cost = 5
@@ -134,7 +134,7 @@
 	#Focus for Improve training
 	shared_focus = {
 		id = GER_improvetraining
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_improve_training
 		x = 8
 		y = 11
 		cost = 5
@@ -156,7 +156,7 @@
 	#Focus for Form the panzerkorps
 	shared_focus = {
 		id = GER_formthepanzerkorps
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_form_panzer_korps
 		x = 12
 		y = 15
 		cost = 5
@@ -175,7 +175,7 @@
 	#Focus for elite training
 	shared_focus = {
 		id = GER_crZWuAyd
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_elite_panzer_training
 		x = 12
 		y = 16
 		cost = 5
@@ -197,7 +197,7 @@
 	#Focus for Panzer, vorwarts!
 	shared_focus = {
 		id = GER_panzervorwarts
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_panzers_forwards
 		x = 11
 		y = 17
 		cost = 5
@@ -224,7 +224,7 @@
 	#Focus for Motorize the infantry
 	shared_focus = {
 		id = GER_motorizetheinfantry
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_motorize_infantry
 		x = 10
 		y = 15
 		cost = 7
@@ -245,7 +245,7 @@
 	#Focus for infanterie, vorwarts!
 	shared_focus = {
 		id = GER_infanterievorwarts
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_infanterie_forwards
 		x = 6
 		y = 17
 		cost = 5
@@ -272,7 +272,7 @@
 	#Focus for Stormtrooper tactics
 	shared_focus = {
 		id = GER_stormtroopertactics
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_sturmtruppen_tactics
 		x = 4
 		y = 15
 		cost = 5
@@ -294,7 +294,7 @@
 	#Focus for Offensive Tactics
 	shared_focus = {
 		id = GER_offensivetactics
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_offensive_tactics
 		x = 4
 		y = 16
 		cost = 5
@@ -316,7 +316,7 @@
 	#Focus for Mass assault tactics
 	shared_focus = {
 		id = GER_massassaulttactics
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_mass_assault
 		x = 2
 		y = 15
 		cost = 5
@@ -338,7 +338,7 @@
 	#Focus for Elite of the elite
 	shared_focus = {
 		id = GER_eliteoftheelite
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_elite_of_elite
 		x = 0
 		y = 16
 		cost = 5
@@ -357,7 +357,7 @@
 	#Focus for Mass conscription
 	shared_focus = {
 		id = GER_TcYFGjMz
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_expand_conscription_k
 		x = 2
 		y = 16
 		cost = 5
@@ -376,7 +376,7 @@
 	#Focus for Falschimjager, vorwarts!
 	shared_focus = {
 		id = GER_falschimjagervorwarts
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_paratroopers_forwards
 		x = 1
 		y = 17
 		cost = 5
@@ -411,7 +411,7 @@
 	#Focus for Increase transport plane production
 	shared_focus = {
 		id = GER_increasetransportplaneproduction
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_increase_plane_production
 		x = 1
 		y = 14
 		cost = 5
@@ -430,7 +430,7 @@
 	#Focus for Rapid promotions
 	shared_focus = {
 		id = GER_rapidpromotions
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_rapid_promotions
 		x = 4
 		y = 11
 		cost = 5
@@ -447,7 +447,7 @@
 	#Focus for Doctrine focus
 	shared_focus = {
 		id = GER_JGsLWUZK
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_doctrine_focus
 		x = 6
 		y = 11
 		cost = 5
@@ -469,7 +469,7 @@
 	#Focus for Seydlitzplan
 	shared_focus = {
 		id = GER_seydlitzplan
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_seydliztplan
 		x = 6
 		y = 13
 		cost = 5
@@ -488,7 +488,7 @@
 	#Focus for Rommelplan
 	shared_focus = {
 		id = GER_rommelplan
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_rommelplan
 		x = 11
 		y = 13
 		cost = 5
@@ -507,7 +507,7 @@
 	#Focus for Increase rifle production
 	shared_focus = {
 		id = GER_increaserifleproduction
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_increase_rifle_production
 		x = 6
 		y = 14
 		cost = 5
@@ -526,11 +526,14 @@
 	#Focus for Rote Volksarmee
 	shared_focus = {
 		id = GER_rotevolksarmee
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_rote_volksarmee
 		x = 6
 		y = 9
 		cost = 5
 		available_if_capitulated = yes
+		available = {
+		 has_country_flag = lol
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -542,7 +545,7 @@
 	#Focus for Increase conscription
 	shared_focus = {
 		id = GER_YjfSNHTm
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_increase_conscription
 		x = 8
 		y = 10
 		cost = 5
@@ -561,7 +564,7 @@
 	#Focus for Studentplan
 	shared_focus = {
 		id = GER_studentplan
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_studentplan
 		x = 1
 		y = 13
 		cost = 5
@@ -584,7 +587,7 @@
 	#Focus for Increase panzer production
 	shared_focus = {
 		id = GER_increasepanzerproduction
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_increase_panzer_production
 		x = 11
 		y = 14
 		cost = 5

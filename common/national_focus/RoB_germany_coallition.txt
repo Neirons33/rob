@@ -2,6 +2,10 @@ focus_tree = {
 	id = german_focus_coallition
 		country = {
 		factor = 0
+		modifier = {
+			add = 10
+			tag = ITA
+		}
 	}
 
 	continuous_focus_position = { x = 50 y = 3000 }
@@ -15,7 +19,7 @@ focus_tree = {
 		#Focus for L-NB Majority
 	focus = {
 		id = GER_lnbmajority
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_luxembourgist_majority
 		x = 21
 		y = 0
 		cost = 10
@@ -34,7 +38,7 @@ focus_tree = {
 		#Focus for German Patriotism
 	focus = {
 		id = GER_germanpatriotism
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_german_revanchism
 		x = 19
 		y = 2
 		cost = 10
@@ -51,7 +55,7 @@ focus_tree = {
 		#Focus for Rotkorps Priority
 	focus = {
 		id = GER_rotkorpspriority
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_modernize_rotkorps
 		x = 26
 		y = 1
 		cost = 10
@@ -67,7 +71,7 @@ focus_tree = {
 		#Focus for Continue Our Economic Policiy
 	focus = {
 		id = GER_continueoureconomicpoliciy
-		icon = GFX_goal_unknown
+		icon = GFX_SOV_novgorod_plants
 		x = 21
 		y = 1
 		cost = 10
@@ -142,7 +146,7 @@ focus_tree = {
 		#Focus for Strengthen the Chairman
 	focus = {
 		id = GER_strengthenthechairman
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_vlaslov_strong_premier
 		x = 16
 		y = 1
 		cost = 10
@@ -158,7 +162,7 @@ focus_tree = {
 		#Focus for Purge Reactionaries
 	focus = {
 		id = GER_purgereactionaries
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_vlaslov_purges
 		x = 16
 		y = 2
 		cost = 10
@@ -175,7 +179,7 @@ focus_tree = {
 		#Focus for Socialist Security Services
 	focus = {
 		id = GER_socialistsecurityservices
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_vlaslovist_security
 		x = 16
 		y = 3
 		cost = 10
@@ -192,7 +196,7 @@ focus_tree = {
 	#Focus for European Politics
 	focus = {
 		id = GER_europeanpolitics
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_liberate_europe
 		x = 19
 		y = 3
 		cost = 10
@@ -210,7 +214,7 @@ focus_tree = {
 		#Focus for The Spearhead
 	focus = {
 		id = GER_thespearhead
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_focus_on_rotkorps
 		x = 26
 		y = 2
 		cost = 10
@@ -233,7 +237,7 @@ focus_tree = {
 	#Focus for Control Over Volksarmee
 	focus = {
 		id = GER_controlovervolksarmee
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_volksarmee_officers_ds
 		x = 26
 		y = 3
 		cost = 10
@@ -253,7 +257,7 @@ focus_tree = {
 	#Focus for Expand Anti-Partisan Warfare
 	focus = {
 		id = GER_expandantipartisanwarfare
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_cruel_anti_paertisan
 		x = 23
 		y = 2
 		cost = 10
@@ -269,7 +273,7 @@ focus_tree = {
 		#Focus for Fight with Consumer Good Shortages
 	focus = {
 		id = GER_fightwithconsumergoodshortages
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_urban_nationalization
 		x = 21
 		y = 2
 		cost = 10
@@ -287,7 +291,7 @@ focus_tree = {
 	#Focus for Agricultural Grants
 	focus = {
 		id = GER_agriculturalgrants
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_grain_quatas
 		x = 21
 		y = 3
 		cost = 10
@@ -306,7 +310,7 @@ focus_tree = {
 	#Focus for Countryside Supporters
 	focus = {
 		id = GER_countrysidesupporters
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_bukharins_agriculture
 		x = 23
 		y = 3
 		cost = 10
@@ -323,7 +327,7 @@ focus_tree = {
 	#Focus for Heavy Anti-Corruption Measures
 	focus = {
 		id = GER_heavyanticorruptionmeasures
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_anti_corrpoution_lux
 		x = 17
 		y = 4
 		cost = 10
@@ -351,7 +355,7 @@ focus_tree = {
 	#Focus for Economic Independence
 	focus = {
 		id = GER_economicindependence
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_foreced_collectiviation_vlaslov
 		x = 20
 		y = 4
 		cost = 10
@@ -374,7 +378,7 @@ focus_tree = {
 		#Focus for Connecting Rural Communes
 	focus = {
 		id = GER_connectingruralcommunes
-		icon = GFX_goal_unknown
+		icon = GFX_SOV_moscowsmolnesk_highway
 		x = 22
 		y = 4
 		cost = 10
@@ -502,7 +506,7 @@ random_owned_controlled_state = {
 		#Focus for Medium-scale Operations
 	focus = {
 		id = GER_mediumscaleoperations
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_kill_all_traitors
 		x = 25
 		y = 4
 		cost = 10
@@ -531,7 +535,7 @@ random_owned_controlled_state = {
 		#Focus for Authoritarian State
 	focus = {
 		id = GER_authoritarianstate
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_all_seeing_state
 		x = 18
 		y = 5
 		cost = 10
@@ -553,7 +557,7 @@ random_owned_controlled_state = {
 	#Focus for Local Socialist Militias
 	focus = {
 		id = GER_localsocialistmilitias
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_recruitment_campaing
 		x = 22
 		y = 6
 		cost = 10
@@ -577,7 +581,7 @@ random_owned_controlled_state = {
 	#Focus for Political Commissars
 	focus = {
 		id = GER_politicalcommissars
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_commiser_officers
 		x = 20
 		y = 6
 		cost = 10
@@ -600,7 +604,7 @@ random_owned_controlled_state = {
 	#Focus for The German Socialist State
 	focus = {
 		id = GER_thegermansocialiststate
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_socialist_state
 		x = 21
 		y = 7
 		cost = 10
@@ -622,7 +626,7 @@ random_owned_controlled_state = {
 	#Focus for Guns for Our Army!
 	focus = {
 		id = GER_gunsforourarmy
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_focus_on_military_industry
 		x = 21
 		y = 5
 		cost = 10
@@ -646,7 +650,7 @@ random_owned_controlled_state = {
 	#Focus for Conscript Peasants
 	focus = {
 		id = GER_conscriptpeasants
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_mass_mobilizations_molotov
 		x = 24
 		y = 5
 		cost = 10
@@ -671,7 +675,7 @@ random_owned_controlled_state = {
 		#Focus for DS-L Majority
 	focus = {
 		id = GER_dslmajority
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_demsoc_majority
 		x = 49
 		y = 0
 		cost = 10
@@ -689,7 +693,7 @@ random_owned_controlled_state = {
 		#Focus for Strenghten the Rotkorps
 	focus = {
 		id = GER_strenghtentherotkorps
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_new_german_army
 		x = 54
 		y = 1
 		cost = 10
@@ -710,7 +714,7 @@ random_owned_controlled_state = {
 		#Focus for Forgive partisans...
 	focus = {
 		id = GER_forgivepartisans
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_SOV_indoctrinate_molotov
 		x = 51
 		y = 2
 		cost = 10
@@ -726,7 +730,7 @@ random_owned_controlled_state = {
 		#Focus for Cultural marxism
 	focus = {
 		id = GER_culturalmarxism
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_propoganda_campaing_ds
 		x = 47
 		y = 2
 		cost = 10
@@ -742,7 +746,7 @@ random_owned_controlled_state = {
 		#Focus for Further industrilization
 	focus = {
 		id = GER_furtherindustrilization
-		icon = GFX_goal_unknown
+		icon = GFX_SOV_gorky_plants
 		x = 49
 		y = 1
 		cost = 10
@@ -817,7 +821,7 @@ random_owned_controlled_state = {
 		#Focus for Liberalize the council
 	focus = {
 		id = GER_liberalizethecouncil
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_empower_council
 		x = 44
 		y = 1
 		cost = 10
@@ -835,7 +839,7 @@ random_owned_controlled_state = {
 	#Focus for More power to the trade unions
 	focus = {
 		id = GER_morepowertothetradeunions
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_promise_reforms
 		x = 44
 		y = 2
 		cost = 10
@@ -851,7 +855,7 @@ random_owned_controlled_state = {
 		#Focus for Extreme anti-coruption measures
 	focus = {
 		id = GER_extremeanticoruptionmeasures
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_crushing_corrpution_ds
 		x = 44
 		y = 3
 		cost = 10
@@ -868,7 +872,7 @@ random_owned_controlled_state = {
 		#Focus for Destroy German Identity
 	focus = {
 		id = GER_destroygermanidentity
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_reshape_german_culture
 		x = 47
 		y = 3
 		cost = 10
@@ -884,7 +888,7 @@ random_owned_controlled_state = {
 		#Focus for Build the Autobahn
 	focus = {
 		id = GER_buildtheautobahn
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_bukharins_railway_to_leningrad
 		x = 49
 		y = 2
 		cost = 10
@@ -1008,7 +1012,7 @@ random_owned_controlled_state = {
 	#Focus for Focus on the worker
 	focus = {
 		id = GER_focusontheworker
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_worker_eco
 		x = 49
 		y = 3
 		cost = 10
@@ -1027,7 +1031,7 @@ random_owned_controlled_state = {
 	#Focus for ...Execute the rest
 	focus = {
 		id = GER_executetherest
-		icon = GFX_goal_unknown
+		icon = GFX_SOV_forced_replacment
 		x = 51
 		y = 3
 		cost = 10
@@ -1044,7 +1048,7 @@ random_owned_controlled_state = {
 		#Focus for Dominate the Volksarmee
 	focus = {
 		id = GER_dominatethevolksarmee
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_spread_revolution
 		x = 54
 		y = 3
 		cost = 10
@@ -1064,7 +1068,7 @@ random_owned_controlled_state = {
 	#Focus for Import foreign revoliutionaries
 	focus = {
 		id = GER_importforeignrevoliutionaries
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_reform_general_satff
 		x = 54
 		y = 2
 		cost = 10
@@ -1082,7 +1086,7 @@ random_owned_controlled_state = {
 	#Focus for Volksmilitia
 	focus = {
 		id = GER_volksmilitia
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_crush_unrest
 		x = 53
 		y = 4
 		cost = 10
@@ -1106,7 +1110,7 @@ random_owned_controlled_state = {
 	#Focus for The loyal people
 	focus = {
 		id = GER_theloyalpeople
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_local_defense
 		x = 50
 		y = 4
 		cost = 10
@@ -1127,7 +1131,7 @@ random_owned_controlled_state = {
 		#Focus for The new education
 	focus = {
 		id = GER_theneweducation
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_bukharins_institute_of_agriculture
 		x = 48
 		y = 4
 		cost = 10
@@ -1150,7 +1154,7 @@ random_owned_controlled_state = {
 	#Focus for The Communist Man
 	focus = {
 		id = GER_thecommunistman
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_bukharins_modern_farming_tech
 		x = 45
 		y = 4
 		cost = 10
@@ -1173,7 +1177,7 @@ random_owned_controlled_state = {
 	#Focus for Undeniable rule
 	focus = {
 		id = GER_undeniablerule
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_purge_trade_unions
 		x = 52
 		y = 5
 		cost = 10
@@ -1194,7 +1198,7 @@ random_owned_controlled_state = {
 	#Focus for The workers state
 	focus = {
 		id = GER_theworkersstate
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_demsoc_state
 		x = 49
 		y = 7
 		cost = 10
@@ -1216,7 +1220,7 @@ random_owned_controlled_state = {
 		#Focus for The weak chairman
 	focus = {
 		id = GER_theweakchairman
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_weaken_chairman
 		x = 50
 		y = 6
 		cost = 10
@@ -1239,7 +1243,7 @@ random_owned_controlled_state = {
 		#Focus for Guns for party members
 	focus = {
 		id = GER_gunsforpartymembers
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_liberalize_gun_laws
 		x = 49
 		y = 5
 		cost = 10
@@ -1262,7 +1266,7 @@ random_owned_controlled_state = {
 		#Focus for Communist youth
 	focus = {
 		id = GER_communistyouth
-		icon = GFX_goal_unknown
+		icon = GFX_SOV_use_communist_youth
 		x = 48
 		y = 6
 		cost = 10
@@ -1285,7 +1289,7 @@ random_owned_controlled_state = {
 		#Focus for Arbeitstaat
 	focus = {
 		id = GER_arbeitstaat
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_modernist_art
 		x = 46
 		y = 5
 		cost = 10

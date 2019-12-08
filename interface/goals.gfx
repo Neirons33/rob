@@ -2959,4 +2959,118 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/GER_crushing_corrpution_ds.tga"
 	}
 	
+	###GER - ARMY
+	
+		SpriteType = { 
+		name = "GFX_focus_GER_doctrine_focus"
+		texturefile = "gfx/interface/goals/GER_doctrine_focus.tga"
+	}
+		SpriteType = { 
+		name = "GFX_focus_GER_sturmtruppen_tactics"
+		texturefile = "gfx/interface/goals/GER_sturmtruppen_tactics.tga"
+	}
+		SpriteType = { 
+		name = "GFX_focus_GER_studentplan"
+		texturefile = "gfx/interface/goals/GER_studentplan.tga"
+	}
+		SpriteType = { 
+		name = "GFX_focus_GER_seydliztplan"
+		texturefile = "gfx/interface/goals/GER_seydliztplan.tga"
+	}
+		SpriteType = { 
+		name = "GFX_focus_GER_rote_volksarmee"
+		texturefile = "gfx/interface/goals/GER_rote_volksarmee.tga"
+	}
+		SpriteType = { 
+		name = "GFX_focus_GER_rommelplan"
+		texturefile = "gfx/interface/goals/GER_rommelplan.tga"
+	}
+		SpriteType = { 
+		name = "GFX_focus_GER_rapid_promotions"
+		texturefile = "gfx/interface/goals/GER_rapid_promotions.tga"
+	}
+		SpriteType = { 
+		name = "GFX_focus_GER_paratroopers_forwards"
+		texturefile = "gfx/interface/goals/GER_paratroopers_forwards.tga"
+	}
+		SpriteType = { 
+		name = "GFX_focus_GER_panzers_forwards"
+		texturefile = "gfx/interface/goals/GER_panzers_forwards.tga"
+	}
+		SpriteType = { 
+		name = "GFX_focus_GER_offensive_tactics"
+		texturefile = "gfx/interface/goals/GER_offensive_tactics.tga"
+	}
+		SpriteType = { 
+		name = "GFX_focus_GER_motorize_infantry"
+		texturefile = "gfx/interface/goals/GER_motorize_infantry.tga"
+	}
+		SpriteType = { 
+		name = "GFX_focus_GER_military_reforms"
+		texturefile = "gfx/interface/goals/GER_military_reforms.tga"
+	}
+		SpriteType = { 
+		name = "GFX_focus_GER_mass_assault"
+		texturefile = "gfx/interface/goals/GER_mass_assault.tga"
+	}
+		SpriteType = { 
+		name = "GFX_focus_GER_infanterie_forwards"
+		texturefile = "gfx/interface/goals/GER_infanterie_forwards.tga"
+	}
+		SpriteType = { 
+		name = "GFX_focus_GER_increase_rifle_production"
+		texturefile = "gfx/interface/goals/GER_increase_rifle_production.tga"
+	}
+		SpriteType = { 
+		name = "GFX_focus_GER_increase_plane_production"
+		texturefile = "gfx/interface/goals/GER_increase_plane_production.tga"
+	}
+		SpriteType = { 
+		name = "GFX_focus_GER_increase_panzer_production"
+		texturefile = "gfx/interface/goals/GER_increase_panzer_production.tga"
+	}
+		SpriteType = { 
+		name = "GFX_focus_GER_increase_conscription"
+		texturefile = "gfx/interface/goals/GER_increase_conscription.tga"
+	}
+		SpriteType = { 
+		name = "GFX_focus_GER_improve_training"
+		texturefile = "gfx/interface/goals/GER_improve_training.tga"
+	}
+		SpriteType = { 
+		name = "GFX_focus_GER_import_cannons"
+		texturefile = "gfx/interface/goals/GER_import_cannons.tga"
+	}
+		SpriteType = { 
+		name = "GFX_focus_GER_form_panzer_korps"
+		texturefile = "gfx/interface/goals/GER_form_panzer_korps.tga"
+	}
+		SpriteType = { 
+		name = "GFX_focus_GER_expand_conscription_k"
+		texturefile = "gfx/interface/goals/GER_expand_conscription_k.tga"
+	}
+		SpriteType = { 
+		name = "GFX_focus_GER_elite_panzer_training"
+		texturefile = "gfx/interface/goals/GER_elite_panzer_training.tga"
+	}
+		SpriteType = { 
+		name = "GFX_focus_GER_elite_of_elite"
+		texturefile = "gfx/interface/goals/GER_elite_of_elite.tga"
+	}
+		SpriteType = { 
+		name = "GFX_focus_GER_blitzkrieg_tactics"
+		texturefile = "gfx/interface/goals/GER_blitzkrieg_tactics.tga"
+	}
+		SpriteType = { 
+		name = "GFX_focus_GER_attention_to_paratroopers"
+		texturefile = "gfx/interface/goals/GER_attention_to_paratroopers.tga"
+	}
+		SpriteType = { 
+		name = "GFX_focus_GER_artillery_focus"
+		texturefile = "gfx/interface/goals/GER_artillery_focus.tga"
+	}
+		SpriteType = { 
+		name = "GFX_focus_GER_armeeplan"
+		texturefile = "gfx/interface/goals/GER_armeeplan.tga"
+	}
 }

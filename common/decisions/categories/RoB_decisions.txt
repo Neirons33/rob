@@ -10,6 +10,18 @@ GER_german_partisans = {
 		  }
 }
 
+GER_german_expansion = {
+  icon = GFX_decision_oppression
+  picture = GFX_decision_germany_partisans
+	visible = {
+    tag = GER
+	has_country_flag = GER_expansion
+    }
+		  priority = {
+		  base = 10
+		  }
+}
+
 BLR_power_struggle = {
   icon = GFX_decision_oppression
   picture = GFX_decision_germany_partisans
