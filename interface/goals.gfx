@@ -3073,4 +3073,190 @@ spriteTypes = {
 		name = "GFX_focus_GER_armeeplan"
 		texturefile = "gfx/interface/goals/GER_armeeplan.tga"
 	}
+	
+	###GER - NAVY
+		SpriteType = { 
+		name = "GFX_focus_GER_special_training"
+		texturefile = "gfx/interface/goals/GER_special_training.tga"
+	}
+		SpriteType = { 
+		name = "GFX_focus_GER_focus_on_bb"
+		texturefile = "gfx/interface/goals/GER_focus_on_bb.tga"
+	}
+		SpriteType = { 
+		name = "GFX_focus_GER_focus_on_dd"
+		texturefile = "gfx/interface/goals/GER_focus_on_dd.tga"
+	}
+		SpriteType = { 
+		name = "GFX_focus_GER_focus_on_ship_design"
+		texturefile = "gfx/interface/goals/GER_focus_on_ship_design.tga"
+	}
+		SpriteType = { 
+		name = "GFX_focus_GER_focus_on_ss"
+		texturefile = "gfx/interface/goals/GER_focus_on_ss.tga"
+	}
+		SpriteType = { 
+		name = "GFX_focus_GER_invade_prussia"
+		texturefile = "gfx/interface/goals/GER_invade_prussia.tga"
+	}
+		SpriteType = { 
+		name = "GFX_focus_GER_more_transportships"
+		texturefile = "gfx/interface/goals/GER_more_transportships.tga"
+	}
+		SpriteType = { 
+		name = "GFX_focus_GER_naval_doctrine_standart"
+		texturefile = "gfx/interface/goals/GER_naval_doctrine_standart.tga"
+	}
+		SpriteType = { 
+		name = "GFX_focus_GER_rebuild_the_navy"
+		texturefile = "gfx/interface/goals/GER_rebuild_the_navy.tga"
+	}
+		SpriteType = { 
+		name = "GFX_focus_GER_volksflotte"
+		texturefile = "gfx/interface/goals/GER_volksflotte.tga"
+	}
+		SpriteType = { 
+		name = "GFX_focus_GER_volksmarine"
+		texturefile = "gfx/interface/goals/GER_volksmarine.tga"
+	}
+	
+	###GER - AIR
+		SpriteType = { 
+		name = "GFX_focus_GER_air_doctrine_focus"
+		texturefile = "gfx/interface/goals/GER_air_doctrine_focus.tga"
+	}
+		SpriteType = { 
+		name = "GFX_focus_GER_bomber_focus"
+		texturefile = "gfx/interface/goals/GER_bomber_focus.tga"
+	}
+		SpriteType = { 
+		name = "GFX_focus_GER_build_more_aa"
+		texturefile = "gfx/interface/goals/GER_build_more_aa.tga"
+	}
+		SpriteType = { 
+		name = "GFX_focus_GER_fighter_focus"
+		texturefile = "gfx/interface/goals/GER_fighter_focus.tga"
+	}
+		SpriteType = { 
+		name = "GFX_focus_GER_flug_nach_pruessen"
+		texturefile = "gfx/interface/goals/GER_flug_nach_pruessen.tga"
+	}
+		SpriteType = { 
+		name = "GFX_focus_GER_increased_pilot_training"
+		texturefile = "gfx/interface/goals/GER_increased_pilot_training.tga"
+	}
+		SpriteType = { 
+		name = "GFX_focus_GER_increased_plane_production"
+		texturefile = "gfx/interface/goals/GER_increased_plane_production.tga"
+	}
+		SpriteType = { 
+		name = "GFX_focus_GER_luftwaffe_divisons"
+		texturefile = "gfx/interface/goals/GER_luftwaffe_divisons.tga"
+	}
+		SpriteType = { 
+		name = "GFX_focus_GER_rote_luftwaffe"
+		texturefile = "gfx/interface/goals/GER_rote_luftwaffe.tga"
+	}
+	
+ ###GER - ECO
+		SpriteType = { 
+		name = "GFX_focus_GER_dei"
+		texturefile = "gfx/interface/goals/GER_dei.tga"
+	}
+		SpriteType = { 
+		name = "GFX_focus_GER_demsoc_eco"
+		texturefile = "gfx/interface/goals/GER_demsoc_eco.tga"
+	}
+		SpriteType = { 
+		name = "GFX_focus_GER_deutsche_heavy_industry"
+		texturefile = "gfx/interface/goals/GER_deutsche_heavy_industry.tga"
+	}
+		SpriteType = { 
+		name = "GFX_focus_GER_deutscheindustriegschafft"
+		texturefile = "gfx/interface/goals/GER_deutscheindustriegschafft.tga"
+	}
+		SpriteType = { 
+		name = "GFX_focus_GER_deutschekriegsindustrie"
+		texturefile = "gfx/interface/goals/GER_deutschekriegsindustrie.tga"
+	}
+		SpriteType = { 
+		name = "GFX_focus_GER_forced_industrialiaztion"
+		texturefile = "gfx/interface/goals/GER_forced_industrialiaztion.tga"
+	}
+		SpriteType = { 
+		name = "GFX_focus_GER_german_industry"
+		texturefile = "gfx/interface/goals/GER_german_industry.tga"
+	}
+		SpriteType = { 
+		name = "GFX_focus_GER_industrial_research"
+		texturefile = "gfx/interface/goals/GER_industrial_research.tga"
+	}
+		SpriteType = { 
+		name = "GFX_focus_GER_luxemb_eco"
+		texturefile = "gfx/interface/goals/GER_luxemb_eco.tga"
+	}
+		SpriteType = { 
+		name = "GFX_focus_GER_modern_economy"
+		texturefile = "gfx/interface/goals/GER_modern_economy.tga"
+	}
+		SpriteType = { 
+		name = "GFX_focus_GER_modern_germany"
+		texturefile = "gfx/interface/goals/GER_modern_germany.tga"
+	}
+		SpriteType = { 
+		name = "GFX_focus_GER_national_arms_industry"
+		texturefile = "gfx/interface/goals/GER_national_arms_industry.tga"
+	}
+		SpriteType = { 
+		name = "GFX_focus_GER_nazbol_autarky"
+		texturefile = "gfx/interface/goals/GER_nazbol_autarky.tga"
+	}
+		SpriteType = { 
+		name = "GFX_focus_GER_nazbol_eco"
+		texturefile = "gfx/interface/goals/GER_nazbol_eco.tga"
+	}
+		SpriteType = { 
+		name = "GFX_focus_GER_new_germany"
+		texturefile = "gfx/interface/goals/GER_new_germany.tga"
+	}
+		SpriteType = { 
+		name = "GFX_focus_GER_rebuild_railways"
+		texturefile = "gfx/interface/goals/GER_rebuild_railways.tga"
+	}
+		SpriteType = { 
+		name = "GFX_focus_GER_rebuild_war_damage"
+		texturefile = "gfx/interface/goals/GER_rebuild_war_damage.tga"
+	}
+		SpriteType = { 
+		name = "GFX_focus_GER_rheinoder_highway"
+		texturefile = "gfx/interface/goals/GER_rheinoder_highway.tga"
+	}
+		SpriteType = { 
+		name = "GFX_focus_GER_rural_infras"
+		texturefile = "gfx/interface/goals/GER_rural_infras.tga"
+	}
+		SpriteType = { 
+		name = "GFX_focus_GER_rural_schools"
+		texturefile = "gfx/interface/goals/GER_rural_schools.tga"
+	}
+		SpriteType = { 
+		name = "GFX_focus_GER_shall_be_enough"
+		texturefile = "gfx/interface/goals/GER_shall_be_enough.tga"
+	}
+		SpriteType = { 
+		name = "GFX_focus_GER_steady_she_goes"
+		texturefile = "gfx/interface/goals/GER_steady_she_goes.tga"
+	}
+		SpriteType = { 
+		name = "GFX_focus_GER_volkslufhansa"
+		texturefile = "gfx/interface/goals/GER_volkslufhansa.tga"
+	}
+		SpriteType = { 
+		name = "GFX_focus_GER_what_little_we_have"
+		texturefile = "gfx/interface/goals/GER_what_little_we_have.tga"
+	}
+		SpriteType = { 
+		name = "GFX_focus_GER_worker_cooperatives"
+		texturefile = "gfx/interface/goals/GER_worker_cooperatives.tga"
+	}
 }

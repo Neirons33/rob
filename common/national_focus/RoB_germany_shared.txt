@@ -603,7 +603,7 @@
 	#Focus for Transport ships
 	shared_focus = {
 		id = GER_transportships
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_more_transportships
 		x = 17
 		y = 13
 		cost = 5
@@ -624,7 +624,7 @@
 	#Focus for Rebuild the navy
 	shared_focus = {
 		id = GER_rebuildthenavy
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_rebuild_the_navy
 		x = 15
 		y = 14
 		cost = 5
@@ -648,7 +648,7 @@
 	#Focus for Volksmarine
 	shared_focus = {
 		id = GER_volksmarine
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_volksmarine
 		x = 15
 		y = 12
 		cost = 5
@@ -670,7 +670,7 @@
 	#Focus for Prepare to retake Prussia
 	shared_focus = {
 		id = GER_preparetoretakeprussia
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_invade_prussia
 		x = 15
 		y = 15
 		cost = 5
@@ -689,7 +689,7 @@
 	#Focus for Rote Luftwaffe
 	shared_focus = {
 		id = GER_roteluftwaffe
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_rote_luftwaffe
 		x = 21
 		y = 9
 		cost = 5
@@ -705,7 +705,7 @@
 	#Focus for Fighter focus
 	shared_focus = {
 		id = GER_fighterfocus
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_fighter_focus
 		x = 19
 		y = 10
 		cost = 5
@@ -729,7 +729,7 @@
 	#Focus for Aerial doctrine focus
 	shared_focus = {
 		id = GER_aerialdoctrinefocus
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_air_doctrine_focus
 		x = 21
 		y = 11
 		cost = 5
@@ -756,7 +756,7 @@
 	#Focus for Increased pilot training
 	shared_focus = {
 		id = GER_increasedpilottraining
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_increased_pilot_training
 		x = 19
 		y = 12
 		cost = 5
@@ -775,7 +775,7 @@
 	#Focus for Luftwaffe divisions
 	shared_focus = {
 		id = GER_luftwaffedivisions
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_luftwaffe_divisons
 		x = 23
 		y = 12
 		cost = 5
@@ -797,7 +797,7 @@
 	#Focus for Build more AA
 	shared_focus = {
 		id = GER_buildmoreaa
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_build_more_aa
 		x = 23
 		y = 13
 		cost = 5
@@ -818,7 +818,7 @@
 	#Focus for Flug nach Preußen!
 	shared_focus = {
 		id = GER_flugnachpreuen
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_flug_nach_pruessen
 		x = 21
 		y = 14
 		cost = 5
@@ -842,7 +842,7 @@
 	#Focus for Increase plane production
 	shared_focus = {
 		id = GER_increaseplaneproduction
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_increased_plane_production
 		x = 19
 		y = 13
 		cost = 5
@@ -861,7 +861,7 @@
 	#Focus for Rote Volksflotte
 	shared_focus = {
 		id = GER_rotevolksflotte
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_volksflotte
 		x = 15
 		y = 9
 		cost = 5
@@ -877,7 +877,7 @@
 	#Focus for Focus on U-boats
 	shared_focus = {
 		id = GER_xvmgqaYK
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_focus_on_ss
 		x = 13
 		y = 11
 		cost = 5
@@ -908,7 +908,7 @@
 	#Focus for Focus on Battleships
 	shared_focus = {
 		id = GER_focusonbattleships
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_focus_on_bb
 		x = 15
 		y = 11
 		cost = 5
@@ -940,7 +940,7 @@
 	#Focus for Focus on destroyers
 	shared_focus = {
 		id = GER_focusondestroyers
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_focus_on_dd
 		x = 17
 		y = 11
 		cost = 5
@@ -971,7 +971,7 @@
 	#Focus for Focus on ship design
 	shared_focus = {
 		id = GER_focusonshipdesign
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_focus_on_ship_design
 		x = 17
 		y = 10
 		cost = 5
@@ -996,7 +996,7 @@
 	#Focus for Standardise the Naval doctrine
 	shared_focus = {
 		id = GER_standardisethenavaldoctrine
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_naval_doctrine_standart
 		x = 13
 		y = 10
 		cost = 5
@@ -1018,7 +1018,7 @@
 	#Focus for Special training
 	shared_focus = {
 		id = GER_specialtraining
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_special_training
 		x = 13
 		y = 13
 		cost = 5
@@ -1040,7 +1040,7 @@
 	#Focus for Bomber focus
 	shared_focus = {
 		id = GER_bomberfocus
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_bomber_focus
 		x = 23
 		y = 10
 		cost = 5
@@ -1064,7 +1064,7 @@
 	#Focus for German Economy
 	shared_focus = {
 		id = GER_germaneconomy
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_join_comintern
 		x = 33
 		y = 9
 		cost = 5
@@ -1086,7 +1086,7 @@
 	#Focus for National Bolshevik Economy
 	shared_focus = {
 		id = GER_nationalbolshevikeconomy
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_nazbol_eco
 		x = 27
 		y = 10
 		cost = 5
@@ -1112,7 +1112,7 @@
 	#Focus for Keep the Current Line
 	shared_focus = {
 		id = GER_keepthecurrentline
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_luxemb_eco
 		x = 33
 		y = 10
 		cost = 5
@@ -1138,7 +1138,7 @@
 	#Focus for Democratic Socialist Economy
 	shared_focus = {
 		id = GER_democraticsocialisteconomy
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_demsoc_eco
 		x = 39
 		y = 10
 		cost = 5
@@ -1164,7 +1164,7 @@
 	#Focus for German Agriculture
 	shared_focus = {
 		id = GER_germanagriculture
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_redistrubete_food
 		x = 25
 		y = 11
 		cost = 5
@@ -1183,7 +1183,7 @@
 	#Focus for Decentralization
 	shared_focus = {
 		id = GER_decentralization
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_rural_volunteers
 		x = 25
 		y = 12
 		cost = 5
@@ -1202,7 +1202,7 @@
 	#Focus for German Industry
 	shared_focus = {
 		id = GER_germanindustry
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_german_industry
 		x = 33
 		y = 11
 		cost = 5
@@ -1236,7 +1236,7 @@
 	#Focus for Forced Industrialization
 	shared_focus = {
 		id = GER_forcedindustrialization
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_forced_industrialiaztion
 		x = 39
 		y = 11
 		cost = 5
@@ -1313,7 +1313,7 @@
 	#Focus for Rural Infrastructure
 	shared_focus = {
 		id = GER_ruralinfrastructure
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_rural_infras
 		x = 30
 		y = 11
 		cost = 5
@@ -1414,7 +1414,7 @@ random_owned_controlled_state = {
 	#Focus for Increase Resource Output
 	shared_focus = {
 		id = GER_increaseresourceoutput
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_heavy_metalurgy
 		x = 27
 		y = 11
 		cost = 5
@@ -1433,7 +1433,7 @@ random_owned_controlled_state = {
 	#Focus for What little we have...
 	shared_focus = {
 		id = GER_whatlittlewehave
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_what_little_we_have
 		x = 27
 		y = 12
 		cost = 5
@@ -1479,7 +1479,7 @@ random_owned_controlled_state = {
 	#Focus for ...Shall be enough.
 	shared_focus = {
 		id = GER_shallbeenough
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_shall_be_enough
 		x = 27
 		y = 13
 		cost = 5
@@ -1525,7 +1525,7 @@ random_owned_controlled_state = {
 	#Focus for National Arms Industry
 	shared_focus = {
 		id = GER_nationalarmsindustry
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_national_arms_industry
 		x = 25
 		y = 13
 		cost = 5
@@ -1601,7 +1601,7 @@ random_owned_controlled_state = {
 	#Focus for Rural Schools
 	shared_focus = {
 		id = GER_ruralschools
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_rural_schools
 		x = 30
 		y = 12
 		cost = 5
@@ -1620,7 +1620,7 @@ random_owned_controlled_state = {
 	#Focus for Rebuilding War Damage
 	shared_focus = {
 		id = GER_rebuildingwardamage
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_rebuild_war_damage
 		x = 30
 		y = 14
 		cost = 5
@@ -1639,7 +1639,7 @@ random_owned_controlled_state = {
 	#Focus for Heavy Industry
 	shared_focus = {
 		id = GER_heavyindustry
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_deutsche_heavy_industry
 		x = 36
 		y = 11
 		cost = 5
@@ -1688,7 +1688,7 @@ random_owned_controlled_state = {
 	#Focus for Deutsche Industriegenossenschaft
 	shared_focus = {
 		id = GER_deutscheindustriegenossenschaft
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_deutscheindustriegschafft
 		x = 36
 		y = 12
 		cost = 5
@@ -1707,7 +1707,7 @@ random_owned_controlled_state = {
 	#Focus for Deutsche Kriegsindustrie
 	shared_focus = {
 		id = GER_deutschekriegsindustrie
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_deutschekriegsindustrie
 		x = 36
 		y = 14
 		cost = 5
@@ -1783,7 +1783,7 @@ random_owned_controlled_state = {
 	#Focus for Industrial Research
 	shared_focus = {
 		id = GER_industrialresearch
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_industrial_research
 		x = 33
 		y = 12
 		cost = 5
@@ -1805,7 +1805,7 @@ random_owned_controlled_state = {
 	#Focus for Expand the Cities!
 	shared_focus = {
 		id = GER_expandthecities
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_bukharins_expand_urban_infr
 		x = 39
 		y = 12
 		cost = 5
@@ -1824,7 +1824,7 @@ random_owned_controlled_state = {
 	#Focus for Worker Cooperatives
 	shared_focus = {
 		id = GER_workercooperatives
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_worker_cooperatives
 		x = 39
 		y = 13
 		cost = 5
@@ -1843,7 +1843,7 @@ random_owned_controlled_state = {
 	#Focus for Rebuild German Railways
 	shared_focus = {
 		id = GER_rebuildgermanrailways
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_rebuild_railways
 		x = 41
 		y = 11
 		cost = 5
@@ -1940,7 +1940,7 @@ random_owned_controlled_state = {
 	#Focus for Volklufthansa
 	shared_focus = {
 		id = GER_volklufthansa
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_volkslufhansa
 		x = 41
 		y = 12
 		cost = 5
@@ -1959,7 +1959,7 @@ random_owned_controlled_state = {
 	#Focus for Rhein-Oder Highway
 	shared_focus = {
 		id = GER_rheinoderhighway
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_rheinoder_highway
 		x = 41
 		y = 13
 		cost = 5
@@ -2137,7 +2137,7 @@ random_owned_controlled_state = {
 	#Focus for The New Germany
 	shared_focus = {
 		id = GER_thenewgermany
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_new_germany
 		x = 28
 		y = 15
 		cost = 5
@@ -2162,7 +2162,7 @@ random_owned_controlled_state = {
 	#Focus for Stead She Goes!
 	shared_focus = {
 		id = GER_steadshegoes
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_steady_she_goes
 		x = 33
 		y = 15
 		cost = 5
@@ -2187,7 +2187,7 @@ random_owned_controlled_state = {
 	#Focus for Autarky
 	shared_focus = {
 		id = GER_autarky
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_nazbol_autarky
 		x = 26
 		y = 14
 		cost = 5
@@ -2211,7 +2211,7 @@ random_owned_controlled_state = {
 	#Focus for Deutsches Elektronik Institut
 	shared_focus = {
 		id = GER_deutscheselektronikinstitut
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_dei
 		x = 33
 		y = 14
 		cost = 5
@@ -2233,7 +2233,7 @@ random_owned_controlled_state = {
 	#Focus for Modern Economy
 	shared_focus = {
 		id = GER_moderneconomy
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_modern_economy
 		x = 40
 		y = 14
 		cost = 5
@@ -2314,7 +2314,7 @@ random_owned_controlled_state = {
 	#Focus for The Modern Germany
 	shared_focus = {
 		id = GER_themoderngermany
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_modern_germany
 		x = 38
 		y = 15
 		cost = 5
