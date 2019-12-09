@@ -16,6 +16,12 @@ focus_tree = {
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = TRS_eliminatetheradicals }
+		available = {
+		NOT = { 
+		has_completed_focus = TRS_victoryintranscapia
+
+		}
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -52,6 +58,12 @@ create_corps_commander = {
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = TRS_recoverpoliticalstrength }
+		available = {
+		NOT = { 
+		has_completed_focus = TRS_victoryintranscapia
+
+		}
+		}
 		ai_will_do = {
 			factor = 3
 		}
@@ -72,6 +84,12 @@ create_corps_commander = {
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = TRS_reeducatethepopulation }
+		available = {
+		NOT = { 
+		has_completed_focus = TRS_victoryintranscapia
+
+		}
+		}
 		ai_will_do = {
 			factor = 5
 		}
@@ -95,6 +113,12 @@ add_manpower = 2000
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = TRS_eliminatejughashvili }
+		available = {
+		NOT = { 
+		has_completed_focus = TRS_victoryintranscapia
+
+		}
+		}
 		ai_will_do = {
 			factor = 5
 		}
@@ -115,8 +139,14 @@ add_manpower = 2000
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = TRS_thelongroadtoglory }
+
 		mutually_exclusive = { focus = TRS_newleadership }
-		available = { has_government = socialist }
+		available = { AND = { 
+has_government = socialist
+		NOT = { 
+		has_completed_focus = TRS_victoryintranscapia
+
+		} } }
 		ai_will_do = {
 			factor = 3
 		}
@@ -144,6 +174,12 @@ add_stability = 0.1
 		prerequisite = { 
 			focus = TRS_secureacaspiancoast 
 		}
+		available = {
+		NOT = { 
+		has_completed_focus = TRS_victoryintranscapia
+
+		}
+		}
 		ai_will_do = {
 			factor = 10
 		}
@@ -169,6 +205,12 @@ add_stability = 0.1
 		}
 		prerequisite = { 
 			focus = TRS_mountainfortress 
+		}
+		available = {
+		NOT = { 
+		has_completed_focus = TRS_victoryintranscapia
+
+		}
 		}
 		ai_will_do = {
 			factor = 7
@@ -206,6 +248,12 @@ add_stability = 0.1
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = TRS_marchupthecoast }
+		available = {
+		NOT = { 
+		has_completed_focus = TRS_victoryintranscapia
+
+		}
+		}
 		ai_will_do = {
 			factor = 5
 		}
@@ -225,6 +273,12 @@ add_stability = 0.1
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = TRS_threatenthecapital }
+		available = {
+		NOT = { 
+		has_completed_focus = TRS_victoryintranscapia
+
+		}
+		}
 		ai_will_do = {
 			factor = 10
 		}
@@ -246,6 +300,12 @@ add_stability = 0.1
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = TRS_threatenthecapital }
+		available = {
+		NOT = { 
+		has_completed_focus = TRS_victoryintranscapia
+
+		}
+		}
 		ai_will_do = {
 			factor = 10
 		}
@@ -267,6 +327,12 @@ add_stability = 0.1
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = TRS_bombturkmenroads }
+		available = {
+		NOT = { 
+		has_completed_focus = TRS_victoryintranscapia
+
+		}
+		}
 		ai_will_do = {
 			factor = 5
 		}
@@ -293,6 +359,12 @@ add_stability = 0.1
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = TRS_bombturkmenindustry }
+		available = {
+		NOT = { 
+		has_completed_focus = TRS_victoryintranscapia
+
+		}
+		}
 		ai_will_do = {
 			factor = 5
 		}
@@ -312,6 +384,12 @@ add_stability = 0.1
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = TRS_infiltratethecoalition }
+		available = {
+		NOT = { 
+		has_completed_focus = TRS_victoryintranscapia
+
+		}
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -333,6 +411,12 @@ add_stability = 0.1
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = TRS_betterourindustry }
+		available = {
+		NOT = { 
+		has_completed_focus = TRS_victoryintranscapia
+
+		}
+		}
 		ai_will_do = {
 			factor = 5
 		}
@@ -352,6 +436,12 @@ add_stability = 0.1
 		prerequisite = { 
 			focus = TRS_frunzesurvives 
 			focus = TRS_newleadership 
+		}
+		available = {
+		NOT = { 
+		has_completed_focus = TRS_victoryintranscapia
+
+		}
 		}
 		ai_will_do = {
 			factor = 3
@@ -375,6 +465,12 @@ add_stability = 0.1
 		}
 		prerequisite = { 
 			focus = TRS_industrializationcompleted 
+		}
+		available = {
+		NOT = { 
+		has_completed_focus = TRS_victoryintranscapia
+
+		}
 		}
 		ai_will_do = {
 			factor = 10
@@ -404,6 +500,12 @@ add_stability = 0.1
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = TRS_moveundergroundsupporters }
+		available = {
+		NOT = { 
+		has_completed_focus = TRS_victoryintranscapia
+
+		}
+		}
 		ai_will_do = {
 			factor = 5
 		}
@@ -425,6 +527,12 @@ add_stability = 0.1
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = TRS_prospectforoil }
+		available = {
+		NOT = { 
+		has_completed_focus = TRS_victoryintranscapia
+
+		}
+		}
 		ai_will_do = {
 			factor = 3
 		}
@@ -442,6 +550,12 @@ add_ideas = TRS_industrialization_attepmts
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = TRS_huntforsupporters }
+		available = {
+		NOT = { 
+		has_completed_focus = TRS_victoryintranscapia
+
+		}
+		}
 		ai_will_do = {
 			factor = 3
 		}
@@ -459,6 +573,12 @@ add_ideas = TRS_industrialization_attepmts
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = TRS_diggingin }
+		available = {
+		NOT = { 
+		has_completed_focus = TRS_victoryintranscapia
+
+		}
+		}
 		ai_will_do = {
 			factor = 3
 		}
@@ -495,6 +615,12 @@ add_ideas = TRS_industrialization_attepmts
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = TRS_smugglinginiran }
+		available = {
+		NOT = { 
+		has_completed_focus = TRS_victoryintranscapia
+
+		}
+		}
 		ai_will_do = {
 			factor = 3
 		}
@@ -531,6 +657,12 @@ add_tech_bonus = {
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = TRS_aidthecivilians }
+		available = {
+		NOT = { 
+		has_completed_focus = TRS_victoryintranscapia
+
+		}
+		}
 		ai_will_do = {
 			factor = 3
 		}
@@ -559,6 +691,12 @@ add_manpower = 3000
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = TRS_armsconversion }
+		available = {
+		NOT = { 
+		has_completed_focus = TRS_victoryintranscapia
+
+		}
+		}
 		ai_will_do = {
 			factor = 3
 		}
@@ -580,6 +718,12 @@ add_manpower = 3000
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = TRS_diggingin }
+		available = {
+		NOT = { 
+		has_completed_focus = TRS_victoryintranscapia
+
+		}
+		}
 		ai_will_do = {
 			factor = 5
 		}
@@ -597,6 +741,12 @@ add_manpower = 3000
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = TRS_frunzesurvives }
+		available = {
+		NOT = { 
+		has_completed_focus = TRS_victoryintranscapia
+
+		}
+		}
 		ai_will_do = {
 			factor = 3
 		}
@@ -614,6 +764,12 @@ add_ideas = TRS_digin
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = TRS_economicrecovery }
+		available = {
+		NOT = { 
+		has_completed_focus = TRS_victoryintranscapia
+
+		}
+		}
 		ai_will_do = {
 			factor = 3
 		}
@@ -632,6 +788,12 @@ add_ideas = TRS_welfare
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = TRS_digmountainpasses }
+		available = {
+		NOT = { 
+		has_completed_focus = TRS_victoryintranscapia
+
+		}
+		}
 		ai_will_do = {
 			factor = 2
 		}
@@ -658,6 +820,12 @@ add_ideas = TRS_welfare
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = TRS_frunzesurvives }
+		available = {
+		NOT = { 
+		has_completed_focus = TRS_victoryintranscapia
+
+		}
+		}
 		ai_will_do = {
 			factor = 5
 		}
@@ -674,6 +842,12 @@ add_ideas = TRS_welfare
 		y = 1
 		cost = 10
 		available_if_capitulated = yes
+		available = {
+		NOT = { 
+		has_completed_focus = TRS_victoryintranscapia
+
+		}
+		}
 		ai_will_do = {
 			factor = 10
 		}
@@ -709,6 +883,12 @@ add_ideas = TRS_welfare
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = TRS_scavengeformaterials }
+		available = {
+		NOT = { 
+		has_completed_focus = TRS_victoryintranscapia
+
+		}
+		}
 		ai_will_do = {
 			factor = 3
 		}
@@ -741,6 +921,12 @@ add_ideas = TRS_welfare
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = TRS_economicrecovery }
+		available = {
+		NOT = { 
+		has_completed_focus = TRS_victoryintranscapia
+
+		}
+		}
 		ai_will_do = {
 			factor = 2
 		}
@@ -772,6 +958,12 @@ add_timed_idea = {
 		has_war = no 
 		}
 		prerequisite = { focus = TRS_battleforkrasnovodsk }
+		available = {
+		NOT = { 
+		has_completed_focus = TRS_victoryintranscapia
+
+		}
+		}
 		ai_will_do = {
 			factor = 10
 		}
@@ -796,10 +988,17 @@ create_wargoal = {
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = TRS_newleadership }
+		available = {
+		NOT = { 
+		has_completed_focus = TRS_victoryintranscapia
+
+		}
+		}
 		ai_will_do = {
 			factor = 3
 		}
 		completion_reward = {
+		army_experience = 25
 		}
 	}
 
@@ -812,10 +1011,20 @@ create_wargoal = {
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = TRS_newleadership }
+		available = { 
+		NOT = { 
+		has_completed_focus = TRS_victoryintranscapia
+
+		}
+		}
 		ai_will_do = {
 			factor = 5
 		}
 		completion_reward = {
+		add_timed_idea = {
+    idea = TRS_twoyearplan
+    days = 720
+}
 		}
 	}
 
@@ -828,10 +1037,17 @@ create_wargoal = {
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = TRS_readythearmy }
+		available = { 
+		NOT = { 
+		has_completed_focus = TRS_victoryintranscapia
+
+		}
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
+		add_ideas = TRS_military_drill
 		}
 	}
 
@@ -844,10 +1060,20 @@ create_wargoal = {
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = TRS_readythearmy }
+		available = { 
+		NOT = { 
+		has_completed_focus = TRS_victoryintranscapia
+
+		}
+		}
+
 		ai_will_do = {
 			factor = 5
 		}
 		completion_reward = {
+		add_manpower = 5000
+		add_stability = -0.1
+		add_war_support = -0.1
 		}
 	}
 
@@ -945,6 +1171,12 @@ create_wargoal = {
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = TRS_frunzesurvives }
+		available = {
+		NOT = { 
+		has_completed_focus = TRS_victoryintranscapia
+
+		}
+		}
 		ai_will_do = {
 			factor = 3
 		}
@@ -962,6 +1194,12 @@ create_wargoal = {
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = TRS_recoverpoliticalstrength }
+		available = {
+		NOT = { 
+		has_completed_focus = TRS_victoryintranscapia
+
+		}
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -1068,6 +1306,12 @@ create_country_leader = {
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = TRS_armthenation }
+		available = {
+		NOT = { 
+		has_completed_focus = TRS_victoryintranscapia
+
+		}
+		}
 		ai_will_do = {
 			factor = 100
 		}
@@ -1257,6 +1501,9 @@ create_country_leader = {
 		ai_will_do = {
 			factor = 100
 		}
+		completion_reward = {
+		add_ideas = TRS_womenequal
+		}
 	}
 
 	#Focus for Industry in the Capital
@@ -1267,9 +1514,26 @@ create_country_leader = {
 		y = 6
 		cost = 5
 		available_if_capitulated = yes
+		available = { 
+		controls_state = 584
+		}
 		prerequisite = { focus = TRS_apropercapital }
 		ai_will_do = {
 			factor = 100
+		}
+		completion_reward = {
+		584 = { add_building_construction = {
+    type = arms_factory
+    level = 1
+    instant_build = yes
+}
+}
+584 = { add_building_construction = {
+    type = industrial_complex
+    level = 1
+    instant_build = yes
+}
+}
 		}
 	}
 
@@ -1285,6 +1549,10 @@ create_country_leader = {
 		ai_will_do = {
 			factor = 100
 		}
+		completion_reward = {
+		add_manpower = -1000
+		add_ideas = TRS_good_agri
+		}
 	}
 
 	#Focus for Accessing the Caspian
@@ -1298,6 +1566,30 @@ create_country_leader = {
 		prerequisite = { focus = TRS_crossdesertroads }
 		ai_will_do = {
 			factor = 100
+		}
+		completion_reward = {
+		add_manpower = -2000
+		1181 = {
+add_building_construction = {
+    type = infrastructure
+    level = 2
+    instant_build = yes
+}
+}
+		1182 = {
+add_building_construction = {
+    type = infrastructure
+    level = 2
+    instant_build = yes
+}
+}
+		1183 = {
+add_building_construction = {
+    type = infrastructure
+    level = 2
+    instant_build = yes
+}
+}
 		}
 	}
 
@@ -1329,6 +1621,12 @@ create_country_leader = {
 		ai_will_do = {
 			factor = 100
 		}
+		completion_reward = {
+KHV = { country_event = {
+    id = turkmenreds.129
+}
+}
+		}
 	}
 
 	#Focus for Industrialize the Land
@@ -1353,9 +1651,17 @@ create_country_leader = {
 		y = 4
 		cost = 5
 		available_if_capitulated = yes
+		available = {
+		controls_state = 584
+		}
 		prerequisite = { focus = TRS_proclaimthetranscapiansovietrepublic }
 		ai_will_do = {
 			factor = 100
+		}
+		completion_reward = {
+		country_event = { 
+		id = turkmenreds.128
+		}
 		}
 	}
 
@@ -1379,6 +1685,10 @@ create_country_leader = {
 		ai_will_do = {
 			factor = 100
 		}
+		completion_reward = {
+		set_cosmetic_tag = TRS_TRC
+		remove_ideas = TRS_instability
+		}
 	}
 
 	#Focus for Devotion
@@ -1392,6 +1702,9 @@ create_country_leader = {
 		prerequisite = { focus = TRS_victoryintranscapia }
 		ai_will_do = {
 			factor = 100
+		}
+		completion_reward = {
+		add_war_support = 0.2
 		}
 	}
 
@@ -1473,9 +1786,18 @@ create_country_leader = {
 		y = 10
 		cost = 5
 		available_if_capitulated = yes
+		available = {
+		is_neighbor_of = KYR
+		}
 		prerequisite = { focus = TRS_anewdream }
 		ai_will_do = {
 			factor = 100
+		}
+		completion_reward = {
+		create_wargoal = {
+    type = annex_everything
+    target = KYR
+}
 		}
 	}
 
@@ -1486,6 +1808,13 @@ create_country_leader = {
 		x = 36
 		y = 11
 		cost = 5
+		available = {
+		OR = { 
+		is_neighbor_of = RDR
+		is_neighbor_of = RUS
+		is_neighbor_of = SOV
+		}
+		}
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = TRS_warwiththekazakhs 
@@ -1511,7 +1840,15 @@ create_country_leader = {
 		x = 34
 		y = 11
 		cost = 5
+		available = {
+		OR = { 
+		is_neighbor_of = RDR
+		is_neighbor_of = RUS
+		is_neighbor_of = SOV
+		}
+		}
 		available_if_capitulated = yes
+
 		prerequisite = { 
 			focus = TRS_warwiththekazakhs 
 			focus = TRS_destroykhiva 
@@ -1522,6 +1859,12 @@ create_country_leader = {
 		mutually_exclusive = { focus = TRS_ourownsovietunion }
 		ai_will_do = {
 			factor = 100
+		}
+		completion_reward = {
+		SOV = { country_event = {
+    id = turkmenreds.131
+}
+}
 		}
 	}
 
@@ -1634,6 +1977,9 @@ create_country_leader = {
 		ai_will_do = {
 			factor = 100
 		}
+		completion_reward = {
+		add_ideas = TRS_united_workers
+		}
 	}
 
 	#Focus for Nationwide Military Industrialization
@@ -1722,6 +2068,10 @@ create_country_leader = {
 		ai_will_do = {
 			factor = 100
 		}
+		completion_reward = {
+		every_state = {
+		limit = { OR = { is_owned_by = KAZ is_owned_by = KZR is_owned_by = KYR is_owned_by = UZB is_owned_by = KHV } } add_core_of = TRS }    
+		}
 	}
 
 	#Focus for Destroy Khiva!
@@ -1732,10 +2082,19 @@ create_country_leader = {
 		y = 10
 		cost = 5
 		available_if_capitulated = yes
+		available = {
+		is_neighbor_of = KHV
+		}
 		prerequisite = { focus = TRS_anewdream }
 		mutually_exclusive = { focus = TRS_khorezmianpeoplesrepublic }
 		ai_will_do = {
 			factor = 100
+		}
+		completion_reward = {
+		create_wargoal = {
+    type = annex_everything
+    target = KHV
+}
 		}
 	}
 
@@ -1793,6 +2152,9 @@ create_country_leader = {
 		ai_will_do = {
 			factor = 100
 		}
+		completion_reward = {
+		remove_ideas = TRS_turkmen_raiders
+		}
 	}
 
 	#Focus for New Transcapian Economy
@@ -1806,6 +2168,9 @@ create_country_leader = {
 		prerequisite = { focus = TRS_proclaimthetranscapiansovietrepublic }
 		ai_will_do = {
 			factor = 100
+		}
+		completion_reward = {
+		add_ideas = TRS_new_transcapian_economy
 		}
 	}
 
@@ -1821,6 +2186,30 @@ create_country_leader = {
 		ai_will_do = {
 			factor = 100
 		}
+		completion_reward = {
+		add_manpower = -2000
+		1184 = {
+add_building_construction = {
+    type = infrastructure
+    level = 2
+    instant_build = yes
+}
+		}
+		1180 = {
+add_building_construction = {
+    type = infrastructure
+    level = 2
+    instant_build = yes
+}
+		}
+		1185 = {
+add_building_construction = {
+    type = infrastructure
+    level = 2
+    instant_build = yes
+}
+		}
+		}
 	}
 
 	#Focus for Ensure Loyalty
@@ -1835,6 +2224,16 @@ create_country_leader = {
 		ai_will_do = {
 			factor = 100
 		}
+		completion_reward = {
+		add_popularity = {
+    ideology = socialist
+    popularity = 0.2
+}
+add_popularity = {
+    ideology = national_socialist
+    popularity = 0.2
+}
+		}
 	}
 
 	#Focus for War with the Kazakhs
@@ -1845,9 +2244,25 @@ create_country_leader = {
 		y = 10
 		cost = 5
 		available_if_capitulated = yes
+		available = {
+		OR = { 
+		is_neighbor_of = KAZ
+		is_neighbor_of = KZR
+		}
+		}
 		prerequisite = { focus = TRS_anewdream }
 		ai_will_do = {
 			factor = 100
+		}
+		completion_reward = {
+		create_wargoal = {
+    type = annex_everything
+    target = KAZ
+}
+create_wargoal = {
+    type = annex_everything
+    target = KZR
+}
 		}
 	}
 
@@ -1863,6 +2278,9 @@ create_country_leader = {
 		ai_will_do = {
 			factor = 100
 		}
+		completion_reward = {
+		add_ideas = TRS_economic_plan
+		}
 	}
 
 	#Focus for Alliance with Basmachi
@@ -1876,6 +2294,50 @@ create_country_leader = {
 		prerequisite = { focus = TRS_frunzestranscapia }
 		ai_will_do = {
 			factor = 100
+		}
+		completion_reward = {
+		create_field_marshal = {
+	name = "Enver Pasha"
+	picture = ""
+	traits = { offensive_doctrine trait_reckless politically_connected }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Ibrahim Bek"
+	picture = ""
+	traits = { offensive_doctrine brilliant_strategist }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 3
+}
+division_template = {
+    name = "Basmachi Cavalry"
+    regiments = {
+        cavalry = { x = 0 y = 0 }
+        cavalry = { x = 0 y = 1 }
+        cavalry = { x = 0 y = 2 }
+        cavalry = { x = 0 y = 3 }
+        cavalry = { x = 1 y = 0 }
+        cavalry = { x = 1 y = 1 }
+        cavalry = { x = 1 y = 2 }
+        cavalry = { x = 1 y = 3 }
+    }
+}
+584 = { create_unit = {
+    division = "name = \"Basmachi Cavalry\" division_template = \"Basmachi Cavalry\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+    owner = TRS
+} }
+584 = { create_unit = {
+    division = "name = \"Basmachi Cavalry\" division_template = \"Basmachi Cavalry\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+    owner = TRS
+} }
 		}
 	}
 
@@ -1919,6 +2381,9 @@ create_country_leader = {
 		ai_will_do = {
 			factor = 100
 		}
+		completion_reward = {
+		add_stability = 0.2
+		}
 	}
 
 	#Focus for Reorganisation
@@ -1932,6 +2397,10 @@ create_country_leader = {
 		prerequisite = { focus = TRS_victoryintranscapia }
 		ai_will_do = {
 			factor = 100
+		}
+		completion_reward = { 
+		add_manpower = -3000
+		
 		}
 	}
 
@@ -1949,7 +2418,15 @@ create_country_leader = {
 		}
 		completion_reward = { 
 		add_political_power = 100
-		add_war_support = 0.15
+		remove_ideas = TRS_legacy_of_the_red_army
+		remove_ideas = TRS_backs_to_the_wall
+		remove_ideas = TRS_research_not_priority
+		add_ideas = TRS_instability
+		add_ideas = TRS_turkmen_raiders
+add_popularity = {
+    ideology = reactionary
+    popularity = 0.5
+}
 		}
 	}
 
@@ -2316,7 +2793,7 @@ create_wargoal = {
 }	
 create_wargoal = {
     type = annex_everything
-    target = BEL
+    target = BLR
 }	
 create_wargoal = {
     type = annex_everything
@@ -2345,23 +2822,32 @@ create_wargoal = {
 			factor = 25
 		}
 		completion_reward = {
-		country_event = {
+		VIN { country_event = {
     id = turkmenreds.124
+}
 }
 		}
 	}
 
-	#Focus for Eastern Direction
+	#Focus for Vladivostok Coup
 	focus = {
-		id = TRS_easterndirection
+		id = TRS_vladivostok_coup
 		icon = GFX_goal_unknown
 		x = 9
 		y = 13
 		cost = 5
 		available_if_capitulated = yes
+		available = {
+		is_neighbor_of = JVD
+		}
 		prerequisite = { focus = TRS_sovietdiplomacy }
 		ai_will_do = {
 			factor = 25
+		}
+		completion_reward = { 
+		JVD = {
+		country_event = { id = turkmenreds.134 }
+		}
 		}
 	}
 
@@ -2373,12 +2859,18 @@ create_wargoal = {
 		y = 14
 		cost = 5
 		available = { 
-		is_neighbor_of = JAP
-		owns_state = 408
+		OR = {	 AND = { is_neighbor_of = JAP
+			owns_state = 408
+			JAP = { owns_state = 527 }
+			}
+		AND = { 
+		has_war_with = JAP
 		JAP = { owns_state = 527 }
 		}
+		}
+		}
 		available_if_capitulated = yes
-		prerequisite = { focus = TRS_easterndirection }
+		prerequisite = { focus = TRS_vladivostok_coup }
 		ai_will_do = {
 			factor = 25
 		}
@@ -2389,6 +2881,7 @@ create_wargoal = {
 }
 KOR = { transfer_state = 527 }
 puppet = KOR
+KOR = { load_oob = "KOR_1936" }	
 
 		}
 	}
@@ -2401,9 +2894,20 @@ puppet = KOR
 		y = 15
 		cost = 5
 		available_if_capitulated = yes
+		available = {
+		AND = { has_war_with = MAN
+			has_war_with = JAP
+		}
+		}
 		prerequisite = { focus = TRS_revoltinkorea }
 		ai_will_do = {
 			factor = 25
+		}
+		completion_reward = {
+				MAN = { country_event = {
+    id = turkmenreds.139
+}
+}
 		}
 	}
 
@@ -2415,10 +2919,18 @@ puppet = KOR
 		y = 14
 		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { focus = TRS_easterndirection }
+		available = {
+		is_neighbor_of = SIK
+		}
+		prerequisite = { focus = TRS_vladivostok_coup }
 		ai_will_do = {
 			factor = 25
 		}
+		completion_reward = {
+		puppet = SIK
+		add_manpower = -5000
+		}
+
 	}
 
 	#Focus for Soviet Armed Forces
@@ -2849,9 +3361,22 @@ puppet = KOR
 		y = 14
 		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { focus = TRS_easterndirection }
+		available = {
+		is_neighbor_of = MON
+		}
+		prerequisite = { focus = TRS_vladivostok_coup }
 		ai_will_do = {
 			factor = 25
+		}
+		completion_reward = {
+		create_wargoal = {
+    type = annex_everything
+    target = MON
+}
+		create_wargoal = {
+    type = annex_everything
+    target = TAN
+}
 		}
 	}
 
