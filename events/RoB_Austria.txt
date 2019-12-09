@@ -10,7 +10,6 @@ news_event = {
     date > 1934.1.12
 	tag = AUS
 	}
- mean_time_to_happen = { days = 1}
  fire_only_once = yes
  major = yes
  option = {
@@ -264,9 +263,8 @@ country_event = {
     AUS = {
     has_war_with = ACM
     has_war_with = THR
-    }
-    mean_time_to_happen = { days = 1}
-    }
+    }}
+
     option = {
     name = rob_austria.13.a
     AUS = {
@@ -300,7 +298,6 @@ country_event = {
  				} 
 			}
 		}
-		mean_time_to_happen = { days = 1}
 		option = {
 				name = rob_austria.5.a
 				ai_chance = { factor = 1}
@@ -438,7 +435,7 @@ country_event = {
 	num_of_controlled_states < 2
 	}
 }
-mean_time_to_happen = { days = 1}
+
 
 ###We wont give in
 option = {
@@ -491,7 +488,7 @@ country_event = {
 	num_of_controlled_states > 3
 	}
 }
-mean_time_to_happen = { days = 1}
+
 		option = {
 		name = rob_austria.12.a
 		ai_chance = { factor = 1}
