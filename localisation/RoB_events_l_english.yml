@@ -2613,11 +2613,10 @@ france.1.t:0 "Third French Republic in 1934"
  
  ###RAJ & BRJ
  raj.101.t:0 "Collapse of the Indian Coalition"
- raj.101.d:0 "The British loyalists have been pushed back to the Islands. With them being no threat to our glorious nation, the coalition has no purpose in existing. Several states have already seceeded from the union and more will be sure to come. With the coalition about to fall, one of your privates turns to you. 'The old India is dead. Where to sir?'"
- raj.101.a:0 "To Delhi, the true successor of the Indian dream!"
- raj.101.b:0 "To Mysore, the kingdom of the west!"
- raj.101.c:0 "To Bengal, the bulwark of the east!"
- raj.101.e:0 "To Punjab, for the dream of freedom!"
+ raj.101.d:0 "The British loyalists have been pushed back to the Islands. With them being no threat to our glorious nation, the coalition has no purpose in existing. Several states have already seceeded from the union and more will be sure to come. With the coalition about to fall, where shall we go?"
+ raj.101.a:0 "The Indian Spirit Marches Onwards! To Delhi!"
+ raj.101.b:0 "The Old Order Hangs on! To Mysore!"
+ raj.101.c:0 "For the People's State! To Assam!"
  
  ###Red Turkmen Events
  turkmenreds.103.t:0 "Ioseb Jughashvili Found"
