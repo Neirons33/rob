@@ -1,6 +1,243 @@
 GER_german_expansion = {
 
- GER_
+ GER_anchluss_austria = {
+ cost = 30
+ fire_only_once = yes
+ available = {
+  date > 1934.9.1
+  has_war = no
+ OR = { 
+  ACM = {
+   exists = yes
+   has_war = no
+   }
+  THR = {
+   exists = yes
+   has_war = no
+   }
+  AUS = {
+   exists = yes
+   has_war = no
+   }   
+  }
+ }
+ complete_effect = {
+  ACM = { country_event =  { id = spartakus_germany.22 days = 3 } }
+   }
+ }
+ 
+ GER_demand_sudetland = {
+ cost = 30
+ fire_only_once = yes
+ available = {
+  date > 1935.9.1
+  has_war = no
+  CZE = { exists = yes }
+  NOT = {
+   69 = { is_owned_by = GER }
+   886 = { is_owned_by = GER }
+   888 = { is_owned_by = GER }
+   887 = { is_owned_by = GER }
+   69 = { is_owned_by = GER }
+   74 = { is_owned_by = GER }
+  }
+ }
+ complete_effect = {
+  CZE = { country_event =  { id = spartakus_germany.27 days = 3 } }
+   GER = { 
+    add_state_core = 69
+    add_state_core = 886
+    add_state_core = 887
+    add_state_core = 69
+    add_state_core = 74
+    }
+   }
+ }
+ 
+ GER_subjugate_chechzs = {
+ cost = 30
+ fire_only_once = yes
+ available = {
+  date > 1935.12.20
+  has_war = no
+   69 = { is_owned_by = GER }
+   886 = { is_owned_by = GER }
+   888 = { is_owned_by = GER }
+   887 = { is_owned_by = GER }
+   69 = { is_owned_by = GER }
+   74 = { is_owned_by = GER }
+   CZE = { exists = yes }
+   NOT = {
+    CZE = {
+     is_puppet_of = GER
+    }
+   } 
+  }
+ complete_effect = {
+  CZE = { country_event =  { id = spartakus_germany.28 days = 3 } }
 
+  }
+ }
+
+ GER_secure_denmark = {
+ cost = 30
+ fire_only_once = yes
+ available = {
+  ENG = { has_country_flag = ENG_civil_war }
+  NOT = {
+   804 = { is_owned_by = GER }
+   796 = { is_owned_by = GER }
+   has_war = yes
+  }
+  DEN = { exists = yes }
+ }
+ 
+ complete_effect = {
+  GER = { 
+    add_state_core = 804
+    add_state_core = 796
+	}
+   GER = { declare_war_on = { target = DEN  type = puppet_wargoal_focus } }
+ }
+
+}
+
+ GER_french_arent_watching = {
+ cost = 30
+ fire_only_once = yes
+ visible = {
+  FRA = { has_war = yes }
+  RHN = { exists = yes }
+ }
+ available = {
+  FRA = { has_war = yes }
+  RHN = { exists = yes }
+  has_war = no
+ }
+ 
+ complete_effect = {
+   every_state = {
+    limit = { is_core_of = RHN }
+	add_core_of = GER
+   }
+   GER = { declare_war_on = { target = RHN  type = annex_everything } }
+ }
+
+}
+
+ GER_destroy_poles = {
+ cost = 30
+ fire_only_once = yes
+ available = {
+  date > 1938.1.1
+  POL = { exists = yes }
+  has_war = no
+ }
+ 
+ complete_effect = {
+     GER = { declare_war_on = { target = POL type = annex_everything } }
+     865 = { add_core_of = GER }
+     86 = { add_core_of = GER }
+     801 = { add_core_of = GER }
+     66 = { add_core_of = GER }
+     803 = { add_core_of = GER }
+     67 = { add_core_of = GER }
+     762 = { add_core_of = GER }
+   
+ }
+
+}
+
+ GER_destroy_prussian_traitors = {
+ cost = 30
+ fire_only_once = yes
+ available = {
+ OR = {
+  AND = { 
+   GER = { is_neighbor_of = PRS }
+   PRS = { exists = yes }
+   }
+  AND = { 
+   date > 1938.6.1
+   PRS = { exists = yes }
+   }
+  }
+  has_war = no
+ }
+ 
+ complete_effect = {
+    GER = { declare_war_on = { target = PRS type = annex_everything } }
+    every_state = {
+    limit = { is_core_of = PRS }
+	add_core_of = GER
+   }
+   
+ }
+
+}
+
+ GER_push_west = {
+ cost = 30
+ fire_only_once = yes
+ available = {
+   date > 1939.1.1
+   GER = { is_neighbor_of = PRS }
+   PRS = { exists = no }
+   RHN = { exists = yes }
+   has_war = no
+  }
+  
+  complete_effect = {
+    FRA = { country_event = { id = spartakus_germany.29 days = 2 } } 
+ }
+ }
+ 
+ GER_destory_france = {
+ cost = 30
+ fire_only_once = yes
+ available = {
+   date > 1939.6.1
+   PRS = { exists = no }
+   RHN = { exists = no }
+   FRA = { exists = yes }
+   has_war = no
+  }
+  
+  complete_effect = {
+     GER = { declare_war_on = { target = FRA type = annex_everything } }
+     814 = { add_core_of = GER }
+	 816 = { add_core_of = GER }
+     28 = { add_core_of = GER }
+ }
+ }
+ 
+ GER_invade_benelux = {
+ cost = 30
+ fire_only_once = yes
+ available = {
+   GER = { has_war_with = FRA }
+  }
+  has_war = no
+  complete_effect = {
+   every_country = {
+	limit = { NOT = { OR = { tag = FRA tag = GER } } NOT = { is_in_faction_with = GER } controls_state = 813 }
+	ROOT = { 
+		create_wargoal = {
+			type = annex_everything		
+			target = PREV
+		}			
+	}
+}
+   every_country = {
+	limit = { NOT = { OR = { tag = FRA tag = GER } } NOT = { is_in_faction_with = GER } controls_state = 8 }
+	ROOT = { 
+		create_wargoal = {
+			type = annex_everything		
+			target = PREV
+		}			
+	}
+   }
+  }
+ } 
 
 }

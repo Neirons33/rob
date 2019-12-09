@@ -20,6 +20,7 @@ mean_time_to_happen = { days = 2 }
 option = {
 name = spartakus_germany.1.a
 add_political_power = 10
+set_country_flag = GER_expansion
 }
 }
 
@@ -851,16 +852,7 @@ country_event = {
  fire_only_once = yes
 
  mean_time_to_happen = { days = 2 }
- 
-trigger = {
- tag = GER
- RHN = {
-  exists = yes
- }
- FRA = {
-  has_war = yes
- }
-}
+ is_triggered_only = yes
 
 option = {
  name = "Invade Rhineland!"
@@ -946,35 +938,7 @@ country_event = {
  desc = spartakus_germany.22.d
  fire_only_once = yes
 
- trigger = {
- tag = GER
- ACM = {
-  exists = yes
-  has_war = no
-  OR = {
-  is_puppet = no
-  is_puppet_of = GER
-  }
-  OR = {
-  has_government = socialist
-  has_government = national_socialist
-  has_government = democratic_socialist
-
-  }
- }
- 
- GER = {
-  exists = yes
-  has_war = no
-  is_puppet = no
-  OR = {
-  has_government = socialist
-  has_government = national_socialist
-  has_government = democratic_socialist
-  }
- }
- 
- }
+ is_triggered_only = yes
  
  option = { ###Press for Anschluss
   name = "We Shall Unite!"
@@ -1088,6 +1052,102 @@ country_event = {
    }
    
    
+  ###Chez events 
+ country_event = {
+   id = spartakus_germany.27
+   title = "Germans Demand Sudeteland!"
+   desc = spartakus_germany.27.d
+   fire_only_once = yes
+   is_triggered_only = yes
+ 
+   option = {
+   name = "Refuse!"
+   GER = { create_wargoal = { type = annex_everything target = CZE } }
+   ai_chance = {
+    factor = 20
+   }
+  }
+   option = {
+   name = "Bend to German Will..."
+   GER = { 
+    set_state_owner = 888
+	set_state_owner = 74
+	set_state_owner = 887
+	set_state_owner = 69
+	set_state_owner = 886
+   }
+   ai_chance = {
+    factor = 2000
+   }
+  }
+ }
+
+  ###Chez events 
+ country_event = {
+   id = spartakus_germany.28
+   title = "Volksarmee Enters Our Borders"
+   desc = spartakus_germany.28.d
+   fire_only_once = yes
+   is_triggered_only = yes
+ 
+   option = {
+   name = "War it is..."
+   GER = { declare_war_on = { target = CZE  type = puppet_wargoal_focus } }
+   ai_chance = {
+    factor = 200
+   }
+  }
+   option = {
+   name = "Silent..."
+   GER = { 
+     puppet = CZE
+   }
+   CZE = {
+    set_politics = {
+	 ruling_party = socialist
+	 elections_allowed = no
+	}
+	add_popularity = { ideology = socialist popularity = 0.3 }
+   }
+   ai_chance = {
+    factor = 200
+   }
+  }
+ } 
+ 
+ 
+ ###Germany demands Rhineland
+ country_event = {
+   id = spartakus_germany.29
+   title = "Germans Demand Rhineland"
+   desc = spartakus_germany.29.d
+   fire_only_once = yes
+   is_triggered_only = yes
+   
+   
+   option = {
+   name = "Not an inch more for German bastards!"
+   FRA = { declare_war_on = { target = GER  type = annex_everything } }
+   add_war_support = 0.1
+   ai_chance = {
+    factor = 75
+     }   
+    }
+	
+   option = {
+   name = "We can't afford war right now..."
+   GER = { 
+    annex_country = {
+     target = RHN
+     transfer_troops = no
+   }
+  }
+   add_war_support = -0.1
+   ai_chance = {
+    factor = 25
+     }   
+    }
+   }
  #####FOCUS TREE
  
   country_event = {
