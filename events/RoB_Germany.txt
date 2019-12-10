@@ -20,7 +20,6 @@ mean_time_to_happen = { days = 2 }
 option = {
 name = spartakus_germany.1.a
 add_political_power = 10
-set_country_flag = GER_expansion
 }
 }
 

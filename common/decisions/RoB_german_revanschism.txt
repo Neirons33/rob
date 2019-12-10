@@ -3,26 +3,40 @@ GER_german_expansion = {
  GER_anchluss_austria = {
  cost = 30
  fire_only_once = yes
- available = {
-  date > 1934.9.1
+  available = {
   has_war = no
+ custom_trigger_tooltip	= {
+ tooltip = "One of factions has prevailed in Austrian Civil War"
+ date > 1934.9.1
  OR = { 
   ACM = {
    exists = yes
    has_war = no
-   }
+    }
   THR = {
    exists = yes
    has_war = no
-   }
+    }
   AUS = {
    exists = yes
    has_war = no
-   }   
+    }   
+   }
   }
  }
  complete_effect = {
-  ACM = { country_event =  { id = spartakus_germany.22 days = 3 } }
+  if = {
+   limit = { ACM = { exists = yes } }
+   ACM = { country_event =  { id = spartakus_germany.23 days = 3 } }
+}  
+  if = {
+   limit = { THR = { exists = yes } }
+   THR = { country_event =  { id = spartakus_germany.23 days = 3 } }
+}
+  if = {
+   limit = { AUS = { exists = yes } }
+   THR = { country_event =  { id = spartakus_germany.23 days = 3 } }
+}      
    }
  }
  
@@ -181,7 +195,6 @@ GER_german_expansion = {
  fire_only_once = yes
  available = {
    date > 1939.1.1
-   GER = { is_neighbor_of = PRS }
    PRS = { exists = no }
    RHN = { exists = yes }
    has_war = no
@@ -241,3 +254,268 @@ GER_german_expansion = {
  } 
 
 }
+
+GER_german_export_revolution = {
+
+ GER_austrian_revolution = {
+  cost = 30
+  fire_only_once = yes
+  available = {
+  has_war = no
+ custom_trigger_tooltip	= {
+ tooltip = "One of factions has prevailed in Austrian Civil War"
+ date > 1934.9.1
+ OR = { 
+  ACM = {
+   exists = yes
+   has_war = no
+    }
+  THR = {
+   exists = yes
+   has_war = no
+    }
+  AUS = {
+   exists = yes
+   has_war = no
+    }   
+   }
+  }
+ }
+ complete_effect = {
+  if = {
+   limit = { ACM = { exists = yes } }
+   ACM = { country_event =  { id = spartakus_germany.23 days = 3 } }
+}  
+  if = {
+   limit = { THR = { exists = yes } }
+   THR = { country_event =  { id = spartakus_germany.23 days = 3 } }
+}
+  if = {
+   limit = { AUS = { exists = yes } }
+   THR = { country_event =  { id = spartakus_germany.23 days = 3 } }
+}      
+   }
+
+
+ }
+ 
+  GER_chezh_revolution = {
+   cost = 30
+   fire_only_once = yes
+   available = {
+   date > 1935.1.1
+   CZE = { exists = yes }
+   has_war = no
+   NOT = {
+    CZE = { SOCIALIST_ALIGNED_GOVERNMENT = yes }
+   }
+   custom_trigger_tooltip	= {
+   tooltip = "Austrians have been dealt with"
+   OR = {
+   AND = { AUS = { is_puppet_of = GER } }
+   AND = {
+    152 = { is_owned_by = GER }
+	807 = { is_owned_by = GER }
+	1015 = { is_owned_by = GER }
+      }
+     }
+    }
+   }
+  complete_effect = {
+  GER = { declare_war_on = { target = CZE  type = puppet_wargoal_focus } }
+   }
+  }
+
+   GER_slovakian_revolution = {
+   cost = 30
+   fire_only_once = yes
+   available = {
+   date > 1936.3.1
+   SLO = { exists = yes }
+   has_war = no
+   NOT = {
+    SLO = { SOCIALIST_ALIGNED_GOVERNMENT = yes }
+   }
+   custom_trigger_tooltip	= {
+   tooltip = "Czechs have been dealt with"
+   OR = {
+   AND = { CZE = { is_puppet_of = GER } }
+   AND = {
+    GER = { is_neighbor_of = SLO }
+      }
+     }
+    }
+   }
+  complete_effect = {
+  GER = { declare_war_on = { target = SLO  type = puppet_wargoal_focus } }
+   }
+  }
+   GER_hungarian_revolution = {
+   cost = 30
+   fire_only_once = yes
+   available = {
+   date > 1936.6.1
+   HUN = { exists = yes }
+   has_war = no
+   NOT = {
+    HUN = { SOCIALIST_ALIGNED_GOVERNMENT = yes }
+   }
+   custom_trigger_tooltip	= {
+   tooltip = "Slovaks have been dealt with"
+   OR = {
+   AND = { SLO = { is_puppet_of = GER } }
+   AND = {
+    GER = { is_neighbor_of = HUN }
+     }
+    }
+   }
+   }
+  complete_effect = {
+  GER = { declare_war_on = { target = HUN  type = puppet_wargoal_focus } }
+   }
+
+ }
+ 
+   GER_polish_revolution = {
+   cost = 30
+   fire_only_once = yes
+   available = {
+   date > 1936.9.1
+   POL = { exists = yes }
+   has_war = no
+   NOT = {
+    HUN = { SOCIALIST_ALIGNED_GOVERNMENT = yes }
+   }
+   custom_trigger_tooltip	= {
+   tooltip = "Hungarians have been dealt with"
+   OR = {
+   AND = { HUN = { is_puppet_of = GER } }
+    }
+   }
+   }
+  complete_effect = {
+  GER = { declare_war_on = { target = POL  type = puppet_wargoal_focus } }
+   }
+ }
+ 
+   GER_prussian_revolution = {
+   cost = 30
+   fire_only_once = yes
+   available = {
+   has_war = no
+   PRS = { exists = yes }
+   NOT = {
+    PRS = { SOCIALIST_ALIGNED_GOVERNMENT = yes }
+   }
+   GER = { is_neighbor_of = PRS }
+    }
+  complete_effect = {
+  GER = { declare_war_on = { target = PRS  type = annex_everything } }
+   }
+ }
+ 
+   GER_lithuanian_revolution = {
+   cost = 30
+   fire_only_once = yes
+   available = {
+   LIT = { exists = yes }
+   has_war = no
+   NOT = {
+    LIT = { SOCIALIST_ALIGNED_GOVERNMENT = yes }
+   }
+   GER = { is_neighbor_of = LIT }
+    }
+  complete_effect = {
+  GER = { declare_war_on = { target = LIT  type = puppet_wargoal_focus } }
+   }
+ }
+ 
+   GER_italian_revolution = {
+   cost = 30
+   fire_only_once = yes
+   available = {
+   has_war = no
+   date > 1939.1.1
+   ITA = { exists = yes }
+   NOT = {
+    ITA = { SOCIALIST_ALIGNED_GOVERNMENT = yes }
+   }
+   OR = {
+   GER = { is_neighbor_of = ITA }
+   AUS = { is_puppet_of = GER }
+    }
+  }	
+  complete_effect = {
+  GER = { declare_war_on = { target = ITA  type = puppet_wargoal_focus } }
+   }
+ }
+ 
+ GER_dansih_revolution = {
+ cost = 30
+ fire_only_once = yes
+ available = {
+  has_war = no
+  ENG = { has_country_flag = ENG_civil_war }
+  DEN = { exists = yes }
+ }
+ 
+ complete_effect = {
+   GER = { declare_war_on = { target = DEN  type = puppet_wargoal_focus } }
+ }
+
+}
+ GER_destroy_rhineland = {
+ cost = 30
+ fire_only_once = yes
+ available = {
+   date > 1939.1.1
+   RHN = { exists = yes }
+   has_war = no
+  }
+  
+  complete_effect = {
+    FRA = { country_event = { id = spartakus_germany.29 days = 2 } } 
+ }
+ }
+ 
+ 
+ GER_benelux_revolution = {
+ cost = 30
+ fire_only_once = yes
+ date > 1939.6.1
+ available = {
+  has_war = no
+  custom_trigger_tooltip	= {
+   tooltip = "Danish straits have been secured"
+   OR = {
+   AND = {
+    DEN = { is_puppet_of = GER }
+  	 }
+   AND = {
+    37 = { is_owned_by = GER }
+      }   
+    }
+   } 
+ }
+ 
+ complete_effect = {
+ custom_effect_tooltip = GER_diplo_tt_1
+ if = {
+  limit = { WLL = { exists = yes } WLL = { NOT = { is_in_faction_with = GER } }  }
+  GER = { declare_war_on = { target = WLL  type = puppet_wargoal_focus } }
+ }
+ if = {
+  limit = { FLA = { exists = yes } FLA = { NOT = { is_in_faction_with = GER } }  }
+  GER = { declare_war_on = { target = FLA  type = puppet_wargoal_focus } }
+ }
+ if = {
+  limit = { HOL = { exists = yes } HOL = { NOT = { is_in_faction_with = GER } }  }
+  GER = { declare_war_on = { target = HOL  type = puppet_wargoal_focus } }
+ }
+ if = {
+  limit = { LUX = { exists = yes } LUX = { NOT = { is_in_faction_with = GER } }  }
+  GER = { declare_war_on = { target = LUX  type = puppet_wargoal_focus } }
+ } 
+ }
+} 
+ }
