@@ -126,7 +126,7 @@ units = {
 	}
 	division = {
 		name = "9th Kazakh Cavalry"
-		location = 1694
+		location = 7741
 		division_template = "Kazakh Cavalry"
 		start_equipment_factor = 0.5
 	}
