@@ -81,6 +81,18 @@ units = {
 		start_experience_factor = 0.1
 	}
 	division = {
+		name = "4th Indian Infantry"
+		location = 2086
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "5th Indian Infantry"
+		location = 10751
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {
 		name = "Delhi Militia"
 		location = 2086
 		division_template = "Militia"
