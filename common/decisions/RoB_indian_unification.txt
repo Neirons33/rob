@@ -433,7 +433,7 @@ is_neighbor_of = PNJ
   }
 
 is_neighbor_of = DEL
-date < 1939.01.01
+  date > 1939.1.1
 
   has_war = no 
   NOT = {
@@ -462,7 +462,7 @@ date < 1939.01.01
   }
 
 is_neighbor_of = ASM
-date < 1939.01.01
+  date > 1939.1.1
 
   has_war = no 
   NOT = {
@@ -491,7 +491,7 @@ date < 1939.01.01
   }
 
 is_neighbor_of = BRJ
-date < 1939.01.01
+  date > 1939.1.1
 
   has_war = no 
   NOT = {
