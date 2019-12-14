@@ -587,17 +587,7 @@ title = spartakus_germany.15.t
 desc = spartakus_germany.15.d
 fire_only_once = yes
 
-trigger = {
-has_country_flag = south_falls
-has_country_flag = north_falls
-OR = {
-has_country_flag = GER_lux_ds_victory
-has_country_flag = GER_dem_victory
-has_country_flag = GER_lux_victory
-has_country_flag = GER_lux_nb_victory
-has_country_flag = GER_nb_vitory
-}
-}
+is_triggered_only = yes
 
 option = { ###Alright
 name = spartakus_germany.15.a
@@ -617,7 +607,7 @@ create_country_leader = {
 		#
 	}
 }
-add_popularity = { ideology = reactionary popularity =0.25}
+add_popularity = { ideology = reactionary popularity =0.25 }
 GER = { country_event = { id = spartakus_germany.16 days = 7 } }
 set_cosmetic_tag = GER_reactionary
 load_focus_tree = GER_reactionary_coup
@@ -678,85 +668,6 @@ id = spartakus_germany.17
 title = spartakus_germany.17.t
 desc = spartakus_germany.17.d
 fire_only_once = yes
-
-trigger = {
-tag = GER
-has_country_flag = south_holds
-has_country_flag = north_falls
-OR = {
-has_country_flag = GER_lux_ds_victory
-has_country_flag = GER_dem_victory
-has_country_flag = GER_lux_victory
-has_country_flag = GER_lux_nb_victory
-has_country_flag = GER_nb_vitory
-}
-}
-
-mean_time_to_happen = { days = 2 }
-
-
-immediate = { 
-PRS = { transfer_state = 797 }
-PRS = { transfer_state = 59 }
-PRS = { transfer_state = 63 }
-PRS = { transfer_state = 61 }
-PRS = { transfer_state = 62 }
-PRS = { transfer_state = 58 }
-PRS = {
-declare_war_on = { target = GER  type = annex_everything }
-}
-}
-
-
-option = { #switch to Prussia
-name = spartakus_germany.17.a
-hidden_effect = {
-58 = { 
-add_core_of = PRS
-}
-59 = { 
-add_core_of = PRS
-}
-63 = { 
-add_core_of = PRS
-}
-61 = { 
-add_core_of = PRS
-}
-62 = { 
-add_core_of = PRS
-}
-797 = { 
-add_core_of = PRS
-}
-PRS = { change_tag_from = GER }
-}
-}
-
-option = { #we shall fight!
-name = spartakus_germany.17.b
-add_political_power = 120
-hidden_effect = {
-58 = { 
-add_core_of = PRS
-}
-59 = { 
-add_core_of = PRS
-}
-63 = { 
-add_core_of = PRS
-}
-61 = { 
-add_core_of = PRS
-}
-62 = { 
-add_core_of = PRS
-}
-797 = { 
-add_core_of = PRS
-}
-}
-}
 
 }
 

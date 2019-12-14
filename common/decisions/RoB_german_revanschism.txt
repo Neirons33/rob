@@ -229,8 +229,9 @@ GER_german_expansion = {
  fire_only_once = yes
  available = {
    GER = { has_war_with = FRA }
+   has_war = no
   }
-  has_war = no
+  
   complete_effect = {
    every_country = {
 	limit = { NOT = { OR = { tag = FRA tag = GER } } NOT = { is_in_faction_with = GER } controls_state = 813 }
@@ -482,8 +483,9 @@ GER_german_export_revolution = {
  GER_benelux_revolution = {
  cost = 30
  fire_only_once = yes
- date > 1939.6.1
+ 
  available = {
+  date > 1939.6.1
   has_war = no
   custom_trigger_tooltip	= {
    tooltip = "Danish straits have been secured"

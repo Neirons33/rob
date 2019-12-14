@@ -46,7 +46,7 @@ focus_tree = {
 			focus = LIT_returnofthebalts 
 		}
 		completion_reward = { 
-        		add_stability = 0.01
+        		add_stability = 0.1
 		add_popularity = {ideology = pelekist popularity =0.10}
 		add_political_power = 120
  }
@@ -206,7 +206,7 @@ focus_tree = {
 		prerequisite = { focus = LIT_cultofpersonality }
 		completion_reward = {
 		add_popularity = {ideology = pelekist popularity =0.18}
-        add_stability = 0.006
+        add_stability = 0.06
 		}
 	}
 
@@ -327,7 +327,7 @@ target = BLR
 			focus = LIT_formtheministryofpropaganda 
 		}
 			completion_reward = {
-			add_stability = 0.006
+			add_stability = 0.06
 
 		}
 	}
@@ -437,7 +437,7 @@ target = BLR
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_ruralideals }
 		completion_reward = {
-		add_stability = 0.01
+		add_stability = 0.1
 		}
 	}
 
@@ -576,10 +576,7 @@ add_popularity = {ideology = authoritharian popularity =0.10}
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_tautosvadasmironas }
 		completion_reward = {
-		 add_stability = 0.003
 		 add_popularity = {ideology = pelekist popularity =0.18}
-
-         
 		}
 	}
 
@@ -610,7 +607,7 @@ add_popularity = {ideology = authoritharian popularity =0.10}
 		prerequisite = { focus = LIT_tautosvadasmironas }
 		completion_reward = {
 		add_popularity = {ideology = pelekist popularity =0.18}
-        add_stability = 0.006
+        add_stability = 0.06
 	}
 	}
 
@@ -650,7 +647,7 @@ add_popularity = {ideology = authoritharian popularity =0.10}
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_starttohunttheminorities }
 		completion_reward = {
-        add_stability = 0.003
+        add_stability = 0.03
 		}
 	}
 
@@ -779,7 +776,7 @@ add_popularity = {ideology = authoritharian popularity =0.10}
 			focus = LIT_easegunlaws 
 		}
 		completion_reward = {
-		add_stability = 0.006
+		add_stability = 0.06
 		add_popularity = {ideology = reactionary popularity =0.10}
     }
 	}
@@ -931,7 +928,7 @@ add_political_power = 120
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_paganbias }
 				completion_reward = {
-		add_stability = 0.006
+		add_stability = 0.06
 		add_popularity = {ideology = pelekist popularity =0.10}
     }
 	}
@@ -988,7 +985,9 @@ add_political_power = 120
 			focus = LIT_ourowncementandceramics 
 		}
         completion_reward = {
-		add_ideas = {work_for_all}
+		add_ideas = {
+		work_for_all
+		}
 		}
 	}
 
@@ -1002,7 +1001,9 @@ add_political_power = 120
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_nationalchamberofresources }
 		completion_reward = {
-		add_ideas = {agriarian_state}
+		add_ideas = {
+		agrarian_state
+		}
 		}
 	}
 
@@ -1016,7 +1017,9 @@ add_political_power = 120
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_nationalizebanks }
 		completion_reward = {
-		add_ideas = { national_retail_union }
+		add_ideas = { 
+		national_retail_union
+		}
 		}
 	}
 
@@ -1030,7 +1033,7 @@ add_political_power = 120
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_nationalchamberofindustry }
 		completion_reward = {
-		add_stability = 0.006
+		add_stability = 0.06
 		}
 	}
 
@@ -1087,9 +1090,10 @@ add_political_power = 120
 		y = 8
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = LIT_formtheeconomicchambers 
+		prerequisite = { focus = LIT_formtheeconomicchambers }
 		completion_reward = {
-		add_ideas = {resource_chambers}
+		add_ideas = { 
+		resource_chambers
 		}
 		}
 	}
@@ -1104,7 +1108,9 @@ add_political_power = 120
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_movepeopleintocities }
 		completion_reward = {
-		add_ideas = { work_for_all }
+		add_ideas = { 
+		work_for_all
+		}
 		}
 	}
 
@@ -1118,7 +1124,9 @@ add_political_power = 120
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_chamberofagriculture }
 		completion_reward = {
-		add_ideas = {lithuanian_cement}
+		add_ideas = {
+		lithuanian_cement
+		}
 		}
 	}
 
@@ -1168,7 +1176,9 @@ add_political_power = 120
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_decreasesafetyregulations }
 		completion_reward = {
-		add_ideas = { ultra_wealthy_upper_class }
+		add_ideas = { 
+		ultra_wealthy_upper_class
+		}
 		}
 	}
 
@@ -1182,7 +1192,9 @@ add_political_power = 120
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_thebourgeoisieclass }
 		completion_reward = {
-		add_ideas = { materialistic_mentality }
+		add_ideas = { 
+		materialistic_mentality
+		}
 		}
 	}
 
@@ -1234,7 +1246,9 @@ add_building_construction = {
 			focus = LIT_ 
 		}
 		completion_reward = {
-		add_ideas = { needless_society }
+		add_ideas = { 
+		needless_society
+		}
 		}
 	}
 
@@ -1483,7 +1497,7 @@ add_extra_state_shared_building_slots = 3
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_aryansocialism }
 		completion_reward = {
-		add_stability = 0.006
+		add_stability = 0.06
 		}
 	}
 
@@ -1544,7 +1558,9 @@ add_extra_state_shared_building_slots = 3
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_nationalchamberofservices }
 		completion_reward = {
-		add_ideas = { no_banks }
+		add_ideas = { 
+		no_banks
+		}
 		}
 	}
 
@@ -1596,7 +1612,9 @@ add_extra_state_shared_building_slots = 3
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_formtheeconomicchambers }
 		completion_reward = {
-		add_ideas = { chamber_of_service }
+		add_ideas = { 
+		chamber_of_service
+		}
 		}
 	}
 
@@ -1610,7 +1628,9 @@ add_extra_state_shared_building_slots = 3
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_lietuvikassocializmas }
 		completion_reward = {
-		add_ideas = { struggle }
+		add_ideas = { 
+		struggle
+		}
 		}
 	}
 
@@ -1668,7 +1688,9 @@ add_extra_state_shared_building_slots = 3
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_vadoprincipas }
 		completion_reward = {
-		add_ideas = {anti_individualism}
+		add_ideas = {
+		anti_individualism
+		}
 		}
 	}
 
@@ -1682,7 +1704,9 @@ add_extra_state_shared_building_slots = 3
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_spiritofduty }
 		completion_reward = {
-		add_ideas = { anti_equality }
+		add_ideas = { 
+		anti_equality 
+		}
 		}
 	}
 
@@ -1782,7 +1806,7 @@ add_building_construction = {
           add_building_construction = {
  
 	    type = industrial_complex
-	    level = 11
+	    level = 3
 	    instant_build = yes
           }
           }
@@ -1804,7 +1828,8 @@ add_building_construction = {
 			focus = LIT_curbingunemployment 
 		}
 		completion_reward = {
-		add_ideas = { autarky }
+		add_ideas = { autarky
+		}
 		}
 	}
 
@@ -1826,7 +1851,9 @@ add_building_construction = {
 			focus = LIT_nationalizekeyindustries 
 		}
 		completion_reward = {
-		add_ideas = { economic_chambers }
+		add_ideas = { 
+		economic_chambers
+		}
 		}
 	}
 
@@ -1841,7 +1868,9 @@ add_building_construction = {
 		prerequisite = { focus = LIT_thecomingcorporatestate }
 		completion_reward = {
         add_political_power = 100
-		add_ideas = { no_foreign_influences }
+		add_ideas = { 
+		no_foreign_influences
+		}
 		}
 	}
 
@@ -1855,7 +1884,9 @@ add_building_construction = {
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_thecomingcorporatestate }
 		completion_reward = {
-		add_ideas = { banned_trade_unions }
+		add_ideas = { 
+		banned_trade_unions
+		}
 		}
 	}
 
@@ -1868,6 +1899,9 @@ add_building_construction = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_thelithuanianeconomy }
+		completion_reward = {
+		add_political_power = 120
+		}
 	}
 
 	#Focus for The Socialist State
@@ -1921,7 +1955,9 @@ add_building_construction = {
 			focus = LIT_powertothecompanies 
 		}
 		completion_reward = { 
-		add_ideas = { entrepreneurs_cult }
+		add_ideas = { 
+		entrepreneurs_cult
+		}
 	}
 	}
 
@@ -1940,7 +1976,9 @@ add_building_construction = {
 			focus = LIT_powertothecompanies 
 		}
 		completion_reward = {
-		add_ideas = { culture_of_work }
+		add_ideas = { 
+		culture_of_work
+		}
 		}
 	}
 
@@ -1954,7 +1992,9 @@ add_building_construction = {
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_thecapitaliststate }
 		completion_reward = {
-		add_ideas = {no_welfare}
+		add_ideas = {
+		no_welfare
+		}
 		}
 	}
 
@@ -1968,7 +2008,9 @@ add_building_construction = {
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_weakenwelfare }
 		completion_reward = {
-		add_ideas = {laissez_faire_economics}
+		add_ideas = {
+		laissez_faire_economics
+		}
 		}
 	}
 
@@ -1982,7 +2024,7 @@ add_building_construction = {
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_lietuvikassocializmas }
 		completion_reward = {
-		add_political_power 120
+		add_political_power = 90
 		}
 	}
 
@@ -2018,8 +2060,10 @@ add_building_construction = {
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_thecapitaliststate }
 		completion_reward = {
-		add_ideas = {little_to_no_regulations} 
-		manpower = -1000
+		add_ideas = {
+		little_to_no_regulations
+		} 
+		add_manpower = -1000
 		}
 	}
 
@@ -2054,7 +2098,9 @@ add_building_construction = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_equalityforall }
-		add_ideas = { no_bribes }
+		add_ideas = { 
+		no_bribes
+		}
 	}
 
 	#Focus for Equality for All!
@@ -2067,7 +2113,7 @@ add_building_construction = {
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_thesocialiststate }
 		completion_reward = {
-		add_stability = 0.01
+		add_stability = 0.1
 		}
 	}
 
@@ -2275,7 +2321,7 @@ add_building_construction = {
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_banusuryvisoumis }
 				completion_reward = {
-		add_stability = 0.006
+		add_stability = 0.06
 		add_popularity = {ideology = pelekist popularity =0.10}
     }
 	}
@@ -2307,7 +2353,7 @@ add_building_construction = {
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_kunigaiktisvisuomis }
 		completion_reward = {
-		add_stability = 0.006
+		add_stability = 0.06
 		add_popularity = {ideology = pelekist popularity =0.10}
     }
 	}
@@ -2492,7 +2538,7 @@ target = BLR
 		prerequisite = { focus = LIT_kirposjaunimas }
 		completion_reward = {
         add_popularity = {ideology = reactionary popularity =0.10}
-        add_stability = 0.005
+        add_stability = 0.05
 		}
 	}
 
@@ -2508,7 +2554,7 @@ target = BLR
 			focus = LIT_thearmywithastate
 		}
 		completion_reward = {
-		add_stability = 0.005
+		add_stability = 0.05
 		}
 	}
 
@@ -2561,7 +2607,7 @@ target = BLR
 		prerequisite = { focus = LIT_generalkirpa }
 		mutually_exclusive = { focus = LIT_interveneinbelarus }
 completion_reward = {
- add_stability = 0.005
+ add_stability = 0.05
 }
 	}
 
@@ -2629,7 +2675,6 @@ completion_reward = {
 		mutually_exclusive = { focus = LIT_supportforminorityrights }
 		completion_reward = {
 		BLR = { country_event = { id = lithuania.15 days = 2 } }
-
 	}
 	}
 
@@ -2643,12 +2688,10 @@ completion_reward = {
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_purgetheleftskirpa }
 		completion_reward = {
-				completion_reward = {
 		 country_event = { 
   id = lithuania.20
   days = 2
  }
-	}
 	}
 	}
 
@@ -2773,7 +2816,7 @@ completion_reward = {
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_pelekistandreactionaryallies }
 		completion_reward = {
-		manpower = 3000
+		add_manpower = 3000
 		army_experience = 25
 	}
 	}
@@ -2810,7 +2853,7 @@ completion_reward = {
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_thearmywithastate }
 		completion_reward = {
-		manpower = 10000
+		add_manpower = 10000
 		army_experience = 50
 		}
 	}
@@ -3784,7 +3827,7 @@ add_extra_state_shared_building_slots = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_contractcompaniestoaidthearmy }
 		completion_reward = {
-		manpower = 20000
+		add_manpower = 20000
 		}
 	}
 	

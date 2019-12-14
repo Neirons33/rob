@@ -1,7 +1,7 @@
 ﻿l_english:
 
  FRA_FEA_national_socialist:0 "French Equatorial Africa"
- FRA_FEA_national_socialist_DEF:0 ""French Equatorial Africa"
+ FRA_FEA_national_socialist_DEF:0 "French Equatorial Africa"
  FRA_FEA_socialist:0 "French Equatorial Africa"
  FRA_FEA_socialist_DEF:0 "French Equatorial Africa"
  FRA_FEA_democratic_socialist:0 "French Equatorial Africa"
@@ -31,7 +31,7 @@
  FRA_FEA_subject_DEF:0 "$OVERLORDADJ$ Equatorial Africa"
  
   FRA_FWA_national_socialist:0 "French West Africa"
- FRA_FWA_national_socialist_DEF:0 ""French West Africa"
+ FRA_FWA_national_socialist_DEF:0 "French West Africa"
  FRA_FWA_socialist:0 "French West Africa"
  FRA_FWA_socialist_DEF:0 "French West Africa"
  FRA_FWA_democratic_socialist:0 "French West Africa"
@@ -61,7 +61,7 @@
  FRA_FWA_subject_DEF:0 "$OVERLORDADJ$ West Africa"
  
   FRA_SYR_national_socialist:0 "French Syria and Lebanon"
- FRA_SYR_national_socialist_DEF:0 ""French Syria and Lebanon"
+ FRA_SYR_national_socialist_DEF:0 "French Syria and Lebanon"
  FRA_SYR_socialist:0 "French Syria and Lebanon"
  FRA_SYR_socialist_DEF:0 "French Syria and Lebanon"
  FRA_SYR_democratic_socialist:0 "French Syria and Lebanon"

@@ -97,9 +97,6 @@ add_equipment_to_stockpile = {
 	   }
 	 }
 	 }
-	 allowed = {
-	 has_country_flag = north_german_partisans
-	 }
 	 icon = GFX_decision_infiltrate_state
 	 	ai_will_do = {
 			base = 150
@@ -134,9 +131,6 @@ add_equipment_to_stockpile = {
 	 }
 	 }
 	 icon = GFX_decision_infiltrate_state
- allowed = {
-	 has_country_flag = north_german_partisans
-	 }	
 	available = {
 	 has_country_flag = north_german_partisans
 	 }
@@ -168,22 +162,19 @@ add_equipment_to_stockpile = {
 	   }
 	 }
 	 }
-	  icon = GFX_decision_infiltrate_state
-	  allowed = {
-	 has_country_flag = north_german_partisans
-	 }
+	 icon = GFX_decision_infiltrate_state
 	 available = {
 	 has_country_flag = north_german_partisans
 
 	 }
 	 fire_only_once = yes
-	 	 remove_effect = {
+	 remove_effect = {
      add_to_variable = { var = northern_partisan_strenght value =-4 }
 	 set_country_flag = partisans_hannover_destroyed
-	 	add_equipment_to_stockpile = {
-    type = infantry_equipment
-    amount = -650
-    producer = GER
+	 add_equipment_to_stockpile = {
+     type = infantry_equipment
+     amount = -650
+     producer = GER
 }
  add_manpower =-6500
 }
@@ -203,25 +194,22 @@ add_equipment_to_stockpile = {
 	   }
 	 }
 	 }
-icon = GFX_decision_infiltrate_state	 
-	 allowed = {
-	 has_country_flag = north_german_partisans
-	 }
+     icon = GFX_decision_infiltrate_state	 
 	 available = {
 	 has_country_flag = north_german_partisans
 	 }
 	 cost = 40
 	 days_remove = 30
 	 fire_only_once = yes
-	  	 remove_effect = {
+	 remove_effect = {
      add_to_variable = { var = northern_partisan_strenght value =-4 }
 	 set_country_flag = partisans_hannover_destroyed
-	 	add_equipment_to_stockpile = {
-    type = infantry_equipment
-    amount = -160
-    producer = GER
-}
- add_manpower =-1600
+	 add_equipment_to_stockpile = {
+      type = infantry_equipment
+      amount = -160
+      producer = GER
+         }
+     add_manpower =-1600
 }
 	 
 	 }
@@ -239,9 +227,6 @@ icon = GFX_decision_infiltrate_state
 	 }
 	 }
 	 icon = GFX_decision_infiltrate_state
-	 allowed = {
-	 has_country_flag = north_german_partisans
-	 }
 	 available = {
 	 has_country_flag = north_german_partisans
 	 }
@@ -273,9 +258,6 @@ icon = GFX_decision_infiltrate_state
 	 }
 	 }
 	  icon = GFX_decision_infiltrate_state
-	 allowed = {
-	 has_country_flag = north_german_partisans
-	 }
 	 available = {
 	 has_country_flag = north_german_partisans
 	 }
@@ -291,8 +273,6 @@ icon = GFX_decision_infiltrate_state
  add_manpower =-4500
 	}
 	}
-	
-
 	  GER_destroy_partisans_in_niederbayern = {
 	  	ai_will_do = {
 			base = 150
@@ -306,9 +286,6 @@ icon = GFX_decision_infiltrate_state
 	 }
 	 }
 	  icon = GFX_decision_infiltrate_state
-	 allowed = {
-	 has_country_flag = south_german_partisans
-	 }
 	 available = {
 	 has_country_flag = south_german_partisans
 	 }
@@ -371,9 +348,6 @@ icon = GFX_decision_infiltrate_state
 	 }
 	 }
 		  icon = GFX_decision_infiltrate_state
-	 allowed = {
-	 has_country_flag = south_german_partisans
-	 }
 	 	 available = {
       has_country_flag = south_german_partisans
 	 }
@@ -403,9 +377,7 @@ icon = GFX_decision_infiltrate_state
 	 }
 	 }
 		  icon = GFX_decision_infiltrate_state
-	 allowed = {
-	 has_country_flag = south_german_partisans
-	 }
+
 	 	 available = {
 		 has_country_flag = south_german_partisans
 	 }
@@ -435,9 +407,7 @@ icon = GFX_decision_infiltrate_state
 	 }
 	 }
 		  icon = GFX_decision_infiltrate_state
-	 allowed = {
-	 has_country_flag = south_german_partisans
-	 }
+
 	 	 available = {
 		 has_country_flag = south_german_partisans
 	 }
