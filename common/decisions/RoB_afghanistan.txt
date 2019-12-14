@@ -5,6 +5,7 @@ AFG_afghan_expansionism = {
    base = 200
   }
   fire_only_once = yes
+cost = 100
   available = {
   DEL = { exists = yes }
   DEL = { has_war = yes }
@@ -32,6 +33,7 @@ declare_war_on = {
    base = 200
   }
   fire_only_once = yes
+cost = 50
   available = {
    has_war = no 
    NOT = {
@@ -50,6 +52,7 @@ load_oob = "afghan_russians"
    base = 200
   }
   fire_only_once = yes
+cost = 50
   available = {
    TMS = { has_war_with = TRS }
    NOT = {
@@ -68,6 +71,7 @@ load_oob = "afghan_russians"
    base = 200
   }
   fire_only_once = yes
+cost = 150
   available = {
    has_war = no
 	owns_state = 442
@@ -91,6 +95,7 @@ load_oob = "afghan_russians"
    base = 200
   }
   fire_only_once = yes
+cost = 100
   available = {
    has_war = no
 	owns_state = 1169
@@ -115,6 +120,7 @@ load_oob = "afghan_russians"
    base = 200
   }
   fire_only_once = yes
+cost = 150
   available = {
    has_war = no
 	owns_state = 444
@@ -139,6 +145,7 @@ load_oob = "afghan_russians"
    base = 200
   }
   fire_only_once = yes
+cost = 100
   available = {
    DEL = { has_war_with = PNJ }
    NOT = {
@@ -159,6 +166,7 @@ load_oob = "afghan_russians"
    base = 200
   }
   fire_only_once = yes
+cost = 100
   available = {
 owns_state = 442
 owns_state = 445
@@ -182,6 +190,7 @@ owns_state = 444
    base = 200
   }
   fire_only_once = yes
+cost = 100
   available = {
 OR = { owns_state = 1178
 	AND = { UZB = { is_puppet = yes } 
@@ -190,6 +199,7 @@ OR = { owns_state = 1178
 }
 KHV = { is_puppet = yes }
   date > 1935.1.1
+manpower > 10000
    NOT = {
    is_in_faction_with = TMS
    is_puppet = yes
@@ -201,6 +211,7 @@ KHV = { country_event = {
     days = 2
 }
 	}
+add_manpower = -10000
  }
  }
 
