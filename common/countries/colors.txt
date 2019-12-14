@@ -20,6 +20,10 @@ IRK = {
 	color = rgb { 102 138 134 }
 	color_ui = rgb { 102 138 134 }
 }
+BDB = {
+	color = rgb { 120 57 20  }
+	color_ui = rgb { 120 57 20  }
+}
 RHN = {
 	color = rgb { 43 91 51 }
 	color_ui = rgb { 43 91 51 }

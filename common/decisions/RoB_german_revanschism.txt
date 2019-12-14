@@ -2,6 +2,9 @@ GER_german_expansion = {
 
  GER_anchluss_austria = {
  cost = 30
+ ai_will_do = {
+	base = 2000
+ }
  fire_only_once = yes
   available = {
   has_war = no
@@ -42,6 +45,9 @@ GER_german_expansion = {
  
  GER_demand_sudetland = {
  cost = 30
+ ai_will_do = {
+	base = 2000
+ }
  fire_only_once = yes
  available = {
   date > 1935.9.1
@@ -70,6 +76,9 @@ GER_german_expansion = {
  
  GER_subjugate_chechzs = {
  cost = 30
+ ai_will_do = {
+	base = 2000
+ }
  fire_only_once = yes
  available = {
   date > 1935.12.20
@@ -95,6 +104,9 @@ GER_german_expansion = {
 
  GER_secure_denmark = {
  cost = 30
+ ai_will_do = {
+	base = 2000
+ }
  fire_only_once = yes
  available = {
   ENG = { has_country_flag = ENG_civil_war }
@@ -118,6 +130,9 @@ GER_german_expansion = {
 
  GER_french_arent_watching = {
  cost = 30
+ ai_will_do = {
+	base = 2000
+ }
  fire_only_once = yes
  visible = {
   FRA = { has_war = yes }
@@ -141,6 +156,9 @@ GER_german_expansion = {
 
  GER_destroy_poles = {
  cost = 30
+ ai_will_do = {
+	base = 2000
+ }
  fire_only_once = yes
  available = {
   date > 1938.1.1
@@ -164,6 +182,9 @@ GER_german_expansion = {
 
  GER_destroy_prussian_traitors = {
  cost = 30
+ ai_will_do = {
+	base = 2000
+ }
  fire_only_once = yes
  available = {
  OR = {
@@ -192,6 +213,9 @@ GER_german_expansion = {
 
  GER_push_west = {
  cost = 30
+ ai_will_do = {
+	base = 2000
+ }
  fire_only_once = yes
  available = {
    date > 1939.1.1
@@ -207,6 +231,9 @@ GER_german_expansion = {
  
  GER_destory_france = {
  cost = 30
+ ai_will_do = {
+	base = 2000
+ }
  fire_only_once = yes
  available = {
    date > 1939.6.1
@@ -226,6 +253,9 @@ GER_german_expansion = {
  
  GER_invade_benelux = {
  cost = 30
+ ai_will_do = {
+	base = 2000
+ }
  fire_only_once = yes
  available = {
    GER = { has_war_with = FRA }
@@ -260,6 +290,9 @@ GER_german_export_revolution = {
 
  GER_austrian_revolution = {
   cost = 30
+  ai_will_do = {
+	base = 2000
+ }
   fire_only_once = yes
   available = {
   has_war = no
@@ -302,6 +335,9 @@ GER_german_export_revolution = {
  
   GER_chezh_revolution = {
    cost = 30
+   ai_will_do = {
+	base = 2000
+    }
    fire_only_once = yes
    available = {
    date > 1935.1.1
@@ -329,6 +365,9 @@ GER_german_export_revolution = {
 
    GER_slovakian_revolution = {
    cost = 30
+   ai_will_do = {
+	base = 2000
+    }
    fire_only_once = yes
    available = {
    date > 1936.3.1
@@ -353,6 +392,9 @@ GER_german_export_revolution = {
   }
    GER_hungarian_revolution = {
    cost = 30
+   ai_will_do = {
+	base = 2000
+    }
    fire_only_once = yes
    available = {
    date > 1936.6.1
@@ -379,6 +421,9 @@ GER_german_export_revolution = {
  
    GER_polish_revolution = {
    cost = 30
+   ai_will_do = {
+	base = 2000
+    }
    fire_only_once = yes
    available = {
    date > 1936.9.1
@@ -401,6 +446,9 @@ GER_german_export_revolution = {
  
    GER_prussian_revolution = {
    cost = 30
+   ai_will_do = {
+	base = 2000
+    }
    fire_only_once = yes
    available = {
    has_war = no
@@ -417,6 +465,9 @@ GER_german_export_revolution = {
  
    GER_lithuanian_revolution = {
    cost = 30
+   ai_will_do = {
+	base = 2000
+    }
    fire_only_once = yes
    available = {
    LIT = { exists = yes }
@@ -433,6 +484,9 @@ GER_german_export_revolution = {
  
    GER_italian_revolution = {
    cost = 30
+   ai_will_do = {
+	base = 2000
+    }
    fire_only_once = yes
    available = {
    has_war = no
@@ -453,6 +507,9 @@ GER_german_export_revolution = {
  
  GER_dansih_revolution = {
  cost = 30
+ ai_will_do = {
+	base = 2000
+    }
  fire_only_once = yes
  available = {
   has_war = no
@@ -467,6 +524,9 @@ GER_german_export_revolution = {
 }
  GER_destroy_rhineland = {
  cost = 30
+ ai_will_do = {
+	base = 2000
+    }
  fire_only_once = yes
  available = {
    date > 1939.1.1
@@ -482,6 +542,9 @@ GER_german_export_revolution = {
  
  GER_benelux_revolution = {
  cost = 30
+ ai_will_do = {
+	base = 2000
+    }
  fire_only_once = yes
  
  available = {

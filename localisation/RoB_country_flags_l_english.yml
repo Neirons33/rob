@@ -32,6 +32,7 @@
  GER_ds_economy:0 "Second All-German Congress has decided on Democratic Socialist policy"
  GER_lux_economy:0 "Second All-German Congress has decided on Orthodox Marxist policy"
  GER_diplo_tt_1:0 "§RThis will provoke French response!§!\n"
+ GER_tt_3:0 "The Political Future of Germany Has Been Decided"
  ###Scripted Triggers
  minister_available:0 "Minister Available For This Government Type"
  democratic_aligned_government:0 "Government is Democratic Aligned"

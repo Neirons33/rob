@@ -5,9 +5,9 @@ state={
 		owner = GER
 		buildings = {
 			infrastructure = 8
-			arms_factory = 4
-			industrial_complex = 2
-			air_base = 6
+			arms_factory = 2
+			industrial_complex = 1
+			air_base = 3
 
 		}
 		add_core_of = GER
@@ -20,5 +20,6 @@ state={
 		6582 9560 13573 
 	}
 	manpower=0
+	state_category=town
 	buildings_max_level_factor=1.000
 }

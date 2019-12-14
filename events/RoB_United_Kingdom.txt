@@ -1127,6 +1127,12 @@ trigger = {
   BRC = { has_war = no }
   BLF = { has_war = no }
 }
+OR = {
+  tag = BRU
+  tag = BRL
+  tag = BRC
+  tag = BLF
+}
 }
 
 mean_time_to_happen = { days = 1 }

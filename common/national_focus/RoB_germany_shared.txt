@@ -531,6 +531,16 @@
 		y = 9
 		cost = 5
 		available_if_capitulated = yes
+		available = {	
+		 custom_effect_tooltip = GER_tt_3
+         OR = {
+          has_country_flag = GER_lux_ds_victory
+          has_country_flag = GER_dem_victory
+          has_country_flag = GER_lux_victory
+          has_country_flag = GER_lux_nb_victory
+          has_country_flag = GER_nb_vitory
+         }
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -694,9 +704,20 @@
 		y = 9
 		cost = 5
 		available_if_capitulated = yes
+		available = {	
+		 custom_effect_tooltip = GER_tt_3
+         OR = {
+          has_country_flag = GER_lux_ds_victory
+          has_country_flag = GER_dem_victory
+          has_country_flag = GER_lux_victory
+          has_country_flag = GER_lux_nb_victory
+          has_country_flag = GER_nb_vitory
+         }
+		}
 		ai_will_do = {
 			factor = 1
 		}
+		
 		completion_reward = {
 		 air_experience = 30
 		}
@@ -866,6 +887,16 @@
 		y = 9
 		cost = 5
 		available_if_capitulated = yes
+		available = {	
+		 custom_effect_tooltip = GER_tt_3
+         OR = {
+          has_country_flag = GER_lux_ds_victory
+          has_country_flag = GER_dem_victory
+          has_country_flag = GER_lux_victory
+          has_country_flag = GER_lux_nb_victory
+          has_country_flag = GER_nb_vitory
+         }
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -1070,9 +1101,10 @@
 		cost = 5
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 1
+			factor = 100
 		}
 		completion_reward = {
+		add_political_power = 120
 		 add_tech_bonus = {
 	      name = air_bonus
 	      bonus = 0.5

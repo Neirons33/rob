@@ -487,23 +487,12 @@ title = spartakus_germany.14.t
 desc = spartakus_germany.14.d
 fire_only_once = yes
 
-immediate = { 
-BAV = { transfer_state = 53 }
-BAV = { transfer_state = 54 }
-BAV = { transfer_state = 52 }
-BAV = { transfer_state = 50 }
-BAV = { transfer_state = 791 } 
-BAV = { transfer_state = 799 } 
-BAV = { transfer_state = 798 }
-BAV = { transfer_state = 800 }  
-declare_war_on = { 
-type = annex_everything 
-target = BAV 
-}
-} 
 trigger = {
 has_country_flag = south_falls
+OR = {
 has_country_flag = north_holds
+has_country_flag = north_falls
+}
 OR = {
 has_country_flag = GER_lux_ds_victory
 has_country_flag = GER_dem_victory
@@ -516,8 +505,7 @@ mean_time_to_happen = { days = 3 }
 
 option = { ###Revolution continues!
 name = spartakus_germany.14.a
-add_political_power = 100
-add_stability = -0.15
+add_war_support = 0.15
 hidden_effect = { 
 BAV = { load_oob = BAV_1934 }
 52 = {
@@ -544,42 +532,127 @@ add_core_of = BAV
 800 = {
 add_core_of = BAV
 }
+BAV = { transfer_state = 53 }
+BAV = { transfer_state = 54 }
+BAV = { transfer_state = 52 }
+BAV = { transfer_state = 50 }
+BAV = { transfer_state = 791 } 
+BAV = { transfer_state = 799 } 
+BAV = { transfer_state = 798 }
+BAV = { transfer_state = 800 }  
+declare_war_on = { 
+type = annex_everything 
+target = BAV 
 }
 }
-option = { ###Play as Pelekists!
-name = spartakus_germany.14.b
-add_political_power = 100
-add_stability = -0.15
-BAV = { change_tag_from = GER }
+}
+}
+
+country_event = {  ###Ludendorf uprising
+id = spartakus_germany.30
+title = spartakus_germany.30.t
+desc = spartakus_germany.30.d
+fire_only_once = yes
+
+trigger = {
+has_country_flag = north_falls
+OR = {
+has_country_flag = south_holds
+has_country_flag = south_falls
+}
+OR = {
+has_country_flag = GER_lux_ds_victory
+has_country_flag = GER_dem_victory
+has_country_flag = GER_lux_victory
+has_country_flag = GER_lux_nb_victory
+has_country_flag = GER_nb_vitory
+}
+}
+mean_time_to_happen = { days = 3 }
+
+option = { ###Revolution continues!
+name = spartakus_germany.30.a
+add_war_support = 0.15
 hidden_effect = { 
-BAV = { load_oob = BAV_1934 }
-52 = {
-add_core_of = BAV
+#BDB = { load_oob = BDB_1934 }
+BDB = {
+remove_ideas = {
+Economic_transition 
+Rampant_prostitution 
+Cleansed_intellectuals
+anarchy_in_streets
 }
-53 = {
-add_core_of = BAV
+set_cosmetic_tag = BDB_ludendorff
+set_popularities = {
+	national_socialist = 0
+	socialist = 0
+	democratic_socialist = 0
+	social_democracy = 0
+	social_liberal = 0
+	conservative = 0
+	authoritharian = 19
+	reactionary = 52
+	pelekist = 29
 }
-54 = {
-add_core_of = BAV
+set_politics = {
+	ruling_party = reactionary
+	elections_allowed = no
 }
-50 = {
-add_core_of = BAV
-}
-791 = {
-add_core_of = BAV
-}
-799 = {
-add_core_of = BAV
-}
-798 = {
-add_core_of = BAV
-}
-800 = {
-add_core_of = BAV
+create_country_leader = {
+	name = "Erich Ludendorff"
+	desc = "POLITICS_KING_ZOG_DESC"
+	picture = "Kurt_von_Schleicher.tga"
+	expire = "1965.1.1"
+	ideology = military_junta
+	traits = {
+		
+	}
 }
 }
+#58 = {
+#add_core_of = BDB
+#}
+61 = {
+add_core_of = BDB
+}
+62 = {
+add_core_of = BDB
+}
+1214 = {
+add_core_of = BDB
+}
+63 = {
+add_core_of = BDB
+}
+1095 = {
+add_core_of = BDB
+}
+797 = {
+add_core_of = BDB
+}
+68 = {
+add_core_of = BDB
+}
+1093 = {
+add_core_of = BDB
+}
+#BDB = { transfer_state = 58 }
+BDB = { transfer_state = 61 }
+BDB = { transfer_state = 62 }
+BDB = { transfer_state = 1214 }
+BDB = { transfer_state = 63 } 
+BDB = { transfer_state = 1095 } 
+BDB = { transfer_state = 797 }
+BDB = { transfer_state = 68 }
+BDB = { transfer_state = 1093 }  
+declare_war_on = { 
+type = annex_everything 
+target = BDB 
 }
 }
+}
+}
+
 
 country_event = { ###Reactionary Coup
 id = spartakus_germany.15
@@ -662,16 +735,6 @@ set_country_flag = GER_monarchy_restored
 }
 }
 
-
-country_event = {  ###Prussia invades
-id = spartakus_germany.17
-title = spartakus_germany.17.t
-desc = spartakus_germany.17.d
-fire_only_once = yes
-
-}
-
-
 country_event = { ###Democratic Elections
 id = spartakus_germany.18
 title = spartakus_germany.18.t
@@ -748,7 +811,7 @@ option = { ###Für Revolution!
 name = spartakus_germany.19.a
 add_stability = 0.2
 add_political_power = 150
-set_country_flag = socialists_hold
+set_country_flag = GER_socialists_hold
 }
 }
 
