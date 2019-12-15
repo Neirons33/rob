@@ -19,14 +19,12 @@ state={
 
 		}
 		add_core_of = GER
-		add_core_of = PRS
-		add_core_of = TRG
 	}
 
 	provinces={
 		425 482 538 3500 6501 6524 9497 
 	}
-	manpower=2483583
+	manpower=1983583
 	buildings_max_level_factor=1.000
-	state_category=large_city
+	state_category=town
 }

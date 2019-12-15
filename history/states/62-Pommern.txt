@@ -14,16 +14,6 @@ state={
 
 		}
 		add_core_of = GER
-		add_core_of = PRS
-		add_core_of = POM
-
-		1939.1.1 = {
-			buildings = {
-				air_base = 8
-
-			}
-
-		}
 
 	}
 

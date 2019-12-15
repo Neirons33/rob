@@ -9,10 +9,6 @@ state={
 			infrastructure = 8
 
 		}
-		1936.3.7 = {
-			set_demilitarized_zone = no
-
-		}
 
 	}
 

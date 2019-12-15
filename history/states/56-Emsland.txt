@@ -12,14 +12,12 @@ state={
 
 		}
 		add_core_of = GER
-		add_core_of = PRS
-		add_core_of = HAN
 	}
 
 	provinces={
 		9281 11233 11388 11264 
 	}
-	manpower=2016434
+	manpower=1016434
 	buildings_max_level_factor=1.000
-	state_category=city
+	state_category=rural
 }

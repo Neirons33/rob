@@ -11,13 +11,13 @@ state={
 			}
 		}
 		add_core_of = GER
-		add_core_of = PRS
 
 	}
 
 	provinces={
 		241 
 	}
-	manpower=0
+	manpower=45774
 	buildings_max_level_factor=1.000
+	state_category=rural
 }
