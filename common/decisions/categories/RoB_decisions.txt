@@ -10,18 +10,36 @@ GER_german_partisans = {
 		  }
 }
 
+GER_german_export_revolution = {
+  icon = GFX_decision_oppression
+  picture = GFX_decision_germany_partisans
+  visible = {
+   NOT = { has_government = national_socialist }
+   tag = GER
+  }
+	available = {
+	tag = GER
+	has_country_flag = GER_expansion_LUX_DS
+	OR = {
+	has_government = socialist
+    has_government = democratic_socialist
+      }	
+	 }
+    }
 GER_german_expansion = {
   icon = GFX_decision_oppression
   picture = GFX_decision_germany_partisans
-	visible = {
+	available = {
     tag = GER
 	has_country_flag = GER_expansion
     }
-		  priority = {
-		  base = 10
-		  }
-}
+	visible = {
+	has_government = national_socialist
+	tag = GER
+	}
+	}
 
+	
 BLR_power_struggle = {
   icon = GFX_decision_oppression
   picture = GFX_decision_germany_partisans
