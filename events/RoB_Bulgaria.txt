@@ -604,16 +604,9 @@ option = {
  name = bulgaria.118.a
 ai_chance = { factor = 100}
 
-731 = { create_unit = {
-    division = "name = \"1st Macedonian Volunteers\" division_template = \"Pekhotna Divizija\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
-    owner = BUL
-prioritize_location = 3936
-} }
-731 = { create_unit = {
-    division = "name = \"2nd Macedonian Volunteers\" division_template = \"Pekhotna Divizija\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
-    owner = BUL
-prioritize_location = 3526
-} }
+
+
+load_oob = "BUL_MAK"
 
 add_manpower = 10000
 
@@ -715,17 +708,7 @@ option = {
  name = bulgaria.122.a
 ai_chance = { factor = 100}
 
-184 = { create_unit = {
-    division = "name = \"1st Thracian Volunteers\" division_template = \"Pekhotna Divizija\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
-    owner = BUL
-prioritize_location = 11905
-} }
-184 = { create_unit = {
-    division = "name = \"2nd Thracian Volunteers\" division_template = \"Pekhotna Divizija\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
-    owner = BUL
-prioritize_location = 13305
-} }
-
+load_oob = "BUL_THR"
 add_manpower = 10000
 
 }
@@ -748,15 +731,9 @@ option = {
  name = bulgaria.123.a
 ai_chance = { factor = 100}
 
-44 = { create_unit = {
-    division = "name = \"1st Albanian-Bulgarian Division\" division_template = \"Pekhotna Divizija\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
-    owner = BUL
-} }
-44\ = { create_unit = {
-    division = "name = \"2nd Albanian-Bulgarian Volunteers\" division_template = \"Pekhotna Divizija\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
-    owner = BUL
-} }
 
+
+load_oob = "BUL_ALB"
 add_manpower = -10000
 
 }
