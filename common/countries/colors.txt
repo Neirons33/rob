@@ -20,10 +20,6 @@ IRK = {
 	color = rgb { 102 138 134 }
 	color_ui = rgb { 102 138 134 }
 }
-BDB = {
-	color = rgb { 120 57 20  }
-	color_ui = rgb { 120 57 20  }
-}
 RHN = {
 	color = rgb { 43 91 51 }
 	color_ui = rgb { 43 91 51 }
@@ -797,6 +793,10 @@ BBY = {
 CIR = {
     color = rgb { 51 63 76 }
 	color_ui = rgb { 51 63 76 }
+}
+PNJ = {
+    color = rgb { 68 63 33 }
+	color_ui = rgb { 33 48 39 }
 }
 HYD = {
     color = rgb { 52 41 8 }
