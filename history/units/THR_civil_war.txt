@@ -49,7 +49,7 @@ units = {
 		location = 13372
 		division_template = "Volkspolizei"
 		start_experience_factor = 0.2
-		start_equipment_factor 1
+		start_equipment_factor = 1
 	}
 	division= {	
 		division_name = {
