@@ -20,6 +20,25 @@ mean_time_to_happen = { days = 2 }
 option = {
 name = spartakus_germany.1.a
 add_political_power = 10
+hidden_effect = {
+ GER = { country_event = { id = spartakus_germany.32 days = 15 } }
+}
+hidden_effect = { country_event = { id = spartakus_germany.33 days = 35 } }
+}
+}
+
+country_event = { ###rosa creates faction
+id = spartakus_germany.32
+title = spartakus_germany.32.t
+desc = spartakus_germany.32.d
+fire_only_once = yes
+is_triggered_only = yes
+
+option = {
+name = spartakus_germany.32.a
+add_political_power = 10
+create_faction = "Spartacus Coallition"
+GER = { add_to_faction = WLL }
 }
 }
 
@@ -120,6 +139,70 @@ set_country_flag = north_german_partisans
 }
 }
 
+country_event = { ###Battle against partisans 1
+id = spartakus_germany.33
+title = spartakus_germany.33.t
+desc = spartakus_germany.33.d
+fire_only_once = yes
+is_triggered_only = yes
+picture = GFX_picture_russia_riots
+
+option = {
+name = spartakus_germany.33.a
+add_political_power = 10
+hidden_effect = { country_event = { id = spartakus_germany.34 days = 25 } }
+}
+option = {
+name = spartakus_germany.33.b
+add_political_power = 2
+hidden_effect = { country_event = { id = spartakus_germany.34 days = 25 } }
+}
+}
+
+country_event = { ###Battle against partisans 2
+id = spartakus_germany.34
+title = spartakus_germany.34.t
+desc = spartakus_germany.34.d
+fire_only_once = yes
+is_triggered_only = yes
+picture = GFX_picture_russia_white_soldiers
+
+option = {
+name = spartakus_germany.34.a
+add_political_power = 10
+hidden_effect = { country_event = { id = spartakus_germany.35 days = 25 } }
+}
+}
+
+country_event = { ###Battle against partisans 3
+id = spartakus_germany.35
+title = spartakus_germany.35.t
+desc = spartakus_germany.35.d
+fire_only_once = yes
+is_triggered_only = yes
+picture = GFX_picture_march_on_moscow
+
+option = {
+name = spartakus_germany.35.a
+add_political_power = 10
+hidden_effect = { country_event = { id = spartakus_germany.36 days = 25 } }
+}
+}
+
+country_event = { ###Battle against partisans 4
+id = spartakus_germany.36
+title = spartakus_germany.36.t
+desc = spartakus_germany.36.d
+fire_only_once = yes
+is_triggered_only = yes
+picture = GFX_picture_russian_partisans
+
+option = {
+name = spartakus_germany.36.a
+add_political_power = 10
+}
+}
+
 ######################
 ###Political Events###
 ######################
@@ -129,6 +212,7 @@ id = spartakus_germany.7
 title = spartakus_germany.7.t
 desc = spartakus_germany.7.d
 fire_only_once = yes
+picture = GFX_report_event_hungary_parliament
 
 trigger = {
 tag = GER
@@ -161,6 +245,7 @@ title = spartakus_germany.8.t
 desc = spartakus_germany.8.d
 fire_only_once = yes
 is_triggered_only = yes
+picture = GFX_report_event_germany_politician_handshake
 
 option = { ###Focus on agriculture, state socialism 
 name = spartakus_germany.8.a
@@ -205,6 +290,8 @@ title = spartakus_germany.9.t
 desc = spartakus_germany.9.d
 fire_only_once = yes
 is_triggered_only = yes
+picture = GFX_report_event_generic_read_write
+
 
 option = { ###Strong, centralized army 
 name = spartakus_germany.9.a
@@ -244,6 +331,7 @@ title = spartakus_germany.10.t
 desc = spartakus_germany.10.d
 fire_only_once = yes
 is_triggered_only = yes
+picture = GFX_report_event_generic_parliament
 
 option = { ###Kill them all! 
 name = spartakus_germany.10.a
@@ -286,6 +374,7 @@ title = spartakus_germany.11.t
 desc = spartakus_germany.11.d
 fire_only_once = yes
 is_triggered_only = yes
+picture = GFX_report_event_generic_conference
 
 option = { ###Revaschism 
 name = spartakus_germany.11.a
@@ -326,6 +415,7 @@ title = spartakus_germany.12.t
 desc = spartakus_germany.12.d
 fire_only_once = yes
 is_triggered_only = yes
+picture = GFX_report_event_generic_sign_treaty3
 
 option = { ###Empower chairman 
 name = spartakus_germany.12.a
@@ -365,6 +455,7 @@ title = spartakus_germany.13.t
 desc = spartakus_germany.13.d
 fire_only_once = yes
 is_triggered_only = yes
+picture = GFX_picture_russia_kazan
 
 option = { ###National Bolshevik Victory
 name = spartakus_germany.13.a
@@ -486,6 +577,7 @@ id = spartakus_germany.14
 title = spartakus_germany.14.t
 desc = spartakus_germany.14.d
 fire_only_once = yes
+picture = GFX_picture_pelekist_march
 
 trigger = {
 has_country_flag = south_falls
@@ -554,6 +646,7 @@ id = spartakus_germany.30
 title = spartakus_germany.30.t
 desc = spartakus_germany.30.d
 fire_only_once = yes
+picture = GFX_picture_russia_civil_war_part_two
 
 trigger = {
 has_country_flag = north_falls
@@ -1157,7 +1250,7 @@ country_event = {
    FRA = { declare_war_on = { target = GER  type = annex_everything } }
    add_war_support = 0.1
    ai_chance = {
-    factor = 75
+    factor = 85
      }   
     }
 	
@@ -1171,7 +1264,7 @@ country_event = {
   }
    add_war_support = -0.1
    ai_chance = {
-    factor = 25
+    factor = 15
      }   
     }
    }
@@ -1203,3 +1296,190 @@ country_event = {
    }
   }
   }
+  
+  
+ #####FLAVOUR
+country_event = { ###Tale of Two Brothers
+ id = spartakus_germany.37
+ title = spartakus_germany.37.t
+ desc = spartakus_germany.37.d
+ fire_only_once = yes
+ is_triggered_only = yes
+ picture = GFX_picture_russian_partisans
+
+ option = {
+  name = spartakus_germany.37.a
+  add_political_power = 10
+}
+}
+
+country_event = { ###former reactionary turning socialist
+ id = spartakus_germany.38
+ title = spartakus_germany.38.t
+ desc = spartakus_germany.38.d
+ fire_only_once = yes
+ picture = GFX_report_event_germany_politician_handshake
+
+ trigger = {
+  date > 1935.1.1
+  tag = GER
+  OR = {
+   has_government = socialist
+   has_government = national_socialist
+   has_government = democratic_socialist
+  }
+ }
+ 
+ mean_time_to_happen = { days = 2 }
+ 
+ option = {
+  name = spartakus_germany.38.a
+  add_political_power = 10
+}
+}
+
+country_event = { ###Red Pheonix
+ id = spartakus_germany.39
+ title = spartakus_germany.39.t
+ desc = spartakus_germany.39.d
+ fire_only_once = yes
+ picture = GFX_picture_russian_partisans
+ 
+ trigger = {
+  tag = GER
+  has_war = yes
+ }
+ 
+ mean_time_to_happen = { days = 20 }
+
+ option = {
+  name = spartakus_germany.39.a
+  add_political_power = 10
+}
+}
+
+country_event = { ###Death of Himmler
+ id = spartakus_germany.40
+ title = spartakus_germany.40.t
+ desc = spartakus_germany.40.d
+ fire_only_once = yes
+ is_triggered_only = yes
+ picture = GFX_picture_russian_partisans
+
+ option = {
+  name = spartakus_germany.40.a
+  add_political_power = 10
+}
+}
+
+country_event = { ###Death of Ludendorff
+ id = spartakus_germany.41
+ title = spartakus_germany.41.t
+ desc = spartakus_germany.41.d
+ fire_only_once = yes
+ is_triggered_only = yes
+ picture = GFX_picture_russia_white_soldiers
+
+ option = {
+  name = spartakus_germany.41.a
+  add_political_power = 10
+}
+}
+
+country_event = { ###Nazbol corruption
+ id = spartakus_germany.42
+ title = spartakus_germany.42.t
+ desc = spartakus_germany.42.d
+ fire_only_once = yes
+ picture = GFX_picture_russian_partisans
+
+ trigger = {
+  has_completed_focus = GER_curbstompcorruption
+  tag = GER
+ }
+ 
+ mean_time_to_happen = { days = 5 }
+ 
+ option = {
+  name = spartakus_germany.42.a
+  add_political_power = 10
+}
+}
+
+country_event = { ###A rural idilee
+ id = spartakus_germany.43
+ title = spartakus_germany.43.t
+ desc = spartakus_germany.43.d
+ fire_only_once = yes
+ picture = GFX_picture_russian_partisans
+ 
+ trigger = {
+  tag = GER
+  has_completed_focus = GER_agrariansocialism
+ }
+ 
+ mean_time_to_happen = { days = 5 }
+
+ option = {
+  name = spartakus_germany.43.a
+  add_political_power = 10
+ }
+}
+
+country_event = { ###Authobanjg worker
+ id = spartakus_germany.44
+ title = spartakus_germany.44.t
+ desc = spartakus_germany.44.d
+ fire_only_once = yes
+ picture = GFX_picture_russian_partisans
+ 
+ trigger = {
+  has_completed_focus = GER_autobahn
+  tag = GER
+ }
+
+ option = {
+  name = spartakus_germany.44.a
+  add_political_power = 10
+}
+}
+
+country_event = { ###reshaping German culture
+ id = spartakus_germany.45
+ title = spartakus_germany.45.t
+ desc = spartakus_germany.45.d
+ fire_only_once = yes
+ picture = GFX_picture_russian_partisans
+ 
+ trigger = {
+  tag = GER
+  has_completed_focus = GER_proletarianculture
+ }
+ 
+ mean_time_to_happen = { days = 3 }
+
+ option = {
+  name = spartakus_germany.45.a
+  add_political_power = 10
+}
+}
+
+country_event = { ###modernist art
+ id = spartakus_germany.46
+ title = spartakus_germany.46.t
+ desc = spartakus_germany.46.d
+ fire_only_once = yes
+ picture = GFX_picture_russian_partisans
+  
+ trigger = {
+  tag = GER
+  has_completed_focus = GER_modernistart
+ }
+ 
+ mean_time_to_happen = { days = 3 }
+
+ option = {
+  name = spartakus_germany.46.a
+  add_political_power = 10
+}
+}

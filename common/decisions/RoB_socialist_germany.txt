@@ -31,6 +31,7 @@ GER_german_partisans = {
     producer = GER
     }
     add_manpower =-30000
+	hidden_effect = { country_event = { id = spartakus_germany.41 days = 20 } }
 	}
 	timeout_effect = {
 	add_to_variable = { var = northern_partisan_strenght value = 35 } 
@@ -75,6 +76,7 @@ GER_german_partisans = {
      producer = GER
      }
     add_manpower =-40000
+	hidden_effect = { country_event = { id = spartakus_germany.40 days = 20 } }
 	}
 	timeout_effect = {
 	add_to_variable = { var = southern_partisan_strenght value = 35 } 

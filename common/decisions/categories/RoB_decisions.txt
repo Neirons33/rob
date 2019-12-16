@@ -11,12 +11,15 @@ GER_german_partisans = {
 }
 
 GER_german_export_revolution = {
-  icon = GFX_decision_oppression
-  picture = GFX_decision_germany_partisans
+  icon = GFX_decision_category_sov_great_patriotic_war
+  picture = GFX_decision_cat_picture_generic_border_conflicts
   visible = {
    NOT = { has_government = national_socialist }
    tag = GER
   }
+  priority = {
+   base = 100
+		  }
 	available = {
 	tag = GER
 	has_country_flag = GER_expansion_LUX_DS
@@ -27,11 +30,14 @@ GER_german_export_revolution = {
 	 }
     }
 GER_german_expansion = {
-  icon = GFX_decision_oppression
-  picture = GFX_decision_germany_partisans
+  icon = GFX_decision_category_border_conflicts
+  picture = GFX_decision_cat_picture_gateway_to_europe
 	available = {
     tag = GER
 	has_country_flag = GER_expansion
+    }
+	priority = {
+     base = 100
     }
 	visible = {
 	has_government = national_socialist
