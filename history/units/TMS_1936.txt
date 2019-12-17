@@ -65,6 +65,13 @@ units = {
 
 	}
 	division = {
+		name = "Northeastern Cavalry"
+		location = 10414
+		division_template = "Turkmen Cavalry"
+		start_equipment_factor = 0.3
+
+	}
+	division = {
 		name = "Ashgabat Infantry"
 		location = 12333
 		division_template = "Militia"
