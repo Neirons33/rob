@@ -110,6 +110,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 7003;9941;sea;7226;-1;-1;-1;-1;;Kos-Bodrum
 10007;10122;sea;7226;-1;-1;-1;-1;;Rhodes-Turkey
 9833;11829;sea;5412;-1;-1;-1;-1;;Bosphorus
+9887;13319;sea;7452;-1;-1;-1;-1;;Gallipoli
 9680;6741;sea;8282;-1;-1;-1;-1;;Kerch Strait
 9859;3962;sea;5946;-1;-1;-1;-1;;Tsugaru Strait
 10011;7110;sea;2708;4825;1219;-1;-1;;Tushima-Kyushu
@@ -210,4 +211,5 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 4542;12581;impassable;-1;-1;-1;-1;-1;;pamir mountains
 3314;6336;sea;2752;2885;1578;2890;1581;;Afsluitdijk
 7265;10201;sea;7479;-1;-1;-1;-1;;Srilanka-Tamilland
+1381;10201;sea;7479;-1;-1;-1;-1;;Srilanka-Tamilland
 -1;-1;;-1;-1;-1;-1;-1;-1
