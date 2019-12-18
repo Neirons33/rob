@@ -281,9 +281,24 @@ GER_german_expansion = {
 		}			
 	}
    }
+   hidden_effect = { 
+    every_country = {
+	 limit = { 
+	  OR = {
+	   tag = FRS
+	   tag = FRA
+	   tag = FRR
+	   tag = FRL
+	  }
+	  has_war = no
+	  exists = yes
+	}
+    country_event = { id = france.33 days = 15 } 
+   }
   }
  } 
 
+}
 }
 
 GER_german_export_revolution = {
@@ -580,7 +595,22 @@ GER_german_export_revolution = {
  if = {
   limit = { LUX = { exists = yes } LUX = { NOT = { is_in_faction_with = GER } }  }
   GER = { declare_war_on = { target = LUX  type = puppet_wargoal_focus } }
- } 
+ }
+    hidden_effect = { 
+    every_country = {
+	 limit = { 
+	  OR = {
+	   tag = FRS
+	   tag = FRA
+	   tag = FRR
+	   tag = FRL
+	  }
+	  has_war = no
+	  exists = yes
+	}
+    country_event = { id = france.33 days = 15 } 
+   }
+  }
  }
 } 
  }

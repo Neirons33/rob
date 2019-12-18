@@ -18,7 +18,7 @@ GER_german_export_revolution = {
    tag = GER
   }
   priority = {
-   base = 100
+   base = 1000
 		  }
 	available = {
 	tag = GER

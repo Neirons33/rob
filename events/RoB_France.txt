@@ -1057,3 +1057,236 @@ FRS = {
 }
 
 }
+
+country_event = { ###germany invades Austria
+id = france.28
+title = france.28.t
+desc = france.28.d
+fire_only_once = yes
+
+trigger = {
+ OR = {
+ tag = FRS
+ tag = FRA
+ tag = FRR
+ tag = FRL
+ }
+ has_war = no
+ GER = { has_war_with = AUS }
+}
+
+mean_time_to_happen = { days = 3 }
+
+option = { ###Fight Germany
+name = france.28.a
+ROOT = {
+ declare_war_on = { type = annex_everything target = GER }
+ }
+ add_stability =-0.25
+ add_war_support =-0.25
+ add_political_power = -120
+ 
+ ai_chance = { factor = 1 }
+}
+
+
+option = { ###do nothing
+name = france.28.b
+add_stability = 0.05
+ai_chance = { factor = 10000 }
+}
+
+}
+
+country_event = { ###germany invades Bohemia
+id = france.29
+title = france.29.t
+desc = france.29.d
+fire_only_once = yes
+
+trigger = {
+ OR = {
+ tag = FRS
+ tag = FRA
+ tag = FRR
+ tag = FRL
+ }
+ has_war = no
+ GER = { has_war_with = CZE }
+}
+
+mean_time_to_happen = { days = 3 }
+
+option = { ###Fight Germany
+name = france.28.a
+ROOT = {
+ declare_war_on = { type = annex_everything target = GER }
+ }
+ add_stability =-0.22
+ add_war_support =-0.22
+ add_political_power = -110
+ 
+ ai_chance = { factor = 1 }
+}
+
+
+option = { ###do nothing
+name = france.28.b
+add_stability = 0.04
+ai_chance = { factor = 1000 }
+}
+
+}
+
+
+country_event = { ###germany invades Denmark
+id = france.31
+title = france.31.t
+desc = france.31.d
+fire_only_once = yes
+
+trigger = {
+ OR = {
+ tag = FRS
+ tag = FRA
+ tag = FRR
+ tag = FRL
+ }
+ has_war = no
+ GER = { has_war_with = DEN }
+}
+
+mean_time_to_happen = { days = 1 }
+
+option = { ###Fight Germany
+name = france.28.a
+ROOT = {
+ declare_war_on = { type = annex_everything target = GER }
+ }
+ add_stability =-0.15
+ add_war_support =-0.15
+ add_political_power = -80
+ 
+ ai_chance = { factor = 10 }
+}
+
+
+option = { ###do nothing
+name = france.28.b
+add_stability = 0.04
+ai_chance = { factor = 100 }
+}
+
+}
+
+country_event = { ###germany invades Poland
+id = france.30
+title = france.30.t
+desc = france.30.d
+fire_only_once = yes
+
+trigger = {
+ OR = {
+ tag = FRS
+ tag = FRA
+ tag = FRR
+ tag = FRL
+ }
+ has_war = no
+ GER = { has_war_with = POL }
+}
+
+mean_time_to_happen = { days = 1 }
+
+option = { ###Fight Germany
+name = france.28.a
+ROOT = {
+ declare_war_on = { type = annex_everything target = GER }
+ }
+ add_stability =-0.1
+ add_war_support =-0.1
+ add_political_power = -50
+ 
+ ai_chance = { factor = 100 }
+}
+
+
+option = { ###do nothing
+name = france.28.b
+add_stability = 0.01
+ai_chance = { factor = 100 }
+}
+
+}
+
+
+country_event = { ###germany invades Prussia
+id = france.32
+title = france.32.t
+desc = france.32.d
+fire_only_once = yes
+
+trigger = {
+ OR = {
+ tag = FRS
+ tag = FRA
+ tag = FRR
+ tag = FRL
+ }
+ has_war = no
+ GER = { has_war_with = PRS }
+}
+
+mean_time_to_happen = { days = 1 }
+
+option = { ###Fight Germany
+name = france.28.a
+ROOT = {
+ declare_war_on = { type = annex_everything target = GER }
+ }
+ add_stability =-0.05
+ add_war_support =-0.05
+ add_political_power = -25
+ 
+ ai_chance = { factor = 450 }
+}
+
+
+option = { ###do nothing
+name = france.28.b
+add_stability = 0.01
+ai_chance = { factor = 50 }
+}
+
+}
+
+country_event = { ###germany invades Benelux
+id = france.33
+title = france.33.t
+desc = france.33.d
+fire_only_once = yes
+is_triggered_only = yes
+
+option = { ###Fight Germany
+name = france.28.a
+ROOT = {
+ declare_war_on = { type = annex_everything target = GER }
+ }
+ add_stability =0.1
+ add_war_support =0.1
+ add_political_power = 50
+ 
+ ai_chance = { factor = 10000000 }
+}
+
+
+option = { ###do nothing
+name = france.28.b
+add_stability = 0.01
+ai_chance = { factor = 1 }
+add_stability =-0.5
+}
+
+}
+
+

@@ -30,7 +30,7 @@ ideas = {
 	  modifier = {
 				consumer_goods_factor = 0.15
 				political_power_gain = -0.4
-				industrial_capacity_factory = -0.3
+				industrial_capacity_factory = -0.15
 				production_factory_max_efficiency_factor = 0.05
 				
 			}
@@ -48,8 +48,8 @@ ideas = {
 	 picture = GFX_idea_bourgeoisie_influence_2
 	  modifier = {
 				consumer_goods_factor = 0.15
-				political_power_gain = -0.8
-				industrial_capacity_factory = -0.5
+				political_power_gain = -0.6
+				industrial_capacity_factory = -0.25
 				
 				
 			}
@@ -67,10 +67,10 @@ ideas = {
 	 picture = GFX_idea_southern_defeat
 	 
 	 modifier = {
-     army_org_factor = -0.2
-	 offence = -0.3
+     army_org_factor = -0.1
+	 offence = -0.15
 	 enemy_partisan_effect = 0.5
-	 army_morale_factor = -0.1
+	 army_morale_factor = -0.05
 	 defence = 0.2
     }
    }
@@ -106,7 +106,7 @@ ideas = {
    
    modifier = {
    stability_factor = -0.25
-   political_power_gain	= -1
+   political_power_gain	= -0.7
   
     }
    }
@@ -122,8 +122,8 @@ ideas = {
 	 picture = GFX_idea_bolshevik_strike
    
    modifier = {
-   production_factory_max_efficiency_factor = -0.4
-   industrial_capacity_factory = -0.5
+   production_factory_max_efficiency_factor = -0.35
+   industrial_capacity_factory = -0.35
   
     }
    }

@@ -669,7 +669,6 @@ name = spartakus_germany.30.a
 add_war_support = 0.15
 set_country_flag = GER_BDB_rebbelion
 hidden_effect = { 
-#BDB = { load_oob = BDB_1934 }
 BDB = {
 remove_ideas = {
 Economic_transition 
@@ -716,6 +715,9 @@ add_core_of = BDB
 1214 = {
 add_core_of = BDB
 }
+1213 = {
+add_core_of = BDB
+}
 63 = {
 add_core_of = BDB
 }
@@ -735,12 +737,17 @@ BDB = { transfer_state = 58 }
 BDB = { transfer_state = 61 }
 BDB = { transfer_state = 62 }
 BDB = { transfer_state = 1214 }
+BDB = { transfer_state = 1213 }
 BDB = { transfer_state = 63 } 
 BDB = { transfer_state = 1095 } 
 BDB = { transfer_state = 797 }
 BDB = { transfer_state = 68 }
 BDB = { transfer_state = 1093 }
-GER = { country_event = { id = spartakus_germany.17 days = 2 } }
+declare_war_on = { 
+type = annex_everything 
+target = BDB 
+}
+BDB = { load_oob = BDB_1934 }
 }
 }
 }
@@ -752,14 +759,6 @@ desc = spartakus_germany.17.d
 fire_only_once = yes
 hidden = yes
 is_triggered_only = yes
-immediate = {
-GER = {
-declare_war_on = { 
-type = annex_everything 
-target = BDB 
-}
-}
-}
 
 option = {
 name = "swwet cabbage soup"
@@ -1304,13 +1303,23 @@ country_event = { ###Tale of Two Brothers
  title = spartakus_germany.37.t
  desc = spartakus_germany.37.d
  fire_only_once = yes
- is_triggered_only = yes
  picture = GFX_picture_russian_partisans
+ 
+ trigger = {
+  any_state = { 
+   AND = {
+    is_core_of = PRS
+    is_controlled_by = GER 
+   }
+  }
+ }
+ 
+ mean_time_to_happen = { days = 2 }
 
  option = {
   name = spartakus_germany.37.a
-  add_political_power = 10
-}
+  add_war_support =-0.01
+ }
 }
 
 country_event = { ###former reactionary turning socialist
@@ -1338,19 +1347,19 @@ country_event = { ###former reactionary turning socialist
 }
 }
 
-country_event = { ###Red Pheonix
+country_event = { ###Red Phoenix
  id = spartakus_germany.39
  title = spartakus_germany.39.t
  desc = spartakus_germany.39.d
  fire_only_once = yes
- picture = GFX_picture_russian_partisans
+ picture = GFX_report_event_british_artillery
  
  trigger = {
   tag = GER
   has_war = yes
  }
  
- mean_time_to_happen = { days = 20 }
+ mean_time_to_happen = { days = 30 }
 
  option = {
   name = spartakus_germany.39.a

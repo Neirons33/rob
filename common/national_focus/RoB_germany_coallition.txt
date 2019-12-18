@@ -203,7 +203,7 @@ focus_tree = {
 		}
 		completion_reward = {
 		 custom_effect_tooltip = GER_tt_1
-		 set_country_flag = GER_expansion
+		 set_country_flag = GER_expansion_LUX_DS
 		 add_war_support = 0.1
 		}
 	}
