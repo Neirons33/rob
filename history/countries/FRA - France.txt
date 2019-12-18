@@ -266,7 +266,7 @@ create_country_leader = {
 	desc = "POLITICS_MAURICE_THOREZ_DESC"
 	picture = "GFX_portrait_fra_maurice_thorez"
 	expire = "1965.1.1"
-	ideology = 	socialist_subtype
+	ideology = socialist_subtype
 	traits = {
 		
 	}
@@ -275,9 +275,31 @@ create_country_leader = {
 create_country_leader = {
 	name = "Philippe Pétain"
 	desc = "POLITICS_PHILIPPE_PÉTAIN_DESC"
-	picture = "Portrait_France_Philippe_Petain.dds"
+	picture = "Portrait_FRA_philippe_petain_politician.tga"
 	expire = "1965.1.1"
 	ideology = military_junta
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Charles de Gaulle"
+	desc = "POLITICS_PHILIPPE_PÉTAIN_DESC"
+	picture = "Portrait_France_Charles_De_Gaulle.dds"
+	expire = "1965.1.1"
+	ideology = authoritharian_subtype
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Charles Maurras"
+	desc = "POLITICS_PHILIPPE_PÉTAIN_DESC"
+	picture = "Portrait_FRA_charles_maurras.tga"
+	expire = "1965.1.1"
+	ideology = christian_pelekism
 	traits = {
 		
 	}

@@ -43,7 +43,7 @@ start_equipment_factor = 0.6
 
 division = {
 name = "IIIrd Czech Volunteers"
-location = 1294
+location = 1775
 division_template = "Czech Volunteers"
 start_experience_factor = 0.2
 start_equipment_factor = 0.6

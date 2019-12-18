@@ -29,16 +29,17 @@ GER_german_partisans = {
     type = infantry_equipment
     amount = -3000
     producer = GER
-}
- add_manpower =-30000
+    }
+    add_manpower =-30000
+	hidden_effect = { country_event = { id = spartakus_germany.41 days = 20 } }
 	}
 	timeout_effect = {
 	add_to_variable = { var = northern_partisan_strenght value = 35 } 
 	set_country_flag = north_falls
 	
 	}
-		ai_will_do = {
-			base = 150
+	ai_will_do = {
+			base = 2000
 		}
 	
 	}
@@ -69,19 +70,20 @@ GER_german_partisans = {
 	add_to_variable = { var = southern_partisan_strenght value =-25 }
 	set_country_flag = south_holds
 	set_country_flag = GER_south_secured
-add_equipment_to_stockpile = {
-    type = infantry_equipment
-    amount = -4000
-    producer = GER
-}
- add_manpower =-40000
+    add_equipment_to_stockpile = {
+     type = infantry_equipment
+     amount = -4000
+     producer = GER
+     }
+    add_manpower =-40000
+	hidden_effect = { country_event = { id = spartakus_germany.40 days = 20 } }
 	}
 	timeout_effect = {
 	add_to_variable = { var = southern_partisan_strenght value = 35 } 
 	set_country_flag = south_falls
 	}
 		ai_will_do = {
-			base = 150
+			base = 2000
 		}
 	
 	}
@@ -97,12 +99,9 @@ add_equipment_to_stockpile = {
 	   }
 	 }
 	 }
-	 allowed = {
-	 has_country_flag = north_german_partisans
-	 }
 	 icon = GFX_decision_infiltrate_state
-	 	ai_will_do = {
-			base = 150
+		ai_will_do = {
+			base = 2000
 		}
 	available = {
 	 has_country_flag = north_german_partisans
@@ -123,7 +122,7 @@ add_equipment_to_stockpile = {
 }
 	 GER_destroy_partisans_in_hannover = {
 	 	ai_will_do = {
-			base = 150
+			base = 2000
 		}
 		 visible = {
 	  NOT = {
@@ -134,9 +133,6 @@ add_equipment_to_stockpile = {
 	 }
 	 }
 	 icon = GFX_decision_infiltrate_state
- allowed = {
-	 has_country_flag = north_german_partisans
-	 }	
 	available = {
 	 has_country_flag = north_german_partisans
 	 }
@@ -158,77 +154,7 @@ add_equipment_to_stockpile = {
 	 }
 	 GER_destroy_partisans_in_mecklenburg = {
 	 	ai_will_do = {
-			base = 0
-		}
-		 visible = {
-	  NOT = {
-	   OR = {
-	   has_country_flag = north_falls
-	   has_country_flag = north_holds
-	   }
-	 }
-	 }
-	  icon = GFX_decision_infiltrate_state
-	  allowed = {
-	 has_country_flag = north_german_partisans
-	 }
-	 available = {
-	 has_country_flag = north_german_partisans
-
-	 }
-	 fire_only_once = yes
-	 	 remove_effect = {
-     add_to_variable = { var = northern_partisan_strenght value =-4 }
-	 set_country_flag = partisans_hannover_destroyed
-	 	add_equipment_to_stockpile = {
-    type = infantry_equipment
-    amount = -650
-    producer = GER
-}
- add_manpower =-6500
-}
-	 cost = 40
-	 days_remove = 30
-	 
-	 }
-	  GER_destroy_partisans_in_hinterpommern = {
-	  	ai_will_do = {
-			base = 0
-		}
-		 visible = {
-	  NOT = {
-	   OR = {
-	   has_country_flag = north_falls
-	   has_country_flag = north_holds
-	   }
-	 }
-	 }
-icon = GFX_decision_infiltrate_state	 
-	 allowed = {
-	 has_country_flag = north_german_partisans
-	 }
-	 available = {
-	 has_country_flag = north_german_partisans
-	 }
-	 cost = 40
-	 days_remove = 30
-	 fire_only_once = yes
-	  	 remove_effect = {
-     add_to_variable = { var = northern_partisan_strenght value =-4 }
-	 set_country_flag = partisans_hannover_destroyed
-	 	add_equipment_to_stockpile = {
-    type = infantry_equipment
-    amount = -160
-    producer = GER
-}
- add_manpower =-1600
-}
-	 
-	 }
-	  
-	 GER_destroy_partisans_in_thuringen = {
-	 	ai_will_do = {
-			base = 150
+			base = 2000
 		}
 		 visible = {
 	  NOT = {
@@ -239,9 +165,70 @@ icon = GFX_decision_infiltrate_state
 	 }
 	 }
 	 icon = GFX_decision_infiltrate_state
-	 allowed = {
+	 available = {
+	 has_country_flag = north_german_partisans
+
+	 }
+	 fire_only_once = yes
+	 remove_effect = {
+     add_to_variable = { var = northern_partisan_strenght value =-4 }
+	 set_country_flag = partisans_hannover_destroyed
+	 add_equipment_to_stockpile = {
+     type = infantry_equipment
+     amount = -650
+     producer = GER
+}
+ add_manpower =-6500
+}
+	 cost = 40
+	 days_remove = 30
+	 
+	 }
+	  GER_destroy_partisans_in_hinterpommern = {
+	  	ai_will_do = {
+			base = 2000
+		}
+		 visible = {
+	  NOT = {
+	   OR = {
+	   has_country_flag = north_falls
+	   has_country_flag = north_holds
+	   }
+	 }
+	 }
+     icon = GFX_decision_infiltrate_state	 
+	 available = {
 	 has_country_flag = north_german_partisans
 	 }
+	 cost = 40
+	 days_remove = 30
+	 fire_only_once = yes
+	 remove_effect = {
+     add_to_variable = { var = northern_partisan_strenght value =-4 }
+	 set_country_flag = partisans_hannover_destroyed
+	 add_equipment_to_stockpile = {
+      type = infantry_equipment
+      amount = -160
+      producer = GER
+         }
+     add_manpower =-1600
+}
+	 
+	 }
+	  
+	 GER_destroy_partisans_in_thuringen = {
+	 	ai_will_do = {
+			base = 2000
+		}
+		 visible = {
+	  NOT = {
+	   OR = {
+	   has_country_flag = north_falls
+	   has_country_flag = north_holds
+	   }
+	 }
+	 }
+	 icon = GFX_decision_infiltrate_state
 	 available = {
 	 has_country_flag = north_german_partisans
 	 }
@@ -262,7 +249,7 @@ icon = GFX_decision_infiltrate_state
 	 }
 	  GER_destroy_partisans_in_hessen = {
 	  	ai_will_do = {
-			base = 150
+			base = 2000
 		}
 		 visible = {
 	  NOT = {
@@ -273,9 +260,6 @@ icon = GFX_decision_infiltrate_state
 	 }
 	 }
 	  icon = GFX_decision_infiltrate_state
-	 allowed = {
-	 has_country_flag = north_german_partisans
-	 }
 	 available = {
 	 has_country_flag = north_german_partisans
 	 }
@@ -291,11 +275,9 @@ icon = GFX_decision_infiltrate_state
  add_manpower =-4500
 	}
 	}
-	
-
 	  GER_destroy_partisans_in_niederbayern = {
 	  	ai_will_do = {
-			base = 150
+			base = 2000
 		}
 		 visible = {
 	  NOT = {
@@ -306,9 +288,6 @@ icon = GFX_decision_infiltrate_state
 	 }
 	 }
 	  icon = GFX_decision_infiltrate_state
-	 allowed = {
-	 has_country_flag = south_german_partisans
-	 }
 	 available = {
 	 has_country_flag = south_german_partisans
 	 }
@@ -327,7 +306,7 @@ icon = GFX_decision_infiltrate_state
 	 }
 	 GER_destroy_partisans_in_franken = {
 	 	ai_will_do = {
-			base = 150
+			base = 2000
 		}
 				 visible = {
 	  NOT = {
@@ -360,7 +339,7 @@ icon = GFX_decision_infiltrate_state
 	 }
 	 	  GER_destroy_partisans_in_wurttemberg = {
 		  	ai_will_do = {
-			base = 150
+			base = 2000
 		}
 				 visible = {
 	  NOT = {
@@ -371,9 +350,6 @@ icon = GFX_decision_infiltrate_state
 	 }
 	 }
 		  icon = GFX_decision_infiltrate_state
-	 allowed = {
-	 has_country_flag = south_german_partisans
-	 }
 	 	 available = {
       has_country_flag = south_german_partisans
 	 }
@@ -392,7 +368,7 @@ icon = GFX_decision_infiltrate_state
 	 }
 	 	  GER_destroy_partisans_in_baden = {
 		  	ai_will_do = {
-			base = 150
+			base = 2000
 		}
 				 visible = {
 	  NOT = {
@@ -403,9 +379,7 @@ icon = GFX_decision_infiltrate_state
 	 }
 	 }
 		  icon = GFX_decision_infiltrate_state
-	 allowed = {
-	 has_country_flag = south_german_partisans
-	 }
+
 	 	 available = {
 		 has_country_flag = south_german_partisans
 	 }
@@ -424,7 +398,7 @@ icon = GFX_decision_infiltrate_state
 	 }
 	 	  GER_destroy_partisans_in_oberbayern = {
 		  	ai_will_do = {
-			base = 150
+			base = 2000
 		}
 				 visible = {
 	  NOT = {
@@ -435,9 +409,7 @@ icon = GFX_decision_infiltrate_state
 	 }
 	 }
 		  icon = GFX_decision_infiltrate_state
-	 allowed = {
-	 has_country_flag = south_german_partisans
-	 }
+
 	 	 available = {
 		 has_country_flag = south_german_partisans
 	 }

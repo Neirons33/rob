@@ -24,6 +24,10 @@ RHN = {
 	color = rgb { 43 91 51 }
 	color_ui = rgb { 43 91 51 }
 }
+THR = {
+	color = rgb { 94 182 228 }
+	color_ui = rgb { 94 182 228 }
+}
 BSQ = {
 	color = rgb { 168 77 35 }
 	color_ui = rgb { 168 77 35 }
@@ -39,6 +43,10 @@ HBO = {
 MJE = {
 	color = rgb { 105 51 9 }
 	color_ui = rgb { 105 51 9 }
+}
+BDB = {
+	color = rgb { 194 95 8 }
+	color_ui = rgb { 194 95 8 }
 }
 FRA = {
 	color = rgb { 36 114 146 }
@@ -793,6 +801,10 @@ BBY = {
 CIR = {
     color = rgb { 51 63 76 }
 	color_ui = rgb { 51 63 76 }
+}
+PNJ = {
+    color = rgb { 68 63 33 }
+	color_ui = rgb { 33 48 39 }
 }
 HYD = {
     color = rgb { 52 41 8 }

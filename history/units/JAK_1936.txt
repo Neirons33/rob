@@ -46,7 +46,7 @@ units = {
 	}
 	division = {
 		name = "Ladakh Militia"
-		location = 7136
+		location = 7316
 		division_template = "Militia"
 		start_experience_factor = 0.3
 	}

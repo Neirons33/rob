@@ -11,13 +11,12 @@ state={
 			industrial_complex = 1
 		}
 		add_core_of = GER
-		add_core_of = PRS
-		add_core_of = HAN
 	}
 
 	provinces={
 		3355 6377 11493 
 	}
-	manpower=0
+	manpower=367834
+	state_category=rural
 	buildings_max_level_factor=1.000
 }

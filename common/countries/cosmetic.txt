@@ -237,6 +237,11 @@ color = rgb { 48 48 47 }
 color_ui = rgb { 48 48 47 }
 }
 
+BDB_ludendorff = {
+color = rgb { 194 95 8 }
+color_ui = rgb { 194 95 8 }
+}
+
 ENG_navy = {
 color = rgb { 143 130 191 }
 color_ui = rgb { 143 130 191 }

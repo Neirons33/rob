@@ -1,7 +1,5 @@
 division_template = {
 	name = "Belya Gvardiya"			# Rifle Division
-	division_names_group = SOV_INF_01
-
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -52,7 +50,7 @@ start_equipment_factor = 0.7
 division = {
 name = "2.Strelkovaya Diviziya"
 location = 3529
-division_template = "Bosnian Partisans"
+division_template = "Strelkovaya Diviziya"
 start_experience_factor = 0.3
 start_equipment_factor = 0.6
 
@@ -60,6 +58,38 @@ start_equipment_factor = 0.6
 division = {
 name = "3.Strelkovaya Diviziya"
 location = 11476
+division_template = "Strelkovaya Diviziya"
+start_experience_factor = 0.3
+start_equipment_factor = 0.6
+
+}
+division = {
+name = "4.Strelkovaya Diviziya"
+location = 9594
+division_template = "Strelkovaya Diviziya"
+start_experience_factor = 0.3
+start_equipment_factor = 0.6
+
+}
+division = {
+name = "5.Strelkovaya Diviziya"
+location = 11690
+division_template = "Strelkovaya Diviziya"
+start_experience_factor = 0.3
+start_equipment_factor = 0.6
+
+}
+division = {
+name = "6.Strelkovaya Diviziya"
+location = 6527
+division_template = "Strelkovaya Diviziya"
+start_experience_factor = 0.3
+start_equipment_factor = 0.6
+
+}
+division = {
+name = "7.Strelkovaya Diviziya"
+location = 3529
 division_template = "Strelkovaya Diviziya"
 start_experience_factor = 0.3
 start_equipment_factor = 0.6
@@ -92,6 +122,14 @@ start_equipment_factor = 0.4
 division = {
 name = "Belya Gvardiya"
 location = 11696
+division_template = "Belya Gvardiya"
+start_experience_factor = 0.8
+start_equipment_factor = 0.8
+
+}
+division = {
+name = "Belya Gvardiya"
+location = 3720
 division_template = "Belya Gvardiya"
 start_experience_factor = 0.8
 start_equipment_factor = 0.8

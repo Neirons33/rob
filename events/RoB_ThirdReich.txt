@@ -60,7 +60,6 @@ country_event = {
  				} 
 			}
 		}
-		mean_time_to_happen = { days = 1}
 		option = {
 		name = third_reich.13.a
 		ai_chance = { factor = 1}
@@ -81,7 +80,6 @@ country_event = {
     THR = {
     has_war_with = AUS
     }
-    mean_time_to_happen = { days = 3}
     }
     option = {
     name = third_reich.16.a
@@ -113,81 +111,7 @@ country_event = {
     ai_chance = { factor = 6}
     }
  }
-###Do we give up?
-country_event = {
- id = third_reich.14
- title = third_reich.14.t
- desc = third_reich.14.d
- picture = GFX_report_event_generic_read_write
- fire_only_once = yes
-	trigger = {
-	THR = {
-	controls_state = 1017
-	num_of_controlled_states = 1
-	}
-}
-mean_time_to_happen = { days = 1}
 
-###We wont give in
-option = {
-		name = third_reich.14.a
-		ai_chance = { factor = 1}
-		hidden_effect = {
-		add_ideas{
-		 festung_bregenz 
-		}
-	 }
- }
- ###Further conflict is futile
-option = {
-		name = third_reich.14.b
-		hidden_effect = {
-
-	if = {
-    	limit = {ACM = {controls_state = 153}}
-    	ACM = {
-    	annex_country = {
-    target = THR
-    transfer_troops = no
-    				}
-	}
-}
-    if = {
-    	limit = {AUS = {controls_state = 153}}
-    	AUS = {
-    	annex_country = {
-    target = THR
-    transfer_troops = no
-   						 }
-			}
-    	}
-	}
-}
-}	
-
-
-###We have survived
-country_event = {
- id = third_reich.15
- title = third_reich.15.t
- desc = third_reich.15.d
- picture = GFX_report_event_generic_read_write
- fire_only_once = yes
-	trigger = {
-	THR = {
-	has_idea = festung_bregenz
-	num_of_controlled_states = 3
-	}
-}
-mean_time_to_happen = { days = 1}
-	option = {
-			name = third_reich.15.a
-			ai_chance = { factor = 1}
-			hidden_effect = {
-			remove_ideas{
-		 	festung_bregenz }}
-		 	}
-}	
 
 
 ###Civil War Ends
@@ -349,6 +273,85 @@ country_event = {
 		add_political_power = -50 
 	}			
 }
+
+
+
+
+}#end
+###Do we give up?
+country_event = {
+ id = third_reich.14
+ title = third_reich.14.t
+ desc = third_reich.14.d
+ picture = GFX_report_event_generic_read_write
+ fire_only_once = yes
+	trigger = {
+	THR = {
+	controls_state = 1017
+	num_of_controlled_states = 1
+	}
+}
+
+###We wont give in
+option = {
+		name = third_reich.14.a
+		ai_chance = { factor = 1}
+		hidden_effect = {
+		add_ideas{
+		 festung_bregenz 
+		}
+	 }
+ }
+ ###Further conflict is futile
+option = {
+		name = third_reich.14.b
+		hidden_effect = {
+
+	if = {
+    	limit = {ACM = {controls_state = 153}}
+    	ACM = {
+    	annex_country = {
+    target = THR
+    transfer_troops = no
+    				}
+	}
+}
+    if = {
+    	limit = {AUS = {controls_state = 153}}
+    	AUS = {
+    	annex_country = {
+    target = THR
+    transfer_troops = no
+   						 }
+			}
+    	}
+	}
+}
+}	
+
+
+###We have survived
+country_event = {
+ id = third_reich.15
+ title = third_reich.15.t
+ desc = third_reich.15.d
+ picture = GFX_report_event_generic_read_write
+ fire_only_once = yes
+	trigger = {
+	THR = {
+	has_idea = festung_bregenz
+	num_of_controlled_states = 3
+	}
+}
+	option = {
+			name = third_reich.15.a
+			ai_chance = { factor = 1}
+			hidden_effect = {
+			remove_ideas{
+		 	festung_bregenz }}
+		 	}
+}	
+
 ###etler not going to die, choose herman or strasser as econ advisor
 country_event = {
 	 id = third_reich.5

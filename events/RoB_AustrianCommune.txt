@@ -59,8 +59,6 @@ country_event = {
  				} 
 			}
 		}
-
-mean_time_to_happen = { days = 1}
 		option = {
 		name = rob_austrian_commune.2.a
 		ai_chance = { factor = 1}
@@ -81,7 +79,6 @@ country_event = {
     ACM = {
     has_war_with = AUS
     }
-    mean_time_to_happen = { days = 3}
     }
     option = {
     name = rob_austrian_commune.3a

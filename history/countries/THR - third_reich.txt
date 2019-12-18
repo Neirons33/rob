@@ -1,5 +1,5 @@
 ﻿capital = 1018
-oob = ""
+
 
 set_research_slots = 3
 set_politics = {
@@ -39,7 +39,7 @@ set_stability = 0.80
 
 create_country_leader = {
 	name = "Adolf Hitler"
-	desc = "POLITICS_Engelbert_Dollfuss_DESC"
+	desc = ""
 	picture = "gfx//leaders//AUS//Adolf_Hitler.dds"
 	expire = "1965.1.1"
 	ideology = pagan_pelekism 

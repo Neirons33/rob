@@ -313,6 +313,36 @@ ideas = {
 	  }
 	  }
 	  
+	    }
+  paramilitarism = {
+  allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 picture = GFX_idea_famine_of_1933
+	 modifier = {
+      army_morale_factor = 0.10
+	  }
+	  }
+	  
+	    militarism = {
+  allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 picture = GFX_idea_famine_of_1933
+	 modifier = {
+      army_morale_factor = 0.10
+	  war_support_factor = 0.10
+	  }
+	  }
+	  
 	    aircraft_deals = {
   allowed = {
        always = no
@@ -380,7 +410,7 @@ ideas = {
      removal_cost = -1
 	 picture = GFX_idea_famine_of_1933
 	 modifier = {
-     civilian_factory_use = 3
+     civilian_factory_use = -3
 	 industrial_capacity_factor = 0.01
 	 }
 	 }
@@ -395,7 +425,7 @@ ideas = {
      removal_cost = -1
 	 picture = GFX_idea_famine_of_1933
 	 modifier = {
-     civilian_factory_use = 3
+     civilian_factory_use = -3
 	 political_power_gain = 0.5
 	 army_attack_factor = 0.1
 	 }
@@ -411,7 +441,7 @@ ideas = {
      removal_cost = -1
 	 picture = GFX_idea_famine_of_1933
 	 modifier = {
-     civilian_factory_use = 3
+     civilian_factory_use = -3
 	 industrial_capacity_factor = 0.01
 	 }
 	 }
@@ -442,7 +472,7 @@ ideas = {
      removal_cost = -1
 	 picture = GFX_idea_famine_of_1933
 	 modifier = {
-     civilian_factory_use = 4
+     civilian_factory_use = -4
 	 }
 	 }
 	 
@@ -456,7 +486,7 @@ ideas = {
      removal_cost = -1
 	 picture = GFX_idea_famine_of_1933
 	 modifier = {
-     civilian_factory_use = 2
+     civilian_factory_use = -2
 	 production_speed_industrial_complex_factor = 0.1
 	 }
 	 }
@@ -471,7 +501,7 @@ ideas = {
      removal_cost = -1
 	 picture = GFX_idea_famine_of_1933
 	 modifier = {
-     civilian_factory_use = 3
+     civilian_factory_use = -3
 	 }
 	 }
 	 
@@ -485,7 +515,7 @@ ideas = {
      removal_cost = -1
 	 picture = GFX_idea_famine_of_1933
 	 modifier = {
-     civilian_factory_use = 3
+     civilian_factory_use = -3
 	 political_power_gain = 0.5
 	 }
 	 }
@@ -516,7 +546,7 @@ ideas = {
      removal_cost = -1
 	 picture = GFX_idea_famine_of_1933
 	 modifier = {
-     civilian_factory_use = 4
+     civilian_factory_use = -4
 	 }
 	 }
 	 
@@ -545,12 +575,12 @@ ideas = {
      removal_cost = -1
 	 picture = GFX_idea_famine_of_1933
 	 modifier = {
-     civilian_factory_use = 3
+     civilian_factory_use = -3
 	 industrial_capacity_factor = 0.01
 	 }
 	 }
 	 
-	 	 no_welfare = {
+	 no_welfare = {
   allowed = {
        always = no
      }
@@ -560,7 +590,7 @@ ideas = {
      removal_cost = -1
 	 picture = GFX_idea_famine_of_1933
 	 modifier = {
-     civilian_factory_use = 3
+     civilian_factory_use = -3
 	 }
 	 }
 	 
@@ -666,7 +696,7 @@ ideas = {
      removal_cost = -1
 	 picture = GFX_idea_famine_of_1933
 	 modifier = {
-     civilian_factory_use = 4
+     civilian_factory_use = -4
 	 MONTHLY_POPULATION = 0.5 
 	 }
 	 }
@@ -681,7 +711,7 @@ ideas = {
      removal_cost = -1
 	 picture = GFX_idea_famine_of_1933
 	 modifier = {
-     civilian_factory_use = 2
+     civilian_factory_use = -2
 	 MONTHLY_POPULATION = 1
 	 }
 	 }
@@ -725,7 +755,7 @@ ideas = {
 	 picture = GFX_idea_famine_of_1933
 	 modifier = {
      local_resources_factor = 0.10
-	 civilian_factory_use = 4
+	 civilian_factory_use = -4
 	 }
 	 }
 	 	 
@@ -739,7 +769,7 @@ ideas = {
      removal_cost = -1
 	 picture = GFX_idea_famine_of_1933
 	 modifier = {
-	 civilian_factory_use = 4
+	 civilian_factory_use = -4
 	 }
 	 }
 	 
@@ -753,7 +783,7 @@ ideas = {
      removal_cost = -1
 	 picture = GFX_idea_famine_of_1933
 	 modifier = {
-	 civilian_factory_use = 4
+	 civilian_factory_use = -4
 	 }
 	 }
 	 
@@ -767,7 +797,7 @@ ideas = {
      removal_cost = -1
 	 picture = GFX_idea_famine_of_1933
 	 modifier = {
-     civilian_factory_use = 3
+     civilian_factory_use = -3
 	 political_power_gain = 0.5
 	 }
 	 }
@@ -782,7 +812,7 @@ ideas = {
      removal_cost = -1
 	 picture = GFX_idea_famine_of_1933
 	 modifier = {
-     civilian_factory_use = 3
+     civilian_factory_use = -3
 	 political_power_gain = 0.5
 	 }
 	 }
@@ -797,7 +827,7 @@ ideas = {
      removal_cost = -1
 	 picture = GFX_idea_famine_of_1933
 	 modifier = {
-     civilian_factory_use = 3
+     civilian_factory_use = -3
 	 production_factory_efficiency_gain_factor = 0.05 
 	 }
 	 }
@@ -811,7 +841,7 @@ ideas = {
      removal_cost = -1
 	 picture = GFX_idea_famine_of_1933
 	 modifier = {
-     civilian_factory_use = 3
+     civilian_factory_use = -3
 	 political_power_gain = 0.5
 	 production_factory_efficiency_gain_factor = 0.05 
 	 }
@@ -826,7 +856,7 @@ ideas = {
      removal_cost = -1
 	 picture = GFX_idea_famine_of_1933
 	 modifier = {
-     civilian_factory_use = 3
+     civilian_factory_use = -3
 	 industrial_capacity_factor = 0.01
 	 }
 	 }

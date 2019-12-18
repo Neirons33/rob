@@ -5,17 +5,19 @@ state={
 		owner = GER
 		buildings = {
 			infrastructure = 6
+       			241 = {
+				naval_base = 8
 
+			}
 		}
 		add_core_of = GER
-		add_core_of = PRS
-		add_core_of = OLD
 
 	}
 
 	provinces={
 		241 
 	}
-	manpower=0
+	manpower=45774
 	buildings_max_level_factor=1.000
+	state_category=rural
 }

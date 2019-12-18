@@ -52,7 +52,7 @@ start_equipment_factor = 0.7
 division = {
 name = "2.Strelkovaya Diviziya"
 location = 3722
-division_template = "Bosnian Partisans"
+division_template = "Strelkovaya Diviziya"
 start_experience_factor = 0.3
 start_equipment_factor = 0.6
 
@@ -74,8 +74,16 @@ start_equipment_factor = 0.6
 
 }
 division = {
+name = "5.Strelkovaya Diviziya"
+location = 3765
+division_template = "Strelkovaya Diviziya"
+start_experience_factor = 0.3
+start_equipment_factor = 0.6
+
+}
+division = {
 name = "Belya Gvardiya"
-location = 9417
+location = 585
 division_template = "Belya Gvardiya"
 start_experience_factor = 0.2
 start_equipment_factor = 0.6

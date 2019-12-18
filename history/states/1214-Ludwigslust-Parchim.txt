@@ -8,7 +8,6 @@ state={
 			infrastructure = 6
 		}
 		add_core_of = GER
-		add_core_of = MSZ
 
 	}
 
@@ -16,6 +15,7 @@ state={
 	provinces={
 		9294 11219 11276 
 	}
-	manpower=0
+	manpower=221356
 	buildings_max_level_factor=1.000
+	state_category=rural
 }

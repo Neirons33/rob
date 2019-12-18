@@ -3,12 +3,9 @@ state={
 	name="STATE_1005"
 	history={
 		owner = BUL
-		victory_points = {
-			6923 5 
-		}
+
 		buildings = {
 			infrastructure = 4
-			arms_factory = 2
 			industrial_complex = 1
 			air_base = 2
 
@@ -18,7 +15,7 @@ state={
 	}
 
 	provinces={
-		878 893 6814 6923 6952 9862 
+		878 893 6857 9818 9862 11813
 	}
 	manpower=1176002
 	buildings_max_level_factor=1.000

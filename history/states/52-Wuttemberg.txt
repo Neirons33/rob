@@ -28,9 +28,6 @@ state={
 			buildings = {
 				air_base = 10
 
-			}
-
-		}
 
 	}
 

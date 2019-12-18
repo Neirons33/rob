@@ -16,10 +16,28 @@
  SOV_alksnis_plan:0 "Alksnis's Plan Has Been Put In Motion"
  SOV_reform_red_guard:0 "We've Decided To Reform Red Guard"
  SOV_shaposhnikovs_plan:0 "Plan By Shaposhnikov Has Been Accepted"
- 
- 
- 
+ ###Germany
+ GER_expansion_LUX_DS:0 "We've decided to bring socialist revolution to whole of Europe"
+ GER_expansion:0 "We've taken the path to unite all Germans in Europe"
+ south_falls:0 "South has fallen to anti-revolutionary partisans!"
+ north_falls:0 "North has fallen to anti-revolutionary partisans!"
+ north_holds:0 "Control over North has been secured!"
+ south_holds:0 "Control over South has been secured!"
+ GER_lux_ds_victory:0 "Luxembourgist-Democratic Socialist Coalliton is Achieved"
+ GER_dem_victory:0 "Democratic Socialists have prevailed in Second All-German Congress"
+ GER_lux_victory:0 "Luxembourgists have prevailed in Second All-German Congress"
+ GER_lux_nb_victory:0 "Luxembourgist-National Bolshevik Coalliton is Achieved"
+ GER_nb_vitory:0 "National Bolsheviks have prevailed in Second All-German Congress"
+ GER_ns_economy:0 "Second All-German Congress has decided on National Bolshevik policy"
+ GER_ds_economy:0 "Second All-German Congress has decided on Democratic Socialist policy"
+ GER_lux_economy:0 "Second All-German Congress has decided on Orthodox Marxist policy"
+ GER_diplo_tt_1:0 "§RThis will provoke French response!§!\n"
+ GER_tt_3:0 "The Political Future of Germany Has Been Decided"
  ###Scripted Triggers
  minister_available:0 "Minister Available For This Government Type"
  democratic_aligned_government:0 "Government is Democratic Aligned"
  replace_hog:0 "Can't Replace Head of Government"
+ DEMOCRATIC_ALIGNED_GOVERNMENT:0 "Government is Liberal-Aligned"
+ RADICAL_ALIGNED_GOVERNMENT:0 "Government is Pelekist/Socialist-Aligned"
+ SOCIALIST_ALIGNED_GOVERNMENT:0 "Government is Socialist-Aligned"
+ ANTI_LIBERAL_ALIGNED_GOVERNMENT:0 "Government is Anti-Liberal-Aligned"

@@ -11,14 +11,13 @@ state={
 		buildings = {
 			infrastructure = 7
 			arms_factory = 1
-			industrial_complex = 4
+			industrial_complex = 2
 
 		}
 		victory_points = {
 			514 5 
 		}
 		add_core_of = GER
-		add_core_of = SAX
 
 	}
 

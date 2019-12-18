@@ -530,7 +530,8 @@ declare_war_on = {
     target = GRE
     type = annex_everything
 }
-add_war_support = 0.1
+add_war_support = 0.25
+add_stability = 0.25
 
 
 }
@@ -604,16 +605,9 @@ option = {
  name = bulgaria.118.a
 ai_chance = { factor = 100}
 
-731 = { create_unit = {
-    division = "name = \"1st Macedonian Volunteers\" division_template = \"Pekhotna Divizija\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
-    owner = BUL
-prioritize_location = 3936
-} }
-731 = { create_unit = {
-    division = "name = \"2nd Macedonian Volunteers\" division_template = \"Pekhotna Divizija\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
-    owner = BUL
-prioritize_location = 3526
-} }
+
+
+load_oob = "BUL_MAK"
 
 add_manpower = 10000
 
@@ -715,17 +709,7 @@ option = {
  name = bulgaria.122.a
 ai_chance = { factor = 100}
 
-184 = { create_unit = {
-    division = "name = \"1st Thracian Volunteers\" division_template = \"Pekhotna Divizija\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
-    owner = BUL
-prioritize_location = 11905
-} }
-184 = { create_unit = {
-    division = "name = \"2nd Thracian Volunteers\" division_template = \"Pekhotna Divizija\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
-    owner = BUL
-prioritize_location = 13305
-} }
-
+load_oob = "BUL_THR"
 add_manpower = 10000
 
 }
@@ -748,17 +732,155 @@ option = {
  name = bulgaria.123.a
 ai_chance = { factor = 100}
 
-44 = { create_unit = {
-    division = "name = \"1st Albanian-Bulgarian Division\" division_template = \"Pekhotna Divizija\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
-    owner = BUL
-} }
-44\ = { create_unit = {
-    division = "name = \"2nd Albanian-Bulgarian Volunteers\" division_template = \"Pekhotna Divizija\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
-    owner = BUL
-} }
 
+
+load_oob = "BUL_ALB"
 add_manpower = -10000
 
 }
 
+}
+
+# Bulgarian Peace Event Victory
+
+country_event = {
+id = bulgaria.124
+title = bulgaria.124.t
+desc = bulgaria.124.d
+fire_only_once = yes
+trigger = {
+tag = BUL
+has_war_with = GRE
+OR = { 
+controls_state = 1012
+ALB = { controls_state = 1012 }
+TUR = { controls_state = 1012 }
+}
+OR = { 
+controls_state = 990
+ALB = { controls_state = 990 }
+TUR = { controls_state = 990 }
+}
+OR = { 
+controls_state = 185
+ALB = { controls_state = 185 }
+TUR = { controls_state = 185 }
+}
+OR = { 
+controls_state = 339
+TUR = { controls_state = 339 }
+ALB = { controls_state = 339 }
+}
+controls_state = 48
+
+}
+picture = GFX_picture_bosnian_revolt
+option = {
+ name = bulgaria.124.a
+ai_chance = { factor = 95}
+
+white_peace = GRE
+TUR = { white_peace = GRE }
+ALB = { white_peace = GRE }
+
+184 = { add_core_of = BUL }
+731 = { add_core_of = BUL }
+BUL = { transfer_state = 184 }
+BUL = { transfer_state = 731 }
+339 = { add_core_of = TUR }
+989 = { add_core_of = TUR }
+990 = { add_core_of = TUR }
+991 = { add_core_of = TUR }
+975 = { add_core_of = TUR }
+TUR = { transfer_state = 975 }
+TUR = { transfer_state = 339 }
+TUR = { transfer_state = 989 }
+TUR = { transfer_state = 990 }
+TUR = { transfer_state = 991 }
+976 = { add_core_of = ALB }
+1013 = { add_core_of = ALB }
+ALB = { transfer_state = 976 }
+ALB = { transfer_state = 1013 }
+
+add_stability = 0.1
+
+}
+
+option = {
+ name = bulgaria.124.b
+ai_chance = { factor = 5}
+
+
+add_political_power = -50
+
+}
+}
+
+# Greek Peace Event Victory
+
+country_event = {
+id = bulgaria.125
+title = bulgaria.125.t
+desc = bulgaria.125.d
+fire_only_once = yes
+trigger = {
+tag = GRE
+has_war_with = BUL
+
+controls_state = 48
+controls_state = 1005
+controls_state = 212
+controls_state = 1135
+controls_state = 341
+controls_state = 339
+controls_state = 47
+
+}
+picture = GFX_picture_bosnian_revolt
+option = {
+ name = bulgaria.125.a
+ai_chance = { factor = 95}
+
+white_peace = BUL
+white_peace = ALB
+white_peace = TUR
+
+
+1131 = { add_core_of = GRE }
+1132 = { add_core_of = GRE }
+1133 = { add_core_of = GRE }
+GRE = { transfer_state = 1133 }
+GRE = { transfer_state = 1131 }
+GRE = { transfer_state = 1132 }
+
+1005 = { add_core_of = GRE }
+GRE = { transfer_state = 1005 }
+
+341 = { add_core_of = GRE }
+993 = { add_core_of = GRE }
+994 = { add_core_of = GRE }
+340 = { add_core_of = GRE }
+950 = { add_core_of = GRE }
+995 = { add_core_of = GRE }
+992 = { add_core_of = GRE }
+GRE = { transfer_state = 992 }
+GRE = { transfer_state = 995 }
+GRE = { transfer_state = 950 }
+GRE = { transfer_state = 340 }
+GRE = { transfer_state = 994 }
+GRE = { transfer_state = 993 }
+GRE = { transfer_state = 341 }
+
+add_stability = 0.1
+
+}
+
+option = {
+ name = bulgaria.125.b
+ai_chance = { factor = 5}
+
+
+add_political_power = -50
+
+}
 }

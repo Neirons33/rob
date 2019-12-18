@@ -7,12 +7,12 @@ state={
 			infrastructure = 7
 		}
 		add_core_of = GER
-		add_core_of = PRS
 	}
 
 	provinces={
 		564 9524 11533 13578 
 	}
-	manpower=0
+	manpower=965541
 	buildings_max_level_factor=1.000
+	state_category=rural
 }

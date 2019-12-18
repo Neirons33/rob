@@ -1,6 +1,5 @@
 division_template = {
 	name = "Strelkovaya Diviziya"			# Rifle Division
-	division_names_group = SOV_INF_01
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -16,8 +15,8 @@ division_template = {
 	}
 	support = {
 		#recon = { x = 0 y = 0 } 		# Recon bn had 16 L tanks, 10 ACs, 1x mot inf co #Eng and recon removed and they seem rather OP. Could revisit if balance changes
-		#engineer = { x = 0 y = 1 } 	# (semi-mot) Engineer bn
-		artillery = { x = 0 y = 0 } 	# Heavy Arty Regiment had 1x 152mm bn + 2x 122mm bn
+		engineer = { x = 0 y = 1 } 	# (semi-mot) Engineer bn
+		#artillery = { x = 0 y = 0 } 	# Heavy Arty Regiment had 1x 152mm bn + 2x 122mm bn
 	}
 }
 
@@ -34,12 +33,44 @@ start_equipment_factor = 1.0
 }
 division = {
 name = "2.Strelkovaya Diviziya"
-location = 3467
+location = 11537
 division_template = "Strelkovaya Diviziya"
 start_experience_factor = 0.3
 start_equipment_factor = 1.0
 
 }
 
+division = {
+name = "3.Strelkovaya Diviziya"
+location = 11429
+division_template = "Strelkovaya Diviziya"
+start_experience_factor = 0.3
+start_equipment_factor = 1.0
 
+}
+
+division = {
+name = "4.Strelkovaya Diviziya"
+location = 3467
+division_template = "Strelkovaya Diviziya"
+start_experience_factor = 0.3
+start_equipment_factor = 1.0
+
+}
+division = {
+name = "5.Strelkovaya Diviziya"
+location = 3406
+division_template = "Strelkovaya Diviziya"
+start_experience_factor = 0.3
+start_equipment_factor = 1.0
+
+}
+division = {
+name = "6.Strelkovaya Diviziya"
+location = 11706
+division_template = "Strelkovaya Diviziya"
+start_experience_factor = 0.3
+start_equipment_factor = 1.0
+
+}
 }
