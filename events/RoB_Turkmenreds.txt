@@ -2650,7 +2650,7 @@ fire_only_once = yes
 picture = GFX_picture_bosnian_revolt
 
 trigger = {
-tag = TMS
+tag = TRS
 date > 1934.1.1
 }
 
@@ -2667,4 +2667,299 @@ add_political_power = 5
 }
 
 
+}
+
+###The Tsar Tank
+
+country_event = {
+id = turkmenreds.175
+title = turkmenreds.175.t
+desc = turkmenreds.175.d
+fire_only_once = yes
+picture = GFX_picture_bosnian_revolt
+
+trigger = {
+tag = TRS
+date > 1934.12.1
+}
+
+
+option = {
+###mine it
+
+name = turkmenreds.175.a
+add_manpower = -500
+add_ideas = TRS_tsar_tank
+set_technology = {
+    gwtank = 1
+}
+
+
+}
+
+option = {
+###don't
+
+name = turkmenreds.175.a
+
+
+
+
+}
+
+
+}
+
+###TMS destroy trs
+
+country_event = {
+id = turkmenreds.176
+title = turkmenreds.176.t
+desc = turkmenreds.176.d
+fire_only_once = yes
+picture = GFX_picture_bosnian_revolt
+
+trigger = {
+tag = TMS
+date > 1938.5.1
+}
+
+mean_time_to_happen = { days = 150 }
+
+option = {
+###KILL THEM
+
+name = turkmenreds.176.a
+
+declare_war_on = {
+    target = TRS
+    type = annex_everything
+}
+
+
+}
+
+
+}
+
+###Rename stalingrad
+
+country_event = {
+id = turkmenreds.177
+title = turkmenreds.177.t
+desc = turkmenreds.177.d
+fire_only_once = yes
+picture = GFX_picture_bosnian_revolt
+
+trigger = {
+tag = TRS
+owns_state = 217
+has_government = national_socialist
+
+}
+
+
+option = {
+###rename it
+
+name = turkmenreds.177.a
+ai_chance = { factor = 90}
+
+set_province_name = {
+    id = 3529
+    name = "Stalingrad"
+}
+
+
+}
+
+option = {
+###Dont
+
+name = turkmenreds.177.a
+ai_chance = { factor = 10}
+
+set_province_name = {
+    id = 3529
+    name = "Volgograd"
+}
+
+
+}
+
+}
+
+###Rename bishkek
+
+country_event = {
+id = turkmenreds.178
+title = turkmenreds.178.t
+desc = turkmenreds.178.d
+fire_only_once = yes
+picture = GFX_picture_bosnian_revolt
+
+trigger = {
+tag = TRS
+owns_state = 732
+has_government = socialist
+
+}
+
+
+option = {
+###rename it
+
+name = turkmenreds.178.a
+ai_chance = { factor = 90}
+
+set_province_name = {
+    id = 12583
+    name = "Frunze"
+}
+
+
+}
+
+option = {
+###Dont
+
+name = turkmenreds.178.a
+ai_chance = { factor = 10}
+
+set_province_name = {
+    id = 12583
+    name = "Bishkek"
+}
+
+
+}
+
+}
+
+###Capture of moscow
+
+country_event = {
+id = turkmenreds.179
+title = turkmenreds.179.t
+desc = turkmenreds.179.d
+fire_only_once = yes
+picture = GFX_picture_bosnian_revolt
+
+trigger = {
+tag = TRS
+controls_state = 219
+
+
+}
+
+
+option = {
+###we did it... we won
+
+name = turkmenreds.179.a
+ai_chance = { factor = 90}
+
+add_war_support = 0.1
+add_stability = 0.1
+
+
+}
+}
+
+###Delhi or Assam 
+
+country_event = {
+id = turkmenreds.180
+title = turkmenreds.180.t
+desc = turkmenreds.180.d
+fire_only_once = yes
+is_triggered_only = yes
+picture = GFX_picture_bosnian_revolt
+
+trigger = {
+tag = TRS
+}
+
+option = {
+###Delhi
+name = turkmenreds.180.a
+DEL = { country_event = { id = turkmenreds.181 } }
+
+
+}
+
+option = {
+###Assam
+
+name = turkmenreds.180.b
+ASM = { country_event = { id = turkmenreds.181 } }
+
+}
+
+}
+
+###TRS invite 
+
+country_event = {
+id = turkmenreds.181
+title = turkmenreds.181.t
+desc = turkmenreds.181.d
+fire_only_once = yes
+is_triggered_only = yes
+picture = GFX_picture_bosnian_revolt
+
+trigger = {
+OR = { 
+tag = ASM
+tag = DEL
+}
+}
+
+option = {
+###YES
+name = turkmenreds.181.a
+ai_chance = { factor = 100}
+TRS = { add_to_faction = ROOT }
+
+
+}
+
+option = {
+###NO (should never happen )
+
+name = turkmenreds.181.b
+ai_chance = { factor = 0}
+
+}
+
+}
+
+###Capture of stalingrad
+
+country_event = {
+id = turkmenreds.182
+title = turkmenreds.182.t
+desc = turkmenreds.182.d
+fire_only_once = yes
+picture = GFX_picture_bosnian_revolt
+
+trigger = {
+tag = TRS
+controls_state = 217
+has_government = national_socialist
+
+}
+
+
+option = {
+###i have finally returned to the site of my greatest failure
+
+name = turkmenreds.182.a
+ai_chance = { factor = 90}
+
+add_war_support = 0.1
+add_stability = 0.1
+
+
+}
 }
