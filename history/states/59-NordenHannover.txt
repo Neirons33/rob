@@ -23,15 +23,10 @@ state={
 
 		}
 		add_core_of = GER
-
-		add_core_of = PRS
-		add_core_of = HAN
-
-
 	}
 
 	provinces={
-		374 3271 3326 6298 6325 6349 9264 13564 
+		374 3271 3326 6298 6325 6349 9264 13564 13567 
 	}
 	manpower=2438286
 	buildings_max_level_factor=1.000

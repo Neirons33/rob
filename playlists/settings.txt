@@ -1,2 +1,0 @@
-enabled={
-	fallout_3_radio	fallout_nv_radio	radio_internationale	entente_radio}
