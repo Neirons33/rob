@@ -24,10 +24,6 @@ RHN = {
 	color = rgb { 43 91 51 }
 	color_ui = rgb { 43 91 51 }
 }
-THR = {
-	color = rgb { 94 182 228 }
-	color_ui = rgb { 94 182 228 }
-}
 BSQ = {
 	color = rgb { 168 77 35 }
 	color_ui = rgb { 168 77 35 }
@@ -43,10 +39,6 @@ HBO = {
 MJE = {
 	color = rgb { 105 51 9 }
 	color_ui = rgb { 105 51 9 }
-}
-BDB = {
-	color = rgb { 194 95 8 }
-	color_ui = rgb { 194 95 8 }
 }
 FRA = {
 	color = rgb { 36 114 146 }
@@ -121,6 +113,18 @@ ITA = {
 ROM = {
 	color = rgb { 215 196 72 }
 	color_ui = rgb { 255 255 120 }
+}
+RMR = {
+	color = rgb { 220 196 123 }
+	color_ui = rgb { 212 219 120 }
+}
+TIG = {
+	color = rgb { 83 127 69 }
+	color_ui = rgb { 92 168 101 }
+}
+SZK = {
+	color = rgb { 255 164 127 }
+	color_ui = rgb { 255 164 127 }
 }
 YUG = {
 	color = rgb { 94 95 164 }
