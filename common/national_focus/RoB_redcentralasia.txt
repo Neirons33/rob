@@ -2675,10 +2675,36 @@ add_popularity = {
 		x = 3
 		y = 13
 		cost = 5
+		available = {
+		OR = {
+is_neighbor_of = RUS
+is_neighbor_of = CAA
+is_neighbor_of = CAU
+is_neighbor_of = CRM
+		}
+		}
 		available_if_capitulated = yes
 		prerequisite = { focus = TRS_sovietdiplomacy }
 		ai_will_do = {
 			factor = 25
+		}
+		completion_reward = {
+create_wargoal = {
+    type = annex_everything
+    target = RUS
+}	
+create_wargoal = {
+    type = annex_everything
+    target = CAA
+}	
+create_wargoal = {
+    type = annex_everything
+    target = CAU
+}	
+create_wargoal = {
+    type = annex_everything
+    target = CRM
+}	
 		}
 	}
 
@@ -2689,11 +2715,49 @@ add_popularity = {
 		x = 1
 		y = 14
 		cost = 5
+		available = {
+		OR = {
+is_neighbor_of = MRP
+is_neighbor_of = CHE
+is_neighbor_of = DAG
+is_neighbor_of = AZR
+is_neighbor_of = GEO
+is_neighbor_of = ARM
+		}
+		}
 		available_if_capitulated = yes
 		prerequisite = { focus = TRS_invadesouthrussia }
 		ai_will_do = {
 			factor = 25
 		}
+		completion_reward = {
+create_wargoal = {
+    type = annex_everything
+    target = MRP
+}	
+create_wargoal = {
+    type = annex_everything
+    target = CHE
+}	
+create_wargoal = {
+    type = annex_everything
+    target = DAG
+}	
+create_wargoal = {
+    type = annex_everything
+    target = AZR
+}
+create_wargoal = {
+    type = annex_everything
+    target = GEO
+}	
+create_wargoal = {
+    type = annex_everything
+    target = ARM
+}			
+			
+		}
+
 	}
 
 	#Focus for Moscow Pact
@@ -2720,10 +2784,23 @@ add_popularity = {
 		x = 1
 		y = 15
 		cost = 5
+		available = {
+controls_state = 229
+controls_state = 230
+controls_state = 1182
+controls_state = 1175
+manpower > 800000
+		}
 		available_if_capitulated = yes
 		prerequisite = { focus = TRS_takethecaucasus }
 		ai_will_do = {
 			factor = 25
+		}
+		completion_reward = {
+		transfer_state = 266
+		transfer_state = 419
+		transfer_state = 420
+		transfer_state = 416
 		}
 	}
 
@@ -3327,12 +3404,69 @@ KOR = { load_oob = "KOR_1936" }
 		y = 16
 		cost = 5
 		available_if_capitulated = yes
+		available = { 
+		OR = { OR = {
+is_neighbor_of = POL
+is_neighbor_of = LIT
+is_neighbor_of = EST
+is_neighbor_of = PRS
+is_neighbor_of = ROM
+is_neighbor_of = RMR
+		}
+OR = {
+is_in_faction_with = DSU
+
+DSU = { is_neighbor_of = POL }
+DSU = { is_neighbor_of = LIT }
+DSU = { is_neighbor_of = EST }
+DSU = { is_neighbor_of = PRS }
+DSU = { is_neighbor_of = ROM }
+DSU = { is_neighbor_of = RMR }
+		}
+OR = {
+is_in_faction_with = CBR
+
+CBR = { is_neighbor_of = POL }
+CBR = { is_neighbor_of = LIT }
+CBR = { is_neighbor_of = EST }
+CBR = { is_neighbor_of = PRS }
+CBR = { is_neighbor_of = ROM }
+CBR = { is_neighbor_of = RMR }
+		}
+}
+		}
 		prerequisite = { 
 			focus = TRS_assistourallies 
 			focus = TRS_retaketheukraine 
 		}
 		ai_will_do = {
 			factor = 25
+		}
+		completion_reward = {
+		create_wargoal = {
+    type = annex_everything
+    target = POL
+}
+		create_wargoal = {
+    type = annex_everything
+    target = LIT
+}
+		create_wargoal = {
+    type = annex_everything
+    target = EST
+}
+		create_wargoal = {
+    type = annex_everything
+    target = PRS
+}
+		create_wargoal = {
+    type = annex_everything
+    target = ROM
+}
+		create_wargoal = {
+    type = annex_everything
+    target = RMR
+}		
 		}
 	}
 
@@ -3343,6 +3477,12 @@ KOR = { load_oob = "KOR_1936" }
 		x = 6
 		y = 15
 		cost = 5
+		available = { 
+		OR = { 
+		country_exists = DEL
+		country_exists = ASM
+		}
+		}
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = TRS_thebelarusiansovietrepublic 
@@ -3350,6 +3490,9 @@ KOR = { load_oob = "KOR_1936" }
 		}
 		ai_will_do = {
 			factor = 25
+		}
+		completion_reward = {
+		country_event = { id = turkmenreds.180 }
 		}
 	}
 
