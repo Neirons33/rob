@@ -1,6 +1,6 @@
 capital = 46
 
-oob = "ROM_1936"
+oob = "RMR_1936"
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "ROM_1936_naval_mtg"
@@ -9,47 +9,6 @@ if = {
 	}
 }
 
-create_country_leader = {
-	name = "Carol II"
-	desc = "POLITICS_GHEORGHE_TATARESCU_DESC"
-	picture = "Portrait_ROM_Carol_II.tga"
-	expire = "1965.1.1"
-	ideology = conservative_subtype
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-	name = "Carol II"
-	desc = "POLITICS_GHEORGHE_TATARESCU_DESC"
-	picture = "Portrait_ROM_Carol_II.tga"
-	expire = "1965.1.1"
-	ideology = social_democracy_subtype
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-	name = "Carol II"
-	desc = "POLITICS_GHEORGHE_TATARESCU_DESC"
-	picture = "Portrait_ROM_Carol_II.tga"
-	expire = "1965.1.1"
-	ideology = social_liberal_subtype
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Constantin Ion Parhon"
-	desc = "POLITICS_CONSTANTIN_PARHON_DESC"
-	picture = "Portrait_Romania_Constantin_Parhon.dds"
-	expire = "1965.1.1"
-	ideology = socialist_subtype
-	traits = {
-		#
-	}
-}
 create_country_leader = {
 	name = "Corneliu Zelea Codreanu"
 	desc = "POLITICS_OCTAVIAN_GOGA_DESC"
@@ -61,20 +20,8 @@ create_country_leader = {
 	}
 }
 
-create_country_leader = {
-	name = "Ion Antonescu"
-	desc = "POLITICS_ION_ANTONESCU_DESC"
-	picture = "Portrait_Romania_Ion_Antonescu.dds"
-	expire = "1965.1.1"
-	ideology = military_junta
-	traits = {
-		#
-	}
-}
-		set_autonomy = {
-			target = HUN
-			autonomous_state = autonomy_puppet
-		}
+
+
 set_research_slots = 3
 set_stability = 0.6
 set_war_support = 0.6
@@ -275,29 +222,29 @@ set_convoys = 10
 }
 
 set_politics = {
-	ruling_party = conservative
+	ruling_party = pelekist
 	last_election = "1933.12.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
 	national_socialist = 0
-	socialist = 16
+	socialist = 0
 	democratic_socialist = 0
-	social_democracy = 2
-	social_liberal = 13
-	conservative = 56
+	social_democracy = 0
+	social_liberal = 0
+	conservative = 17
 	authoritharian = 0
 	reactionary = 0
-	pelekist = 13
+	pelekist = 83
 }
 
 
 
 create_field_marshal = {
-	name = "Petre Dumitrescu"
-	gfx = GFX_Portrait_romania_petre_dumitrescu
-	traits = { offensive_doctrine logistics_wizard }
+	name = "Ion Antonescu"
+	picture = "Portrait_Romania_Ion_Antonescu.dds"
+	traits = { offensive_doctrine }
 	skill = 4
 	attack_skill = 4
 	defense_skill = 4
@@ -305,37 +252,6 @@ create_field_marshal = {
 	logistics_skill = 3
 }
 
-create_corps_commander = {
-	name = "Ioan Mihail Racovita"
-	gfx = GFX_Portrait_romania_ioan_mihail_racovita
-	traits = { hill_fighter }
-	skill = 3
-	attack_skill = 2
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Gheorghe Avramescu"
-	gfx = GFX_Portrait_romania_gheorghe_avramescu
-	traits = { }
-	skill = 3
-	attack_skill = 3
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 3
-}
-create_navy_leader = {
-	name = "Horia Macellariu"
-	gfx = "GFX_Portrait_romania_horia_macellariu"
-	traits = { gentlemanly spotter }
-	skill = 2
-	attack_skill = 2
-	defense_skill = 2
-	maneuvering_skill = 2
-	coordination_skill = 1
-}
 
 
 ### VARIANTS ###
