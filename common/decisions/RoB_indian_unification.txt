@@ -166,7 +166,7 @@ is_neighbor_of = TML
   }
   fire_only_once = yes
   available = {
-  BNL = { exists = yes }
+  MRS = { exists = yes }
   has_army_manpower = {
    size > 30000
   }

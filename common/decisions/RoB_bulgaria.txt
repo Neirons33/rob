@@ -161,7 +161,12 @@ AND = {
 		NOT = { has_war_with = SER }
 		}
 date > 1936.01.01
-NOT = { has_war = yes }
+NOT = { 
+has_war = yes
+controls_state = 106
+controls_state = 870
+controls_state = 871
+}
 is_in_faction_with = TUR
 is_in_faction_with = ALB
 }
