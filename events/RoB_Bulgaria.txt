@@ -884,3 +884,54 @@ add_political_power = -50
 
 }
 }
+
+# Bulgarian Occupation of Dobrudja
+
+country_event = {
+id = bulgaria.126
+title = bulgaria.126.t
+desc = bulgaria.126.d
+fire_only_once = yes
+is_triggered_only = yes
+trigger = {
+tag = BUL
+}
+picture = GFX_picture_bosnian_revolt
+option = {
+ name = bulgaria.126.a
+# Take only what we lost
+ai_chance = { factor = 50}
+
+BUL = { transfer_state = 77 }
+
+77 = { add_core_of = BUL }
+
+
+}
+
+option = {
+ name = bulgaria.108.b
+# Take what was rightfully ours to begin with
+ai_chance = { factor = 40}
+
+BUL = { transfer_state = 77 }
+77 = { add_core_of = BUL }
+BUL = { transfer_state = 832 }
+832 = { add_core_of = BUL }
+
+}
+option = {
+ name = bulgaria.108.c
+# Take as much as we can claim
+ai_chance = { factor = 10}
+
+
+BUL = { transfer_state = 77 }
+77 = { add_core_of = BUL }
+BUL = { transfer_state = 832 }
+832 = { add_core_of = BUL }
+BUL = { transfer_state = 831 }
+831 = { add_core_of = BUL }
+
+}
+}
