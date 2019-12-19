@@ -1,0 +1,35 @@
+ideas = {
+ naval_manufacturer = {
+ 
+ ###Germany (Socialist) 
+  GER_hamburg_schiffen = {
+   designer = yes
+   allowed = { original_tag = GER }
+   cost = 150
+   modifier = {
+    navy_capital_ship_attack_factor = 0.1
+	navy_capital_ship_defence_factor = 0.1
+   }
+  }
+  
+  GER_kiel_commune = {
+   designer = yes
+   allowed = { original_tag = GER }
+   cost = 150
+   modifier = {
+    navy_submarine_attack_factor = 0.1
+	navy_submarine_defence_factor = 0.1
+   }
+  }
+  
+  GER_rostock_marine_geschelshafft = {
+   designer = yes
+   allowed = { original_tag = GER }
+   cost = 150
+   modifier = {
+    navy_screen_attack_factor = 0.1
+	navy_screen_defence_factor = 0.1
+   }
+  }
+ }
+}

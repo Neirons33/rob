@@ -1,0 +1,7 @@
+ideas = {
+ industrial_concern = {
+ 
+ ###Germany (Socialist)
+  GER_
+  }
+ } 

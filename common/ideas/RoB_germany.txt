@@ -1022,4 +1022,20 @@ GER_local_defense = {
  
  } 
  }
+ tank_manufacturer = { 
+  nord_deutsche_industrie_gesellschaft = {
+   designer = yes
+   allowed = {
+    tag = GER
+    has_completed_focus = GER_rommelplan
+   }
+   cost = 150
+   equipment_bonus = {
+	armor = {
+	 build_cost_ic = -0.05 instant = yes
+     }
+    }
+   traits = { tank_manufacturer }
+  } 
+ }
 }
