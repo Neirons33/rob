@@ -129,7 +129,8 @@ OLD = "countries/Oldenburg.txt"
 HAN = "countries/Hanover.txt"
 SIL = "countries/Silizia.txt"
 SUD = "countries/Sudetenland.txt"
-
+HAM = "countries/Hamburg.txt"
+CBV = "countries/Communist Bavaria.txt"
 
 ##Africa###
 FWA = "countries/French West Africa.txt"

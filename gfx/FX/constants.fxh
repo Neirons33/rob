@@ -9,7 +9,7 @@ Code
 // --------------------------------------------------------------
 // ------------------    Light          -------------------------
 // --------------------------------------------------------------
-static const float NIGHT_AMBIENT_BOOST = 3.0f; // can just be baked into the below later ye?
+static const float NIGHT_AMBIENT_BOOST = 4.0f; // can just be baked into the below later ye?
 
 
 static const float3 DayAmbientMapPosX = float3(0.1, 0.1, 0.05);  // right
@@ -32,7 +32,7 @@ static const float3 NightAmbientNegX = float3(0.2, 0.2, 0.2);  // left
 static const float3 NightAmbientPosY = float3(0.1, 0.1, 0.1);  // kills everything
 static const float3 NightAmbientNegY = float3(0.0, 0.0, 0.0);  // from under
 static const float3 NightAmbientPosZ = float3(3.0, 3.0, 3.0);  // top
-static const float3 NightAmbientNegZ = float3(0.8, 0.8, 0.8);  // bottom
+static const float3 NightAmbientNegZ = float3(0.4, 0.4, 0.4);  // bottom
 
 // --------------------------------------------------------------
 // ------------------    Specular       -------------------------
@@ -44,7 +44,7 @@ static const float MAP_SPECULAR_WIDTH			= 15.0;
 // --------------------------------------------------------------
 // ------------------    TERRAIN        -------------------------
 // --------------------------------------------------------------
-static const float CITY_LIGHTS_TILING 			= 0.2;
+static const float CITY_LIGHTS_TILING 			= 0.5;
 static const float CITY_LIGHTS_INTENSITY 		= 6.5;
 static const float CITY_LIGHTS_BLOOM_FACTOR 	= 2;
 
@@ -102,7 +102,7 @@ static const float 	BORDER_TILE					= 0.4f;
 // Snow color									standardfuncsgfx.fxh   
 // static const float3 SNOW_COLOR = float3( 0.8f, 0.8f, 0.8f );
 // Snow fade									standardfuncsgfx.fxh   
-// 	float vSnow = saturate( saturate( vNoise - ( 1.0f - vIsSnow ) ) * 5.0f );
+// 	float vSnow = saturate( saturate( vNoise - ( 1.2f - vIsSnow ) ) * 6.0f );
 
 static const float 	TREE_SEASON_MIN 			= 0.5f;
 static const float 	TREE_SEASON_FADE_TWEAK 		= 2.5f;
@@ -135,7 +135,7 @@ static const float  WATER_HEIGHT_RECP_SQUARED = WATER_HEIGHT_RECP * WATER_HEIGHT
 
 //	PORT_SHIP_OFFSET = 2.0,					defines.lua   (reload defines)
 //	SHIP_IN_PORT_SCALE = 0.25,				
-//  BUILDING SIZE?
+//  BUILDING_SIZE = 5,
 
 
 
