@@ -471,6 +471,13 @@ elections_allowed = no
 }
 set_country_flag = GER_nb_vitory
 load_focus_tree = german_focus_no_coallition
+add_ideas = {
+ GER_ernst_nieksch_hog
+ GER_heinrich_laufenberg_im
+ GER_paul_frolich_fm
+ GER_gregor_strasser_em
+ GER_fritz_wolffheim_dm
+}
 }
 
 option = { ###Luxembourgist Victory
@@ -483,6 +490,14 @@ value > 2
 add_political_power = 120
 add_popularity = { ideology = socialist popularity =0.05}
 set_country_flag = GER_lux_victory
+add_ideas = {
+	GER_karl_liebknacht_hog
+	GER_kurt_eisner_im
+	GER_ernst_toller_fm
+	GER_paul_levi_em
+	GER_emil_eichhorn_dm
+
+}
 load_focus_tree = german_focus_no_coallition
 }
 
@@ -501,6 +516,13 @@ elections_allowed = no
 }
 set_country_flag = GER_dem_victory
 load_focus_tree = german_focus_no_coallition
+add_ideas = {
+ GER_erich_muhsam_hog
+ GER_karl_berngardovich_radek_im
+ GER_ernst_toller_fm
+ GER_johann_rudolf_rocker_em
+ GER_gustav_sobottka_dm
+}
 }
 
 option = { ###NB-L Coalition
@@ -523,7 +545,13 @@ add_popularity = { ideology = socialist popularity =0.06}
 add_popularity = { ideology = national_socialist popularity =0.04}
 load_focus_tree = german_focus_coallition
 set_country_flag = GER_lux_nb_victory
-
+add_ideas = {
+ GER_karl_liebknacht_hog
+ GER_heinrich_laufenberg_im
+ GER_paul_frolich_fm
+ GER_paul_levi_em
+ GER_emil_eichhorn_dm
+}
 create_country_leader = {
 	name = "Gregor Strasser"
 	desc = ""
@@ -556,6 +584,13 @@ add_political_power = 120
 add_popularity = { ideology = socialist popularity =0.06}
 add_popularity = { ideology = democratic_socialist popularity =0.04}
 set_country_flag = GER_lux_ds_victory
+add_ideas = {
+ GER_karl_liebknacht_hog
+ GER_karl_berngardovich_radek_im
+ GER_paul_frolich_fm
+ GER_johann_rudolf_rocker_em
+ GER_emil_eichhorn_dm
+}
 create_country_leader = {
 	name = "Otto Grotewohl"
 	desc = ""

@@ -2,6 +2,37 @@ ideas = {
  industrial_concern = {
  
  ###Germany (Socialist)
-  GER_
+  GER_dig = {
+   designer = yes
+   allowed = { original_tag = GER }
+   picture = GER_dig
+   research_bonus = { industry = 0.1 }
+   cost = 150
+   modifier = {
+    industrial_capacity_factory = 0.05
+   }
+  }
+    
+  GER_dei = {
+   designer = yes
+   allowed = { original_tag = GER }
+   picture = GER_dei
+   research_bonus = { electronics = 0.1 }
+   cost = 150
+   modifier = {
+    research_speed_factor = 0.05
+   }
+  }
+  
+  GER_dai = {
+   designer = yes
+   allowed = { original_tag = GER }
+   picture = GER_dai
+   research_bonus = { synth_resources = 0.1 }
+   cost = 120
+   modifier = {
+    production_speed_buildings_factor = 0.08
+   }
+  }
   }
  } 

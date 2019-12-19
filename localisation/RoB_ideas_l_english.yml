@@ -315,6 +315,44 @@
  GER_cheap_guns:0 "Cheap Gun Production"
  GER_cheap_guns_desc:0 "While they might not function all of the time, they still work, and that is the most important thing right?"
  
+ ###Designers
+ GER_rote_luftwaffe:0 "Kiel Aerodrome"
+ GER_berlin_commune:0 "Berlin Aero Commune"
+ GER_frankfurt_aresenal:0 "Frankfurt Arsenal"
+ GER_munic_areadome:0 "Munich Aerodrome"
+ GER_dig:0 "Deutsche Industriegenossenschaft"
+ GER_dei:0 "Deutsches Elektronik Institut"
+ GER_dai:0 "Deutsches Agrarinstitut"
+ GER_socializtche_gewehre:0 "Rote Quadrat"
+ GER_berlin_arsenal:0 "Berlin Arsenal"
+ GER_rhur_arsenal:0 "Ruhr Arsenal"
+ GER_rostock_arsenal:0 "Rostock Arsenal"
+ GER_hamburg_schiffen:0 "Hamburg Marineakademie"
+ GER_kiel_commune:0 "Kiel Maritime Commune"
+ GER_rostock_marine_geschelshafft:0 "Rostock Marine Gesellschaft"
+ GER_nord_deutsche_industrie_gesellschaft:0 "Nord-Deutsche Industrie Gesellschaft"
+ GER_rote_stahl:0 "Rote Stahl"
+ GER_rote_arbeiter:0 "Rote Arbeiter"
+ GER_rommel:0 "Erwin Rommel"
+ GER_seydlizt:0 "Walther Kurt von Seydlitz-Kurzbach"
+ GER_student:0 "Kurt Student"
+ GER_fritz_erich:0 "Fritz Erich Fellgiebel"
+ GER_erich_muchsam:0 "Erich Mühsam"
+ GER_franz_erich:0 "Franz Erdmann Mehring"
+ GER_alwin_broder_albrecht:0 "Alwin-Broder Albrecht"
+ GER_hermann_boehm:0 "Hermann Boehm"
+ GER_alfred_saalwachter:0 "Alfred Saalwächter"
+ GER_walther_wever:0 "Walther Wever"
+ GER_albert_kesselring:0 "Albert Kesselring"
+ GER_hans_jurgen_stumpff:0 "Hans-Jürgen Stumpff"
+ GER_ernst_thalmann:0 "Ernst Thälmann"
+ GER_rommel_hc:0 "Erwin Rommel"
+ GER_karl_lieknacht:0 "Karl Liebknecht"
+ GER_erich_von_manstein:0 "Erich von Manstein"
+ GER_kurt_eisner:0 "Kurt Eisner"
+ 
+ 
+ 
  ###PRS
  minority_troubles:0 "Minority Troubles"
  minority_troubles_desc:0 "Since the retreat to Prussia, the German monarchy and reactionaries found themselves ruling a state, in which more than 35% of the population were of non-Germanic origin. At the same time, political power has stayed mostly in the hands of Germans. This has provoked massive unrest and anti-government activitities from both Lithuanians and Poles."
@@ -618,5 +656,23 @@
  PRS_rudolf_hess_dm:0 "Rudolf Hess"
  PRS_reinhard_heydrich_dm:0 "Reinhard Heydrich"
  PRS_zygfrydas_milius_dm:0 "Zygfrydas Milius"
+ 
+ 
+ ###Socialist Germany
+ GER_ernst_nieksch_hog:0 "Ernst Nieksch"
+ GER_karl_liebknacht_hog:0 "Karl Liebknecht"
+ GER_erich_muhsam_hog:0 "Erich Mühsam"
+ GER_heinrich_laufenberg_im:0 "Heinrich Laufenberg"
+ GER_kurt_eisner_im:0 "Kurt Eisner"
+ GER_karl_berngardovich_radek_im:0 "Karl Berngardovich Radek"
+ GER_paul_frolich_fm:0 "Paul Frölich"
+ GER_ernst_toller_fm:0 "Ernst Toller"
+ GER_franz_mehring_fm:0 "Franz Erdmann Mehring"
+ GER_gregor_strasser_em:0 "Gregor Strasser"
+ GER_paul_levi_em:0 "Paul Levi"
+ GER_johann_rudolf_rocker_em:0 "Johann Rudolf Rocker"
+ GER_fritz_wolffheim_dm:0 "Fritz Wolffheim"
+ GER_emil_eichhorn_dm:0 "Emil Eichhorn"
+ GER_gustav_sobottka_dm:0 Gustav Sobottka"
  
  

@@ -19,7 +19,7 @@ GER_german_partisans = {
 	 has_country_flag = north_german_partisans
 	 }
 	is_good = no
-	days_mission_timeout = 250
+	days_mission_timeout = 180
 	selectable_mission = yes
 	complete_effect = {
 	add_to_variable = { var = northern_partisan_strenght value =-20 }
@@ -64,7 +64,7 @@ GER_german_partisans = {
 	 has_country_flag = south_german_partisans
 	 }
 	is_good = no
-	days_mission_timeout = 250
+	days_mission_timeout = 180
 	selectable_mission = yes
 	complete_effect = {
 	add_to_variable = { var = southern_partisan_strenght value =-25 }

@@ -2,7 +2,7 @@ ideas = {
  country = {
  
  BLR_on_our_own = {
-  picture = GFX_idea_minority_troubles
+  picture = minority_troubles
  allowed = {
        always = no
      }
@@ -21,7 +21,7 @@ ideas = {
  }
  
  BLR_pelekists_1 = {
-  picture = GFX_idea_BLR_pelekists_low
+  picture = BLR_pelekists_low
  allowed = {
        always = no
      }
@@ -37,7 +37,7 @@ ideas = {
  
  }
   BLR_pelekists_2 = {
-  picture = GFX_idea_BLR_pelekists_low
+  picture = BLR_pelekists_low
  allowed = {
        always = no
      }
@@ -52,7 +52,7 @@ ideas = {
  
  }
   BLR_pelekists_3 = {
-  picture = GFX_idea_BLR_pelekists_medium
+  picture = BLR_pelekists_medium
  allowed = {
        always = no
      }
@@ -69,7 +69,7 @@ ideas = {
  
  }
   BLR_pelekists_4 = {
-  picture = GFX_idea_BLR_pelekists_medium
+  picture = BLR_pelekists_medium
  allowed = {
        always = no
      }
@@ -85,7 +85,7 @@ ideas = {
  
  }
   BLR_pelekists_5 = {
-  picture = GFX_idea_BLR_pelekists_high
+  picture = BLR_pelekists_high
  allowed = {
        always = no
      }
@@ -103,7 +103,7 @@ ideas = {
  }
  
    BLR_pelekists_6 = {
-  picture = GFX_idea_BLR_pelekists_high
+  picture = BLR_pelekists_high
  allowed = {
        always = no
      }
@@ -121,7 +121,7 @@ ideas = {
  }
  
     BLR_industrialists_1 = {
-  picture = GFX_idea_BLR_industrialists_low
+  picture = BLR_industrialists_low
  allowed = {
        always = no
      }
@@ -137,7 +137,7 @@ ideas = {
  
  }
      BLR_industrialists_2 = {
-  picture = GFX_idea_BLR_industrialists_low
+  picture = BLR_industrialists_low
  allowed = {
        always = no
      }
@@ -153,7 +153,7 @@ ideas = {
  
  }
      BLR_industrialists_3 = {
-  picture = GFX_idea_BLR_industrialists_medium
+  picture = BLR_industrialists_medium
  allowed = {
        always = no
      }
@@ -170,7 +170,7 @@ ideas = {
  
  }
      BLR_industrialists_4 = {
-  picture = GFX_idea_BLR_industrialists_medium
+  picture = BLR_industrialists_medium
  allowed = {
        always = no
      }
@@ -187,7 +187,7 @@ ideas = {
  
  }
      BLR_industrialists_5 = {
-  picture = GFX_idea_BLR_industrialists_high
+  picture = BLR_industrialists_high
  allowed = {
        always = no
      }
@@ -204,7 +204,7 @@ ideas = {
  
  }
      BLR_industrialists_6 = {
-  picture = GFX_idea_BLR_industrialists_high
+  picture = BLR_industrialists_high
  allowed = {
        always = no
      }

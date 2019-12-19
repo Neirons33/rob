@@ -3366,6 +3366,187 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/deutsche_volksarmee.tga"
 	}
 	
+	###German Ministers
+	spriteType = {
+		name = "GFX_idea_GER_emil_eichorn"
+		texturefile = "gfx/interface/ideas/GER_emil_eichorn.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_erich_muhsam"
+		texturefile = "gfx/interface/ideas/GER_erich_muhsam.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_ernst_nieksch"
+		texturefile = "gfx/interface/ideas/GER_ernst_nieksch.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_ernst_toller"
+		texturefile = "gfx/interface/ideas/GER_ernst_toller.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_franz_erdmann_mehrin"
+		texturefile = "gfx/interface/ideas/GER_franz_erdmann_mehrin.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_frizt_wolffheim"
+		texturefile = "gfx/interface/ideas/GER_frizt_wolffheim.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_greorg_strasser"
+		texturefile = "gfx/interface/ideas/GER_greorg_strasser.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_gustav_sobottka"
+		texturefile = "gfx/interface/ideas/GER_gustav_sobottka.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_heinrich_laufenberg"
+		texturefile = "gfx/interface/ideas/GER_heinrich_laufenberg.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_johann_rocker"
+		texturefile = "gfx/interface/ideas/GER_johann_rocker.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_karl_lieknacht"
+		texturefile = "gfx/interface/ideas/GER_karl_lieknacht.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_karl_radek"
+		texturefile = "gfx/interface/ideas/GER_karl_radek.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_kurt_eisner"
+		texturefile = "gfx/interface/ideas/GER_kurt_eisner.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_paul_frohlich"
+		texturefile = "gfx/interface/ideas/GER_paul_frohlich.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_paul_levi"
+		texturefile = "gfx/interface/ideas/GER_paul_levi.tga"
+	}
+
+	spriteType = {
+		name = "GFX_idea_GER_albert_kesselring"
+		texturefile = "gfx/interface/ideas/GER_albert_kesselring.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_alfred_sallwachter"
+		texturefile = "gfx/interface/ideas/GER_alfred_sallwachter.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_alwin_albrecht"
+		texturefile = "gfx/interface/ideas/GER_alwin_albrecht.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_eric_von_manstein"
+		texturefile = "gfx/interface/ideas/GER_eric_von_manstein.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_erich_fellgiebel"
+		texturefile = "gfx/interface/ideas/GER_erich_fellgiebel.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_ernst_thalmann"
+		texturefile = "gfx/interface/ideas/GER_ernst_thalmann.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_erwin_rommel"
+		texturefile = "gfx/interface/ideas/GER_erwin_rommel.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_hans_jurgen_stumpff"
+		texturefile = "gfx/interface/ideas/GER_hans_jurgen_stumpff.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_hermann_bohem"
+		texturefile = "gfx/interface/ideas/GER_hermann_bohem.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_kurt_seydlizt"
+		texturefile = "gfx/interface/ideas/GER_kurt_seydlizt.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_kurt_student"
+		texturefile = "gfx/interface/ideas/GER_kurt_student.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_walther_wever"
+		texturefile = "gfx/interface/ideas/GER_walther_wever.tga"
+	}
+	
+	###Companies
+	spriteType = {
+		name = "GFX_idea_GER_berlin_areodome"
+		texturefile = "gfx/interface/ideas/GER_berlin_areodome.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_berlin_arsenal"
+		texturefile = "gfx/interface/ideas/GER_berlin_arsenal.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_dai"
+		texturefile = "gfx/interface/ideas/GER_dai.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_dei"
+		texturefile = "gfx/interface/ideas/GER_dei.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_dig"
+		texturefile = "gfx/interface/ideas/GER_dig.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_frankfurt_arsenal"
+		texturefile = "gfx/interface/ideas/GER_frankfurt_arsenal.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_hamburg_marine"
+		texturefile = "gfx/interface/ideas/GER_hamburg_marine.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_kiel_areodome"
+		texturefile = "gfx/interface/ideas/GER_kiel_areodome.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_kiel_marine"
+		texturefile = "gfx/interface/ideas/GER_kiel_marine.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_munich_aredome"
+		texturefile = "gfx/interface/ideas/GER_munich_aredome.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_nord_deutsche"
+		texturefile = "gfx/interface/ideas/GER_nord_deutsche.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_rostock_arsenal"
+		texturefile = "gfx/interface/ideas/GER_rostock_arsenal.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_rostock_marine"
+		texturefile = "gfx/interface/ideas/GER_rostock_marine.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_rote_arbeiter"
+		texturefile = "gfx/interface/ideas/GER_rote_arbeiter.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_rote_quadrat"
+		texturefile = "gfx/interface/ideas/GER_rote_quadrat.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_rote_stahl"
+		texturefile = "gfx/interface/ideas/GER_rote_stahl.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_rur_arsenal"
+		texturefile = "gfx/interface/ideas/GER_rur_arsenal.tga"
+	}
+	
 	###Austria
 	spriteType = {
 		name = "GFX_idea_austrian_civil_war"

@@ -4,11 +4,15 @@ ideas = {
  ###Germany (Socialist)
   GER_rote_luftwaffe = {
    designer = yes
+   picture = GER_kiel_areodome
    allowed = { original_tag = GER }
    cost = 150
+   research_bonus = { light_air = 0.1 }
+   equipment_bonus = {
    fighter = {
     build_cost_ic = 0.1 instant = yes
-   }  
+   }
+}   
    modifier = {
     air_air_superiority_attack_factor = 0.04
 	air_air_superiority_defence_factor = 0.04
@@ -18,14 +22,52 @@ ideas = {
   GER_berlin_commune = {
    designer = yes
    allowed = { original_tag = GER }
+   picture = GER_berlin_areodome
    cost = 150
+   research_bonus = { light_air = 0.1 }
+   equipment_bonus = {
    fighter = {
     build_cost_ic = -0.1 instant = yes
+   }
    }
    modifier = {
     air_air_superiority_attack_factor = -0.04
 	air_air_superiority_defence_factor = -0.04
     }
-   } 
+   }
+
+  GER_frankfurt_aresenal = {
+   designer = yes
+   allowed = { original_tag = GER }
+   picture = GER_frankfurt_arsenal
+   cost = 150
+   research_bonus = { light_air = 0.1 }
+   equipment_bonus = {
+   cas_bomber = {
+    build_cost_ic = -0.1 instant = yes
+   }
+   }
+   modifier = {
+    air_close_air_support_attack_factor = -0.04
+	air_close_air_support_defence_factor = -0.04
+    }
+   }
+
+  GER_munic_areadome = {
+   designer = yes
+   allowed = { original_tag = GER }
+   picture = GER_munich_aredome
+   cost = 150
+   research_bonus = { light_air = 0.1 }
+   equipment_bonus = {
+   cas_bomber = {
+    build_cost_ic = 0.1 instant = yes
+   }
+   }
+   modifier = {
+    air_close_air_support_attack_factor = 0.04
+	air_close_air_support_defence_factor = 0.04
+    }
+   }   
   }
  }

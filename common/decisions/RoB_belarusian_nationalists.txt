@@ -174,7 +174,7 @@ BLR_power_struggle = {
     available = {
    check_variable = {
     var = BLR_authoritharian_strenght
-    value = 1
+    value = 0
     compare = greater_than
 }
    NOT = { 
@@ -200,7 +200,7 @@ BLR_power_struggle = {
     available = {
    check_variable = {
     var = BLR_authoritharian_strenght
-    value = 2
+    value = 1
     compare = greater_than
 }
   NOT = { 
@@ -226,7 +226,7 @@ BLR_power_struggle = {
     available = {
    check_variable = {
     var = BLR_authoritharian_strenght
-    value = 3
+    value = 2
     compare = greater_than
 }
   NOT = { 
@@ -252,7 +252,7 @@ BLR_power_struggle = {
     available = {
    check_variable = {
     var = BLR_authoritharian_strenght
-    value = 4
+    value = 3
     compare = greater_than
 }
   NOT = { 
@@ -278,7 +278,7 @@ BLR_power_struggle = {
     available = {
    check_variable = {
     var = BLR_authoritharian_strenght
-    value = 5
+    value = 4
     compare = greater_than
 }
   NOT = { 

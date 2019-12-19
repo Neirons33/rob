@@ -2,6 +2,55 @@ ideas = {
  
   goverment_head = {
  
+ ###Socialist Germany
+ GER_ernst_nieksch_hog = {
+     allowed = { original_tag = GER }
+	 picture = GER_ernst_nieksch
+     available = { 
+     custom_trigger_tooltip = { 
+      tooltip = replace_hog 
+      has_country_flag = can_replace_head_of_government
+  	 }
+  	}
+     traits = {
+      national_socialist_min
+      goverment_head
+      hog_vanguardist_socialist
+     }   
+    }
+ 
+  GER_karl_liebknacht_hog = {
+     allowed = { original_tag = GER }
+	 picture = GER_karl_lieknacht
+     available = { 
+     custom_trigger_tooltip = { 
+      tooltip = replace_hog 
+      has_country_flag = can_replace_head_of_government
+  	 }
+  	}
+     traits = {
+      socialist_min
+      goverment_head
+      hog_industrialist
+     }   
+    }
+ 
+   GER_erich_muhsam_hog = {
+     allowed = { original_tag = GER }
+	 picture = GER_erich_muhsam
+     available = { 
+     custom_trigger_tooltip = { 
+      tooltip = replace_hog 
+      has_country_flag = can_replace_head_of_government
+  	 }
+  	}
+     traits = {
+      democratic_socialist_min
+      goverment_head
+      hog_socialist_revolutionary
+     }   
+    }
+ 
  ###Prussia
  
     PRS_hindenburg_hog = {
@@ -112,9 +161,62 @@ ideas = {
     }
   }
  interior_minister = {
- #######################
+
+ ###Socialist Germany
+ 
+ GER_heinrich_laufenberg_im = {
+   allowed = { original_tag = GER }
+   picture = GER_heinrich_laufenberg
+   available = { 
+   custom_trigger_tooltip = { 
+    tooltip = minister_available 
+    SOCIALIST_ALIGNED_GOVERNMENT = yes 
+	}
+	}
+   
+   traits = {
+    national_socialist_min
+    interior_minister
+    im_efficent_planner
+    }   
+   }
+   
+  GER_kurt_eisner_im = {
+   allowed = { original_tag = GER }
+   picture = GER_kurt_eisner
+   available = { 
+   custom_trigger_tooltip = { 
+    tooltip = minister_available 
+    SOCIALIST_ALIGNED_GOVERNMENT = yes 
+	}
+	}
+   
+   traits = {
+    socialist_min
+    interior_minister
+    im_man_of_the_people
+    }   
+   } 
+
+  GER_karl_berngardovich_radek_im = {
+   allowed = { original_tag = GER }
+   picture = GER_karl_radek
+   available = { 
+   custom_trigger_tooltip = { 
+    tooltip = minister_available 
+    SOCIALIST_ALIGNED_GOVERNMENT = yes 
+	}
+	}
+   
+   traits = {
+    democratic_socialist_min
+    interior_minister
+    im_progressive
+    }   
+   }     
+ 
  ###Prussia
- #######################
+
   PRS_erich_kochweser_im = {
    allowed = { original_tag = PRS }
    available = { 
@@ -229,9 +331,62 @@ ideas = {
   }
   
   foreign_head = {
-  #######################
+  
+  ###Socialist Germany
+  
+  GER_paul_frolich_fm = {
+   allowed = { original_tag = GER }
+   picture = GER_paul_frohlich
+   available = { 
+   custom_trigger_tooltip = { 
+    tooltip = minister_available 
+    SOCIALIST_ALIGNED_GOVERNMENT = yes 
+	}
+	}
+   
+   traits = {
+    national_socialist_min
+    foreign_head
+    fm_neutral_bystander
+    }   
+   }
+  
+  GER_ernst_toller_fm = {
+   allowed = { original_tag = GER }
+   picture = GER_ernst_toller
+   available = { 
+   custom_trigger_tooltip = { 
+    tooltip = minister_available 
+    SOCIALIST_ALIGNED_GOVERNMENT = yes 
+	}
+	}
+   
+   traits = {
+    democratic_socialist_min
+    foreign_head
+    fm_revolutionary
+    }   
+   } 
+  
+  GER_franz_mehring_fm = {
+   allowed = { original_tag = GER }
+   picture = GER_franz_erdmann_mehrin
+   available = { 
+   custom_trigger_tooltip = { 
+    tooltip = minister_available 
+    SOCIALIST_ALIGNED_GOVERNMENT = yes 
+	}
+	}
+   
+   traits = {
+    socialist_min
+    foreign_head
+    fm_revolutionary
+    }   
+   } 
+  
   ###Prussia
-  #######################
+
    PRS_viktoras_gailius_fm = {
    allowed = { original_tag = PRS }
    available = { 
@@ -346,6 +501,62 @@ ideas = {
  }
  
  economy_head = {
+ 
+ ###Socialist Germany
+ 
+  GER_gregor_strasser_em = {
+   allowed = { original_tag = GER }
+   picture = GER_greorg_strasser
+   available = { 
+   custom_trigger_tooltip = { 
+    tooltip = minister_available 
+    SOCIALIST_ALIGNED_GOVERNMENT = yes 
+	}
+	}
+   
+   traits = {
+    national_socialist_min
+    economy_head
+    em_central_planner
+    }   
+   }
+ 
+  GER_paul_levi_em = {
+   allowed = { original_tag = GER }
+   picture = GER_paul_levi
+   available = { 
+   custom_trigger_tooltip = { 
+    tooltip = minister_available 
+    SOCIALIST_ALIGNED_GOVERNMENT = yes 
+	}
+	}
+   
+   traits = {
+    socialist_min
+    economy_head
+    em_union_man
+    }   
+   }
+
+  GER_johann_rudolf_rocker_em = {
+   allowed = { original_tag = GER }
+   picture = GER_johann_rocker
+   available = { 
+   custom_trigger_tooltip = { 
+    tooltip = minister_available 
+    SOCIALIST_ALIGNED_GOVERNMENT = yes 
+	}
+	}
+   
+   traits = {
+    democratic_socialist_min
+    economy_head
+    em_anarchist
+    }   
+      
+ }
+ ###Prussia
+ 
   PRS_hans_staudinger_em = {
    allowed = { original_tag = PRS }
    available = { 
@@ -442,10 +653,65 @@ ideas = {
   }
   
   defense_minister = {
-  ######################
-  #Prussia
-  ######################
+
+ ###Socialist Germany 
   
+  GER_fritz_wolffheim_dm = {
+   allowed = { original_tag = GER }
+   picture = GER_frizt_wolffheim
+   available = { 
+   custom_trigger_tooltip = { 
+    tooltip = minister_available 
+    SOCIALIST_ALIGNED_GOVERNMENT = yes 
+	}
+	}
+   
+   traits = {
+    national_socialist_min
+    defense_minister
+    dm_militarist
+    }   
+      
+ }
+ 
+  GER_emil_eichhorn_dm = {
+   allowed = { original_tag = GER }
+   picture = GER_emil_eichorn
+   available = { 
+   custom_trigger_tooltip = { 
+    tooltip = minister_available 
+    SOCIALIST_ALIGNED_GOVERNMENT = yes 
+	}
+	}
+   
+   traits = {
+    socialist_min
+    defense_minister
+    dm_experienced_soldier
+    }   
+      
+ }
+ 
+  GER_gustav_sobottka_dm = {
+   allowed = { original_tag = GER }
+   picture = GER_gustav_sobottka
+   available = { 
+   custom_trigger_tooltip = { 
+    tooltip = minister_available 
+    SOCIALIST_ALIGNED_GOVERNMENT = yes 
+	}
+	}
+   
+   traits = {
+    democratic_socialist_min
+    defense_minister
+    dm_civilian_administator
+    }   
+      
+ }
+
+  ###Prussia
+
    PRS_kurt_schumacher_dm = {
    allowed = { original_tag = PRS }
    available = { 
