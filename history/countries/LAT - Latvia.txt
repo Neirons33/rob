@@ -36,120 +36,22 @@ set_research_slots = 3
 
 set_convoys = 10
 
-1939.1.1 = {
-
-	add_political_power = 1198
-	
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = flexible_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-	
-	oob = "LAT_1939"
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-			set_naval_oob = "LAT_1939_naval_mtg"
-		else = {
-			set_naval_oob = "LAT_1939_naval_legacy"
-		}
-	}
-
-	set_technology = {
-		tech_support = 1		
-		tech_engineers = 1
-		gw_artillery = 1
-		interwar_artillery = 1
-		interwar_antiair = 1
-		support_weapons = 1
-
-		#doctrines
-		air_superiority = 1
-		grand_battle_plan = 1
-		trench_warfare = 1
-		fleet_in_being = 1
-		battlefleet_concentration = 1
-		convoy_sailing = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		mechanical_computing = 1
-		computing_machine = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		synth_oil_experiments = 1
-		fuel_silos = 1
-		oil_processing = 1
-		improved_oil_processing = 1
-		construction1 = 1
-		construction2 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-	}
-}
-
 set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 30
-		}
-
-		fascism = {
-			popularity = 15
-		}
-		
-		communism = {
-			popularity = 15
-		}
-		
-		neutrality = { 
-			popularity = 50
-		}
-	}
-	
-	ruling_party = neutrality
-	last_election = "1931.10.3"
-	election_frequency = 108
+	ruling_party = pelekist
+	last_election = "1933.7.1"
+	election_frequency = 48
 	elections_allowed = no
 }
-
-1939.1.1 = {# probably needs some adjustment before nazi occupation in 1940
-	set_politics = {
-
-		parties = {
-			democratic = { 
-				popularity = 30
-			}
-
-			fascism = {
-				popularity = 15
-			}
-			
-			communism = {
-				popularity = 15
-			}
-			
-			neutrality = { 
-				popularity = 50
-			}
-		}
-		
-		ruling_party = neutrality
-		last_election = "1931.10.3"
-		election_frequency = 108
-		elections_allowed = no
-	}
+set_popularities = {
+	national_socialist = 10
+	socialist = 10
+	democratic_socialist = 0
+	social_democracy = 5
+	social_liberal = 5
+	conservative = 5
+	authoritharian = 17
+	reactionary = 13
+	pelekist = 35
 }
 
 create_country_leader = {
@@ -157,7 +59,7 @@ create_country_leader = {
 	desc = "POLITICS_KARLIS_ULMANIS_DESC"
 	picture = "GFX_Portrait_latvia_karlis_ulmanis"
 	expire = "1965.1.1"
-	ideology = oligarchism
+	ideology = authoritharian_subtype
 	traits = {
 		#
 	}
@@ -168,7 +70,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = pagan_pelekism
 	traits = {
 		#
 	}
@@ -178,7 +80,7 @@ create_country_leader = {
 	desc = ""
 	picture = "GFX_portrait_lat_fricis_menders"
 	expire = "1965.1.1"
-	ideology = socialism
+	ideology = social_democracy_subtype
 	traits = {
 		#
 	}
@@ -188,7 +90,7 @@ create_country_leader = {
 	desc = ""
 	picture = "GFX_portrait_lat_vilis_lacis"
 	expire = "1965.1.1"
-	ideology = marxism
+	ideology = marxism_leninism
 	traits = {
 		#
 	}

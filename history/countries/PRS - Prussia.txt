@@ -28,7 +28,7 @@ set_technology = {
 
 
 set_politics = {
-	ruling_party = reactionary
+	ruling_party = authoritharian
 	last_election = "1933.7.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -40,8 +40,8 @@ set_popularities = {
 	social_democracy = 5
 	social_liberal = 8
 	conservative = 15
-	authoritharian = 10
-	reactionary = 40
+	authoritharian = 40
+	reactionary = 10
 	pelekist = 22
 }
 

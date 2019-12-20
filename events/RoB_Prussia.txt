@@ -291,6 +291,11 @@ name = prussia.9.a
 add_political_power = 120
 set_country_flag = jungersjunta
 
+set_politics = {
+ ruling_party = reactionary
+ elections_allowed = no
+}
+
 create_country_leader = {
 	name = "Ernst Jünger"
 	desc = ""
