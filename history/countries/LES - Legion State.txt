@@ -31,6 +31,9 @@ set_popularities = {
 }
 add_ideas = {
 extensive_conscription
+LES_Discontent
+LES_disorganised_army
+LES_Risk_of_Famine
 }
 
 puppet = AGR

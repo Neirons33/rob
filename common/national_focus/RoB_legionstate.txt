@@ -1,0 +1,2580 @@
+focus_tree = {
+	id = LES
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = LES
+		}
+	}
+	continuous_focus_position = { x = 50 y = 2000 }
+	#Focus for Construct an Aerial Academy
+	focus = {
+		id = LES_constructanaerialacademy
+		icon = GFX_focus_PRS_trained_staff
+		x = 82
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_reconplanes }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_tech_bonus = {
+		name = airdoctrine
+		bonus = 1.0
+		uses = 2
+		category = air_doctrine
+		}
+	}
+}
+	
+
+	#Focus for Operation Заяц
+	focus = {
+		id = LES_operation
+		icon = GFX_goal_generic_army_motorized
+		x = 54
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_flexibility }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Patriarchal Traditions
+	focus = {
+		id = LES_patriarchaltraditions
+		icon = GFX_goal_unknown
+		x = 57
+		y = 9
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_dealingwithmothers }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Guardians of Youth
+	focus = {
+		id = LES_guardiansofyouth
+		icon = GFX_goal_unknown
+		x = 54
+		y = 9
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_dealingwithmothers }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Liberation of Women
+	focus = {
+		id = LES_liberationofwomen
+		icon = GFX_goal_unknown
+		x = 51
+		y = 9
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_dealingwithmothers }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Follow the Example of Middle ages
+	focus = {
+		id = LES_followtheexampleofmiddleages
+		icon = GFX_goal_unknown
+		x = 25
+		y = 9
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_attitudetowork }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Punish Disloyal Elements
+	focus = {
+		id = LES_punishdisloyalelements
+		icon = GFX_focus_PRS_purge_few_traitors
+		x = 19
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_radolasurvives }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_stability = -0.1
+ 		add_popularity = {ideology = pelekist popularity =0.05}
+		}
+	}
+
+	#Focus for Radola Survives
+	focus = {
+		id = LES_radolasurvives
+		icon = GFX_goal_unknown
+		x = 16
+		y = 0
+		cost = 5
+		available = {
+ 			AND = {
+ 			has_country_flag = LES_survives
+			}
+		}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Communal farmers
+	focus = {
+		id = LES_communalfarmers
+		icon = GFX_focus_SOV_bukharins_privatize_state_land
+		x = 34
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_chelyabisnktractorfactory }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		swap_ideas = {
+    	remove_idea = LES_Modern_Farming
+    	add_idea = LES_Modern_Farming_2
+		}
+		}
+
+	}
+
+	#Focus for Searching for New Possibilities
+	focus = {
+		id = LES_searchingfornewpossibilities
+		icon = GFX_focus_generic_paratrooper
+		x = 79
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LES_legionsarmy 
+		}
+		prerequisite = { 
+			focus = LES_shagolairport 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_tech_bonus = {
+				name = paratroopers
+				bonus = 1.0
+				uses = 1
+				category = para_tech
+				}
+		}
+	}
+
+	#Focus for Transport Planes
+	focus = {
+		id = LES_transportplanes
+		icon = GFX_goal_generic_air_bomber
+		x = 79
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_searchingfornewpossibilities }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_equipment_to_stockpile = {
+ 			type = transport_plane_equipment 
+			amount = 20
+			producer = Les
+ 			}
+		}
+		
+	}
+
+	#Focus for Self-Sustenance
+	focus = {
+		id = LES_selfsustenance
+		icon = GFX_goal_unknown
+		x = 36
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LES_ruralism 
+			focus = LES_communalfarmers 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		remove_ideas = {
+		LES_Risk_of_Famine
+		}
+		}
+	}
+
+	#Focus for Start Our Arms Industry
+	focus = {
+		id = LES_startourarmsindustry
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 26
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_formtheenginerbrigade }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_extra_state_shared_building_slots = 2
+        add_building_construction = {
+	    type = arms_factory
+	    level = 2
+	    instant_build = yes
+          }
+		}
+	}
+
+	#Focus for Czech Lightning Forces
+	focus = {
+		id = LES_czechlightningforces
+		icon = GFX_goal_unknown
+		x = 54
+		y = 4
+		cost = 5
+		available = {
+ 		AND = {
+ 			has_tech = motorised_infantry
+			}
+		}
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_operation }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward {
+		add_ideas = {
+		LES_Fastest_Army
+		}
+		}
+	}
+
+	#Focus for Onwards!
+	focus = {
+		id = LES_onwards
+		icon = GFX_goal_unknown
+		x = 39
+		y = 11
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for ...Sons of Perun...
+	focus = {
+		id = LES_sonsofperun
+		icon = GFX_goal_unknown
+		x = 3
+		y = 1
+		cost = 1
+		mutually_exclusive = { focus = LES_warriorsofchrist focus = LES_wesingtheloveofdanger}
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_thehourhascome }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		hidden_effect = {
+		set_country_flag = path
+		}
+		}
+	}
+
+	#Focus for The True Christian State
+	focus = {
+		id = LES_thetruechristianstate
+		icon = GFX_goal_unknown
+		x = 3
+		y = 12
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_thepatriarchate }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Destroy Atheists
+	focus = {
+		id = LES_destroyatheists
+		icon = GFX_goal_unknown
+		x = 5
+		y = 11
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_battlesecularists }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Jewish Question
+	focus = {
+		id = LES_thejewishquestion
+		icon = GFX_goal_unknown
+		x = 5
+		y = 12
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_destroyatheists }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Battle Secularists
+	focus = {
+		id = LES_battlesecularists
+		icon = GFX_goal_unknown
+		x = 5
+		y = 10
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LES_vaticanscrusaders 
+			focus = LES_vanguardoforthodox 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Supremacy of Living
+	focus = {
+		id = LES_supremacyofliving
+		icon = GFX_goal_unknown
+		x = 10
+		y = 12
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LES_devoteesofperun 
+			focus = LES_listentothehighpriest 
+		}
+		mutually_exclusive = { focus = LES_veneration }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Veneration
+	focus = {
+		id = LES_veneration
+		icon = GFX_goal_unknown
+		x = 12
+		y = 12
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LES_devoteesofperun 
+			focus = LES_listentothehighpriest 
+		}
+		mutually_exclusive = { focus = LES_supremacyofliving }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Form of Our Pan Slavic State
+	focus = {
+		id = LES_formofourpanslavicstate
+		icon = GFX_goal_unknown
+		x = 34
+		y = 8
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_questionsandanswers }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Questions and Answers
+	focus = {
+		id = LES_questionsandanswers
+		icon = GFX_goal_unknown
+		x = 39
+		y = 7
+		cost = 5
+		available = {
+ 			AND = {
+ 			has_country_flag = triumph
+			}
+		}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Realizing Our Mission
+	focus = {
+		id = LES_realizingourmission
+		icon = GFX_focus_LIT_godwithus
+		x = 7
+		y = 10
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_vaticanscrusaders }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Force Against Greed
+	focus = {
+		id = LES_forceagainstgreed
+		icon = GFX_focus_LIT_newcrusade
+		x = 7
+		y = 11
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_realizingourmission }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Reshaping of a Construct
+	focus = {
+		id = LES_reshapingofaconstruct
+		icon = GFX_goal_unknown
+		x = 44
+		y = 9
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_theethnicissue }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Racial Eugenics
+	focus = {
+		id = LES_racialeugenics
+		icon = GFX_goal_unknown
+		x = 47
+		y = 9
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_theethnicissue }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Reinvigorate Rural Farming
+	focus = {
+		id = LES_reinvigorateruralfarming
+		icon = GFX_goal_unknown
+		x = 36
+		y = 0
+		cost = 5
+		available = {
+ 			AND = {
+ 			has_country_flag = path
+			}
+		}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_manpower = -8000
+		}
+	}
+
+	#Focus for Chelyabisnk Tractor factory
+	focus = {
+		id = LES_chelyabisnktractorfactory
+		icon = GFX_goal_unknown
+		x = 34
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_modernisefarming }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		572 = { 
+        add_extra_state_shared_building_slots = 1
+        add_building_construction = {
+	    type = industrial_complex
+	    level = 1
+	    instant_build = yes
+          }
+        }
+		}
+	}
+
+	#Focus for Begin Railway Reconstruction
+	focus = {
+		id = LES_beginrailwayreconstruction
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 23
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_demobilisethe4thregiment }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+        572 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+				}
+			}
+		 1231 = {
+			add_building_construction = {
+			type = infrastructure
+			level = 2
+			instant_build = yes
+				}
+			}
+		}
+
+	}
+
+	#Focus for Expand the Chelyabinsk Hospital
+	focus = {
+		id = LES_expandthechelyabinskhospital
+		icon = GFX_goal_unknown
+		x = 32
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_resolvethehousingissue }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		572 = { 
+        add_extra_state_shared_building_slots = 1
+        add_building_construction = {
+	    type = industrial_complex
+	    level = 1
+	    instant_build = yes
+          }
+        }
+          add_tech_bonus = {
+	      name = hospital
+	      bonus = 1.0
+	      uses = 1
+	      category = hospital_tech
+           }
+         }
+        
+	}
+
+	#Focus for Demobilise the 4th Regiment
+	focus = {
+		id = LES_demobilisethe4thregiment
+		icon = GFX_goal_unknown
+		x = 29
+		y = 0
+		cost = 5
+		available = {
+ 			AND = {
+ 			has_country_flag = path
+			}
+		}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_manpower = -5000
+		}
+	}
+
+	#Focus for Form the Enginer Brigade
+	focus = {
+		id = LES_formtheenginerbrigade
+		icon = GFX_focus_PRS_army_in_cities
+		x = 29
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_demobilisethe4thregiment }
+		ai_will_do = {
+			factor = 1
+		}
+			completion_reward = {
+			add_ideas = {
+			LES_Engineers 
+			}
+		}
+	}
+
+	#Focus for Improve Rural Road Network
+	focus = {
+		id = LES_improveruralroadnetwork
+		icon = GFX_focus_SOV_soviet_infrastructure
+		x = 29
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_formtheenginerbrigade }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			572 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+			}
+		 }
+		}
+
+	}
+
+	#Focus for Economical Boom
+	focus = {
+		id = LES_economicalboom
+		icon = GFX_goal_unknown
+		x = 29
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LES_roadguardsposts 
+		}
+		prerequisite = { 
+			focus = LES_buisnesslandappropriation 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_ideas = {
+		  LES_Economical_Boom
+		 }
+		}
+	}
+
+	#Focus for Keep It Traditional
+	focus = {
+		id = LES_keepittraditional
+		icon = GFX_goal_unknown
+		x = 38
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_redistributefarmland }
+		mutually_exclusive = { focus = LES_modernisefarming }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_ideas = {LES_Tradional_Farming}
+		}
+	}
+
+	#Focus for Modernise Farming
+	focus = {
+		id = LES_modernisefarming
+		icon = GFX_SOV_try_to_improve_farming
+		x = 34
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_redistributefarmland }
+		mutually_exclusive = { focus = LES_keepittraditional }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_ideas = {LES_Modern_Farming}
+		}
+	}
+
+	#Focus for Redistribute Farmland
+	focus = {
+		id = LES_redistributefarmland
+		icon = GFX_goal_unknown
+		x = 36
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LES_reinvigorateruralfarming 
+		}
+		prerequisite = { 
+			focus = LES_demobilisethe4thregiment 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_political_power = -60
+		add_stability = -0.05
+		}
+	}
+
+	#Focus for Buisness land appropriation
+	focus = {
+		id = LES_buisnesslandappropriation
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 31
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LES_reopenschools 
+		}
+		prerequisite = { 
+			focus = LES_expandthechelyabinskhospital 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		572 = { 
+        add_extra_state_shared_building_slots = 2
+        add_building_construction = {
+	    type = industrial_complex
+	    level = 2
+	    instant_build = yes
+          }
+          }
+		}
+	}
+
+	#Focus for Importing Animals
+	focus = {
+		id = LES_importinganimals
+		icon = GFX_goal_unknown
+		x = 38
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_keepittraditional }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Resolve the Housing Issue
+	focus = {
+		id = LES_resolvethehousingissue
+		icon = GFX_goal_generic_construct_civilian
+		x = 32
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_formtheenginerbrigade }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		 	572 = {
+		        add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+		 }
+		}
+	}
+
+	#Focus for Legions Army
+	focus = {
+		id = LES_legionsarmy
+		icon = GFX_goal_unknown
+		x = 59
+		y = 0
+		cost = 5
+		available = {
+ 		AND = {
+ 			has_country_flag = path
+			}
+		}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		army_experience = 25
+		}
+	}
+
+	#Focus for HQ Knows Best
+	focus = {
+		id = LES_hqknowsbest
+		icon = GFX_focus_PRS_increase_conscription
+		x = 64
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_legionsarmy }
+		mutually_exclusive = { focus = LES_empowerthencos }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_ideas = {
+		LES_Old_Guard
+		}
+		}
+	}
+
+	#Focus for Specialize Our Forces
+	focus = {
+		id = LES_specializeourforces
+		icon = GFX_goal_generic_special_forces
+		x = 45
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_legionsarmy }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_tech_bonus = {
+			name = secret_bonus
+			bonus = 1.0
+			uses = 1
+			category = support_tech
+			}
+		}
+	}
+
+	#Focus for Reopen Schools
+	focus = {
+		id = LES_reopenschools
+		icon = GFX_focus_research
+		x = 29
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_improveruralroadnetwork }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_research_slot = 1
+		}
+	}
+
+	#Focus for Put Orphans to Work
+	focus = {
+		id = LES_putorphanstowork
+		icon = GFX_goal_unknown
+		x = 26
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_startourarmsindustry }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		 572 = {
+		        add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+		 }
+		 add_manpower = 10000
+		}
+	}
+
+	#Focus for Road Guardsposts
+	focus = {
+		id = LES_roadguardsposts
+		icon = GFX_goal_unknown
+		x = 27
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LES_putorphanstowork 
+		}
+		prerequisite = { 
+			focus = LES_reopenschools 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		572= {
+		add_building_construction = {
+		type = bunker
+		level = 2
+		province = 9292
+		instant_build = yes
+		}
+		add_ideas = {
+		LES_road_guardposts
+		}
+		}
+		}
+	}
+
+	#Focus for Reconnect Chelyabinsk with Omsk
+	focus = {
+		id = LES_reconnectchelyabinskwithomsk
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 23
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_beginrailwayreconstruction }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Ruralism
+	focus = {
+		id = LES_ruralism
+		icon = GFX_focus_SOV_rural_volunteers
+		x = 38
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_importinganimals }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward{
+		swap_ideas = {
+		remove_idea = LES_Tradional_Farming
+		add_idea = LES_Tradional_Farming_2
+		}
+		}
+	}
+
+	#Focus for Seize Control of Military Intelligence
+	focus = {
+		id = LES_seizecontrolofmilitaryintelligence
+		icon = GFX_focus_LIT_chamberofservices
+		x = 16
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_radolasurvives }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_ideas = {LES_Accurate_Inteligence}
+		}
+	}
+
+	#Focus for Rapid Promotions Of Selected Few
+	focus = {
+		id = LES_rapidpromotionsofselectedfew
+		icon = GFX_focus_generic_military_mission
+		x = 19
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_punishdisloyalelements }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_command_power = 100
+		}
+	}
+
+	#Focus for Exaggerate intel on Karel's Forces
+	focus = {
+		id = LES_exaggerateintelonkarelsforces
+		icon = GFX_focus_LIT_spread_revolution
+		x = 16
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_seizecontrolofmilitaryintelligence }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_war_support = 0.10
+		}
+	}
+
+	#Focus for The Wonders of Propaganda
+	focus = {
+		id = LES_thewondersofpropaganda
+		icon = GFX_focus_LIT_indoctrinateyouth
+		x = 13
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_radolasurvives }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+			add_timed_idea = {
+    		idea = LES_Propaganda_Campaign
+    		days = 210
+			}
+		}
+	}
+
+	#Focus for The Importance of a Leader
+	focus = {
+		id = LES_theimportanceofaleader
+		icon = GFX_goal_unknown
+		x = 13
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_thewondersofpropaganda }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.1
+		add_popularity = {ideology = pelekist popularity =0.05}
+		}
+	}
+
+	#Focus for The Red Scare
+	focus = {
+		id = LES_theredscare
+		icon = GFX_focus_PRS_junger_red_scare
+		x = 14
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LES_theimportanceofaleader 
+		}
+		prerequisite = { 
+			focus = LES_exaggerateintelonkarelsforces 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_war_support = 0.05
+		add_manpower = 15000
+		}
+	}
+
+	#Focus for Demand Savings
+	focus = {
+		id = LES_demandsavings
+		icon = GFX_focus_LIT_nationalizebanks
+		x = 18
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LES_exaggerateintelonkarelsforces 
+		}
+		prerequisite = { 
+			focus = LES_rapidpromotionsofselectedfew 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_political_power	= 120
+		add_stability = -0.06
+		}
+	}
+
+	#Focus for Locked and Loaded
+	focus = {
+		id = LES_lockedandloaded
+		icon = GFX_goal_unknown
+		x = 16
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LES_theredscare 
+		}
+		prerequisite = { 
+			focus = LES_demandsavings 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		remove_ideas = {
+		LES_Discontent
+		}
+		}
+
+	}
+
+	#Focus for Establish the First Squadron
+	focus = {
+		id = LES_establishthefirstsquadron
+		icon = GFX_goal_generic_air_fighter2
+		x = 82
+		y = 1
+		cost = 5
+		prerequisite = { focus = LES_shagolairport }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		 add_tech_bonus = {
+			name = fighter_bonus
+			bonus = 1.0
+			uses = 1
+			technology = early_fighter 
+			}
+		}
+	}
+
+	#Focus for Shagol Airport
+	focus = {
+		id = LES_shagolairport
+		icon = GFX_goal_generic_build_airforce
+		x = 82
+		y = 0
+		cost = 5
+		available = {
+ 			AND = {
+ 			has_country_flag = path
+			}
+		}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		572 = {
+				add_building_construction = {
+					type = air_base 
+					level = 2
+					instant_build = yes
+				}
+		 }
+		}
+		
+	}
+
+	#Focus for Recon Planes
+	focus = {
+		id = LES_reconplanes
+		icon = GFX_goal_unknown
+		x = 82
+		y = 2
+		cost = 5
+		available = {
+ 		AND = {
+ 			has_tech = early_fighter 
+			}
+		}
+
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_establishthefirstsquadron }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_equipment_to_stockpile = {
+ 		type = fighter_equipment_0
+					amount = 125
+					producer = LES
+ 		}
+		}
+	}
+
+	#Focus for Empower the NCO's
+	focus = {
+		id = LES_empowerthencos
+		icon = GFX_focus_PRS_junger_elite_training
+		x = 54
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_legionsarmy }
+		mutually_exclusive = { focus = LES_hqknowsbest }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_ideas = {
+		LES_Youthful_Army
+		}
+		}
+	}
+
+	#Focus for Improved Rifles
+	focus = {
+		id = LES_improvedrifles
+		icon = GFX_goal_generic_small_arms
+		x = 68
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_certainty }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_tech_bonus = {
+		name = guns
+		bonus = 1.0
+		uses = 1
+		category = infantry_weapons
+		}
+		}
+	}
+
+	#Focus for Study Modern Designs
+	focus = {
+		id = LES_studymoderndesigns
+		icon = GFX_goal_generic_CAS
+		x = 82
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_constructanaerialacademy }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		 add_tech_bonus = {
+			name = fighter_bonus
+			bonus = 1.0
+			uses = 1
+			category = light_fighter
+			}
+		}
+	}
+
+	#Focus for Death From Above
+	focus = {
+		id = LES_deathfromabove
+		icon = GFX_goal_generic_air_fighter
+		x = 85
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_constructanaerialacademy }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_tech_bonus = {
+		name = close air support
+		bonus = 1.0
+		uses = 1
+		category = cas_bomber
+		}
+	}
+	}
+
+	#Focus for Improve Coordination
+	focus = {
+		id = LES_improvecoordination
+		icon = GFX_focus_PRS_tact_supporth
+		x = 66
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LES_develop 
+		}
+		prerequisite = { 
+			focus = LES_fiercestinfantry 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+ 		add_tech_bonus = {
+		name = vorshilov
+		bonus = 1.0
+		uses = 2
+		category = cat_grand_battle_plan
+			}
+		}
+	}
+
+	#Focus for Concrete Fortifications
+	focus = {
+		id = LES_concretefortifications
+		icon = GFX_goal_generic_construct_military
+		x = 50
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_legionsarmy }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for Flexibility
+	focus = {
+		id = LES_flexibility
+		icon = GFX_focus_PRS_men_must_be_fanatics
+		x = 52
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_empowerthencos }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = doctrine
+				bonus = 1.0
+				uses = 2
+				category = cat_mobile_warfare
+		}
+	}
+	}
+
+	#Focus for Certainty
+	focus = {
+		id = LES_certainty
+		icon = GFX_goal_generic_army_doctrines
+		x = 66
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_hqknowsbest }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+ 		add_tech_bonus = {
+		name = vorshilov
+		bonus = 1.0
+		uses = 2
+		category = cat_grand_battle_plan
+			}
+		}
+	}
+
+	#Focus for Frugality
+	focus = {
+		id = LES_frugality
+		icon = GFX_goal_generic_secret_weapon
+		x = 59
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LES_empowerthencos 
+			focus = LES_hqknowsbest 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		 add_tech_bonus = {
+	      name = doctrine_bonus
+	      bonus = 1.0
+	      uses = 2
+	      category = cat_superior_firepower
+           }    
+		}
+	}
+
+	#Focus for Trench Experts
+	focus = {
+		id = LES_trenchexperts
+		icon = GFX_goal_generic_construction2
+		x = 45
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_specializeourforces }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_tech_bonus = {
+	      name = trench
+	      bonus = 1.0
+	      uses = 1
+	      category = engineers_tech
+           }   
+		}
+	}
+
+	#Focus for Radio Operators
+	focus = {
+		id = LES_radiooperators
+		icon = GFX_goal_generic_radar
+		x = 42
+		y = 2
+		cost = 5
+		available = {
+ 		AND = {
+ 			has_tech = radio
+			}
+		}
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_specializeourforces }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_tech_bonus = {
+	      name = signal
+	      bonus = 1.0
+	      uses = 1
+	      category = signal_company_tech
+           } 
+		}
+	}
+
+	#Focus for Hit Them Where It Hurts
+	focus = {
+		id = LES_hitthemwhereithurts
+		icon = GFX_focus_YUG_rogozarski
+		x = 79
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_constructanaerialacademy }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_tech_bonus = {
+	      name = strategicbomber
+	      bonus = 1.0
+	      uses = 1
+	      category = cat_strategic_bomber
+           } 
+		}
+	}
+
+	#Focus for Elite Scouts
+	focus = {
+		id = LES_elitescouts
+		icon = GFX_goal_generic_more_territorial_claims
+		x = 48
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_specializeourforces }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_tech_bonus = {
+	      name = recon
+	      bonus = 1.0
+	      uses = 1
+	      category = recon_tech
+           } 
+		}
+	}
+
+	#Focus for Enlarge the Artillery Regiments
+	focus = {
+		id = LES_enlargetheartilleryregiments
+		icon = GFX_goal_generic_army_artillery2
+		x = 61
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_frugality }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_equipment_to_stockpile = {
+        type = artillery_equipment_1
+					amount = 500
+					producer = LES
+             }	
+		}
+	}
+
+	#Focus for Adapt to Modern Battlefields
+	focus = {
+		id = LES_adapttomodernbattlefields
+		icon = GFX_goal_generic_position_armies
+		x = 64
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_certainty }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+				category = support_tech
+			}
+
+		}
+	}
+
+	#Focus for Accelerate Further!
+	focus = {
+		id = LES_acceleratefurther
+		icon = GFX_goal_unknown
+		x = 52
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LES_czechlightningforces 
+		}
+		prerequisite = { 
+			focus = LES_firsttankcorps 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = doctrine
+				bonus = 1.0
+				uses = 2
+				category = cat_mobile_warfare
+		}
+	}
+	}
+
+	#Focus for The Hour Has Come...
+	focus = {
+		id = LES_thehourhascome
+		icon = GFX_goal_unknown
+		x = 6
+		y = 0
+		cost = 1
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for New Artillery Projects
+	focus = {
+		id = LES_newartilleryprojects
+		icon = GFX_goal_generic_army_artillery
+		x = 57
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_frugality }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_tech_bonus = {
+	    name = artillery_bonus
+	    bonus = 0.75
+	    uses = 1
+	    category = artillery
+           }
+		}
+	}
+
+	#Focus for Mandatory Artillery Support
+	focus = {
+		id = LES_mandatoryartillerysupport
+		icon = GFX_focus_PRS_10cm_art
+		x = 59
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LES_veteranartillerycrews 
+		}
+		prerequisite = { 
+			focus = LES_antitankguns 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		 add_tech_bonus = {
+	      name = doctrine_bonus
+	      bonus = 1.0
+	      uses = 2
+	      category = cat_superior_firepower
+           }    
+		}
+	}
+
+	#Focus for Develop Тигр
+	focus = {
+		id = LES_develop
+		icon = GFX_goal_tfv_generic_tech_sharing
+		x = 64
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_adapttomodernbattlefields }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		 add_tech_bonus = {
+	      name = encryption_bonus
+	      bonus = 0.5
+	      uses = 1
+	      category = encryption_tech
+           }
+		 add_tech_bonus = {
+	      name = decryption_bonus
+	      bonus = 0.5
+	      uses = 1
+	      category = decryption_tech
+           }    		   
+		}
+		
+	}
+
+	#Focus for Veteran Artillery Crews
+	focus = {
+		id = LES_veteranartillerycrews
+		icon = GFX_focus_PRS_army_of_kaiser
+		x = 61
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_enlargetheartilleryregiments }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_ideas = {
+		LES_Deadly_Artillery
+		}
+		}
+	}
+
+	#Focus for Fiercest Infantry
+	focus = {
+		id = LES_fiercestinfantry
+		icon = GFX_goal_generic_axis_build_infantry
+		x = 68
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_improvedrifles }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_ideas = {
+		LES_Fiercest_Infantry
+		}
+		}
+	}
+
+	#Focus for Unbreakable Weapon
+	focus = {
+		id = LES_unbreakableweapon
+		icon = GFX_goal_generic_build_tank
+		x = 50
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_flexibility }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+
+	#Focus for First Tank Corps
+	focus = {
+		id = LES_firsttankcorps
+		icon = GFX_goal_generic_army_tanks
+		x = 50
+		y = 4
+		cost = 5
+		available = {
+ 		AND = {
+ 			has_tech = basic_light_tank
+			}
+		}
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_unbreakableweapon }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+        add_equipment_to_stockpile = {
+         type = light_tank_equipment_1
+					amount = 250
+					producer = LES
+             }
+		}
+	}
+
+	#Focus for Anti-Tank Guns
+	focus = {
+		id = LES_antitankguns
+		icon = GFX_goal_unknown
+		x = 57
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_newartilleryprojects }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+ 		add_tech_bonus = {
+				name = antitank
+				bonus = 0.75
+				uses = 2
+				category = cat_anti_tank
+				}
+			}
+	}
+
+	#Focus for ...We sing the love of danger...
+	focus = {
+		id = LES_wesingtheloveofdanger
+		icon = GFX_goal_unknown
+		x = 6
+		y = 1
+		cost = 1
+		mutually_exclusive = { focus = LES_warriorsofchrist focus = LES_sonsofperun }
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_thehourhascome }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		hidden_effect = {
+		set_country_flag = path
+		}
+		}
+	}
+
+	#Focus for ...Warriors of Christ...
+	focus = {
+		id = LES_warriorsofchrist
+		icon = GFX_focus_LIT_clericalpelekism
+		x = 9
+		y = 1
+		cost = 1
+		mutually_exclusive = { focus = LES_sonsofperun focus = LES_wesingtheloveofdanger}
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_thehourhascome }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		hidden_effect = {
+		set_country_flag = path
+		}
+		}
+	}
+
+	#Focus for Recruit Ukrainian Sybiraks
+	focus = {
+		id = LES_recruitukrainiansybiraks
+		icon = GFX_goal_unknown
+		x = 68
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_legionsarmy }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_manpower = 15000
+		}
+	}
+
+	#Focus for Ready for War
+	focus = {
+		id = LES_readyforwar
+		icon = GFX_focus_PRS_prepare_for_war
+		x = 73
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LES_fieldscavenging 
+		}
+		prerequisite = { 
+			focus = LES_amosinforeveryman 
+		}
+		prerequisite = { 
+			focus = LES_raiddemocratammunitiondepots 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		remove_ideas = {
+		LES_disorganised_army
+		}
+		}
+	}
+
+	#Focus for Raid Democrat Ammunition Depots
+	focus = {
+		id = LES_raiddemocratammunitiondepots
+		icon = GFX_goal_unknown
+		x = 70
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_thearmoryisempty }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Siberian Commandos
+	focus = {
+		id = LES_siberiancommandos
+		icon = GFX_goal_unknown
+		x = 45
+		y = 3
+		cost = 5
+		available = {
+ 		AND = {
+ 			has_tech = tech_special_forces
+			}
+		}
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LES_elitescouts 
+		}
+		prerequisite = { 
+			focus = LES_trenchexperts 
+		}
+		prerequisite = { 
+			focus = LES_radiooperators 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_ideas = {
+		LES_siberian_commandos
+		}
+		}
+	}
+
+	#Focus for The Armory is Empty...
+	focus = {
+		id = LES_thearmoryisempty
+		icon = GFX_goal_unknown
+		x = 73
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_legionsarmy }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for A Mosin for Every Man
+	focus = {
+		id = LES_amosinforeveryman
+		icon = GFX_goal_unknown
+		x = 73
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_thearmoryisempty }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_equipment_to_stockpile = {
+        type = infantry_equipment_0
+		amount = 1000
+		producer = LES
+		}
+	}
+}
+
+	#Focus for Rebuilding Trans-Siberian Railway
+	focus = {
+		id = LES_rebuildingtranssiberianrailway
+		icon = GFX_goal_unknown
+		x = 23
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_reconnectchelyabinskwithomsk }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Field Scavenging
+	focus = {
+		id = LES_fieldscavenging
+		icon = GFX_goal_unknown
+		x = 76
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_thearmoryisempty }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		 add_tech_bonus = {
+		name = maintenace
+		bonus = 1.0
+		uses = 1
+		category = maintenance_company_tech
+			}
+		}
+	}
+
+	#Focus for The Winds Shall Be Ours
+	focus = {
+		id = LES_thewindsshallbeours
+		icon = GFX_goal_unknown
+		x = 82
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_studymoderndesigns }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_tech_bonus = {
+		name = airdoctrine
+		bonus = 1.0
+		uses = 2
+		category = air_doctrine
+		}
+	}
+}
+
+	#Focus for Spirit Over Body
+	focus = {
+		id = LES_spiritoverbody
+		icon = GFX_goal_unknown
+		x = 41
+		y = 9
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_theethnicissue }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Neutralize Pagan Leaders
+	focus = {
+		id = LES_neutralizepaganleaders
+		icon = GFX_goal_unknown
+		x = 6
+		y = 7
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_thewayofchrist }
+		mutually_exclusive = { focus = LES_persecuteheathens }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Persecute Heathens
+	focus = {
+		id = LES_persecuteheathens
+		icon = GFX_goal_unknown
+		x = 4
+		y = 7
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_thewayofchrist }
+		mutually_exclusive = { focus = LES_neutralizepaganleaders }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Christian Ecumenism Efforts
+	focus = {
+		id = LES_christianecumenismefforts
+		icon = GFX_goal_unknown
+		x = 6
+		y = 8
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_neutralizepaganleaders }
+		mutually_exclusive = { focus = LES_banotherdenominations }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Wandering  Priests
+	focus = {
+		id = LES_wanderingpriests
+		icon = GFX_goal_unknown
+		x = 10
+		y = 10
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_willofgods }
+		mutually_exclusive = { focus = LES_noneedforintermediary }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Ban other denominations
+	focus = {
+		id = LES_banotherdenominations
+		icon = GFX_goal_unknown
+		x = 4
+		y = 8
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_persecuteheathens }
+		mutually_exclusive = { focus = LES_christianecumenismefforts }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for ...Life is Flashing Before My Eyes...
+	focus = {
+		id = LES_lifeisflashingbeforemyeyes
+		icon = GFX_goal_unknown
+		x = 14
+		y = 10
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_thetriumphantroosterssingtheepinicion }
+		mutually_exclusive = { focus = LES_thesoundofdrumsintoxicatesus }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for ...Freeing Oneself From the Past....
+	focus = {
+		id = LES_freeingoneselffromthepast
+		icon = GFX_goal_unknown
+		x = 14
+		y = 12
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LES_brotherlunaticsprepareforthegreatflight 
+			focus = LES_blessedishewhoknowsthehourofhisdeath 
+		}
+		mutually_exclusive = { focus = LES_speedtowardstheextremelyviolentfuture }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for ...Speed Towards the Extremely Violent Future...
+	focus = {
+		id = LES_speedtowardstheextremelyviolentfuture
+		icon = GFX_goal_unknown
+		x = 16
+		y = 12
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LES_brotherlunaticsprepareforthegreatflight 
+			focus = LES_blessedishewhoknowsthehourofhisdeath 
+		}
+		mutually_exclusive = { focus = LES_freeingoneselffromthepast }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for ...Brother Lunatics,Prepare for the Great Flight...
+	focus = {
+		id = LES_brotherlunaticsprepareforthegreatflight
+		icon = GFX_goal_unknown
+		x = 14
+		y = 11
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LES_lifeisflashingbeforemyeyes 
+			focus = LES_thesoundofdrumsintoxicatesus 
+		}
+		mutually_exclusive = { focus = LES_blessedishewhoknowsthehourofhisdeath }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for ...Blessed is He who Knows the Hour of His Death...
+	focus = {
+		id = LES_blessedishewhoknowsthehourofhisdeath
+		icon = GFX_goal_unknown
+		x = 16
+		y = 11
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LES_lifeisflashingbeforemyeyes 
+			focus = LES_thesoundofdrumsintoxicatesus 
+		}
+		mutually_exclusive = { focus = LES_brotherlunaticsprepareforthegreatflight }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Vanguard of Orthodox
+	focus = {
+		id = LES_vanguardoforthodox
+		icon = GFX_goal_unknown
+		x = 3
+		y = 9
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LES_christianecumenismefforts 
+			focus = LES_banotherdenominations 
+		}
+		mutually_exclusive = { focus = LES_vaticanscrusaders }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Vaticans Crusaders
+	focus = {
+		id = LES_vaticanscrusaders
+		icon = GFX_goal_unknown
+		x = 7
+		y = 9
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LES_christianecumenismefforts 
+			focus = LES_banotherdenominations 
+		}
+		mutually_exclusive = { focus = LES_vanguardoforthodox }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Will Of Gods
+	focus = {
+		id = LES_willofgods
+		icon = GFX_goal_unknown
+		x = 11
+		y = 9
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LES_preservechurches 
+			focus = LES_cleansingflames 
+		}
+		mutually_exclusive = { focus = LES_thetriumphantroosterssingtheepinicion }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Declaration of War
+	focus = {
+		id = LES_declarationofwar
+		icon = GFX_goal_unknown
+		x = 14
+		y = 7
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_theabrahamicmenace }
+		mutually_exclusive = { focus = LES_massconversion }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Mass Conversion
+	focus = {
+		id = LES_massconversion
+		icon = GFX_goal_unknown
+		x = 12
+		y = 7
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_theabrahamicmenace }
+		mutually_exclusive = { focus = LES_declarationofwar }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Cleansing Flames
+	focus = {
+		id = LES_cleansingflames
+		icon = GFX_goal_unknown
+		x = 14
+		y = 8
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_declarationofwar }
+		mutually_exclusive = { focus = LES_preservechurches }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Preserve Churches
+	focus = {
+		id = LES_preservechurches
+		icon = GFX_goal_unknown
+		x = 12
+		y = 8
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_massconversion }
+		mutually_exclusive = { focus = LES_cleansingflames }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Devotees of Perun
+	focus = {
+		id = LES_devoteesofperun
+		icon = GFX_goal_unknown
+		x = 10
+		y = 11
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LES_noneedforintermediary 
+			focus = LES_wanderingpriests 
+		}
+		mutually_exclusive = { focus = LES_listentothehighpriest }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Listen to the High Priest
+	focus = {
+		id = LES_listentothehighpriest
+		icon = GFX_goal_unknown
+		x = 12
+		y = 11
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LES_noneedforintermediary 
+			focus = LES_wanderingpriests 
+		}
+		mutually_exclusive = { focus = LES_devoteesofperun }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Way Of Christ
+	focus = {
+		id = LES_thewayofchrist
+		icon = GFX_goal_unknown
+		x = 5
+		y = 6
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_thematterofreligion }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Matter of Religion
+	focus = {
+		id = LES_thematterofreligion
+		icon = GFX_goal_unknown
+		x = 9
+		y = 5
+		cost = 5
+		available = {
+ 			AND = {
+ 			has_country_flag = triumph
+			}
+		}
+
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Abrahamic Menace
+	focus = {
+		id = LES_theabrahamicmenace
+		icon = GFX_goal_unknown
+		x = 13
+		y = 6
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_thematterofreligion }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for ...The Triumphant Roosters Sing the Epinicion...
+	focus = {
+		id = LES_thetriumphantroosterssingtheepinicion
+		icon = GFX_goal_unknown
+		x = 15
+		y = 9
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LES_preservechurches 
+			focus = LES_cleansingflames 
+		}
+		mutually_exclusive = { focus = LES_willofgods }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for No Need for Intermediary
+	focus = {
+		id = LES_noneedforintermediary
+		icon = GFX_goal_unknown
+		x = 12
+		y = 10
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_willofgods }
+		mutually_exclusive = { focus = LES_wanderingpriests }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Attitude to work
+	focus = {
+		id = LES_attitudetowork
+		icon = GFX_goal_unknown
+		x = 25
+		y = 8
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_questionsandanswers }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Ethnic Issue
+	focus = {
+		id = LES_theethnicissue
+		icon = GFX_goal_unknown
+		x = 44
+		y = 8
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_questionsandanswers }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Confederation
+	focus = {
+		id = LES_confederation
+		icon = GFX_goal_unknown
+		x = 31
+		y = 9
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_formofourpanslavicstate }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Unitary Politics
+	focus = {
+		id = LES_unitarypolitics
+		icon = GFX_goal_unknown
+		x = 37
+		y = 9
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_formofourpanslavicstate }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for East and West
+	focus = {
+		id = LES_eastandwest
+		icon = GFX_goal_unknown
+		x = 34
+		y = 9
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_formofourpanslavicstate }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Socialism With Slavic Characteristics
+	focus = {
+		id = LES_socialismwithslaviccharacteristics
+		icon = GFX_focus_PRS_workers_rights
+		x = 22
+		y = 9
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_attitudetowork }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Divine Corporations
+	focus = {
+		id = LES_divinecorporations
+		icon = GFX_focus_LIT_corporateeconomics
+		x = 28
+		y = 9
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_attitudetowork }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Dealing with Mothers
+	focus = {
+		id = LES_dealingwithmothers
+		icon = GFX_goal_unknown
+		x = 54
+		y = 8
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_questionsandanswers }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for ...The Sound Of Drums Intoxicates Us...
+	focus = {
+		id = LES_thesoundofdrumsintoxicatesus
+		icon = GFX_goal_unknown
+		x = 16
+		y = 10
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_thetriumphantroosterssingtheepinicion }
+		mutually_exclusive = { focus = LES_lifeisflashingbeforemyeyes }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Free the Opressed
+	focus = {
+		id = LES_freetheopressed
+		icon = GFX_goal_unknown
+		x = 7
+		y = 12
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_forceagainstgreed }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Gather Support
+	focus = {
+		id = LES_gathersupport
+		icon = GFX_goal_unknown
+		x = 3
+		y = 10
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_vanguardoforthodox }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Patriarchate
+	focus = {
+		id = LES_thepatriarchate
+		icon = GFX_goal_unknown
+		x = 3
+		y = 11
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_gathersupport }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+#End of focuses 
+ }
