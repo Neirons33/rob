@@ -24,20 +24,6 @@ add_political_power = 10
 }
 }
 
-country_event = {
-id = prussia.19
-title = prussia.19.t
-desc = prussia.19.d
-fire_only_once = yes
-is_triggered_only = yes
-hidden = yes
-
-immediate = { country_event = { 
-id = prussia.2
-days = 20
-}
-}
-}
 
 
 country_event = { ###Prepare for Kaiser's Birthday
@@ -78,13 +64,9 @@ id = prussia.3
 title = prussia.3.t
 desc = prussia.3.d
 fire_only_once = yes
+is_triggered_only = yes
 picture = GFX_picture_willhelm_iii
 
-trigger = {
-tag = PRS
-date > 1934.1.27
-has_country_flag = big_birthday
-}
 mean_time_to_happen = { days = 1 }
 
 option = {  ###Kaiser Dies!
@@ -296,6 +278,13 @@ set_politics = {
  elections_allowed = no
 }
 
+add_ideas = {
+PRS_ernst_junger_hog
+PRS_franz_halder_im
+PRS_theodor_duesterberg_fm
+PRS_franz_seldte_em
+PRS_fedor_von_bock_dm
+}
 create_country_leader = {
 	name = "Ernst Jünger"
 	desc = ""
@@ -333,6 +322,13 @@ set_politics = {
 ruling_party = social_democracy
 elections_allowed = yes
 }
+add_ideas = {
+PRS_otto_braun_hog
+PRS_arthur_crispien_im
+PRS_hermann_muller_fm
+PRS_hans_staudinger_em
+PRS_kurt_schumacher_dm
+}
 set_country_flag = spd_victory
 add_popularity = {ideology = social_democracy popularity =0.25}
 add_political_power = 100
@@ -349,6 +345,13 @@ set_politics = {
 ruling_party = social_liberal
 elections_allowed = yes
 }
+add_ideas = {
+PRS_alfred_hugenberg_hog
+PRS_kurt_schumacher_dm
+PRS_erich_kochweser_im
+PRS_kurt_riezler_fm
+PRS_hjalmar_schacht_em
+}
 add_popularity = {ideology = social_liberal popularity =0.25}
 add_political_power = 100
 add_stability = 0.07
@@ -363,6 +366,13 @@ ai_chance = {
 set_politics = {
 ruling_party = conservative
 elections_allowed = yes
+}
+add_ideas = {
+PRS_alfred_hugenberg_hog
+PRS_oskar_hergt_im
+PRS_ulrich_von_hassell_fm
+PRS_johannes_popitz_em
+PRS_gustav_ritter_von_kahr_dm
 }
 add_popularity = {ideology = conservative popularity =0.25}
 add_political_power = 100
@@ -621,7 +631,13 @@ option = { ###Vydūnas takeover
 name = prussia.16.a
 add_political_power = 50
 custom_effect_tooltip = prs_tt_2
-
+add_ideas = {
+PRS_vydunas_hog
+PRS_vilius_gaigalaitis_im
+PRS_viktoras_gailius_fm
+PRS_vilhelms_kuze_em
+PRS_zygfrydas_milius_dm
+}
 hidden_effect = {
 set_cosmetic_tag = PRS_VYD
 create_country_leader = {
@@ -670,7 +686,13 @@ option = { ###Hess takeover
 name = prussia.17.a
 add_political_power = 120
 custom_effect_tooltip = prs_tt_3
-
+add_ideas = {
+PRS_rudolf_hess_hog
+PRS_hans_frank_im
+PRS_reinhard_heydrich_dm
+PRS_richard_walther_darre_em
+PRS_konrad_hallgren_fm
+}
 hidden_effect = {
 create_country_leader = {
 	name = "Rudolf Hess"
@@ -710,7 +732,13 @@ option = { ###Rosenbergs takeover
 name = prussia.18.a
 add_political_power = 120
 custom_effect_tooltip = prs_tt_4
-
+add_ideas = {
+PRS_alfred_rosenberg_hog
+PRS_vydunas_im
+PRS_rudolf_hess_dm
+PRS_richard_walther_darre_em
+PRS_max_erwin_von_scheubner_richter_fm
+}
 hidden_effect = {
 create_country_leader = {
 	name = "Alfred Rosenberg"

@@ -43,7 +43,7 @@ create_country_leader = {
 	desc = ""
 	picture = "RussianStateDuma.tga"
 	expire = "1953.3.1"
-	ideology = conservative
+	ideology = conservative_subtype
 	traits = {
 		#
 	}
@@ -106,7 +106,7 @@ create_country_leader = {
 	desc = ""
 	picture = "NikolaiAlexandrovichBerdyaev.tga"
 	expire = "1953.3.1"
-	ideology = conservative
+	ideology = conservative_subtype
 	traits = {
 		#
 	}
@@ -128,7 +128,7 @@ create_country_leader = {
 	desc = ""
 	picture = "NikolaiAlexandrovichBerdyaev.tga"
 	expire = "1953.3.1"
-	ideology = conservative
+	ideology = conservative_subtype
 	traits = {
 		#
 	}

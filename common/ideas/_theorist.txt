@@ -1,6 +1,45 @@
 ideas = {
  theorist = {
  
+ ###Prussia
+  PRS_heinz_guderian = {
+   allowed = { original_tag = PRS }
+   available = { has_completed_focus = PRS_lightningwar }
+   cost = 200
+   picture = PRS_heinz_guderian
+   research_bonus = { cat_mobile_warfare = 0.10 }
+   modifier = {
+    army_armor_attack_factor = 0.04
+	army_armor_defence_factor = 0.04
+	motorized_attack_factor = 0.06
+	motorized_defence_factor = 0.06
+   }
+  }
+  
+  PRS_walter_model_th = {
+   allowed = { original_tag = PRS }
+   available = { has_completed_focus = PRS_emphasizelargeoperations }
+   cost = 200
+   picture = PRS_walther_model
+   research_bonus = { cat_grand_battle_plan = 0.10 }
+   modifier = {
+	army_infantry_attack_factor = 0.1
+	army_infantry_defence_factor = 0.1
+   }
+  }
+  
+  PRS_ernst_junger = {
+   allowed = { original_tag = PRS }
+   available = { has_completed_focus = PRS_artilleryfocus }
+   cost = 200
+   picture = PRS_ersnt_junger
+   research_bonus = { cat_superior_firepower = 0.10 }
+   modifier = {
+	army_artillery_attack_factor = 0.06
+	army_artillery_attack_factor = 0.06
+   }
+  }
+ 
  ###Germany (Socialist)
   GER_rommel = {
    allowed = { original_tag = GER }

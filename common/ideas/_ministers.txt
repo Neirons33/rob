@@ -55,6 +55,7 @@ ideas = {
  
     PRS_hindenburg_hog = {
      allowed = { original_tag = PRS }
+	 picture = PRS_paul_von_hindenburg
      available = { 
      custom_trigger_tooltip = { 
       tooltip = replace_hog 
@@ -73,6 +74,7 @@ ideas = {
     }
     PRS_otto_braun_hog = {
      allowed = { original_tag = PRS }
+	 picture = PRS_otto_braun
      available = { 
      custom_trigger_tooltip = { 
       tooltip = replace_hog 
@@ -87,6 +89,7 @@ ideas = {
     }
     PRS_alfred_hugenberg_hog = {
      allowed = { original_tag = PRS }
+	 picture = PRS_alfred_hugenberg
      available = { 
      custom_trigger_tooltip = { 
       tooltip = replace_hog 
@@ -102,6 +105,7 @@ ideas = {
 	
     PRS_ernst_junger_hog = {
      allowed = { original_tag = PRS }
+	 picture = PRS_ersnt_junger
      available = { 
      custom_trigger_tooltip = { 
       tooltip = replace_hog 
@@ -117,6 +121,7 @@ ideas = {
 	
     PRS_alfred_rosenberg_hog = {
      allowed = { original_tag = PRS }
+	 picture = PRS_alfred_rosenberg
      available = { 
      custom_trigger_tooltip = { 
       tooltip = replace_hog 
@@ -132,6 +137,7 @@ ideas = {
 	
     PRS_rudolf_hess_hog = {
      allowed = { original_tag = PRS }
+	 picture = PRS_rudolf_hess
      available = { 
      custom_trigger_tooltip = { 
       tooltip = replace_hog 
@@ -147,6 +153,7 @@ ideas = {
 	
     PRS_vydunas_hog = {
      allowed = { original_tag = PRS }
+	 picture = PRS_vydunas
      available = { 
      custom_trigger_tooltip = { 
       tooltip = replace_hog 
@@ -219,6 +226,7 @@ ideas = {
 
   PRS_erich_kochweser_im = {
    allowed = { original_tag = PRS }
+   picture = PRS_erich_kochwesser
    available = { 
    custom_trigger_tooltip = { 
     tooltip = minister_available 
@@ -235,6 +243,7 @@ ideas = {
  
   PRS_arthur_crispien_im = {
    allowed = { original_tag = PRS }
+   picture = PRS_arhtur_crispien
    available = { 
    custom_trigger_tooltip = { 
     tooltip = minister_available 
@@ -251,6 +260,7 @@ ideas = {
  
    PRS_oskar_hergt_im = {
    allowed = { original_tag = PRS }
+   picture = PRS_oskar_hergt
    available = { 
    custom_trigger_tooltip = { 
     tooltip = minister_available 
@@ -267,6 +277,7 @@ ideas = {
    
    PRS_franz_halder_im = {
    allowed = { original_tag = PRS }
+   picture = PRS_franz_halder
    available = { 
    custom_trigger_tooltip = { 
     tooltip = minister_available 
@@ -283,6 +294,7 @@ ideas = {
    
    PRS_vydunas_im = {
    allowed = { original_tag = PRS }
+   picture = PRS_vydunas
    available = { 
    custom_trigger_tooltip = { 
     tooltip = minister_available 
@@ -299,6 +311,7 @@ ideas = {
    
    PRS_hans_frank_im = {
    allowed = { original_tag = PRS }
+   picture = PRS_hans_frank
    available = { 
    custom_trigger_tooltip = { 
     tooltip = minister_available 
@@ -315,6 +328,7 @@ ideas = {
    
    PRS_vilius_gaigalaitis_im = {
    allowed = { original_tag = PRS }
+   picture = PRS_vilious_gaigalaitis
    available = { 
    custom_trigger_tooltip = { 
     tooltip = minister_available 
@@ -389,6 +403,7 @@ ideas = {
 
    PRS_viktoras_gailius_fm = {
    allowed = { original_tag = PRS }
+   picture = PRS_viktoras_gailius
    available = { 
    custom_trigger_tooltip = { 
     tooltip = minister_available 
@@ -405,6 +420,7 @@ ideas = {
 
    PRS_konrad_hallgren_fm = {
    allowed = { original_tag = PRS }
+   picture = PRS_konrad_hallgren
    available = { 
    custom_trigger_tooltip = { 
     tooltip = minister_available 
@@ -421,6 +437,7 @@ ideas = {
  
    PRS_max_erwin_von_scheubner_richter_fm = {
    allowed = { original_tag = PRS }
+   picture = PRS_max_erwin
    available = { 
    custom_trigger_tooltip = { 
     tooltip = minister_available 
@@ -437,6 +454,7 @@ ideas = {
    
    PRS_theodor_duesterberg_fm = {
    allowed = { original_tag = PRS }
+   picture = PRS_theodor_duselrberg
    available = { 
    custom_trigger_tooltip = { 
     tooltip = minister_available 
@@ -456,6 +474,7 @@ ideas = {
   
    PRS_ulrich_von_hassell_fm = {
    allowed = { original_tag = PRS }
+   picture = PRS_ulrich_von_hassel
    available = { 
    custom_trigger_tooltip = { 
     tooltip = minister_available 
@@ -471,6 +490,7 @@ ideas = {
 
    PRS_kurt_riezler_fm = {
    allowed = { original_tag = PRS }
+   picture = PRS_kurt_riezehl
    available = { 
    custom_trigger_tooltip = { 
     tooltip = minister_available 
@@ -486,6 +506,7 @@ ideas = {
   
    PRS_hermann_muller_fm = {
    allowed = { original_tag = PRS }
+   picture = PRS_hermann_muller
    available = { 
    custom_trigger_tooltip = { 
     tooltip = minister_available 
@@ -559,6 +580,7 @@ ideas = {
  
   PRS_hans_staudinger_em = {
    allowed = { original_tag = PRS }
+   picture = PRS_hans_straudiger
    available = { 
    custom_trigger_tooltip = { 
     tooltip = minister_available 
@@ -574,6 +596,7 @@ ideas = {
  
   PRS_hjalmar_schacht_em = {
    allowed = { original_tag = PRS }
+   picture = PRS_hjamar_schatch
    available = { 
    custom_trigger_tooltip = { 
     tooltip = minister_available 
@@ -589,6 +612,7 @@ ideas = {
  
   PRS_johannes_popitz_em = {
    allowed = { original_tag = PRS }
+   picture = PRS_johnes_poptiz
    available = { 
    custom_trigger_tooltip = { 
     tooltip = minister_available 
@@ -604,6 +628,7 @@ ideas = {
   
   PRS_richard_walther_darre_em = {
    allowed = { original_tag = PRS }
+   picture = PRS_richard_darre
    available = { 
    custom_trigger_tooltip = { 
     tooltip = minister_available 
@@ -619,6 +644,7 @@ ideas = {
   
   PRS_vilhelms_kuze_em = {
    allowed = { original_tag = PRS }
+   picture = PRS_vilhelms_kuze
    available = { 
    custom_trigger_tooltip = { 
     tooltip = minister_available 
@@ -634,6 +660,7 @@ ideas = {
   
   PRS_franz_seldte_em = {
    allowed = { original_tag = PRS }
+   picture = PRS_fraz_seltde
    available = { 
    custom_trigger_tooltip = { 
     tooltip = minister_available 
@@ -714,6 +741,7 @@ ideas = {
 
    PRS_kurt_schumacher_dm = {
    allowed = { original_tag = PRS }
+   picture = PRS_kurt_schumacher
    available = { 
    custom_trigger_tooltip = { 
     tooltip = minister_available 
@@ -722,7 +750,7 @@ ideas = {
 	}
 	
    traits = {
-    social_democracy_min
+    social_liberal_min
     defense_minister
     dm_civilian_administator
     }   
@@ -730,6 +758,7 @@ ideas = {
    
    PRS_otto_gessler_dm = {
    allowed = { original_tag = PRS }
+   picture = PRS_otto_gessler
    available = { 
    custom_trigger_tooltip = { 
     tooltip = minister_available 
@@ -746,6 +775,7 @@ ideas = {
   
    PRS_gustav_ritter_von_kahr_dm = {
    allowed = { original_tag = PRS }
+   picture = PRS_gustav_kahr
    available = { 
    custom_trigger_tooltip = { 
     tooltip = minister_available 
@@ -762,6 +792,7 @@ ideas = {
   
    PRS_fedor_von_bock_dm = {
    allowed = { original_tag = PRS }
+   picture = PRS_fedor_von_bocvk
    available = { 
    custom_trigger_tooltip = { 
     tooltip = minister_available 
@@ -782,6 +813,7 @@ ideas = {
    
    PRS_rudolf_hess_dm = {
    allowed = { original_tag = PRS }
+   picture = PRS_rudolf_hess
    available = { 
    custom_trigger_tooltip = { 
     tooltip = minister_available 
@@ -798,6 +830,7 @@ ideas = {
    
    PRS_reinhard_heydrich_dm = {
    allowed = { original_tag = PRS }
+   picture = PRS_reinhard_heydrich
    available = { 
    custom_trigger_tooltip = { 
     tooltip = minister_available 
@@ -814,6 +847,7 @@ ideas = {
    
    PRS_zygfrydas_milius_dm = {
    allowed = { original_tag = PRS }
+   picture = PRS_zygfriedas_milius
    available = { 
    custom_trigger_tooltip = { 
     tooltip = minister_available 

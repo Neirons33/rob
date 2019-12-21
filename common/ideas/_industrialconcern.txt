@@ -1,6 +1,40 @@
 ideas = {
  industrial_concern = {
  
+ ###Prussia
+  PRS_braun = {
+   designer = yes
+   allowed = { original_tag = PRS }
+   picture=  PRS_braun
+   research_bonus = { industry = 0.1 }
+   cost = 150
+   modifier = {
+    consumer_goods_factor =-0.02
+   }
+  }
+  
+  PRS_krupp = {
+   designer = yes
+   allowed = { original_tag = PRS }
+   picture=  PRS_krupp
+   research_bonus = { industry = 0.1 }
+   cost = 150
+   modifier = {
+    industrial_capacity_factory = 0.03
+   }
+  }
+  
+  PRS_claas = {
+   designer = yes
+   allowed = { original_tag = PRS }
+   picture=  PRS_claas
+   research_bonus = { electronics = 0.1 }
+   cost = 150
+   modifier = {
+    production_speed_buildings_factor = 0.04
+   }
+  }
+ 
  ###Germany (Socialist)
   GER_dig = {
    designer = yes

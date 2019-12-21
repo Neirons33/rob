@@ -146,44 +146,45 @@ create_country_leader = {
 	}
 }
 
-create_field_marshal = {
-	name = "Wilhelm III"
-	picture = "wilhelm_3.tga"
-	traits = { politically_connected }
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
 
 create_field_marshal = {
-	name = "Paul von Hindenburg"
+	name = "Wilhelm Ritter von Leeb"
 	picture = "Portrait_GER_Hindenburg_general.tga"
-	traits = { }
-	skill = 5
-	attack_skill = 4
-	defense_skill = 5
+	traits = { trait_reckless infantry_officer offensive_doctrine }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 3
 	planning_skill = 3
-	logistics_skill = 5
+	logistics_skill = 3
+}
+
+create_field_marshal = {
+	name = "Walther von Brauchitsch"
+	picture = "Portrait_GER_Hindenburg_general.tga"
+	traits = { infantry_officer }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
 }
 
 
 create_field_marshal = {
-	name = "August Von Mackensen"
+	name = "Wilhelm Keitel"
 	picture = "august-von-mackensen.tga"
-	traits = { }
-	skill = 6
-	attack_skill = 5
+	traits = { politically_connected }
+	skill = 2
+	attack_skill = 2
 	defense_skill = 2
-	planning_skill = 4
-	logistics_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
 }
 
 create_corps_commander = {
 	name = "Wilhelm Heye"
 	picture = "Portrait_Germany_Wilhelm_Heye.tga"
-	traits = { career_officer }
+	traits = { career_officer old_guard }
 	skill = 3
 	attack_skill = 3
 	defense_skill = 2
@@ -192,12 +193,59 @@ create_corps_commander = {
 }
 
 create_corps_commander = {
-	name = "Pual Von Lettow Vorbeck"
+	name = "Alfred Jodl"
 	picture = "paul-von-lettow-vorbeck"
-	traits = { }
+	traits = { war_hero }
 	skill = 4
 	attack_skill = 4
 	defense_skill = 2
 	planning_skill = 4
 	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Heinz Guderian"
+	picture = "paul-von-lettow-vorbeck"
+	traits = { war_hero trait_reckless trickster }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Friedrich Paulus"
+	picture = "paul-von-lettow-vorbeck"
+	traits = { infantry_leader winter_specialist }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+
+create_navy_leader = {
+	name = "Karl Dönitz"
+	picture = "Portrait_Germany_Karl_Donitz.dds"
+	traits = { navy_career_officer seawolf }
+	skill = 5
+	id = 26
+	attack_skill = 5
+	defense_skill = 3
+	maneuvering_skill = 3
+	coordination_skill = 5
+}
+
+create_navy_leader = {
+	name = "Erich Raeder"
+		picture = "Portrait_Germany_Erich_Raeder.dds"
+	traits = { naval_lineage battleship_adherent }
+	skill = 4
+	id = 27
+	attack_skill = 3
+	defense_skill = 4
+	maneuvering_skill = 3
+	coordination_skill = 3
 }

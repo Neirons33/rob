@@ -3592,6 +3592,260 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_prussian_high_command.dds"
 	}
 	
+	###Designers
+		spriteType = {
+		name = "GFX_idea_PRS_albratos"
+		texturefile = "gfx/interface/ideas/PRS_albratos.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_PRS_braun"
+		texturefile = "gfx/interface/ideas/PRS_braun.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_PRS_claas"
+		texturefile = "gfx/interface/ideas/PRS_claas.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_PRS_daimler"
+		texturefile = "gfx/interface/ideas/PRS_daimler.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_PRS_heinkel"
+		texturefile = "gfx/interface/ideas/PRS_heinkel.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_PRS_kongisberg_arsenal"
+		texturefile = "gfx/interface/ideas/PRS_kongisberg_arsenal.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_PRS_konigsberg_marineacademie"
+		texturefile = "gfx/interface/ideas/PRS_konigsberg_marineacademie.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_PRS_konigsberg_wrften"
+		texturefile = "gfx/interface/ideas/PRS_konigsberg_wrften.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_PRS_krupp"
+		texturefile = "gfx/interface/ideas/PRS_krupp.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_PRS_mauser"
+		texturefile = "gfx/interface/ideas/PRS_mauser.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_PRS_memel_wrfen"
+		texturefile = "gfx/interface/ideas/PRS_memel_wrfen.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_PRS_meserschimt"
+		texturefile = "gfx/interface/ideas/PRS_meserschimt.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_PRS_porsche"
+		texturefile = "gfx/interface/ideas/PRS_porsche.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_PRS_rheinmetal"
+		texturefile = "gfx/interface/ideas/PRS_rheinmetal.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_PRS_walther"
+		texturefile = "gfx/interface/ideas/PRS_walther.tga"
+	}
+
+    ###General Staff
+ 			spriteType = {
+		name = "GFX_idea_PRS_alfred_jodl"
+		texturefile = "gfx/interface/ideas/PRS_alfred_jodl.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_PRS_erich_raeder"
+		texturefile = "gfx/interface/ideas/PRS_erich_raeder.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_PRS_ersnt_junger"
+		texturefile = "gfx/interface/ideas/PRS_ersnt_junger.tga"
+	}
+			spriteType = {
+		name = "GFX_idea_PRS_fedor_von_bocvk"
+		texturefile = "gfx/interface/ideas/PRS_fedor_von_bocvk.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_PRS_georg_von_kuchler"
+		texturefile = "gfx/interface/ideas/PRS_georg_von_kuchler.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_PRS_gerd_von_rundstedt"
+		texturefile = "gfx/interface/ideas/PRS_gerd_von_rundstedt.tga"
+	}
+			spriteType = {
+		name = "GFX_idea_PRS_gunterh_von_kluge"
+		texturefile = "gfx/interface/ideas/PRS_gunterh_von_kluge.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_PRS_heinrich_danckelmann"
+		texturefile = "gfx/interface/ideas/PRS_heinrich_danckelmann.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_PRS_heinz_guderian"
+		texturefile = "gfx/interface/ideas/PRS_heinz_guderian.tga"
+	}
+			spriteType = {
+		name = "GFX_idea_PRS_herman_von_der_lieht"
+		texturefile = "gfx/interface/ideas/PRS_herman_von_der_lieht.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_PRS_karl_bodenschatz"
+		texturefile = "gfx/interface/ideas/PRS_karl_bodenschatz.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_PRS_karl_donitz"
+		texturefile = "gfx/interface/ideas/PRS_karl_donitz.tga"
+	}
+			spriteType = {
+		name = "GFX_idea_PRS_walther_model"
+		texturefile = "gfx/interface/ideas/PRS_walther_model.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_PRS_walther_nehring"
+		texturefile = "gfx/interface/ideas/PRS_walther_nehring.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_PRS_willhelm_keitel"
+		texturefile = "gfx/interface/ideas/PRS_willhelm_keitel.tga"
+	}
+			spriteType = {
+		name = "GFX_idea_PRS_willhelm_ritter_von_leeb"
+		texturefile = "gfx/interface/ideas/PRS_willhelm_ritter_von_leeb.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_PRS_willy_langheit"
+		texturefile = "gfx/interface/ideas/PRS_willy_langheit.tga"
+	}
+	
+	###Ministers 
+		spriteType = {
+		name = "GFX_idea_PRS_zygfriedas_milius"
+		texturefile = "gfx/interface/ideas/PRS_zygfriedas_milius.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_PRS_vilious_gaigalaitis"
+		texturefile = "gfx/interface/ideas/PRS_vilious_gaigalaitis.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_PRS_vilhelms_kuze"
+		texturefile = "gfx/interface/ideas/PRS_vilhelms_kuze.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_PRS_viktoras_gailius"
+		texturefile = "gfx/interface/ideas/PRS_viktoras_gailius.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_PRS_ulrich_von_hassel"
+		texturefile = "gfx/interface/ideas/PRS_ulrich_von_hassel.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_PRS_theodor_duselrberg"
+		texturefile = "gfx/interface/ideas/PRS_theodor_duselrberg.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_PRS_rudolf_hess"
+		texturefile = "gfx/interface/ideas/PRS_rudolf_hess.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_PRS_richard_darre"
+		texturefile = "gfx/interface/ideas/PRS_richard_darre.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_PRS_reinhard_heydrich"
+		texturefile = "gfx/interface/ideas/PRS_reinhard_heydrich.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_PRS_paul_von_hindenburg"
+		texturefile = "gfx/interface/ideas/PRS_paul_von_hindenburg.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_PRS_otto_gessler"
+		texturefile = "gfx/interface/ideas/PRS_otto_gessler.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_PRS_otto_braun"
+		texturefile = "gfx/interface/ideas/PRS_otto_braun.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_PRS_oskar_hergt"
+		texturefile = "gfx/interface/ideas/PRS_oskar_hergt.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_PRS_max_erwin"
+		texturefile = "gfx/interface/ideas/PRS_max_erwin.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_PRS_kurt_schumacher"
+		texturefile = "gfx/interface/ideas/PRS_kurt_schumacher.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_PRS_kurt_riezehl"
+		texturefile = "gfx/interface/ideas/PRS_kurt_riezehl.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_PRS_konrad_hallgren"
+		texturefile = "gfx/interface/ideas/PRS_konrad_hallgren.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_PRS_johnes_poptiz"
+		texturefile = "gfx/interface/ideas/PRS_johnes_poptiz.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_PRS_hjamar_schatch"
+		texturefile = "gfx/interface/ideas/PRS_hjamar_schatch.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_PRS_hermann_muller"
+		texturefile = "gfx/interface/ideas/PRS_hermann_muller.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_PRS_hans_straudiger"
+		texturefile = "gfx/interface/ideas/PRS_hans_straudiger.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_PRS_hans_frank"
+		texturefile = "gfx/interface/ideas/PRS_hans_frank.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_PRS_gustav_kahr"
+		texturefile = "gfx/interface/ideas/PRS_gustav_kahr.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_PRS_fraz_seltde"
+		texturefile = "gfx/interface/ideas/PRS_fraz_seltde.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_PRS_franz_halder"
+		texturefile = "gfx/interface/ideas/PRS_franz_halder.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_PRS_erich_kochwesser"
+		texturefile = "gfx/interface/ideas/PRS_erich_kochwesser.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_PRS_arhtur_crispien"
+		texturefile = "gfx/interface/ideas/PRS_arhtur_crispien.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_PRS_alfred_rosenberg"
+		texturefile = "gfx/interface/ideas/PRS_alfred_rosenberg.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_PRS_alfred_hugenberg"
+		texturefile = "gfx/interface/ideas/PRS_alfred_hugenberg.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_PRS_vydunas"
+		texturefile = "gfx/interface/ideas/PRS_vydunas.tga"
+	}
+	
 	###Rhineland
 		spriteType = {
 		name = "GFX_idea_rhur_economic_wonderland"

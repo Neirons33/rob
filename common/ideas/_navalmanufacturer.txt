@@ -1,6 +1,44 @@
 ideas = {
  naval_manufacturer = {
  
+ ###Prussia
+  PRS_konigsberger_werften = {
+   designer = yes
+   allowed = { original_tag = PRS }
+   picture = PRS_konigsberg_wrften
+   research_bonus = { naval_equipment = 0.1 }
+   cost = 150
+   modifier = {
+    navy_capital_ship_attack_factor = 0.04
+	navy_capital_ship_defence_factor = 0.04
+   }
+  }
+  
+  PRS_konigsberg_marineacademie = {
+   designer = yes
+   allowed = { original_tag = PRS }
+   picture = PRS_konigsberg_marineacademie
+   research_bonus = { naval_equipment = 0.1 }
+   cost = 150
+   modifier = {
+    navy_screen_attack_factor = 0.06
+	navy_screen_defence_factor = 0.06
+   }
+  }
+  
+  PRS_memel_weften = {
+   designer = yes
+   allowed = { original_tag = PRS }
+   picture = PRS_memel_wrfen
+   research_bonus = { naval_equipment = 0.1 }
+   cost = 150
+   modifier = {
+    navy_submarine_attack_factor = 0.1
+	navy_submarine_defence_factor = 0.1
+   }
+  }
+
+ 
  ###Germany (Socialist) 
   GER_hamburg_schiffen = {
    designer = yes
