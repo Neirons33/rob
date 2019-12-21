@@ -1,0 +1,178 @@
+####################
+###Legions Events
+####################
+
+add_namespace = legion
+
+###Starting Event
+country_event = { 
+id = legion.0
+title = legion.0.t
+desc = legion.0.d
+fire_only_once = yes
+
+trigger = {
+ tag = LES
+ date > 1934.1.1
+}
+
+option = {
+ name = legion.0.a
+}
+}
+
+###Picks Path
+country_event = { 
+id = legion.1
+title = legion.1.t
+desc = legion.1.d
+fire_only_once = yes
+is_triggered_only = yes
+
+option = {
+ name = legion.1.a
+ set_country_flag = christ
+ hidden_effect = { country_event = { id = legion.2 days = 14 }}
+}
+option = {
+ name = legion.1.b
+ set_country_flag = pagan
+ hidden_effect = { country_event = { id = legion.2 days = 14 }}
+}
+option = {
+ name = legion.1.c
+ set_country_flag = poets
+ hidden_effect = { country_event = { id = legion.2 days = 14 }}
+}
+}
+
+###invitation to butchers nest
+country_event = { 
+id = legion.2
+title = legion.2.t
+desc = legion.2.d
+fire_only_once = yes
+is_triggered_only = yes
+
+option = {
+ name = legion.2.a
+ hidden_effect = { country_event = { id = legion.3 days = 3 }}
+}
+}
+
+
+###nigga knows shit might happen
+country_event = { 
+id = legion.3
+title = legion.3.t
+desc = legion.3.d
+fire_only_once = yes
+is_triggered_only = yes
+
+option = {
+ name = legion.3.a
+ hidden_effect = { country_event = { id = legion.4 days = 1 }}
+}
+option = {
+ name = legion.3.b
+ hidden_effect = { country_event = { id = legion.6 days = 5 }}
+}
+}
+
+###he chads up and goes anyway
+country_event = { 
+id = legion.4
+title = legion.4.t
+desc = legion.4.d
+fire_only_once = yes
+is_triggered_only = yes
+
+option = {
+ name = legion.4.a
+ hidden_effect = { country_event = { id = legion.5 days = 1 }}
+}
+}
+
+### Nigga = Dead
+country_event = { 
+id = legion.5
+title = legion.5.t
+desc = legion.5.d
+fire_only_once = yes
+is_triggered_only = yes
+
+option = {
+ name = legion.5.a
+}
+}
+
+### Nigga knew shit was up
+country_event = { 
+id = legion.6
+title = legion.6.t
+desc = legion.6.d
+fire_only_once = yes
+is_triggered_only = yes
+
+option = {
+ name = legion.6.a
+ set_country_flag = LES_survives
+}
+}
+
+
+
+
+### Christian events
+
+
+### do we legit orthodox
+country_event = { 
+id = legion.7
+title = legion.7.t
+desc = legion.7.d
+fire_only_once = yes
+is_triggered_only = yes
+
+option = {
+ name = legion.7.a
+}
+option = {
+ name = legion.7.b
+}
+}
+
+###niggas forgot to say what catholic denomination they follow xD
+country_event = { 
+id = legion.8
+title = legion.8.t
+desc = legion.8.d
+fire_only_once = yes
+is_triggered_only = yes
+
+option = {
+ name = legion.8.a
+}
+option = {
+ name = legion.8.b
+}
+}
+
+###JQ
+country_event = { 
+id = legion.9
+title = legion.9.t
+desc = legion.9.d
+fire_only_once = yes
+is_triggered_only = yes
+
+option = {
+ name = legion.9.a
+}
+option = {
+ name = legion.9.b
+}
+option = {
+ name = legion.9.c
+}
+}

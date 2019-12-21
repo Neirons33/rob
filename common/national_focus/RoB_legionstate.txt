@@ -295,6 +295,11 @@ focus_tree = {
 		x = 3
 		y = 1
 		cost = 1
+		available = {
+ 			AND = {
+ 			has_country_flag = pagan
+			}
+		}
 		mutually_exclusive = { focus = LES_warriorsofchrist focus = LES_wesingtheloveofdanger}
 		available_if_capitulated = yes
 		prerequisite = { focus = LES_thehourhascome }
@@ -320,6 +325,12 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = LES_Vanguard_of_Orthodox_2
+    	add_idea = LES_Vanguard_of_Orthodox_3
+		}
+		}
 	}
 
 	#Focus for Destroy Atheists
@@ -334,6 +345,10 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		add_manpower = -13091
+		add_stability = 0.07
+		}
 	}
 
 	#Focus for The Jewish Question
@@ -347,6 +362,9 @@ focus_tree = {
 		prerequisite = { focus = LES_destroyatheists }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		LES = { country_event = { id = legion.9 days = 1 } }
 		}
 	}
 
@@ -364,6 +382,10 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		add_manpower = -16302
+		add_stability = 0.04
 		}
 	}
 
@@ -415,6 +437,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		add_political_power = 50
+		}
 	}
 
 	#Focus for Questions and Answers
@@ -433,6 +458,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		add_political_power = 150
+		}
 	}
 
 	#Focus for Realizing Our Mission
@@ -447,6 +475,12 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		swap_ideas = {
+    	remove_idea = LES_Vaticans_Crusaders
+    	add_idea = LES_Vaticans_Crusaders_2
+		}
+		}
 	}
 
 	#Focus for Force Against Greed
@@ -460,6 +494,12 @@ focus_tree = {
 		prerequisite = { focus = LES_realizingourmission }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		swap_ideas = {
+    	remove_idea = LES_Vaticans_Crusaders_2
+    	add_idea = LES_Vaticans_Crusaders_3
+		}
 		}
 	}
 
@@ -1595,6 +1635,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		LES = { country_event = { id = legion.1 days = 1 } }
+		}
 	}
 
 	#Focus for New Artillery Projects
@@ -1785,6 +1828,11 @@ focus_tree = {
 		x = 6
 		y = 1
 		cost = 1
+		available = {
+ 			AND = {
+ 			has_country_flag = poets
+			}
+		}
 		mutually_exclusive = { focus = LES_warriorsofchrist focus = LES_sonsofperun }
 		available_if_capitulated = yes
 		prerequisite = { focus = LES_thehourhascome }
@@ -1805,6 +1853,11 @@ focus_tree = {
 		x = 9
 		y = 1
 		cost = 1
+		available = {
+ 			AND = {
+ 			has_country_flag = christ
+			}
+		}
 		mutually_exclusive = { focus = LES_sonsofperun focus = LES_wesingtheloveofdanger}
 		available_if_capitulated = yes
 		prerequisite = { focus = LES_thehourhascome }
@@ -2028,6 +2081,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		add_stability =  -0.03
+		}
 	}
 
 	#Focus for Persecute Heathens
@@ -2043,6 +2099,10 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		add_manpower = -17132
+		add_stability = -0.04
+		}
 	}
 
 	#Focus for Christian Ecumenism Efforts
@@ -2057,6 +2117,9 @@ focus_tree = {
 		mutually_exclusive = { focus = LES_banotherdenominations }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.06
 		}
 	}
 
@@ -2087,6 +2150,9 @@ focus_tree = {
 		mutually_exclusive = { focus = LES_christianecumenismefforts }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		add_stability = -0.1
 		}
 	}
 
@@ -2193,6 +2259,11 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		add_ideas = {
+		LES_Vanguard_of_Orthodox
+		}
+		}
 	}
 
 	#Focus for Vaticans Crusaders
@@ -2210,6 +2281,11 @@ focus_tree = {
 		mutually_exclusive = { focus = LES_vanguardoforthodox }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		add_ideas = {
+		LES_Vaticans_Crusaders
+		}
 		}
 	}
 
@@ -2244,6 +2320,14 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		403 = { add_manpower = -39210}
+		571 = { add_manpower = -27145 }
+		572 = { add_manpower = -53213 }
+		653 = { add_manpower = -46718 }
+		1231 = { add_manpower = -11943 }
+		}
+		
 	}
 
 	#Focus for Mass Conversion
@@ -2258,6 +2342,9 @@ focus_tree = {
 		mutually_exclusive = { focus = LES_declarationofwar }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.06
 		}
 	}
 
@@ -2274,6 +2361,10 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		add_manpower = -672
+		add_stability = -0.07
+		}
 	}
 
 	#Focus for Preserve Churches
@@ -2288,6 +2379,9 @@ focus_tree = {
 		mutually_exclusive = { focus = LES_cleansingflames }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.03
 		}
 	}
 
@@ -2339,6 +2433,10 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		add_stability = 0.03
+		LES = { country_event = { id = legion.8 days = 1 } }
+		}
 	}
 
 	#Focus for The Matter of Religion
@@ -2358,6 +2456,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		add_stability = 0.04
+		}
 	}
 
 	#Focus for The Abrahamic Menace
@@ -2371,6 +2472,9 @@ focus_tree = {
 		prerequisite = { focus = LES_thematterofreligion }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		add_stability = -0.05
 		}
 	}
 
@@ -2419,6 +2523,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		add_stability  = 0.03
+		}
 	}
 
 	#Focus for The Ethnic Issue
@@ -2432,6 +2539,9 @@ focus_tree = {
 		prerequisite = { focus = LES_questionsandanswers }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.03
 		}
 	}
 
@@ -2517,6 +2627,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		add_stability = -0.03
+		}
 	}
 
 	#Focus for ...The Sound Of Drums Intoxicates Us...
@@ -2546,6 +2659,12 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		swap_ideas = {
+    	remove_idea = LES_Vaticans_Crusaders_3
+    	add_idea = LES_Vaticans_Crusaders_4
+		}
+		}
 	}
 
 	#Focus for Gather Support
@@ -2560,6 +2679,12 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		swap_ideas = {
+    	remove_idea = LES_Vanguard_of_Orthodox
+    	add_idea = LES_Vanguard_of_Orthodox_2
+		}
+		}
 	}
 
 	#Focus for The Patriarchate
@@ -2573,6 +2698,9 @@ focus_tree = {
 		prerequisite = { focus = LES_gathersupport }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		LES = { country_event = { id = legion.7 days = 1 } }
 		}
 	}
 
