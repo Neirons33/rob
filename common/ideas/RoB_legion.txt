@@ -35,7 +35,6 @@ country = {
 	 modifier = {
 	army_attack_factor = 0.1
 	training_time_factor =-0.15
-	experience_gain_army = 0.05
 	}
 }
    LES_Old_Guard = {
@@ -49,8 +48,7 @@ country = {
      removal_cost = -1
 	 modifier = {
 	army_defence_factor = 0.1
-	max_planning = 0.15
-	planning_speed = 0.10
+	max_planning = 0.10
 	}
 }
    LES_Fastest_Army = {
@@ -65,6 +63,8 @@ country = {
 	 modifier = {
 	motorized_attack_factor = 0.1
 	motorized_defence_factor = 0.1
+  mechanized_attack_factor = 0.1
+  mechanized_defence_factor = 0.1
 	army_speed_factor = 0.10
 	}
 }
@@ -78,8 +78,8 @@ country = {
 			}
      removal_cost = -1
 	 modifier = {
-	 army_artillery_attack_factor = 0.15
-	 army_artillery_defence_factor = 0.10
+	 army_artillery_attack_factor = 0.10
+	 army_artillery_defence_factor = 0.15
 	}
 }
 LES_Fiercest_Infantry = {
@@ -94,7 +94,7 @@ LES_Fiercest_Infantry = {
 	 modifier = {
 	 army_infantry_attack_factor = 0.1
 	 army_infantry_defence_factor = 0.1
-	 no_supply_grace = 48
+	 no_supply_grace = 24
 	}
 }
    LES_road_guardposts = {
@@ -121,7 +121,6 @@ LES_Fiercest_Infantry = {
 			}
      removal_cost = -1
 	 modifier = {
-	 acclimatization_cold_climate_gain_factor = 0.25
 	 special_forces_attack_factor = 0.15
 	 special_forces_defence_factor = 0.15
 	 }
@@ -137,8 +136,8 @@ LES_Fiercest_Infantry = {
 			}
      removal_cost = -1
 	 modifier = {
-	stability_weekly = -0.005
-    war_support_weekly = -0.005
+	stability_weekly = -0.0025
+    war_support_weekly = -0.0025
     political_power_gain = -0.25
 	 }
 
@@ -169,7 +168,7 @@ LES_Fiercest_Infantry = {
 			}
      removal_cost = -1
 	 modifier = {
-    political_power_gain = 0.2
+    political_power_gain = 0.10
 	 }
 
 }
@@ -214,7 +213,7 @@ LES_Fiercest_Infantry = {
 	 modifier = {
      conscription = 0.015
      send_volunteer_size = 4
-     army_morale_factor = 0.1
+     army_morale_factor = 0.15
 	 }
 
 }
@@ -230,7 +229,7 @@ LES_Fiercest_Infantry = {
 	 modifier = {
      conscription = 0.015
      send_volunteer_size = 4
-     army_morale_factor = 0.1
+     army_morale_factor = 0.15
      justify_war_goal_time = -0.20
 	 }
 
@@ -280,7 +279,347 @@ LES_Fiercest_Infantry = {
      surrender_limit = 0.3
 	 }
 }
-
+   LES_warrior_poets = {
+   picture = GFX_idea_minority_troubles 
+   allowed = {
+       always = no
+     }
+   allowed_civil_war = {
+        always = no
+      }
+     removal_cost = -1
+   modifier = {
+  conscription = 0.0125
+   }
+}
+   LES_warrior_poets_2_a = {
+   picture = GFX_idea_minority_troubles 
+   allowed = {
+       always = no
+     }
+   allowed_civil_war = {
+        always = no
+      }
+     removal_cost = -1
+   modifier = {
+  conscription = 0.0125
+  army_leader_start_attack_level= 1
+   }
+}
+   LES_warrior_poets_2_b = {
+   picture = GFX_idea_minority_troubles 
+   allowed = {
+       always = no
+     }
+   allowed_civil_war = {
+        always = no
+      }
+     removal_cost = -1
+   modifier = {
+  conscription = 0.0125
+  army_morale_factor = 0.15
+   }
+}
+   LES_warrior_poets_3_a_a = {
+   picture = GFX_idea_minority_troubles 
+   allowed = {
+       always = no
+     }
+   allowed_civil_war = {
+        always = no
+      }
+     removal_cost = -1
+   modifier = {
+  conscription = 0.0125
+  army_leader_start_attack_level= 1
+  research_speed_factor = 0.05
+   }
+}
+   LES_warrior_poets_3_a_b = {
+   picture = GFX_idea_minority_troubles 
+   allowed = {
+       always = no
+     }
+   allowed_civil_war = {
+        always = no
+      }
+     removal_cost = -1
+   modifier = {
+  conscription = 0.0125
+  army_morale_factor = 0.15
+  research_speed_factor = 0.05
+   }
+}
+   LES_warrior_poets_3_b_a = {
+   picture = GFX_idea_minority_troubles 
+   allowed = {
+       always = no
+     }
+   allowed_civil_war = {
+        always = no
+      }
+     removal_cost = -1
+   modifier = {
+  conscription = 0.0125
+  army_leader_start_attack_level= 1
+  army_speed_factor = 0.10
+   }
+}
+   LES_warrior_poets_3_b_b = {
+   picture = GFX_idea_minority_troubles 
+   allowed = {
+       always = no
+     }
+   allowed_civil_war = {
+        always = no
+      }
+     removal_cost = -1
+   modifier = {
+  conscription = 0.0125
+  army_morale_factor = 0.15
+  army_speed_factor = 0.10
+   }
+}
+   LES_will_of_gods = {
+   picture = GFX_idea_minority_troubles 
+   allowed = {
+       always = no
+     }
+   allowed_civil_war = {
+        always = no
+      }
+     removal_cost = -1
+   modifier = {
+   conscription = 0.0125
+   army_org = 3
+   }
+}
+   LES_will_of_gods_2_a = {
+   picture = GFX_idea_minority_troubles 
+   allowed = {
+       always = no
+     }
+   allowed_civil_war = {
+        always = no
+      }
+     removal_cost = -1
+   modifier = {
+   conscription = 0.0125
+   army_org = 3
+   enemy_partisan_effect = -0.25
+   }
+}
+   LES_will_of_gods_2_b = {
+   picture = GFX_idea_minority_troubles 
+   allowed = {
+       always = no
+     }
+   allowed_civil_war = {
+        always = no
+      }
+     removal_cost = -1
+   modifier = {
+   conscription = 0.0125
+   army_org = 3
+   partisan_effect = 0.25
+   }
+}
+   LES_will_of_gods_3_a_a = {
+   picture = GFX_idea_minority_troubles 
+   allowed = {
+       always = no
+     }
+   allowed_civil_war = {
+        always = no
+      }
+     removal_cost = -1
+   modifier = {
+   conscription = 0.0125
+   army_org = 3
+   enemy_partisan_effect = -0.25
+   political_power_factor = 0.5
+   }
+}
+   LES_will_of_gods_3_a_b = {
+   picture = GFX_idea_minority_troubles 
+   allowed = {
+       always = no
+     }
+   allowed_civil_war = {
+        always = no
+      }
+     removal_cost = -1
+   modifier = {
+   conscription = 0.0125
+   army_org = 3
+   partisan_effect = 0.25
+   political_power_factor = 0.5
+   }
+}
+   LES_will_of_gods_3_b_a = {
+   picture = GFX_idea_minority_troubles 
+   allowed = {
+       always = no
+     }
+   allowed_civil_war = {
+        always = no
+      }
+     removal_cost = -1
+   modifier = {
+   conscription = 0.0125
+   army_org = 3
+   enemy_partisan_effect = -0.25
+   surrender_limit = 0.3
+   }
+}
+   LES_will_of_gods_3_b_b = {
+   picture = GFX_idea_minority_troubles 
+   allowed = {
+       always = no
+     }
+   allowed_civil_war = {
+        always = no
+      }
+     removal_cost = -1
+   modifier = {
+   conscription = 0.0125
+   army_org = 3
+   partisan_effect = 0.25
+   surrender_limit = 0.3
+   }
+}
+   LES_corporations = {
+   picture = GFX_idea_minority_troubles 
+   allowed = {
+       always = no
+     }
+   allowed_civil_war = {
+        always = no
+      }
+     removal_cost = -1
+   modifier = {
+   production_speed_buildings_factor = 0.10
+   production_factory_efficiency_gain_factor = 0.1
+   }
+}
+   LES_socialism = {
+   picture = GFX_idea_minority_troubles 
+   allowed = {
+       always = no
+     }
+   allowed_civil_war = {
+        always = no
+      }
+     removal_cost = -1
+   modifier = {
+   production_speed_buildings_factor = 0.125
+   industrial_capacity_factory = 0.05
+   }
+}
+   LES_middle_ages = {
+   picture = GFX_idea_minority_troubles 
+   allowed = {
+       always = no
+     }
+   allowed_civil_war = {
+        always = no
+      }
+     removal_cost = -1
+   modifier = {
+    consumer_goods_factor = 0.04
+    production_speed_infrastructure_factor = 0.1
+    production_factory_max_efficiency_factor = 0.05
+    industrial_capacity_factory = 0.04
+   }
+}
+   LES_eugenics = {
+   picture = GFX_idea_minority_troubles 
+   allowed = {
+       always = no
+     }
+   allowed_civil_war = {
+        always = no
+      }
+     removal_cost = -1
+   modifier = {
+   army_core_attack_factor = 0.025
+   army_core_defence_factor = 0.025
+   industrial_capacity_factory = 0.025
+   production_factory_max_efficiency_factor = 0.025
+   research_speed_factor = 0.05
+   MONTHLY_POPULATION = -0.5
+   training_time_factor = 0.15
+   }
+}
+   LES_reconstructxD = {
+   picture = GFX_idea_minority_troubles 
+   allowed = {
+       always = no
+     }
+   allowed_civil_war = {
+        always = no
+      }
+     removal_cost = -1
+   modifier = {
+   non_core_manpower = 0.10
+   MONTHLY_POPULATION = 0.2
+   }
+}
+   LES_spiritfirst = {
+   picture = GFX_idea_minority_troubles 
+   allowed = {
+       always = no
+     }
+   allowed_civil_war = {
+        always = no
+      }
+     removal_cost = -1
+   modifier = {
+   industrial_capacity_factory = 0.1
+   }
+}
+   LES_femoidsliberated = {
+   picture = GFX_idea_minority_troubles 
+   allowed = {
+       always = no
+     }
+   allowed_civil_war = {
+        always = no
+      }
+     removal_cost = -1
+   modifier = {
+   MONTHLY_POPULATION = -0.25
+   consumer_goods_factor = 0.05
+   industrial_capacity_factory = 0.15
+   }
+}
+   LES_guardiansofyouth = {
+   picture = GFX_idea_minority_troubles 
+   allowed = {
+       always = no
+     }
+   allowed_civil_war = {
+        always = no
+      }
+     removal_cost = -1
+   modifier = {
+   drift_defence_factor = 0.5
+   }
+}
+   LES_femoidssubmit = {
+   picture = GFX_idea_minority_troubles 
+   allowed = {
+       always = no
+     }
+   allowed_civil_war = {
+        always = no
+      }
+     removal_cost = -1
+   modifier = {
+   MONTHLY_POPULATION = 0.25
+   stability_weekly = 0.001
+   }
+}
 	LES_Risk_of_Famine = {
    picture = GFX_idea_minority_troubles	
    allowed = {
@@ -313,6 +652,37 @@ LES_Fiercest_Infantry = {
    }
 
 }
+   LES_buy_horses = {
+   picture = GFX_idea_minority_troubles 
+   allowed = {
+       always = no
+     }
+   allowed_civil_war = {
+        always = no
+      }
+     removal_cost = -1
+   modifier = {
+    
+  consumer_goods_factor = 0.20
+   }
+
+}
+   LES_buy_cheap_horses = {
+   picture = GFX_idea_minority_troubles 
+   allowed = {
+       always = no
+     }
+   allowed_civil_war = {
+        always = no
+      }
+     removal_cost = -1
+   modifier = {
+    
+  consumer_goods_factor = 0.10
+   }
+
+}
+
  LES_Engineers = {
    picture = GFX_idea_minority_troubles	
    allowed = {

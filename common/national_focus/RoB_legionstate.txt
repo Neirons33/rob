@@ -52,10 +52,16 @@ focus_tree = {
 		x = 57
 		y = 9
 		cost = 5
+		mutually_exclusive = { focus = LES_liberationofwomen focus = LES_guardiansofyouth }
 		available_if_capitulated = yes
 		prerequisite = { focus = LES_dealingwithmothers }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		add_ideas  ={
+		LES_femoidssubmit
+		}
 		}
 	}
 
@@ -66,10 +72,17 @@ focus_tree = {
 		x = 54
 		y = 9
 		cost = 5
+		mutually_exclusive = { focus = LES_liberationofwomen focus = LES_patriarchaltraditions }
 		available_if_capitulated = yes
 		prerequisite = { focus = LES_dealingwithmothers }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.05
+		add_ideas  ={
+		LES_guardiansofyouth
+		}
 		}
 	}
 
@@ -80,10 +93,17 @@ focus_tree = {
 		x = 51
 		y = 9
 		cost = 5
+		mutually_exclusive = { focus = LES_patriarchaltraditions focus = LES_guardiansofyouth }
 		available_if_capitulated = yes
 		prerequisite = { focus = LES_dealingwithmothers }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.05
+		add_ideas  ={
+		LES_femoidsliberated
+		}
 		}
 	}
 
@@ -94,10 +114,16 @@ focus_tree = {
 		x = 25
 		y = 9
 		cost = 5
+		mutually_exclusive = { focus = LES_socialismwithslaviccharacteristics focus = LES_divinecorporations }
 		available_if_capitulated = yes
 		prerequisite = { focus = LES_attitudetowork }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		add_ideas = {
+		LES_middle_ages
+		}
 		}
 	}
 
@@ -134,6 +160,9 @@ focus_tree = {
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		add_political_power = 50
 		}
 	}
 
@@ -283,8 +312,24 @@ focus_tree = {
 		y = 11
 		cost = 5
 		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LES_womenpacified 
+		}
+		prerequisite = { 
+			focus = LES_thematterisresolved
+		}
+		prerequisite = { 
+			focus = LES_thecourseisset
+		}
+		prerequisite = { 
+			focus = LES_beginpreperations
+		}
+		
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		add_political_power = 200
 		}
 	}
 
@@ -405,6 +450,30 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		if = {
+				limit = {
+					AND = {
+					has_idea = LES_will_of_gods_2_a
+					}
+				}
+		swap_ideas = {
+		remove_idea = LES_will_of_gods_2_a
+		add_idea = LES_will_of_gods_3_a_a
+		}
+		}
+		if = {
+				limit = {
+					AND = {
+					has_idea = LES_will_of_gods_2_b
+					}
+				}
+		swap_ideas = {
+		remove_idea = LES_will_of_gods_2_b
+		add_idea = LES_will_of_gods_3_a_b
+		}
+		}
+	}
 	}
 
 	#Focus for Veneration
@@ -423,6 +492,30 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		if = {
+				limit = {
+					AND = {
+					has_idea = LES_will_of_gods_2_a
+					}
+				}
+		swap_ideas = {
+		remove_idea = LES_will_of_gods_2_a
+		add_idea = LES_will_of_gods_3_b_a
+		}
+		}
+		if = {
+				limit = {
+					AND = {
+					has_idea = LES_will_of_gods_2_b
+					}
+				}
+		swap_ideas = {
+		remove_idea = LES_will_of_gods_2_b
+		add_idea = LES_will_of_gods_3_b_b
+		}
+		}
+	}
 	}
 
 	#Focus for Form of Our Pan Slavic State
@@ -438,7 +531,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		add_political_power = 50
+		add_political_power = -50
 		}
 	}
 
@@ -510,10 +603,16 @@ focus_tree = {
 		x = 44
 		y = 9
 		cost = 5
+		mutually_exclusive = { focus = LES_racialeugenics focus = LES_spiritoverbody }
 		available_if_capitulated = yes
 		prerequisite = { focus = LES_theethnicissue }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		add_ideas ={
+		LES_reconstructxD
+		}
 		}
 	}
 
@@ -524,10 +623,16 @@ focus_tree = {
 		x = 47
 		y = 9
 		cost = 5
+		mutually_exclusive = { focus = LES_spiritoverbody focus = LES_reshapingofaconstruct }
 		available_if_capitulated = yes
 		prerequisite = { focus = LES_theethnicissue }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		add_ideas = {
+		LES_eugenics
+		}
 		}
 	}
 
@@ -825,6 +930,9 @@ focus_tree = {
 		prerequisite = { focus = LES_keepittraditional }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		LES = { country_event = { id = legion.10 days = 1 } }
 		}
 	}
 
@@ -2061,12 +2169,21 @@ focus_tree = {
 		x = 41
 		y = 9
 		cost = 5
+		mutually_exclusive = { focus = LES_racialeugenics focus = LES_reshapingofaconstruct }
 		available_if_capitulated = yes
 		prerequisite = { focus = LES_theethnicissue }
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		add_war_support = 0.05
+		add_stability = 0.05
+		add_ideas  = {
+		LES_spiritfirst
+		}
+		}
 	}
+
 
 	#Focus for Neutralize Pagan Leaders
 	focus = {
@@ -2136,6 +2253,12 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = LES_will_of_gods
+		add_idea = LES_will_of_gods_2_a
+		}
+		}
 	}
 
 	#Focus for Ban other denominations
@@ -2169,6 +2292,15 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		every_army_leader = {
+		add_attack = 1
+		}
+		swap_ideas = {
+		remove_idea = LES_warrior_poets
+		add_idea = LES_warrior_poets_2_a
+		}
+		}
 	}
 
 	#Focus for ...Freeing Oneself From the Past....
@@ -2187,6 +2319,30 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		if = {
+				limit = {
+					AND = {
+					has_idea = LES_warrior_poets_2_a
+					}
+				}
+		swap_ideas = {
+		remove_idea = LES_warrior_poets_2_a
+		add_idea = LES_warrior_poets_3_a_a
+		}
+		}
+		if = {
+				limit = {
+					AND = {
+					has_idea = LES_warrior_poets_2_b
+					}
+				}
+		swap_ideas = {
+		remove_idea = LES_warrior_poets_2_b
+		add_idea = LES_warrior_poets_3_a_b
+		}
+		}
+	}
 	}
 
 	#Focus for ...Speed Towards the Extremely Violent Future...
@@ -2205,6 +2361,30 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		if = {
+				limit = {
+					AND = {
+					has_idea = LES_warrior_poets_2_a
+					}
+				}
+		swap_ideas = {
+		remove_idea = LES_warrior_poets_2_a
+		add_idea = LES_warrior_poets_3_b_a
+		}
+		}
+		if = {
+				limit = {
+					AND = {
+					has_idea = LES_warrior_poets_2_b
+					}
+				}
+		swap_ideas = {
+		remove_idea = LES_warrior_poets_2_b
+		add_idea = LES_warrior_poets_3_b_b
+		}
+		}
+	}
 	}
 
 	#Focus for ...Brother Lunatics,Prepare for the Great Flight...
@@ -2222,6 +2402,9 @@ focus_tree = {
 		mutually_exclusive = { focus = LES_blessedishewhoknowsthehourofhisdeath }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		add_war_support = 0.15
 		}
 	}
 
@@ -2241,6 +2424,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		add_stability = 0.15
+		}
 	}
 
 	#Focus for Vanguard of Orthodox
@@ -2250,6 +2436,11 @@ focus_tree = {
 		x = 3
 		y = 9
 		cost = 5
+		available = {
+ 		AND = {
+ 			has_country_flag = LES_orthodox
+			}
+		}
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = LES_christianecumenismefforts 
@@ -2274,6 +2465,11 @@ focus_tree = {
 		y = 9
 		cost = 5
 		available_if_capitulated = yes
+		available = {
+ 		AND = {
+ 			has_country_flag = LES_catholic
+			}
+		}
 		prerequisite = { 
 			focus = LES_christianecumenismefforts 
 			focus = LES_banotherdenominations 
@@ -2296,6 +2492,11 @@ focus_tree = {
 		x = 11
 		y = 9
 		cost = 5
+		available = {
+ 		AND = {
+ 			has_country_flag = pagan
+			}
+		}
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = LES_preservechurches 
@@ -2304,6 +2505,11 @@ focus_tree = {
 		mutually_exclusive = { focus = LES_thetriumphantroosterssingtheepinicion }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		add_ideas = {
+		LES_will_of_gods
+		}
 		}
 	}
 
@@ -2326,6 +2532,7 @@ focus_tree = {
 		572 = { add_manpower = -53213 }
 		653 = { add_manpower = -46718 }
 		1231 = { add_manpower = -11943 }
+		add_stability = -0.10
 		}
 		
 	}
@@ -2401,6 +2608,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		add_war_support = 0.15
+		}
 	}
 
 	#Focus for Listen to the High Priest
@@ -2418,6 +2628,9 @@ focus_tree = {
 		mutually_exclusive = { focus = LES_devoteesofperun }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.15
 		}
 	}
 
@@ -2485,6 +2698,11 @@ focus_tree = {
 		x = 15
 		y = 9
 		cost = 5
+		available = {
+ 		AND = {
+ 			has_country_flag = poets
+			}
+		}
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = LES_preservechurches 
@@ -2493,6 +2711,11 @@ focus_tree = {
 		mutually_exclusive = { focus = LES_willofgods }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		add_ideas =  {
+		LES_warrior_poets
+		}
 		}
 	}
 
@@ -2509,6 +2732,12 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = LES_will_of_gods
+		add_idea = LES_will_of_gods_2_b
+		}
+		}
 	}
 
 	#Focus for Attitude to work
@@ -2524,7 +2753,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		add_stability  = 0.03
+		add_stability  = -0.03
 		}
 	}
 
@@ -2541,7 +2770,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		add_stability = 0.03
+		add_stability = -0.03
 		}
 	}
 
@@ -2552,10 +2781,14 @@ focus_tree = {
 		x = 31
 		y = 9
 		cost = 5
+		mutually_exclusive = { focus = LES_eastandwest focus = LES_unitarypolitics }
 		available_if_capitulated = yes
 		prerequisite = { focus = LES_formofourpanslavicstate }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		create_faction = "Pan-Slavic Confederation"
 		}
 	}
 
@@ -2566,6 +2799,7 @@ focus_tree = {
 		x = 37
 		y = 9
 		cost = 5
+		mutually_exclusive = { focus = LES_eastandwest focus = LES_confederation }
 		available_if_capitulated = yes
 		prerequisite = { focus = LES_formofourpanslavicstate }
 		ai_will_do = {
@@ -2580,6 +2814,7 @@ focus_tree = {
 		x = 34
 		y = 9
 		cost = 5
+		mutually_exclusive = { focus = LES_confederation focus = LES_unitarypolitics }
 		available_if_capitulated = yes
 		prerequisite = { focus = LES_formofourpanslavicstate }
 		ai_will_do = {
@@ -2594,10 +2829,16 @@ focus_tree = {
 		x = 22
 		y = 9
 		cost = 5
+		mutually_exclusive = { focus = LES_divinecorporations focus = LES_followtheexampleofmiddleages }
 		available_if_capitulated = yes
 		prerequisite = { focus = LES_attitudetowork }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		add_ideas = {
+		LES_socialism
+		}
 		}
 	}
 
@@ -2608,10 +2849,16 @@ focus_tree = {
 		x = 28
 		y = 9
 		cost = 5
+		mutually_exclusive = { focus = LES_socialismwithslaviccharacteristics focus = LES_followtheexampleofmiddleages }
 		available_if_capitulated = yes
 		prerequisite = { focus = LES_attitudetowork }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		add_ideas = {
+		LES_corporations
+		}
 		}
 	}
 
@@ -2644,6 +2891,12 @@ focus_tree = {
 		mutually_exclusive = { focus = LES_lifeisflashingbeforemyeyes }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = LES_warrior_poets
+		add_idea = LES_warrior_poets_2_b
+		}
 		}
 	}
 
@@ -2701,6 +2954,86 @@ focus_tree = {
 		}
 		completion_reward = {
 		LES = { country_event = { id = legion.7 days = 1 } }
+		}
+	}
+	#Focus for Begin Preperations
+	focus = {
+		id = LES_beginpreperations
+		icon = GFX_goal_unknown
+		x = 34
+		y = 10
+		cost = 5
+		prerequisite = { 
+			focus = LES_unitarypolitics 
+			focus = LES_confederation 
+			focus = LES_eastandwest 
+		}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_political_power = 50
+		}
+	}
+		#Focus for The Course is Set
+	focus = {
+		id = LES_thecourseisset
+		icon = GFX_goal_unknown
+		x = 25
+		y = 10
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LES_socialismwithslaviccharacteristics 
+			focus = LES_divinecorporations 
+			focus = LES_followtheexampleofmiddleages 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.03
+		}
+	}
+	#Focus for The Matter is Resolved
+	focus = {
+		id = LES_thematterisresolved
+		icon = GFX_goal_unknown
+		x = 44
+		y = 10
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LES_spiritoverbody 
+			focus = LES_reshapingofaconstruct
+			focus = LES_racialeugenics
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.03
+		}
+	}
+	#Focus for Women Pacified
+	focus = {
+		id = LES_womenpacified
+		icon = GFX_goal_unknown
+		x = 54
+		y = 10
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = LES_liberationofwomen 
+			focus = LES_guardiansofyouth
+			focus = LES_patriarchaltraditions
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_stability = 0.03
 		}
 	}
 

@@ -126,7 +126,7 @@ option = {
 ### Christian events
 
 
-### do we legit orthodox
+### we legit orthodox
 country_event = { 
 id = legion.7
 title = legion.7.t
@@ -152,9 +152,11 @@ is_triggered_only = yes
 
 option = {
  name = legion.8.a
+ set_country_flag = LES_orthodox
 }
 option = {
  name = legion.8.b
+ set_country_flag = LES_catholic
 }
 }
 
@@ -174,5 +176,131 @@ option = {
 }
 option = {
  name = legion.9.c
+}
+}
+
+### niggas gettin them horsepower
+country_event = { 
+id = legion.10
+title = legion.10.t
+desc = legion.10.d
+fire_only_once = yes
+is_triggered_only = yes
+
+option = {
+ name = legion.10.a
+ add_timed_idea = {
+    idea = LES_buy_horses
+    days = 120
+}
+hidden_effect = { country_event = { id = legion.11 days = 730 }}
+}
+option = {
+ name = legion.10.b
+ add_timed_idea = {
+    idea = LES_buy_cheap_horses
+    days = 120
+}
+hidden_effect = { country_event = { id = legion.12 days = 730 }}
+}
+option = {
+ name = legion.10.c
+ hidden_effect = { country_event = { id = legion.13 days = 730 }}
+}
+}
+
+###nigga gets 4 civs
+country_event = { 
+id = legion.11
+title = legion.11.t
+desc = legion.11.d
+fire_only_once = yes
+is_triggered_only = yes
+
+option = {
+ name = legion.11.a
+  random_owned_controlled_state = {
+ 	add_extra_state_shared_building_slots = 1
+ 	add_building_construction = {
+	type = industrial_complex
+	level = 1
+	instant_build = yes
+				}
+ }
+  random_owned_controlled_state = {
+ 	add_extra_state_shared_building_slots = 1
+ 	add_building_construction = {
+	type = industrial_complex
+	level = 1
+	instant_build = yes
+				}
+ }
+  random_owned_controlled_state = {
+ 	add_extra_state_shared_building_slots = 1
+ 	add_building_construction = {
+	type = industrial_complex
+	level = 1
+	instant_build = yes
+				}
+ }
+  random_owned_controlled_state = {
+ 	add_extra_state_shared_building_slots = 1
+ 	add_building_construction = {
+	type = industrial_complex
+	level = 1
+	instant_build = yes
+				}
+ }
+}
+}
+
+###nigga gets 2 civs
+country_event = { 
+id = legion.12
+title = legion.12.t
+desc = legion.12.d
+fire_only_once = yes
+is_triggered_only = yes
+
+option = {
+ name = legion.12.a
+  random_owned_controlled_state = {
+ 	add_extra_state_shared_building_slots = 1
+ 	add_building_construction = {
+	type = industrial_complex
+	level = 1
+	instant_build = yes
+				}
+ }
+  random_owned_controlled_state = {
+ 	add_extra_state_shared_building_slots = 1
+ 	add_building_construction = {
+	type = industrial_complex
+	level = 1
+	instant_build = yes
+				}
+ }
+}
+}
+
+###nigga gets 1 civ
+country_event = { 
+id = legion.13
+title = legion.13.t
+desc = legion.13.d
+fire_only_once = yes
+is_triggered_only = yes
+
+option = {
+ name = legion.13.a
+ random_owned_controlled_state = {
+ 	add_extra_state_shared_building_slots = 1
+ 	add_building_construction = {
+	type = industrial_complex
+	level = 1
+	instant_build = yes
+				}
+ }
+
 }
 }
