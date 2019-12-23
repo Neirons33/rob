@@ -58,22 +58,17 @@ set_country_flag = monroe_doctrine
 	}
 }
 
-set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 25
-		}
-
-		fascism = {
-			popularity = 0
-		}
-		
-		communism = {
-			popularity = 75
-			#banned = no #default is no
-		}
-	}
+set_popularities = {
+	national_socialist = 0
+	socialist = 10
+	democratic_socialist = 15
+	social_democracy = 21
+	social_liberal = 23
+	conservative = 19
+	authoritharian = 7
+	reactionary = 5
+	pelekist = 0
+}
 	
 	ruling_party = communism
 	last_election = "1936.1.1"
@@ -86,7 +81,7 @@ set_politics = {
 #	desc = "POLITICS_EUSEBIO_AYALA_DESC"
 #	picture = "gfx/leaders/South America/Portrait_South_America_Generic_2.dds"
 #	expire = "1965.1.1"
-#	ideology = social_liberal_subtype
+#	ideology = liberalism
 #	traits = {
 #		#
 #	}
@@ -138,7 +133,7 @@ create_country_leader = {
 		desc = "POLITICS_HIGINIO_MORINIGO_DESC"
 		picture = "gfx/leaders/South America/Portrait_South_America_Generic_3.dds"
 		expire = "1965.1.1"
-		ideology = reactionary_subtype
+		ideology = despotism
 		traits = {
 			#
 		}
