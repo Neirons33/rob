@@ -57,17 +57,23 @@ set_convoys = 20
 	}
 }
 
-set_popularities = {
-	national_socialist = 0
-	socialist = 8
-	democratic_socialist = 10
-	social_democracy = 12
-	social_liberal = 13
-	conservative = 10
-	authoritharian = 47
-	reactionary = 0
-	pelekist = 0
-}
+set_politics = {
+
+	parties = {
+		democratic = { 
+			popularity = 98
+		}
+
+		fascism = {
+			popularity = 0
+		}
+		
+		communism = {
+			popularity = 2
+			#banned = no #default is no
+		}
+	}
+	
 	ruling_party = democratic
 	last_election = "1936.1.10"
 	election_frequency = 48
@@ -85,7 +91,24 @@ create_country_leader = {
 	}
 }
 
+1939.1.1 = {
+	set_politics = {
 
+		parties = {
+			democratic = { 
+				popularity = 98
+			}
+
+			fascism = {
+				popularity = 0
+			}
+			
+			communism = {
+				popularity = 2
+				#banned = no #default is no
+			}
+		}
+		
 		ruling_party = democratic
 		last_election = "1936.1.10"
 		election_frequency = 48  

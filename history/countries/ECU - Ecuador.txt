@@ -60,42 +60,20 @@ set_convoys = 5
 
 set_politics = {
 
-		parties = {
-			democratic_socialist = { 
-				popularity = 100
-			}
-
-			pelekist = {
-				popularity = 0
-			}
-			
-			reactionary = {
-				popularity = 0
-				
-			}
-                        national_socialist = { 
-				popularity = 0
-			}
-                         socialist = { 
-				popularity = 0
-			}
-                        conservative = { 
-				popularity = 0
-			}
-                       social_liberal = { 
-				popularity = 0
-			}
-                        social_democrats = { 
-				popularity = 0
-			}
-                        authoritharian = { 
-				popularity = 0
-			}
-
-
-
-
+	parties = {
+		democratic = { 
+			popularity = 100
 		}
+
+		fascism = {
+			popularity = 0
+		}
+		
+		communism = {
+			popularity = 0
+			#banned = no #default is no
+		}
+	}
 	
 	ruling_party = democratic
 	last_election = "1933.12.15"
@@ -115,43 +93,21 @@ create_country_leader = {
 }
 
 1939.1.1 = {
-set_politics = {
+	set_politics = {
 
 		parties = {
-			democratic_socialist = { 
+			democratic = { 
 				popularity = 100
 			}
 
-			pelekist = {
+			fascism = {
 				popularity = 0
 			}
 			
-			reactionary = {
+			communism = {
 				popularity = 0
-				
+				#banned = no #default is no
 			}
-                        national_socialist = { 
-				popularity = 0
-			}
-                         socialist = { 
-				popularity = 0
-			}
-                        conservative = { 
-				popularity = 0
-			}
-                       social_liberal = { 
-				popularity = 0
-			}
-                        social_democrats = { 
-				popularity = 0
-			}
-                        authoritharian = { 
-				popularity = 0
-			}
-
-
-
-
 		}
 		
 		ruling_party = democratic

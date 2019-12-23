@@ -129,50 +129,52 @@ set_country_flag = monroe_doctrine
 }
 
 set_convoys = 120
+set_politics = {
+	ruling_party = social_democracy
+	last_election = "1930.11.9"
+	election_frequency = 48
+	elections_allowed = no
+}
 set_popularities = {
-	national_socialist = 0
-	socialist = 8
-	democratic_socialist = 10
-	social_democracy = 12
-	social_liberal = 13
-	conservative = 10
-	authoritharian = 47
-	reactionary = 0
+	national_socialist = 1
+	socialist = 5
+	democratic_socialist = 15
+	social_democracy = 62
+	social_liberal = 0
+	conservative = 5
+	authoritharian = 6
+	reactionary = 6
 	pelekist = 0
 }
+create_country_leader = {
+	name = "Hipólito Yrigoyen"
+	desc = "POLITICS_FANNY_JABCOVSKY_DESC"
+	picture = "ARG_hipolito_yrigoyen.tga"
+	expire = "1965.1.1"
+	ideology = social_democracy_subtype
+	traits = {
+		#
 	}
-	
-	ruling_party = authoritharian
-	last_election = "1931.11.8"
-	election_frequency = 72
-	elections_allowed = yes
 }
-
 create_country_leader = {
 	name = "Agustín Pedro Justo"
 	desc = "POLITICS_AGUSTIN_PEDRO_JUSTO_DESC"
 	picture = "Portrait_Argentina_Agustin_Pedro_Justo.dds"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = authoritharian_subtype
 	traits = {
 		#
 	}
 }
 
 
-	
-	ruling_party = neutrality
-		last_election = "1937.9.5"
-		election_frequency = 108
-		elections_allowed = yes
-	}
 
 	create_country_leader = {
 		name = "Roberto María Ortiz"
 		desc = "POLITICS_ROBERTO_MARIA_ORTIZ_DESC"
 		picture = "gfx/leaders/South America/Portrait_South_America_Generic_2.dds"
 		expire = "1965.1.1"
-		ideology = despotism
+		ideology = reactionary_subtype
 		traits = {
 			#
 		}
@@ -185,7 +187,7 @@ create_country_leader = {
 	desc = "POLITICS_NIMO_DE_ANQUIN_DESC"
 	picture = "gfx/leaders/South America/Portrait_South_America_Generic_3.dds"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = pelekist_subtype
 	traits = {
 		#
 	}
@@ -196,7 +198,7 @@ create_country_leader = {
 	desc = "POLITICS_MARCELO_ALVEAR_DESC"
 	picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_3.dds"
 	expire = "1965.1.1"
-	ideology = socialism
+	ideology = social_liberal_subtype
 	traits = {
 		#
 	}
@@ -207,11 +209,12 @@ create_country_leader = {
 	desc = "POLITICS_FANNY_JABCOVSKY_DESC"
 	picture = "Portrait_Argentina_Fanny_Jabcovsky.dds"
 	expire = "1965.1.1"
-	ideology = marxism
+	ideology = socialist_subtype
 	traits = {
 		#
 	}
 }
+
 
 create_field_marshal = {
 	name = "Arturo Rawson"

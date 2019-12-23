@@ -185,17 +185,25 @@ if = {
 	}
 }
 
-set_popularities = {
-	national_socialist = 0
-	socialist = 10
-	democratic_socialist = 15
-	social_democracy = 21
-	social_liberal = 23
-	conservative = 19
-	authoritharian = 7
-	reactionary = 5
-	pelekist = 0
-}
+set_politics = {
+
+	parties = {
+		democratic = { 
+			popularity = 18
+		}
+
+		fascism = {
+			popularity = 20
+		}
+		
+		communism = {
+			popularity = 9
+		}
+		
+		neutrality = { 
+			popularity = 53
+		}
+	}
 	
 	ruling_party = neutrality
 	last_election = "1934.7.1"

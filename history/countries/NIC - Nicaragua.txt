@@ -62,42 +62,20 @@ set_convoys = 10
 
 set_politics = {
 
-		parties = {
-			democratic_socialist = { 
-				popularity = 100
-			}
-
-			pelekist = {
-				popularity = 0
-			}
-			
-			reactionary = {
-				popularity = 0
-				
-			}
-                        national_socialist = { 
-				popularity = 0
-			}
-                         socialist = { 
-				popularity = 0
-			}
-                        conservative = { 
-				popularity = 0
-			}
-                       social_liberal = { 
-				popularity = 0
-			}
-                        social_democrats = { 
-				popularity = 0
-			}
-                        authoritharian = { 
-				popularity = 0
-			}
-
-
-
-
+	parties = {
+		democratic = { 
+			popularity = 15
 		}
+
+		fascism = {
+			popularity = 5
+		}
+		
+		communism = {
+			popularity = 10
+			#banned = no #default is no
+		}
+
 		neutrality = {
 			popularity = 70
 		}
@@ -124,41 +102,24 @@ create_country_leader = {
 	set_politics = {
 
 		parties = {
-			democratic_socialist = { 
-				popularity = 100
+			democratic = { 
+				popularity = 15
 			}
 
-			pelekist = {
-				popularity = 0
+			fascism = {
+				popularity = 5
 			}
 			
-			reactionary = {
-				popularity = 0
-				
-			}
-                        national_socialist = { 
-				popularity = 0
-			}
-                         socialist = { 
-				popularity = 0
-			}
-                        conservative = { 
-				popularity = 0
-			}
-                       social_liberal = { 
-				popularity = 0
-			}
-                        social_democrats = { 
-				popularity = 0
-			}
-                        authoritharian = { 
-				popularity = 0
+			communism = {
+				popularity = 10
+				#banned = no #default is no
 			}
 
-
-
-
+			neutrality = {
+				popularity = 70
+			}
 		}
+		
 		ruling_party = neutrality
 		last_election = "1936.12.8"
 		election_frequency = 48

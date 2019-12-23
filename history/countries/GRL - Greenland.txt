@@ -72,20 +72,22 @@ set_technology = {
 
 set_convoys = 10
 
+set_politics = {
 
-set_popularities = {
-	national_socialist = 0
-	socialist = 10
-	democratic_socialist = 15
-	social_democracy = 21
-	social_liberal = 23
-	conservative = 19
-	authoritharian = 7
-	reactionary = 5
-	pelekist = 0
-}
-
+	parties = {
+		democratic = { 
+			popularity = 96
 		}
+
+		fascism = {
+			popularity = 2
+		}
+		
+		communism = {
+			popularity = 2
+		}
+	}
+	
 	ruling_party = democratic
 	last_election = "1933.10.16"
 	election_frequency = 36
@@ -96,40 +98,21 @@ set_popularities = {
 	set_politics = {
 
 		parties = {
-			democratic_socialist = { 
-				popularity = 100
+			democratic = { 
+				popularity = 84
 			}
 
-			pelekist = {
-				popularity = 0
+			fascism = {
+				popularity = 2
 			}
 			
-			reactionary = {
-				popularity = 0
-				
-			}
-                        national_socialist = { 
-				popularity = 0
-			}
-                         socialist = { 
-				popularity = 0
-			}
-                        conservative = { 
-				popularity = 0
-			}
-                       social_liberal = { 
-				popularity = 0
-			}
-                        social_democrats = { 
-				popularity = 0
-			}
-                        authoritharian = { 
-				popularity = 0
+			communism = {
+				popularity = 2
 			}
 
-
-
-
+			neutrality = {
+				popularity = 12
+			}
 		}
 		
 		ruling_party = democratic

@@ -66,30 +66,31 @@ if = {
 	add_to_tech_sharing_group = commonwealth_research
 }
 
-set_popularities = {
-	national_socialist = 0
-	socialist = 8
-	democratic_socialist = 15
-	social_democracy = 12
-	social_liberal = 18
-	conservative = 25
-	authoritharian = 2
-	reactionary = 0
-	pelekist = 10
-}
-	
+set_politics = {
 	ruling_party = conservative
-	last_election = "1935.10.14"
-	election_frequency = 60
+	last_election = "1931.12.19"
+	election_frequency = 48
 	elections_allowed = yes
 }
+set_popularities = {
+	national_socialist = 0
+	socialist = 0
+	democratic_socialist = 0
+	social_democracy = 27
+	social_liberal = 22
+	conservative = 45
+	authoritharian = 6
+	reactionary = 0
+	pelekist = 0
+}
+
 
 create_country_leader = {
 	name = "Richard Bedford Bennett"
 	desc = "POLITICS_MACKENZIE_KING_DESC"
 	picture = "Portrait_CAN_richard_bedford_bennett.tga"
 	expire = "1965.1.1"
-	ideology = conservative
+	ideology = conservative_subtype
 	traits = {
 		#
 	}
@@ -100,7 +101,7 @@ create_country_leader = {
 	desc = "POLITICS_ADRIEN_ARCAND_DESC"
 	picture = "GFX_CAN_adrien_arcand"
 	expire = "1965.1.1"
-	ideology = pelekist
+	ideology = pelekist_subtype
 	traits = {
 		#
 	}
