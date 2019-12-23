@@ -103,63 +103,71 @@ set_convoys = 5
 	}
 }
 
-set_politics = {
-	ruling_party = national_socialist
-	last_election = "1932.7.1"
-	election_frequency = 48
-	elections_allowed = no
-}
 set_popularities = {
-	national_socialist = 66
-	socialist = 14
-	democratic_socialist = 0
-	social_democracy = 5
-	social_liberal = 0
-	conservative = 0
-	authoritharian = 0
+	national_socialist = 0
+	socialist = 10
+	democratic_socialist = 15
+	social_democracy = 21
+	social_liberal = 23
+	conservative = 19
+	authoritharian = 7
 	reactionary = 5
-	pelekist = 10
+	pelekist = 0
 }
-create_country_leader = {
-	name = "José Carlos Mariátegui"
-	desc = "POLITICS_OSCAR_BENAVIDES_DESC"
-	picture = "PRU_jose_carlos.tga"
-	expire = "1965.1.1"
-	ideology = sorelianism
-	traits = {
-		#
-	}
+	
+	ruling_party = fascism
+	last_election = "1931.10.11"
+	election_frequency = 96
+	elections_allowed = yes
 }
+
 create_country_leader = {
-	name = "Víctor Raúl Haya de la Torre"
+	name = "Óscar Benavides"
 	desc = "POLITICS_OSCAR_BENAVIDES_DESC"
 	picture = "GFX_Portrait_peru_oscar_benavides"
 	expire = "1965.1.1"
-	ideology = social_democracy_subtype
+	ideology = fascism_ideology
 	traits = {
 		#
 	}
 }
-create_country_leader = {
-	name = "Luis Miguel Sánchez Cerro"
-	desc = "POLITICS_OSCAR_BENAVIDES_DESC"
-	picture = "GFX_Portrait_peru_oscar_benavides"
-	expire = "1965.1.1"
-	ideology = military_junta
-	traits = {
-		#
+
+1939.1.1 = {
+	set_politics = {
+
+		parties = {
+			democratic = { 
+				popularity = 49
+			}
+
+			fascism = {
+				popularity = 51
+			}
+			
+			communism = {
+				popularity = 0
+				#banned = no #default is no
+			}
+		}
+		
+		ruling_party = fascism
+		last_election = "1931.10.11"
+		election_frequency = 96
+		elections_allowed = yes
+	}
+
+	create_country_leader = {
+		name = "Manuel Prado Ugarteche"
+		desc = "POLITICS_MANUEL_PRADO_UGARTECHE_DESC"
+		picture = "gfx/leaders/South America/Portrait_South_America_Generic_2.dds"
+		expire = "1965.1.1"
+		ideology = fascism_ideology
+		traits = {
+			#
+		}
 	}
 }
-create_country_leader = {
-	name = "Manuel Prado Ugarteche"
-	desc = "POLITICS_OSCAR_BENAVIDES_DESC"
-	picture = "GFX_Portrait_peru_oscar_benavides"
-	expire = "1965.1.1"
-	ideology = social_liberal_subtype
-	traits = {
-		#
-	}
-}
+
 
 ### VARIANTS ###
 # 1936 Start #

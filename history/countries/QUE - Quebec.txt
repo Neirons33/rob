@@ -91,23 +91,17 @@ set_technology = {
 	}
 }
 
-set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 80
-		}
-
-		fascism = {
-			popularity = 15
-		}
-		
-		communism = {
-			popularity = 5
-			#banned = no #default is no
-		}
-	}
-	
+set_popularities = {
+	national_socialist = 0
+	socialist = 10
+	democratic_socialist = 15
+	social_democracy = 21
+	social_liberal = 23
+	conservative = 19
+	authoritharian = 7
+	reactionary = 5
+	pelekist = 0
+}
 	ruling_party = democratic
 	last_election = "1935.10.14"
 	election_frequency = 60

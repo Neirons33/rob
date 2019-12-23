@@ -44,22 +44,25 @@ set_convoys = 5
 		dispersed_industry2 = 1
 	}
 }
-set_politics = {
-	ruling_party = reactionary
-	last_election = "1930.11.9"
-	election_frequency = 48
-	elections_allowed = no
-}
 set_popularities = {
-	national_socialist = 21
-	socialist = 4
-	democratic_socialist = 1
-	social_democracy = 8
-	social_liberal = 5
+	national_socialist = 0
+	socialist = 15
+	democratic_socialist = 10
+	social_democracy = 15
+	social_liberal = 13
 	conservative = 0
-	authoritharian = 0
-	reactionary = 61
+	authoritharian = 47
+	reactionary = 5
 	pelekist = 0
+}
+
+
+
+		
+	ruling_party = democratic
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = yes
 }
 
 #create_country_leader = {
@@ -67,12 +70,59 @@ set_popularities = {
 #	name = "Jonas Lote"
 #	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
 #	expire = "1965.1.1"
-#	ideology = conservative_subtype
+#	ideology = centrism
 #	traits = {
 #		#
 #	}
 #}
 
 
+}
+
+
+1939.1.1 = {
+	set_politics = {
+
+		parties = {
+			democratic_socialist = { 
+				popularity = 100
+			}
+
+			pelekist = {
+				popularity = 0
+			}
+			
+			reactionary = {
+				popularity = 0
+				
+			}
+                        national_socialist = { 
+				popularity = 0
+			}
+                         socialist = { 
+				popularity = 0
+			}
+                        conservative = { 
+				popularity = 0
+			}
+                       social_liberal = { 
+				popularity = 0
+			}
+                        social_democrats = { 
+				popularity = 0
+			}
+                        authoritharian = { 
+				popularity = 0
+			}
+
+
+
+
+		}
+	
+	ruling_party = democratic
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = yes
 }
 

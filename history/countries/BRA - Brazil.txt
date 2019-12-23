@@ -117,22 +117,22 @@ set_country_flag = monroe_doctrine
 	}
 }
 
-set_politics = {
-	ruling_party = authoritharian
-	last_election = "1931.12.19"
-	election_frequency = 48
-	elections_allowed = yes
-}
 set_popularities = {
 	national_socialist = 0
-	socialist = 0
-	democratic_socialist = 10
-	social_democracy = 0
-	social_liberal = 7
-	conservative = 7
-	authoritharian = 66
-	reactionary = 0
-	pelekist = 10
+	socialist = 10
+	democratic_socialist = 15
+	social_democracy = 21
+	social_liberal = 23
+	conservative = 19
+	authoritharian = 7
+	reactionary = 5
+	pelekist = 0
+}
+	
+	ruling_party = neutrality
+	last_election = "1934.7.17"
+	election_frequency = 48
+	elections_allowed = no
 }
 
 create_country_leader = {
@@ -140,7 +140,7 @@ create_country_leader = {
 	desc = "POLITICS_GETULIO_VARGAS_DESC"
 	picture = "Portrait_BRA_getúlio_vargas.tga"
 	expire = "1965.1.1"
-	ideology = authoritharian_subtype
+	ideology = conservative
 	traits = {
 		#
 	}
@@ -151,7 +151,7 @@ create_country_leader = {
 	desc = "POLITICS_PLINIO_SALGADO_DESC"
 	picture = "Portrait_Brazil_Plinio_Salgado.dds"
 	expire = "1965.1.1"
-	ideology = christian_pelekism
+	ideology = fascism_ideology
 	traits = {
 		#
 	}
@@ -161,7 +161,7 @@ create_country_leader = {
 	desc = "POLITICS_LUIS_CARLOS_PRESTES_DESC"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
 	expire = "1965.1.1"
-	ideology = socialist_subtype
+	ideology = marxism
 	traits = {
 		#
 	}
@@ -172,7 +172,7 @@ create_country_leader = {
 	desc = "POLITICS_ARMANDO_SALES_DESC"
 	picture = "gfx/leaders/South America/Portrait_South_America_Generic_2.dds"
 	expire = "1965.1.1"
-	ideology = conservatism_subtype
+	ideology = conservatism
 	traits = {
 		#
 	}
@@ -181,7 +181,52 @@ create_country_leader = {
 
 set_convoys = 40
 
+1939.1.1 = {
+	set_politics = {
 
+		parties = {
+			democratic_socialist = { 
+				popularity = 100
+			}
+
+			pelekist = {
+				popularity = 0
+			}
+			
+			reactionary = {
+				popularity = 0
+				
+			}
+                        national_socialist = { 
+				popularity = 0
+			}
+                         socialist = { 
+				popularity = 0
+			}
+                        conservative = { 
+				popularity = 0
+			}
+                       social_liberal = { 
+				popularity = 0
+			}
+                        social_democrats = { 
+				popularity = 0
+			}
+                        authoritharian = { 
+				popularity = 0
+			}
+
+
+
+
+		}
+	
+	ruling_party = neutrality
+		last_election = "1934.7.17"
+		election_frequency = 48
+		elections_allowed = no
+	}
+}
 
 create_corps_commander = {
 	name = "Eurico Gaspar Dutra"
