@@ -93,7 +93,7 @@ option = {
 }
 }
 
-### Nigga = Dead
+### Nigga = Dead, Sergey the man now
 country_event = { 
 id = legion.5
 title = legion.5.t
@@ -103,6 +103,25 @@ is_triggered_only = yes
 
 option = {
  name = legion.5.a
+
+ set_politics = {
+ ruling_party = reactionary
+ elections_allowed = no
+}
+
+ create_country_leader = {
+	name = "Sergei Wojciechowski"
+	desc = ""
+	picture = ""
+	expire = "1960.1.1"
+	ideology = military_junta
+	traits = {
+	charismatic_militarist
+	}
+}
+
+add_popularity = {ideology = reactionary popularity =0.3}
+add_stability = -0.1
 }
 }
 
@@ -302,5 +321,155 @@ option = {
 				}
  }
 
+}
+}
+###RAAAAAAAAAAAAAAAids DEEEEEEEEppoOOOOOs
+country_event = { 
+id = legion.14
+title = legion.14.t
+desc = legion.14.d
+fire_only_once = yes
+is_triggered_only = yes
+
+option = {
+ name = legion.14.a
+ add_manpower = -15837
+ hidden_effect {
+ LES = { country_event = { id = legion.15 days = 21 } }
+ }
+}
+
+}
+
+
+###DAAAAAAAAAAAAAAAAAABBBBBBBBBBB
+country_event = { 
+id = legion.15
+title = legion.15.t
+desc = legion.15.d
+fire_only_once = yes
+is_triggered_only = yes
+
+option = {
+ name = legion.15.a
+ add_manpower = 13544
+ add_equipment_to_stockpile = {
+ type = infantry_equipment_0
+ amount = 471
+ producer = RDR
+ }
+ add_equipment_to_stockpile = {
+ type = infantry_equipment_0
+ amount = 14
+ producer = ENG
+ 		}
+}
+
+}
+
+
+
+
+###BLUE BLUE BLUE PRINT
+country_event = { 
+id = legion.16
+title = legion.16.t
+desc = legion.16.d
+fire_only_once = yes
+is_triggered_only = yes
+
+option = {
+ name = legion.16.a
+ add_political_power = -50
+ hidden_effect {
+ LES = { country_event = { id = legion.17 days = 17 } }
+ }
+	}
+
+}
+
+
+###TAAAAAAAAAAAAAAANKS
+country_event = { 
+id = legion.17
+title = legion.17.t
+desc = legion.17.d
+fire_only_once = yes
+is_triggered_only = yes
+
+option = {
+ name = legion.17.a
+ add_tech_bonus = {
+	name = gwtank 
+	bonus = 1.0
+	uses = 1
+	technology = gwtank 
+	}
+ add_tech_bonus = {
+	name = lighttank 
+	bonus = 1.0
+	uses = 1
+	technology = basic_light_tank 
+	}
+}
+}
+
+
+### Start of truck theft
+country_event = { 
+id = legion.18
+title = legion.18.t
+desc = legion.18.d
+fire_only_once = yes
+is_triggered_only = yes
+
+option = {
+ name = legion.18.a
+ hidden_effect {
+ LES = { country_event = { id = legion.19 days = 17 } }
+}
+}
+}
+
+
+### End of truck theft
+country_event = { 
+id = legion.19
+title = legion.19.t
+desc = legion.19.d
+fire_only_once = yes
+is_triggered_only = yes
+
+option = {
+ name = legion.19.a
+ add_equipment_to_stockpile = {
+ type = motorized_equipment_1
+ amount = 82
+ producer = RDR
+ 		}
+}
+  add_tech_bonus = {
+	name = cars 
+	bonus = 1.0
+	uses = 1
+	technology = motorised_infantry 
+	}
+}
+
+
+
+### Futurists joins legion
+country_event = { 
+id = legion.20
+title = legion.20.t
+desc = legion.20.d
+fire_only_once = yes
+is_triggered_only = yes
+
+option = {
+ name = legion.20.a
+ annex_country = { target = AGR transfer_troops = yes }
+ add_state_core = 1231
+ }
 }
 }

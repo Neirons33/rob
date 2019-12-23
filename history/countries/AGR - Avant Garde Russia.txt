@@ -45,3 +45,13 @@ create_country_leader = {
 	}
 }
 
+create_corps_commander = {
+	name = "Rudolf Medek"
+	gfx = "GFX_Portrait_czechoslovakia_sergej_vojcechovsky"
+	traits = {  }
+	skill = 2
+    attack_skill = 2
+    defense_skill = 2
+    planning_skill = 2
+    logistics_skill = 2
+}

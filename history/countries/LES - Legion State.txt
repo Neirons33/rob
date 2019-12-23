@@ -2,6 +2,9 @@ capital = 572
 
 oob = "LES_1934"
 
+set_war_support = 0.4
+set_stability = 0.4
+
 set_research_slots = 2
 
 set_technology = {
@@ -25,9 +28,9 @@ set_popularities = {
 	social_democracy = 0
 	social_liberal = 0
 	conservative = 0
-	authoritharian = 6
+	authoritharian = 27
 	reactionary = 6
-	pelekist = 88
+	pelekist = 67
 }
 add_ideas = {
 extensive_conscription
@@ -47,6 +50,62 @@ create_country_leader = {
 	ideology = pelekist_subtype
 	traits = {
 		dislikes_germany
+		experienced_commander
 	}
 }
+
+create_field_marshal = {
+	name = "Josef Jiří Švec"
+	gfx = "GFX_Portrait_czechoslovakia_sergej_vojcechovsky"
+	traits = { winter_specialist offensive_doctrine war_hero}
+	skill = 3
+    attack_skill = 3
+    defense_skill = 2
+    planning_skill = 2
+    logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Vojtěch Luža"
+	gfx = "GFX_Portrait_czechoslovakia_vojtech_luza"
+	traits = { fast_planner }
+	skill = 3
+    attack_skill = 4
+    defense_skill = 2
+    planning_skill = 3
+    logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Sergej Vojcechovský"
+	gfx = "GFX_Portrait_czechoslovakia_sergej_vojcechovsky"
+	traits = { winter_specialist trickster }
+	skill = 3
+    attack_skill = 4
+    defense_skill = 3
+    planning_skill = 2
+    logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Stanislav Čeček"
+	gfx = "GFX_Portrait_czechoslovakia_sergej_vojcechovsky"
+	traits = { winter_specialist infantry_leader }
+	skill = 3
+    attack_skill = 3
+    defense_skill = 3
+    planning_skill = 2
+    logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Vladimir Nikolaevich Shokorov"
+	gfx = "GFX_Portrait_czechoslovakia_sergej_vojcechovsky"
+	traits = { old_guard }
+	skill = 2
+    attack_skill = 2
+    defense_skill = 2
+    planning_skill = 3
+    logistics_skill = 2
+}
+
 

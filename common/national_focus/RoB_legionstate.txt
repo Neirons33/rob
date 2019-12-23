@@ -43,6 +43,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		LES = { country_event = { id = legion.18 days = 1 } }
+		}
 	}
 
 	#Focus for Patriarchal Traditions
@@ -1877,7 +1880,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-
+		LES = { country_event = { id = legion.16 days = 1 } }
 		}
 	}
 
@@ -1950,6 +1953,7 @@ focus_tree = {
 		completion_reward = {
 		hidden_effect = {
 		set_country_flag = path
+		LES = { country_event = { id = legion.20 days = 30 } }
 		}
 		}
 	}
@@ -2034,6 +2038,9 @@ focus_tree = {
 		prerequisite = { focus = LES_thearmoryisempty }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		LES = { country_event = { id = legion.14 days = 1 } }
 		}
 	}
 
