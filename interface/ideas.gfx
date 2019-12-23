@@ -4043,5 +4043,84 @@ spriteTypes = {
 		name = "GFX_idea_LIT_jonas_zemaitis"
 		texturefile = "gfx/interface/ideas/LIT_jonas_zemaitis.tga"
 	}
-
+	
+ ###General Staff
+ 		spriteType = {
+		name = "GFX_idea_LIT_adomas_daugdiras"
+		texturefile = "gfx/interface/ideas/LIT_adomas_daugdiras.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_LIT_edvardas_adamkavicius"
+		texturefile = "gfx/interface/ideas/LIT_edvardas_adamkavicius.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_LIT_ignas_adamkavicius"
+		texturefile = "gfx/interface/ideas/LIT_ignas_adamkavicius.tga"
+	}
+ 		spriteType = {
+		name = "GFX_idea_LIT_jouzas_andzejauskas"
+		texturefile = "gfx/interface/ideas/LIT_jouzas_andzejauskas.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_LIT_jouzas_bradauskas"
+		texturefile = "gfx/interface/ideas/LIT_jouzas_bradauskas.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_LIT_juliuss_caplikas"
+		texturefile = "gfx/interface/ideas/LIT_juliuss_caplikas.tga"
+	}
+ 		spriteType = {
+		name = "GFX_idea_LIT_jurgis_dobkevicius"
+		texturefile = "gfx/interface/ideas/LIT_jurgis_dobkevicius.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_LIT_kazys_ladiga"
+		texturefile = "gfx/interface/ideas/LIT_kazys_ladiga.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_LIT_mikas_reklaitis"
+		texturefile = "gfx/interface/ideas/LIT_mikas_reklaitis.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_LIT_jonas_cernius"
+		texturefile = "gfx/interface/ideas/LIT_jonas_cernius.tga"
+	}
+	
+###Designers
+		spriteType = {
+		name = "GFX_idea_LIT_anbo"
+		texturefile = "gfx/interface/ideas/LIT_anbo.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_LIT_drobe"
+		texturefile = "gfx/interface/ideas/LIT_drobe.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_LIT_ginklu_fondas"
+		texturefile = "gfx/interface/ideas/LIT_ginklu_fondas.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_LIT_kauno_ginklai"
+		texturefile = "gfx/interface/ideas/LIT_kauno_ginklai.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_LIT_lietukis"
+		texturefile = "gfx/interface/ideas/LIT_lietukis.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_LIT_lietuvos_aeroklubas"
+		texturefile = "gfx/interface/ideas/LIT_lietuvos_aeroklubas.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_LIT_linkaiciu_artilerijos_dirbtuves"
+		texturefile = "gfx/interface/ideas/LIT_linkaiciu_artilerijos_dirbtuves.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_LIT_metalas"
+		texturefile = "gfx/interface/ideas/LIT_metalas.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_LIT_palangos_uostas"
+		texturefile = "gfx/interface/ideas/LIT_palangos_uostas.tga"
+	}
 }

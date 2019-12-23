@@ -757,6 +757,36 @@
  collectivist_state:0 "Collectivist State"
  collectivist_state_desc:0 " "
  
+ ###General Staff
+ LIT_juozas_barzda_bradauskas:0 "Juozas Barzda-Bradauskas"
+ LIT_edvardas_adamkavicius:0 "Edvardas Adamkavičius"
+ LIT_julius_caplikas:0 "Julius Čaplikas"
+ LIT_adomas_daugirdas:0 "Adomas Daugirdas"
+ LIT_juozas_andzejauskas:0 "Juozas Andžejauskas"
+ LIT_ignas_adamkavicius:0 "Ignas Adamkavičius"
+ LIT_jurgis_bobkevicius:0 "Jurgis Dobkevičius"
+ LIT_jonas_cernius:0 "Jonas Černius"
+ LIT_kazys_ladiga:0 "Kazys Ladiga"
+ LIT_kazys_skirpa:0 "Kazys Škirpa"
+ LIT_vincas_vitkauskas:0 "Vincas Vitkauskas"
+ LIT_mikas_reklaitis:0 "Mikas Rėklaitis"
+ LIT_stasys_rastikis:0 "Stasys Raštikis"
+ 
+ ###Designers
+ LIT_metalas:0 "Metalas"
+ LIT_palangos_uostas:0 "Palangos Uostas"
+ LIT_ginklu_fondas:0 "Ginklų Fondas"
+ LIT_linkaiciu_artilerijos_dirbtuves:0 "Linkaičių Artilerijos Dirbtuvės"
+ LIT_kauno_ginklai:0 "Kauno Ginklai"
+ LIT_lietukis:0 "Lietūkis"
+ LIT_drobe:0 "Drobė"
+ LIT_anbo:0 "ANBO"
+ LIT_lietuvos_aeroklubas:0 "Lietuvos Aeroklubas"
+ LIT_povilas_plechavicius_hc:0 "Povilas Plechavičius"
+ LIT_kazys_musteikis_hc:0 "Kazys Musteikis"
+ LIT_stasys_rastikis_hc:0 "Stasys Raštikis"
+ 
+ 
  
  ##########MINISTERS
  ###Prussia

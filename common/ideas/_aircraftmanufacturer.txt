@@ -5,7 +5,7 @@ ideas = {
  
   LIT_anbo = {
    designer = yes
-   picture = PRS_heinkel
+   picture = LIT_anbo
    allowed = { tag = LIT }
    cost = 150
    research_bonus = { light_air = 0.1 }
@@ -22,7 +22,7 @@ ideas = {
 
   LIT_lietuvos_aeroklubas = {
    designer = yes
-   picture = PRS_heinkel
+   picture = LIT_lietuvos_aeroklubas
    allowed = { tag = LIT }
    cost = 150
    research_bonus = { light_air = 0.1 }

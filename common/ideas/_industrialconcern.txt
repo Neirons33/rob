@@ -5,7 +5,7 @@ ideas = {
   LIT_lietukis = {
    designer = yes
    allowed = { original_tag = LIT }
-   picture=  PRS_braun
+   picture=  LIT_lietukis
    research_bonus = { industry = 0.1 }
    cost = 150
    modifier = {
@@ -16,7 +16,7 @@ ideas = {
   LIT_drobe = {
    designer = yes
    allowed = { original_tag = LIT }
-   picture=  PRS_braun
+   picture=  LIT_drobe
    research_bonus = { industry = 0.1 }
    cost = 150
    modifier = {

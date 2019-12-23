@@ -4272,7 +4272,7 @@ add_tech_bonus = {
 	#Focus for The Prussian Deal
 	focus = {
 		id = LIT_theprussiandeal
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRS_lith_ger_brotherhood
 		x = 29
 		y = 14
 		cost = 10

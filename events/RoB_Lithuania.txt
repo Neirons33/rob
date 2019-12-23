@@ -100,7 +100,7 @@ option = { ###Conservative Victory
  name = lithuania.4.a
  add_stability = 0.1
  add_popularity = {ideology = conservative popularity =0.25}
-
+ set_country_flag = LIT_democracyholds
 }
 option = { ###Liberal Block Victory
  name = lithuania.4.b
@@ -140,6 +140,7 @@ option = { ###The talks go nowhere
  hidden_effect = {
   country_event = { id = lithuania.9 days = 25 }
  }
+ set_country_flag = LIT_democracyholds
 }
 option = { ###Military Coups!
  name = lithuania.5.b
@@ -250,6 +251,7 @@ option = { ###Military Dictaotshiop
 		#
 	}
 }
+set_country_flag = LIT_skirpa_rules
 }
 
 option = { ###Smentona Dictaotshiop
@@ -267,6 +269,7 @@ option = { ###Smentona Dictaotshiop
  LIT_pranas_barkauskas_em
  LIT_povilas_plechavicius_dm
  }
+ set_country_flag = LIT_smetona_president
  create_country_leader = {
 	name = "Antanas Smetona"
 	desc = ""
@@ -319,6 +322,7 @@ option = {
 name = lithuania.8.a
 set_country_flag = LIT_voldemaras_dead
 kill_country_leader = yes
+set_country_flag = LIT_mironas_rules
  create_country_leader = {
 	name = "Vladas Mironas"
 	desc = "POLITICS_VLADAS_MIRONAS_DESC"

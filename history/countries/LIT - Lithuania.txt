@@ -138,3 +138,76 @@ create_country_leader = {
 		#
 	}
 }
+
+
+create_corps_commander = {
+	name = "Jonas Černius"
+	picture = "Portrait_Lithuania_Jonas_Cernius.tga"
+	traits = { trickster war_hero }
+	skill = 3
+	id = 10000
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Kazys Ladiga"
+	picture = "Portrait_Lithuania_Kazys_Ladiga.tga"
+	traits = { aggressive_assaulter war_hero }
+	skill = 2
+	id = 10001
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_field_marshal = {
+	name = "Kazys Škirpa"
+	picture = "Portrait_Lithuania_Kazys_Skirpa.tga"
+	traits = { politically_connected inspirational_leader war_hero }
+	skill = 4
+	id = 10002
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_field_marshal = {
+	name = "Vincas Vitkauskas"
+	picture = "Portrait_Lithuania_Vincas_Vitkauskas.tga"
+	traits = { politically_connected trait_reckless war_hero }
+	skill = 3
+	id = 10002
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Mikas Rėklaitis"
+	picture = "Portrait_Lithuania_Mikas_Reklaitis.tga"
+	traits = { infantry_leader war_hero }
+	skill = 2
+	id = 10003
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Stasys Raštikis"
+	picture = "Portrait_Lithuania_Stasys_Rastikis.tga"
+	traits = { aggressive_assaulter war_hero }
+	skill = 3
+	id = 10004
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+}

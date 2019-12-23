@@ -296,7 +296,7 @@ ideas = {
      removal_cost = -1
 	 picture = GFX_idea_famine_of_1933
 	 modifier = {
-     enemy_partisan_effect = 0.15
+     partisan_effect = 0.5
 			}
   }
   pride_of_lithuania = {
@@ -313,7 +313,6 @@ ideas = {
 	  }
 	  }
 	  
-	    }
   paramilitarism = {
   allowed = {
        always = no
@@ -410,7 +409,7 @@ ideas = {
      removal_cost = -1
 	 picture = GFX_idea_famine_of_1933
 	 modifier = {
-     civilian_factory_use = -3
+     consumer_goods_factor = -0.03
 	 industrial_capacity_factor = 0.01
 	 }
 	 }
@@ -425,7 +424,7 @@ ideas = {
      removal_cost = -1
 	 picture = GFX_idea_famine_of_1933
 	 modifier = {
-     civilian_factory_use = -3
+     consumer_goods_factor = -0.03
 	 political_power_gain = 0.5
 	 army_attack_factor = 0.1
 	 }
@@ -441,7 +440,7 @@ ideas = {
      removal_cost = -1
 	 picture = GFX_idea_famine_of_1933
 	 modifier = {
-     civilian_factory_use = -3
+     consumer_goods_factor = -0.03
 	 industrial_capacity_factor = 0.01
 	 }
 	 }
@@ -472,7 +471,7 @@ ideas = {
      removal_cost = -1
 	 picture = GFX_idea_famine_of_1933
 	 modifier = {
-     civilian_factory_use = -4
+     consumer_goods_factor = -4
 	 }
 	 }
 	 
@@ -486,7 +485,7 @@ ideas = {
      removal_cost = -1
 	 picture = GFX_idea_famine_of_1933
 	 modifier = {
-     civilian_factory_use = -2
+     consumer_goods_factor = -2
 	 production_speed_industrial_complex_factor = 0.1
 	 }
 	 }
@@ -501,7 +500,7 @@ ideas = {
      removal_cost = -1
 	 picture = GFX_idea_famine_of_1933
 	 modifier = {
-     civilian_factory_use = -3
+     consumer_goods_factor = -0.03
 	 }
 	 }
 	 
@@ -515,7 +514,7 @@ ideas = {
      removal_cost = -1
 	 picture = GFX_idea_famine_of_1933
 	 modifier = {
-     civilian_factory_use = -3
+     consumer_goods_factor = -0.03
 	 political_power_gain = 0.5
 	 }
 	 }
@@ -546,7 +545,7 @@ ideas = {
      removal_cost = -1
 	 picture = GFX_idea_famine_of_1933
 	 modifier = {
-     civilian_factory_use = -4
+     consumer_goods_factor = -4
 	 }
 	 }
 	 
@@ -575,7 +574,7 @@ ideas = {
      removal_cost = -1
 	 picture = GFX_idea_famine_of_1933
 	 modifier = {
-     civilian_factory_use = -3
+     consumer_goods_factor = -0.03
 	 industrial_capacity_factor = 0.01
 	 }
 	 }
@@ -590,7 +589,7 @@ ideas = {
      removal_cost = -1
 	 picture = GFX_idea_famine_of_1933
 	 modifier = {
-     civilian_factory_use = -3
+     consumer_goods_factor = -0.03
 	 }
 	 }
 	 
@@ -696,7 +695,7 @@ ideas = {
      removal_cost = -1
 	 picture = GFX_idea_famine_of_1933
 	 modifier = {
-     civilian_factory_use = -4
+     consumer_goods_factor = -4
 	 MONTHLY_POPULATION = 0.5 
 	 }
 	 }
@@ -711,7 +710,7 @@ ideas = {
      removal_cost = -1
 	 picture = GFX_idea_famine_of_1933
 	 modifier = {
-     civilian_factory_use = -2
+     consumer_goods_factor = -2
 	 MONTHLY_POPULATION = 1
 	 }
 	 }
@@ -755,7 +754,7 @@ ideas = {
 	 picture = GFX_idea_famine_of_1933
 	 modifier = {
      local_resources_factor = 0.10
-	 civilian_factory_use = -4
+	 consumer_goods_factor = -4
 	 }
 	 }
 	 	 
@@ -769,7 +768,7 @@ ideas = {
      removal_cost = -1
 	 picture = GFX_idea_famine_of_1933
 	 modifier = {
-	 civilian_factory_use = -4
+	 consumer_goods_factor = -4
 	 }
 	 }
 	 
@@ -783,7 +782,7 @@ ideas = {
      removal_cost = -1
 	 picture = GFX_idea_famine_of_1933
 	 modifier = {
-	 civilian_factory_use = -4
+	 consumer_goods_factor = -4
 	 }
 	 }
 	 
@@ -797,7 +796,7 @@ ideas = {
      removal_cost = -1
 	 picture = GFX_idea_famine_of_1933
 	 modifier = {
-     civilian_factory_use = -3
+     consumer_goods_factor = -0.03
 	 political_power_gain = 0.5
 	 }
 	 }
@@ -812,8 +811,8 @@ ideas = {
      removal_cost = -1
 	 picture = GFX_idea_famine_of_1933
 	 modifier = {
-     civilian_factory_use = -3
-	 political_power_gain = 0.5
+     consumer_goods_factor = -0.03
+	 political_power_gain = 0.1
 	 }
 	 }
 	 
@@ -827,7 +826,7 @@ ideas = {
      removal_cost = -1
 	 picture = GFX_idea_famine_of_1933
 	 modifier = {
-     civilian_factory_use = -3
+     consumer_goods_factor = -0.03
 	 production_factory_efficiency_gain_factor = 0.05 
 	 }
 	 }
@@ -841,7 +840,7 @@ ideas = {
      removal_cost = -1
 	 picture = GFX_idea_famine_of_1933
 	 modifier = {
-     civilian_factory_use = -3
+     consumer_goods_factor = -0.03
 	 political_power_gain = 0.5
 	 production_factory_efficiency_gain_factor = 0.05 
 	 }
@@ -856,9 +855,112 @@ ideas = {
      removal_cost = -1
 	 picture = GFX_idea_famine_of_1933
 	 modifier = {
-     civilian_factory_use = -3
+     consumer_goods_factor = -0.03
 	 industrial_capacity_factor = 0.01
 	 }
 	 }
-	  }
-	  }
+	 }
+
+###ARMY STAFF###
+
+ army_chief = {
+ LIT_juozas_barzda_bradauskas = {
+ cost = 150
+ picture = LIT_jouzas_bradauskas
+ allowed = { original_tag = LIT }
+ traits = { army_entrenchment_2 }
+ }
+ 
+ LIT_edvardas_adamkavicius = {
+ cost = 150
+ picture = LIT_edvardas_adamkavicius
+ allowed = { original_tag = LIT }
+ traits = { army_chief_offensive_2 }
+ }
+ 
+ LIT_julius_caplikas = {
+ cost = 150
+ picture = LIT_juliuss_caplikas
+ allowed = { original_tag = LIT }
+ traits = { army_chief_planning_2 }
+ }
+	 }
+	 
+navy_chief = {
+ LIT_adomas_daugirdas = {
+ cost = 150
+ picture = LIT_adomas_daugdiras
+ allowed = { original_tag = LIT }
+ traits = { navy_chief_commerce_raiding_1 }
+ }
+ 
+ LIT_juozas_andzejauskas = {
+ cost = 150
+ picture = LIT_jouzas_andzejauskas
+ allowed = { original_tag = LIT }
+ traits = { navy_chief_reform_1 }
+ }
+ 
+}
+
+air_chief = {
+ LIT_ignas_adamkavicius = {
+ cost = 150
+ picture = LIT_ignas_adamkavicius
+ allowed = { tag = LIT }
+ traits = { air_chief_safety_3 }
+ }
+ LIT_jurgis_bobkevicius = {
+ cost = 150
+ picture = LIT_jurgis_dobkevicius
+ allowed = { tag = LIT }
+ traits = { air_chief_ground_support_2 }
+ }
+
+}
+high_command = { 
+ LIT_jonas_cernius = {
+ cost = 150
+ picture = LIT_jonas_cernius
+ allowed = { original_tag = LIT }
+ traits = { army_chief_morale_2 }
+ }
+
+ LIT_kazys_ladiga = {
+ cost = 150
+ picture = LIT_kazys_ladiga
+ allowed = { original_tag = LIT }
+ traits = { army_infantry_1 }
+ }
+ 
+ LIT_kazys_skirpa = {
+ cost = 150
+ picture = LIT_kazys_skirpa
+ allowed = { original_tag = LIT }
+ traits = { army_regrouping_2 }
+ }
+ 
+ LIT_vincas_vitkauskas = {
+ cost = 150
+ picture = LIT_vincas_vitauskas
+ allowed = { original_tag = LIT }
+ traits = { army_chief_maneuver_3 }
+ }
+ 
+ LIT_mikas_reklaitis = {
+ cost = 150
+ picture = LIT_mikas_reklaitis
+ allowed = { original_tag = LIT }
+ traits = { army_infantry_2 }
+ }
+ 
+ LIT_stasys_rastikis = {
+ cost = 150
+ picture = LIT_stasys_rastikis
+ allowed = { original_tag = LIT }
+ traits = { army_commando_2 }
+ }
+
+}
+
+}

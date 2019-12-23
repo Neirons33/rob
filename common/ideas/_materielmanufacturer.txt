@@ -5,7 +5,7 @@ ideas = {
  
   LIT_ginklu_fondas = {
   designer = yes
-   picture = PRS_mauser
+   picture = LIT_ginklu_fondas
    allowed = { original_tag = LIT }
    cost = 150  
    research_bonus = { infantry_weapons = 0.1 }	
@@ -17,7 +17,7 @@ ideas = {
 
   LIT_linkaiciu_artilerijos_dirbtuves = {
   designer = yes
-   picture = PRS_mauser
+   picture = LIT_linkaiciu_artilerijos_dirbtuves
    allowed = { original_tag = LIT }
    cost = 150  
    research_bonus = { artillery_equipment = 0.1 }	
@@ -29,7 +29,7 @@ ideas = {
  
   LIT_kauno_ginklai = {
   designer = yes
-   picture = PRS_mauser
+   picture = LIT_kauno_ginklai
    allowed = { original_tag = LIT }
    cost = 150 
    equipment_bonus = {
