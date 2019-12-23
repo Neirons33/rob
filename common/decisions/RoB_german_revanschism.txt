@@ -50,7 +50,7 @@ GER_german_expansion = {
  }
  fire_only_once = yes
  available = {
-  date > 1935.9.1
+  date > 1935.4.1
   has_war = no
   CZE = { exists = yes }
   NOT = {
@@ -81,7 +81,7 @@ GER_german_expansion = {
  }
  fire_only_once = yes
  available = {
-  date > 1935.12.20
+  date > 1935.8.20
   has_war = no
    69 = { is_owned_by = GER }
    886 = { is_owned_by = GER }
@@ -161,7 +161,7 @@ GER_german_expansion = {
  }
  fire_only_once = yes
  available = {
-  date > 1938.1.1
+  date > 1937.1.1
   POL = { exists = yes }
   has_war = no
  }
@@ -364,7 +364,7 @@ GER_german_export_revolution = {
    custom_trigger_tooltip	= {
    tooltip = "Austrians have been dealt with"
    OR = {
-   AND = { AUS = { is_puppet_of = GER } }
+   AND = { ACM = { is_puppet_of = GER } }
    AND = {
     152 = { is_owned_by = GER }
 	807 = { is_owned_by = GER }

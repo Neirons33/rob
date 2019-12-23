@@ -1,6 +1,19 @@
 ideas = {
  naval_manufacturer = {
  
+ ###Lithuania
+  LIT_palangos_uostas = {
+   designer = yes
+   allowed = { original_tag = LIT }
+   picture = PRS_konigsberg_wrften
+   research_bonus = { naval_equipment = 0.1 }
+   cost = 150
+    modifier = {
+    navy_screen_attack_factor = 0.06
+	navy_screen_defence_factor = 0.06
+   }
+  }
+ 
  ###Prussia
   PRS_konigsberger_werften = {
    designer = yes

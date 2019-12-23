@@ -1664,7 +1664,7 @@ country_event = {
  option = { ###liberate French Republic
   name = "Liberate Belarusian Republic"
   ai_chance = { factor = 150 }
-  trigger = { DEMOCRATIC_ALIGNED_GOVERNMENT = yes DBR = { exists = yes } }
+  trigger = { DEMOCRATIC_ALIGNED_GOVERNMENT = yes DBR = { exists = no } }
   puppet = DBR
   DBR = { remove_ideas = { belarusian_civil_war DBR_polish_dominance } }
   every_owned_state = {
@@ -1686,7 +1686,7 @@ country_event = {
  option = { ###liberate French State
   name = "Liberate Belarusian State"
   ai_chance = { factor = 150 }
-  trigger = { ANTI_LIBERAL_ALIGNED_GOVERNMENT = yes BLR = { exists = yes } }
+  trigger = { ANTI_LIBERAL_ALIGNED_GOVERNMENT = yes BLR = { exists = no } }
   puppet = BLR
   BLR = { remove_ideas = { belarusian_civil_war BLR_lithuanian_influence } }
   every_owned_state = {

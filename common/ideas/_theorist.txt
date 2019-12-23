@@ -1,6 +1,43 @@
 ideas = {
  theorist = {
  
+ ###Lithuania
+ 
+  LIT_povilas_plechavicius_hc = {
+   allowed = { original_tag = LIT }
+   cost = 200
+   picture = PRS_heinz_guderian
+   research_bonus = { cat_grand_battle_plan = 0.10 }
+   modifier = {
+	army_infantry_attack_factor = 0.1
+	army_infantry_defence_factor = 0.1
+   }
+  }
+  
+  LIT_kazys_musteikis_hc = {
+   allowed = { original_tag = LIT }
+   cost = 200
+   picture = PRS_heinz_guderian
+   research_bonus = { cat_superior_firepower = 0.10 }
+   modifier = {
+	army_artillery_attack_factor = 0.1
+	army_artillery_attack_factor = 0.1
+   }
+  }
+  
+  LIT_stasys_rastikis_hc = {
+   allowed = { original_tag = LIT }
+   cost = 200
+   picture = PRS_heinz_guderian
+   research_bonus = { cat_mobile_warfare = 0.10 }
+   modifier = {
+    army_armor_attack_factor = 0.05
+	army_armor_defence_factor = 0.05
+	motorized_attack_factor = 0.05
+	motorized_defence_factor = 0.05
+   }
+  }
+ 
  ###Prussia
   PRS_heinz_guderian = {
    allowed = { original_tag = PRS }

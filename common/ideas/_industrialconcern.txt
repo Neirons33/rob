@@ -1,6 +1,28 @@
 ideas = {
  industrial_concern = {
  
+ ###Lithuania
+  LIT_lietukis = {
+   designer = yes
+   allowed = { original_tag = LIT }
+   picture=  PRS_braun
+   research_bonus = { industry = 0.1 }
+   cost = 150
+   modifier = {
+    industrial_capacity_factory =0.05
+   }
+  }
+ 
+  LIT_drobe = {
+   designer = yes
+   allowed = { original_tag = LIT }
+   picture=  PRS_braun
+   research_bonus = { industry = 0.1 }
+   cost = 150
+   modifier = {
+    consumer_goods_factor =-0.04
+   }
+  }
  ###Prussia
   PRS_braun = {
    designer = yes

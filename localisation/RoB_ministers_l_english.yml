@@ -46,6 +46,7 @@
  fm_imperialist:0 "Imperialist"
  fm_neutral_bystander:0 "Supporter of Neutrality"
  fm_realpolitik:0 "Realpolitik Supporter"
+ fm_isolationism:0 "Supporter of Isolationism"
  
  em_central_planner:0 "Central Planner"
  em_laissez_faire:0 "Laissez-Faire Capitalist"

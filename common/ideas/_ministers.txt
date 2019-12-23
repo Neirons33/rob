@@ -2,6 +2,123 @@ ideas = {
  
   goverment_head = {
  
+ ###Lithuania
+ LIT_aleksandras_stulginskis_hog = {
+     allowed = { original_tag = LIT }
+	 picture = LIT_stulginsiksi
+     available = { 
+     custom_trigger_tooltip = { 
+      tooltip = replace_hog 
+      has_country_flag = can_replace_head_of_government
+  	 }
+  	}
+     traits = {
+      conservative_min
+      goverment_head
+      hog_agrarian
+     }   
+    }
+
+ LIT_visuomis_hog = {
+     allowed = { original_tag = LIT }
+	 picture = LIT_visoumis
+     available = { 
+     custom_trigger_tooltip = { 
+      tooltip = replace_hog 
+      has_country_flag = can_replace_head_of_government
+  	 }
+  	}
+     traits = {
+      pelekist_min
+      goverment_head
+      hog_pelekist
+     }   
+    }
+
+ LIT_mironas_hog = {
+     allowed = { original_tag = LIT }
+	 picture = LIT_vladas_mironas
+     available = { 
+     custom_trigger_tooltip = { 
+      tooltip = replace_hog 
+      has_country_flag = can_replace_head_of_government
+  	 }
+  	}
+     traits = {
+      pelekist_min
+      goverment_head
+      hog_reactionary
+     }   
+    }
+
+ LIT_antanas_smetona_hog = {
+     allowed = { original_tag = LIT }
+	 picture = LIT_antonas_smetona
+     available = { 
+     custom_trigger_tooltip = { 
+      tooltip = replace_hog 
+      has_country_flag = can_replace_head_of_government
+  	 }
+  	}
+     traits = {
+      reactionary_min
+      goverment_head
+      hog_industrialist
+     }   
+    }
+
+ LIT_kazys_skirpa_hog = {
+     allowed = { original_tag = LIT }
+	 picture = LIT_kazys_skirpa
+     available = { 
+     custom_trigger_tooltip = { 
+      tooltip = replace_hog 
+      has_country_flag = can_replace_head_of_government
+  	 }
+  	}
+     traits = {
+      authoritharian_min
+      goverment_head
+      hog_war_hero
+     }   
+    }
+
+ LIT_kazys_grinius_hog = {
+     allowed = { 
+	 original_tag = LIT
+	 }
+	 picture = LIT_kazys_grinius
+     available = { 
+     custom_trigger_tooltip = { 
+      tooltip = replace_hog 
+      has_country_flag = can_replace_head_of_government
+	  NOT = { has_country_flag = LIT_kazys_dead }
+  	 }
+  	}
+     traits = {
+      social_democracy_min
+      goverment_head
+      hog_staunch_democrat
+     }   
+    }
+
+ LIT_antanas_snieckus_hog = {
+     allowed = { original_tag = LIT }
+	 picture = LIT_antanas_snieckus
+     available = { 
+     custom_trigger_tooltip = { 
+      tooltip = replace_hog 
+      has_country_flag = can_replace_head_of_government
+  	 }
+  	}
+     traits = {
+      democratic_socialist_min
+      goverment_head
+      hog_socialist_revolutionary
+     }   
+    }	
+ 
+ 
  ###Socialist Germany
  GER_ernst_nieksch_hog = {
      allowed = { original_tag = GER }
@@ -169,6 +286,129 @@ ideas = {
   }
  interior_minister = {
 
+ ###Lithuania
+ LIT_jokubas_sernas_im = {
+   allowed = { original_tag = LIT }
+   picture = LIT_jokubas_sernas
+   available = { 
+   custom_trigger_tooltip = { 
+    tooltip = minister_available 
+    DEMOCRATIC_ALIGNED_GOVERNMENT = yes 
+	}
+	}
+   
+   traits = {
+    conservative_min
+    interior_minister
+    im_capitalist
+    }   
+   }
+ 
+ LIT_antanas_smulkstys_im = {
+   allowed = { original_tag = LIT }
+   picture = LIT_antanas_smulkstys
+   available = { 
+   custom_trigger_tooltip = { 
+    tooltip = minister_available 
+    has_government = pelekist 
+	}
+	}
+   
+   traits = {
+    pelekist_min
+    interior_minister
+    im_feudalist
+    }   
+   }
+   
+ LIT_zenonas_blynas_im = {
+   allowed = { original_tag = LIT }
+   picture = LIT_zenonas_blinius
+   available = { 
+   custom_trigger_tooltip = { 
+    tooltip = minister_available 
+    has_government = pelekist 
+	}
+	}
+   
+   traits = {
+    pelekist_min
+    interior_minister
+    im_harsh_tyrannt
+    }   
+   }
+  
+  
+ LIT_augustinas_voldemaras_im = {
+   allowed = { original_tag = LIT }
+   picture = LIT_augustinas_voldemaras
+   available = { 
+   custom_trigger_tooltip = { 
+    tooltip = minister_available 
+    ANTI_LIBERAL_ALIGNED_GOVERNMENT = yes
+	NOT = { has_country_flag = LIT_voldemaras_dead }
+	}
+	}
+   
+   traits = {
+    reactionary_min
+    interior_minister
+    im_man_of_the_people
+    }   
+   }
+   
+ LIT_petras_kubiliunas_im = {
+   allowed = { original_tag = LIT }
+   picture = LIT_peteras_kubilunas
+   available = { 
+   custom_trigger_tooltip = { 
+    tooltip = minister_available 
+    ANTI_LIBERAL_ALIGNED_GOVERNMENT = yes
+	}
+	}
+   
+   traits = {
+    authoritharian_min
+    interior_minister
+    im_iron_fisted
+    }   
+   }
+   
+  
+ LIT_kazys_boruta_im = {
+   allowed = { original_tag = LIT }
+   picture = LIT_kazys_boruta
+   available = { 
+   custom_trigger_tooltip = { 
+    tooltip = minister_available 
+    DEMOCRATIC_ALIGNED_GOVERNMENT = yes
+	}
+	}
+   
+   traits = {
+    social_democracy_min
+    interior_minister
+    im_progressive
+    }   
+   }
+ 
+ LIT_icikas_meskupas_adomas_im = {
+   allowed = { original_tag = LIT }
+   picture = LIT_ickas_adomas
+   available = { 
+   custom_trigger_tooltip = { 
+    tooltip = minister_available 
+    SOCIALIST_ALIGNED_GOVERNMENT = yes
+	}
+	}
+   
+   traits = {
+    democratic_socialist_min
+    interior_minister
+    im_efficent_planner
+    }   
+   } 
+ 
  ###Socialist Germany
  
  GER_heinrich_laufenberg_im = {
@@ -345,6 +585,127 @@ ideas = {
   }
   
   foreign_head = {
+  
+  ###Lithuania
+  LIT_voldemaras_vytautas_fm = {
+   allowed = { original_tag = LIT }
+   picture = LIT_voldemaras_vytautas
+   available = { 
+   custom_trigger_tooltip = { 
+    tooltip = minister_available 
+    SOCIALIST_ALIGNED_GOVERNMENT = yes 
+	}
+	}
+   
+   traits = {
+    conservative_min
+    foreign_head
+    fm_neutral_bystander
+    }   
+   }
+   
+  LIT_jonas_pyragius_fm = {
+   allowed = { original_tag = LIT }
+   picture = LIT_jonas_pyragius
+   available = { 
+   custom_trigger_tooltip = { 
+    tooltip = minister_available 
+    SOCIALIST_ALIGNED_GOVERNMENT = yes 
+	}
+	}
+   
+   traits = {
+    pelekist_min
+    foreign_head
+    fm_imperialist
+    }  
+   }
+   
+  LIT_bronys_raila_fm = {
+   allowed = { original_tag = LIT }
+   picture = LIT_bronys_raila
+   available = { 
+   custom_trigger_tooltip = { 
+    tooltip = minister_available 
+    ANTI_LIBERAL_ALIGNED_GOVERNMENT = yes 
+	}
+	}
+   
+   traits = {
+    pelekist_min
+    foreign_head
+    fm_isolationism
+    }   
+   }
+   
+  LIT_leonas_bistras_fm = {
+   allowed = { original_tag = LIT }
+   picture = LIT_leonas_bistras
+   available = { 
+   custom_trigger_tooltip = { 
+    tooltip = minister_available 
+    ANTI_LIBERAL_ALIGNED_GOVERNMENT = yes 
+	}
+	}
+   
+   traits = {
+    reactionary_min
+    foreign_head
+    fm_realpolitik
+    }   
+   }
+   
+  LIT_povilas_plechavicius_fm = {
+   allowed = { original_tag = LIT }
+   picture = LIT_povilas_plechiavius
+   available = { 
+   custom_trigger_tooltip = { 
+    tooltip = minister_available 
+    ANTI_LIBERAL_ALIGNED_GOVERNMENT = yes 
+	}
+	}
+   
+   traits = {
+    authoritharian_min
+    foreign_head
+    fm_realpolitik
+    }   
+   }
+   
+   
+  LIT_jonas_sliupas_fm = {
+   allowed = { original_tag = LIT }
+   picture = LIT_jonas_silupas
+   available = { 
+   custom_trigger_tooltip = { 
+    tooltip = minister_available 
+    DEMOCRATIC_ALIGNED_GOVERNMENT = yes 
+	}
+	}
+   
+   traits = {
+    social_democracy_min
+    foreign_head
+    fm_neutral_bystander
+    }   
+   }
+   
+  LIT_justas_paleckis_fm = {
+   allowed = { original_tag = LIT }
+   picture = LIT_justas_paleckis
+   available = { 
+   custom_trigger_tooltip = { 
+    tooltip = minister_available 
+    SOCIALIST_ALIGNED_GOVERNMENT = yes 
+	}
+	}
+   
+   traits = {
+    democratic_socialist_min
+    foreign_head
+    fm_revolutionary
+    }   
+   }
   
   ###Socialist Germany
   
@@ -523,9 +884,135 @@ ideas = {
  
  economy_head = {
  
+ ###Lithuania
+ 
+  LIT_juozas_paknys_em = {
+   allowed = { original_tag = LIT }
+   picture = LIT_jouzas_paknys
+   available = { 
+   custom_trigger_tooltip = { 
+    tooltip = minister_available 
+    DEMOCRATIC_ALIGNED_GOVERNMENT = yes 
+	}
+	}
+   
+   traits = {
+    social_democracy_min
+    economy_head
+    em_welfare_supporter
+    }   
+   }
+   
+  LIT_leonas_prapuolenis_em = {
+   allowed = { original_tag = LIT }
+   picture = LIT_leonas_prapulenas
+   available = { 
+   custom_trigger_tooltip = { 
+    tooltip = minister_available 
+    has_government = pelekist
+	}
+	}
+   
+   traits = {
+    pelekist_min
+    economy_head
+    em_feudalist
+    }   
+   }
+   
+  LIT_klemensas_brunius_em = {
+   allowed = { original_tag = LIT }
+   picture = LIT_klemensas_brunius
+   available = { 
+   custom_trigger_tooltip = { 
+    tooltip = minister_available 
+    ANTI_LIBERAL_ALIGNED_GOVERNMENT = yes
+	}
+	}
+   
+   traits = {
+    pelekist_min
+    economy_head
+    em_pelekist_economist
+    }   
+   }
+   
+  LIT_pranas_barkauskas_em = {
+   allowed = { original_tag = LIT }
+   picture = LIT_pranas_barkauskas
+   available = { 
+   custom_trigger_tooltip = { 
+    tooltip = minister_available 
+    ANTI_LIBERAL_ALIGNED_GOVERNMENT = yes
+	}
+	}
+   
+   traits = {
+    reactionary_min
+    economy_head
+    em_corporatist
+    }   
+   }
+   
+   
+  LIT_vytautas_zemaitis_em = {
+   allowed = { original_tag = LIT }
+   picture = LIT_jonas_zemaitis
+   available = { 
+   custom_trigger_tooltip = { 
+    tooltip = minister_available 
+    ANTI_LIBERAL_ALIGNED_GOVERNMENT = yes
+	}
+	}
+   
+   traits = {
+    authoritharian_min
+    economy_head
+    em_corporatist
+    }   
+   }
+   
+   
+   LIT_steponas_kairys_em = {
+   allowed = { original_tag = LIT }
+   picture = LIT_steponas_kairys
+   available = { 
+   custom_trigger_tooltip = { 
+    tooltip = minister_available 
+    ANTI_LIBERAL_ALIGNED_GOVERNMENT = yes
+	}
+	}
+   
+   traits = {
+    social_democracy_min
+    economy_head
+    em_union_man
+    }   
+   }
+   
+   LIT_aaron_soltz_em = {
+   allowed = { original_tag = LIT }
+   picture = LIT_aron_solts
+   available = { 
+   custom_trigger_tooltip = { 
+    tooltip = minister_available 
+    ANTI_LIBERAL_ALIGNED_GOVERNMENT = yes
+	}
+	}
+   
+   traits = {
+    democratic_socialist_min
+    economy_head
+    em_central_planner
+    }   
+   }
+   
+   
+
+ 
  ###Socialist Germany
  
-  GER_gregor_strasser_em = {
+  GER_greorg_strasser_em = {
    allowed = { original_tag = GER }
    picture = GER_greorg_strasser
    available = { 
@@ -680,7 +1167,139 @@ ideas = {
   }
   
   defense_minister = {
+  
+ ###Lithuania
+ 
+  LIT_stasys_rastikis_dm = {
+   allowed = { original_tag = LIT }
+   picture = LIT_stasys_rastikis
+   available = { 
+   custom_trigger_tooltip = { 
+    tooltip = minister_available 
+    DEMOCRATIC_ALIGNED_GOVERNMENT = yes 
+	}
+	}
+   
+   traits = {
+    conservative_min
+    defense_minister
+    dm_militarist
+    }   
+      
+ }
+ 
+ 
+  LIT_petras_kubiliunas_dm = {
+   allowed = { original_tag = LIT }
+   picture = LIT_peteras_kubilunas
+   available = { 
+   custom_trigger_tooltip = { 
+    tooltip = minister_available 
+    ANTI_LIBERAL_ALIGNED_GOVERNMENT = yes 
+	}
+	}
+   
+   traits = {
+    pelekist_min
+    defense_minister
+    dm_experienced_soldier
+    }   
+      
+ }
+ 
+ 
+  LIT_ignas_vylius_dm = {
+   allowed = { original_tag = LIT }
+   picture = LIT_ignas_vylius
+   available = { 
+   custom_trigger_tooltip = { 
+    tooltip = minister_available 
+    ANTI_LIBERAL_ALIGNED_GOVERNMENT = yes 
+	}
+	}
+   
+   traits = {
+    pelekist_min
+    defense_minister
+    dm_elitist
+    }   
+      
+ }
+ 
+ 
+  LIT_povilas_plechavicius_dm = {
+   allowed = { original_tag = LIT }
+   picture = LIT_povilas_plechiavius
+   available = { 
+   custom_trigger_tooltip = { 
+    tooltip = minister_available 
+    ANTI_LIBERAL_ALIGNED_GOVERNMENT = yes 
+	}
+	}
+   
+   traits = {
+    authoritharian_min
+    defense_minister
+    dm_militarist
+    }   
+      
+ }
 
+ 
+  LIT_kazys_musteikis_dm = {
+   allowed = { original_tag = LIT }
+   picture = LIT_kazys_musteikis
+   available = { 
+   custom_trigger_tooltip = { 
+    tooltip = minister_available 
+    ANTI_LIBERAL_ALIGNED_GOVERNMENT = yes 
+	}
+	}
+   
+   traits = {
+    reactionary_min
+    defense_minister
+    dm_mass_conscription_supporter
+    }   
+      
+ }
+ 
+  LIT_albinas_cepas_dm = {
+   allowed = { original_tag = LIT }
+   picture = LIT_albinas_cepas
+   available = { 
+   custom_trigger_tooltip = { 
+    tooltip = minister_available 
+    DEMOCRATIC_ALIGNED_GOVERNMENT = yes 
+	}
+	}
+   
+   traits = {
+    social_democracy_min
+    defense_minister
+    dm_civilian_administator
+    }   
+      
+ }
+ 
+ 
+  LIT_vincas_vitauskas_dm = {
+   allowed = { original_tag = LIT }
+   picture = LIT_vincas_vitauskas
+   available = { 
+   custom_trigger_tooltip = { 
+    tooltip = minister_available 
+    SOCIALIST_ALIGNED_GOVERNMENT = yes 
+	}
+	}
+   
+   traits = {
+    democratic_socialist_min
+    defense_minister
+    dm_carrer_general
+    }   
+      
+ }
  ###Socialist Germany 
   
   GER_fritz_wolffheim_dm = {

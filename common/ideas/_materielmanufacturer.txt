@@ -1,6 +1,44 @@
 ideas = {
  materiel_manufacturer = {
  
+ ###Lithuania
+ 
+  LIT_ginklu_fondas = {
+  designer = yes
+   picture = PRS_mauser
+   allowed = { original_tag = LIT }
+   cost = 150  
+   research_bonus = { infantry_weapons = 0.1 }	
+   modifier = {
+    army_infantry_attack_factor = 0.03
+	army_infantry_defence_factor = 0.03
+   }
+  }
+
+  LIT_linkaiciu_artilerijos_dirbtuves = {
+  designer = yes
+   picture = PRS_mauser
+   allowed = { original_tag = LIT }
+   cost = 150  
+   research_bonus = { artillery_equipment = 0.1 }	
+   modifier = {
+    army_artillery_attack_factor = 0.1
+	army_artillery_defence_factor = 0.1
+   }
+  }  
+ 
+  LIT_kauno_ginklai = {
+  designer = yes
+   picture = PRS_mauser
+   allowed = { original_tag = LIT }
+   cost = 150 
+   equipment_bonus = {
+   infantry_equipment = {
+	build_cost_ic = -0.15 instant = yes
+     }
+	}    
+   research_bonus = { infantry_equipment = 0.1 }	
+  } 
  ###Prussia
   PRS_mauser = {
   designer = yes

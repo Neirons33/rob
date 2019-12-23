@@ -10,6 +10,11 @@ add_ideas = {
 	semi_loyal_military
 	pelekists_rising
 	pearl_of_stability
+	LIT_aleksandras_stulginskis_hog
+	LIT_jokubas_sernas_im
+	LIT_voldemaras_vytautas_fm
+	LIT_juozas_paknys_em
+	LIT_stasys_rastikis_dm
 }
 
 set_technology = {
@@ -20,57 +25,6 @@ set_technology = {
 
 set_convoys = 10
 
-1939.1.1 = {
-
-	add_political_power = 1198
-	
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = flexible_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-	
-	oob = "LIT_1939"
-	set_technology = {
-		tech_support = 1		
-		tech_engineers = 1
-		early_bomber = 1
-		gw_artillery = 1
-		interwar_artillery = 1
-		interwar_antiair = 1
-		support_weapons = 1
-
-		#doctrines
-		air_superiority = 1
-		grand_battle_plan = 1
-		trench_warfare = 1
-		fleet_in_being = 1
-		battlefleet_concentration = 1
-		convoy_sailing = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		mechanical_computing = 1
-		computing_machine = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		fuel_silos = 1
-		construction1 = 1
-		construction2 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-	}
-}
 set_politics = {
 	ruling_party = conservative
 	last_election = "1933.7.1"
@@ -78,9 +32,9 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	national_socialist = 3
-	socialist = 3
-	democratic_socialist = 0
+	national_socialist = 0
+	socialist = 0
+	democratic_socialist = 6
 	social_democracy = 22
 	social_liberal = 7
 	conservative = 33
@@ -147,7 +101,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Augustinas Voldemaras"
 	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+	picture = "Portrait_Lithuania_Augustinas_Voldemaras.tga"
 	expire = "1965.1.1"
 	ideology = pagan_pelekism
 	traits = {

@@ -112,6 +112,13 @@ option = { ###Liberal Block Victory
   ruling_party = social_democracy
   elections_allowed = no
  }
+ add_ideas = {
+ LIT_kazys_grinius_hog
+ LIT_kazys_boruta_im
+ LIT_jonas_sliupas_fm
+ LIT_juozas_paknys_em
+ LIT_albinas_cepas_dm
+ }
  hidden_effect = {
   country_event = { id = lithuania.5 days = 10 }
  }
@@ -167,6 +174,13 @@ option = { ###Jonas Beržanskis
   ruling_party = pelekist
   elections_allowed = no
  }
+ add_ideas = {
+ LIT_visuomis_hog
+ LIT_antanas_smulkstys_im
+ LIT_jonas_pyragius_fm
+ LIT_leonas_prapuolenis_em
+ LIT_petras_kubiliunas_dm
+ }
  create_country_leader = {
 	name = "Jonas Beržanskis"
 	desc = ""
@@ -179,7 +193,7 @@ option = { ###Jonas Beržanskis
 }
 set_party_name = { ideology = pelekist long_name = LIT_pelekism_visoumis_long name = LIT_pelekism_visoumis}
 hidden_effect = {
- country_event = { id = lithuania.7 days = 700 } 
+ country_event = { id = lithuania.7 days = 3 } 
 }
 }
 option = { ###Augustinas Voldemaras
@@ -190,10 +204,17 @@ option = { ###Augustinas Voldemaras
   ruling_party = pelekist
   elections_allowed = no
  }
+  add_ideas = {
+ LIT_mironas_hog
+ LIT_zenonas_blynas_im
+ LIT_bronys_raila_fm
+ LIT_klemensas_brunius_em
+ LIT_ignas_vylius_dm
+ }
  create_country_leader = {
 	name = "Augustinas Voldemaras"
 	desc = ""
-	picture = ".tga"
+	picture = "Portrait_Lithuania_Augustinas_Voldemaras.tga"
 	expire = "1953.3.1"
 	ideology = pelekist_subtype
 	traits = {
@@ -212,10 +233,17 @@ option = { ###Military Dictaotshiop
   ruling_party = authoritharian
   elections_allowed = no
  }
+ add_ideas = {
+ LIT_kazys_skirpa_hog
+ LIT_petras_kubiliunas_im
+ LIT_povilas_plechavicius_fm
+ LIT_vytautas_zemaitis_em
+ LIT_kazys_musteikis_dm
+ }
  create_country_leader = {
 	name = "Kazys Škirpa"
 	desc = ""
-	picture = ".tga"
+	picture = "Portrait_Lithuania_Kazys_Skirpa.tga"
 	expire = "1953.3.1"
 	ideology = authoritharian
 	traits = {
@@ -232,10 +260,17 @@ option = { ###Smentona Dictaotshiop
   ruling_party = reactionary
   elections_allowed = no
  }
+ add_ideas = {
+ LIT_antanas_smetona_hog
+ LIT_augustinas_voldemaras_im
+ LIT_leonas_bistras_fm
+ LIT_pranas_barkauskas_em
+ LIT_povilas_plechavicius_dm
+ }
  create_country_leader = {
 	name = "Antanas Smetona"
 	desc = ""
-	picture = ".tga"
+	picture = "portrait_lit_antanas_smetona.tga"
 	expire = "1953.3.1"
 	ideology = reactionary_subtype
 	traits = {
@@ -282,6 +317,7 @@ is_triggered_only = yes
 
 option = {
 name = lithuania.8.a
+set_country_flag = LIT_voldemaras_dead
 kill_country_leader = yes
  create_country_leader = {
 	name = "Vladas Mironas"
@@ -307,7 +343,7 @@ is_triggered_only = yes
 
 option = {
 name = lithuania.9.a
-add_popularity = {ideology = socialist popularity =0.05}
+add_popularity = {ideology = democratic_socialist popularity =0.05}
 hidden_effect = {
  country_event = { id = lithuania.10 days = 30 }
 }
@@ -325,6 +361,7 @@ is_triggered_only = yes
 option = { ###Grinius dies
 name = lithuania.10.a
 kill_country_leader = yes
+set_country_flag = LIT_kazys_dead
  create_country_leader = {
 	name = "Lietuvos Respublikos Seimas"
 	desc = ""
@@ -356,10 +393,17 @@ is_triggered_only = yes
 
 option = {
 name = lithuania.11.a
-add_popularity = {ideology = socialist popularity =0.45}
+add_popularity = {ideology = democratic_socialist popularity =0.2}
 set_politics = {
- ruling_party = socialist
+ ruling_party = democratic_socialist
  elections_allowed = no
+}
+add_ideas = {
+LIT_antanas_snieckus_hog
+LIT_icikas_meskupas_adomas_im
+LIT_justas_paleckis_fm
+LIT_aaron_soltz_em
+LIT_vincas_vitauskas_dm
 }
 }
 }
@@ -471,7 +515,7 @@ id = lithuania.18
 title = "Major Churches Closed in Lithuania!"
 desc = lithuania.18.d
 fire_only_once = yes
-mean_time_to_happen = { days = 1 }
+is_triggered_only = yes
 
 option = {
  name = "So we returning to Perkūnas?"

@@ -3905,5 +3905,143 @@ spriteTypes = {
 		name = "GFX_idea_BLR_pelekists_medium"
 		texturefile = "gfx/interface/ideas/BLR_pelekists_medium.dds"
 	}
+	
+	
+###LITHUANIA
+
+###Ministers
+
+		spriteType = {
+		name = "GFX_idea_LIT_albinas_cepas"
+		texturefile = "gfx/interface/ideas/LIT_albinas_cepas.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_LIT_antanas_smulkstys"
+		texturefile = "gfx/interface/ideas/LIT_antanas_smulkstys.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_LIT_antanas_snieckus"
+		texturefile = "gfx/interface/ideas/LIT_antanas_snieckus.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_LIT_antonas_smetona"
+		texturefile = "gfx/interface/ideas/LIT_antonas_smetona.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_LIT_aron_solts"
+		texturefile = "gfx/interface/ideas/LIT_aron_solts.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_LIT_augustinas_voldemaras"
+		texturefile = "gfx/interface/ideas/LIT_augustinas_voldemaras.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_LIT_bronys_raila"
+		texturefile = "gfx/interface/ideas/LIT_bronys_raila.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_LIT_ickas_adomas"
+		texturefile = "gfx/interface/ideas/LIT_ickas_adomas.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_LIT_ignas_vylius"
+		texturefile = "gfx/interface/ideas/LIT_ignas_vylius.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_LIT_jokubas_sernas"
+		texturefile = "gfx/interface/ideas/LIT_jokubas_sernas.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_LIT_jonas_pyragius"
+		texturefile = "gfx/interface/ideas/LIT_jonas_pyragius.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_LIT_jonas_silupas"
+		texturefile = "gfx/interface/ideas/LIT_jonas_silupas.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_LIT_jouzas_paknys"
+		texturefile = "gfx/interface/ideas/LIT_jouzas_paknys.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_LIT_justas_paleckis"
+		texturefile = "gfx/interface/ideas/LIT_justas_paleckis.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_LIT_kazys_boruta"
+		texturefile = "gfx/interface/ideas/LIT_kazys_boruta.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_LIT_kazys_grinius"
+		texturefile = "gfx/interface/ideas/LIT_kazys_grinius.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_LIT_kazys_musteikis"
+		texturefile = "gfx/interface/ideas/LIT_kazys_musteikis.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_LIT_kazys_skirpa"
+		texturefile = "gfx/interface/ideas/LIT_kazys_skirpa.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_LIT_klemensas_brunius"
+		texturefile = "gfx/interface/ideas/LIT_klemensas_brunius.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_LIT_leonas_bistras"
+		texturefile = "gfx/interface/ideas/LIT_leonas_bistras.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_LIT_leonas_prapulenas"
+		texturefile = "gfx/interface/ideas/LIT_leonas_prapulenas.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_LIT_peteras_kubilunas"
+		texturefile = "gfx/interface/ideas/LIT_peteras_kubilunas.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_LIT_povilas_plechiavius"
+		texturefile = "gfx/interface/ideas/LIT_povilas_plechiavius.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_LIT_pranas_barkauskas"
+		texturefile = "gfx/interface/ideas/LIT_pranas_barkauskas.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_LIT_stasys_rastikis"
+		texturefile = "gfx/interface/ideas/LIT_stasys_rastikis.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_LIT_steponas_kairys"
+		texturefile = "gfx/interface/ideas/LIT_steponas_kairys.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_LIT_stulginsiksi"
+		texturefile = "gfx/interface/ideas/LIT_stulginsiksi.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_LIT_vincas_vitauskas"
+		texturefile = "gfx/interface/ideas/LIT_vincas_vitauskas.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_LIT_visoumis"
+		texturefile = "gfx/interface/ideas/LIT_visoumis.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_LIT_vladas_mironas"
+		texturefile = "gfx/interface/ideas/LIT_vladas_mironas.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_LIT_voldemaras_vytautas"
+		texturefile = "gfx/interface/ideas/LIT_voldemaras_vytautas.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_LIT_zenonas_blinius"
+		texturefile = "gfx/interface/ideas/LIT_zenonas_blinius.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_LIT_jonas_zemaitis"
+		texturefile = "gfx/interface/ideas/LIT_jonas_zemaitis.tga"
+	}
 
 }
