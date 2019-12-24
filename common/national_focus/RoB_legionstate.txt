@@ -55,6 +55,12 @@ focus_tree = {
 		x = 57
 		y = 9
 		cost = 5
+		available = {
+ 			OR = {
+ 			has_country_flag = pagan
+ 			has_country_flag = christ
+			}
+		}
 		mutually_exclusive = { focus = LES_liberationofwomen focus = LES_guardiansofyouth }
 		available_if_capitulated = yes
 		prerequisite = { focus = LES_dealingwithmothers }
@@ -96,6 +102,12 @@ focus_tree = {
 		x = 51
 		y = 9
 		cost = 5
+		available = {
+ 			OR = {
+ 			has_country_flag = poets
+ 			has_country_flag = christ
+			}
+		}
 		mutually_exclusive = { focus = LES_patriarchaltraditions focus = LES_guardiansofyouth }
 		available_if_capitulated = yes
 		prerequisite = { focus = LES_dealingwithmothers }
@@ -117,6 +129,12 @@ focus_tree = {
 		x = 25
 		y = 9
 		cost = 5
+		available = {
+ 			OR = {
+ 			has_country_flag = pagan
+ 			has_country_flag = christ
+			}
+		}
 		mutually_exclusive = { focus = LES_socialismwithslaviccharacteristics focus = LES_divinecorporations }
 		available_if_capitulated = yes
 		prerequisite = { focus = LES_attitudetowork }
@@ -143,8 +161,8 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		add_stability = -0.1
- 		add_popularity = {ideology = pelekist popularity =0.05}
+		add_stability = -0.05
+ 		add_popularity = {ideology = pelekist popularity =0.1}
 		}
 	}
 
@@ -606,6 +624,12 @@ focus_tree = {
 		x = 44
 		y = 9
 		cost = 5
+		available = {
+ 			OR = {
+ 			has_country_flag = poets
+ 			has_country_flag = christ
+			}
+		}
 		mutually_exclusive = { focus = LES_racialeugenics focus = LES_spiritoverbody }
 		available_if_capitulated = yes
 		prerequisite = { focus = LES_theethnicissue }
@@ -626,6 +650,13 @@ focus_tree = {
 		x = 47
 		y = 9
 		cost = 5
+		available = {
+ 			OR = {
+ 			has_country_flag = pagan
+ 			has_country_flag = poets
+			}
+		}
+
 		mutually_exclusive = { focus = LES_spiritoverbody focus = LES_reshapingofaconstruct }
 		available_if_capitulated = yes
 		prerequisite = { focus = LES_theethnicissue }
@@ -1507,6 +1538,7 @@ focus_tree = {
 		x = 52
 		y = 2
 		cost = 5
+		mutually_exclusive = { focus = LES_certainty focus = LES_frugality }
 		available_if_capitulated = yes
 		prerequisite = { focus = LES_empowerthencos }
 		ai_will_do = {
@@ -1529,6 +1561,7 @@ focus_tree = {
 		x = 66
 		y = 2
 		cost = 5
+		mutually_exclusive = { focus = LES_flexibility focus = LES_frugality }
 		available_if_capitulated = yes
 		prerequisite = { focus = LES_hqknowsbest }
 		ai_will_do = {
@@ -1551,6 +1584,7 @@ focus_tree = {
 		x = 59
 		y = 2
 		cost = 5
+		mutually_exclusive = { focus = LES_flexibility focus = LES_certainty }
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = LES_empowerthencos 
@@ -1741,7 +1775,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 6
 		y = 0
-		cost = 1
+		cost = 3
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 1
@@ -1953,7 +1987,6 @@ focus_tree = {
 		completion_reward = {
 		hidden_effect = {
 		set_country_flag = path
-		LES = { country_event = { id = legion.20 days = 30 } }
 		}
 		}
 	}
@@ -2176,6 +2209,12 @@ focus_tree = {
 		x = 41
 		y = 9
 		cost = 5
+		available = {
+ 			OR = {
+ 			has_country_flag = pagan
+ 			has_country_flag = christ
+			}
+		}
 		mutually_exclusive = { focus = LES_racialeugenics focus = LES_reshapingofaconstruct }
 		available_if_capitulated = yes
 		prerequisite = { focus = LES_theethnicissue }
@@ -2648,6 +2687,11 @@ focus_tree = {
 		x = 5
 		y = 6
 		cost = 5
+		available = {
+ 			AND = {
+ 			has_country_flag = christ
+			}
+		}
 		available_if_capitulated = yes
 		prerequisite = { focus = LES_thematterofreligion }
 		ai_will_do = {
@@ -2688,6 +2732,11 @@ focus_tree = {
 		x = 13
 		y = 6
 		cost = 5
+		available = {
+		NOT = {
+ 			has_country_flag = christ
+			}
+		}
 		available_if_capitulated = yes
 		prerequisite = { focus = LES_thematterofreligion }
 		ai_will_do = {

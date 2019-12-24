@@ -1,0 +1,22 @@
+####################
+###Avant Garde Russia Events
+####################
+
+add_namespace = agrussia
+
+###Starting Event
+country_event = { 
+id =  agrussia.1
+title =  agrussia.1.t
+desc =  agrussia.1.d
+fire_only_once = yes
+is_triggered_only = yes
+
+option = {
+ name =  agrussia.1.a
+ hidden_effect = {
+ LES = { country_event = { id = legion.20 days = 7 } }
+ }
+}
+}
+

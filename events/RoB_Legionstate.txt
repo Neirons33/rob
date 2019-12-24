@@ -135,7 +135,17 @@ is_triggered_only = yes
 
 option = {
  name = legion.6.a
+ hidden_effect = {
  set_country_flag = LES_survives
+ 		if = {
+				limit = {
+					AND = {
+					has_country_flag = poets
+					}
+				}
+ AGR = { country_event = { id = agrussia.1 days = 14 } }
+ }
+}
 }
 }
 
@@ -333,8 +343,8 @@ is_triggered_only = yes
 
 option = {
  name = legion.14.a
- add_manpower = -15837
- hidden_effect {
+ add_manpower = -8673‬
+ hidden_effect = {
  LES = { country_event = { id = legion.15 days = 21 } }
  }
 }
@@ -352,7 +362,7 @@ is_triggered_only = yes
 
 option = {
  name = legion.15.a
- add_manpower = 13544
+ add_manpower = 7919‬
  add_equipment_to_stockpile = {
  type = infantry_equipment_0
  amount = 471
@@ -381,7 +391,7 @@ is_triggered_only = yes
 option = {
  name = legion.16.a
  add_political_power = -50
- hidden_effect {
+ hidden_effect = {
  LES = { country_event = { id = legion.17 days = 17 } }
  }
 	}
@@ -425,7 +435,8 @@ is_triggered_only = yes
 
 option = {
  name = legion.18.a
- hidden_effect {
+ add_manpower = -4724
+ hidden_effect = {
  LES = { country_event = { id = legion.19 days = 17 } }
 }
 }
@@ -442,9 +453,10 @@ is_triggered_only = yes
 
 option = {
  name = legion.19.a
+ add_manpower = 3083‬
  add_equipment_to_stockpile = {
  type = motorized_equipment_1
- amount = 82
+ amount = 231
  producer = RDR
  		}
 }
@@ -469,7 +481,9 @@ is_triggered_only = yes
 option = {
  name = legion.20.a
  annex_country = { target = AGR transfer_troops = yes }
+ hidden_effect = {
  add_state_core = 1231
+ }
  }
 }
 }
