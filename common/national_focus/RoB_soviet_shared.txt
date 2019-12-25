@@ -1024,7 +1024,7 @@ ai_will_do = {
  } 
 completion_reward = {
 hidden_effect = {
-country_event = { id = bolshevik_russia.38 days = 1 }
+country_event = { id = bolshevik_russia.38 days = 10 }
 }
 219 = { 
 add_extra_state_shared_building_slots = 3

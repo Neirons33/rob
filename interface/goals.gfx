@@ -2956,6 +2956,124 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/LIT_underwater_attack.tga"
 	}
 	
+    ###ARMY
+	SpriteType = { 
+		name = "GFX_focus_LIT_all_arms_tp_lithuania"
+		texturefile = "gfx/interface/goals/LIT_all_arms_tp_lithuania.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_aritlery_fire"
+		texturefile = "gfx/interface/goals/LIT_aritlery_fire.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_aritlery_fire_2"
+		texturefile = "gfx/interface/goals/LIT_aritlery_fire_2.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_buy_other_tanks"
+		texturefile = "gfx/interface/goals/LIT_buy_other_tanks.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_defensive_doctrine"
+		texturefile = "gfx/interface/goals/LIT_defensive_doctrine.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_epowr_lith_riflemen"
+		texturefile = "gfx/interface/goals/LIT_epowr_lith_riflemen.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_import_guins"
+		texturefile = "gfx/interface/goals/LIT_import_guins.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_lietovus_karioumene"
+		texturefile = "gfx/interface/goals/LIT_lietovus_karioumene.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_lighting_attack"
+		texturefile = "gfx/interface/goals/LIT_lighting_attack.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_lion_of_defence"
+		texturefile = "gfx/interface/goals/LIT_lion_of_defence.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_lion_of_offence"
+		texturefile = "gfx/interface/goals/LIT_lion_of_offence.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_lith_guns"
+		texturefile = "gfx/interface/goals/LIT_lith_guns.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_lith_tanks"
+		texturefile = "gfx/interface/goals/LIT_lith_tanks.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_mobile_warfare"
+		texturefile = "gfx/interface/goals/LIT_mobile_warfare.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_mobile_warfare_2"
+		texturefile = "gfx/interface/goals/LIT_mobile_warfare_2.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_offensive_focus"
+		texturefile = "gfx/interface/goals/LIT_offensive_focus.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_partisan_warfare"
+		texturefile = "gfx/interface/goals/LIT_partisan_warfare.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_pearl_of_lith_army"
+		texturefile = "gfx/interface/goals/LIT_pearl_of_lith_army.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_prolong_russian_war"
+		texturefile = "gfx/interface/goals/LIT_prolong_russian_war.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_radical_intervention"
+		texturefile = "gfx/interface/goals/LIT_radical_intervention.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_raid_german_strongholds"
+		texturefile = "gfx/interface/goals/LIT_raid_german_strongholds.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_raids_into_russia"
+		texturefile = "gfx/interface/goals/LIT_raids_into_russia.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_request_company_support"
+		texturefile = "gfx/interface/goals/LIT_request_company_support.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_stormtroopers"
+		texturefile = "gfx/interface/goals/LIT_stormtroopers.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_support_balt_partisans"
+		texturefile = "gfx/interface/goals/LIT_support_balt_partisans.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_support_partisans_in_belarus"
+		texturefile = "gfx/interface/goals/LIT_support_partisans_in_belarus.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_trench_warfare"
+		texturefile = "gfx/interface/goals/LIT_trench_warfare.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_trench_warfare_2"
+		texturefile = "gfx/interface/goals/LIT_trench_warfare_2.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_LIT_motorize_army"
+		texturefile = "gfx/interface/goals/LIT_motorize_army.tga"
+	}
+	
 	
 	###GERMANY
 				SpriteType = { 

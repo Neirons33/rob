@@ -7,6 +7,7 @@ ideas = {
    designer = yes
    picture = LIT_anbo
    allowed = { tag = LIT }
+   available = { has_completed_focus = LIT_grantanbomoreprivledges }
    cost = 150
    research_bonus = { light_air = 0.1 }
    equipment_bonus = {
@@ -26,6 +27,7 @@ ideas = {
    allowed = { tag = LIT }
    cost = 150
    research_bonus = { light_air = 0.1 }
+   available = { has_completed_focus = LIT_endtheanbomonpoly }
    equipment_bonus = {
     fighter = {
      build_cost_ic = 0.03 instant = yes

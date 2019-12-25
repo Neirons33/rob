@@ -33,6 +33,21 @@
  GER_lux_economy:0 "Second All-German Congress has decided on Orthodox Marxist policy"
  GER_diplo_tt_1:0 "§RThis will provoke French response!§!\n"
  GER_tt_3:0 "The Political Future of Germany Has Been Decided"
+ ###Lithuania
+ LIT_visoumis_rule:0 "Gintautas I Has Been Crowned"
+ LIT_mironas_rules:0 "Vladas Mironas is Tautos Vadas"
+ LIT_smetona_president:0 "Antanas Smetona Is the President"
+ LIT_skirpa_rules:0 "Kazys Škirpa is the New Leader"
+ LIT_democracyholds:0 "Democracy Has Prevailed in Lithuania"
+ LIT_prussian_deal_ss:0 "We've Decided to Acquire Submarine Fleet"
+ LIT_prussian_deal_dd:0 "We've Decided to Acquire Destroyer Fleet"
+ lit_tt_1:0 "§MWe Will Support Local Militias in Foreign Lands§!"
+ lit_tt_2:0 "§GThis Will Allow Us to Focus on Offense§!"
+ lit_tt_3:0 "§GThis Will Allow Us to Focus on Defense§!"
+ lit_tt_4:0 "§HWe Will Acquire More Great War Destroyers§!"
+ lit_tt_5:0 "§HWe Will Finish Modernezation of President Smetona§!"
+ lit_tt_6:0 "§HWe Will Acquire Two Great War Submarines§!"
+ 
  ###Scripted Triggers
  minister_available:0 "Minister Available For This Government Type"
  democratic_aligned_government:0 "Government is Democratic Aligned"

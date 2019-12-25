@@ -36,6 +36,45 @@ is_triggered_only = yes
 
 option = {
  name = "War it is, then"
+ CAA = {
+ add_ai_strategy = {
+			type = antagonize
+			id = "CRM"
+			value = 50000
+		}
+ add_ai_strategy = {
+			type = antagonize
+			id = "CAU"
+			value = 50000
+		}
+ 
+ }
+ CRM = {
+ add_ai_strategy = {
+			type = antagonize
+			id = "CAA"
+			value = 50000
+		}
+ add_ai_strategy = {
+			type = antagonize
+			id = "CAU"
+			value = 50000
+		}
+ 
+ }
+ CAU = {
+ add_ai_strategy = {
+			type = antagonize
+			id = "CAA"
+			value = 50000
+		}
+ add_ai_strategy = {
+			type = antagonize
+			id = "CRM"
+			value = 50000
+		}
+ 
+ }
   CRM = { country_event = { id = south_russian.3 days = 1 } }
   CAA = { country_event = { id = south_russian.3 days = 1 } }
   CAU = { dismantle_faction = yes }

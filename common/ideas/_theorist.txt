@@ -7,6 +7,7 @@ ideas = {
    allowed = { original_tag = LIT }
    cost = 200
    picture = LIT_povilas_plechiavius
+   available = { has_tech = trench_warfare }
    research_bonus = { cat_grand_battle_plan = 0.10 }
    modifier = {
 	army_infantry_attack_factor = 0.1
@@ -16,6 +17,7 @@ ideas = {
   
   LIT_kazys_musteikis_hc = {
    allowed = { original_tag = LIT }
+   available = { has_tech = superior_firepower }
    cost = 200
    picture = LIT_kazys_musteikis
    research_bonus = { cat_superior_firepower = 0.10 }
@@ -27,6 +29,7 @@ ideas = {
   
   LIT_stasys_rastikis_hc = {
    allowed = { original_tag = LIT }
+   available = { has_tech = mobile_warfare }
    cost = 200
    picture = LIT_stasys_rastikis
    research_bonus = { cat_mobile_warfare = 0.10 }
