@@ -20,6 +20,9 @@ set_popularities = {
 	reactionary = 0
 	pelekist = 0
 }
+add_ideas = {
+ extensive_conscription
+}
 
 create_country_leader = {
 	name = "Vsevolod Eikhenbaum"

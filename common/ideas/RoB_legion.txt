@@ -126,6 +126,20 @@ LES_Fiercest_Infantry = {
 	 }
 
 }
+   LES_dab_on_abrahamics = {
+   picture = GFX_idea_minority_troubles 
+   allowed = {
+       always = no
+     }
+   allowed_civil_war = {
+        always = no
+      }
+     removal_cost = -1
+   modifier = {
+   conscription_factor = -0.2
+   }
+
+}
    LES_Discontent = {
    picture = GFX_idea_minority_troubles	
    allowed = {
@@ -152,8 +166,8 @@ LES_Fiercest_Infantry = {
 			}
      removal_cost = -1
 	 modifier = {
-	stability_weekly = 0.01
-    war_support_weekly = 0.01
+	stability_weekly = 0.0030
+    war_support_weekly = 0.0030
 	 }
 
 }
@@ -542,8 +556,8 @@ LES_Fiercest_Infantry = {
       }
      removal_cost = -1
    modifier = {
-   army_core_attack_factor = 0.025
-   army_core_defence_factor = 0.025
+   army_attack_factor = 0.025
+   army_defence_factor = 0.025
    industrial_capacity_factory = 0.025
    production_factory_max_efficiency_factor = 0.025
    research_speed_factor = 0.05

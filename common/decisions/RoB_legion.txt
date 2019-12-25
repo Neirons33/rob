@@ -1,0 +1,1509 @@
+LES_unite = {
+
+ 
+LES_destroy_KAR = {
+  target_trigger = { FROM = {tag = KAR} }
+  visible = {
+    NOT = {
+       tag = KAR
+     }
+     KAR = {
+      exists = yes
+     }
+ }
+ available = {
+ OR = {
+if = {
+ is_neighbor_of = KAR
+    NOT = {
+   is_in_faction_with = KAR
+  }
+  has_war = no
+ }
+if = {
+ AGR = { 
+ is_neighbor_of = KAR 
+ NOT = { is_in_faction_with = KAR}
+ has_war = no
+ }}}}
+
+ ai_will_do = {
+  base = 10
+   modifier = {
+   factor = 200
+    ROOT = {
+   strength_ratio = {
+    tag = KAR
+    ratio > 0.50
+   }
+  }
+   }
+ }
+ cost = 50
+ fire_only_once = yes
+ days_remove = 20
+ remove_effect = {
+  ROOT = {
+ declare_war_on = { target = KAR type = annex_everything }
+  }
+ }
+ }
+
+LES_deal_with_KAR = {
+  target_trigger = { FROM = {tag = KAR} }
+  visible = {
+  LES = { owns_state = 571 }
+ }
+ available = {
+  LES = { owns_state = 571 }
+  }
+ ai_will_do = {
+  base = 10
+   modifier = {
+   factor = 200
+   }
+ }
+ cost = 25
+ fire_only_once = yes
+ days_remove = 1
+ remove_effect = {
+ LES =  { country_event = { id = legion.21 days = 1} }
+ }
+ }
+
+LES_annex_AGR = {
+  target_trigger = { FROM = {tag = AGR} }
+  visible = {
+  tag = LES
+  AGR = {
+  exists = yes
+  }
+ }
+ available = {
+ LES = { owns_state = 572 }
+ OR = {
+if = {
+  LES = { owns_state = 1231 }
+}
+if = {
+  AGR = { owns_state = 1231 }
+}
+ }
+  OR = {
+if = {
+  LES = { owns_state = 571 }
+}
+if = {
+  AGR = { owns_state = 571 }
+}
+ }
+ }
+
+ ai_will_do = {
+  base = 10
+   modifier = {
+   factor = 200
+    ROOT = {
+   strength_ratio = {
+    tag = AGR
+    ratio > 0.25
+   }
+  }
+   }
+ }
+  cost = 25
+ fire_only_once = yes
+ days_remove = 5
+ remove_effect = {
+AGR =  { country_event = { id = agrussia.2 days = 3 } }
+ }}
+
+
+
+
+ ##end of unite
+ }
+
+LES_russian_expansion= {
+
+ RUS_destroy_SOV = {
+ target_trigger = { FROM = {tag = SOV} }
+  visible = {
+    NOT = {
+       tag = SOV
+     }
+     SOV = {
+      exists = yes
+     }
+ }
+ available = {
+  is_neighbor_of = SOV
+  NOT = {
+   is_in_faction_with = SOV
+  }
+  has_war = no
+ }
+ cost = 50
+ fire_only_once = yes
+ days_remove = 20
+ remove_effect = {
+  ROOT = {
+   declare_war_on = { target = SOV type = annex_everything }
+}
+ }
+ }
+ 
+ RUS_destroy_RUS = {
+ target_trigger = { FROM = {tag = RUS} }
+  visible = {
+    NOT = {
+       tag = RUS
+     }
+     RUS = {
+      exists = yes
+     }
+ }
+ available = {
+  is_neighbor_of = RUS 
+    NOT = {
+   is_in_faction_with = RUS
+  }
+  has_war = no
+ }
+ cost = 50
+ fire_only_once = yes
+ days_remove = 20
+ remove_effect = {
+  ROOT = {
+     declare_war_on = { target = RUS type = annex_everything }
+  }
+ }
+ }
+ 
+ RUS_destroy_RDR = {
+  target_trigger = { FROM = {tag = RDR} }
+  visible = {
+    NOT = {
+       tag = RDR
+     }
+     RDR = {
+      exists = yes
+     }
+
+ }
+ available = {
+  is_neighbor_of = RDR 
+    NOT = {
+   is_in_faction_with = RDR
+  }
+  has_war = no
+ }
+ cost = 50
+ fire_only_once = yes
+ days_remove = 20
+ remove_effect = {
+  ROOT = {
+      declare_war_on = { target = RDR type = annex_everything }
+   }
+ }
+ }
+ 
+  RUS_destroy_TOW = {
+   target_trigger = { FROM = {tag = TOW} }
+  visible = {
+    NOT = {
+       tag = TOW
+     }
+     TOW = {
+      exists = yes
+     }
+ }
+ available = {
+  is_neighbor_of = TOW
+    NOT = {
+   is_in_faction_with = TOW
+  }
+  has_war = no
+ }
+ ai_will_do = {
+  base = 10
+   modifier = {
+   factor = 200
+    ROOT = {
+   strength_ratio = {
+    tag = TOW
+    ratio > 0.75
+   }
+  }
+   }
+ }
+ cost = 50
+ fire_only_once = yes
+ days_remove = 20
+ remove_effect = {
+  ROOT = {
+      declare_war_on = { target = TOW type = annex_everything }
+  }
+ }
+ }
+ 
+   RUS_destroy_OMS = {
+    target_trigger = { FROM = {tag = OMS} }
+  visible = {
+    NOT = {
+       tag = OMS
+     }
+    OMS = {
+      exists = yes
+     }
+ }
+ available = {
+  is_neighbor_of = OMS
+    NOT = {
+   is_in_faction_with = OMS
+  }
+  has_war = no
+ }
+ ai_will_do = {
+  base = 10
+   modifier = {
+   factor = 200
+    ROOT = {
+   strength_ratio = {
+    tag = OMS
+    ratio > 0.75
+   }
+  }
+   }
+ }
+ cost = 50
+ fire_only_once = yes
+ days_remove = 20
+ remove_effect = {
+  ROOT = {
+      declare_war_on = { target = OMS type = annex_everything }
+  }
+ }
+ }
+
+    RUS_destroy_BWR = {
+   target_trigger = { FROM = {tag = BWR} }
+  visible = {
+    NOT = {
+       tag = BWR
+     }
+    BWR = {
+      exists = yes
+     }
+ }
+ available = {
+  is_neighbor_of = BWR
+    NOT = {
+   is_in_faction_with = BWR
+  }
+  has_war = no
+ }
+ ai_will_do = {
+  base = 10
+   modifier = {
+   factor = 200
+    ROOT = {
+   strength_ratio = {
+    tag = BWR
+    ratio > 0.75
+   }
+  }
+   }
+ }
+ cost = 50
+ fire_only_once = yes
+ days_remove = 20
+ remove_effect = {
+  ROOT = {
+ declare_war_on = { target = BWR type = annex_everything }
+  }
+ }
+ }
+ 
+     RUS_destroy_CAU = {
+    target_trigger = { FROM = {tag = CAU} }
+  visible = {
+    NOT = {
+       tag = CAU
+     }
+         CAU = {
+      exists = yes
+     }
+ }
+ available = {
+  is_neighbor_of = CAU
+    NOT = {
+   is_in_faction_with = CAU
+  }
+  has_war = no
+ }
+ ai_will_do = {
+  base = 10
+   modifier = {
+   factor = 200
+    ROOT = {
+   strength_ratio = {
+    tag = CAU
+    ratio > 0.75
+   }
+  }
+   }
+ }
+ cost = 50
+ fire_only_once = yes
+ days_remove = 20
+ remove_effect = {
+  ROOT = {
+  declare_war_on = { target = CAU type = annex_everything }
+  }
+ }
+ }
+ 
+      RUS_destroy_CAA = {
+     target_trigger = { FROM = {tag = CAA} }
+  visible = {
+    NOT = {
+       tag = CAA
+     }
+         CAA = {
+      exists = yes
+     }
+ }
+ available = {
+  is_neighbor_of = CAA
+    NOT = {
+   is_in_faction_with = CAA
+  }
+  has_war = no
+ }
+ ai_will_do = {
+  base = 10
+   modifier = {
+   factor = 200
+    ROOT = {
+   strength_ratio = {
+    tag = CAA
+    ratio > 0.75
+   }
+  }
+   }
+ }
+ cost = 50
+ fire_only_once = yes
+ days_remove = 20
+ remove_effect = {
+  ROOT = {
+ declare_war_on = { target = CAA type = annex_everything }
+  }
+ }
+ }
+ 
+ RUS_destroy_CRM = {
+  target_trigger = { FROM = {tag = CRM} }
+  visible = {
+    NOT = {
+       tag = CRM
+     }
+         CRM = {
+      exists = yes
+     }
+ }
+ available = {
+  is_neighbor_of = CRM
+    NOT = {
+   is_in_faction_with = CRM
+  }
+  has_war = no
+ }
+ ai_will_do = {
+  base = 10
+   modifier = {
+   factor = 200
+    ROOT = {
+   strength_ratio = {
+    tag = CRM
+    ratio > 0.75
+   }
+  }
+   }
+ }
+ cost = 50
+ fire_only_once = yes
+ days_remove = 20
+ remove_effect = {
+  ROOT = {
+ declare_war_on = { target = CRM type = annex_everything }
+  }
+ }
+ }
+ 
+RUS_destroy_FER = {
+ target_trigger = { FROM = {tag = FER} }
+  visible = {
+    NOT = {
+       tag = FER
+     }
+     FER = {
+      exists = yes
+     }
+ }
+ available = {
+  is_neighbor_of = FER
+    NOT = {
+   is_in_faction_with = FER
+  }
+  has_war = no
+ }
+ ai_will_do = {
+  base = 10
+   modifier = {
+   factor = 200
+    ROOT = {
+   strength_ratio = {
+    tag = FER
+    ratio > 0.75
+   }
+  }
+   }
+ }
+ cost = 50
+ fire_only_once = yes
+ days_remove = 20
+ remove_effect = {
+  ROOT = {
+ declare_war_on = { target = FER type = annex_everything }
+  }
+ }
+ }
+ 
+ RUS_destroy_WFE = {
+  target_trigger = { FROM = {tag = WFE} }
+  visible = {
+    NOT = {
+       tag = WFE
+     }
+     WFE = {
+      exists = yes
+     }
+ }
+ available = {
+  is_neighbor_of = WFE
+    NOT = {
+   is_in_faction_with = WFE
+  }
+  has_war = no
+ }
+ ai_will_do = {
+  base = 10
+   modifier = {
+   factor = 200
+    ROOT = {
+   strength_ratio = {
+    tag = WFE
+    ratio > 0.75
+   }
+  }
+   }
+ }
+ cost = 50
+ fire_only_once = yes
+ days_remove = 20
+ remove_effect = {
+  ROOT = {
+ declare_war_on = { target = WFE type = annex_everything }
+  }
+ }
+ }
+ 
+  
+ RUS_destroy_JSW = {
+  target_trigger = { FROM = {tag = JSW} }
+  visible = {
+    NOT = {
+       tag = JSW
+     }
+     JSW = {
+      exists = yes
+     }
+ }
+ available = {
+  is_neighbor_of = JSW
+    NOT = {
+   is_in_faction_with = JSW
+  }
+  has_war = no
+ }
+ ai_will_do = {
+  base = 10
+   modifier = {
+   factor = 200
+    ROOT = {
+   strength_ratio = {
+    tag = JSW
+    ratio > 0.75
+   }
+  }
+   }
+ }
+ cost = 50
+ fire_only_once = yes
+ days_remove = 20
+ remove_effect = {
+  ROOT = {
+ declare_war_on = { target = JSW type = annex_everything }
+  }
+ }
+ }
+ 
+   
+ RUS_destroy_JOB = {
+  target_trigger = { FROM = {tag = JOB} }
+  visible = {
+    NOT = {
+       tag = JOB
+     }
+     JOB = {
+      exists = yes
+     }
+ }
+ available = {
+  is_neighbor_of = JOB
+    NOT = {
+   is_in_faction_with = JOB
+  }
+  has_war = no
+ }
+ ai_will_do = {
+  base = 10
+   modifier = {
+   factor = 200
+    ROOT = {
+   strength_ratio = {
+    tag = JOB
+    ratio > 0.75
+   }
+  }
+   }
+ }
+ cost = 50
+ fire_only_once = yes
+ days_remove = 20
+ remove_effect = {
+  ROOT = {
+ declare_war_on = { target = JOB type = annex_everything }
+  }
+ }
+ }
+ 
+  RUS_destroy_KRW = {
+  target_trigger = { FROM = {tag = KRW} }
+  visible = {
+    NOT = {
+       tag = KRW
+     }
+     KRW = {
+      exists = yes
+     }
+ }
+ available = {
+  is_neighbor_of = KRW
+    NOT = {
+   is_in_faction_with = KRW
+  }
+  has_war = no
+ }
+ ai_will_do = {
+  base = 10
+   modifier = {
+   factor = 200
+    ROOT = {
+   strength_ratio = {
+    tag = KRW
+    ratio > 0.75
+   }
+  }
+   }
+ }
+ cost = 50
+ fire_only_once = yes
+ days_remove = 20
+ remove_effect = {
+  ROOT = {
+ declare_war_on = { target = KRW type = annex_everything }
+  }
+ }
+ }
+ 
+   RUS_destroy_BRW = {
+  target_trigger = { FROM = {tag = BRW} }
+  visible = {
+    NOT = {
+       tag = BRW
+     }
+     BRW = {
+      exists = yes
+     }
+ }
+ available = {
+  is_neighbor_of = BRW
+    NOT = {
+   is_in_faction_with = BRW
+  }
+  has_war = no
+ }
+ ai_will_do = {
+  base = 10
+   modifier = {
+   factor = 200
+    ROOT = {
+   strength_ratio = {
+    tag = BRW
+    ratio > 0.75
+   }
+  }
+   }
+ }
+ cost = 50
+ fire_only_once = yes
+ days_remove = 20
+ remove_effect = {
+  ROOT = {
+ declare_war_on = { target = BRW type = annex_everything }
+  }
+ }
+ }
+ 
+    RUS_destroy_UGC = {
+  target_trigger = { FROM = {tag = UGC} }
+  visible = {
+    NOT = {
+       tag = UGC
+     }
+     UGC = {
+      exists = yes
+     }
+ }
+ available = {
+  is_neighbor_of = UGC
+    NOT = {
+   is_in_faction_with = UGC
+  }
+  has_war = no
+ }
+ ai_will_do = {
+  base = 10
+   modifier = {
+   factor = 200
+    ROOT = {
+   strength_ratio = {
+    tag = UGC
+    ratio > 0.75
+   }
+  }
+   }
+ }
+ cost = 50
+ fire_only_once = yes
+ days_remove = 20
+ remove_effect = {
+  ROOT = {
+ declare_war_on = { target = UGC type = annex_everything }
+  }
+ }
+ }
+
+ ###Cores Red 5TH army
+LES_core_oms = {
+  visible = {
+  LES = { owns_state = 403 }
+  LES = { owns_state = 653 }
+ }
+ available = {
+  LES = { owns_state = 403 }
+  LES = { owns_state = 653 }
+  }
+ ai_will_do = {
+  base = 10
+   modifier = {
+   factor = 200
+   }
+ }
+ cost = 50
+ fire_only_once = yes
+ days_remove = 90
+ remove_effect = {
+  every_state = {
+    limit = { is_core_of = OMS }
+    add_core_of = LES
+    remove_core_of = OMS
+  }
+ }
+ }
+
+
+
+### Cores Ugric federation
+
+LES_core_ugc = {
+  visible = {
+  LES = { owns_state = 516 }
+  LES = { owns_state = 579 }
+  LES = { owns_state = 577 }
+  LES = { owns_state = 580 }
+ }
+ available = {
+  LES = { owns_state = 516 }
+  LES = { owns_state = 579 }
+  LES = { owns_state = 577 }
+  LES = { owns_state = 580 }
+  }
+ ai_will_do = {
+  base = 10
+   modifier = {
+   factor = 200
+   }
+ }
+ cost = 50
+ fire_only_once = yes
+ days_remove = 90
+ remove_effect = {
+  every_state = {
+    limit = { is_core_of = UGC }
+    add_core_of = LES
+    remove_core_of = UGC
+  }
+ }
+ }
+
+### Cores Novosibirsk
+
+ LES_core_tow = {
+  visible = {
+  LES = { owns_state = 578 }
+  LES = { owns_state = 570 }
+ }
+ available = {
+  LES = { owns_state = 578 }
+  LES = { owns_state = 570 }
+  }
+ ai_will_do = {
+  base = 10
+   modifier = {
+   factor = 200
+   }
+ }
+ cost = 50
+ fire_only_once = yes
+ days_remove = 90
+ remove_effect = {
+  every_state = {
+    limit = { is_core_of = TOW }
+    add_core_of = LES
+    remove_core_of = TOW
+  }
+ }
+ }
+
+
+### Cores Barnaul
+
+LES_core_bwr = {
+  visible = {
+  LES = { owns_state = 40 }
+  LES = { owns_state = 654 }
+  LES = { owns_state = 569 }
+ }
+ available = {
+  LES = { owns_state = 40 }
+  LES = { owns_state = 654 }
+  LES = { owns_state = 569 }
+  }
+ ai_will_do = {
+  base = 10
+   modifier = {
+   factor = 200
+   }
+ }
+ cost = 75
+ fire_only_once = yes
+ days_remove = 90
+ remove_effect = {
+  every_state = {
+    limit = { is_core_of = BWR }
+    add_core_of = LES
+    remove_core_of = BWR
+  }
+ }
+ }
+
+### Cores krasnoyarsk
+
+LES_core_krw = {
+  visible = {
+  LES = { owns_state = 568 }
+ }
+ available = {
+  LES = { owns_state = 568 }
+  }
+ ai_will_do = {
+  base = 10
+   modifier = {
+   factor = 200
+   }
+ }
+ cost = 25
+ fire_only_once = yes
+ days_remove = 90
+ remove_effect = {
+  every_state = {
+    limit = { is_core_of = KRW }
+    add_core_of = LES
+    remove_core_of = KRW
+  }
+ }
+ }
+
+
+### Cores BRANSK
+
+LES_core_brw = {
+  visible = {
+  LES = { owns_state = 567 }
+ }
+ available = {
+  LES = { owns_state = 567 }
+  }
+ ai_will_do = {
+  base = 10
+   modifier = {
+   factor = 200
+   }
+ }
+ cost = 25
+ fire_only_once = yes
+ days_remove = 90
+ remove_effect = {
+  every_state = {
+    limit = { is_core_of = BRW }
+    add_core_of = LES
+    remove_core_of = BRW
+  }
+ }
+ }
+
+### Cores Irutsk
+
+LES_core_irk = {
+  visible = {
+  LES = { owns_state = 566 }
+ }
+ available = {
+  LES = { owns_state = 566 }
+  }
+ ai_will_do = {
+  base = 10
+   modifier = {
+   factor = 200
+   }
+ }
+ cost = 25
+ fire_only_once = yes
+ days_remove = 90
+ remove_effect = {
+  every_state = {
+    limit = { is_core_of = IRK }
+    add_core_of = LES
+    remove_core_of = IRK
+  }
+ }
+ }
+
+### Cores Jewish fags
+
+LES_core_job = {
+  visible = {
+  LES = { owns_state = 1199 }
+  LES = { owns_state = 1202 }
+  LES = { owns_state = 1200 }
+  LES = { owns_state = 1201 }
+  LES = { owns_state = 1186 }
+ }
+ available = {
+  LES = { owns_state = 1199 }
+  LES = { owns_state = 1202 }
+  LES = { owns_state = 1200 }
+  LES = { owns_state = 1201 }
+  LES = { owns_state = 1186 }
+  }
+ ai_will_do = {
+  base = 10
+   modifier = {
+   factor = 200
+   }
+ }
+ cost = 25
+ fire_only_once = yes
+ days_remove = 90
+ remove_effect = {
+  every_state = {
+    limit = { is_core_of = JOB }
+    add_core_of = LES
+    remove_core_of = JOB
+  }
+ }
+ }
+
+
+### Cores far eastern republic
+
+LES_core_fer = {
+  visible = {
+  LES = { owns_state = 1187 }
+  LES = { owns_state = 982 }
+  LES = { owns_state = 565 }
+  LES = { owns_state = 574 }
+  LES = { owns_state = 644 }
+  LES = { owns_state = 562 }
+  LES = { owns_state = 637 }
+ }
+ available = {
+  LES = { owns_state = 1187 }
+  LES = { owns_state = 982 }
+  LES = { owns_state = 565 }
+  LES = { owns_state = 574 }
+  LES = { owns_state = 644 }
+  LES = { owns_state = 562 }
+  LES = { owns_state = 637 }
+  }
+ ai_will_do = {
+  base = 10
+   modifier = {
+   factor = 200
+   }
+ }
+ cost = 50
+ fire_only_once = yes
+ days_remove = 90
+ remove_effect = {
+  every_state = {
+    limit = { is_core_of = FER }
+    add_core_of = LES
+    remove_core_of = FER
+  }
+ }
+ }
+
+### Cores yenisseisk
+
+LES_core_ = {
+  visible = {
+  LES = { owns_state = 988 }
+  LES = { owns_state = 576 }
+  LES = { owns_state = 575 }
+ }
+ available = {
+  LES = { owns_state = 988 }
+  LES = { owns_state = 576 }
+  LES = { owns_state = 575 }
+  }
+ ai_will_do = {
+  base = 10
+   modifier = {
+   factor = 200
+   }
+ }
+ cost = 25
+ fire_only_once = yes
+ days_remove = 90
+ remove_effect = {
+  every_state = {
+    limit = { is_core_of = JSW }
+    add_core_of = LES
+    remove_core_of = JSW
+  }
+ }
+ }
+
+### Cores russian pacific fleet
+
+LES_core_wfe = {
+  visible = {
+  LES = { owns_state = 563 }
+  LES = { owns_state = 1229 }
+  LES = { owns_state = 1228 }
+  LES = { owns_state = 561 }
+  LES = { owns_state = 657 }
+  LES = { owns_state = 560 }
+  LES = { owns_state = 970 }
+ }
+ available = {
+  LES = { owns_state = 563 }
+  LES = { owns_state = 1229 }
+  LES = { owns_state = 1228 }
+  LES = { owns_state = 561 }
+  LES = { owns_state = 657 }
+  LES = { owns_state = 560 }
+  LES = { owns_state = 970 }
+  }
+ ai_will_do = {
+  base = 10
+   modifier = {
+   factor = 200
+   }
+ }
+ cost = 50
+ fire_only_once = yes
+ days_remove = 90
+ remove_effect = {
+  every_state = {
+    limit = { is_core_of = WFE }
+    add_core_of = LES
+    remove_core_of = WFE
+  }
+ }
+ }
+
+### Cores vladivostock
+
+LES_core_jvd = {
+  visible = {
+  LES = { owns_state = 409 }
+  LES = { owns_state = 408 }
+ }
+ available = {
+  LES = { owns_state = 409 }
+  LES = { owns_state = 408 }
+  }
+ ai_will_do = {
+  base = 10
+   modifier = {
+   factor = 200
+   }
+ }
+ cost = 50
+ fire_only_once = yes
+ days_remove = 90
+ remove_effect = {
+  every_state = {
+    limit = { is_core_of = JVD }
+    add_core_of = LES
+    remove_core_of = JVD
+  }
+ }
+ }
+
+### Cores Sretensk
+
+LES_core_sfs = {
+  visible = {
+  LES = { owns_state = 1223 }
+  LES = { owns_state = 1222 }
+  LES = { owns_state = 1221 }
+  LES = { owns_state = 1224 }
+  LES = { owns_state = 1197 }
+  LES = { owns_state = 1226 }
+  LES = { owns_state = 1225 }
+  LES = { owns_state = 1230 }
+ }
+ available = {
+  LES = { owns_state = 1223 }
+  LES = { owns_state = 1222 }
+  LES = { owns_state = 1221 }
+  LES = { owns_state = 1224 }
+  LES = { owns_state = 1197 }
+  LES = { owns_state = 1226 }
+  LES = { owns_state = 1225 }
+  LES = { owns_state = 1230 }
+  }
+ ai_will_do = {
+  base = 10
+   modifier = {
+   factor = 200
+   }
+ }
+ cost = 25
+ fire_only_once = yes
+ days_remove = 90
+ remove_effect = {
+  every_state = {
+    limit = { is_core_of = SFS }
+    add_core_of = LES
+    remove_core_of = SFS
+  }
+ }
+ }
+
+### Cores RDR
+
+LES_core_rdr = {
+  visible = {
+  LES = { owns_state = 262 }
+  LES = { owns_state = 581 }
+  LES = { owns_state = 397 }
+  LES = { owns_state = 398 }
+  LES = { owns_state = 400 }
+  LES = { owns_state = 573 }
+  LES = { owns_state = 399 }
+  LES = { owns_state = 256 }
+  LES = { owns_state = 249 }
+  LES = { owns_state = 651 }
+ }
+ available = {
+  LES = { owns_state = 262 }
+  LES = { owns_state = 581 }
+  LES = { owns_state = 397 }
+  LES = { owns_state = 398 }
+  LES = { owns_state = 400 }
+  LES = { owns_state = 573 }
+  LES = { owns_state = 399 }
+  LES = { owns_state = 256 }
+  LES = { owns_state = 249 }
+  LES = { owns_state = 651 }
+  }
+ ai_will_do = {
+  base = 10
+   modifier = {
+   factor = 200
+   }
+ }
+ cost = 100
+ fire_only_once = yes
+ days_remove = 90
+ remove_effect = {
+  every_state = {
+    limit = { is_core_of = RDR }
+    add_core_of = LES
+    remove_core_of = RDR
+  }
+ }
+ }
+
+### Cores SOV
+
+LES_core_sov = {
+  visible = {
+  LES = { owns_state = 214 }
+  LES = { owns_state = 215 }
+  LES = { owns_state = 216 }
+  LES = { owns_state = 351 }
+  LES = { owns_state = 264 }
+  LES = { owns_state = 244 }
+  LES = { owns_state = 195 }
+  LES = { owns_state = 208 }
+  LES = { owns_state = 209 }
+  LES = { owns_state = 210 }
+  LES = { owns_state = 263 }
+  LES = { owns_state = 264 }
+  LES = { owns_state = 244 }
+  LES = { owns_state = 246 }
+  LES = { owns_state = 242 }
+  LES = { owns_state = 243 }
+  LES = { owns_state = 205 }
+  LES = { owns_state = 219 }
+  LES = { owns_state = 247 }
+  LES = { owns_state = 248 }
+  LES = { owns_state = 253 }
+  LES = { owns_state = 223 }
+  LES = { owns_state = 254 }
+  LES = { owns_state = 253 }
+  LES = { owns_state = 252 }
+
+ }
+ available = {
+  LES = { owns_state = 214 }
+  LES = { owns_state = 215 }
+  LES = { owns_state = 216 }
+  LES = { owns_state = 351 }
+  LES = { owns_state = 264 }
+  LES = { owns_state = 244 }
+  LES = { owns_state = 195 }
+  LES = { owns_state = 208 }
+  LES = { owns_state = 209 }
+  LES = { owns_state = 210 }
+  LES = { owns_state = 263 }
+  LES = { owns_state = 264 }
+  LES = { owns_state = 244 }
+  LES = { owns_state = 246 }
+  LES = { owns_state = 242 }
+  LES = { owns_state = 243 }
+  LES = { owns_state = 205 }
+  LES = { owns_state = 219 }
+  LES = { owns_state = 247 }
+  LES = { owns_state = 248 }
+  LES = { owns_state = 253 }
+  LES = { owns_state = 223 }
+  LES = { owns_state = 254 }
+  LES = { owns_state = 253 }
+  LES = { owns_state = 252 }
+
+}
+ ai_will_do = {
+  base = 10
+   modifier = {
+   factor = 200
+   }
+ }
+ cost = 200
+ fire_only_once = yes
+ days_remove = 90
+ remove_effect = {
+  every_state = {
+    limit = { is_core_of = SOV }
+    add_core_of = LES
+    remove_core_of = SOV
+  }
+ }
+ }
+
+### Cores RUS
+
+LES_core_rus = {
+  visible = {
+  LES = { owns_state = 244 }
+  LES = { owns_state = 222 }
+  LES = { owns_state = 220 }
+  LES = { owns_state = 240 }
+  LES = { owns_state = 228 }
+  LES = { owns_state = 260 }
+  LES = { owns_state = 258 }
+  LES = { owns_state = 257 }
+  LES = { owns_state = 255 }
+  LES = { owns_state = 250 }
+  LES = { owns_state = 401 }
+  LES = { owns_state = 930 }
+  LES = { owns_state = 265 }
+  LES = { owns_state = 239 }
+ }
+ available = {
+  LES = { owns_state = 244 }
+  LES = { owns_state = 222 }
+  LES = { owns_state = 220 }
+  LES = { owns_state = 240 }
+  LES = { owns_state = 228 }
+  LES = { owns_state = 260 }
+  LES = { owns_state = 258 }
+  LES = { owns_state = 257 }
+  LES = { owns_state = 255 }
+  LES = { owns_state = 250 }
+  LES = { owns_state = 401 }
+  LES = { owns_state = 930 }
+  LES = { owns_state = 265 }
+  LES = { owns_state = 239 }
+  }
+ ai_will_do = {
+  base = 10
+   modifier = {
+   factor = 200
+   }
+ }
+ cost = 100
+ fire_only_once = yes
+ days_remove = 90
+ remove_effect = {
+  every_state = {
+    limit = { is_core_of = RUS }
+    add_core_of = LES
+    remove_core_of = RUS
+  }
+ }
+ }
+
+### Cores CAA
+
+LES_core_caa = {
+  visible = {
+  LES = { owns_state = 983 }
+  LES = { owns_state = 236 }
+ }
+ available = {
+  LES = { owns_state = 983 }
+  LES = { owns_state = 236 }
+  }
+ ai_will_do = {
+  base = 10
+   modifier = {
+   factor = 200
+   }
+ }
+ cost = 25
+ fire_only_once = yes
+ days_remove = 90
+ remove_effect = {
+  every_state = {
+    limit = { is_core_of = CAA }
+    add_core_of = LES
+    remove_core_of = CAA
+  }
+ }
+ }
+
+
+### Cores CAU
+
+LES_core_cau = {
+  visible = {
+  LES = { owns_state = 217 }
+  LES = { owns_state = 245 }
+  LES = { owns_state = 218 }
+  LES = { owns_state = 238 }
+  LES = { owns_state = 237 }
+  LES = { owns_state = 235 }
+  LES = { owns_state = 986 }
+  LES = { owns_state = 232 }
+ }
+ available = {
+  LES = { owns_state = 217 }
+  LES = { owns_state = 245 }
+  LES = { owns_state = 218 }
+  LES = { owns_state = 238 }
+  LES = { owns_state = 237 }
+  LES = { owns_state = 235 }
+  LES = { owns_state = 986 }
+  LES = { owns_state = 232 }
+  }
+ ai_will_do = {
+  base = 10
+   modifier = {
+   factor = 200
+   }
+ }
+ cost = 100
+ fire_only_once = yes
+ days_remove = 90
+ remove_effect = {
+  every_state = {
+    limit = { is_core_of = CAU }
+    add_core_of = LES
+    remove_core_of = CAU
+  }
+ }
+ }
+
+
+### Cores CRM
+
+LES_core_crm = {
+  visible = {
+  LES = { owns_state = 234 }
+  LES = { owns_state = 985 }
+  LES = { owns_state = 137 }
+ }
+ available = {
+  LES = { owns_state = 234 }
+  LES = { owns_state = 985 }
+  LES = { owns_state = 137 }
+  }
+ ai_will_do = {
+  base = 10
+   modifier = {
+   factor = 200
+   }
+ }
+ cost = 75
+ fire_only_once = yes
+ days_remove = 90
+ remove_effect = {
+  every_state = {
+    limit = { is_core_of = CRM }
+    add_core_of = LES
+    remove_core_of = CRM
+  }
+ }
+ }
+
+
+
+### Cores mountain republic
+
+LES_core_mrp = {
+  visible = {
+  LES = { owns_state = 987 }
+ }
+ available = {
+  LES = { owns_state = 987 }
+  }
+ ai_will_do = {
+  base = 10
+   modifier = {
+   factor = 200
+   }
+ }
+ cost = 25
+ fire_only_once = yes
+ days_remove = 90
+ remove_effect = {
+  every_state = {
+    limit = { is_core_of = MRP }
+    add_core_of = LES
+    remove_core_of = MRP
+  }
+ }
+ }
+
+
+
+### Cores chechen
+
+LES_core_che = {
+  visible = {
+  LES = { owns_state = 233 }
+ }
+ available = {
+  LES = { owns_state = 233 }
+  }
+ ai_will_do = {
+  base = 10
+   modifier = {
+   factor = 200
+   }
+ }
+ cost = 25
+ fire_only_once = yes
+ days_remove = 90
+ remove_effect = {
+  every_state = {
+    limit = { is_core_of = CHE }
+    add_core_of = LES
+    remove_core_of = CHE
+  }
+ }
+ }
+
+
+  ### Cores dagestan
+
+LES_core_dag = {
+  visible = {
+  LES = { owns_state = 931 }
+  LES = { owns_state = 932 }
+ }
+ available = {
+  LES = { owns_state = 931 }
+  LES = { owns_state = 932 }
+  }
+ ai_will_do = {
+  base = 10
+   modifier = {
+   factor = 200
+   }
+ }
+ cost = 25
+ fire_only_once = yes
+ days_remove = 90
+ remove_effect = {
+  every_state = {
+    limit = { is_core_of = DAG }
+    add_core_of = LES
+    remove_core_of = DAG
+  }
+ }
+ }
+
+ ##end
+ }
+

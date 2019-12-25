@@ -31,7 +31,7 @@ focus_tree = {
 }
 	
 
-	#Focus for Operation Заяц
+	#Focus for motorization
 	focus = {
 		id = LES_operation
 		icon = GFX_goal_generic_army_motorized
@@ -154,7 +154,7 @@ focus_tree = {
 		icon = GFX_focus_PRS_purge_few_traitors
 		x = 19
 		y = 1
-		cost = 5
+		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = LES_radolasurvives }
 		ai_will_do = {
@@ -292,12 +292,14 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		572 = {
 		add_extra_state_shared_building_slots = 2
         add_building_construction = {
 	    type = arms_factory
 	    level = 2
 	    instant_build = yes
           }
+		}
 		}
 	}
 
@@ -405,7 +407,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 5
 		y = 11
-		cost = 5
+		cost = 1
 		available_if_capitulated = yes
 		prerequisite = { focus = LES_battlesecularists }
 		ai_will_do = {
@@ -440,7 +442,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 5
 		y = 10
-		cost = 5
+		cost = 1
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = LES_vaticanscrusaders 
@@ -722,6 +724,18 @@ focus_tree = {
 		x = 23
 		y = 1
 		cost = 5
+		available = {
+ 			AND = {
+ 			OR = {
+ 			LES = { owns_state = 572 }
+ 			AGR = { owns_state = 572 }
+ 			}
+  			OR = {
+ 			LES = { owns_state = 1231 }
+ 			AGR = { owns_state = 1231 }
+ 			}
+			}
+		}
 		available_if_capitulated = yes
 		prerequisite = { focus = LES_demobilisethe4thregiment }
 		ai_will_do = {
@@ -1138,10 +1152,38 @@ focus_tree = {
 		x = 23
 		y = 2
 		cost = 5
+		available = {
+ 			AND = {
+ 			OR = {
+ 			LES = { owns_state = 571 }
+ 			AGR = { owns_state = 571 }
+ 			}
+  			OR = {
+ 			LES = { owns_state = 1231 }
+ 			AGR = { owns_state = 1231 }
+ 			}
+			}
+		}
 		available_if_capitulated = yes
 		prerequisite = { focus = LES_beginrailwayreconstruction }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+        571 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+				}
+			}
+		 1231 = {
+			add_building_construction = {
+			type = infrastructure
+			level = 2
+			instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -1232,7 +1274,7 @@ focus_tree = {
 
 			add_timed_idea = {
     		idea = LES_Propaganda_Campaign
-    		days = 210
+    		days = 350
 			}
 		}
 	}
@@ -1319,9 +1361,8 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		remove_ideas = {
-		LES_Discontent
-		}
+		remove_ideas = { LES_Discontent }
+		set_country_flag = LES_gadjahasconsolidedpower 
 		}
 
 	}
@@ -1775,7 +1816,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 6
 		y = 0
-		cost = 3
+		cost = 5
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 1
@@ -2144,19 +2185,147 @@ focus_tree = {
 	}
 }
 
-	#Focus for Rebuilding Trans-Siberian Railway
+	#Focus for Reach Krasnoyarsk
 	focus = {
 		id = LES_rebuildingtranssiberianrailway
 		icon = GFX_goal_unknown
 		x = 23
 		y = 3
 		cost = 5
+		available = {
+ 			LES = { owns_state = 570 }
+ 			LES = { owns_state = 569 }
+ 			LES = { owns_state = 568 }
+		}
 		available_if_capitulated = yes
 		prerequisite = { focus = LES_reconnectchelyabinskwithomsk }
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+        570 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+				}
+			}
+		 569 = {
+			add_building_construction = {
+			type = infrastructure
+			level = 2
+			instant_build = yes
+				}
+			}
+		 568 = {
+			add_building_construction = {
+			type = infrastructure
+			level = 2
+			instant_build = yes
+				}
+			}
+		}
 	}
+
+	#Focus for Chita
+	focus = {
+		id = LES_chita
+		icon = GFX_goal_unknown
+		x = 23
+		y = 4
+		cost = 5
+		available = {
+ 			LES = { owns_state = 567 }
+ 			LES = { owns_state = 566 }
+ 			LES = { owns_state = 564 }
+ 			LES = { owns_state = 563 }
+			}
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_rebuildingtranssiberianrailway }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+        567 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+				}
+			}
+		 566 = {
+			add_building_construction = {
+			type = infrastructure
+			level = 2
+			instant_build = yes
+				}
+			}
+		 564 = {
+			add_building_construction = {
+			type = infrastructure
+			level = 2
+			instant_build = yes
+				}
+			}
+		 563 = {
+			add_building_construction = {
+			type = infrastructure
+			level = 2
+			instant_build = yes
+				}
+			}
+			}
+		}
+
+	#Focus for Vladivostock
+	focus = {
+		id = LES_vladivostock
+		icon = GFX_goal_unknown
+		x = 23
+		y = 5
+		cost = 5
+		available = {
+ 			LES = { owns_state = 561 }
+ 			LES = { owns_state = 657 }
+ 			LES = { owns_state = 409 }
+ 			LES = { owns_state = 408 }
+			}
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_chita }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+        561 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+				}
+			}
+		 657 = {
+			add_building_construction = {
+			type = infrastructure
+			level = 2
+			instant_build = yes
+				}
+			}
+		 409 = {
+			add_building_construction = {
+			type = infrastructure
+			level = 2
+			instant_build = yes
+				}
+			}
+		 408 = {
+			add_building_construction = {
+			type = infrastructure
+			level = 2
+			instant_build = yes
+				}
+			}
+			}
+		}
 
 	#Focus for Field Scavenging
 	focus = {
@@ -2255,7 +2424,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 4
 		y = 7
-		cost = 5
+		cost = 1
 		available_if_capitulated = yes
 		prerequisite = { focus = LES_thewayofchrist }
 		mutually_exclusive = { focus = LES_neutralizepaganleaders }
@@ -2263,7 +2432,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		add_manpower = -17132
+		add_manpower = -11132
 		add_stability = -0.04
 		}
 	}
@@ -2276,7 +2445,10 @@ focus_tree = {
 		y = 8
 		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { focus = LES_neutralizepaganleaders }
+		prerequisite = { 
+		focus = LES_neutralizepaganleaders 
+		focus = LES_persecuteheathens
+		}
 		mutually_exclusive = { focus = LES_banotherdenominations }
 		ai_will_do = {
 			factor = 1
@@ -2313,9 +2485,12 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 4
 		y = 8
-		cost = 5
+		cost = 2
 		available_if_capitulated = yes
-		prerequisite = { focus = LES_persecuteheathens }
+		prerequisite = { 
+		focus = LES_neutralizepaganleaders 
+		focus = LES_persecuteheathens
+		 }
 		mutually_exclusive = { focus = LES_christianecumenismefforts }
 		ai_will_do = {
 			factor = 1
@@ -2565,7 +2740,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 14
 		y = 7
-		cost = 5
+		cost = 1
 		available_if_capitulated = yes
 		prerequisite = { focus = LES_theabrahamicmenace }
 		mutually_exclusive = { focus = LES_massconversion }
@@ -2573,11 +2748,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		403 = { add_manpower = -39210}
-		571 = { add_manpower = -27145 }
-		572 = { add_manpower = -53213 }
-		653 = { add_manpower = -46718 }
-		1231 = { add_manpower = -11943 }
+		add_ideas = { LES_dab_on_abrahamics }
 		add_stability = -0.10
 		}
 		
@@ -2607,9 +2778,12 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 14
 		y = 8
-		cost = 5
+		cost = 2
 		available_if_capitulated = yes
-		prerequisite = { focus = LES_declarationofwar }
+		prerequisite = { 
+		focus = LES_declarationofwar
+		focus = LES_massconversion
+		 }
 		mutually_exclusive = { focus = LES_preservechurches }
 		ai_will_do = {
 			factor = 1
@@ -2628,7 +2802,10 @@ focus_tree = {
 		y = 8
 		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { focus = LES_massconversion }
+		prerequisite = { 
+		focus = LES_massconversion 
+		focus = LES_declarationofwar
+		}
 		mutually_exclusive = { focus = LES_cleansingflames }
 		ai_will_do = {
 			factor = 1
@@ -2686,7 +2863,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 5
 		y = 6
-		cost = 5
+		cost = 2
 		available = {
  			AND = {
  			has_country_flag = christ
@@ -2709,7 +2886,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 9
 		y = 5
-		cost = 5
+		cost = 1
 		available = {
  			AND = {
  			has_country_flag = triumph
@@ -2731,7 +2908,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 13
 		y = 6
-		cost = 5
+		cost = 2
 		available = {
 		NOT = {
  			has_country_flag = christ
