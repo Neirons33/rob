@@ -26,7 +26,7 @@ add_ideas = {
 
 create_country_leader = {
 	name = "Vsevolod Eikhenbaum"
-	desc = "POLITICS_RICARDO_JIMENEZ_OREAMUNO_DESC"
+	desc = "JSW_Vsevolod_Eikhenbaum.tga"
 	picture = ""
 	expire = "1965.1.1"
 	ideology = democratic_socialist_subtype

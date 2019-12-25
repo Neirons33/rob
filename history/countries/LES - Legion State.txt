@@ -38,7 +38,7 @@ LES_Discontent
 LES_disorganised_army
 LES_Risk_of_Famine
 }
-
+set_country_flag = RUS_warlord
 puppet = AGR
 
 
