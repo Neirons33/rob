@@ -2832,6 +2832,130 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/LIT_chamberofresources.tga"
 	}
 	
+	###AIR
+				SpriteType = { 
+		name = "GFX_focus_LIT_air_doctrine"
+		texturefile = "gfx/interface/goals/LIT_air_doctrine.tga"
+	}
+				SpriteType = { 
+		name = "GFX_focus_LIT_air_doctrine_2"
+		texturefile = "gfx/interface/goals/LIT_air_doctrine_2.tga"
+	}
+				SpriteType = { 
+		name = "GFX_focus_LIT_break_anbo"
+		texturefile = "gfx/interface/goals/LIT_break_anbo.tga"
+	}
+				SpriteType = { 
+		name = "GFX_focus_LIT_continue_anbo"
+		texturefile = "gfx/interface/goals/LIT_continue_anbo.tga"
+	}
+				SpriteType = { 
+		name = "GFX_focus_LIT_focus_on_bombers"
+		texturefile = "gfx/interface/goals/LIT_focus_on_bombers.tga"
+	}
+				SpriteType = { 
+		name = "GFX_focus_LIT_focus_on_cas"
+		texturefile = "gfx/interface/goals/LIT_focus_on_cas.tga"
+	}
+				SpriteType = { 
+		name = "GFX_focus_LIT_focus_on_fighters"
+		texturefile = "gfx/interface/goals/LIT_focus_on_fighters.tga"
+	}
+				SpriteType = { 
+		name = "GFX_focus_LIT_import_foreign_designs"
+		texturefile = "gfx/interface/goals/LIT_import_foreign_designs.tga"
+	}
+				SpriteType = { 
+		name = "GFX_focus_LIT_lith_airforce"
+		texturefile = "gfx/interface/goals/LIT_lith_airforce.tga"
+	}
+				SpriteType = { 
+		name = "GFX_focus_LIT_lith_made_planes"
+		texturefile = "gfx/interface/goals/LIT_lith_made_planes.tga"
+	}
+				SpriteType = { 
+		name = "GFX_focus_LIT_liths_in_air"
+		texturefile = "gfx/interface/goals/LIT_liths_in_air.tga"
+	}
+				SpriteType = { 
+		name = "GFX_focus_LIT_lithuanian_quality"
+		texturefile = "gfx/interface/goals/LIT_lithuanian_quality.tga"
+	}
+				SpriteType = { 
+		name = "GFX_focus_LIT_sell_aircraft"
+		texturefile = "gfx/interface/goals/LIT_sell_aircraft.tga"
+	}
+				SpriteType = { 
+		name = "GFX_focus_LIT_start_export"
+		texturefile = "gfx/interface/goals/LIT_start_export.tga"
+	}
+	
+	###NAVY
+				SpriteType = { 
+		name = "GFX_focus_LIT_build_port"
+		texturefile = "gfx/interface/goals/LIT_build_port.tga"
+	}
+				SpriteType = { 
+		name = "GFX_focus_LIT_buy_destroyers"
+		texturefile = "gfx/interface/goals/LIT_buy_destroyers.tga"
+	}
+				SpriteType = { 
+		name = "GFX_focus_LIT_buy_foreign_submarines"
+		texturefile = "gfx/interface/goals/LIT_buy_foreign_submarines.tga"
+	}
+				SpriteType = { 
+		name = "GFX_focus_LIT_defend_seas"
+		texturefile = "gfx/interface/goals/LIT_defend_seas.tga"
+	}
+				SpriteType = { 
+		name = "GFX_focus_LIT_leave_it"
+		texturefile = "gfx/interface/goals/LIT_leave_it.tga"
+	}
+				SpriteType = { 
+		name = "GFX_focus_LIT_lith_navy"
+		texturefile = "gfx/interface/goals/LIT_lith_navy.tga"
+	}
+				SpriteType = { 
+		name = "GFX_focus_LIT_lith_pearl"
+		texturefile = "gfx/interface/goals/LIT_lith_pearl.tga"
+	}
+				SpriteType = { 
+		name = "GFX_focus_LIT_lithuanian_submarinefleet"
+		texturefile = "gfx/interface/goals/LIT_lithuanian_submarinefleet.tga"
+	}
+				SpriteType = { 
+		name = "GFX_focus_LIT_make_submarines"
+		texturefile = "gfx/interface/goals/LIT_make_submarines.tga"
+	}
+				SpriteType = { 
+		name = "GFX_focus_LIT_marines"
+		texturefile = "gfx/interface/goals/LIT_marines.tga"
+	}
+				SpriteType = { 
+		name = "GFX_focus_LIT_modernize_smentona"
+		texturefile = "gfx/interface/goals/LIT_modernize_smentona.tga"
+	}
+				SpriteType = { 
+		name = "GFX_focus_LIT_prussian_deal"
+		texturefile = "gfx/interface/goals/LIT_prussian_deal.tga"
+	}
+				SpriteType = { 
+		name = "GFX_focus_LIT_prussian_experts"
+		texturefile = "gfx/interface/goals/LIT_prussian_experts.tga"
+	}
+				SpriteType = { 
+		name = "GFX_focus_LIT_reform_navy"
+		texturefile = "gfx/interface/goals/LIT_reform_navy.tga"
+	}
+				SpriteType = { 
+		name = "GFX_focus_LIT_small_fleet"
+		texturefile = "gfx/interface/goals/LIT_small_fleet.tga"
+	}
+				SpriteType = { 
+		name = "GFX_focus_LIT_underwater_attack"
+		texturefile = "gfx/interface/goals/LIT_underwater_attack.tga"
+	}
+	
 	
 	###GERMANY
 				SpriteType = { 

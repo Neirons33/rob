@@ -3297,7 +3297,7 @@ completion_reward = {
 	#Focus for End the ANBO Monpoly
 	focus = {
 		id = LIT_endtheanbomonpoly
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_break_anbo
 		x = 37
 		y = 14
 		cost = 10
@@ -3318,7 +3318,7 @@ completion_reward = {
 	#Focus for Grant ANBO More Privledges
 	focus = {
 		id = LIT_grantanbomoreprivledges
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_continue_anbo
 		x = 41
 		y = 14
 		cost = 10
@@ -3330,7 +3330,7 @@ completion_reward = {
 	#Focus for Import Foreign Models
 	focus = {
 		id = LIT_importforeignmodels
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_import_foreign_designs
 		x = 35
 		y = 15
 		cost = 10
@@ -3350,7 +3350,7 @@ completion_reward = {
 	#Focus for Encourage Lithuanian Made Planes
 	focus = {
 		id = LIT_encouragelithuanianmadeplanes
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_lith_made_planes
 		x = 37
 		y = 15
 		cost = 10
@@ -3370,7 +3370,7 @@ completion_reward = {
 	#Focus for Focus on CAS
 	focus = {
 		id = LIT_focusoncas
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_focus_on_cas
 		x = 39
 		y = 17
 		cost = 10
@@ -3401,7 +3401,7 @@ completion_reward = {
 	#Focus for Focus on Fighters
 	focus = {
 		id = LIT_focusonfighters
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_focus_on_fighters
 		x = 37
 		y = 17
 		cost = 10
@@ -3424,7 +3424,7 @@ completion_reward = {
 	#Focus for Lithuanians in the air!
 	focus = {
 		id = LIT_lithuaniansintheair
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_liths_in_air
 		x = 39
 		y = 18
 		cost = 10
@@ -3442,7 +3442,7 @@ completion_reward = {
 	#Focus for Start Mass-Producement and Export
 	focus = {
 		id = LIT_startmassproducementandexport
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_start_export
 		x = 41
 		y = 16
 		cost = 10
@@ -3467,7 +3467,7 @@ completion_reward = {
 	#Focus for Focus on Bombers
 	focus = {
 		id = LIT_focusonbombers
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_focus_on_bombers
 		x = 41
 		y = 17
 		cost = 10
@@ -3491,7 +3491,7 @@ completion_reward = {
 	#Focus for Air Doctrine Focus I
 	focus = {
 		id = LIT_airdoctrinefocusi
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_air_doctrine
 		x = 39
 		y = 15
 		cost = 10
@@ -3511,7 +3511,7 @@ completion_reward = {
 	#Focus for Air Doctrine Focus II
 	focus = {
 		id = LIT_airdoctrinefocusii
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_air_doctrine_2
 		x = 39
 		y = 16
 		cost = 10
@@ -3530,7 +3530,7 @@ completion_reward = {
 	#Focus for Defend the Sea!
 	focus = {
 		id = LIT_defendthesea
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_defend_seas
 		x = 31
 		y = 19
 		cost = 10
@@ -3551,7 +3551,7 @@ naval_experience = 50
 	#Focus for Modernize the Ship "Prezidentas Antanas Smetona"
 	focus = {
 		id = LIT_modernizetheshipprezidentasantanassmetona
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_modernize_smentona
 		x = 32
 		y = 16
 		cost = 10
@@ -3565,7 +3565,7 @@ naval_experience = 50
 	#Focus for The Small Fleet
 	focus = {
 		id = LIT_thesmallfleet
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_small_fleet
 		x = 31
 		y = 18
 		cost = 10
@@ -3588,7 +3588,7 @@ naval_experience = 50
 	#Focus for Buy Foreign Submarines
 	focus = {
 		id = LIT_buyforeignsubmarines
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_buy_foreign_submarines
 		x = 27
 		y = 18
 		cost = 10
@@ -3600,7 +3600,7 @@ naval_experience = 50
 	#Focus for Make Lithuanian Submarines!
 	focus = {
 		id = LIT_makelithuaniansubmarines
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_make_submarines
 		x = 29
 		y = 18
 		cost = 10
@@ -3612,7 +3612,7 @@ naval_experience = 50
 	#Focus for Underwater Attack!
 	focus = {
 		id = LIT_underwaterattack
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_underwater_attack
 		x = 27
 		y = 19
 		cost = 10
@@ -3629,7 +3629,7 @@ naval_experience = 50
 	#Focus for Leave it as it is
 	focus = {
 		id = LIT_leaveitasitis
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_leave_it
 		x = 32
 		y = 15
 		cost = 10
@@ -3644,7 +3644,7 @@ naval_experience = 50
 	#Focus for Experts from Prussia
 	focus = {
 		id = LIT_expertsfromprussia
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_prussian_experts
 		x = 28
 		y = 16
 		cost = 10
@@ -3655,7 +3655,7 @@ naval_experience = 50
 	#Focus for Create an Military port
 	focus = {
 		id = LIT_createanmilitaryport
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_build_port
 		x = 26
 		y = 16
 		cost = 10
@@ -4114,10 +4114,13 @@ add_extra_state_shared_building_slots = 2
 	#Focus for Lietuvos Laivynas
 	focus = {
 		id = LIT_lietuvoslaivynas
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_lith_navy
 		x = 29
 		y = 13
 		cost = 10
+		available = {
+		 has_country_flag = lol
+		}
 		available_if_capitulated = yes
 		completion_reward = {
 		 navy_experience = 25
@@ -4127,11 +4130,14 @@ add_extra_state_shared_building_slots = 2
 	#Focus for Lietuvos Oro Pajėgos
 	focus = {
 		id = LIT_lietuvosoropajgos
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_lith_airforce
 		x = 39
 		y = 13
 		cost = 10
 		available_if_capitulated = yes
+		available = {
+		SOCIALIST_ALIGNED_GOVERNMENT = yes
+		}
 		completion_reward = {
 		  air_experience = 25
 		}
@@ -4272,7 +4278,7 @@ add_tech_bonus = {
 	#Focus for The Prussian Deal
 	focus = {
 		id = LIT_theprussiandeal
-		icon = GFX_focus_PRS_lith_ger_brotherhood
+		icon = GFX_focus_LIT_prussian_deal
 		x = 29
 		y = 14
 		cost = 10
@@ -4286,7 +4292,7 @@ add_tech_bonus = {
 	#Focus for Reform the Navy
 	focus = {
 		id = LIT_reformthenavy
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_reform_navy
 		x = 26
 		y = 15
 		cost = 10
@@ -4301,7 +4307,7 @@ add_tech_bonus = {
 	#Focus for Form the Lithuanian Marines
 	focus = {
 		id = LIT_formthelithuanianmarines
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_marines
 		x = 30
 		y = 16
 		cost = 10
@@ -4324,7 +4330,7 @@ add_tech_bonus = {
 	#Focus for Lithuanian Submarine Fleet
 	focus = {
 		id = LIT_lithuaniansubmarinefleet
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_lithuanian_submarinefleet
 		x = 28
 		y = 17
 		cost = 10
@@ -4349,7 +4355,7 @@ add_tech_bonus = {
 	#Focus for Buy More Destroyers
 	focus = {
 		id = LIT_buymoredestroyers
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_buy_destroyers
 		x = 30
 		y = 17
 		cost = 10
@@ -4368,7 +4374,7 @@ add_tech_bonus = {
 	#Focus for The Pearl of Lithuania!
 	focus = {
 		id = LIT_thepearloflithuania
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_lith_pearl
 		x = 29
 		y = 20
 		cost = 10
@@ -4385,7 +4391,7 @@ add_tech_bonus = {
 	#Focus for Sell Lithuanian Aircrafts to Foreigners
 	focus = {
 		id = LIT_selllithuanianaircraftstoforeigners
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_sell_aircraft
 		x = 37
 		y = 16
 		cost = 10
@@ -4405,7 +4411,7 @@ add_tech_bonus = {
 	#Focus for Lithuanian Quality
 	focus = {
 		id = LIT_lithuanianquality
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_lithuanian_quality
 		x = 41
 		y = 15
 		cost = 10
