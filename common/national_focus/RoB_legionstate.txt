@@ -157,9 +157,14 @@ focus_tree = {
 		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = LES_radolasurvives }
-		ai_will_do = {
-			factor = 1
-		}
+	    ai_will_do = {
+     	base = 1
+     	modifier = {
+      	factor = 200
+      	date > 1936.1.1
+      	}
+ 	 }
+
 		completion_reward = {
 		add_stability = -0.05
  		add_popularity = {ideology = pelekist popularity =0.1}
@@ -179,9 +184,13 @@ focus_tree = {
 			}
 		}
 		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 1
-		}
+    	ai_will_do = {
+     	base = 1
+     	modifier = {
+      	factor = 200
+      	date > 1936.1.1
+      	}
+ 	 }
 		completion_reward = {
 		add_political_power = 50
 		}
@@ -375,6 +384,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		custom_effect_tooltip = les_tt_1
 		hidden_effect = {
 		set_country_flag = path
 		}
@@ -1250,9 +1260,13 @@ focus_tree = {
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = LES_seizecontrolofmilitaryintelligence }
-		ai_will_do = {
-			factor = 1
-		}
+	    ai_will_do = {
+     	base = 1
+     	modifier = {
+      	factor = 200
+      	date > 1936.1.1
+      	}
+ 	 }
 		completion_reward = {
 		add_war_support = 0.10
 		}
@@ -1267,9 +1281,13 @@ focus_tree = {
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = LES_radolasurvives }
-		ai_will_do = {
-			factor = 1
-		}
+	    ai_will_do = {
+     	base = 1
+     	modifier = {
+      	factor = 200
+      	date > 1936.1.1
+      	}
+ 	 }
 		completion_reward = {
 
 			add_timed_idea = {
@@ -1311,9 +1329,13 @@ focus_tree = {
 		prerequisite = { 
 			focus = LES_exaggerateintelonkarelsforces 
 		}
-		ai_will_do = {
-			factor = 1
-		}
+	    ai_will_do = {
+     	base = 1
+     	modifier = {
+      	factor = 200
+      	date > 1936.1.1
+      	}
+ 	 }
 		completion_reward = {
 		add_war_support = 0.05
 		add_manpower = 15000
@@ -1334,9 +1356,13 @@ focus_tree = {
 		prerequisite = { 
 			focus = LES_rapidpromotionsofselectedfew 
 		}
-		ai_will_do = {
-			factor = 1
-		}
+	    ai_will_do = {
+     	base = 1
+     	modifier = {
+      	factor = 200
+      	date > 1936.1.1
+      	}
+ 	 }
 		completion_reward = {
 		add_political_power	= 120
 		add_stability = -0.06
@@ -1357,9 +1383,13 @@ focus_tree = {
 		prerequisite = { 
 			focus = LES_demandsavings 
 		}
-		ai_will_do = {
-			factor = 1
-		}
+	    ai_will_do = {
+     	base = 1
+     	modifier = {
+      	factor = 200
+      	date > 1936.1.1
+      	}
+ 	 }
 		completion_reward = {
 		remove_ideas = { LES_Discontent }
 		set_country_flag = LES_gadjahasconsolidedpower 
@@ -2026,6 +2056,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		custom_effect_tooltip = les_tt_2
 		hidden_effect = {
 		set_country_flag = path
 		}
@@ -2051,6 +2082,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		custom_effect_tooltip = les_tt_3
 		hidden_effect = {
 		set_country_flag = path
 		}

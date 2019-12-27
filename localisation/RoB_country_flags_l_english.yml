@@ -47,7 +47,11 @@
  lit_tt_4:0 "§HWe Will Acquire More Great War Destroyers§!"
  lit_tt_5:0 "§HWe Will Finish Modernezation of President Smetona§!"
  lit_tt_6:0 "§HWe Will Acquire Two Great War Submarines§!"
- 
+
+ ###Legion
+ les_tt_1:0 "We will unlock Pagan parts of the tree"
+ les_tt_2:0 "We will unlock Futurist parts of the tree"
+ les_tt_3:0 "We will unlock Christian parts of the tree"
  ###Scripted Triggers
  minister_available:0 "Minister Available For This Government Type"
  democratic_aligned_government:0 "Government is Democratic Aligned"

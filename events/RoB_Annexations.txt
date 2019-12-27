@@ -12,6 +12,7 @@ country_event = {
  mean_time_to_happen = { days = 1 }
  trigger = {
   has_war = no
+  ACM = { NOT = { is_puppet_of = ROOT } }
   1018 = { is_owned_and_controlled_by = ROOT }
   NOT = {
    tag = THR
@@ -114,6 +115,7 @@ country_event = {
  mean_time_to_happen = { days = 1 }
  trigger = {
   has_war = no
+  SWI = { NOT = { is_puppet_of = ROOT } }
   3 = { is_owned_and_controlled_by = ROOT }
   NOT = {
    tag = SWI
@@ -208,6 +210,10 @@ country_event = {
  mean_time_to_happen = { days = 1 }
  trigger = {
   has_war = no
+  FRA = { NOT = { is_puppet_of = ROOT } }
+  FRR = { NOT = { is_puppet_of = ROOT } }
+  FRL = { NOT = { is_puppet_of = ROOT } }
+  FRS = { NOT = { is_puppet_of = ROOT } }
   16 = { is_owned_and_controlled_by = ROOT }
   NOT = {
    tag = FRA
@@ -306,6 +312,7 @@ country_event = {
  mean_time_to_happen = { days = 1 }
  trigger = {
   has_war = no
+  SPR = { NOT = { is_puppet_of = ROOT } }
   41 = { is_owned_and_controlled_by = ROOT }
   NOT = {
    tag = SPR
@@ -412,6 +419,7 @@ country_event = {
  mean_time_to_happen = { days = 1 }
  trigger = {
   has_war = no
+  POR = { NOT = { is_puppet_of = ROOT } }
   112 = { is_owned_and_controlled_by = ROOT }
   NOT = {
    tag = POR
@@ -458,6 +466,9 @@ country_event = {
  mean_time_to_happen = { days = 1 }
  trigger = {
   has_war = no
+  BRU = { NOT = { is_puppet_of = ROOT } }
+  BRL = { NOT = { is_puppet_of = ROOT } }
+  BLF = { NOT = { is_puppet_of = ROOT } }
   126 = { is_owned_and_controlled_by = ROOT }
   NOT = {
    tag = ENG
@@ -558,6 +569,7 @@ country_event = {
  mean_time_to_happen = { days = 1 }
  trigger = {
   has_war = no
+  IRE = { NOT = { is_puppet_of = ROOT } }
   1114 = { is_owned_and_controlled_by = ROOT }
   NOT = {
    tag = IRE
@@ -604,6 +616,7 @@ country_event = {
  mean_time_to_happen = { days = 1 }
  trigger = {
   has_war = no
+  LUX = { NOT = { is_puppet_of = ROOT } }
   8 = { is_owned_and_controlled_by = ROOT }
   NOT = {
    tag = LUX
@@ -650,6 +663,7 @@ country_event = {
  mean_time_to_happen = { days = 1 }
  trigger = {
   has_war = no
+  WLL = { NOT = { is_puppet_of = ROOT } }
   34 = { is_owned_and_controlled_by = ROOT }
   NOT = {
    tag = WLL
@@ -735,6 +749,7 @@ country_event = {
  mean_time_to_happen = { days = 1 }
  trigger = {
   has_war = no
+  FLA = { NOT = { is_puppet_of = ROOT } }
   6 = { is_owned_and_controlled_by = ROOT }
   NOT = {
    tag = FLA
@@ -804,6 +819,7 @@ country_event = {
  mean_time_to_happen = { days = 1 }
  trigger = {
   has_war = no
+  HOL = { NOT = { is_puppet_of = ROOT } }
   7 = { is_owned_and_controlled_by = ROOT }
   NOT = {
    tag = HOL
@@ -849,6 +865,7 @@ country_event = {
  mean_time_to_happen = { days = 1 }
  trigger = {
   has_war = no
+  DEN = { NOT = { is_puppet_of = ROOT } }
   37 = { is_owned_and_controlled_by = ROOT }
   NOT = {
    tag = DEN
@@ -895,6 +912,7 @@ country_event = {
  mean_time_to_happen = { days = 1 }
  trigger = {
   has_war = no
+  SWE = { NOT = { is_puppet_of = ROOT } }
   114 = { is_owned_and_controlled_by = ROOT }
   NOT = {
    tag = SWE
@@ -941,6 +959,7 @@ country_event = {
  mean_time_to_happen = { days = 1 }
  trigger = {
   has_war = no
+  FIN = { NOT = { is_puppet_of = ROOT } }
   111 = { is_owned_and_controlled_by = ROOT }
   NOT = {
    tag = FIN
@@ -987,6 +1006,7 @@ country_event = {
  mean_time_to_happen = { days = 1 }
  trigger = {
   has_war = no
+  POL = { NOT = { is_puppet_of = ROOT } }
   10 = { is_owned_and_controlled_by = ROOT }
   NOT = {
    tag = POL
@@ -1033,6 +1053,7 @@ country_event = {
  mean_time_to_happen = { days = 1 }
  trigger = {
   has_war = no
+  CZE = { NOT = { is_puppet_of = ROOT } }
   9 = { is_owned_and_controlled_by = ROOT }
   NOT = {
    tag = CZE
@@ -1079,6 +1100,7 @@ country_event = {
  mean_time_to_happen = { days = 1 }
  trigger = {
   has_war = no
+  SLO = { NOT = { is_puppet_of = ROOT } }
   70 = { is_owned_and_controlled_by = ROOT }
   NOT = {
    tag = SLO
@@ -1125,6 +1147,7 @@ country_event = {
  mean_time_to_happen = { days = 1 }
  trigger = {
   has_war = no
+  HUN = { NOT = { is_puppet_of = ROOT } }
   1025 = { is_owned_and_controlled_by = ROOT }
   NOT = {
    tag = HUN
@@ -1171,6 +1194,7 @@ country_event = {
  mean_time_to_happen = { days = 1 }
  trigger = {
   has_war = no
+  CRO = { NOT = { is_puppet_of = ROOT } }
   109 = { is_owned_and_controlled_by = ROOT }
   NOT = {
    tag = CRO
@@ -1217,6 +1241,7 @@ country_event = {
  mean_time_to_happen = { days = 1 }
  trigger = {
   has_war = no
+  BOS = { NOT = { is_puppet_of = ROOT } }
   104 = { is_owned_and_controlled_by = ROOT }
   NOT = {
    tag = SER
@@ -1264,6 +1289,7 @@ country_event = {
  mean_time_to_happen = { days = 1 }
  trigger = {
   has_war = no
+  SER = { NOT = { is_puppet_of = ROOT } }
   1140 = { is_owned_and_controlled_by = ROOT }
   NOT = {
    tag = SER
@@ -1310,6 +1336,7 @@ country_event = {
  mean_time_to_happen = { days = 1 }
  trigger = {
   has_war = no
+  ROM = { NOT = { is_puppet_of = ROOT } }
   46 = { is_owned_and_controlled_by = ROOT }
   NOT = {
    tag = ROM
@@ -1356,6 +1383,7 @@ country_event = {
  mean_time_to_happen = { days = 1 }
  trigger = {
   has_war = no
+  BUL = { NOT = { is_puppet_of = ROOT } }
   48 = { is_owned_and_controlled_by = ROOT }
   NOT = {
    tag = BUL
@@ -1402,6 +1430,7 @@ country_event = {
  mean_time_to_happen = { days = 1 }
  trigger = {
   has_war = no
+  ALB = { NOT = { is_puppet_of = ROOT } }
   1135 = { is_owned_and_controlled_by = ROOT }
   NOT = {
    tag = ALB
@@ -1447,6 +1476,7 @@ country_event = {
  mean_time_to_happen = { days = 1 }
  trigger = {
   has_war = no
+  GRE = { NOT = { is_puppet_of = ROOT } }
   47 = { is_owned_and_controlled_by = ROOT }
   NOT = {
    tag = GRE
@@ -1492,6 +1522,7 @@ country_event = {
  mean_time_to_happen = { days = 1 }
  trigger = {
   has_war = no
+  TUR = { NOT = { is_puppet_of = ROOT } }
   49 = { is_owned_and_controlled_by = ROOT }
   NOT = {
    tag = TUR
@@ -1538,6 +1569,7 @@ country_event = {
  mean_time_to_happen = { days = 1 }
  trigger = {
   has_war = no
+  LIT = { NOT = { is_puppet_of = ROOT } }
   784 = { is_owned_and_controlled_by = ROOT }
   NOT = {
    tag = LIT
@@ -1584,6 +1616,7 @@ country_event = {
  mean_time_to_happen = { days = 1 }
  trigger = {
   has_war = no
+  NOR = { NOT = { is_puppet_of = ROOT } }
   110 = { is_owned_and_controlled_by = ROOT }
   NOT = {
    tag = NOR
@@ -1631,6 +1664,9 @@ country_event = {
  mean_time_to_happen = { days = 1 }
  trigger = {
   has_war = no
+  BLR = { NOT = { is_puppet_of = ROOT } }
+  CBR = { NOT = { is_puppet_of = ROOT } }
+  DBR = { NOT = { is_puppet_of = ROOT } }
   206 = { is_owned_and_controlled_by = ROOT }
   NOT = {
    tag = BLR
@@ -1723,6 +1759,8 @@ country_event = {
  mean_time_to_happen = { days = 1 }
  trigger = {
   has_war = no
+  DSU = { NOT = { is_puppet_of = ROOT } }
+  UKR = { NOT = { is_puppet_of = ROOT } }
   202 = { is_owned_and_controlled_by = ROOT }
   NOT = {
    tag = DSU
@@ -1790,6 +1828,8 @@ country_event = {
  mean_time_to_happen = { days = 1 }
  trigger = {
   has_war = no
+  SOV = { NOT = { is_puppet_of = ROOT } }
+  RDR = { NOT = { is_puppet_of = ROOT } }
   219 = { is_owned_and_controlled_by = ROOT }
   257 = { is_owned_and_controlled_by = ROOT }
   217 = { is_owned_and_controlled_by = ROOT }
@@ -1801,6 +1841,7 @@ country_event = {
    tag = CAA
    tag = CAU
    tag = CRM
+   tag = LES
    has_country_flag = RUS_warlord
   }
  }
@@ -1898,6 +1939,7 @@ country_event = {
  mean_time_to_happen = { days = 1 }
  trigger = {
   has_war = no
+  ITA = { NOT = { is_puppet_of = ROOT } }
   2 = { is_owned_and_controlled_by = ROOT }
   NOT = {
    tag = ITA
@@ -1947,6 +1989,7 @@ country_event = {
  mean_time_to_happen = { days = 1 }
  trigger = {
   has_war = no
+  PER = { NOT = { is_puppet_of = ROOT } }
   226 = { is_owned_and_controlled_by = ROOT }
   NOT = {
    tag = PER
@@ -1993,6 +2036,7 @@ country_event = {
  mean_time_to_happen = { days = 1 }
  trigger = {
   has_war = no
+  TRS = { NOT = { is_puppet_of = ROOT } }
   584 = { is_owned_and_controlled_by = ROOT }
   NOT = {
    tag = TRS
@@ -2057,6 +2101,7 @@ country_event = {
  mean_time_to_happen = { days = 1 }
  trigger = {
   has_war = no
+  KHV = { NOT = { is_puppet_of = ROOT } }
   1176 = { is_owned_and_controlled_by = ROOT }
   NOT = {
    tag = KHV
@@ -2102,6 +2147,7 @@ country_event = {
  mean_time_to_happen = { days = 1 }
  trigger = {
   has_war = no
+  KYR = { NOT = { is_puppet_of = ROOT } }
   1217 = { is_owned_and_controlled_by = ROOT }
   NOT = {
    tag = KYR
@@ -2148,6 +2194,7 @@ country_event = {
  mean_time_to_happen = { days = 1 }
  trigger = {
   has_war = no
+  KZR = { NOT = { is_puppet_of = ROOT } }
   583 = { is_owned_and_controlled_by = ROOT }
   NOT = {
    tag = KZR
@@ -2196,6 +2243,7 @@ country_event = {
  mean_time_to_happen = { days = 1 }
  trigger = {
   has_war = no
+  UZB = { NOT = { is_puppet_of = ROOT } }
   1177 = { is_owned_and_controlled_by = ROOT }
   NOT = {
    tag = UZB
@@ -2241,6 +2289,8 @@ country_event = {
  mean_time_to_happen = { days = 1 }
  trigger = {
   has_war = no
+  EST = { NOT = { is_puppet_of = ROOT } }
+  LAT = { NOT = { is_puppet_of = ROOT } }
   12 = { is_owned_and_controlled_by = ROOT }
   NOT = {
    tag = LAT
@@ -2339,6 +2389,7 @@ country_event = {
  mean_time_to_happen = { days = 1 }
  trigger = {
   has_war = no
+  PRS = { NOT = { is_puppet_of = ROOT } }
   763 = { is_owned_and_controlled_by = ROOT }
   NOT = {
    tag = PRS
@@ -2386,6 +2437,7 @@ country_event = {
  mean_time_to_happen = { days = 1 }
  trigger = {
   has_war = no
+  GER = { NOT = { is_puppet_of = ROOT } }
   64 = { is_owned_and_controlled_by = ROOT }
   NOT = {
    tag = PRS

@@ -13,8 +13,8 @@ fire_only_once = yes
 
 trigger = {
  tag = LES
+ date > 1934.1.2
 }
-mean_time_to_happen = { days = 2 }
 
 option = {
  name = legion.0.a
@@ -57,7 +57,7 @@ is_triggered_only = yes
 
 option = {
  name = legion.2.a
- hidden_effect = { country_event = { id = legion.3 days = 3 }}
+ hidden_effect = { country_event = { id = legion.3 days = 7 }}
 }
 }
 
@@ -76,7 +76,7 @@ option = {
 }
 option = {
  name = legion.3.b
- hidden_effect = { country_event = { id = legion.6 days = 5 }}
+ hidden_effect = { country_event = { id = legion.6 days = 7 }}
 }
 }
 
@@ -156,7 +156,7 @@ option = {
 ### Christian events
 
 
-### we legit orthodox
+### do we get our own patriarch 
 country_event = { 
 id = legion.7
 title = legion.7.t
@@ -165,10 +165,18 @@ fire_only_once = yes
 is_triggered_only = yes
 
 option = {
+### n-no
  name = legion.7.a
+ add_political_power = 100
+ add_stability = 0.05
 }
 option = {
+### Yes
  name = legion.7.b
+ add_political_power = -150
+ add_ideas = {
+ LES_patriarch
+ }
 }
 }
 
@@ -413,7 +421,7 @@ option = {
  name = legion.17.a
  add_tech_bonus = {
 	name = gwtank 
-	bonus = 1.0
+	bonus = 2.0
 	uses = 1
 	technology = gwtank 
 	}

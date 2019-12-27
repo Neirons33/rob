@@ -211,7 +211,7 @@ LES_Fiercest_Infantry = {
      removal_cost = -1
 	 modifier = {
      conscription = 0.015
-     send_volunteer_size = 4
+     send_volunteer_size = 6
 	 }
 
 }
@@ -226,7 +226,7 @@ LES_Fiercest_Infantry = {
      removal_cost = -1
 	 modifier = {
      conscription = 0.015
-     send_volunteer_size = 4
+     send_volunteer_size = 6
      army_morale_factor = 0.15
 	 }
 
@@ -242,9 +242,9 @@ LES_Fiercest_Infantry = {
      removal_cost = -1
 	 modifier = {
      conscription = 0.015
-     send_volunteer_size = 4
+     send_volunteer_size = 6
      army_morale_factor = 0.15
-     justify_war_goal_time = -0.20
+     justify_war_goal_time = -0.33
 	 }
 
 }
@@ -421,6 +421,7 @@ LES_Fiercest_Infantry = {
    conscription = 0.0125
    army_org = 3
    enemy_partisan_effect = -0.25
+   decryption_factor = 0.2
    }
 }
    LES_will_of_gods_2_b = {
@@ -436,6 +437,7 @@ LES_Fiercest_Infantry = {
    conscription = 0.0125
    army_org = 3
    partisan_effect = 0.25
+   encryption_factor = 0.2
    }
 }
    LES_will_of_gods_3_a_a = {
@@ -451,6 +453,7 @@ LES_Fiercest_Infantry = {
    conscription = 0.0125
    army_org = 3
    enemy_partisan_effect = -0.25
+   decryption_factor = 0.2
    political_power_factor = 0.5
    }
 }
@@ -467,6 +470,7 @@ LES_Fiercest_Infantry = {
    conscription = 0.0125
    army_org = 3
    partisan_effect = 0.25
+   encryption_factor = 0.2
    political_power_factor = 0.5
    }
 }
@@ -483,6 +487,7 @@ LES_Fiercest_Infantry = {
    conscription = 0.0125
    army_org = 3
    enemy_partisan_effect = -0.25
+   decryption_factor = 0.2
    surrender_limit = 0.3
    }
 }
@@ -499,9 +504,28 @@ LES_Fiercest_Infantry = {
    conscription = 0.0125
    army_org = 3
    partisan_effect = 0.25
+   encryption_factor = 0.2
    surrender_limit = 0.3
    }
 }
+
+   LES_patriarch = {
+   picture = GFX_idea_minority_troubles 
+   allowed = {
+       always = no
+     }
+   allowed_civil_war = {
+        always = no
+      }
+     removal_cost = -1
+   modifier = {
+   stability_factor = 0.05
+   war_support_weekly = 0.001
+   mobilization_speed = 0.1
+   }
+}
+
+###Questions and answers
    LES_corporations = {
    picture = GFX_idea_minority_troubles 
    allowed = {
