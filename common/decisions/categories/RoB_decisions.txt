@@ -468,10 +468,17 @@ LES_invasion = {
 	visible = {
 	 tag = LES
 	 has_country_flag = triumph
+	 NOT = {
+	 LES = has_war_with = OMS
+	 }
 	}
 	available = {
+	tag = LES
 	ROOT = {
 	has_full_control_of_state = 572
+	}
+	NOT = {
+	LES = has_war_with = OMS
 	}
 	}
 		  priority = {

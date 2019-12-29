@@ -50,6 +50,7 @@ KAR = {
  days_remove = 20
  remove_effect = {
   ROOT = {
+  571 = { add_claim_by = LES }
  declare_war_on = { target = KAR type = annex_everything }
   }
  }

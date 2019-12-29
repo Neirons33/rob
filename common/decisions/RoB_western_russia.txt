@@ -106,9 +106,8 @@ RUS_integrate_southern_lands = {
 }
 
 RUS_mobilize_militias = {
-fire_only_once = yes
 available = {
- has_war = yes
+has_defensive_war = yes
 }
 ai_will_do = {
 			base = 200
@@ -117,4 +116,23 @@ complete_effect = {
 RUS = { load_oob = "RUS_militias" }
 }
 }
+
+RUS_demobilize_militias = {
+available = {
+has_defensive_war = yes
+}
+activation = {
+has_template = "Narodnya Militsiya"
+has_defensive_war = no
+}
+is_good = yes
+days_mission_timeout = 30
+timeout_effect = {
+delete_unit_template_and_units = { division_template = "Narodnya Militsiya" }
+}
+complete_effect = {
+}
+}
+
+###end of southern initiative
 }

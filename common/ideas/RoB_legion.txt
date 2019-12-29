@@ -676,6 +676,41 @@ LES_Fiercest_Infantry = {
    }
 
 }
+  LES_Risk_of_Famine_2 = {
+   picture = GFX_idea_minority_troubles 
+   allowed = {
+       always = no
+     }
+   allowed_civil_war = {
+        always = no
+      }
+     removal_cost = -1
+   modifier = {
+  stability_factor = -0.08
+  war_support_factor = -0.08
+  consumer_goods_factor = 0.1
+  production_speed_buildings_factor = -0.10
+  MONTHLY_POPULATION = -0.2
+   }
+
+}
+  LES_Risk_of_Famine_3 = {
+   picture = GFX_idea_minority_troubles 
+   allowed = {
+       always = no
+     }
+   allowed_civil_war = {
+        always = no
+      }
+     removal_cost = -1
+   modifier = {
+  stability_factor = -0.05
+  war_support_factor = -0.05
+  consumer_goods_factor = 0.1
+  MONTHLY_POPULATION = -0.1
+   }
+
+}
    LES_Economical_Boom = {
    picture = GFX_idea_minority_troubles	
    allowed = {

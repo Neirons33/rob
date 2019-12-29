@@ -298,7 +298,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = LES_formtheenginerbrigade }
 		ai_will_do = {
-			factor = 1
+			factor = 2
 		}
 		completion_reward = {
 		572 = {
@@ -696,10 +696,14 @@ focus_tree = {
 		}
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 1
+			factor = 2
 		}
 		completion_reward = {
 		add_manpower = -8000
+		swap_ideas = {
+		remove_idea = LES_Risk_of_Famine
+		add_idea = LES_Risk_of_Famine_2
+		}
 		}
 	}
 
@@ -832,7 +836,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = LES_demobilisethe4thregiment }
 		ai_will_do = {
-			factor = 1
+			factor = 2
 		}
 			completion_reward = {
 			add_ideas = {
@@ -944,7 +948,10 @@ focus_tree = {
 		}
 		completion_reward = {
 		add_political_power = -60
-		add_stability = -0.05
+		swap_ideas = {
+		remove_idea = LES_Risk_of_Famine_2
+		add_idea  = LES_Risk_of_Famine_3
+		}
 		}
 	}
 
@@ -1141,19 +1148,27 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		572= {
+		572 = {
 		add_building_construction = {
 		type = bunker
 		level = 2
 		province = 9292
 		instant_build = yes
 		}
+		}
+		1231 = {
+		add_building_construction = {
+		type = bunker
+		level = 2
+		province = 1694
+		instant_build = yes
+		}
+		}
 		add_ideas = {
 		LES_road_guardposts
-		}
-		}
-		}
+		}	
 	}
+}
 
 	#Focus for Reconnect Chelyabinsk with Omsk
 	focus = {
@@ -1187,7 +1202,7 @@ focus_tree = {
 				instant_build = yes
 				}
 			}
-		 1231 = {
+			 1231 = {
 			add_building_construction = {
 			type = infrastructure
 			level = 2
@@ -1226,9 +1241,13 @@ focus_tree = {
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = LES_radolasurvives }
-		ai_will_do = {
-			factor = 1
-		}
+	    ai_will_do = {
+     	base = 3
+     	modifier = {
+      	factor = 200
+      	date > 1936.1.1
+      	}
+ 	 }
 		completion_reward = {
 		add_ideas = {LES_Accurate_Inteligence}
 		}
@@ -1243,10 +1262,14 @@ focus_tree = {
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = LES_punishdisloyalelements }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
+	    ai_will_do = {
+     	base = 3
+     	modifier = {
+      	factor = 200
+      	date > 1936.1.1
+      	}
+ 	 }
+	completion_reward = {
 		add_command_power = 100
 		}
 	}
@@ -1261,7 +1284,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = LES_seizecontrolofmilitaryintelligence }
 	    ai_will_do = {
-     	base = 1
+     	base = 3
      	modifier = {
       	factor = 200
       	date > 1936.1.1
@@ -1282,7 +1305,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = LES_radolasurvives }
 	    ai_will_do = {
-     	base = 1
+     	base = 3
      	modifier = {
       	factor = 200
       	date > 1936.1.1
@@ -1306,9 +1329,13 @@ focus_tree = {
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = LES_thewondersofpropaganda }
-		ai_will_do = {
-			factor = 1
-		}
+	    ai_will_do = {
+     	base = 3
+     	modifier = {
+      	factor = 200
+      	date > 1936.1.1
+      	}
+ 	 }
 		completion_reward = {
 		add_stability = 0.1
 		add_popularity = {ideology = pelekist popularity =0.05}
@@ -1330,7 +1357,7 @@ focus_tree = {
 			focus = LES_exaggerateintelonkarelsforces 
 		}
 	    ai_will_do = {
-     	base = 1
+     	base = 3
      	modifier = {
       	factor = 200
       	date > 1936.1.1
@@ -1357,7 +1384,7 @@ focus_tree = {
 			focus = LES_rapidpromotionsofselectedfew 
 		}
 	    ai_will_do = {
-     	base = 1
+     	base = 3
      	modifier = {
       	factor = 200
       	date > 1936.1.1
@@ -1384,7 +1411,7 @@ focus_tree = {
 			focus = LES_demandsavings 
 		}
 	    ai_will_do = {
-     	base = 1
+     	base = 3
      	modifier = {
       	factor = 200
       	date > 1936.1.1
@@ -1393,8 +1420,9 @@ focus_tree = {
 		completion_reward = {
 		remove_ideas = { LES_Discontent }
 		set_country_flag = LES_gadjahasconsolidedpower 
+		1231 = {add_claim_by = LES}
+		571 = {add_claim_by = LES}
 		}
-
 	}
 
 	#Focus for Establish the First Squadron

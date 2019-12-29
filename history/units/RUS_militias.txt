@@ -1,6 +1,7 @@
 division_template = {
 
 name = "Narodnya Militsiya"
+is_locked = yes
 
 regiments = {
 		infantry = { x = 0 y = 0 }

@@ -123,7 +123,7 @@ GER_german_expansion = {
     add_state_core = 804
     add_state_core = 796
 	}
-   GER = { declare_war_on = { target = DEN  type = puppet_wargoal_focus } }
+   GER = { declare_war_on = { target = DEN  type = annex_everything } }
  }
 
 }
@@ -374,7 +374,7 @@ GER_german_export_revolution = {
     }
    }
   complete_effect = {
-  GER = { declare_war_on = { target = CZE  type = puppet_wargoal_focus } }
+  GER = { declare_war_on = { target = CZE  type = annex_everything } }
    }
   }
 
@@ -402,7 +402,7 @@ GER_german_export_revolution = {
     }
    }
   complete_effect = {
-  GER = { declare_war_on = { target = SLO  type = puppet_wargoal_focus } }
+  GER = { declare_war_on = { target = SLO  type = annex_everything } }
    }
   }
    GER_hungarian_revolution = {
@@ -429,7 +429,7 @@ GER_german_export_revolution = {
    }
    }
   complete_effect = {
-  GER = { declare_war_on = { target = HUN  type = puppet_wargoal_focus } }
+  GER = { declare_war_on = { target = HUN  type = annex_everything } }
    }
 
  }
@@ -455,7 +455,7 @@ GER_german_export_revolution = {
    }
    }
   complete_effect = {
-  GER = { declare_war_on = { target = POL  type = puppet_wargoal_focus } }
+  GER = { declare_war_on = { target = POL  type = annex_everything } }
    }
  }
  
@@ -493,7 +493,7 @@ GER_german_export_revolution = {
    GER = { is_neighbor_of = LIT }
     }
   complete_effect = {
-  GER = { declare_war_on = { target = LIT  type = puppet_wargoal_focus } }
+  GER = { declare_war_on = { target = LIT  type = annex_everything } }
    }
  }
  
@@ -516,7 +516,7 @@ GER_german_export_revolution = {
     }
   }	
   complete_effect = {
-  GER = { declare_war_on = { target = ITA  type = puppet_wargoal_focus } }
+  GER = { declare_war_on = { target = ITA  type = annex_everything } }
    }
  }
  
@@ -533,7 +533,7 @@ GER_german_export_revolution = {
  }
  
  complete_effect = {
-   GER = { declare_war_on = { target = DEN  type = puppet_wargoal_focus } }
+   GER = { declare_war_on = { target = DEN  type = annex_everything } }
  }
 
 }
@@ -582,19 +582,19 @@ GER_german_export_revolution = {
  custom_effect_tooltip = GER_diplo_tt_1
  if = {
   limit = { WLL = { exists = yes } WLL = { NOT = { is_in_faction_with = GER } }  }
-  GER = { declare_war_on = { target = WLL  type = puppet_wargoal_focus } }
+  GER = { declare_war_on = { target = WLL  type = annex_everything } }
  }
  if = {
   limit = { FLA = { exists = yes } FLA = { NOT = { is_in_faction_with = GER } }  }
-  GER = { declare_war_on = { target = FLA  type = puppet_wargoal_focus } }
+  GER = { declare_war_on = { target = FLA  type = annex_everything } }
  }
  if = {
   limit = { HOL = { exists = yes } HOL = { NOT = { is_in_faction_with = GER } }  }
-  GER = { declare_war_on = { target = HOL  type = puppet_wargoal_focus } }
+  GER = { declare_war_on = { target = HOL  type = annex_everything } }
  }
  if = {
   limit = { LUX = { exists = yes } LUX = { NOT = { is_in_faction_with = GER } }  }
-  GER = { declare_war_on = { target = LUX  type = puppet_wargoal_focus } }
+  GER = { declare_war_on = { target = LUX  type = annex_everything } }
  }
     hidden_effect = { 
     every_country = {

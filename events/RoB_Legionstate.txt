@@ -72,10 +72,16 @@ is_triggered_only = yes
 
 option = {
  name = legion.3.a
+ ai_chance = {
+			factor = 2
+		}
  hidden_effect = { country_event = { id = legion.4 days = 1 }}
 }
 option = {
  name = legion.3.b
+ ai_chance = {
+			factor = 8
+		}
  hidden_effect = { country_event = { id = legion.6 days = 7 }}
 }
 }
@@ -231,7 +237,7 @@ option = {
     idea = LES_buy_horses
     days = 120
 }
-hidden_effect = { country_event = { id = legion.11 days = 730 }}
+hidden_effect = { country_event = { id = legion.11 days = 500 }}
 }
 option = {
  name = legion.10.b
@@ -239,11 +245,11 @@ option = {
     idea = LES_buy_cheap_horses
     days = 120
 }
-hidden_effect = { country_event = { id = legion.12 days = 730 }}
+hidden_effect = { country_event = { id = legion.12 days = 500 }}
 }
 option = {
  name = legion.10.c
- hidden_effect = { country_event = { id = legion.13 days = 730 }}
+ hidden_effect = { country_event = { id = legion.13 days = 500 }}
 }
 }
 
