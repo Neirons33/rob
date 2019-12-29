@@ -174,7 +174,11 @@
  LES_Accurate_Inteligence_desc:0 ""
  LES_Risk_of_Famine:0 "Risk of Famine"
  LES_Risk_of_Famine_desc:0 ""
- LES_Economical_Boom:0 "Economical Boom"
+ LES_Risk_of_Famine_2:0 "Risk of Famine"
+ LES_Risk_of_Famine_2_desc:0 ""
+ LES_Risk_of_Famine_3:0 "Risk of Famine"
+ LES_Risk_of_Famine_3_desc:0 ""
+ LES_Economical_Boom:0 "Economic Boom"
  LES_Economical_Boom_desc:0 ""
  LES_Engineers:0 "Engineer Brigade"
  LES_Engineers_desc:0 ""
@@ -256,6 +260,10 @@
  LES_dab_on_abrahamics_desc:0 ""
  LES_patriarch:0 "Pelekist Patriarch"
  LES_patriarch_desc:0 ""
+ LES_rifles:0 "New Rifles"
+ LES_rifles_desc:0 ""
+ LES_siberian_commandos:0 "Siberian Commandos"
+ LES_siberian_commandos_desc:0 ""
 
  ###UGC
  beakon_of_hope:0 "Beakon of Hope"
@@ -907,3 +915,7 @@
  LIT_vincas_vitauskas_dm:0 "Vincas Vitkauskas"
  
  
+###Siberian shit
+
+civil_war_attrition_2:0 "Attrition of Russian Civil War"
+civil_war_attrition_2_desc:0 "Milions of people perished in the Russian Civil War, which spanned over almost ten years. Russian nation is in shambles, villages are quiet and cities stand much calmer than before the war... "

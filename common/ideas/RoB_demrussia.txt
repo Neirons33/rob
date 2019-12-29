@@ -35,6 +35,22 @@ ideas = {
 				MONTHLY_POPULATION	= -0.8
 			}
 	}
+
+	civil_war_attrition_2 = {
+	allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+	 removal_cost = -1
+	 picture = civil_war_attrition
+	 modifier = {
+				conscription_factor	 = -0.2
+				conscription = -0.01
+				MONTHLY_POPULATION	= -0.8
+			}
+	}
 	
 	
 	mari_rebbelion = {

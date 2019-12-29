@@ -108,11 +108,15 @@ RUS_integrate_southern_lands = {
 RUS_mobilize_militias = {
 available = {
 has_defensive_war = yes
+NOT = {
+has_country_flag = RUS_mobilization
+}
 }
 ai_will_do = {
 			base = 200
 		}
 complete_effect = {
+set_country_flag = RUS_mobilization
 RUS = { load_oob = "RUS_militias" }
 }
 }
@@ -129,6 +133,7 @@ is_good = yes
 days_mission_timeout = 30
 timeout_effect = {
 delete_unit_template_and_units = { division_template = "Narodnya Militsiya" }
+clr_country_flag = RUS_mobilization
 }
 complete_effect = {
 }

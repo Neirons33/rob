@@ -21,6 +21,7 @@ if = {
    is_puppet_of = LES
   }
   has_war = no
+  date > 1935.6.1
  }
 if = {
  AGR = { 
@@ -49,8 +50,8 @@ KAR = {
  fire_only_once = yes
  days_remove = 20
  remove_effect = {
+ 571 = { add_claim_by = LES }
   ROOT = {
-  571 = { add_claim_by = LES }
  declare_war_on = { target = KAR type = annex_everything }
   }
  }
@@ -85,9 +86,11 @@ LES_annex_AGR = {
   tag = LES
   AGR = {
   exists = yes
+  is_puppet_of = LES
   }
  }
  available = {
+ AGR = { is_puppet_of = LES }
  LES = { owns_state = 572 }
  OR = {
 if = {

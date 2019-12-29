@@ -28,7 +28,7 @@ set_popularities = {
 }
 add_ideas = {
  extensive_conscription
- civil_war_attrition
+ civil_war_attrition_2
 }
 
 create_faction = "Union of Romanovs"

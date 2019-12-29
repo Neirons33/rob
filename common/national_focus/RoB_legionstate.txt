@@ -158,7 +158,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = LES_radolasurvives }
 	    ai_will_do = {
-     	base = 1
+     	base = 2
      	modifier = {
       	factor = 200
       	date > 1936.1.1
@@ -171,7 +171,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for Radola Survives
+	#Focus for Gadja Survives
 	focus = {
 		id = LES_radolasurvives
 		icon = GFX_goal_unknown
@@ -185,10 +185,10 @@ focus_tree = {
 		}
 		available_if_capitulated = yes
     	ai_will_do = {
-     	base = 1
+     	base = 2
      	modifier = {
-      	factor = 200
-      	date > 1936.1.1
+      	factor = 500
+      	date > 1935.4.1
       	}
  	 }
 		completion_reward = {
@@ -298,7 +298,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = LES_formtheenginerbrigade }
 		ai_will_do = {
-			factor = 2
+			factor = 4
 		}
 		completion_reward = {
 		572 = {
@@ -365,11 +365,11 @@ focus_tree = {
 		}
 	}
 
-	#Focus for ...Sons of Perun...
+	#Focus for ...devotes of the thunderer...
 	focus = {
 		id = LES_sonsofperun
-		icon = GFX_goal_unknown
-		x = 3
+		icon = GFX_focus_LIT_unitedasshield
+		x = 6
 		y = 1
 		cost = 1
 		available = {
@@ -740,13 +740,11 @@ focus_tree = {
 		cost = 5
 		available = {
  			AND = {
- 			OR = {
  			LES = { owns_state = 572 }
- 			AGR = { owns_state = 572 }
- 			}
+
   			OR = {
  			LES = { owns_state = 1231 }
- 			AGR = { owns_state = 1231 }
+ 			AGR = { owns_state = 1231 is_puppet_of = LES }
  			}
 			}
 		}
@@ -819,7 +817,7 @@ focus_tree = {
 		}
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 1
+			factor = 10
 		}
 		completion_reward = {
 		add_manpower = -5000
@@ -836,7 +834,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = LES_demobilisethe4thregiment }
 		ai_will_do = {
-			factor = 2
+			factor = 3
 		}
 			completion_reward = {
 			add_ideas = {
@@ -855,7 +853,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = LES_formtheenginerbrigade }
 		ai_will_do = {
-			factor = 1
+			factor = 2
 		}
 		completion_reward = {
 			572 = {
@@ -1011,7 +1009,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = LES_formtheenginerbrigade }
 		ai_will_do = {
-			factor = 1
+			factor = 2
 		}
 		completion_reward = {
 		 	572 = {
@@ -1039,7 +1037,11 @@ focus_tree = {
 		}
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 1
+		base = 3
+     	modifier = {
+      	factor = 600
+      	has_war = yes
+      	}
 		}
 		completion_reward = {
 		army_experience = 25
@@ -1053,11 +1055,20 @@ focus_tree = {
 		x = 64
 		y = 1
 		cost = 5
+		available = {
+		NOT = {
+		has_tech = mobile_warfare
+		}
+		}
 		available_if_capitulated = yes
 		prerequisite = { focus = LES_legionsarmy }
 		mutually_exclusive = { focus = LES_empowerthencos }
 		ai_will_do = {
-			factor = 1
+		base = 1
+     	modifier = {
+      	factor = 600
+      	has_war = yes
+      	}
 		}
 		completion_reward = {
 		add_ideas = {
@@ -1098,7 +1109,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = LES_improveruralroadnetwork }
 		ai_will_do = {
-			factor = 1
+			factor = 2
 		}
 		completion_reward = {
 		add_research_slot = 1
@@ -1137,6 +1148,13 @@ focus_tree = {
 		x = 27
 		y = 4
 		cost = 5
+		available = {
+		572 = { is_owned_and_controlled_by = LES }
+		OR = {
+		AGR = {is_puppet_of = LES owns_state = 1231 controls_state = 1231}
+		1231 = { is_owned_and_controlled_by = LES }
+		}
+		}
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = LES_putorphanstowork 
@@ -1148,6 +1166,9 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		add_ideas = {
+		LES_road_guardposts
+		}	
 		572 = {
 		add_building_construction = {
 		type = bunker
@@ -1159,14 +1180,11 @@ focus_tree = {
 		1231 = {
 		add_building_construction = {
 		type = bunker
-		level = 2
+		level = 1
 		province = 1694
 		instant_build = yes
 		}
 		}
-		add_ideas = {
-		LES_road_guardposts
-		}	
 	}
 }
 
@@ -1242,7 +1260,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = LES_radolasurvives }
 	    ai_will_do = {
-     	base = 3
+     	base = 2
      	modifier = {
       	factor = 200
       	date > 1936.1.1
@@ -1259,11 +1277,11 @@ focus_tree = {
 		icon = GFX_focus_generic_military_mission
 		x = 19
 		y = 2
-		cost = 5
+		cost = 3
 		available_if_capitulated = yes
 		prerequisite = { focus = LES_punishdisloyalelements }
 	    ai_will_do = {
-     	base = 3
+     	base = 2
      	modifier = {
       	factor = 200
       	date > 1936.1.1
@@ -1284,9 +1302,9 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = LES_seizecontrolofmilitaryintelligence }
 	    ai_will_do = {
-     	base = 3
+     	base = 1
      	modifier = {
-      	factor = 200
+      	factor = 300
       	date > 1936.1.1
       	}
  	 }
@@ -1305,9 +1323,9 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = LES_radolasurvives }
 	    ai_will_do = {
-     	base = 3
+     	base = 1
      	modifier = {
-      	factor = 200
+      	factor = 300
       	date > 1936.1.1
       	}
  	 }
@@ -1330,9 +1348,9 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = LES_thewondersofpropaganda }
 	    ai_will_do = {
-     	base = 3
+     	base = 1
      	modifier = {
-      	factor = 200
+      	factor = 300
       	date > 1936.1.1
       	}
  	 }
@@ -1357,9 +1375,9 @@ focus_tree = {
 			focus = LES_exaggerateintelonkarelsforces 
 		}
 	    ai_will_do = {
-     	base = 3
+     	base = 1
      	modifier = {
-      	factor = 200
+      	factor = 300
       	date > 1936.1.1
       	}
  	 }
@@ -1375,7 +1393,7 @@ focus_tree = {
 		icon = GFX_focus_LIT_nationalizebanks
 		x = 18
 		y = 3
-		cost = 5
+		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = LES_exaggerateintelonkarelsforces 
@@ -1384,14 +1402,14 @@ focus_tree = {
 			focus = LES_rapidpromotionsofselectedfew 
 		}
 	    ai_will_do = {
-     	base = 3
+     	base = 1
      	modifier = {
-      	factor = 200
+      	factor = 300
       	date > 1936.1.1
       	}
  	 }
 		completion_reward = {
-		add_political_power	= 120
+		add_political_power	= 80
 		add_stability = -0.06
 		}
 	}
@@ -1411,17 +1429,15 @@ focus_tree = {
 			focus = LES_demandsavings 
 		}
 	    ai_will_do = {
-     	base = 3
+     	base = 5
      	modifier = {
-      	factor = 200
+      	factor = 300
       	date > 1936.1.1
       	}
  	 }
 		completion_reward = {
 		remove_ideas = { LES_Discontent }
 		set_country_flag = LES_gadjahasconsolidedpower 
-		1231 = {add_claim_by = LES}
-		571 = {add_claim_by = LES}
 		}
 	}
 
@@ -1440,7 +1456,7 @@ focus_tree = {
 		completion_reward = {
 		 add_tech_bonus = {
 			name = fighter_bonus
-			bonus = 1.0
+			bonus = 2.0
 			uses = 1
 			technology = early_fighter 
 			}
@@ -1509,11 +1525,21 @@ focus_tree = {
 		x = 54
 		y = 1
 		cost = 5
+		available = {
+		NOT = {
+		has_tech = trench_warfare
+		has_tech = mass_assault
+		}
+		}
 		available_if_capitulated = yes
 		prerequisite = { focus = LES_legionsarmy }
 		mutually_exclusive = { focus = LES_hqknowsbest }
 		ai_will_do = {
-			factor = 1
+		base = 2
+     	modifier = {
+      	factor = 600
+      	has_war = yes
+      	}
 		}
 		completion_reward = {
 		add_ideas = {
@@ -1621,13 +1647,86 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_military
 		x = 50
 		y = 1
-		cost = 5
+		cost = 10
+		available = {
+		572 = { is_owned_and_controlled_by = LES }
+		OR = {
+		AGR = {is_puppet_of = LES owns_state = 1231 controls_state = 1231}
+		1231 = { is_owned_and_controlled_by = LES }
+		}
+		}
 		available_if_capitulated = yes
 		prerequisite = { focus = LES_legionsarmy }
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
 
+		1231 = {
+		add_building_construction = {
+		type = bunker
+		level = 2
+		province = 4209
+		instant_build = yes
+		}}
+
+		1231 = {
+		add_building_construction = {
+		type = bunker
+		level = 2
+		province = 9512
+		instant_build = yes
+		}}
+
+		1231 = {
+		add_building_construction = {
+		type = bunker
+		level = 2
+		province = 10670
+		instant_build = yes
+		}}
+
+		572 = {
+		add_building_construction = {
+		type = bunker
+		level = 2
+		province = 10542
+		instant_build = yes
+		}}
+
+		572 = {
+		add_building_construction = {
+		type = bunker
+		level = 2
+		province = 12101
+		instant_build = yes
+		}}
+
+		572 = {
+		add_building_construction = {
+		type = bunker
+		level = 2
+		province = 12106
+		instant_build = yes
+		}}
+
+		572 = {
+		add_building_construction = {
+		type = bunker
+		level = 2
+		province = 307
+		instant_build = yes
+		}}
+
+		572 = {
+		add_building_construction = {
+		type = bunker
+		level = 2
+		province = 10133
+		instant_build = yes
+		}}
+
+		}
 	}
 
 	#Focus for Flexibility
@@ -2069,7 +2168,7 @@ focus_tree = {
 	focus = {
 		id = LES_wesingtheloveofdanger
 		icon = GFX_goal_unknown
-		x = 6
+		x = 9
 		y = 1
 		cost = 1
 		available = {
@@ -2095,7 +2194,7 @@ focus_tree = {
 	focus = {
 		id = LES_warriorsofchrist
 		icon = GFX_focus_LIT_clericalpelekism
-		x = 9
+		x = 3
 		y = 1
 		cost = 1
 		available = {
@@ -2126,9 +2225,13 @@ focus_tree = {
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = LES_legionsarmy }
-		ai_will_do = {
-			factor = 1
-		}
+	    ai_will_do = {
+     	base = 1
+     	modifier = {
+      	factor = 400
+      	has_manpower < 5000
+      	}
+      	}
 		completion_reward = {
 		add_manpower = 15000
 		}
@@ -2220,7 +2323,16 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = LES_legionsarmy }
 		ai_will_do = {
-			factor = 1
+		base = 2
+     	modifier = {
+      	factor = 600
+      	has_war = yes
+      	}
+		}
+		completion_reward = {
+		add_ideas = {
+		LES_rifles
+		}
 		}
 	}
 
@@ -2234,12 +2346,16 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = LES_thearmoryisempty }
 		ai_will_do = {
-			factor = 1
+		base = 2
+     	modifier = {
+      	factor = 600
+      	has_war = yes
+      	}
 		}
 		completion_reward = {
 		add_equipment_to_stockpile = {
         type = infantry_equipment_0
-		amount = 1000
+		amount = 2500
 		producer = LES
 		}
 	}
@@ -2298,7 +2414,6 @@ focus_tree = {
  			LES = { owns_state = 567 }
  			LES = { owns_state = 566 }
  			LES = { owns_state = 564 }
- 			LES = { owns_state = 563 }
 			}
 		available_if_capitulated = yes
 		prerequisite = { focus = LES_rebuildingtranssiberianrailway }
@@ -2327,13 +2442,6 @@ focus_tree = {
 			instant_build = yes
 				}
 			}
-		 563 = {
-			add_building_construction = {
-			type = infrastructure
-			level = 2
-			instant_build = yes
-				}
-			}
 			}
 		}
 
@@ -2349,6 +2457,7 @@ focus_tree = {
  			LES = { owns_state = 657 }
  			LES = { owns_state = 409 }
  			LES = { owns_state = 408 }
+ 			LES = { owns_state = 563 }
 			}
 		available_if_capitulated = yes
 		prerequisite = { focus = LES_chita }
@@ -2384,8 +2493,15 @@ focus_tree = {
 			instant_build = yes
 				}
 			}
+		 563 = {
+			add_building_construction = {
+			type = infrastructure
+			level = 2
+			instant_build = yes
+				}
 			}
-		}
+			}
+}
 
 	#Focus for Field Scavenging
 	focus = {
@@ -2769,7 +2885,7 @@ focus_tree = {
 	#Focus for Will Of Gods
 	focus = {
 		id = LES_willofgods
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LIT_beautyofstruggle
 		x = 11
 		y = 9
 		cost = 5
@@ -2875,7 +2991,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for Devotees of Perun
+	#Focus for Continue with the cult of Perun
 	focus = {
 		id = LES_devoteesofperun
 		icon = GFX_goal_unknown

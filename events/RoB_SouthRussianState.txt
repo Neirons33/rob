@@ -75,6 +75,39 @@ option = {
 		}
  
  }
+ CAA = { 
+every_state = {
+limit = { is_core_of = CRM }
+add_claim_by = CAA
+}
+every_state = {
+limit = { is_core_of = CAU }
+add_claim_by = CAA
+}
+}
+
+
+CRM = { 
+every_state = {
+limit = { is_core_of = CAA }
+add_claim_by = CRM
+}
+every_state = {
+limit = { is_core_of = CAU }
+add_claim_by = CRM
+}
+}
+
+CAU = { 
+every_state = {
+limit = { is_core_of = CAA }
+add_claim_by = CAU
+}
+every_state = {
+limit = { is_core_of = CRM }
+add_claim_by = CAU
+}
+}
   CRM = { country_event = { id = south_russian.3 days = 1 } }
   CAA = { country_event = { id = south_russian.3 days = 1 } }
   CAU = { dismantle_faction = yes }
@@ -109,16 +142,29 @@ option = {
  set_cosmetic_tag = RUS_SOU
  every_state = {
     limit = { 
-	OR = {
-	is_core_of = CAA 
-	is_core_of = CRM
-    is_core_of = CAU	
-	}
-	}
-	remove_core_of = PREV
-	add_core_of = ROOT
+  OR = {
+  is_core_of = CAA 
+  is_core_of = CRM
+    is_core_of = CAU  
+  }
+  }
+  remove_core_of = PREV
+  add_core_of = ROOT
 
 }
+every_state = {
+limit = { 
+OR = {
+is_claimed_by = CRM
+is_claimed_by = CAA
+is_claimed_by = CAU
+}
+}
+remove_claim_by = CAU
+remove_claim_by = CAA
+remove_claim_by = CRM
+}
+
 }
 }
 
