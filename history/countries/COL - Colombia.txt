@@ -17,7 +17,6 @@ set_technology = {
 	gw_artillery = 1
 	interwar_antiair = 1
 	early_fighter = 1
-	cv_early_fighter = 1
 }
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
@@ -37,140 +36,48 @@ if = {
 	}
 }
 
-set_country_flag = monroe_doctrine
 
 set_convoys = 10
 
-1939.1.1 = {
-
-	add_political_power = 1198
-	
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = large_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-	
-	oob = "COL_1939"
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-			set_naval_oob = "COL_1939_naval_mtg"
-		else = {
-			set_naval_oob = "COL_1939_naval_legacy"
-		}
-	}
-
-	set_technology = {
-		interwar_artillery = 1
-		infantry_weapons1 = 1
-		infantry_weapons2 = 1
-		support_weapons = 1
-
-		#doctrines
-		air_superiority = 1
-		grand_battle_plan = 1
-		trench_warfare = 1
-		fleet_in_being = 1
-		battlefleet_concentration = 1
-		convoy_sailing = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		mechanical_computing = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		synth_oil_experiments = 1
-		fuel_silos = 1
-		oil_processing = 1
-		improved_oil_processing = 1
-		construction1 = 1
-		construction2 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-	}
-}
-
-set_convoys = 5
 set_popularities = {
-	national_socialist = 10
-	socialist = 25
+	national_socialist = 0
+	socialist = 0
 	democratic_socialist = 10
-	social_democracy = 12
-	social_liberal = 3
-	conservative = 5
-	authoritharian = 20
-	reactionary = 5
-	pelekist = 10
+	social_democracy = 14
+	social_liberal = 56
+	conservative = 7
+	authoritharian = 11
+	reactionary = 1
+	pelekist = 1
+}
+
+set_politics = {
+	ruling_party = social_liberal
+	last_election = "1931.12.19"
+	election_frequency = 48
+	elections_allowed = no
 }
 	
-	ruling_party = democratic
-	last_election = "1934.2.11"
-	election_frequency = 48
-	elections_allowed = yes
-}
 
 create_country_leader = {
 	name = "Alfonso López Pumarejo"
 	desc = "POLITICS_ALFONSO_LOPEZ_PUMAREJO_DESC"
 	picture = "GFX_Portrait_columbia_alfonso_lopez"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = social_liberal_subtype
 	traits = {
 		#
 	}
-}
 
 create_country_leader = {
 	name = "Mariano Ospina Pérez"
 	desc = "POLITICS_MARIANO_OSPINA_PEREZ_DESC"
 	picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_2.dds"
 	expire = "1965.1.1"
-	ideology = centrism
+	ideology = conservative_subtype
 	traits = {
 		#
 	}
-}
-
-
-
-		
-		ruling_party = democratic
-		last_election = "1938.5.1"
-		election_frequency = 48  
-		elections_allowed = yes
-	}
-
-	create_country_leader = {
-		name = "Eduardo Santos"
-		desc = "POLITICS_EDUARDO_SANTOS_DESC"
-		picture = "gfx/leaders/South America/Portrait_South_America_Generic_5.dds"
-		expire = "1965.1.1"
-		ideology = liberalism
-		traits = {
-			#
-		}
-	}
-}
-
-create_corps_commander = {
-	name = "Gustavo Rojas Pinilla"
-	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_3.dds"
-	traits = {  trickster urban_assault_specialist }
-	skill = 3
-	attack_skill = 3
-	defense_skill = 1
-	planning_skill = 3
-	logistics_skill = 3
 }
 
 

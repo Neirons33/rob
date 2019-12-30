@@ -10,7 +10,6 @@ if = {
 }
 
 set_research_slots = 3
-set_country_flag = monroe_doctrine
 set_stability = 0.8
 set_war_support = 0.1
 
@@ -66,30 +65,32 @@ if = {
 	add_to_tech_sharing_group = commonwealth_research
 }
 
+set_politics = {
+	ruling_party = conservative
+	last_election = "1931.12.19"
+	election_frequency = 48
+	elections_allowed = no
+}
+
 set_popularities = {
 	national_socialist = 0
-	socialist = 8
-	democratic_socialist = 15
-	social_democracy = 12
-	social_liberal = 18
-	conservative = 25
-	authoritharian = 2
-	reactionary = 0
-	pelekist = 10
+	socialist = 0
+	democratic_socialist = 0
+	social_democracy = 27
+	social_liberal = 22
+	conservative = 45
+	authoritharian = 6
+	pelekist = 0
 }
 	
-	ruling_party = conservative
-	last_election = "1935.10.14"
-	election_frequency = 60
-	elections_allowed = yes
-}
+
 
 create_country_leader = {
 	name = "Richard Bedford Bennett"
 	desc = "POLITICS_MACKENZIE_KING_DESC"
 	picture = "Portrait_CAN_richard_bedford_bennett.tga"
 	expire = "1965.1.1"
-	ideology = conservative
+	ideology = conservative_subtype
 	traits = {
 		#
 	}
@@ -100,7 +101,7 @@ create_country_leader = {
 	desc = "POLITICS_ADRIEN_ARCAND_DESC"
 	picture = "GFX_CAN_adrien_arcand"
 	expire = "1965.1.1"
-	ideology = pelekist
+	ideology = pelekist_subtype
 	traits = {
 		#
 	}
@@ -111,7 +112,7 @@ create_country_leader = {
 	desc = "POLITICS_TIM_BUCK_DESC"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
 	expire = "1965.1.1"
-	ideology = marxism_leninism
+	ideology = socialist_subtype
 	traits = {
 		#
 	}
@@ -257,44 +258,6 @@ if = {
 			fixed_ship_torpedo_slot = ship_torpedo_1
 			mid_1_custom_slot = ship_torpedo_1
 			rear_1_custom_slot = empty
-		}
-	}
-}
-
-# 1939 Start #
-1939.1.1 = {
-	if = {
-		limit = { not = { has_dlc = "Man the Guns" } }
-		# Ship variants #
-		create_equipment_variant = {
-			name = "Athabaskan Class"
-			type = destroyer_1
-			upgrades = {
-				ship_torpedo_upgrade = 2
-				destroyer_engine_upgrade = 2
-				ship_ASW_upgrade = 2
-				ship_anti_air_upgrade = 2
-			}
-		}
-	}
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-		# Destroyers #
-		create_equipment_variant = {
-			name = "Iroquois Class"
-			type = ship_hull_light_2
-			name_group = CAN_DD_HISTORICAL
-			parent_version = 0
-			modules = {
-				fixed_ship_battery_slot = ship_light_battery_2
-				fixed_ship_anti_air_slot = ship_anti_air_1
-				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-				fixed_ship_radar_slot = ship_sonar_2
-				fixed_ship_engine_slot = light_ship_engine_2
-				fixed_ship_torpedo_slot = ship_torpedo_1
-				mid_1_custom_slot = ship_light_battery_2
-				rear_1_custom_slot = ship_depth_charge_2
-			}
 		}
 	}
 }

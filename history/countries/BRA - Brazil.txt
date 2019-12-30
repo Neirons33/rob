@@ -13,8 +13,8 @@ set_technology = {
 	gwtank = 1
 	early_fighter = 1
 	CAS1 = 1
-	
 }
+
 if = {
 	limit = {
 		not = { has_dlc = "Man the Guns"}
@@ -29,6 +29,7 @@ if = {
 	}
 	set_naval_oob = "BRA_1936_naval_legacy"
 }
+
 if = {
 	limit = { has_dlc = "Man the Guns"}
 	set_technology = {
@@ -46,91 +47,22 @@ if = {
 	}
 	set_naval_oob = "BRA_1936_naval"	
 }
-set_country_flag = monroe_doctrine
-
-1939.1.1 = {
-
-	add_political_power = 1198
-	
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = large_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-	
-	oob = "BRA_1939"
-	set_technology = {
-		interwar_artillery = 1
-		infantry_weapons1 = 1
-		infantry_weapons2 = 1
-		support_weapons = 1
-		
-
-		#doctrines
-		air_superiority = 1
-		grand_battle_plan = 1
-		trench_warfare = 1
-		fleet_in_being = 1
-		battlefleet_concentration = 1
-		convoy_sailing = 1
-
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		mechanical_computing = 1
-		computing_machine = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		synth_oil_experiments = 1
-		fuel_silos = 1
-		oil_processing = 1
-		improved_oil_processing = 1
-		construction1 = 1
-		construction2 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-	}
-	if = {
-		limit = { not = { has_dlc = "Man the Guns" } }
-		set_technology = {
-			basic_submarine = 1
-			basic_destroyer = 1
-		}
-		set_naval_oob = "BRA_1939_naval_legacy"
-	}
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-		set_technology = {
-			basic_ship_hull_light = 1
-		}
-		set_naval_oob = "BRA_1939_naval"
-	}
-}
 
 set_popularities = {
 	national_socialist = 0
-	socialist = 10
-	democratic_socialist = 15
-	social_democracy = 21
-	social_liberal = 23
-	conservative = 19
-	authoritharian = 7
-	reactionary = 5
-	pelekist = 0
+	socialist = 0
+	democratic_socialist = 10
+	social_democracy = 0
+	social_liberal = 7
+	conservative = 7
+	authoritharian = 66
+	reactionary = 0
+	pelekist = 10
 }
 	
-	ruling_party = neutrality
-	last_election = "1934.7.17"
+set_politics = {
+	ruling_party = authoritharian
+	last_election = "1931.12.19"
 	election_frequency = 48
 	elections_allowed = no
 }
@@ -140,7 +72,7 @@ create_country_leader = {
 	desc = "POLITICS_GETULIO_VARGAS_DESC"
 	picture = "Portrait_BRA_getúlio_vargas.tga"
 	expire = "1965.1.1"
-	ideology = conservative
+	ideology = authoritharian_subtype
 	traits = {
 		#
 	}
@@ -151,17 +83,18 @@ create_country_leader = {
 	desc = "POLITICS_PLINIO_SALGADO_DESC"
 	picture = "Portrait_Brazil_Plinio_Salgado.dds"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = christian_pelekism
 	traits = {
 		#
 	}
 }
+
 create_country_leader = {
 	name = "Luís Carlos Prestes"
 	desc = "POLITICS_LUIS_CARLOS_PRESTES_DESC"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
 	expire = "1965.1.1"
-	ideology = marxism
+	ideology = socialist_subtype
 	traits = {
 		#
 	}
@@ -172,7 +105,7 @@ create_country_leader = {
 	desc = "POLITICS_ARMANDO_SALES_DESC"
 	picture = "gfx/leaders/South America/Portrait_South_America_Generic_2.dds"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = conservatism_subtype
 	traits = {
 		#
 	}
@@ -181,52 +114,7 @@ create_country_leader = {
 
 set_convoys = 40
 
-1939.1.1 = {
-	set_politics = {
 
-		parties = {
-			democratic_socialist = { 
-				popularity = 100
-			}
-
-			pelekist = {
-				popularity = 0
-			}
-			
-			reactionary = {
-				popularity = 0
-				
-			}
-                        national_socialist = { 
-				popularity = 0
-			}
-                         socialist = { 
-				popularity = 0
-			}
-                        conservative = { 
-				popularity = 0
-			}
-                       social_liberal = { 
-				popularity = 0
-			}
-                        social_democrats = { 
-				popularity = 0
-			}
-                        authoritharian = { 
-				popularity = 0
-			}
-
-
-
-
-		}
-	
-	ruling_party = neutrality
-		last_election = "1934.7.17"
-		election_frequency = 48
-		elections_allowed = no
-	}
-}
 
 create_corps_commander = {
 	name = "Eurico Gaspar Dutra"
@@ -322,26 +210,6 @@ if = {
 			fixed_ship_torpedo_slot = ship_torpedo_sub_1
 			fixed_ship_engine_slot = sub_ship_engine_2
 			rear_1_custom_slot = ship_mine_layer_sub
-		}
-	}
-}
-
-# 1939 Start #
-1939.1.1 = {
-	if = {
-		limit = {
-			has_dlc = "Man the Guns"
-		}
-		create_equipment_variant = {
-			name = "Tupi Class"
-			type = ship_hull_submarine_2
-			name_group = BRA_SS_HISTORICAL
-			parent_version = 0
-			modules = {
-				fixed_ship_torpedo_slot = ship_torpedo_sub_1
-				fixed_ship_engine_slot = sub_ship_engine_1
-				rear_1_custom_slot = empty
-			}
 		}
 	}
 }

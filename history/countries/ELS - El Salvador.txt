@@ -7,70 +7,28 @@ set_technology = {
 	infantry_weapons = 1
 	early_fighter = 1
 }
-set_country_flag = monroe_doctrine
 set_war_support = 0.1
 set_convoys = 5
 
-1939.1.1 = {
-	add_political_power = 1198
-	
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = flexible_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-	
-	oob = "ELS_1939"
-	set_technology = {
-		infantry_weapons1 = 1
-		support_weapons = 1
-
-		#doctrines
-		air_superiority = 1
-		grand_battle_plan = 1
-		trench_warfare = 1
-		fleet_in_being = 1
-		battlefleet_concentration = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		mechanical_computing = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		fuel_silos = 1
-		construction1 = 1
-		construction2 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-	}
-}
 
 set_popularities = {
 	national_socialist = 0
-	socialist = 10
-	democratic_socialist = 15
-	social_democracy = 21
-	social_liberal = 23
-	conservative = 19
-	authoritharian = 7
-	reactionary = 5
-	pelekist = 0
+	socialist = 0
+	democratic_socialist = 0
+	social_democracy = 0
+	social_liberal = 0
+	conservative = 0
+	authoritharian = 55
+	reactionary = 8
+	pelekist = 37
 }
 	
-	ruling_party = fascism
-	last_election = "1935.1.15"
+
+set_politics = {
+	ruling_party = authoritharian
+	last_election = "1933.07.03"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 
 create_country_leader = {
@@ -78,9 +36,19 @@ create_country_leader = {
 	desc = "POLITICS_MAXIMILIANO_HERNANDEZ_MARTINEZ_DESC"
 	picture = "GFX_portrait_el_salvador_maximiliano_hernandez_martinez"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = pelekist_subtype
 	traits = {
 		#
 	}
 }
 
+create_country_leader = {
+	name = "Pío Romero Bosque"
+	desc = "POLITICS_MAXIMILIANO_HERNANDEZ_MARTINEZ_DESC"
+	picture = "Pio_Romero_Bosque.dds"
+	expire = "1965.1.1"
+	ideology = authoritharian_subtype
+	traits = {
+		#
+	}
+}

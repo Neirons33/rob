@@ -40,18 +40,19 @@ set_convoys = 30
 
 set_popularities = {
 	national_socialist = 0
-	socialist = 10
-	democratic_socialist = 15
-	social_democracy = 21
-	social_liberal = 23
-	conservative = 19
-	authoritharian = 7
-	reactionary = 5
+	socialist = 0
+	democratic_socialist = 5
+	social_democracy = 17
+	social_liberal = 45
+	conservative = 27
+	authoritharian = 6
+	reactionary = 0
 	pelekist = 0
 }
 	
-	ruling_party = democratic
-	last_election = "1932.11.8"
+set_politics = {
+	ruling_party = social_liberal
+	last_election = "1931.12.19"
 	election_frequency = 48
 	elections_allowed = no
 }
@@ -67,7 +68,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Portrait_California_Frank.dds"
 	expire = "1950.1.1"
-	ideology = liberalism
+	ideology = social_liberal_subtype
 	traits = {
 	}
 }
@@ -77,7 +78,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/USA/Portrait_USA_Generic_3.dds"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = reactionary_subtype
 	traits = {
 		
 	}
@@ -88,7 +89,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/USA/Portrait_USA_Generic_3.dds"
 	expire = "1965.1.1"
-	ideology = marxism
+	ideology = socialist_subtype
 	traits = {
 		
 	}
