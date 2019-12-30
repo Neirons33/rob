@@ -95,31 +95,21 @@ set_convoys = 5
 }
 
 set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 0
-			banned = yes
-		}
-
-		fascism = {
-			popularity = 80
-		}
-		
-		communism = {
-			popularity = 0
-			banned = yes
-		}
-
-		neutrality = {
-			popularity = 20
-		}
-	}
-	
-	ruling_party = fascism
-	last_election = "1936.1.1"
+	ruling_party = reactionary
+	last_election = "1932.5.1"
 	election_frequency = 48
 	elections_allowed = no
+}
+set_popularities = {
+	national_socialist = 0
+	socialist = 0
+	democratic_socialist = 0
+	social_democracy = 0
+	social_liberal = 0
+	conservative = 10
+	authoritharian = 10
+	reactionary = 65
+	pelekist = 15
 }
 
 create_country_leader = {
@@ -127,7 +117,7 @@ create_country_leader = {
 	
 	picture = "gfx/leaders/MAN/Portrait_Manchuria_Henry_Pu_Yi.dds"
 	expire = "1960.1.1"
-	ideology = rexism
+	ideology = reactionary_subtype
 	traits = {
 		warrior_code
 	}
@@ -138,7 +128,7 @@ create_country_leader = {
 	
 	picture = "gfx/leaders/MAN/Portrait_Manchuria_Henry_Pu_Yi.dds"
 	expire = "1960.1.1"
-	ideology = despotism
+	ideology = authoritharian_subtype
 	traits = {
 		warrior_code
 	}

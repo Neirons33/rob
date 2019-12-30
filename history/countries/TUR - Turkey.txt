@@ -130,7 +130,7 @@ if = {
 }
 
 set_politics = {	
-	ruling_party = authoritharian
+	ruling_party = reactionary
 	last_election = "1935.2.8"
 	election_frequency = 48
 	elections_allowed = yes
@@ -146,8 +146,8 @@ set_popularities = {
 	social_democracy = 0
 	social_liberal = 0
 	conservative = 19
-	authoritharian = 39
-	reactionary = 32
+	authoritharian = 32
+	reactionary = 39
 	pelekist = 0
 }
 
@@ -164,9 +164,9 @@ set_popularities = {
 	}
 
 create_country_leader = {
-	name = "Abdülmecid II"
+	name = "Enver Pasha"
 	desc = "POLITICS_MUSTAFA_KEMAL_ATATÜRK_DESC"
-	picture = "Portrait_TUR_Abdülmecid_II.tga"
+	picture = "Portrait_TUR_Enver_Pasha.tga"
 	expire = "1965.1.1"
 	ideology = reactionary_subtype
 	traits = {

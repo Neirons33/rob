@@ -61,24 +61,28 @@ if = {
 }
 
 set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 25
-		}
-		
-		communism = {
-			popularity = 75
-		}
-	}
+	ruling_party = democratic_socialist
+	last_election = "1932.5.1"
+	election_frequency = 48
+	elections_allowed = no
 }
-
+set_popularities = {
+	national_socialist = 5
+	socialist = 5
+	democratic_socialist = 56
+	social_democracy = 24
+	social_liberal = 10
+	conservative = 0
+	authoritharian = 0
+	reactionary = 0
+	pelekist = 0
+}
 create_country_leader = {
 	name = "Noe Zhordania"
 	desc = ""
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
 	expire = "1953.3.1"
-	ideology = liberalism
+	ideology = democratic_socialist_subtype
 	traits = {
 		
 	}
@@ -89,7 +93,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
 	expire = "1953.3.1"
-	ideology = stalinism
+	ideology = vlaslovist
 	traits = {
 		
 	}

@@ -51,7 +51,7 @@ set_popularities = {
 	social_liberal = 0
 	conservative = 0
 	authoritharian = 0
-	pelekist = 10
+	pelekist = 15
 }
 	
 set_politics = {

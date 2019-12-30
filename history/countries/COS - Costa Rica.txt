@@ -13,29 +13,29 @@ set_convoys = 10
 
 set_popularities = {
 	national_socialist = 0
-	socialist = 10
-	democratic_socialist = 15
-	social_democracy = 21
-	social_liberal = 23
-	conservative = 19
-	authoritharian = 7
-	reactionary = 5
+	socialist = 0
+	democratic_socialist = 0
+	social_democracy = 0
+	social_liberal = 40
+	conservative = 60
+	authoritharian = 0
+	reactionary = 0
 	pelekist = 0
 }
 
 set_politics = {
-	ruling_party = social_democracy
+	ruling_party = conservative
 	last_election = "1932.2.14"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 create_country_leader = {
-	name = "Ricardo Jiménez Oreamuno"
+	name = "Cleto González Víquez"
 	desc = "POLITICS_RICARDO_JIMENEZ_OREAMUNO_DESC"
-	picture = "GFX_portrait_costa_rica_ricardo_jiminez_oreamuno"
+	picture = "Cleto_Gonzalez_Viquez.dds"
 	expire = "1965.1.1"
-	ideology = social_liberal_subtype
+	ideology = conservative_subtype
 	traits = {
 		#
 	}

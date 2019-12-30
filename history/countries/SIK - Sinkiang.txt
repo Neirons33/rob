@@ -86,36 +86,29 @@ if = {
 }
 
 set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 0
-			banned = yes
-		}
-
-		fascism = {
-			popularity = 0
-			banned = yes
-		}
-		
-		communism = {
-			popularity = 100
-			#banned = no #default is no
-		}
-	}
-	
-	ruling_party = communism
-	last_election = "1936.1.1"
+	ruling_party = authoritharian
+	last_election = "1932.5.1"
 	election_frequency = 48
 	elections_allowed = no
 }
+set_popularities = {
+	national_socialist = 0
+	socialist = 0
+	democratic_socialist = 2
+	social_democracy = 2
+	social_liberal = 2
+	conservative = 26
+	authoritharian = 68
+	reactionary = 0
+	pelekist = 0
+}
 
 create_country_leader = {
-	name = "Sheng Shicai"
+	name = "Khoja Niyaz"
 	desc = "POLITICS_SHENG_SHICAI_DESC"
-	picture = "gfx/leaders/SIK/Portrait_Sinkiang_Sheng_Shicai.dds"
+	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_3.dds"
 	expire = "1965.1.1"
-	ideology = stalinism
+	ideology = authoritharian_subtype
 	traits = {
 		#
 	}
