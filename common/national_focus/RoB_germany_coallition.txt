@@ -1021,6 +1021,8 @@ random_owned_controlled_state = {
 		 add_ideas = {
 		  GER_dem_soc
 		 }
+		custom_effect_tooltip = GER_tt_1
+		set_country_flag = GER_expansion_LUX_DS
 		}
 	}
 	

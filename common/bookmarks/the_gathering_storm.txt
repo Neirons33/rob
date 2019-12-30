@@ -18,7 +18,7 @@ bookmarks = {
 			}
 		}
         "PRS" = {
-		  history = "GER_GATHERING_STORM_DESC"
+		  history = "PRS_GATHERING_STORM_DESC"
 		  ideology = reactionary
 		  ideas = {
 		     minority_troubles
@@ -32,7 +32,7 @@ bookmarks = {
 		  }
 		}
 		"LIT"={
-			history = "ENG_GATHERING_STORM_DESC"
+			history = "LIT_GATHERING_STORM_DESC"
 			ideology = conservative
 			ideas = {
            samogitian_identity

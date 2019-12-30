@@ -8,6 +8,7 @@ country_event = {
  id = annex.1
  desc = annex.1.d
  title = "Fate of Austria"
+ fire_only_once = yes
 
  mean_time_to_happen = { days = 1 }
  trigger = {
@@ -111,6 +112,7 @@ country_event = {
  id = annex.2
  desc = annex.2.d
  title = "Fate of Switzerland"
+ fire_only_once = yes
  
  mean_time_to_happen = { days = 1 }
  trigger = {
@@ -206,6 +208,7 @@ country_event = {
  id = annex.3
  desc = annex.3.d
  title = "Fate of France"
+ fire_only_once = yes
  
  mean_time_to_happen = { days = 1 }
  trigger = {
@@ -308,6 +311,7 @@ country_event = {
  id = annex.4
  desc = annex.4.d
  title = "Fate of Spain"
+ fire_only_once = yes
  
  mean_time_to_happen = { days = 1 }
  trigger = {
@@ -415,6 +419,7 @@ country_event = {
  id = annex.5
  desc = annex.5.d
  title = "Fate of Portugal"
+ fire_only_once = yes
  
  mean_time_to_happen = { days = 1 }
  trigger = {
@@ -462,7 +467,7 @@ country_event = {
  id = annex.6
  desc = annex.6.d
  title = "Fate of British Isles"
- 
+ fire_only_once = yes
  mean_time_to_happen = { days = 1 }
  trigger = {
   has_war = no
@@ -565,6 +570,7 @@ country_event = {
  id = annex.7
  desc = annex.7.d
  title = "Fate of Ireland"
+ fire_only_once = yes
  
  mean_time_to_happen = { days = 1 }
  trigger = {
@@ -612,6 +618,7 @@ country_event = {
  id = annex.8
  desc = annex.8.d
  title = "Fate of Luxembourg"
+ fire_only_once = yes
  
  mean_time_to_happen = { days = 1 }
  trigger = {
@@ -659,6 +666,7 @@ country_event = {
  id = annex.9
  desc = annex.9.d
  title = "Fate of Wallonia"
+ fire_only_once = yes
  
  mean_time_to_happen = { days = 1 }
  trigger = {
@@ -745,6 +753,7 @@ country_event = {
  id = annex.10
  desc = annex.10.d
  title = "Fate of Flanders"
+ fire_only_once = yes
  
  mean_time_to_happen = { days = 1 }
  trigger = {
@@ -815,6 +824,7 @@ country_event = {
  id = annex.11
  desc = annex.11.d
  title = "Fate of Netherlands"
+ fire_only_once = yes
  
  mean_time_to_happen = { days = 1 }
  trigger = {
@@ -861,6 +871,7 @@ country_event = {
  id = annex.12
  desc = annex.12.d
  title = "Fate of Denmark"
+ fire_only_once = yes
  
  mean_time_to_happen = { days = 1 }
  trigger = {
@@ -908,6 +919,7 @@ country_event = {
  id = annex.13
  desc = annex.13.d
  title = "Fate of Sweden"
+ fire_only_once = yes
  
  mean_time_to_happen = { days = 1 }
  trigger = {
@@ -955,6 +967,7 @@ country_event = {
  id = annex.14
  desc = annex.14.d
  title = "Fate of Finland"
+ fire_only_once = yes
  
  mean_time_to_happen = { days = 1 }
  trigger = {
@@ -1002,6 +1015,7 @@ country_event = {
  id = annex.15
  desc = annex.15.d
  title = "Fate of Poland"
+ fire_only_once = yes
  
  mean_time_to_happen = { days = 1 }
  trigger = {
@@ -1049,6 +1063,7 @@ country_event = {
  id = annex.16
  desc = annex.16.d
  title = "Fate of Bohemia"
+ fire_only_once = yes
  
  mean_time_to_happen = { days = 1 }
  trigger = {
@@ -1096,6 +1111,7 @@ country_event = {
  id = annex.17
  desc = annex.17.d
  title = "Fate of Slovakia"
+ fire_only_once = yes
  
  mean_time_to_happen = { days = 1 }
  trigger = {
@@ -1143,6 +1159,7 @@ country_event = {
  id = annex.18
  desc = annex.18.d
  title = "Fate of Hungary"
+ fire_only_once = yes
  
  mean_time_to_happen = { days = 1 }
  trigger = {
@@ -1190,6 +1207,7 @@ country_event = {
  id = annex.19
  desc = annex.19.d
  title = "Fate of Croatia"
+ fire_only_once = yes
  
  mean_time_to_happen = { days = 1 }
  trigger = {
@@ -1237,6 +1255,7 @@ country_event = {
  id = annex.20
  desc = annex.20.d
  title = "Fate of Bosnia"
+ fire_only_once = yes
  
  mean_time_to_happen = { days = 1 }
  trigger = {
@@ -1285,6 +1304,7 @@ country_event = {
  id = annex.21
  desc = annex.21.d
  title = "Fate of Serbia"
+ fire_only_once = yes
  
  mean_time_to_happen = { days = 1 }
  trigger = {
@@ -1332,6 +1352,7 @@ country_event = {
  id = annex.22
  desc = annex.22.d
  title = "Fate of Romania"
+ fire_only_once = yes
  
  mean_time_to_happen = { days = 1 }
  trigger = {
@@ -1379,6 +1400,7 @@ country_event = {
  id = annex.23
  desc = annex.23.d
  title = "Fate of Bulgaria"
+ fire_only_once = yes
  
  mean_time_to_happen = { days = 1 }
  trigger = {
@@ -1426,6 +1448,7 @@ country_event = {
  id = annex.24
  desc = annex.24.d
  title = "Fate of Albania"
+ fire_only_once = yes
  
  mean_time_to_happen = { days = 1 }
  trigger = {
@@ -1472,6 +1495,7 @@ country_event = {
  id = annex.25
  desc = annex.25.d
  title = "Fate of Greece"
+ fire_only_once = yes
  
  mean_time_to_happen = { days = 1 }
  trigger = {
@@ -1518,6 +1542,7 @@ country_event = {
  id = annex.26
  desc = annex.26.d
  title = "Fate of Turkey"
+ fire_only_once = yes
  
  mean_time_to_happen = { days = 1 }
  trigger = {
@@ -1565,6 +1590,7 @@ country_event = {
  id = annex.27
  desc = annex.27.d
  title = "Fate of Lithuania"
+ fire_only_once = yes
  
  mean_time_to_happen = { days = 1 }
  trigger = {
@@ -1612,6 +1638,7 @@ country_event = {
  id = annex.28
  desc = annex.28.d
  title = "Fate of Norway"
+ fire_only_once = yes
  
  mean_time_to_happen = { days = 1 }
  trigger = {
@@ -1660,6 +1687,7 @@ country_event = {
  id = annex.29
  desc = annex.29.d
  title = "Fate of White Ruthenia"
+ fire_only_once = yes
  
  mean_time_to_happen = { days = 1 }
  trigger = {
@@ -1755,6 +1783,7 @@ country_event = {
  id = annex.30
  desc = annex.30.d
  title = "Fate of Ukraine"
+ fire_only_once = yes
  
  mean_time_to_happen = { days = 1 }
  trigger = {
@@ -1824,6 +1853,7 @@ country_event = {
  id = annex.31
  desc = annex.31.d
  title = "Fate of Western Russia"
+ fire_only_once = yes
  
  mean_time_to_happen = { days = 1 }
  trigger = {
@@ -1935,6 +1965,7 @@ country_event = {
  id = annex.32
  desc = annex.32.d
  title = "Fate of Italy"
+ fire_only_once = yes
  
  mean_time_to_happen = { days = 1 }
  trigger = {
@@ -1985,6 +2016,7 @@ country_event = {
  id = annex.33
  desc = annex.33.d
  title = "Fate of Persia"
+ fire_only_once = yes
  
  mean_time_to_happen = { days = 1 }
  trigger = {
@@ -2032,6 +2064,7 @@ country_event = {
  id = annex.34
  desc = annex.34.d
  title = "Fate of Turkmenistan"
+ fire_only_once = yes
  
  mean_time_to_happen = { days = 1 }
  trigger = {
@@ -2097,6 +2130,7 @@ country_event = {
  id = annex.35
  desc = annex.35.d
  title = "Fate of Khiva"
+ fire_only_once = yes
  
  mean_time_to_happen = { days = 1 }
  trigger = {
@@ -2143,6 +2177,7 @@ country_event = {
  id = annex.36
  desc = annex.36.d
  title = "Fate of Kirghiz State"
+ fire_only_once = yes
  
  mean_time_to_happen = { days = 1 }
  trigger = {
@@ -2190,6 +2225,7 @@ country_event = {
  id = annex.37
  desc = annex.37.d
  title = "Fate of Alash Orda"
+ fire_only_once = yes
  
  mean_time_to_happen = { days = 1 }
  trigger = {
@@ -2239,6 +2275,7 @@ country_event = {
  id = annex.38
  desc = annex.38.d
  title = "Fate of Bukhara"
+ fire_only_once = yes
  
  mean_time_to_happen = { days = 1 }
  trigger = {
@@ -2285,6 +2322,7 @@ country_event = {
  id = annex.39
  desc = annex.39.d
  title = "Fate of United Baltic Provinces"
+ fire_only_once = yes
  
  mean_time_to_happen = { days = 1 }
  trigger = {
@@ -2385,6 +2423,7 @@ country_event = {
  id = annex.40
  desc = annex.40.d
  title = "Fate of Prussia"
+ fire_only_once = yes
  
  mean_time_to_happen = { days = 1 }
  trigger = {
@@ -2433,6 +2472,7 @@ country_event = {
  id = annex.41
  desc = annex.41.d
  title = "Fate of Germany"
+ fire_only_once = yes
  
  mean_time_to_happen = { days = 1 }
  trigger = {
