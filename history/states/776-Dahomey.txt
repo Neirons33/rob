@@ -7,7 +7,6 @@ state={
 	state_category = pastoral
 	history={
 		owner = FWA
-		add_core_of = DAH
 		victory_points = {
 			10919 1
 		}

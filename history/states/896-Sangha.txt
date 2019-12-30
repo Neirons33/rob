@@ -4,7 +4,6 @@ state={
 
 	history={
 		owner = FEA
-		add_core_of = RCG
 		set_demilitarized_zone = yes
 		buildings = {
 			infrastructure = 3

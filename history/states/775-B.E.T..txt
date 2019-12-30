@@ -8,7 +8,6 @@ state={
 	history={
 		owner = FEA
 		set_demilitarized_zone = yes
-		add_core_of = CHA
 		buildings = {
 			infrastructure = 0
 		}

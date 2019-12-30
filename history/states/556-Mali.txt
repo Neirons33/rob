@@ -8,7 +8,6 @@ state={
 
 	history={
 		owner = FWA
-		add_core_of = MLI
 		add_core_of = FWA
 		set_demilitarized_zone = yes
 		victory_points = {

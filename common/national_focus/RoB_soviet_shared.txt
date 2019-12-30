@@ -2221,6 +2221,30 @@ prerequisite = { focus = SOV_siberiancomrades }
 			    type = annex_everything
 			    target = CAA
 			}
+			create_wargoal = {
+			    type = annex_everything
+			    target = CHE
+			}
+			create_wargoal = {
+			    type = annex_everything
+			    target = MRP
+			}
+			create_wargoal = {
+			    type = annex_everything
+			    target = DAG
+			}
+			create_wargoal = {
+			    type = annex_everything
+			    target = GEO
+			}
+			create_wargoal = {
+			    type = annex_everything
+			    target = AZR
+			}
+			create_wargoal = {
+			    type = annex_everything
+			    target = ARM
+			}
 		}
 ai_will_do = { 
  factor = 1
@@ -2412,6 +2436,14 @@ prerequisite = { focus = SOV_centralasiandirection }
 			create_wargoal = {
 			    type = annex_everything
 			    target = LES
+			}
+			create_wargoal = {
+			    type = annex_everything
+			    target = AGR
+			}
+			create_wargoal = {
+			    type = annex_everything
+			    target = OMS
 			}
 			create_wargoal = {
 			    type = annex_everything
@@ -3072,6 +3104,8 @@ completion_reward = {
 	is_core_of = AZR
 	is_core_of = GEO
 	is_core_of = ARM
+	is_core_of = AGR
+	is_core_of = KAR
 	is_core_of = FTT
 	is_core_of = DSU
 	is_core_of = UKR
@@ -3141,10 +3175,6 @@ target = SFS
 create_wargoal = {
 type = annex_everything
 target = IRK
-}
-create_wargoal = {
-type = annex_everything
-target = JVD
 }
 create_wargoal = {
 type = annex_everything

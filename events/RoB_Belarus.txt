@@ -453,13 +453,13 @@ name = belarusia.18.a
 ###BPR requests support
 country_event = {
 id = belarusia.20
-title = belarusia.20.t
+title = "Belarusian Request"
 desc = belarusia.20.d
 fire_only_once = yes
 is_triggered_only = yes
 
 option = { ###aid them
-name = belarusia.20.a
+name = "For the Worldwide Socialism, Have Your Guns!"
   ai_chance = {
   factor = 100
  }
@@ -468,7 +468,7 @@ name = belarusia.20.a
   }
   }
  option = {
- name = belarusia.20.b
+ name = "We Have Our Own Wars to Fight"
  ai_chance = { ###refuse
   factor = 10
  }
@@ -482,7 +482,7 @@ name = belarusia.20.a
  ###Soviet aid arrives
  country_event = {
 id = belarusia.21
-title = belarusia.21.t
+title = "Soviet Aid Arrives"
 desc = belarusia.21.d
 fire_only_once = yes
 is_triggered_only = yes
@@ -500,7 +500,7 @@ add_equipment_to_stockpile = {
 ###soviet aid doesnt arrive
 country_event = {
 id = belarusia.22
-title = belarusia.22.t
+title = "Soviets Deny Our Request"
 desc = belarusia.22.d
 fire_only_once = yes
 is_triggered_only = yes

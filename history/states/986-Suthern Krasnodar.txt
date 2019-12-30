@@ -2,13 +2,13 @@ state={
 	id=986
 	name="STATE_986"
 	history={
-		owner = CAU
+		owner = CRM
 		buildings = {
 			infrastructure = 5
 			industrial_complex = 1
 
 		}
-		add_core_of = CAU
+		add_core_of = CRM
 
 	}
 

@@ -8,7 +8,6 @@ state={
 
 	history={
 		owner = FEA
-		add_core_of = CMR
 		set_demilitarized_zone = yes
 		victory_points = {
 			2080 1

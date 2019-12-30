@@ -635,7 +635,6 @@ name = spartakus_germany.14.a
 add_war_support = 0.15
 set_country_flag = GER_BAV_rebbelion
 hidden_effect = { 
-BAV = { load_oob = BAV_1934 }
 52 = {
 add_core_of = BAV
 }
@@ -667,7 +666,8 @@ BAV = { transfer_state = 50 }
 BAV = { transfer_state = 791 } 
 BAV = { transfer_state = 799 } 
 BAV = { transfer_state = 798 }
-BAV = { transfer_state = 800 }  
+BAV = { transfer_state = 800 } 
+BAV = { load_oob = BAV_1934 } 
 declare_war_on = { 
 type = annex_everything 
 target = BAV 
@@ -730,7 +730,7 @@ set_politics = {
 create_country_leader = {
 	name = "Erich Ludendorff"
 	desc = "POLITICS_KING_ZOG_DESC"
-	picture = "Kurt_von_Schleicher.tga"
+	picture = "BDB_ludendorff.tga"
 	expire = "1965.1.1"
 	ideology = military_junta
 	traits = {
@@ -1404,35 +1404,35 @@ country_event = { ###Red Phoenix
 
 country_event = { ###Death of Himmler
  id = spartakus_germany.40
- title = spartakus_germany.40.t
+ title = "Thunder in Midnight"
  desc = spartakus_germany.40.d
  fire_only_once = yes
  is_triggered_only = yes
  picture = GFX_picture_russian_partisans
 
  option = {
-  name = spartakus_germany.40.a
+  name = "And no one shall miss him."
   add_political_power = 10
 }
 }
 
 country_event = { ###Death of Ludendorff
  id = spartakus_germany.41
- title = spartakus_germany.41.t
+ title = "Old Guard"
  desc = spartakus_germany.41.d
  fire_only_once = yes
  is_triggered_only = yes
  picture = GFX_picture_russia_white_soldiers
 
  option = {
-  name = spartakus_germany.41.a
+  name = "The old general finally bites the dust."
   add_political_power = 10
 }
 }
 
 country_event = { ###Nazbol corruption
  id = spartakus_germany.42
- title = spartakus_germany.42.t
+ title = "The Rostock Trials"
  desc = spartakus_germany.42.d
  fire_only_once = yes
  picture = GFX_picture_russian_partisans
@@ -1445,17 +1445,17 @@ country_event = { ###Nazbol corruption
  mean_time_to_happen = { days = 5 }
  
  option = {
-  name = spartakus_germany.42.a
+  name = "The Will of German People Prevails!"
   add_political_power = 10
 }
 }
 
 country_event = { ###A rural idilee
  id = spartakus_germany.43
- title = spartakus_germany.43.t
+ title = "A Day in Life of Markus Schwarzstahl"
  desc = spartakus_germany.43.d
  fire_only_once = yes
- picture = GFX_picture_russian_partisans
+ picture = GFX_report_event_generic_read_write
  
  trigger = {
   tag = GER
@@ -1465,17 +1465,17 @@ country_event = { ###A rural idilee
  mean_time_to_happen = { days = 5 }
 
  option = {
-  name = spartakus_germany.43.a
+  name = "Just as intended."
   add_political_power = 10
  }
 }
 
 country_event = { ###Authobanjg worker
  id = spartakus_germany.44
- title = spartakus_germany.44.t
+ title = "The Snake That Cuts Germany"
  desc = spartakus_germany.44.d
  fire_only_once = yes
- picture = GFX_picture_russian_partisans
+ picture = GFX_report_event_hungary_parliament
  
  trigger = {
   has_completed_focus = GER_autobahn
@@ -1483,14 +1483,14 @@ country_event = { ###Authobanjg worker
  }
 
  option = {
-  name = spartakus_germany.44.a
+  name = "Glorious Future Awaits us!"
   add_political_power = 10
 }
 }
 
 country_event = { ###reshaping German culture
  id = spartakus_germany.45
- title = spartakus_germany.45.t
+ title = "New Age"
  desc = spartakus_germany.45.d
  fire_only_once = yes
  picture = GFX_picture_russian_partisans
@@ -1510,10 +1510,10 @@ country_event = { ###reshaping German culture
 
 country_event = { ###modernist art
  id = spartakus_germany.46
- title = spartakus_germany.46.t
+ title = "Red Paintbrush"
  desc = spartakus_germany.46.d
  fire_only_once = yes
- picture = GFX_picture_russian_partisans
+ picture = GFX_picture_russia_kazan
   
  trigger = {
   tag = GER
@@ -1523,7 +1523,7 @@ country_event = { ###modernist art
  mean_time_to_happen = { days = 3 }
 
  option = {
-  name = spartakus_germany.46.a
+  name = "Modern in Every Aspect"
   add_political_power = 10
 }
 }

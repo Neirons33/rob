@@ -4,7 +4,6 @@ state={
 
 	history={
 		owner = FEA
-		add_core_of = GAB
 		buildings = {
 			infrastructure = 3
 
