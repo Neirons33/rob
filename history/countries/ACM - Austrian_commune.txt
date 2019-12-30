@@ -29,10 +29,10 @@ set_technology = {
 	early_fighter = 1
 }
 add_ideas = {
-	extensive_conscription
-	austrian_bad_econ
-	austrian_civil_war
-	loose_coalition
+	#extensive_conscription
+	#austrian_bad_econ
+	#austrian_civil_war
+	#loose_coalition
 }
 
 set_stability = 0.80

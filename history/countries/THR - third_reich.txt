@@ -30,9 +30,9 @@ set_technology = {
 }
 
 add_ideas = {
-	austrian_bad_econ
-	extensive_conscription
-	austrian_civil_war
+	#austrian_bad_econ
+	#extensive_conscription
+	#austrian_civil_war
 }
 
 set_stability = 0.80

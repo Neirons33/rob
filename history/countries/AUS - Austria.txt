@@ -30,11 +30,11 @@ set_technology = {
 	early_fighter = 1
 }
 add_ideas = {
-	crotian_economic_pact
-	austrian_bad_econ
-	austria_monarchist_growing
-	austrian_socialist_paramilitaries
-	austrian_brownshirt_terror
+	#crotian_economic_pact
+	#austrian_bad_econ
+	#austria_monarchist_growing
+	#austrian_socialist_paramilitaries
+	#austrian_brownshirt_terror
 }
 
 set_stability = 0.50
