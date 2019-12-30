@@ -1049,7 +1049,7 @@ is_triggered_only = yes
 
 
 option = {
-name = bolshevik_russia.1.a
+name = bolshevik_russia.41.a
 add_stability = 0.02
 }
 }
@@ -1076,7 +1076,7 @@ is_triggered_only = yes
 
 
 option = {
-name = bolshevik_russia.1.a
+name = bolshevik_russia.43.a
 add_stability = 0.02
 }
 }
@@ -1090,7 +1090,7 @@ is_triggered_only = yes
 
 
 option = {
-name = bolshevik_russia.1.a
+name = bolshevik_russia.44.a
 add_stability = 0.02
 
 
@@ -1106,7 +1106,7 @@ is_triggered_only = yes
 
 
 option = {
-name = bolshevik_russia.1.a
+name = bolshevik_russia.45.a
 add_stability = 0.02
 
 
@@ -1122,7 +1122,7 @@ is_triggered_only = yes
 
 
 option = {
-name = bolshevik_russia.1.a
+name = bolshevik_russia.46.a
 add_stability = 0.02
 
 
@@ -1138,7 +1138,7 @@ is_triggered_only = yes
 
 
 option = {
-name = bolshevik_russia.1.a
+name = bolshevik_russia.47.a
 add_stability = 0.02
 
 
@@ -1155,7 +1155,7 @@ is_triggered_only = yes
 
 
 option = {
-name = bolshevik_russia.1.a
+name = "All Hail Blokhin!"
 add_stability = 0.02
 
 
@@ -1170,7 +1170,7 @@ is_triggered_only = yes
 
 
 option = {
-name = bolshevik_russia.1.a
+name = "They shouldn’t have even existed."
 add_stability = 0.02
 
 
@@ -1185,7 +1185,7 @@ is_triggered_only = yes
 
 
 option = {
-name = bolshevik_russia.1.a
+name = "Good."
 add_stability = 0.02
 
 
@@ -1200,7 +1200,7 @@ is_triggered_only = yes
 
 
 option = {
-name = bolshevik_russia.1.a
+name = "What they deserve!"
 add_stability = 0.02
 
 
@@ -1216,7 +1216,7 @@ is_triggered_only = yes
 
 
 option = {
-name = bolshevik_russia.1.a
+name = "They Will do their Duty Faithfully."
 add_stability = 0.02
 
 
@@ -1231,7 +1231,7 @@ is_triggered_only = yes
 
 
 option = {
-name = bolshevik_russia.1.a
+name = "The more men the merrier."
 add_stability = 0.02
 
 
@@ -1246,7 +1246,7 @@ is_triggered_only = yes
 
 
 option = {
-name = bolshevik_russia.1.a
+name = "They deserve every bit of it"
 add_stability = 0.02
 
 
@@ -1262,7 +1262,7 @@ is_triggered_only = yes
 
 
 option = {
-name = bolshevik_russia.1.a
+name = "All for the greater good!"
 add_stability = 0.02
 
 
@@ -1278,7 +1278,7 @@ is_triggered_only = yes
 
 
 option = {
-name = bolshevik_russia.1.a
+name = "That’s what they deserve"
 add_stability = 0.02
 
 
@@ -1296,7 +1296,7 @@ is_triggered_only = yes
 
 
 option = {
-name = bolshevik_russia.1.a
+name = "All hail the new chairman!"
 add_stability = 0.02
 
 
@@ -1312,7 +1312,7 @@ is_triggered_only = yes
 
 
 option = {
-name = bolshevik_russia.1.a
+name = "A Glorious Meeting!"
 add_stability = 0.02
 
 
@@ -1328,7 +1328,7 @@ is_triggered_only = yes
 
 
 option = {
-name = bolshevik_russia.1.a
+name = "And that’s exactly what we need."
 add_stability = 0.02
 
 
@@ -1344,7 +1344,7 @@ is_triggered_only = yes
 
 
 option = {
-name = bolshevik_russia.1.a
+name = "The Peaceful Leader!"
 add_stability = 0.02
 
 
@@ -1360,7 +1360,7 @@ is_triggered_only = yes
 
 
 option = {
-name = bolshevik_russia.1.a
+name = "If it is needed…"
 add_stability = 0.02
 
 
@@ -1376,7 +1376,7 @@ is_triggered_only = yes
 
 
 option = {
-name = bolshevik_russia.1.a
+name = "The freest in the world!"
 add_stability = 0.02
 
 
@@ -1392,7 +1392,7 @@ is_triggered_only = yes
 
 
 option = {
-name = bolshevik_russia.1.a
+name = "Time to Rejoice!"
 add_stability = 0.02
 
 
@@ -1408,7 +1408,7 @@ is_triggered_only = yes
 
 
 option = {
-name = bolshevik_russia.1.a
+name = "We can finally rest…"
 add_stability = 0.02
 
 

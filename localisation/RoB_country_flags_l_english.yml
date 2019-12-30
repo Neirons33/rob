@@ -33,6 +33,8 @@
  GER_lux_economy:0 "Second All-German Congress has decided on Orthodox Marxist policy"
  GER_diplo_tt_1:0 "§RThis will provoke French response!§!\n"
  GER_tt_3:0 "The Political Future of Germany Has Been Decided"
+ south_german_partisans:0 "We've decided to defeat Southern Partisans"
+ north_german_partisans:0 "We've decided to defeat Northern Partisans"
  ###Lithuania
  LIT_visoumis_rule:0 "Gintautas I Has Been Crowned"
  LIT_mironas_rules:0 "Vladas Mironas is Tautos Vadas"
