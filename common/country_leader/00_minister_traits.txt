@@ -108,9 +108,30 @@ im_harsh_tyrannt = {
  random = no 
 }
 
+im_sociopath = {
+ non_core_manpower = -0.1
+ enemy_partisan_effect = -0.45
+ 
+ random = no 
+}
+
 im_man_of_the_people = {
  consumer_goods_factor = 0.02
  stability_factor = 0.04
+ 
+ random = no 
+}
+
+im_union_background = {
+ industrial_capacity_factory = 0.05
+ stability_factor = 0.03
+ 
+ random = no 
+}
+
+im_marxist_revolutionary = {
+ army_attack_factor = 0.02
+ war_support_factor = 0.04
  
  random = no 
 }
@@ -183,6 +204,13 @@ fm_revolutionary = {
  random = no 
 }
 
+fm_militant_socialist = {
+ justify_war_goal_time = -0.1
+ war_support_factor = 0.05
+ 
+ random = no 
+}
+
 fm_imperialist = {
  justify_war_goal_time = -0.08
  stability_factor = -0.02
@@ -217,6 +245,28 @@ em_central_planner = {
  production_speed_buildings_factor = 0.08
  industrial_capacity_factory = 0.02
  production_factory_max_efficiency_factor = -0.02
+ 
+ random = no 
+}
+
+em_militant_planner = {
+ production_speed_buildings_factor = 0.12
+ industrial_capacity_factory = 0.05
+ production_factory_max_efficiency_factor = -0.1
+ 
+ random = no 
+}
+
+em_autarchist = {
+ industrial_capacity_factory = 0.05
+ production_factory_max_efficiency_factor = -0.1
+ 
+ random = no 
+}
+
+em_market_socialist = {
+ production_speed_buildings_factor = -0.02
+ industrial_capacity_factory = 0.05
  
  random = no 
 }
@@ -293,6 +343,14 @@ dm_elitist = {
  conscription_factor = -0.05
  army_attack_factor = 0.05
  army_org_factor = 0.02
+ 
+ random = no 
+}
+
+dm_mass_revolutionary = {
+ conscription_factor = 0.2
+ army_attack_factor = -0.07
+ army_org_factor = -0.07
  
  random = no 
 }

@@ -440,7 +440,7 @@ option = {
 name = lithuania.13.a
 add_political_power = 150
 add_stability = 0.05
-
+set_country_flag = LIT_visoumis_rule
  create_country_leader = {
 	name = "Gintautas I"
 	desc = "POLITICS_VISOUMIS_DESC"
@@ -705,3 +705,126 @@ option = {
  }
 }
 
+
+######RAID EVENTS
+###Raid Succesful
+country_event = { 
+id = lithuania.30
+title = "Successful Ammunition Depot Raid"
+desc = lithuania.30.d
+fire_only_once = yes
+is_triggered_only = yes
+
+
+option = {
+ name = "For Lithuania!"
+ add_war_support = 0.01
+ clr_country_flag = LIT_active_raid
+ add_equipment_to_stockpile = {
+  type = infantry_equipment_0
+	amount = 100
+    }
+ }
+}
+
+###Raid not Succesful
+country_event = { 
+id = lithuania.31
+title = "Lithuanian Forces Pushed Back"
+desc = lithuania.31.d
+fire_only_once = yes
+is_triggered_only = yes
+
+
+option = {
+ name = "We'll Get Them Next Time"
+ add_war_support = -0.01
+ clr_country_flag = LIT_active_raid
+ }
+}
+
+
+###Raid - enemy side
+country_event = { 
+id = lithuania.32
+title = "Lithuanian Raid!"
+desc = lithuania.32.d
+fire_only_once = yes
+is_triggered_only = yes
+
+
+option = {
+ name = "We'll Get Them Next Time"
+ add_war_support = -0.01
+ }
+}
+
+###Raid successful
+country_event = { 
+id = lithuania.33
+title = "Raid on Rural Centre Successful"
+desc = lithuania.33.d
+fire_only_once = yes
+is_triggered_only = yes
+
+
+option = {
+ name = "For Lithuania!"
+ add_war_support = 0.01
+ clr_country_flag = LIT_active_raid
+ add_equipment_to_stockpile = {
+  type = support_equipment_1
+	amount = 100
+    }
+ }
+}
+
+###Raid not Succesful
+country_event = { 
+id = lithuania.34
+title = "Lithuanian Forces Pushed Back"
+desc = lithuania.34.d
+fire_only_once = yes
+is_triggered_only = yes
+
+
+option = {
+ name = "We'll Get Them Next Time"
+ add_war_support = -0.01
+ clr_country_flag = LIT_active_raid
+ }
+}
+
+
+###Raid successful
+country_event = { 
+id = lithuania.35
+title = "Raid on Local Banks Successful"
+desc = lithuania.35.d
+fire_only_once = yes
+is_triggered_only = yes
+
+
+option = {
+ name = "For Lithuania!"
+ add_war_support = 0.01
+ clr_country_flag = LIT_active_raid
+ add_political_power = 35
+ }
+}
+
+###Raid not Succesful
+country_event = { 
+id = lithuania.36
+title = "Lithuanian Forces Pushed Back"
+desc = lithuania.36.d
+fire_only_once = yes
+is_triggered_only = yes
+
+
+option = {
+ name = "We'll Get Them Next Time"
+ add_war_support = -0.01
+ clr_country_flag = LIT_active_raid
+ }
+}

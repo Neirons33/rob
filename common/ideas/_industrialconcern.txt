@@ -1,6 +1,30 @@
 ideas = {
  industrial_concern = {
  
+ ###Russian Soviet Republic
+  RSR_gosplan  = {
+   designer = yes
+   allowed = { original_tag = SOV }
+   picture=  RSR_gosplan
+   research_bonus = { industry = 0.1 }
+   cost = 150
+   modifier = {
+    industrial_capacity_factory =0.1
+   }
+  }
+  
+  RSR_elektronika   = {
+   designer = yes
+   allowed = { original_tag = SOV }
+   picture=  RSR_elektronika
+   research_bonus = { electronics = 0.1 }
+   cost = 150
+   modifier = {
+    production_speed_buildings_factor = 0.1
+   }
+  }
+
+ 
  ###Lithuania
   LIT_lietukis = {
    designer = yes

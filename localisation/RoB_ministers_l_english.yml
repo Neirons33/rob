@@ -41,12 +41,16 @@
  im_futurist:0 "Advocate of Futurism"
  im_feudalist:0 "Supporter of Feudalism"
  im_iron_fisted:0 "Iron Fisted"
+ im_sociopath:0 "Sociopath"
+ im_union_background:0 "Trade Union Background"
+ im_marxist_revolutionary:0 "Marxist Revolutionary"
  
  fm_revolutionary:0 "Radical Revolutionary"
  fm_imperialist:0 "Imperialist"
  fm_neutral_bystander:0 "Supporter of Neutrality"
  fm_realpolitik:0 "Realpolitik Supporter"
  fm_isolationism:0 "Supporter of Isolationism"
+ fm_militant_socialist:0 "Militant Revolutionary"
  
  em_central_planner:0 "Central Planner"
  em_laissez_faire:0 "Laissez-Faire Capitalist"
@@ -57,6 +61,9 @@
  em_feudalist:0 "Advocate of Feudalism"
  em_pelekist_economist:0 "Pelekist Economist"
  em_corporatist:0 "Corporatist"
+ em_militant_planner:0 "Militant Socialist"
+ em_autarchist:0 "Autarkist "
+ em_market_socialist:0 "Market Socialist"
  
  dm_militarist:0 "Staunch Militarist"
  dm_elitist:0 "Strong Elitist"
@@ -65,3 +72,4 @@
  dm_carrer_general:0 "Carrer General"
  dm_civilian_administator:0 "Civilian Administrator"
  dm_inept_administator:0 "Inept Bureaucrat"
+ dm_mass_revolutionary:0 "Supporter of Mass Revolution"

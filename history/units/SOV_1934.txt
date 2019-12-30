@@ -146,3 +146,22 @@ start_experience_factor = 0.3
 start_equipment_factor = 0.6
 }
 }
+
+air_wings = {
+	# LVO Aviatsya Komandovaniya -- Leningrad
+	195 = { 
+		# 15ya Istrebitel'nye Aviabrigada
+		fighter_equipment_0 = {
+			owner = "SOV" 
+			amount = 94
+		  }
+		}
+		
+	219 = {
+		# 2ya Istrebitel'nye Aviabrigada
+		fighter_equipment_0 = {
+			owner = "SOV" 
+			amount = 94
+		  }
+		 }
+		}

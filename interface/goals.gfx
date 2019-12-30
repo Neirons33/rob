@@ -934,6 +934,42 @@ spriteTypes = {
 	
 	###SOV
 	SpriteType = { 
+		name = "GFX_focus_SOV_blokhins_russia"
+		texturefile = "gfx/interface/goals/SOV_blokhins_russia.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_SOV_bukharins_russia"
+		texturefile = "gfx/interface/goals/SOV_bukharins_russia.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_SOV_kamenevs_russia"
+		texturefile = "gfx/interface/goals/SOV_kamenevs_russia.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_SOV_tomsky_russia"
+		texturefile = "gfx/interface/goals/SOV_tomsky_russia.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_SOV_zinovievs_russia"
+		texturefile = "gfx/interface/goals/SOV_zinovievs_russia.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_RSR_premier_bukharin"
+		texturefile = "gfx/interface/goals/RSR_premier_bukharin.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_RSR_premier_kamenev"
+		texturefile = "gfx/interface/goals/RSR_premier_kamenev.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_RSR_premier_tomsky"
+		texturefile = "gfx/interface/goals/RSR_premier_tomsky.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_RSR_premier_zinoviev"
+		texturefile = "gfx/interface/goals/RSR_premier_zinoviev.tga"
+	}
+	SpriteType = { 
 		name = "GFX_focus_SOV_effects_of_famine"
 		texturefile = "gfx/interface/goals/SOV_effects_of_famine.tga"
 	}

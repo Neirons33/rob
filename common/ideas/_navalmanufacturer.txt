@@ -1,6 +1,19 @@
 ideas = {
  naval_manufacturer = {
  
+ ###Russian Soviet Republic
+   RSR_nevskoye_design_bureau = {
+   designer = yes
+   allowed = { original_tag = SOV }
+   picture = RSR_nevskoye_design_bureau
+   research_bonus = { naval_equipment = 0.1 }
+   cost = 150
+    modifier = {
+    navy_screen_attack_factor = 0.06
+	navy_screen_defence_factor = 0.06
+   }
+  }
+ 
  ###Lithuania
   LIT_palangos_uostas = {
    designer = yes

@@ -1,4 +1,27 @@
 ﻿l_english:
+
+###Lithuanian Raids
+LIT_lith_raids:0 "Cross-Border Raids"
+LIT_lith_raids_desc:0 "With the end of the war in United Baltic Duchy, creation of reactionary state in Prussia, and with only mildly friendly nationalist government in Minsk, Lithuania has found itself encircled by enemies.\n\nWith such unfriendly governments present, Lithuanian army has been conducting cross-border raids for few years now, seeing it as a way to weaken enemy forces close to our borders, and raise unrest along border regions, especially in United Baltic Duchy, where raids are regurally supported by local Baltic partisans."
+LIT_raid_ubd_ammo:0 "Conduct Operation Against Landeswehr"
+LIT_raid_ubd_ammo_desc:0 "Landeswehr, or the main armed forces of UBD, has regional HQs very close to our borders, threatening our independece and fighting against Baltic partisans."
+LIT_raid_ubd_banks:0 "Attack Baltic German Financial Institutions"
+LIT_raid_ubd_banks_desc:0 "Baltic Germans control almost all economic institutions in the Duchy. We should hit them where it hurts."
+LIT_raid_ubd_admin_buildings:0 "Terrorise Baltic German Government Officials"
+LIT_raid_ubd_admin_buildings_desc:0 "Many of Baltic German officals are know for their harsh attitude towards natives. We should cooperate with local partisan cells, and get rid of them."
+LIT_raid_blr_ammo:0 "Destroy Hostile Belarusian Outposts"
+LIT_raid_blr_ammo_desc:0 "Many Belarusian Nationalist units are hostile towards Lithuanians, and from time to time, cross the border to pillage our villages."
+LIT_raid_blr_banks:0 "Interupt Belarusian Financial Operations"
+LIT_raid_blr_banks_desc:0 "Many of the Belarusian financial operations are conducted close to our borders, allowing for an easy interception."
+LIT_raid_blr_admin_buildings:0 "Get Rid of Unfriendly Belarusian Officials"
+LIT_raid_blr_admin_buildings_desc:0 "There are quite a few Belarusian officals, who are unfriendly to Lithuanians and Our State. Shall we want to see these territories as part of Lithuania one day, we should get rid of them."
+LIT_raid_prs_ammo:0 "Raid Prussian Supply Depots"
+LIT_raid_prs_ammo_desc:0 "Prussian supply storages, which would be used in a attack against us, should be destroyed before they can be used."
+LIT_raid_prs_banks:0 "Attack Prussian Financial Institutions"
+LIT_raid_prs_banks_desc:0 "As the economy of Prussia is not in the best shape, we should put our efforts into keeping it that way."
+LIT_raid_prs_admin_buildings:0 "Destroy Anti-Lithuanian Government Buildings"
+LIT_raid_prs_admin_buildings_desc:0 "The chauvinistic Germans regurally abuse Lithuanians in border regions. We will change that."
+
 ###German Partisans
 GER_german_partisans: "Anti-Partisan Campaign"
 GER_german_partisans_desc:0 "The Red Revolution of February 14th, which destroyed the old German order and forced traitorous reactionaries to retreat from mainland Germany, has bought new problems and challanges to the new Socialist state. For years now, we have faced a systematic opposition from partisans still loyal to anti-communist cause, and although forced into the forests and mountains during the Fall Schwarz, we were unable to completely destroy them and their leadership. In the last few months, the partisans have become highly active once again. With German Republic facing more internal problems than before, this might be our last chance to get them, before they get to us...\n Strength of the Reactionary Partisans in the South: §R[?Root.southern_partisan_strenght]%§!. \n Strength of the Reactionary Partisans in the North: §R[?Root.northern_partisan_strenght]%§!. "

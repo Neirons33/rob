@@ -114,7 +114,7 @@ ideas = {
 			}
      removal_cost = -1
 	 modifier = {
-				political_power_gain = 0.16
+				political_power_gain = 0.15
 				}
  }
  agriculturalism = {
@@ -211,7 +211,7 @@ ideas = {
 				}
 				
 				corporativist_economics = {
-  picture = 
+  picture = GFX_idea_famine_of_1933
   allowed = {
        always = no
      }
@@ -225,7 +225,7 @@ ideas = {
 				}
 				}
  corporativist_economics_2 = {
-   picture = 
+   picture = GFX_idea_famine_of_1933
   allowed = {
        always = no
      }
@@ -236,7 +236,7 @@ ideas = {
 	 modifier = {
          production_factory_max_efficiency_factor = 0.08
 		 production_speed_buildings_factor = 0.25
-		 industrial_capacity_factor = 0.15
+		 industrial_capacity_factory = 0.1
 				}
  }
  
@@ -394,8 +394,8 @@ lithuanian_stormtroopers = {
      removal_cost = -1
 	 picture = GFX_idea_famine_of_1933
 	 modifier = {
-     political_power_gain = 0.5
-	 production_speed_buildings_factor = 0.01
+     political_power_gain = 0.15
+	 production_speed_buildings_factor = 0.1
 	 }
 	 }
 	 
@@ -410,7 +410,7 @@ lithuanian_stormtroopers = {
 	 picture = GFX_idea_famine_of_1933
 	 modifier = {
      consumer_goods_factor = -0.03
-	 industrial_capacity_factor = 0.01
+	 industrial_capacity_factory = 0.01
 	 }
 	 }
 	 
@@ -441,7 +441,7 @@ lithuanian_stormtroopers = {
 	 picture = GFX_idea_famine_of_1933
 	 modifier = {
      consumer_goods_factor = -0.03
-	 industrial_capacity_factor = 0.01
+	 industrial_capacity_factory = 0.01
 	 }
 	 }
 
@@ -456,7 +456,7 @@ lithuanian_stormtroopers = {
 	 picture = GFX_idea_famine_of_1933
 	 modifier = {
      army_org = 5
-	 industrial_capacity_factor = 0.01
+	 industrial_capacity_factory = 0.01
 	 army_morale_factor = 0.1
 	 }
 	 }
@@ -530,8 +530,8 @@ lithuanian_stormtroopers = {
      removal_cost = -1
 	 picture = GFX_idea_famine_of_1933
 	 modifier = {
-     weekly_manpower = 1000
-	 political_power_gain = 0.5
+     weekly_manpower = 250
+	 political_power_gain = 0.15
 	 }
 	 }
 	 
@@ -575,7 +575,7 @@ lithuanian_stormtroopers = {
 	 picture = GFX_idea_famine_of_1933
 	 modifier = {
      consumer_goods_factor = -0.03
-	 industrial_capacity_factor = 0.01
+	 industrial_capacity_factory = 0.01
 	 }
 	 }
 	 
@@ -604,7 +604,7 @@ lithuanian_stormtroopers = {
 	 picture = GFX_idea_famine_of_1933
 	 modifier = {
 	 production_speed_industrial_complex_factor = 0.1
-	 industrial_capacity_factor = 0.01
+	 industrial_capacity_factory = 0.01
 	 }
 	 }
 	 
@@ -619,7 +619,7 @@ lithuanian_stormtroopers = {
 	 picture = GFX_idea_famine_of_1933
 	 modifier = {
 	 production_speed_industrial_complex_factor = 0.1
-	 industrial_capacity_factor = 0.01
+	 industrial_capacity_factory = 0.01
 	 production_factory_efficiency_gain_factor = 0.05
 	  }
 	  }
@@ -695,7 +695,7 @@ lithuanian_stormtroopers = {
      removal_cost = -1
 	 picture = GFX_idea_famine_of_1933
 	 modifier = {
-     consumer_goods_factor = -4
+     consumer_goods_factor = -0.04
 	 MONTHLY_POPULATION = 0.5 
 	 }
 	 }
@@ -768,7 +768,7 @@ lithuanian_stormtroopers = {
      removal_cost = -1
 	 picture = GFX_idea_famine_of_1933
 	 modifier = {
-	 consumer_goods_factor = -4
+	 consumer_goods_factor = -0.04
 	 }
 	 }
 	 
@@ -802,6 +802,7 @@ lithuanian_stormtroopers = {
 	 }
 	 
 	 no_bribes = {
+	 picture = GFX_idea_famine_of_1933
   allowed = {
        always = no
      }
@@ -856,7 +857,7 @@ lithuanian_stormtroopers = {
 	 picture = GFX_idea_famine_of_1933
 	 modifier = {
      consumer_goods_factor = -0.03
-	 industrial_capacity_factor = 0.01
+	 industrial_capacity_factory = 0.01
 	 }
 	 }
 	 
@@ -932,6 +933,22 @@ lithuanian_stormtroopers = {
      stability_factor = -0.05
 	 decryption_factor =-0.1
 	 encryption_factor =-0.1
+	   }
+	  }
+	  
+ LIT_raids = {
+  allowed = { always = no }
+  allowed_civil_war = { always = yes }
+  available = { NOT = { is_puppet_of = LIT } }
+  removal_cost = -1
+  picture = GFX_idea_famine_of_1933
+  targeted_modifier = {
+   tag = SOV
+   attack_bonus_against = 0.1
+   defense_bonus_against = 0.1
+
+}
+  modifier = {
 	   }
 	  }
  LIT_build_submarine = {

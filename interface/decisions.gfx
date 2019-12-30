@@ -676,6 +676,10 @@ spriteTypes = {
 		name = "GFX_decision_germany_partisans"
 		texturefile = "gfx/interface/decisions/decision_germany_partisans.tga"
 	}
+	spriteType = {
+		name = "GFX_decision_lithuanian_army"
+		texturefile = "gfx/interface/decisions/decision_lithuanian_army.tga"
+	}
 	
 
 }

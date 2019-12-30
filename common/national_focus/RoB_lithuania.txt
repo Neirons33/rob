@@ -49,75 +49,69 @@ focus_tree = {
         		add_stability = 0.1
 		add_popularity = {ideology = pelekist popularity =0.10}
 		add_political_power = 120
-188 = { add_core_of = LIT}
-		763 = { add_core_of = LIT}
-        1010 = { add_core_of = LIT}		
-		933 = { add_core_of = LIT}
-		95 = { add_core_of = LIT}
-        96 = { add_core_of = LIT}
 		if = {
 		 limit = { 
-		  any_country = { 
-		   limit = { 
-		    owns_state = 188
-            is_puppet_of = LIT
+		  any_neighbor_country = { 
+		    AND = { 
+			 has_full_control_of_state = 188
+             is_puppet_of = LIT
+			 }
          }			
-		}
 		}
 		LIT = { transfer_state = 188 }
 		}
 		if = {
 		 limit = { 
-		  any_country = { 
-		   limit = { 
-		    owns_state = 763
-            is_puppet_of = LIT
+		  any_neighbor_country = { 
+		    AND = { 
+			 has_full_control_of_state = 763
+             is_puppet_of = LIT
+			 }
          }			
-		}
 		}
 		LIT = { transfer_state = 763 }
 		}
 		if = {
 		 limit = { 
-		  any_country = { 
-		   limit = { 
-		    owns_state = 1010
-            is_puppet_of = LIT
+		  any_neighbor_country = { 
+		    AND = { 
+			 has_full_control_of_state = 1010
+             is_puppet_of = LIT
+			 }
          }			
-		}
 		}
 		LIT = { transfer_state = 1010 }
 		}
 		if = {
 		 limit = { 
-		  any_country = { 
-		   limit = { 
-		    owns_state = 933
-            is_puppet_of = LIT
+		  any_neighbor_country = { 
+		    AND = { 
+			 has_full_control_of_state = 933
+             is_puppet_of = LIT
+			 }
          }			
-		}
 		}
 		LIT = { transfer_state = 933 }
 		}
 		if = {
 		 limit = { 
-		  any_country = { 
-		   limit = { 
-		    owns_state = 95
-            is_puppet_of = LIT
+		  any_neighbor_country = { 
+		    AND = { 
+			 has_full_control_of_state = 95
+             is_puppet_of = LIT
+			 }
          }			
-		}
 		}
 		LIT = { transfer_state = 95 }
 		}
 		if = {
 		 limit = { 
-		  any_country = { 
-		   limit = { 
-		    owns_state = 96
-            is_puppet_of = LIT
+		  any_neighbor_country = { 
+		    AND = { 
+			 has_full_control_of_state = 96
+             is_puppet_of = LIT
+			 }
          }			
-		}
 		}
 		LIT = { transfer_state = 96 }
 		}
@@ -626,67 +620,67 @@ add_popularity = {ideology = reactionary popularity =0.10}
         96 = { add_core_of = LIT}
 		if = {
 		 limit = { 
-		  any_country = { 
-		   limit = { 
-		    owns_state = 188
-            is_puppet_of = LIT
+		  any_neighbor_country = { 
+		    AND = { 
+			 has_full_control_of_state = 188
+             is_puppet_of = LIT
+			 }
          }			
-		}
 		}
 		LIT = { transfer_state = 188 }
 		}
 		if = {
 		 limit = { 
-		  any_country = { 
-		   limit = { 
-		    owns_state = 763
-            is_puppet_of = LIT
+		  any_neighbor_country = { 
+		    AND = { 
+			 has_full_control_of_state = 763
+             is_puppet_of = LIT
+			 }
          }			
-		}
 		}
 		LIT = { transfer_state = 763 }
 		}
 		if = {
 		 limit = { 
-		  any_country = { 
-		   limit = { 
-		    owns_state = 1010
-            is_puppet_of = LIT
+		  any_neighbor_country = { 
+		    AND = { 
+			 has_full_control_of_state = 1010
+             is_puppet_of = LIT
+			 }
          }			
-		}
 		}
 		LIT = { transfer_state = 1010 }
 		}
 		if = {
 		 limit = { 
-		  any_country = { 
-		   limit = { 
-		    owns_state = 933
-            is_puppet_of = LIT
+		  any_neighbor_country = { 
+		    AND = { 
+			 has_full_control_of_state = 933
+             is_puppet_of = LIT
+			 }
          }			
-		}
 		}
 		LIT = { transfer_state = 933 }
 		}
 		if = {
 		 limit = { 
-		  any_country = { 
-		   limit = { 
-		    owns_state = 95
-            is_puppet_of = LIT
+		  any_neighbor_country = { 
+		    AND = { 
+			 has_full_control_of_state = 95
+             is_puppet_of = LIT
+			 }
          }			
-		}
 		}
 		LIT = { transfer_state = 95 }
 		}
 		if = {
 		 limit = { 
-		  any_country = { 
-		   limit = { 
-		    owns_state = 96
-            is_puppet_of = LIT
+		  any_neighbor_country = { 
+		    AND = { 
+			 has_full_control_of_state = 96
+             is_puppet_of = LIT
+			 }
          }			
-		}
 		}
 		LIT = { transfer_state = 96 }
 		}
@@ -939,8 +933,8 @@ add_popularity = {ideology = reactionary popularity =0.10}
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_vytautasthegreatreborn }
 		completion_reward = {
-			    add_ideas = {
-		corporativist_economics
+	     add_ideas = {
+		  corporativist_economics
         }
 		}
 	}
@@ -2382,8 +2376,10 @@ add_building_construction = {
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_equalityforall }
+		completion_reward = {
 		add_ideas = { 
 		no_bribes
+		}
 		}
 	}
 
@@ -3193,67 +3189,67 @@ completion_reward = {
         96 = { add_core_of = LIT}
 		if = {
 		 limit = { 
-		  any_country = { 
-		   limit = { 
-		    owns_state = 188
-            is_puppet_of = LIT
+		  any_neighbor_country = { 
+		    AND = { 
+			 has_full_control_of_state = 188
+             is_puppet_of = LIT
+			 }
          }			
-		}
 		}
 		LIT = { transfer_state = 188 }
 		}
 		if = {
 		 limit = { 
-		  any_country = { 
-		   limit = { 
-		    owns_state = 763
-            is_puppet_of = LIT
+		  any_neighbor_country = { 
+		    AND = { 
+			 has_full_control_of_state = 763
+             is_puppet_of = LIT
+			 }
          }			
-		}
 		}
 		LIT = { transfer_state = 763 }
 		}
 		if = {
 		 limit = { 
-		  any_country = { 
-		   limit = { 
-		    owns_state = 1010
-            is_puppet_of = LIT
+		  any_neighbor_country = { 
+		    AND = { 
+			 has_full_control_of_state = 1010
+             is_puppet_of = LIT
+			 }
          }			
-		}
 		}
 		LIT = { transfer_state = 1010 }
 		}
 		if = {
 		 limit = { 
-		  any_country = { 
-		   limit = { 
-		    owns_state = 933
-            is_puppet_of = LIT
+		  any_neighbor_country = { 
+		    AND = { 
+			 has_full_control_of_state = 933
+             is_puppet_of = LIT
+			 }
          }			
-		}
 		}
 		LIT = { transfer_state = 933 }
 		}
 		if = {
 		 limit = { 
-		  any_country = { 
-		   limit = { 
-		    owns_state = 95
-            is_puppet_of = LIT
+		  any_neighbor_country = { 
+		    AND = { 
+			 has_full_control_of_state = 95
+             is_puppet_of = LIT
+			 }
          }			
-		}
 		}
 		LIT = { transfer_state = 95 }
 		}
 		if = {
 		 limit = { 
-		  any_country = { 
-		   limit = { 
-		    owns_state = 96
-            is_puppet_of = LIT
+		  any_neighbor_country = { 
+		    AND = { 
+			 has_full_control_of_state = 96
+             is_puppet_of = LIT
+			 }
          }			
-		}
 		}
 		LIT = { transfer_state = 96 }
 		}
@@ -4112,6 +4108,10 @@ add_extra_state_shared_building_slots = 2
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = LIT_aidlithuaniansinbelarus }
+		completion_reward = {
+        custom_effect_tooltip = lit_tt_7
+	    set_country_flag = LIT_prussian_raids
+		}
 	}
 
 	#Focus for Radical Interventionalism
@@ -4818,6 +4818,9 @@ add_extra_state_shared_building_slots = 2
 		prerequisite = { 
 			focus = LIT_allarmsinlithuania 
 			focus = LIT_prolongtherussiancivilwar 
+		}
+		completion_reward = {
+         add_ideas = { LIT_raids }
 		}
 	}
 

@@ -1130,6 +1130,121 @@ ideas = {
   }
  }
 
+###ARMY STAFF###
+
+army_chief = {
+
+ RSR_issa_pliyev = {
+ cost = 150
+ picture = RSR_issa_plyev
+ allowed = { original_tag = SOV }
+ traits = { army_chief_offensive_2 }
+ }
+ 
+ RSR_semyon_timoshenko = {
+ cost = 150
+ picture = RSR_semyon_timoshenko
+ allowed = { original_tag = SOV }
+ traits = { army_cavalry_2 }
+ }
+ 
+ RSR_ivan_konev = {
+ cost = 150
+ picture = RSR_ivan_kovenev
+ allowed = { original_tag = SOV }
+ traits = { army_armored_2 }
+ }
+ 
+ RSR_aleksandr_vasilevsky = {
+ cost = 150
+ picture = RSR_aleksander_vasilyveskly
+ allowed = { original_tag = SOV }
+ traits = { army_entrenchment_2 }
+ }
+}
+
+navy_chief = {
+
+ RSR_aleksandr_nemits = {
+ cost = 150
+ picture = RSR_aleksander_nemitz
+ allowed = { original_tag = SOV }
+ traits = { navy_chief_old_guard }
+ }
+
+ RSR_yevgeny_berens = {
+ cost = 150
+ picture = RSR_yevgeny_barens
+ allowed = { original_tag = SOV }
+ traits = { navy_chief_reform_2 }
+ }
+
+}
+
+air_chief = {
+
+ RSR_novkikov = {
+ cost = 150
+ picture = RSR_novikov
+ available = { has_completed_focus = SOV_novikovsplan }
+ allowed = { tag = SOV }
+ traits = { air_close_air_support_3 }
+ }
+ 
+ RSR_alksnis = {
+ cost = 150
+ picture = RSR_alksnis
+ available = { has_completed_focus = SOV_alksnisplan }
+ allowed = { tag = SOV }
+ traits = { air_tactical_bombing_3 }
+ }
+}
+
+
+high_command = { 
+ RSR_aleksandr_vasilevsky_hc = {
+ cost = 150
+ picture = RSR_aleksander_vasilyveskly
+ allowed = { original_tag = SOV }
+ traits = { army_armored_1 }
+ }
+
+ RSR_boris_shaposhnikov_hc = {
+ cost = 150
+ picture = RSR_boris_shapishdks
+ allowed = { original_tag = SOV }
+ traits = { army_artillery_2 }
+ }
+ 
+ RSR_kliment_voroshilov_hc = {
+ cost = 150
+ picture = RSR_kliment_vorshilov
+ allowed = { original_tag = SOV }
+ traits = { army_chief_planning_2 }
+ }
+ 
+ RSR_alexander_yegorov_hc = {
+ cost = 150
+ picture = RSR_aleksander_yegorov
+ allowed = { original_tag = SOV }
+ traits = { army_chief_drill_2 }
+ }
+ 
+ RSR_vasily_blyukher_hc = {
+ cost = 150
+ picture = RSR_vasily_bluckher
+ allowed = { original_tag = SOV }
+ traits = { army_chief_defensive_2 }
+ }
+ 
+ RSR_semyon_budyonny_hc = {
+ cost = 150
+ picture = RSR_semyonov_budynvo
+ allowed = { original_tag = SOV }
+ traits = { army_chief_old_guard }
+ }
+
+}
 
  
 }

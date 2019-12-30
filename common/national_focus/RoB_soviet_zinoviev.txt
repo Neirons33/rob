@@ -15,7 +15,7 @@ shared_focus = SOV_bolshevikairforces
 #Focus for Premier Zinoviev
 focus = { 
 id = SOV_premierzinoviev
-icon = GFX_goal_unknown
+icon = GFX_focus_RSR_premier_zinoviev
 x = 5
 y = 1
 cost = 1
@@ -35,7 +35,7 @@ add_political_power = 50
  #Focus for Calm down the strikers
 focus = { 
 id = SOV_calmdownthestrikers
-icon = GFX_goal_unknown
+icon = GFX_focus_GER_forced_industrialiaztion
 x = 3
 y = 2
 cost = 2
@@ -75,7 +75,7 @@ completion_reward = {
 #Focus for End of the strike
 focus = { 
 id = SOV_endofthestrike
-icon = GFX_goal_unknown
+icon = GFX_focus_GER_industrial_research
 x = 3
 y = 4
 cost = 1
@@ -155,7 +155,7 @@ completion_reward = {
 #Focus for Revolutionary Russia
 focus = { 
 id = SOV_revolutionaryrussia
-icon = GFX_goal_unknown
+icon = GFX_focus_SOV_zinovievs_russia
 x = 5
 y = 5
 cost = 5
@@ -291,7 +291,7 @@ completion_reward = {
 #Focus for Collective Farming
 focus = { 
 id = SOV_collectivefarming
-icon = GFX_goal_unknown
+icon = GFX_focus_GER_rural_infras
 x = 2
 y = 9
 cost = 5
@@ -546,7 +546,7 @@ completion_reward = {
 #Focus for Integrate Pioneers into Army
 focus = { 
 id = SOV_integratepioneersintoarmy
-icon = GFX_goal_unknown
+icon = GFX_focus_GER_rural_schools
 x = 8
 y = 7
 cost = 5
@@ -586,7 +586,7 @@ ai_will_do = {
 #Focus for Links with foreign groups
 focus = { 
 id = SOV_linkswithforeigngroups
-icon = GFX_goal_unknown
+icon = GFX_focus_GER_empower_council
 x = 8
 y = 9
 cost = 5
@@ -603,7 +603,7 @@ completion_reward = {
 #Focus for International Socialist Academy
 focus = { 
 id = SOV_internationalsocialistacademy
-icon = GFX_goal_unknown
+icon = GFX_focus_GER_worker_cooperatives
 x = 8
 y = 10
 cost = 5
@@ -622,7 +622,7 @@ completion_reward = {
 #Focus for Humanity, Unite!
 focus = { 
 id = SOV_humanityunite
-icon = GFX_goal_unknown
+icon = GFX_focus_GER_what_little_we_have
 x = 5
 y = 11
 cost = 5

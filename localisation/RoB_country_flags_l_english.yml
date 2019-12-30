@@ -41,12 +41,15 @@
  LIT_democracyholds:0 "Democracy Has Prevailed in Lithuania"
  LIT_prussian_deal_ss:0 "We've Decided to Acquire Submarine Fleet"
  LIT_prussian_deal_dd:0 "We've Decided to Acquire Destroyer Fleet"
+ LIT_active_raid:0 "A Raid Is In Progress"
+ LIT_prussian_raids:0 "We Have Decided to Take Offensive Action Against Prussians"
  lit_tt_1:0 "§MWe Will Support Local Militias in Foreign Lands§!"
  lit_tt_2:0 "§GThis Will Allow Us to Focus on Offense§!"
  lit_tt_3:0 "§GThis Will Allow Us to Focus on Defense§!"
  lit_tt_4:0 "§HWe Will Acquire More Great War Destroyers§!"
  lit_tt_5:0 "§HWe Will Finish Modernezation of President Smetona§!"
  lit_tt_6:0 "§HWe Will Acquire Two Great War Submarines§!"
+ lit_tt_7:0 "§RWe Will Plan Out Raids Against Prussians!§!"
 
  ###Legion
  les_tt_1:0 "We will unlock Pagan parts of the tree"

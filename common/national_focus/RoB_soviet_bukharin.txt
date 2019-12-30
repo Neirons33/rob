@@ -2,6 +2,7 @@ focus_tree = {
 	id = soviet_focus_bukharin
 	country = {
 		factor = 0
+
 	}
 
 continuous_focus_position = { x = 50 y = 2000 }
@@ -15,7 +16,7 @@ shared_focus = SOV_bolshevikairforces
 #Focus for Premier Bukharin
 focus = { 
 id = SOV_premierbukharin
-icon = GFX_goal_unknown
+icon = GFX_focus_RSR_premier_bukharin
 x = 5
 y = 1
 cost = 1
@@ -34,7 +35,7 @@ completion_reward = {
 #Focus for Meet Union Leaders
 focus = { 
 id = SOV_meetunionleaders
-icon = GFX_goal_unknown
+icon = GFX_focus_SOV_meet_leaders_of_unions
 x = 3
 y = 2
 cost = 1
@@ -54,7 +55,7 @@ completion_reward = {
 #Focus for Promises of Reforms
 focus = { 
 id = SOV_promisesofreforms
-icon = GFX_goal_unknown
+icon = GFX_focus_SOV_promise_reforms
 x = 3
 y = 3
 cost = 1
@@ -74,7 +75,7 @@ completion_reward = {
 #Focus for The Strike Ends
 focus = { 
 id = SOV_thestrikeends
-icon = GFX_goal_unknown
+icon = GFX_focus_SOV_crush_unrest
 x = 3
 y = 4
 cost = 2
@@ -94,7 +95,7 @@ completion_reward = {
 #Focus for Mobilize Police
 focus = { 
 id = SOV_mobilizepolice
-icon = GFX_goal_unknown
+icon = GFX_focus_SOV_vlaslovist_security
 x = 7
 y = 2
 cost = 2
@@ -114,7 +115,7 @@ completion_reward = {
 #Focus for Arm Loyal Citizens
 focus = { 
 id = SOV_armloyalcitizens
-icon = GFX_goal_unknown
+icon = GFX_focus_SOV_use_red_guard
 x = 7
 y = 3
 cost = 2
@@ -134,7 +135,7 @@ completion_reward = {
 #Focus for The Unrest Ends
 focus = { 
 id = SOV_theunrestends
-icon = GFX_goal_unknown
+icon = GFX_focus_SOV_purge_trade_unions
 x = 7
 y = 4
 cost = 2
@@ -154,7 +155,7 @@ completion_reward = {
 #Focus for Democratic Russia
 focus = { 
 id = SOV_democraticrussia
-icon = GFX_goal_unknown
+icon = GFX_focus_SOV_bukharins_russia
 x = 5
 y = 5
 cost = 5
@@ -178,7 +179,7 @@ completion_reward = {
 #Focus for Negotiations with Bourgeosie
 focus = { 
 id = SOV_negotiationswithbourgeosie
-icon = GFX_goal_unknown
+icon = GFX_focus_SOV_soviet_education
 x = 2
 y = 6
 cost = 5
@@ -195,7 +196,7 @@ add_political_power = 80
 #Focus for Moderate Nationalization
 focus = { 
 id = SOV_moderatenationalization
-icon = GFX_goal_unknown
+icon = GFX_focus_SOV_foreced_collectiviation_vlaslov
 x = 2
 y = 7
 cost = 5
@@ -219,7 +220,7 @@ completion_reward = {
 #Focus for Keeping Bourgeoisie in Check
 focus = { 
 id = SOV_keepingbourgeoisieincheck
-icon = GFX_goal_unknown
+icon = GFX_focus_SOV_vlaslov_strong_premier
 x = 2
 y = 8
 cost = 5
@@ -238,7 +239,7 @@ add_war_support = 0.08
 #Focus for Encouraging free enterprise
 focus = { 
 id = SOV_encouragingfreeenterprise
-icon = GFX_goal_unknown
+icon = GFX_focus_SOV_stronegr_central_planning
 x = 2
 y = 9
 cost = 5
@@ -257,7 +258,7 @@ completion_reward = {
 #Focus for Weaker Central Plan
 focus = { 
 id = SOV_weakercentralplan
-icon = GFX_goal_unknown
+icon = GFX_focus_SOV_remind_the_workers
 x = 2
 y = 10
 cost = 5
@@ -277,7 +278,7 @@ completion_reward = {
 #Focus for Weakening the VChK
 focus = { 
 id = SOV_weakeningthevchk
-icon = GFX_goal_unknown
+icon = GFX_focus_SOV_commiser_officers
 x = 5
 y = 6
 cost = 5
@@ -295,7 +296,7 @@ completion_reward = {
 #Focus for Arrest Hardliners
 focus = { 
 id = SOV_arresthardliners
-icon = GFX_goal_unknown
+icon = GFX_focus_SOV_kill_all_traitors
 x = 5
 y = 7
 cost = 5
@@ -312,7 +313,7 @@ completion_reward = {
 #Focus for Exiling Vlaslovists
 focus = { 
 id = SOV_exilingvlaslovists
-icon = GFX_goal_unknown
+icon = GFX_focus_SOV_vlaslovs_russia
 x = 5
 y = 8
 cost = 5
@@ -329,7 +330,7 @@ completion_reward = {
 #Focus for Weaken Bureaucracy
 focus = { 
 id = SOV_weakenbureaucracy
-icon = GFX_goal_unknown
+icon = GFX_focus_GER_empower_council
 x = 5
 y = 9
 cost = 5
@@ -348,7 +349,7 @@ completion_reward = {
 #Focus for Weaken Position of Premier
 focus = { 
 id = SOV_weakenpositionofpremier
-icon = GFX_goal_unknown
+icon = GFX_focus_GER_weaken_chairman
 x = 5
 y = 10
 cost = 5
@@ -368,7 +369,7 @@ completion_reward = {
 #Focus for Rural Development
 focus = { 
 id = SOV_ruraldevelopment
-icon = GFX_goal_unknown
+icon = GFX_focus_GER_rural_schools
 x = 8
 y = 6
 cost = 5
@@ -444,7 +445,7 @@ completion_reward = {
 #Focus for Welfare Programs
 focus = { 
 id = SOV_welfareprograms
-icon = GFX_goal_unknown
+icon = GFX_focus_GER_shall_be_enough
 x = 8
 y = 7
 cost = 5
@@ -463,7 +464,7 @@ completion_reward = {
  #Focus for Social Progressivism
 focus = { 
 id = SOV_socialprogressivism
-icon = GFX_goal_unknown
+icon = GFX_focus_GER_modernist_art
 x = 8
 y = 8
 cost = 5
@@ -483,7 +484,7 @@ completion_reward = {
 #Focus for Penalise Reactionaries
 focus = { 
 id = SOV_penalisereactionaries
-icon = GFX_goal_unknown
+icon = GFX_focus_GER_liberalize_gun_laws
 x = 8
 y = 9
 cost = 5
@@ -500,7 +501,7 @@ ai_will_do = {
 #Focus for Liberalize Social Laws
 focus = { 
 id = SOV_liberalizesociallaws
-icon = GFX_goal_unknown
+icon = GFX_focus_GER_propoganda_campaing_ds
 x = 8
 y = 10
 cost = 5
@@ -520,7 +521,7 @@ completion_reward = {
  #Focus for For the People!
 focus = { 
 id = SOV_forthepeople
-icon = GFX_goal_unknown
+icon = GFX_focus_GER_demsoc_state
 x = 5
 y = 11
 cost = 5

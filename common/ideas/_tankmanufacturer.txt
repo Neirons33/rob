@@ -2,6 +2,33 @@ ideas = {
 
  tank_manufacturer = {
  
+ ###Russian Soviet Republic
+  RSR_kmdb = {
+  designer = yes
+   allowed = { original_tag = SOV }
+   picture = RSR_kmdb
+   cost = 150
+	research_bonus = { armor = 0.1 }
+    modifier = {
+      army_armor_speed_factor = 0.1
+   }
+  
+  }
+  
+  RSR_okmo = {
+  designer = yes
+   allowed = { original_tag = SOV }
+   picture = RSR_okmo
+   cost = 150
+   equipment_bonus = {
+	armor = {
+	 build_cost_ic = -0.15 instant = yes
+     }
+    }
+	research_bonus = { armor = 0.1 }
+  
+  }
+ 
  ###Lithuania
   LIT_metalas = {
   designer = yes

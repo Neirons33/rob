@@ -2,6 +2,7 @@ focus_tree = {
 	id = soviet_focus_blokhin
 	country = {
 		factor = 0
+
 	}
 
 continuous_focus_position = { x = 50 y = 2000 }
@@ -34,7 +35,7 @@ ai_will_do = {
 #Focus for Round up leaders of unions
 focus = { 
 id = SOV_roundupleadersofunions
-icon = GFX_goal_unknown
+icon = GFX_focus_SOV_purge_trade_unions
 x = 3
 y = 2
 cost = 2
@@ -56,7 +57,7 @@ ai_will_do = {
 #Focus for SORV paramilitaries in cities
 focus = { 
 id = SOV_sorvparamilitariesincities
-icon = GFX_goal_unknown
+icon = GFX_focus_SOV_use_red_guard
 x = 7
 y = 2
 cost = 2
@@ -76,7 +77,7 @@ ai_will_do = {
  #Focus for Use "Blokhinists"
 focus = { 
 id = SOV_useblokhinists
-icon = GFX_goal_unknown
+icon = GFX_focus_SOV_vlaslov_purges
 x = 7
 y = 3
 cost = 2
@@ -96,7 +97,7 @@ ai_will_do = {
  #Focus for Brutal Suppresion
 focus = { 
 id = SOV_brutalsuppresion
-icon = GFX_goal_unknown
+icon = GFX_focus_SOV_kill_all_traitors
 x = 7
 y = 4
 cost = 2
@@ -116,7 +117,7 @@ ai_will_do = {
  #Focus for Cracking down on Unions
 focus = { 
 id = SOV_crackingdownonunions
-icon = GFX_goal_unknown
+icon = GFX_focus_GER_all_seeing_state
 x = 3
 y = 3
 cost = 2
@@ -135,7 +136,7 @@ ai_will_do = {
  #Focus for Crackdown on Strikes
 focus = { 
 id = SOV_crackdownonstrikes
-icon = GFX_goal_unknown
+icon = GFX_focus_GER_cruel_anti_paertisan
 x = 3
 y = 4
 cost = 2
@@ -154,7 +155,7 @@ ai_will_do = {
 #Focus for Red Russia
 focus = { 
 id = SOV_redrussia
-icon = GFX_goal_unknown
+icon = GFX_focus_SOV_blokhins_russia
 x = 5
 y = 5
 cost = 5
@@ -178,7 +179,7 @@ completion_reward = {
  #Focus for Ban the church
 focus = { 
 id = SOV_banthechurch
-icon = GFX_goal_unknown
+icon = GFX_focus_GER_reform_general_satff
 x = 2
 y = 6
 cost = 5
@@ -196,7 +197,7 @@ completion_reward = {
  #Focus for Religious Repressions
 focus = { 
 id = SOV_religiousrepressions
-icon = GFX_goal_unknown
+icon = GFX_focus_SOV_SOV_indoctrinate_molotov
 x = 2
 y = 7
 cost = 5
@@ -213,7 +214,7 @@ completion_reward = {
  #Focus for Atheist State
 focus = { 
 id = SOV_atheiststate
-icon = GFX_goal_unknown
+icon = GFX_focus_SOV_no_god
 x = 2
 y = 8
 cost = 5
@@ -233,7 +234,7 @@ completion_reward = {
  #Focus for Cultural Revolution
 focus = { 
 id = SOV_culturalrevolution
-icon = GFX_goal_unknown
+icon = GFX_focus_GER_weaken_german_idenity
 x = 2
 y = 9
 cost = 5
@@ -252,7 +253,7 @@ completion_reward = {
  #Focus for People's Red Guard
 focus = { 
 id = SOV_peoplesredguard
-icon = GFX_goal_unknown
+icon = GFX_focus_SOV_freedom_for_blood
 x = 2
 y = 10
 cost = 5
@@ -270,7 +271,7 @@ completion_reward = {
  #Focus for Purge in Party
 focus = { 
 id = SOV_purgeinparty
-icon = GFX_goal_unknown
+icon = GFX_focus_GER_new_german_army
 x = 5
 y = 6
 cost = 5
@@ -280,15 +281,15 @@ ai_will_do = {
  factor = 1
  } 
 completion_reward = {
- add_popularity = {ideology = socialist popularity =-0.40}
-add_popularity = {ideology = democratic_socialist popularity =-0.40}
+ add_popularity = {ideology = socialist popularity =-0.1}
+add_popularity = {ideology = democratic_socialist popularity =-0.1}
 add_popularity = {ideology = social_democracy popularity =-0.10}
 }
  } 
  #Focus for Execute the Bourgeoisie
 focus = { 
 id = SOV_executethebourgeoisie
-icon = GFX_goal_unknown
+icon = GFX_focus_SOV_kill_bourgeoisie
 x = 5
 y = 7
 cost = 5
@@ -316,7 +317,7 @@ completion_reward = {
  #Focus for Curl Intellectuals
 focus = { 
 id = SOV_curlintellectuals
-icon = GFX_goal_unknown
+icon = GFX_focus_SOV_crush_unrest
 x = 5
 y = 8
 cost = 5
@@ -334,7 +335,7 @@ completion_reward = {
  #Focus for Re-education Camps
 focus = { 
 id = SOV_reeducationcamps
-icon = GFX_goal_unknown
+icon = GFX_focus_SOV_use_camps_for_projects
 x = 5
 y = 9
 cost = 5
@@ -350,7 +351,7 @@ completion_reward = {
  #Focus for Expand prision system
 focus = { 
 id = SOV_expandprisionsystem
-icon = GFX_goal_unknown
+icon = GFX_focus_SOV_form_camps
 x = 5
 y = 10
 cost = 5
@@ -367,7 +368,7 @@ completion_reward = {
 #Focus for Collectivization
 focus = { 
 id = SOV_collectivization
-icon = GFX_goal_unknown
+icon = GFX_focus_GER_socialist_state
 x = 8
 y = 6
 cost = 5
@@ -385,7 +386,7 @@ completion_reward = {
  #Focus for Forced De-industralization
 focus = { 
 id = SOV_forceddeindustralization
-icon = GFX_goal_unknown
+icon = GFX_focus_GER_anti_corrpoution_lux
 x = 8
 y = 7
 cost = 5
@@ -409,7 +410,7 @@ completion_reward = {
  #Focus for Expand Collective Farms
 focus = { 
 id = SOV_expandcollectivefarms
-icon = GFX_goal_unknown
+icon = GFX_focus_GER_empower_council
 x = 8
 y = 8
 cost = 5
@@ -428,7 +429,7 @@ completion_reward = {
  #Focus for Destroying foreign influence
 focus = { 
 id = SOV_destroyingforeigninfluence
-icon = GFX_goal_unknown
+icon = GFX_focus_GER_forced_industrialiaztion
 x = 8
 y = 9
 cost = 5
@@ -450,7 +451,7 @@ days = 2
 #Focus for Aim for Autarky
 focus = { 
 id = SOV_aimforautarky
-icon = GFX_goal_unknown
+icon = GFX_focus_GER_nazbol_autarky
 x = 8
 y = 10
 cost = 5
@@ -469,7 +470,7 @@ completion_reward = {
 #Focus for United We Suffer
 focus = { 
 id = SOV_unitedwesuffer
-icon = GFX_goal_unknown
+icon = GFX_focus_GER_offensive_tactics
 x = 5
 y = 11
 cost = 5

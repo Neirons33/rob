@@ -2284,16 +2284,16 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_sergei_korolev.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_morozov_design_bureau"
-		texturefile = "gfx/interface/ideas/idea_morozov_design_bureau.dds"
+		name = "GFX_idea_RSR_kmdb"
+		texturefile = "gfx/interface/ideas/RSR_kmdb.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_astrov_design_bureau"
 		texturefile = "gfx/interface/ideas/idea_astrov_design_bureau.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_okmo"
-		texturefile = "gfx/interface/ideas/idea_okmo.dds"
+		name = "GFX_idea_RSR_okmo"
+		texturefile = "gfx/interface/ideas/RSR_okmo.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_mig_design_bureau"
@@ -2304,16 +2304,16 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_ilyushin_design_bureau.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_tupolev_design_bureau"
-		texturefile = "gfx/interface/ideas/idea_tupolev_design_bureau.dds"
+		name = "GFX_idea_RSR_tupolev"
+		texturefile = "gfx/interface/ideas/RSR_tupolev.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_yakovlev_design_bureau"
 		texturefile = "gfx/interface/ideas/idea_yakovlev_design_bureau.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_grabin_design_bureau"
-		texturefile = "gfx/interface/ideas/idea_grabin_design_bureau.dds"
+		name = "GFX_idea_RSR_grabin"
+		texturefile = "gfx/interface/ideas/RSR_grabin.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_stalingrad_tractor_factory"
@@ -2324,16 +2324,16 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_leningrad_polytechnical_institute.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_tula_arms_plant"
-		texturefile = "gfx/interface/ideas/idea_tula_arms_plant.dds"
+		name = "GFX_idea_RSR_tula"
+		texturefile = "gfx/interface/ideas/RSR_tula.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_gaz"
 		texturefile = "gfx/interface/ideas/idea_gaz.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_nevskoye_design_bureau"
-		texturefile = "gfx/interface/ideas/idea_nevskoye_design_bureau.dds"
+		name = "GFX_idea_RSR_nevskoye_design_bureau"
+		texturefile = "gfx/interface/ideas/RSR_nevskoye_design_bureau.dds"
 	}
 	
 	### HUNGARIAN IDEAS
@@ -3339,6 +3339,216 @@ spriteTypes = {
 		spriteType = {
 		name = "GFX_idea_mass_unrest"
 		texturefile = "gfx/interface/ideas/mass_unrest.tga"
+	}
+	
+    ###Ministers
+	spriteType = {
+		name = "GFX_idea_RSR_vladimir_smirnov"
+		texturefile = "gfx/interface/ideas/RSR_vladimir_smirnov.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RSR_vyacheslav_molotv"
+		texturefile = "gfx/interface/ideas/RSR_vyacheslav_molotv.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RSR_viktor_nogin"
+		texturefile = "gfx/interface/ideas/RSR_viktor_nogin.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RSR_vasiliy_blokhin"
+		texturefile = "gfx/interface/ideas/RSR_vasiliy_blokhin.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RSR_valerian_osinsky"
+		texturefile = "gfx/interface/ideas/RSR_valerian_osinsky.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RSR_sergei_kirov"
+		texturefile = "gfx/interface/ideas/RSR_sergei_kirov.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RSR_pyatakov_pg"
+		texturefile = "gfx/interface/ideas/RSR_pyatakov_pg.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RSR_nikolai_voznesnky"
+		texturefile = "gfx/interface/ideas/RSR_nikolai_voznesnky.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RSR_nikolai_bulganin"
+		texturefile = "gfx/interface/ideas/RSR_nikolai_bulganin.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RSR_nikolai_bukharin"
+		texturefile = "gfx/interface/ideas/RSR_nikolai_bukharin.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RSR_nicolai_uglanov"
+		texturefile = "gfx/interface/ideas/RSR_nicolai_uglanov.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RSR_mikhail_tomsky"
+		texturefile = "gfx/interface/ideas/RSR_mikhail_tomsky.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RSR_mikhail_meandrov"
+		texturefile = "gfx/interface/ideas/RSR_mikhail_meandrov.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RSR_mikhail_lashevich"
+		texturefile = "gfx/interface/ideas/RSR_mikhail_lashevich.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RSR_mikhail_kalinin"
+		texturefile = "gfx/interface/ideas/RSR_mikhail_kalinin.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RSR_mikhail_frinovsky"
+		texturefile = "gfx/interface/ideas/RSR_mikhail_frinovsky.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RSR_lev_kamenev"
+		texturefile = "gfx/interface/ideas/RSR_lev_kamenev.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RSR_laventiy_beria"
+		texturefile = "gfx/interface/ideas/RSR_laventiy_beria.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RSR_konstantin_yurenev"
+		texturefile = "gfx/interface/ideas/RSR_konstantin_yurenev.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RSR_kliment_vorshilov"
+		texturefile = "gfx/interface/ideas/RSR_kliment_vorshilov.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RSR_yevgeni_preobrazhensky"
+		texturefile = "gfx/interface/ideas/RSR_yevgeni_preobrazhensky.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RSR_yakov_agranov"
+		texturefile = "gfx/interface/ideas/RSR_yakov_agranov.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RSR_georgy_zinoviev"
+		texturefile = "gfx/interface/ideas/RSR_georgy_zinoviev.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RSR_gehrih_yagoda"
+		texturefile = "gfx/interface/ideas/RSR_gehrih_yagoda.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RSR_christian_rakovsky"
+		texturefile = "gfx/interface/ideas/RSR_christian_rakovsky.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RSR_borislaw_kaminski"
+		texturefile = "gfx/interface/ideas/RSR_borislaw_kaminski.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RSR_boris_pasternak"
+		texturefile = "gfx/interface/ideas/RSR_boris_pasternak.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RSR_andrei_vlaslov"
+		texturefile = "gfx/interface/ideas/RSR_andrei_vlaslov.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RSR_andrei_bubnov"
+		texturefile = "gfx/interface/ideas/RSR_andrei_bubnov.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RSR_anastas_mikoyan"
+		texturefile = "gfx/interface/ideas/RSR_anastas_mikoyan.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RSR_alexei_rykov"
+		texturefile = "gfx/interface/ideas/RSR_alexei_rykov.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RSR_alexei_kosygin"
+		texturefile = "gfx/interface/ideas/RSR_alexei_kosygin.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RSR_alexander_shliapnikov"
+		texturefile = "gfx/interface/ideas/RSR_alexander_shliapnikov.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RSR_alexander_beloborodov"
+		texturefile = "gfx/interface/ideas/RSR_alexander_beloborodov.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RSR_aleksandra_kollontaj"
+		texturefile = "gfx/interface/ideas/RSR_aleksandra_kollontaj.tga"
+	}
+	
+	###ARMY STAFF
+	spriteType = {
+		name = "GFX_idea_RSR_vasily_bluckher"
+		texturefile = "gfx/interface/ideas/RSR_vasily_bluckher.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RSR_semyonov_budynvo"
+		texturefile = "gfx/interface/ideas/RSR_semyonov_budynvo.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RSR_semyon_timoshenko"
+		texturefile = "gfx/interface/ideas/RSR_semyon_timoshenko.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RSR_novikov"
+		texturefile = "gfx/interface/ideas/RSR_novikov.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RSR_yevgeny_barens"
+		texturefile = "gfx/interface/ideas/RSR_yevgeny_barens.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RSR_ivan_kovenev"
+		texturefile = "gfx/interface/ideas/RSR_ivan_kovenev.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RSR_issa_plyev"
+		texturefile = "gfx/interface/ideas/RSR_issa_plyev.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RSR_georgy_zhukov"
+		texturefile = "gfx/interface/ideas/RSR_georgy_zhukov.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RSR_boris_shapishdks"
+		texturefile = "gfx/interface/ideas/RSR_boris_shapishdks.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RSR_alksnis"
+		texturefile = "gfx/interface/ideas/RSR_alksnis.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RSR_aleksander_vasilyveskly"
+		texturefile = "gfx/interface/ideas/RSR_aleksander_vasilyveskly.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RSR_aleksander_nemitz"
+		texturefile = "gfx/interface/ideas/RSR_aleksander_nemitz.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RSR_aleksander_yegorov"
+		texturefile = "gfx/interface/ideas/RSR_aleksander_yegorov.tga"
+	}
+	
+	###Designers
+	spriteType = {
+		name = "GFX_idea_RSR_elektronika"
+		texturefile = "gfx/interface/ideas/RSR_elektronika.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RSR_gosplan"
+		texturefile = "gfx/interface/ideas/RSR_gosplan.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_RSR_polikavorp"
+		texturefile = "gfx/interface/ideas/RSR_polikavorp.tga"
 	}
 	
 	###BOS

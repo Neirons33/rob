@@ -1,6 +1,57 @@
 ideas = {
  theorist = {
  
+ ###Russian Soviet Republic
+ 
+  RSR_zhukov_hc = {
+   allowed = { original_tag = SOV }
+   cost = 200
+   picture = RSR_georgy_zhukov
+   available = { has_tech = mobile_warfare }
+   research_bonus = { cat_mobile_warfare = 0.10 }
+   modifier = {
+    army_armor_attack_factor = 0.05
+	army_armor_defence_factor = 0.05
+	motorized_attack_factor = 0.05
+	motorized_defence_factor = 0.05
+   }
+  }
+  
+  RSR_vorshilov_hc = {
+   allowed = { original_tag = SOV }
+   cost = 200
+   picture = RSR_kliment_vorshilov
+   available = { has_tech = trench_warfare }
+   research_bonus = { cat_grand_battle_plan = 0.10 }
+   modifier = {
+	army_infantry_attack_factor = 0.1
+	army_infantry_defence_factor = 0.1
+   }
+  }
+  
+  RSR_shapiso_hc = {
+   allowed = { original_tag = SOV }
+   cost = 200
+   picture = RSR_boris_shapishdks
+   available = { has_tech = superior_firepower }
+   research_bonus = { cat_superior_firepower = 0.10 }
+   modifier = {
+	army_artillery_attack_factor = 0.1
+	army_artillery_attack_factor = 0.1
+   }
+  }
+  
+  RSR_buddnyov_hc = {
+   allowed = { original_tag = SOV }
+   cost = 200
+   picture = RSR_semyonov_budynvo
+   available = { has_tech = mass_assault }
+   research_bonus = { cat_mass_assault = 0.10 }
+   modifier = {
+     conscription = 0.005
+   }
+  }
+ 
  ###Lithuania
  
   LIT_povilas_plechavicius_hc = {
