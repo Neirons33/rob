@@ -598,3 +598,23 @@ option = {
 }
 
 }
+
+
+### we will force them to suck on christs cock
+country_event = { 
+id = legion.25
+title = legion.25.t
+desc = legion.25.d
+fire_only_once = yes
+is_triggered_only = yes
+
+option = {
+ name = legion.25.a
+ LES = { add_state_core = 1231 }
+ hidden_effect = {
+ 	clr_country_flag = LES_early_game_war
+ 	}
+}
+
+}
+

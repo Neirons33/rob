@@ -69,10 +69,10 @@ create_corps_commander = {
 	name = "Vojtěch Luža"
 	gfx = "GFX_Portrait_czechoslovakia_vojtech_luza"
 	traits = { fast_planner }
-	skill = 3
-    attack_skill = 3
+	skill = 2
+    attack_skill = 2
     defense_skill = 2
-    planning_skill = 3
+    planning_skill = 2
     logistics_skill = 1
 }
 
@@ -93,7 +93,7 @@ create_corps_commander = {
 	skill = 3
     attack_skill = 3
     defense_skill = 3
-    planning_skill = 2
+    planning_skill = 3
     logistics_skill = 2
 }
 

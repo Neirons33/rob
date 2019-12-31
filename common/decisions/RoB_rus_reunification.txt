@@ -15,15 +15,20 @@ RUS_russian_reunification = {
   date > 1939.1.1
   NOT = {
    is_in_faction_with = SOV
+   has_country_flag = RUS_justifying
   }
   has_war = no
  }
  cost = 50
  fire_only_once = yes
  days_remove = 20
+  complete_effect = {
+ set_country_flag = RUS_justifying
+ }
  remove_effect = {
   ROOT = {
    declare_war_on = { target = SOV type = annex_everything }
+   clr_country_flag = RUS_justifying
 }
  }
  }
@@ -43,15 +48,20 @@ RUS_russian_reunification = {
   date > 1939.1.1
     NOT = {
    is_in_faction_with = RUS
+   has_country_flag = RUS_justifying
   }
   has_war = no
  }
  cost = 50
  fire_only_once = yes
  days_remove = 20
+  complete_effect = {
+ set_country_flag = RUS_justifying
+ }
  remove_effect = {
   ROOT = {
      declare_war_on = { target = RUS type = annex_everything }
+     clr_country_flag = RUS_justifying
   }
  }
  }
@@ -72,15 +82,20 @@ RUS_russian_reunification = {
   date > 1939.1.1
     NOT = {
    is_in_faction_with = RDR
+   has_country_flag = RUS_justifying
   }
   has_war = no
  }
  cost = 50
  fire_only_once = yes
  days_remove = 20
+  complete_effect = {
+ set_country_flag = RUS_justifying
+ }
  remove_effect = {
   ROOT = {
       declare_war_on = { target = RDR type = annex_everything }
+      clr_country_flag = RUS_justifying
    }
  }
  }
@@ -100,6 +115,7 @@ RUS_russian_reunification = {
   date > 1936.1.1
     NOT = {
    is_in_faction_with = LES
+   has_country_flag = RUS_justifying
   }
   has_war = no
  }
@@ -117,9 +133,13 @@ RUS_russian_reunification = {
  cost = 50
  fire_only_once = yes
  days_remove = 20
+  complete_effect = {
+ set_country_flag = RUS_justifying
+ }
  remove_effect = {
   ROOT = {
       declare_war_on = { target = LES type = annex_everything }
+      clr_country_flag = RUS_justifying
   }
  }
  }
@@ -139,6 +159,7 @@ RUS_russian_reunification = {
   date > 1936.1.1
     NOT = {
    is_in_faction_with = TOW
+   has_country_flag = RUS_justifying
   }
   has_war = no
  }
@@ -157,9 +178,13 @@ RUS_russian_reunification = {
  cost = 50
  fire_only_once = yes
  days_remove = 20
+  complete_effect = {
+ set_country_flag = RUS_justifying
+ }
  remove_effect = {
   ROOT = {
       declare_war_on = { target = TOW type = annex_everything }
+      clr_country_flag = RUS_justifying
   }
  }
  }
@@ -179,6 +204,7 @@ RUS_russian_reunification = {
   date > 1936.1.1
     NOT = {
    is_in_faction_with = OMS
+   has_country_flag = RUS_justifying
   }
   has_war = no
  }
@@ -197,9 +223,13 @@ RUS_russian_reunification = {
  cost = 50
  fire_only_once = yes
  days_remove = 20
+  complete_effect = {
+ set_country_flag = RUS_justifying
+ }
  remove_effect = {
   ROOT = {
       declare_war_on = { target = OMS type = annex_everything }
+      clr_country_flag = RUS_justifying
   }
  }
  }
@@ -219,6 +249,7 @@ RUS_russian_reunification = {
   date > 1936.1.1
     NOT = {
    is_in_faction_with = BWR
+   has_country_flag = RUS_justifying
   }
   has_war = no
  }
@@ -237,9 +268,13 @@ RUS_russian_reunification = {
  cost = 50
  fire_only_once = yes
  days_remove = 20
+  complete_effect = {
+ set_country_flag = RUS_justifying
+ }
  remove_effect = {
   ROOT = {
  declare_war_on = { target = BWR type = annex_everything }
+ clr_country_flag = RUS_justifying
   }
  }
  }
@@ -259,6 +294,7 @@ RUS_russian_reunification = {
   date > 1936.1.1
     NOT = {
    is_in_faction_with = CAU
+   has_country_flag = RUS_justifying
   }
   has_war = no
  }
@@ -277,9 +313,13 @@ RUS_russian_reunification = {
  cost = 50
  fire_only_once = yes
  days_remove = 20
+  complete_effect = {
+ set_country_flag = RUS_justifying
+ }
  remove_effect = {
   ROOT = {
   declare_war_on = { target = CAU type = annex_everything }
+  clr_country_flag = RUS_justifying
   }
  }
  }
@@ -299,6 +339,7 @@ RUS_russian_reunification = {
   date > 1936.1.1
     NOT = {
    is_in_faction_with = CAA
+   has_country_flag = RUS_justifying
   }
   has_war = no
  }
@@ -317,9 +358,13 @@ RUS_russian_reunification = {
  cost = 50
  fire_only_once = yes
  days_remove = 20
+  complete_effect = {
+ set_country_flag = RUS_justifying
+ }
  remove_effect = {
   ROOT = {
  declare_war_on = { target = CAA type = annex_everything }
+ clr_country_flag = RUS_justifying
   }
  }
  }
@@ -339,6 +384,7 @@ RUS_russian_reunification = {
   date > 1936.1.1
     NOT = {
    is_in_faction_with = CRM
+   has_country_flag = RUS_justifying
   }
   has_war = no
  }
@@ -357,9 +403,13 @@ RUS_russian_reunification = {
  cost = 50
  fire_only_once = yes
  days_remove = 20
+  complete_effect = {
+ set_country_flag = RUS_justifying
+ }
  remove_effect = {
   ROOT = {
  declare_war_on = { target = CRM type = annex_everything }
+ clr_country_flag = RUS_justifying
   }
  }
  }
@@ -379,6 +429,7 @@ RUS_destroy_FER = {
   date > 1936.1.1
     NOT = {
    is_in_faction_with = FER
+   has_country_flag = RUS_justifying
   }
   has_war = no
  }
@@ -397,9 +448,13 @@ RUS_destroy_FER = {
  cost = 50
  fire_only_once = yes
  days_remove = 20
+  complete_effect = {
+ set_country_flag = RUS_justifying
+ }
  remove_effect = {
   ROOT = {
  declare_war_on = { target = FER type = annex_everything }
+ clr_country_flag = RUS_justifying
   }
  }
  }
@@ -419,6 +474,7 @@ RUS_destroy_FER = {
   date > 1936.1.1
     NOT = {
    is_in_faction_with = WFE
+   has_country_flag = RUS_justifying
   }
   has_war = no
  }
@@ -437,9 +493,13 @@ RUS_destroy_FER = {
  cost = 50
  fire_only_once = yes
  days_remove = 20
+  complete_effect = {
+ set_country_flag = RUS_justifying
+ }
  remove_effect = {
   ROOT = {
  declare_war_on = { target = WFE type = annex_everything }
+ clr_country_flag = RUS_justifying
   }
  }
  }
@@ -460,6 +520,7 @@ RUS_destroy_FER = {
   date > 1936.1.1
     NOT = {
    is_in_faction_with = JSW
+   has_country_flag = RUS_justifying
   }
   has_war = no
  }
@@ -478,9 +539,13 @@ RUS_destroy_FER = {
  cost = 50
  fire_only_once = yes
  days_remove = 20
+  complete_effect = {
+ set_country_flag = RUS_justifying
+ }
  remove_effect = {
   ROOT = {
  declare_war_on = { target = JSW type = annex_everything }
+ clr_country_flag = RUS_justifying
   }
  }
  }
@@ -501,6 +566,7 @@ RUS_destroy_FER = {
   date > 1936.1.1
     NOT = {
    is_in_faction_with = JOB
+   has_country_flag = RUS_justifying
   }
   has_war = no
  }
@@ -519,9 +585,13 @@ RUS_destroy_FER = {
  cost = 50
  fire_only_once = yes
  days_remove = 20
+  complete_effect = {
+ set_country_flag = RUS_justifying
+ }
  remove_effect = {
   ROOT = {
  declare_war_on = { target = JOB type = annex_everything }
+ clr_country_flag = RUS_justifying
   }
  }
  }
@@ -541,6 +611,7 @@ RUS_destroy_FER = {
   date > 1936.1.1
     NOT = {
    is_in_faction_with = KRW
+   has_country_flag = RUS_justifying
   }
   has_war = no
  }
@@ -559,9 +630,13 @@ RUS_destroy_FER = {
  cost = 50
  fire_only_once = yes
  days_remove = 20
+  complete_effect = {
+ set_country_flag = RUS_justifying
+ }
  remove_effect = {
   ROOT = {
  declare_war_on = { target = KRW type = annex_everything }
+ clr_country_flag = RUS_justifying
   }
  }
  }
@@ -581,6 +656,7 @@ RUS_destroy_FER = {
   date > 1936.1.1
     NOT = {
    is_in_faction_with = BRW
+   has_country_flag = RUS_justifying
   }
   has_war = no
  }
@@ -599,14 +675,18 @@ RUS_destroy_FER = {
  cost = 50
  fire_only_once = yes
  days_remove = 20
+  complete_effect = {
+ set_country_flag = RUS_justifying
+ }
  remove_effect = {
   ROOT = {
  declare_war_on = { target = BRW type = annex_everything }
+ clr_country_flag = RUS_justifying
   }
  }
  }
  
-    RUS_destroy_UGC = {
+RUS_destroy_UGC = {
   target_trigger = { FROM = {tag = UGC} }
   visible = {
 	  NOT = {
@@ -621,6 +701,7 @@ RUS_destroy_FER = {
   date > 1936.1.1
     NOT = {
    is_in_faction_with = UGC
+   has_country_flag = RUS_justifying
   }
   has_war = no
  }
@@ -639,13 +720,107 @@ RUS_destroy_FER = {
  cost = 50
  fire_only_once = yes
  days_remove = 20
+  complete_effect = {
+ set_country_flag = RUS_justifying
+ }
  remove_effect = {
   ROOT = {
  declare_war_on = { target = UGC type = annex_everything }
+ clr_country_flag = RUS_justifying
+  }
+ }
+ }
+
+ RUS_destroy_KAR = {
+  target_trigger = { FROM = {tag = KAR} }
+  visible = {
+    NOT = {
+       tag = KAR
+     }
+     KAR = {
+      exists = yes
+     }
+ }
+ available = {
+  is_neighbor_of = KAR
+  date > 1936.1.1
+    NOT = {
+   is_in_faction_with = KAR
+   has_country_flag = RUS_justifying
+  }
+  has_war = no
+ }
+ ai_will_do = {
+  base = 10
+   modifier = {
+   factor = 200
+    ROOT = {
+   strength_ratio = {
+    tag = KAR
+    ratio > 0.75
+   }
+  }
+   }
+ }
+ cost = 50
+ fire_only_once = yes
+ days_remove = 20
+  complete_effect = {
+ set_country_flag = RUS_justifying
+ }
+ remove_effect = {
+  ROOT = {
+ declare_war_on = { target = KAR type = annex_everything }
+ clr_country_flag = RUS_justifying
   }
  }
  }
  
+ RUS_destroy_AGR = {
+  target_trigger = { FROM = {tag = AGR} }
+  visible = {
+    NOT = {
+       tag = AGR
+     }
+     AGR = {
+      exists = yes
+     }
+ }
+ available = {
+  is_neighbor_of = AGR
+  date > 1936.1.1
+    NOT = {
+   is_in_faction_with = AGR
+   has_country_flag = RUS_justifying
+  }
+  has_war = no
+ }
+ ai_will_do = {
+  base = 10
+   modifier = {
+   factor = 200
+    ROOT = {
+   strength_ratio = {
+    tag = AGR
+    ratio > 0.75
+   }
+  }
+   }
+ }
+ cost = 50
+ fire_only_once = yes
+ days_remove = 20
+  complete_effect = {
+ set_country_flag = RUS_justifying
+ }
+ remove_effect = {
+  ROOT = {
+ declare_war_on = { target = AGR type = annex_everything }
+ clr_country_flag = RUS_justifying
+  }
+ }
+ }
+
  }
  
  RUS_russian_revolution_siberia = {

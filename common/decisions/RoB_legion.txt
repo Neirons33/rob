@@ -1,6 +1,6 @@
 LES_unite = {
 
- 
+###
 LES_destroy_KAR = {
   target_trigger = { FROM = {tag = KAR} }
   visible = {
@@ -19,6 +19,7 @@ if = {
     NOT = {
    is_in_faction_with = KAR
    is_puppet_of = LES
+   has_country_flag = LES_justifying
   }
   has_war = no
   date > 1935.6.1
@@ -27,8 +28,10 @@ if = {
  AGR = { 
  is_neighbor_of = KAR 
  NOT = { is_in_faction_with = KAR}
+ }
  has_war = no
- }}}
+ date > 1935.6.1
+ }}
 KAR = {
   exists = yes
 }
@@ -53,10 +56,12 @@ KAR = {
  571 = { add_claim_by = LES }
   ROOT = {
  declare_war_on = { target = KAR type = annex_everything }
+ clr_country_flag = LES_justifying
   }
  }
  }
 
+###
 LES_deal_with_KAR = {
   target_trigger = { FROM = {tag = KAR} }
   visible = {
@@ -74,12 +79,12 @@ LES_deal_with_KAR = {
  }
  cost = 25
  fire_only_once = yes
- days_remove = 1
- remove_effect = {
+ complete_effect = {
  LES =  { country_event = { id = legion.21 days = 1} }
  }
  }
 
+###
 LES_annex_AGR = {
   target_trigger = { FROM = {tag = AGR} }
   visible = {
@@ -124,13 +129,51 @@ if = {
  }
   cost = 25
  fire_only_once = yes
- days_remove = 5
- remove_effect = {
+complete_effect = {
 AGR =  { country_event = { id = agrussia.2 days = 3 } }
  }}
 
+###
+LES_annex_AGR_2 = {
+  target_trigger = { FROM = {tag = AGR} }
+  visible = {
+  tag = LES
+  AGR = {
+  exists = no
+  }
+  LES = { owns_state = 1231 }
+  NOT = {
+  1231 = { is_core_of = LES }
+  }
+  has_country_flag = LES_early_game_war
+ }
+ available = {
+ LES = { owns_state = 1231 }
+  NOT = {
+  1231 = { is_core_of = LES }
+  }
+  has_country_flag = LES_early_game_war
+ }
 
+ ai_will_do = {
+  base = 10
+   modifier = {
+   factor = 200
+    ROOT = {
+   strength_ratio = {
+    tag = AGR
+    ratio > 0.25
+   }
+  }
+   }
+ }
+  cost = 25
+ fire_only_once = yes
+ complete_effect = {
+    LES = { country_event = { id = legion.25 days = 1 } }
+  }
 
+ }
 
  ##end of unite
  }
@@ -159,15 +202,20 @@ LES_russian_expansion= {
   NOT = {
    is_in_faction_with = SOV
    is_puppet_of = LES
+   has_country_flag = LES_justifying
   }
   has_war = no
  }
  cost = 50
  fire_only_once = yes
  days_remove = 20
+ complete_effect = {
+ set_country_flag = LES_justifying
+ }
  remove_effect = {
   ROOT = {
    declare_war_on = { target = SOV type = annex_everything }
+   clr_country_flag = LES_justifying
 }
  }
  }
@@ -189,15 +237,20 @@ LES_russian_expansion= {
     NOT = {
    is_in_faction_with = RUS
    is_puppet_of = LES
+   has_country_flag = LES_justifying
   }
   has_war = no
  }
  cost = 50
  fire_only_once = yes
  days_remove = 20
+ complete_effect = {
+ set_country_flag = LES_justifying
+ }
  remove_effect = {
   ROOT = {
      declare_war_on = { target = RUS type = annex_everything }
+     clr_country_flag = LES_justifying
   }
  }
  }
@@ -220,15 +273,20 @@ LES_russian_expansion= {
     NOT = {
    is_in_faction_with = RDR
    is_puppet_of = LES
+   has_country_flag = LES_justifying
   }
   has_war = no
  }
  cost = 50
  fire_only_once = yes
  days_remove = 20
+ complete_effect = {
+ set_country_flag = LES_justifying
+ }
  remove_effect = {
   ROOT = {
       declare_war_on = { target = RDR type = annex_everything }
+      clr_country_flag = LES_justifying
    }
  }
  }
@@ -250,6 +308,7 @@ LES_russian_expansion= {
     NOT = {
    is_in_faction_with = KZR
    is_puppet_of = LES
+   has_country_flag = LES_justifying
   }
   has_war = no
  }
@@ -268,6 +327,9 @@ LES_russian_expansion= {
  cost = 50
  fire_only_once = yes
  days_remove = 20
+ complete_effect = {
+ set_country_flag = LES_justifying
+ }
  remove_effect = {
  LES = { add_state_claim = 590
   add_state_claim = 588
@@ -275,6 +337,7 @@ LES_russian_expansion= {
   add_state_claim = 582}
   ROOT = {
  declare_war_on = { target = KZR type = annex_everything }
+ clr_country_flag = LES_justifying
   }
  }
  }
@@ -296,6 +359,7 @@ LES_destroy_TOW = {
     NOT = {
    is_in_faction_with = TOW
    is_puppet_of = LES
+   has_country_flag = LES_justifying
   }
   has_war = no
  }
@@ -314,9 +378,13 @@ LES_destroy_TOW = {
  cost = 50
  fire_only_once = yes
  days_remove = 20
+ complete_effect = {
+ set_country_flag = LES_justifying
+ }
  remove_effect = {
   ROOT = {
       declare_war_on = { target = TOW type = annex_everything }
+      clr_country_flag = LES_justifying
   }
  }
  }
@@ -338,6 +406,7 @@ LES_destroy_OMS = {
     NOT = {
    is_in_faction_with = OMS
    is_puppet_of = LES
+   has_country_flag = LES_justifying
   }
   has_war = no
  }
@@ -356,9 +425,13 @@ LES_destroy_OMS = {
  cost = 50
  fire_only_once = yes
  days_remove = 20
+ complete_effect = {
+ set_country_flag = LES_justifying
+ }
  remove_effect = {
   ROOT = {
       declare_war_on = { target = OMS type = annex_everything }
+      clr_country_flag = LES_justifying
   }
  }
  }
@@ -380,6 +453,7 @@ LES_destroy_BWR = {
     NOT = {
    is_in_faction_with = BWR
    is_puppet_of = LES
+   has_country_flag = LES_justifying
   }
   has_war = no
  }
@@ -398,9 +472,13 @@ LES_destroy_BWR = {
  cost = 50
  fire_only_once = yes
  days_remove = 20
+ complete_effect = {
+ set_country_flag = LES_justifying
+ }
  remove_effect = {
   ROOT = {
  declare_war_on = { target = BWR type = annex_everything }
+ clr_country_flag = LES_justifying
   }
  }
  }
@@ -422,6 +500,7 @@ LES_destroy_CAU = {
     NOT = {
    is_in_faction_with = CAU
    is_puppet_of = LES
+   has_country_flag = LES_justifying
   }
   has_war = no
  }
@@ -440,9 +519,13 @@ LES_destroy_CAU = {
  cost = 50
  fire_only_once = yes
  days_remove = 20
+ complete_effect = {
+ set_country_flag = LES_justifying
+ }
  remove_effect = {
   ROOT = {
   declare_war_on = { target = CAU type = annex_everything }
+  clr_country_flag = LES_justifying
   }
  }
  }
@@ -464,6 +547,7 @@ LES_destroy_CAA = {
     NOT = {
    is_in_faction_with = CAA
    is_puppet_of = LES
+   has_country_flag = LES_justifying
   }
   has_war = no
  }
@@ -482,9 +566,13 @@ LES_destroy_CAA = {
  cost = 50
  fire_only_once = yes
  days_remove = 20
+ complete_effect = {
+ set_country_flag = LES_justifying
+ }
  remove_effect = {
   ROOT = {
  declare_war_on = { target = CAA type = annex_everything }
+ clr_country_flag = LES_justifying
   }
  }
  }
@@ -506,6 +594,7 @@ LES_destroy_CRM = {
     NOT = {
    is_in_faction_with = CRM
    is_puppet_of = LES
+   has_country_flag = LES_justifying
   }
   has_war = no
  }
@@ -524,9 +613,13 @@ LES_destroy_CRM = {
  cost = 50
  fire_only_once = yes
  days_remove = 20
+ complete_effect = {
+ set_country_flag = LES_justifying
+ }
  remove_effect = {
   ROOT = {
  declare_war_on = { target = CRM type = annex_everything }
+ clr_country_flag = LES_justifying
   }
  }
  }
@@ -548,6 +641,7 @@ LES_destroy_FER = {
     NOT = {
    is_in_faction_with = FER
    is_puppet_of = LES
+   has_country_flag = LES_justifying
   }
   has_war = no
  }
@@ -566,9 +660,13 @@ LES_destroy_FER = {
  cost = 50
  fire_only_once = yes
  days_remove = 20
+ complete_effect = {
+ set_country_flag = LES_justifying
+ }
  remove_effect = {
   ROOT = {
  declare_war_on = { target = FER type = annex_everything }
+ clr_country_flag = LES_justifying
   }
  }
  }
@@ -590,6 +688,7 @@ LES_destroy_WFE = {
     NOT = {
    is_in_faction_with = WFE
    is_puppet_of = LES
+   has_country_flag = LES_justifying
   }
   has_war = no
  }
@@ -608,9 +707,13 @@ LES_destroy_WFE = {
  cost = 50
  fire_only_once = yes
  days_remove = 20
+ complete_effect = {
+ set_country_flag = LES_justifying
+ }
  remove_effect = {
   ROOT = {
  declare_war_on = { target = WFE type = annex_everything }
+ clr_country_flag = LES_justifying
   }
  }
  }
@@ -633,6 +736,7 @@ LES_destroy_WFE = {
     NOT = {
    is_in_faction_with = JSW
    is_puppet_of = LES
+   has_country_flag = LES_justifying
   }
   has_war = no
  }
@@ -651,9 +755,13 @@ LES_destroy_WFE = {
  cost = 50
  fire_only_once = yes
  days_remove = 20
+ complete_effect = {
+ set_country_flag = LES_justifying
+ }
  remove_effect = {
   ROOT = {
  declare_war_on = { target = JSW type = annex_everything }
+ clr_country_flag = LES_justifying
   }
  }
  }
@@ -676,6 +784,7 @@ LES_destroy_WFE = {
     NOT = {
    is_in_faction_with = JOB
    is_puppet_of = LES
+   has_country_flag = LES_justifying
   }
   has_war = no
  }
@@ -694,9 +803,13 @@ LES_destroy_WFE = {
  cost = 50
  fire_only_once = yes
  days_remove = 20
+ complete_effect = {
+ set_country_flag = LES_justifying
+ }
  remove_effect = {
   ROOT = {
  declare_war_on = { target = JOB type = annex_everything }
+ clr_country_flag = LES_justifying
   }
  }
  }
@@ -718,6 +831,7 @@ LES_destroy_WFE = {
     NOT = {
    is_in_faction_with = KRW
    is_puppet_of = LES
+   has_country_flag = LES_justifying
   }
   has_war = no
  }
@@ -736,9 +850,13 @@ LES_destroy_WFE = {
  cost = 50
  fire_only_once = yes
  days_remove = 20
+ complete_effect = {
+ set_country_flag = LES_justifying
+ }
  remove_effect = {
   ROOT = {
  declare_war_on = { target = KRW type = annex_everything }
+ clr_country_flag = LES_justifying
   }
  }
  }
@@ -760,6 +878,7 @@ LES_destroy_WFE = {
     NOT = {
    is_in_faction_with = BRW
    is_puppet_of = LES
+   has_country_flag = LES_justifying
   }
   has_war = no
  }
@@ -778,9 +897,13 @@ LES_destroy_WFE = {
  cost = 50
  fire_only_once = yes
  days_remove = 20
+ complete_effect = {
+ set_country_flag = LES_justifying
+ }
  remove_effect = {
   ROOT = {
  declare_war_on = { target = BRW type = annex_everything }
+ clr_country_flag = LES_justifying
   }
  }
  }
@@ -802,6 +925,7 @@ LES_destroy_WFE = {
     NOT = {
    is_in_faction_with = UGC
    is_puppet_of = LES
+   has_country_flag = LES_justifying
   }
   has_war = no
  }
@@ -820,9 +944,13 @@ LES_destroy_WFE = {
  cost = 50
  fire_only_once = yes
  days_remove = 20
+ complete_effect = {
+ set_country_flag = LES_justifying
+ }
  remove_effect = {
   ROOT = {
  declare_war_on = { target = UGC type = annex_everything }
+ clr_country_flag = LES_justifying
   }
  }
  }
@@ -844,6 +972,7 @@ LES_destroy_IRK = {
     NOT = {
    is_in_faction_with = IRK
    is_puppet_of = LES
+   has_country_flag = LES_justifying
   }
   has_war = no
  }
@@ -862,9 +991,13 @@ LES_destroy_IRK = {
  cost = 50
  fire_only_once = yes
  days_remove = 20
+ complete_effect = {
+ set_country_flag = LES_justifying
+ }
  remove_effect = {
   ROOT = {
  declare_war_on = { target = IRK type = annex_everything }
+ clr_country_flag = LES_justifying
   }
  }
  }
@@ -887,6 +1020,7 @@ LES_destroy_IRK = {
     NOT = {
    is_in_faction_with = MON
    is_puppet_of = LES
+   has_country_flag = LES_justifying
   }
   has_war = no
  }
@@ -905,9 +1039,13 @@ LES_destroy_IRK = {
  cost = 50
  fire_only_once = yes
  days_remove = 20
+ complete_effect = {
+ set_country_flag = LES_justifying
+ }
  remove_effect = {
   ROOT = {
  declare_war_on = { target = MON type = annex_everything }
+ clr_country_flag = LES_justifying
   }
  }
  }
@@ -930,6 +1068,7 @@ LES_destroy_IRK = {
     NOT = {
    is_in_faction_with = SFS
    is_puppet_of = LES
+   has_country_flag = LES_justifying
   }
   has_war = no
  }
@@ -948,9 +1087,13 @@ LES_destroy_IRK = {
  cost = 50
  fire_only_once = yes
  days_remove = 20
+ complete_effect = {
+ set_country_flag = LES_justifying
+ }
  remove_effect = {
   ROOT = {
  declare_war_on = { target = SFS type = annex_everything }
+ clr_country_flag = LES_justifying
   }
  }
  }
@@ -972,6 +1115,7 @@ LES_destroy_IRK = {
     NOT = {
    is_in_faction_with = KAZ
    is_puppet_of = LES
+   has_country_flag = LES_justifying
   }
   has_war = no
   KAZ = {
@@ -994,6 +1138,9 @@ LES_destroy_IRK = {
  cost = 50
  fire_only_once = yes
  days_remove = 20
+ complete_effect = {
+ set_country_flag = LES_justifying
+ }
  remove_effect = {
   ROOT = {
   add_state_claim = 590
@@ -1001,6 +1148,7 @@ LES_destroy_IRK = {
   add_state_claim = 583
   add_state_claim = 582
  declare_war_on = { target = KAZ type = annex_everything }
+ clr_country_flag = LES_justifying
   }
  }
  }
@@ -1023,6 +1171,7 @@ LES_destroy_IRK = {
     NOT = {
    is_in_faction_with = JVD
    is_puppet_of = LES
+   has_country_flag = LES_justifying
   }
   has_war = no
  }
@@ -1041,9 +1190,13 @@ LES_destroy_IRK = {
  cost = 50
  fire_only_once = yes
  days_remove = 20
+ complete_effect = {
+ set_country_flag = LES_justifying
+ }
  remove_effect = {
   ROOT = {
  declare_war_on = { target = JVD type = annex_everything }
+ clr_country_flag = LES_justifying
   }
  }
  }
@@ -2564,10 +2717,11 @@ LES_invasion = {
 les_5th_invades = {
           allowed = { tag = LES }
           available = {
-          has_war = no
+            has_war = no
           }
           activation = {
           has_war = yes
+          NOT = { has_country_flag = LES_early_game_war }
           }
           is_good = no
           days_mission_timeout = 200

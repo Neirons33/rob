@@ -27,7 +27,7 @@ division = {
 name = "Ist Czech Volunteers"
 location = 9292
 division_template = "Czech Volunteers"
-start_experience_factor = 0.2
+start_experience_factor = 0.8
 start_equipment_factor = 0.6
 }
 
@@ -36,7 +36,7 @@ division = {
 name = "IInd Czech Volunteers"
 location = 12157
 division_template = "Czech Volunteers"
-start_experience_factor = 0.2
+start_experience_factor = 0.8
 start_equipment_factor = 0.6
 }
 
@@ -45,7 +45,7 @@ division = {
 name = "IIIrd Czech Volunteers"
 location = 1775
 division_template = "Czech Volunteers"
-start_experience_factor = 0.2
+start_experience_factor = 0.8
 start_equipment_factor = 0.6
 }
 
@@ -54,7 +54,7 @@ division = {
 name = "IVth Czech Volunteers"
 location = 12106
 division_template = "Czech Volunteers"
-start_experience_factor = 0.2
+start_experience_factor = 0.8
 start_equipment_factor = 0.6
 }
 

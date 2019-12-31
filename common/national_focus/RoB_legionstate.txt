@@ -187,7 +187,7 @@ focus_tree = {
     	ai_will_do = {
      	base = 2
      	modifier = {
-      	factor = 500
+      	factor = 1000
       	date > 1935.4.1
       	}
  	 }
@@ -206,8 +206,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = LES_chelyabisnktractorfactory }
 		ai_will_do = {
-			factor = 1
-		}
+		base = 2
+     	modifier = {
+      	factor = 700
+      	has_war = no
+      	}
+      	}
 		completion_reward = {
 		swap_ideas = {
     	remove_idea = LES_Modern_Farming
@@ -279,8 +283,13 @@ focus_tree = {
 			focus = LES_communalfarmers 
 		}
 		ai_will_do = {
-			factor = 1
-		}
+		base = 2
+     	modifier = {
+      	factor = 700
+      	has_war = no
+      	}
+      	}
+
 		completion_reward = {
 		remove_ideas = {
 		LES_Risk_of_Famine
@@ -298,8 +307,13 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = LES_formtheenginerbrigade }
 		ai_will_do = {
-			factor = 4
-		}
+		base = 4
+     	modifier = {
+      	factor = 700
+      	has_war = no
+      	}
+      	}
+
 		completion_reward = {
 		572 = {
 		add_extra_state_shared_building_slots = 2
@@ -696,8 +710,13 @@ focus_tree = {
 		}
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 2
-		}
+		base = 2
+     	modifier = {
+      	factor = 700
+      	has_war = no
+      	}
+      	}
+
 		completion_reward = {
 		add_manpower = -8000
 		swap_ideas = {
@@ -717,8 +736,13 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = LES_modernisefarming }
 		ai_will_do = {
-			factor = 1
-		}
+		base = 2
+     	modifier = {
+      	factor = 700
+      	has_war = no
+      	}
+      	}
+
 		completion_reward = {
 		572 = { 
         add_extra_state_shared_building_slots = 1
@@ -751,8 +775,13 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = LES_demobilisethe4thregiment }
 		ai_will_do = {
-			factor = 1
-		}
+		base = 1
+     	modifier = {
+      	factor = 700
+      	has_war = no
+      	}
+      	}
+
 		completion_reward = {
         572 = {
 			add_building_construction = {
@@ -782,8 +811,13 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = LES_resolvethehousingissue }
 		ai_will_do = {
-			factor = 1
-		}
+		base = 2
+     	modifier = {
+      	factor = 700
+      	has_war = no
+      	}
+      	}
+
 		completion_reward = {
 		572 = { 
         add_extra_state_shared_building_slots = 1
@@ -817,8 +851,13 @@ focus_tree = {
 		}
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 10
-		}
+		base = 10
+     	modifier = {
+      	factor = 700
+      	has_war = no
+      	}
+      	}
+
 		completion_reward = {
 		add_manpower = -5000
 		}
@@ -834,8 +873,13 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = LES_demobilisethe4thregiment }
 		ai_will_do = {
-			factor = 3
-		}
+		base = 5
+     	modifier = {
+      	factor = 700
+      	has_war = no
+      	}
+      	}
+
 			completion_reward = {
 			add_ideas = {
 			LES_Engineers 
@@ -853,8 +897,13 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = LES_formtheenginerbrigade }
 		ai_will_do = {
-			factor = 2
-		}
+		base = 2
+     	modifier = {
+      	factor = 700
+      	has_war = no
+      	}
+      	}
+
 		completion_reward = {
 			572 = {
 			add_building_construction = {
@@ -882,8 +931,13 @@ focus_tree = {
 			focus = LES_buisnesslandappropriation 
 		}
 		ai_will_do = {
-			factor = 1
-		}
+		base = 2
+     	modifier = {
+      	factor = 700
+      	has_war = no
+      	}
+      	}
+
 		completion_reward = {
 		add_ideas = {
 		  LES_Economical_Boom
@@ -902,8 +956,13 @@ focus_tree = {
 		prerequisite = { focus = LES_redistributefarmland }
 		mutually_exclusive = { focus = LES_modernisefarming }
 		ai_will_do = {
-			factor = 1
-		}
+		base = 2
+     	modifier = {
+      	factor = 700
+      	has_war = no
+      	}
+      	}
+
 		completion_reward = {
 		add_ideas = {LES_Tradional_Farming}
 		}
@@ -920,8 +979,13 @@ focus_tree = {
 		prerequisite = { focus = LES_redistributefarmland }
 		mutually_exclusive = { focus = LES_keepittraditional }
 		ai_will_do = {
-			factor = 1
-		}
+		base = 2
+     	modifier = {
+      	factor = 700
+      	has_war = no
+      	}
+      	}
+
 		completion_reward = {
 		add_ideas = {LES_Modern_Farming}
 		}
@@ -942,8 +1006,12 @@ focus_tree = {
 			focus = LES_demobilisethe4thregiment 
 		}
 		ai_will_do = {
-			factor = 1
-		}
+		base = 2
+     	modifier = {
+      	factor = 700
+      	has_war = no
+      	}
+      	}
 		completion_reward = {
 		add_political_power = -60
 		swap_ideas = {
@@ -968,8 +1036,13 @@ focus_tree = {
 			focus = LES_expandthechelyabinskhospital 
 		}
 		ai_will_do = {
-			factor = 1
-		}
+		base = 2
+     	modifier = {
+      	factor = 700
+      	has_war = no
+      	}
+      	}
+
 		completion_reward = {
 		572 = { 
         add_extra_state_shared_building_slots = 2
@@ -992,8 +1065,13 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = LES_keepittraditional }
 		ai_will_do = {
-			factor = 1
-		}
+		base = 2
+     	modifier = {
+      	factor = 700
+      	has_war = no
+      	}
+      	}
+
 		completion_reward = {
 		LES = { country_event = { id = legion.10 days = 1 } }
 		}
@@ -1009,8 +1087,13 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = LES_formtheenginerbrigade }
 		ai_will_do = {
-			factor = 2
-		}
+		base = 2
+     	modifier = {
+      	factor = 700
+      	has_war = no
+      	}
+      	}
+
 		completion_reward = {
 		 	572 = {
 		        add_extra_state_shared_building_slots = 2
@@ -1066,7 +1149,7 @@ focus_tree = {
 		ai_will_do = {
 		base = 1
      	modifier = {
-      	factor = 600
+      	factor = 500
       	has_war = yes
       	}
 		}
@@ -1109,8 +1192,13 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = LES_improveruralroadnetwork }
 		ai_will_do = {
-			factor = 2
-		}
+		base = 4
+     	modifier = {
+      	factor = 700
+      	has_war = no
+      	}
+      	}
+
 		completion_reward = {
 		add_research_slot = 1
 		}
@@ -1126,8 +1214,13 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = LES_startourarmsindustry }
 		ai_will_do = {
-			factor = 1
-		}
+		base = 2
+     	modifier = {
+      	factor = 700
+      	has_war = no
+      	}
+      	}
+
 		completion_reward = {
 		 572 = {
 		        add_extra_state_shared_building_slots = 1
@@ -1163,8 +1256,13 @@ focus_tree = {
 			focus = LES_reopenschools 
 		}
 		ai_will_do = {
-			factor = 1
-		}
+		base = 2
+     	modifier = {
+      	factor = 700
+      	has_war = no
+      	}
+      	}
+
 		completion_reward = {
 		add_ideas = {
 		LES_road_guardposts
@@ -1210,8 +1308,13 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = LES_beginrailwayreconstruction }
 		ai_will_do = {
-			factor = 1
-		}
+		base = 1
+     	modifier = {
+      	factor = 700
+      	has_war = no
+      	}
+      	}
+
 		completion_reward = {
         571 = {
 			add_building_construction = {
@@ -1240,8 +1343,13 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = LES_importinganimals }
 		ai_will_do = {
-			factor = 1
-		}
+		base = 2
+     	modifier = {
+      	factor = 700
+      	has_war = no
+      	}
+      	}
+
 		completion_reward{
 		swap_ideas = {
 		remove_idea = LES_Tradional_Farming
@@ -1262,7 +1370,7 @@ focus_tree = {
 	    ai_will_do = {
      	base = 2
      	modifier = {
-      	factor = 200
+      	factor = 1000
       	date > 1936.1.1
       	}
  	 }
@@ -1283,7 +1391,7 @@ focus_tree = {
 	    ai_will_do = {
      	base = 2
      	modifier = {
-      	factor = 200
+      	factor = 1000
       	date > 1936.1.1
       	}
  	 }
@@ -1304,7 +1412,7 @@ focus_tree = {
 	    ai_will_do = {
      	base = 1
      	modifier = {
-      	factor = 300
+      	factor = 1000
       	date > 1936.1.1
       	}
  	 }
@@ -1325,7 +1433,7 @@ focus_tree = {
 	    ai_will_do = {
      	base = 1
      	modifier = {
-      	factor = 300
+      	factor = 1000
       	date > 1936.1.1
       	}
  	 }
@@ -1350,7 +1458,7 @@ focus_tree = {
 	    ai_will_do = {
      	base = 1
      	modifier = {
-      	factor = 300
+      	factor = 1000
       	date > 1936.1.1
       	}
  	 }
@@ -1377,7 +1485,7 @@ focus_tree = {
 	    ai_will_do = {
      	base = 1
      	modifier = {
-      	factor = 300
+      	factor = 1000
       	date > 1936.1.1
       	}
  	 }
@@ -1404,7 +1512,7 @@ focus_tree = {
 	    ai_will_do = {
      	base = 1
      	modifier = {
-      	factor = 300
+      	factor = 1000
       	date > 1936.1.1
       	}
  	 }
@@ -1431,7 +1539,7 @@ focus_tree = {
 	    ai_will_do = {
      	base = 5
      	modifier = {
-      	factor = 300
+      	factor = 1000
       	date > 1936.1.1
       	}
  	 }
@@ -1535,9 +1643,9 @@ focus_tree = {
 		prerequisite = { focus = LES_legionsarmy }
 		mutually_exclusive = { focus = LES_hqknowsbest }
 		ai_will_do = {
-		base = 2
+		base = 1
      	modifier = {
-      	factor = 600
+      	factor = 500
       	has_war = yes
       	}
 		}
@@ -1740,8 +1848,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = LES_empowerthencos }
 		ai_will_do = {
-			factor = 1
-		}
+		base = 2
+     	modifier = {
+      	factor = 700
+      	has_tech = mobile_warfare   
+      	}
+      	}
 		completion_reward = {
 			add_tech_bonus = {
 				name = doctrine
@@ -1763,8 +1875,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = LES_hqknowsbest }
 		ai_will_do = {
-			factor = 1
-		}
+		base = 2
+     	modifier = {
+      	factor = 700
+      	has_tech = trench_warfare  
+      	}
+      	}
 		completion_reward = {
  		add_tech_bonus = {
 		name = vorshilov
@@ -1789,8 +1905,12 @@ focus_tree = {
 			focus = LES_hqknowsbest 
 		}
 		ai_will_do = {
-			factor = 1
-		}
+		base = 2
+     	modifier = {
+      	factor = 700
+      	has_tech = superior_firepower 
+      	}
+      	}
 		completion_reward = {
 		 add_tech_bonus = {
 	      name = doctrine_bonus
@@ -2255,7 +2375,11 @@ focus_tree = {
 			focus = LES_raiddemocratammunitiondepots 
 		}
 		ai_will_do = {
-			factor = 1
+		base = 2
+     	modifier = {
+      	factor = 1400
+      	has_war = yes
+      	}
 		}
 		completion_reward = {
 		remove_ideas = {
@@ -2274,8 +2398,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = LES_thearmoryisempty }
 		ai_will_do = {
-			factor = 1
-		}
+		base = 2
+     	modifier = {
+      	factor = 700
+      	has_war = yes
+      	}
+      	}
 		completion_reward = {
 		LES = { country_event = { id = legion.14 days = 1 } }
 		}
@@ -2325,7 +2453,7 @@ focus_tree = {
 		ai_will_do = {
 		base = 2
      	modifier = {
-      	factor = 600
+      	factor = 2000
       	has_war = yes
       	}
 		}
@@ -2348,7 +2476,7 @@ focus_tree = {
 		ai_will_do = {
 		base = 2
      	modifier = {
-      	factor = 600
+      	factor = 1000
       	has_war = yes
       	}
 		}
@@ -2513,7 +2641,11 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = LES_thearmoryisempty }
 		ai_will_do = {
-			factor = 1
+		base = 2
+     	modifier = {
+      	factor = 700
+      	has_war = yes
+      	}
 		}
 		completion_reward = {
 		 add_tech_bonus = {

@@ -484,7 +484,7 @@ LES_the_state = {
 	}
 	available = {
 	ROOT = {
-	has_full_control_of_state = 572
+	has_full_control_of_state = 572/
 	}
 	has_country_flag = LES_gadjahasconsolidedpower
 	}
@@ -502,9 +502,11 @@ LES_invasion = {
 	visible = {
 	 tag = LES
 	 has_country_flag = triumph
+	 NOT = { has_country_flag = LES_early_game_war }
 	}
 	available = {
 	ROOT = {
+	NOT = { has_country_flag = LES_early_game_war }
 	has_full_control_of_state = 572
 	}
 	}
