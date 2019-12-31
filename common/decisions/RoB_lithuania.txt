@@ -61,9 +61,9 @@ LIT_lith_raids = {
 				attacker = {
 					state = 189
 					num_provinces = 1
-					on_win = lithuania.32
+					on_win = lithuania.35
 					on_lose = lithuania.36
-					on_cancel = lithuania.32
+					on_cancel = lithuania.35
 				}
 				
 				defender = {
@@ -179,9 +179,9 @@ LIT_lith_raids = {
 				attacker = {
 					state = 784
 					num_provinces = 1
-					on_win = lithuania.32
+					on_win = lithuania.35
 					on_lose = lithuania.36
-					on_cancel = lithuania.32
+					on_cancel = lithuania.36
 				}
 				
 				defender = {
@@ -301,9 +301,9 @@ LIT_lith_raids = {
 				attacker = {
 					state = 189
 					num_provinces = 1
-					on_win = lithuania.32
+					on_win = lithuania.35
 					on_lose = lithuania.36
-					on_cancel = lithuania.32
+					on_cancel = lithuania.35
 				}
 				
 				defender = {
