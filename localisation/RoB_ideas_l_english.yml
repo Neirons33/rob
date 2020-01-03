@@ -1119,3 +1119,24 @@
 
 civil_war_attrition_2:0 "Attrition of Russian Civil War"
 civil_war_attrition_2_desc:0 "Milions of people perished in the Russian Civil War, which spanned over almost ten years. Russian nation is in shambles, villages are quiet and cities stand much calmer than before the war... "
+
+###Central Asian Ideas
+
+KAZ_triumverate:0 "The Kazakh Triumverate"
+KAZ_triumverate_desc:0 "The Alash Orda is run by a Triumverate comprised of Alikhan Bukeikhanov, Akhmet Baitursynov and Mirjaqip Dulatuli. The three men are typically squabbling over small matters, and their personal interests prevent much good from happening in the Alash Orda. With this triarchy, the government has become extremely inefficent."
+KAZ_overextended_state:0 "An Overextended State"
+KAZ_overextended_state_desc:0 "Following our brief war of independence against the Russian Republic, much of the Western Steppe fell to our control, including the city of Magnitogorsk. Sensing oppertunity, lands to the south were also seized. Our vast empire is hampered by inefficent infrastructure, and the illusion of power is all that is keeping the state from collapsing."
+KZR_freedom_fighting:0 "The People's Republic"
+KZR_freedom_fighting_desc:0 "The Republican Regime is widely popular with the Kazakh People. Among our citizens, the nation has been known as the 'People's State.' Citizens from all across the steppe flock to our banner in the dream of freedom."
+KZR_kazakh_war:0 "The Great Liberation War"
+KZR_kazakh_war_desc:0 "Now is the hour! The citizens of Kazakhia must fight for our freedom! Death to the Alash Regime! Glory to Kazakhia!"
+KYR_mountain_peoples:0 "A State of Mountains"
+KYR_mountain_peoples_desc:0 "Wide support from the local Kirghiz population and extensive knowledge of the terrain suits to our advantage in the event of an enemy invasion. The enemy will have to sell their blood for every inch of Kirghiz territory they intrude on!"
+TMS_basmachi_remnant:0 "Legacy of the Basmachi"
+TMS_basmachi_remnant_desc:0 "The Basmachi movement during the Russian Civil War was widely successful, pushing the local Red Armies back across the Urals and to the Persian mountains. The legacy of the movement still remains to this day, with many of our major players havinh been a part of the movement."
+TMS_junaid_dictatorship:0 "Junaid's Regime"
+TMS_junaid_dictatorship_desc:0 "From the Russian Civil War, the local governor of Khiva, Junaid Khan, successfully took command of the Basmachi forces and ousted the communists, proclaiming the Turkmen National Coalition following an Afghan occupation of Bukhara. Although he is widely popular, an increasing amount of opposition has shown face to the coalition, citing behind-the-scenes corruption."
+UZB_afghan_domination:0 "Afghan Domination"
+UZB_afghan_domination_desc:0 "In 1925, Afghan forces crossed into the Emirate, occupying it and isolating it from its Basmachi allies on both sides. Although effectively independent, Afghan immigrants have increasingly occupied high status within the state, and Afghan soldiers guard every corner of Bukhara."
+UZB_young_bukharans:0 "Young Bukharans"
+UZB_young_bukharans_desc:0 "During the Russian Civil War, supported by the Reds, revolutionaries declared the Bukharan People's Republic. After a long struggle, the regime was ousted. However, the movement behind such regime, the Young Bukharans, still persists underground to this day, waiting for a moment to strike."
