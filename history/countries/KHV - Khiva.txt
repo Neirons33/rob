@@ -27,6 +27,9 @@ set_popularities = {
 }
 add_ideas = {
 extensive_conscription
+KHV_longing_for_independence
+KHV_young_khivans
+TMS_basmachi_remnant
 }
 
 create_country_leader = {
