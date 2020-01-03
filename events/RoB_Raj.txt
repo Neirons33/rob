@@ -785,3 +785,30 @@ add_political_power = -50
 
 }
 
+country_event = {
+id = raj.115
+title = raj.115.t
+desc = raj.115.d
+fire_only_once = yes
+picture = GFX_picture_bosnian_revolt
+trigger = {
+tag = MYS
+controls_state = 321
+}
+
+
+option = {
+name = raj.115.a
+ai_chance = { factor = 99}
+transfer_state = 321
+white_peace = POR
+
+option = {
+name = raj.114.b
+ai_chance = { factor = 1}
+add_political_power = -10
+}
+
+
+}
+

@@ -221,6 +221,8 @@ country_event = {
    SPR = { transfer_state = 540 }
    SPR = { transfer_state = 544 }
    SPR = { transfer_state = 321 }
+   SPR = { transfer_state = 770 }
+   SPR = { transfer_state = 771 }
    ai_chance = {
 			factor = 80
 		}
@@ -241,6 +243,8 @@ country_event = {
    SPR = { transfer_state = 540 }
    SPR = { transfer_state = 544 }
    SPR = { transfer_state = 321 }
+   SPR = { transfer_state = 770 }
+   SPR = { transfer_state = 771 }
    ai_chance = {
 			factor = 100
 		}

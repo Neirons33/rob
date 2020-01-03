@@ -19,7 +19,7 @@ SER = { has_war = yes }
 picture = GFX_picture_bosnian_revolt
 option = {
  name = bulgaria.100.a
-ai_chance = { factor = 80}
+ai_chance = { factor = 98}
 
 SER = { country_event = { id = bulgaria.101 days = 3 } }
 
@@ -29,7 +29,7 @@ SER = { country_event = { id = bulgaria.101 days = 3 } }
 
 option = {
  name = bulgaria.100.b
-ai_chance = { factor = 20}
+ai_chance = { factor = 2}
 
 
 add_political_power = -50
@@ -221,16 +221,25 @@ fire_only_once = yes
 trigger = {
 tag = BUL
 has_war_with = SER
-controls_state = 106
-controls_state = 870
-controls_state = 871
+OR = { controls_state = 106
+ALB = { controls_state = 106 }
+TUR = { controls_state = 106 }
+}
+OR = { controls_state = 870
+ALB = { controls_state = 870 }
+TUR = { controls_state = 870 }
+}
+OR = { controls_state = 871
+ALB = { controls_state = 871 }
+TUR = { controls_state = 871 }
+}
 controls_state = 48
 
 }
 picture = GFX_picture_bosnian_revolt
 option = {
  name = bulgaria.107.a
-ai_chance = { factor = 95}
+ai_chance = { factor = 98}
 
 white_peace = SER
 
@@ -240,12 +249,24 @@ BUL = { transfer_state = 871 }
 106 = { add_core_of = BUL }
 870 = { add_core_of = BUL }
 871 = { add_core_of = BUL }
+IF = {
+limit = { ALB = { has_war_with = SER } }
+ALB = { transfer_state = 878 }
+ALB = { transfer_state = 941 }
+ALB = { white_peace = SER }
+}
+IF = {
+limit = { TUR = { has_war_with = SER } }
+TUR = { white_peace = SER }
+}
+
+}
 
 }
 
 option = {
  name = bulgaria.107.b
-ai_chance = { factor = 5}
+ai_chance = { factor = 2}
 
 
 add_political_power = -50
@@ -270,7 +291,7 @@ controls_state = 832
 picture = GFX_picture_bosnian_revolt
 option = {
  name = bulgaria.108.a
-ai_chance = { factor = 95}
+ai_chance = { factor = 98}
 
 white_peace = ROM
 
@@ -284,7 +305,7 @@ BUL = { transfer_state = 832 }
 
 option = {
  name = bulgaria.108.b
-ai_chance = { factor = 5}
+ai_chance = { factor = 2}
 
 
 add_political_power = -50
@@ -311,7 +332,7 @@ controls_state = 48
 picture = GFX_picture_bosnian_revolt
 option = {
  name = bulgaria.109.a
-ai_chance = { factor = 95}
+ai_chance = { factor = 98}
 
 white_peace = BUL
 
@@ -327,7 +348,7 @@ BUL = { country_event = { id = bulgaria.109 days = 1 } }
 
 option = {
  name = bulgaria.109.b
-ai_chance = { factor = 5}
+ai_chance = { factor = 2}
 
 
 add_political_power = -50
