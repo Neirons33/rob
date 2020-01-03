@@ -975,4 +975,12 @@ opinion_modifiers = {
 		value = -75
 	}
 	
+	#Colony Seized
+	minor_colony_seized = {
+		value = -50
+	}
+	major_colony_seized = {
+		value = -100
+	}
+
 }	
