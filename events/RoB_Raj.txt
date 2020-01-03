@@ -395,6 +395,9 @@ picture = GFX_picture_bosnian_revolt
 trigger = {
 tag = POR
 MYS = { owns_state = 425 }
+owns_state = 180
+NOT = { has_war_with = SPR }
+NOT = { is_puppet = yes }
 }
 
 option = {

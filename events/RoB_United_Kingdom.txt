@@ -1086,10 +1086,22 @@ OR = {
  has_country_flag = BRL_victory 
  }
 OR = {
-tag = BLF
-tag = BRC
-tag = BRL
-tag = BRU
+  AND = { 
+	tag = BRU 
+	BRU = { exists = yes } 
+	}
+  AND = { 
+	tag = BRL 
+	BRU = { exists = yes } 
+	}
+  AND = { 
+	tag = BRC
+	BRU = { exists = yes } 
+	}
+  AND = { 
+	tag = BLF 
+	BRU = { exists = yes } 
+	}
 }
 }
  mean_time_to_happen = { days = 1 }
@@ -1108,6 +1120,11 @@ tag = BRU
 }
 
   }
+every_country = { 
+limit = { has_war_with = IRE }
+white_peace = IRE
+}
+
  }
 }
 
@@ -1128,10 +1145,22 @@ trigger = {
   BLF = { has_war = no }
 }
 OR = {
-  tag = BRU
-  tag = BRL
-  tag = BRC
-  tag = BLF
+  AND = { 
+	tag = BRU 
+	BRU = { exists = yes } 
+	}
+  AND = { 
+	tag = BRL 
+	BRU = { exists = yes } 
+	}
+  AND = { 
+	tag = BRC
+	BRU = { exists = yes } 
+	}
+  AND = { 
+	tag = BLF 
+	BRU = { exists = yes } 
+	}
 }
 }
 

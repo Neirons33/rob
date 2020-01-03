@@ -489,13 +489,13 @@ option = {
 ai_chance = { factor = 99}
 hidden_effect = { ENG = { country_event = {
     id = bces.114
-    days = 22
+    days = 12
 }
 }
 }
 hidden_effect = { PRS = { country_event = {
     id = bces.115
-    days = 23
+    days = 13
 }
 }
 }

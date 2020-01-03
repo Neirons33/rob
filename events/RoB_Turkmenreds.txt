@@ -2993,3 +2993,87 @@ complete_national_focus = TRS_infiltratethecoalition
 
 }
 }
+
+###Turkmen-Persian Alliance
+
+country_event = {
+id = turkmenreds.184
+title = turkmenreds.184.t
+desc = turkmenreds.184.d
+fire_only_once = yes
+picture = GFX_picture_bosnian_revolt
+
+trigger = {
+tag = TMS
+has_offensive_war_with = TRS 
+date > 1937.10.10
+}
+
+
+option = {
+###Propose an Alliance
+
+name = turkmenreds.184.a
+ai_chance = { factor = 95}
+
+PER = { 
+country_event = {
+    id = turkmenreds.185
+}
+}
+
+
+}
+option = {
+###Dont
+
+name = turkmenreds.184.b
+ai_chance = { factor = 5}
+
+
+
+
+}
+}
+
+###TMS Proposes an Alliance
+
+country_event = {
+id = turkmenreds.185
+title = turkmenreds.185.t
+desc = turkmenreds.185.d
+fire_only_once = yes
+is_triggered_only = yes
+picture = GFX_picture_bosnian_revolt
+
+trigger = {
+tag = PER
+
+}
+
+
+option = {
+###Agree
+
+name = turkmenreds.184.a
+ai_chance = { factor = 95}
+
+create_faction = Turkmen_Persian
+PER = { add_to_faction = TMS }
+
+}
+option = {
+###Decline
+
+name = turkmenreds.184.b
+ai_chance = { factor = 5}
+
+TMS = { 
+country_event = {
+    id = turkmenreds.186
+}
+}
+
+
+}
+}
