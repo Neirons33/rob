@@ -120,6 +120,42 @@ ideas = {
 	}
    }
 
+   KHV_longing_for_independence = {
+    allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 picture = GFX_idea_famine_of_1933
+   
+    modifier = {
+	army_core_attack_factor = 0.15
+  	army_core_defence_factor = 0.15
+	conscription = 0.02	
+	}
+   }
+
+   KHV_young_khivans = {
+    allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 picture = GFX_idea_famine_of_1933
+   
+    modifier = {
+	socialist_drift = 0.03
+	national_socialist_drift = 0.01
+	political_power_factor = -0.2
+	stability_factor = -0.2
+	
+	}
+   }
+
    TMS_basmachi_remnant = {
     allowed = {
        always = no
