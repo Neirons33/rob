@@ -1,4 +1,4 @@
-﻿capital = 9
+capital = 9
 
 oob = "CZE_1934"
 
@@ -127,8 +127,7 @@ if = {
 		CZE_skoda_works
 		CZE_divided_nation
 }
-	give_guarantee = YUG
-	give_guarantee = ROM
+
 }
 
 if = {

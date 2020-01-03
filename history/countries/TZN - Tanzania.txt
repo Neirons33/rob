@@ -1,4 +1,4 @@
-﻿capital = 546
+capital = 546
 
 # Starting tech
 set_technology = {
@@ -72,3 +72,17 @@ set_popularities = {
 	pelekist = 0
 }
 
+add_ideas = {
+extensive_conscription
+}
+
+create_country_leader = {
+	name = "Paul von Lettow-Vorbeck"
+	desc = "POLITICS_SALCHAK_TOKA_DESC"
+	picture = ""
+	expire = "1965.1.1"
+	ideology = authoritharian_subtype
+	traits = {
+		#
+	}
+}

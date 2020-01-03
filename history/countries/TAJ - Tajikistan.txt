@@ -32,7 +32,7 @@ extensive_conscription
 }
 
 create_country_leader = {
-	name = "Enver Pasha"
+	name = "Ibrahim Bek"
 	desc = ""
 	picture = ""
 	expire = "1965.1.1"
@@ -42,16 +42,7 @@ create_country_leader = {
 	}
 }
 
-create_field_marshal = {
-	name = "Enver Pasha"
-	picture = ""
-	traits = { offensive_doctrine trait_reckless politically_connected }
-	skill = 4
-	attack_skill = 4
-	defense_skill = 3
-	planning_skill = 4
-	logistics_skill = 3
-}
+
 
 create_corps_commander = {
 	name = "Ibrahim Bek"
