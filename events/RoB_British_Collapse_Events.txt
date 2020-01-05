@@ -430,6 +430,8 @@ KEN = { transfer_state = 547 }
 547 = { add_core_of = KEN }
 KEN = { transfer_state = 1237 }
 1237 = { add_core_of = KEN }
+KEN = { transfer_state = 1250 }
+1250 = { add_core_of = KEN }
 KEN = { add_opinion_modifier = {
     target = ENG
     modifier = major_colony_seized
@@ -486,7 +488,7 @@ picture = GFX_picture_bosnian_revolt
 option = {
 # We'll see what comes of this
  name = bces.113.a
-ai_chance = { factor = 99}
+ai_chance = { factor = 75}
 hidden_effect = { ENG = { country_event = {
     id = bces.114
     days = 12
@@ -499,6 +501,15 @@ hidden_effect = { PRS = { country_event = {
 }
 }
 }
+
+
+}
+
+option = {
+# Arrest Him at once!
+ name = bces.113.b
+ai_chance = { factor = 25}
+
 
 
 }
@@ -523,14 +534,30 @@ option = {
 # A german?
  name = bces.114.a
 ai_chance = { factor = 99}
-TZN = { transfer_state = 546 }
-546 = { add_core_of = TZN }
-TZN = { add_opinion_modifier = {
+ASK = { transfer_state = 1248 }
+546 = { add_core_of = ASK }
+1248 = { add_core_of = ASK }
+1249 = { add_core_of = ASK }
+ASK = { add_opinion_modifier = {
     target = ENG
     modifier = major_colony_seized
 }
 }
 
+ASK = { load_oob = "ASK_1936" }
+
+ASK = { declare_war_on = {
+    target = TZN
+    type = annex_everything
+}
+}
+
+country_event = {
+    id = bces.120
+    days = 12
+}
+
+add_manpower = -50000
 
 }
 
@@ -561,9 +588,17 @@ ai_chance = { factor = 75}
 option = {
 # An oppertunity
 name = bces.115.b
+trigger = { has_navy_size = {
+    size > 10
+}
+}
 ai_chance = { factor = 25}
 declare_war_on = {
     target = TZN
+    type = annex_everything
+}
+declare_war_on = {
+    target = ASK
     type = annex_everything
 }
 
@@ -684,4 +719,77 @@ add_political_power = -10
 
 
 }
+}
+
+# Tanganyika Revolts
+
+country_event = {
+id = bces.119
+title = bces.119.t
+desc = bces.119.d
+fire_only_once = yes
+trigger = {
+tag = ENG
+ENG = { has_cosmetic_tag = ENG_navy }
+}
+picture = GFX_picture_bosnian_revolt
+option = {
+ name = bces.112.a
+ai_chance = { factor = 99}
+
+TZN = { transfer_state = 546 }
+TZN = { transfer_state = 1248 }
+TZN = { transfer_state = 1249 }
+
+548 = { add_core_of = TZN }
+1248 = { add_core_of = TZN }
+1249 = { add_core_of = TZN }
+TZN = { add_opinion_modifier = {
+    target = ENG
+    modifier = major_colony_seized
+}
+}
+
+TZN = { load_oob = "TZN_1936" }
+
+}
+
+}
+
+# Prussian OOB in Tanganyika
+
+country_event = {
+id = bces.120
+title = bces.120.t
+desc = bces.120.d
+fire_only_once = yes
+trigger = {
+tag = ENG
+ENG = { has_cosmetic_tag = ENG_navy }
+}
+picture = GFX_picture_bosnian_revolt
+option = {
+ name = bces.120.a
+ai_chance = { factor = 99}
+
+transfer_state = 1249
+
+548 = { add_claim_by = PRS }
+1248 = { add_claim_by = PRS }
+1249 = { add_claim_by = PRS }
+TZN = { add_opinion_modifier = {
+    target = ENG
+    modifier = large_decrease
+}
+}
+ASK = { add_opinion_modifier = {
+    target = ENG
+    modifier = large_decrease
+}
+}
+
+load_oob = "PRS_TZN"
+
+}
+
 }
