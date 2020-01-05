@@ -66,23 +66,35 @@ set_popularities = {
 	democratic_socialist = 0
 	social_democracy = 0
 	social_liberal = 0
-	conservative = 33
-	authoritharian = 45
-	reactionary = 22
+	conservative = 30
+	authoritharian = 22
+	reactionary = 58
 	pelekist = 0
 }
 
 add_ideas = {
-limited_conscription
+extensive_conscription
 }
 
 create_country_leader = {
-	name = "Provisional Government"
+	name = "Paul von Lettow-Vorbeck"
 	desc = "POLITICS_SALCHAK_TOKA_DESC"
 	picture = ""
 	expire = "1965.1.1"
-	ideology = authoritharian_subtype
+	ideology = military_junta
 	traits = {
 		#
 	}
+}
+
+create_corps_commander = {
+	name = "Paul von Lettow-Vorbeck"
+	picture = ""
+	traits = { infantry_officer trait_trickster politically_connected}
+	skill = 5
+	id = 15
+	attack_skill = 6
+	defense_skill = 5
+	planning_skill = 3
+	logistics_skill = 4
 }
