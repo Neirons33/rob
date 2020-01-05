@@ -3055,7 +3055,7 @@ tag = PER
 option = {
 ###Agree
 
-name = turkmenreds.184.a
+name = turkmenreds.185.a
 ai_chance = { factor = 95}
 
 create_faction = Turkmen_Persian
@@ -3065,7 +3065,7 @@ PER = { add_to_faction = TMS }
 option = {
 ###Decline
 
-name = turkmenreds.184.b
+name = turkmenreds.185.b
 ai_chance = { factor = 5}
 
 TMS = { 
@@ -3076,4 +3076,32 @@ country_event = {
 
 
 }
+}
+
+###TMS Proposes an Alliance rejected
+
+country_event = {
+id = turkmenreds.186
+title = turkmenreds.186.t
+desc = turkmenreds.186.d
+fire_only_once = yes
+is_triggered_only = yes
+picture = GFX_picture_bosnian_revolt
+
+trigger = {
+tag = TMS
+
+}
+
+
+option = {
+###aw mann
+
+name = turkmenreds.185.a
+ai_chance = { factor = 95}
+
+
+
+}
+
 }

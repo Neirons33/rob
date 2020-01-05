@@ -925,7 +925,7 @@ country_event = {
  trigger = {
   has_war = no
   SWE = { NOT = { is_puppet_of = ROOT } }
-  114 = { is_owned_and_controlled_by = ROOT }
+  141 = { is_owned_and_controlled_by = ROOT }
   NOT = {
    tag = SWE
   }
@@ -2022,7 +2022,7 @@ country_event = {
  trigger = {
   has_war = no
   PER = { NOT = { is_puppet_of = ROOT } }
-  226 = { is_owned_and_controlled_by = ROOT }
+  266 = { is_owned_and_controlled_by = ROOT }
   NOT = {
    tag = PER
   }

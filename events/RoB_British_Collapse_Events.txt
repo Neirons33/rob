@@ -644,7 +644,7 @@ add_opinion_modifier = {
 }
 
 option = {
- name = bces.116.b
+ name = bces.117.b
 ai_chance = { factor = 1}
 add_political_power = -10
 
@@ -656,9 +656,9 @@ add_political_power = -10
 # Canada gets Newfoundland
 
 country_event = {
-id = bces.117
-title = bces.117.t
-desc = bces.117.d
+id = bces.118
+title = bces.118.t
+desc = bces.118.d
 fire_only_once = yes
 trigger = {
 tag = CAN
@@ -666,7 +666,7 @@ ENG = { has_cosmetic_tag = ENG_navy }
 }
 picture = GFX_picture_bosnian_revolt
 option = {
- name = bces.117.a
+ name = bces.118.a
 ai_chance = { factor = 99}
 CAN = { transfer_state = 331 }
 331 = { add_core_of = CAN }
@@ -677,7 +677,7 @@ CAN = { transfer_state = 332 }
 }
 
 option = {
- name = bces.116.b
+ name = bces.118.b
 ai_chance = { factor = 1}
 add_political_power = -10
 
