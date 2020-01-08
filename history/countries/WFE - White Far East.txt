@@ -48,6 +48,9 @@ set_popularities = {
 }
 add_ideas = {
 extensive_conscription
+WFE_naval_influence
+WFE_thicc_fleet
+WFE_japanese_blockade
 }
 
 set_convoys = 50

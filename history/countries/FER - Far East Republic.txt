@@ -43,6 +43,13 @@ set_popularities = {
 	pelekist = 0
 }
 
+add_ideas = {
+limited_conscription
+FER_far_eastern_democracatic_beacon
+FER_tacit_american_support
+FER_loose_control
+}
+
 create_country_leader = {
 	
 	name = "Viktor Pepelyayev"

@@ -41,6 +41,11 @@ set_popularities = {
 	pelekist = 10
 }
 
+add_ideas = {
+extensive_conscription
+JVD_unpopular_regime
+JVD_japanese_dominance
+}
 
 create_country_leader = {
 	

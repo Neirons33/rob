@@ -21,7 +21,9 @@ set_popularities = {
 	pelekist = 0
 }
 add_ideas = {
- extensive_conscription
+	extensive_conscription
+	JSW_siberian_guerillas
+	JSW_decentralized_communes
 }
 
 create_country_leader = {

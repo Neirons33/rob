@@ -27,6 +27,9 @@ set_popularities = {
 
 add_ideas = {
 	extensive_conscription
+	SFS_german_origin
+	SFS_language_issue
+	SFS_siberian_cold
 }
 
 
