@@ -321,7 +321,7 @@ name = belarusia.12.a
 ###Lithuania denies help 
 country_event = {
 id = belarusia.13
-title = belarusia.13.t
+title = "Lithuania Refuses Help"
 desc = belarusia.13.d
 fire_only_once = yes
 is_triggered_only = yes
@@ -339,7 +339,7 @@ set_country_flag = BLR_on_our_own
 ###Lithuania accepts  
 country_event = {
 id = belarusia.14
-title = belarusia.14.t
+title = "Lithuanian Arms Arrive"
 desc = belarusia.14.d
 fire_only_once = yes
 is_triggered_only = yes

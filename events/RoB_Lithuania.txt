@@ -27,18 +27,20 @@ option = {
 ###Belarussians ask for help
 country_event = { 
 id = lithuania.1
-title = lithuania.1.t
+title = "Belarusian Nationalists Request Support"
 desc = lithuania.1.d
 fire_only_once = yes
 is_triggered_only = yes
 
 option = { ###accept
+ name = "Communists and Poles are bigger enemies"
  BLR = { country_event = { id = belarusia.14 days = 5 } }
    	ai_chance = {
 			factor = 200
 			}
  }
 option = { ###deny
+ name = "We Can't Arm Our Future Enemies"
  BLR = { country_event = { id = belarusia.13 days = 5 } }
    	ai_chance = {
 			factor = 20
@@ -153,6 +155,17 @@ option = { ###Military Coups!
   ruling_party = authoritharian
   elections_allowed = no
  }
+ add_ideas = {
+ LIT_kazys_skirpa_hog
+ LIT_petras_kubiliunas_im
+ LIT_povilas_plechavicius_fm
+ LIT_vytautas_zemaitis_em
+ LIT_kazys_musteikis_dm
+ }
+ remove_ideas = {
+		 pelekists_rising
+		 pearl_of_stability
+		}
  hidden_effect = {
   country_event = { id = lithuania.6 days = 10 }
  }
@@ -300,7 +313,7 @@ add_political_power = -100
  create_country_leader = {
 	name = "National Council"
 	desc = ""
-	picture = ".tga"
+	picture = "Portrait_Lithuania_National_Council.tga"
 	expire = "1953.3.1"
 	ideology = pelekist_subtype
 	traits = {

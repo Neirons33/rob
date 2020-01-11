@@ -9,7 +9,7 @@ LIT_lith_raids = {
   NOT = { OR = { EST = { is_puppet_of = LIT } EST = { exists = no } } }
   }
   cost = 25
-  days_remove = 25 
+  days_remove = 20 
   ai_will_do = {
 	base = 200
 	}
@@ -17,7 +17,7 @@ LIT_lith_raids = {
    set_country_flag = LIT_active_raid
   }
   remove_effect = {
-   start_border_war = {
+   start_border_war = { 
 				change_state_after_war = no
 				attacker = {
 					state = 189
@@ -48,7 +48,7 @@ LIT_lith_raids = {
   NOT = { OR = { EST = { is_puppet_of = LIT } EST = { exists = no } } }
   }
   cost = 25
-  days_remove = 25  
+  days_remove = 20  
   ai_will_do = {
 	base = 200
 	}
@@ -88,7 +88,7 @@ LIT_lith_raids = {
   NOT = { OR = { EST = { is_puppet_of = LIT } EST = { exists = no } } }
   }
   cost = 25
-  days_remove = 25
+  days_remove = 20
   ai_will_do = {
 	base = 200
 	}
@@ -99,7 +99,7 @@ LIT_lith_raids = {
    start_border_war = {
 				change_state_after_war = no
 				attacker = {
-					state = 189
+					state = 11
 					num_provinces = 1
 					on_win = lithuania.33
 					on_lose = lithuania.34
@@ -127,7 +127,7 @@ LIT_lith_raids = {
   NOT = { OR = { BLR = { is_puppet_of = LIT } BLR = { exists = no } } }
   }
   cost = 25
-  days_remove = 25 
+  days_remove = 20 
   ai_will_do = {
 	base = 200
 	}
@@ -166,7 +166,7 @@ LIT_lith_raids = {
   NOT = { OR = { BLR = { is_puppet_of = LIT } BLR = { exists = no } } }
   }
   cost = 25
-  days_remove = 25  
+  days_remove = 20  
   ai_will_do = {
 	base = 200
 	}
@@ -206,7 +206,7 @@ LIT_lith_raids = {
   NOT = { OR = { BLR = { is_puppet_of = LIT } BLR = { exists = no } } }
   }
   cost = 25
-  days_remove = 25
+  days_remove = 20
   ai_will_do = {
 	base = 200
 	}
@@ -247,7 +247,7 @@ LIT_lith_raids = {
   has_country_flag = LIT_prussian_raids
   }
   cost = 25
-  days_remove = 25 
+  days_remove = 20 
   ai_will_do = {
 	base = 20
 	}
@@ -288,7 +288,7 @@ LIT_lith_raids = {
   has_country_flag = LIT_prussian_raids
   }
   cost = 25
-  days_remove = 25  
+  days_remove = 20  
   ai_will_do = {
 	base = 20
 	}
@@ -330,7 +330,7 @@ LIT_lith_raids = {
   has_country_flag = LIT_prussian_raids
   }
   cost = 25
-  days_remove = 25
+  days_remove = 20
   ai_will_do = {
 	base = 20
 	}

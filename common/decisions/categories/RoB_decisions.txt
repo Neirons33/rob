@@ -21,6 +21,7 @@ LIT_baltificiation = {
 	visible = {
     tag = LIT
 	has_government = pelekist
+	date < 1236.9.22
           }
 	available = {
     tag = LIT

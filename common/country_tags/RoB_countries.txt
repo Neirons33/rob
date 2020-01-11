@@ -35,6 +35,9 @@ BRU = "countries/British Union.txt"
 BRL = "countries/British Liberal Union.txt"
 BRC = "countries/British Conservatives.txt"
 BSQ = "countries/Basque.txt"
+RMR = "countries/Romanian Republic.txt"
+TIG = "countries/Transylvanian Iron Guard.txt"
+SZK = "countries/Szekely.txt"
 
 
 ##America##

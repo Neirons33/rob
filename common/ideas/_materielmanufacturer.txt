@@ -7,7 +7,7 @@ ideas = {
    picture = RSR_grabin
    allowed = { original_tag = SOV }
    cost = 150  
-   research_bonus = { artillery_equipment = 0.1 }	
+   research_bonus = { artillery = 0.1 }	
    modifier = {
     army_artillery_attack_factor = 0.1
 	army_artillery_defence_factor = 0.1
@@ -45,7 +45,7 @@ ideas = {
    picture = LIT_linkaiciu_artilerijos_dirbtuves
    allowed = { original_tag = LIT }
    cost = 150  
-   research_bonus = { artillery_equipment = 0.1 }	
+   research_bonus = { artillery = 0.1 }	
    modifier = {
     army_artillery_attack_factor = 0.1
 	army_artillery_defence_factor = 0.1
