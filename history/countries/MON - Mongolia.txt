@@ -26,11 +26,10 @@ set_popularities = {
 
 add_ideas = {
 	extensive_conscription
+	MON_nomadic_tradition
+	MON_local_opposition	
 }
-	declare_war_on = {
-		target = IRK
-		type = annex_everything
-	}
+
 
 create_country_leader = {
 	name = "Roman von Ungern-Sternberg"

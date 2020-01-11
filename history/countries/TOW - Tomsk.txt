@@ -35,6 +35,7 @@ create_faction = "Union of Romanovs"
 add_to_faction = BWR
 add_to_faction = KRW
 add_to_faction = BRW
+add_to_faction = IRK
 set_country_flag = RUS_warlord
 create_country_leader = {
 	name = "Grand Duke Kirill Vladimirovich"

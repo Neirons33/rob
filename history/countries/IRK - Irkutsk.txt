@@ -29,7 +29,6 @@ set_popularities = {
 add_ideas = {
 	extensive_conscription
 	IRK_irkutskan_militarization
-	IRK_monarchist_treason
 }
 
 
