@@ -87,7 +87,7 @@ option = {
 ###We do what we must
 
 name = mongolia.101.a
-ai_chance = { factor = 90}
+ai_chance = { factor = 80}
 
 MON = { country_event = {
 id = mongolia.104
@@ -102,7 +102,7 @@ option = {
 ###We will not betray our irkutskan friends
 
 name = mongolia.101.b
-ai_chance = { factor = 10}
+ai_chance = { factor = 20}
 
 MON = { country_event = {
 id = mongolia.102
