@@ -55,14 +55,27 @@ units = {
 
 	}
 	division = {
-		name = "Sternburg Brigade"
+		name = "1st Sternberg Division"
 		location = 4801
 		division_template = "Mongolian Cavalry"
 		start_experience_factor = 0.5
 	}
+	division = {
+		name = "2nd Sternberg Division"
+		location = 7676
+		division_template = "Mongolian Cavalry"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "1st Russian Cossacks"
+		location = 4882
+		division_template = "Mongolian Cavalry"
+		start_experience_factor = 0.3
+
+	}
 	#Herat Army
 	division = {
-		name = "1st Cossacks"
+		name = "2nd Russian Cossacks"
 		location = 7717
 		division_template = "Mongolian Cavalry"
 		start_experience_factor = 0.3
@@ -80,7 +93,14 @@ units = {
 		location = 10575
 		division_template = "Militia"
 		start_equipment_factor = 0.3
-
+}
+	division = {
+		name = "3rd Mongolian Infantry"
+		location = 7703
+		division_template = "Militia"
+		start_equipment_factor = 0.3
+}
+}
 
 
 ### Starting Equipment ###
