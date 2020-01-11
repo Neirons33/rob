@@ -60,7 +60,7 @@ trigger = {
  tag = BWR
  tag = TOW
  }
- date > 1934.2.1
+ date > 1934.4.1
 }
 
 mean_time_to_happen = { days = 1 }
