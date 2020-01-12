@@ -591,6 +591,7 @@ name = bces.115.b
 trigger = { has_navy_size = {
     size > 10
 }
+NOT = { has_government = pelekist }
 }
 ai_chance = { factor = 25}
 declare_war_on = {
@@ -741,7 +742,7 @@ TZN = { transfer_state = 546 }
 TZN = { transfer_state = 1248 }
 TZN = { transfer_state = 1249 }
 
-548 = { add_core_of = TZN }
+546 = { add_core_of = TZN }
 1248 = { add_core_of = TZN }
 1249 = { add_core_of = TZN }
 TZN = { add_opinion_modifier = {
@@ -764,8 +765,9 @@ title = bces.120.t
 desc = bces.120.d
 fire_only_once = yes
 trigger = {
-tag = ENG
+tag = PRS
 ENG = { has_cosmetic_tag = ENG_navy }
+has_war_with = TZN
 }
 picture = GFX_picture_bosnian_revolt
 option = {
@@ -774,21 +776,59 @@ ai_chance = { factor = 99}
 
 transfer_state = 1249
 
-548 = { add_claim_by = PRS }
+546 = { add_claim_by = PRS }
 1248 = { add_claim_by = PRS }
 1249 = { add_claim_by = PRS }
 TZN = { add_opinion_modifier = {
-    target = ENG
+    target = PRS
     modifier = large_decrease
 }
 }
 ASK = { add_opinion_modifier = {
-    target = ENG
+    target = PRS
     modifier = large_decrease
 }
 }
 
 load_oob = "PRS_TZN"
+
+hidden_effect = { set_country_flag = PRS_TZN }
+
+}
+
+}
+
+# Prussian Peace in Tanganyika
+
+country_event = {
+id = bces.121
+title = bces.121.t
+desc = bces.121.d
+fire_only_once = yes
+trigger = {
+tag = PRS
+
+has_country_flag = PRS_TZN
+
+OR = { has_war_with = TZN
+has_war_with = ASK
+}
+NOT = { controls_state = 1249 }
+}
+picture = GFX_picture_bosnian_revolt
+option = {
+ name = bces.120.a
+ai_chance = { factor = 99}
+
+every_country = { 
+limit = { owns_state = 546 }
+transfer_state = 1249
+}
+
+every_country = {
+limit = { has_war_with = PRS }
+white_peace = PRS
+}
 
 }
 
