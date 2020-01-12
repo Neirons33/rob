@@ -23,6 +23,7 @@ state={
 
 		}
 		add_core_of = JVD
+		add_core_of = WFE
 
 	}
 
