@@ -292,3 +292,86 @@ add_stability = -0.1
 }
 
 }
+
+###Persia invades Baluchistan?
+
+
+country_event = {
+id = afghanistan.110
+title = afghanistan.110.t
+desc = afghanistan.110.d
+fire_only_once = yes
+picture = GFX_picture_bosnian_revolt
+
+trigger = {
+tag = PER
+BAL = { controls_state = 444 }
+}
+mean_time_to_happen = { days = 50 }
+
+option = {
+name = afghanistan.110.a
+ai_chance = { factor = 66}
+
+declare_war_on = {
+    target = BAL
+    type = annex_everything
+}
+
+hidden_effect = { 
+		AFG = { country_event = {
+    id = afghanistan.111
+    days = 2
+}
+}
+}
+
+444 = { add_core_of = PER }
+1169 = { add_core_of = PER }
+hidden_effect = { 410 = { add_core_of = BAL } }
+
+}
+
+option = {
+name = afghanistan.110.b
+ai_chance = { factor = 33}
+add_stability = -0.1
+}
+
+}
+
+###The Afghans strike back
+
+
+country_event = {
+id = afghanistan.111
+title = afghanistan.111.t
+desc = afghanistan.111.d
+fire_only_once = yes
+is_triggered_only = yes
+picture = GFX_picture_bosnian_revolt
+
+trigger = {
+tag = AFG
+}
+
+option = {
+name = afghanistan.111.a
+ai_chance = { factor = 66}
+
+declare_war_on = {
+    target = PER
+    type = annex_everything
+}
+
+puppet = BAL
+
+}
+
+option = {
+name = afghanistan.111.b
+ai_chance = { factor = 33}
+add_stability = -0.05
+}
+
+}
