@@ -66,7 +66,6 @@ desc = serbia.102.d
 fire_only_once = yes
 trigger = {
 tag = BOS
-has_war_with = SER
 OR = { 
 controls_state = 1140
 CRO = { controls_state = 1140 }
@@ -142,7 +141,6 @@ desc = serbia.103.d
 fire_only_once = yes
 trigger = {
 tag = SER
-has_war_with = CRO
 OR = { 
 controls_state = 109
 ALB = { controls_state = 109 }
@@ -183,7 +181,8 @@ option = {
  name = serbia.103.c
 ai_chance = { factor = 15}
 
-
+white_peace = CRO
+ALB = { white_peace = CRO }
 868 = { add_core_of = SER }
 937 = { add_core_of = SER }
 1077 = { add_core_of = SER }

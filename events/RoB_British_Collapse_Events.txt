@@ -514,6 +514,33 @@ ai_chance = { factor = 25}
 
 }
 
+option = {
+# Heia Safari
+ name = bces.113.c
+ai_chance = { factor = 0}
+hidden_effect = { ENG = { country_event = {
+    id = bces.114
+    days = 12
+}
+}
+}
+hidden_effect = { PRS = { country_event = {
+    id = bces.115
+    days = 13
+}
+}
+}
+hidden_effect = { PRS = { country_event = {
+    id = bces.122
+    days = 13
+}
+}
+}
+
+
+
+}
+
 }
 
 # Paul von Lettow disappears and takes over tanzania
@@ -829,6 +856,29 @@ every_country = {
 limit = { has_war_with = PRS }
 white_peace = PRS
 }
+
+}
+
+}
+
+# Heia Safari
+
+country_event = {
+id = bces.122
+title = bces.122.t
+desc = bces.122.d
+fire_only_once = yes
+is_triggered_only = yes
+trigger = {
+tag = PRS
+}
+picture = GFX_picture_bosnian_revolt
+option = {
+ name = bces.122.a
+ai_chance = { factor = 99}
+
+ASK = { change_tag_from = ROOT }
+
 
 }
 
