@@ -1,11 +1,31 @@
-﻿capital = 105 # Montenegro
+capital = 105 # Montenegro
 
 oob = "MON_1936"
 
 set_research_slots = 3
 
-# Starting tech
-# clone of Yugoslavia
+set_politics = {
+	ruling_party = authoritharian
+	last_election = "1933.7.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	national_socialist = 0
+	socialist = 5
+	democratic_socialist = 0
+	social_democracy = 0
+	social_liberal = 0
+	conservative = 17
+	authoritharian = 78
+	reactionary = 0
+	pelekist = 0
+}
+
+add_ideas = {
+	
+}
+
 set_technology = {
 	tech_support = 1		
 	tech_engineers = 1
@@ -15,6 +35,8 @@ set_technology = {
 	basic_light_tank = 1
 	infantry_weapons = 1
 	infantry_weapons1 = 1
+	fuel_silos = 1
+	gw_artillery = 1
 }
 
 if = {
@@ -42,52 +64,17 @@ if = {
 	}
 }
 
-set_politics = {
 
-	parties = {
-		fascism = { 
-			popularity = 33
-		}
-		neutrality = { 
-			popularity = 33
-		}		
-		communism = {
-			popularity = 34
-		}
-	}
-}
+set_convoys = 10
+set_stability = 0.6
 
 create_country_leader = {
-	name = "Sekula Drljević"
+	name = "Peter I"
 	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
-	expire = "1953.3.1"
-	ideology = fascism_ideology
+	picture = "gfx/leaders/Europe/portrait_europe_generic_land_19.dds"
+	expire = "1965.1.1"
+	ideology = authoritharian_subtype
 	traits = {
-		
+		#
 	}
 }
-
-create_country_leader = {
-	name = "Novica Radović"
-	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
-	expire = "1953.3.1"
-	ideology = oligarchism
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = "Blažo Jovanović"
-	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
-	expire = "1953.3.1"
-	ideology = leninism
-	traits = {
-		
-	}
-}
-
-
