@@ -517,3 +517,23 @@ LES_invasion = {
 
 
 }
+
+ALL_executive = {
+
+  icon = GFX_decision_category_military_operation
+  picture = GFX_decision_germany_partisans
+	visible = {
+	NOT = { is_ai = yes }
+	NOT = { has_country_flag = no_executives }
+	}
+	available = {
+	ROOT = {
+	NOT = { is_ai = yes }
+	}
+	}
+		  priority = {
+		  base = 120
+		  }
+
+
+}
