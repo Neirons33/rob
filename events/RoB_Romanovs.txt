@@ -141,7 +141,6 @@ country_event = {
 id = romanov.5
 title = romanov.5.t
 desc = romanov.5.d
-fire_only_once = yes
 is_triggered_only = yes
 
 option = { #refuse
@@ -175,7 +174,6 @@ country_event = {
 id = romanov.6
 title = romanov.6.t
 desc = romanov.6.d
-fire_only_once = yes
 is_triggered_only = yes
 
 option = { #refuse

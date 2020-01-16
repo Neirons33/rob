@@ -152,7 +152,6 @@ id = mongolia.103
 title = mongolia.103.t
 desc = mongolia.103.d
 fire_only_once = yes
-is_triggered_only = yes
 picture = GFX_picture_bosnian_revolt
 
 trigger = {
