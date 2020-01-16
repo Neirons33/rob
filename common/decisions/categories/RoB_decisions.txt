@@ -130,6 +130,11 @@ IND_indian_unification = {
         tag = BRJ
     }
    owns_state = 423
+OR = {
+has_government = pelekist
+has_government = socialist
+}
+
 }
 
 	if = {
