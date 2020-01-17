@@ -154,10 +154,20 @@ if = {
 		autonomous_state = autonomy_integrated_puppet
 		freedom_level = 0.2
 	}
+	set_autonomy = {
+		target = OTT
+		autonomous_state = autonomy_integrated_puppet
+		freedom_level = 0.2
+	}
 	else = {
 		puppet = MAL
 		puppet = BRJ
+		puppet = CAN
+		puppet = SAF
+		puppet = AST
+		puppet = NZL
 		puppet = EGY
+		puppet = OTT
 
 	}
 }
