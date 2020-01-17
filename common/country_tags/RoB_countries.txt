@@ -38,7 +38,7 @@ BSQ = "countries/Basque.txt"
 RMR = "countries/Romanian Republic.txt"
 TIG = "countries/Transylvanian Iron Guard.txt"
 SZK = "countries/Szekely.txt"
-
+OTT = "countries/Ottomans.txt"
 
 ##America##
 GRL = "countries/Greenland.txt"
