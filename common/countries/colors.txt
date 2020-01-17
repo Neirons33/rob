@@ -138,6 +138,10 @@ TUR = {
 	color = rgb { 171 190 152 }
 	color_ui = rgb { 222 247 198 }
 }
+OTT = {
+	color = rgb { 153 76 10 }
+	color_ui = rgb { 153 76 10 }
+}
 GRE = {
 	color = rgb { 79 173 141 }
 	color_ui = rgb { 79 173 141 }
