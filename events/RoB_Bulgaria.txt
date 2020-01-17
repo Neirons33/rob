@@ -551,6 +551,21 @@ declare_war_on = {
     target = GRE
     type = annex_everything
 }
+TUR = { 
+add_to_war = { 
+    targeted_alliance = BUL 
+    enemy = GRE 
+    hostility_reason = asked_to_join
+}
+}
+ALB = { 
+add_to_war = { 
+    targeted_alliance = BUL 
+    enemy = GRE 
+    hostility_reason = asked_to_join
+}
+}
+
 add_war_support = 0.25
 add_stability = 0.25
 
@@ -931,7 +946,7 @@ BUL = { transfer_state = 77 }
 }
 
 option = {
- name = bulgaria.108.b
+ name = bulgaria.126.b
 # Take what was rightfully ours to begin with
 ai_chance = { factor = 40}
 
@@ -942,7 +957,7 @@ BUL = { transfer_state = 832 }
 
 }
 option = {
- name = bulgaria.108.c
+ name = bulgaria.126.c
 # Take as much as we can claim
 ai_chance = { factor = 10}
 
@@ -953,6 +968,96 @@ BUL = { transfer_state = 832 }
 832 = { add_core_of = BUL }
 BUL = { transfer_state = 831 }
 831 = { add_core_of = BUL }
+
+}
+}
+
+# Armenia Declares War
+
+country_event = {
+id = bulgaria.127
+title = bulgaria.127.t
+desc = bulgaria.127.d
+fire_only_once = yes
+trigger = {
+tag = ARM
+TUR = { has_war_with = GRE }
+}
+picture = GFX_picture_bosnian_revolt
+option = {
+ name = bulgaria.127.a
+ai_chance = { factor = 70}
+
+declare_war_on = {
+    target = TUR
+    type = annex_everything
+}
+
+
+}
+
+option = {
+ name = bulgaria.127.b
+ai_chance = { factor = 30}
+
+
+add_political_power = -50
+
+}
+}
+
+
+# Armenian Peace Event Victory
+
+country_event = {
+id = bulgaria.128
+title = bulgaria.128.t
+desc = bulgaria.128.d
+fire_only_once = yes
+trigger = {
+tag = ARM
+has_war_with = TUR
+
+controls_state = 230
+controls_state = 353
+controls_state = 354
+controls_state = 352
+controls_state = 959
+controls_state = 960
+controls_state = 1002
+controls_state = 354
+controls_state = 955
+controls_state = 1000
+}
+picture = GFX_picture_bosnian_revolt
+option = {
+ name = bulgaria.128.a
+ai_chance = { factor = 100}
+
+white_peace = TUR
+hidden_effect = {
+white_peace = ALB
+white_peace = BUL
+}
+
+ARM = { transfer_state = 955 }
+ARM = { transfer_state = 1000 }
+ARM = { transfer_state = 1002 }
+955 = { add_core_of = ARM }
+1000 = { add_core_of = ARM }
+1002 = { add_core_of = ARM }
+
+
+}
+
+}
+
+option = {
+ name = bulgaria.128.b
+ai_chance = { factor = 0}
+
+
+add_political_power = -50
 
 }
 }
