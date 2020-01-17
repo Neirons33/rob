@@ -121,7 +121,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 11
 		}
-		location = 9833
+		location = 890
 		division_template = "Piyade Tümeni" 
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
@@ -133,7 +133,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 2
 		}
-		location = 9833
+		location = 856
 		division_template = "Süvari Tümeni" 
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
