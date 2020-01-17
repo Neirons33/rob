@@ -867,7 +867,6 @@ controls_state = 48
 controls_state = 1005
 controls_state = 212
 controls_state = 1135
-controls_state = 341
 controls_state = 339
 controls_state = 47
 
@@ -892,7 +891,6 @@ GRE = { transfer_state = 1132 }
 1005 = { add_core_of = GRE }
 GRE = { transfer_state = 1005 }
 
-341 = { add_core_of = GRE }
 993 = { add_core_of = GRE }
 994 = { add_core_of = GRE }
 340 = { add_core_of = GRE }
@@ -905,7 +903,9 @@ GRE = { transfer_state = 950 }
 GRE = { transfer_state = 340 }
 GRE = { transfer_state = 994 }
 GRE = { transfer_state = 993 }
+IF = { limit = { TUR = { owns_state = 341 } }
 GRE = { transfer_state = 341 }
+}
 
 add_stability = 0.1
 
@@ -1030,6 +1030,7 @@ controls_state = 955
 controls_state = 1000
 }
 picture = GFX_picture_bosnian_revolt
+
 option = {
  name = bulgaria.128.a
 ai_chance = { factor = 100}
@@ -1050,7 +1051,6 @@ ARM = { transfer_state = 1002 }
 
 }
 
-}
 
 option = {
  name = bulgaria.128.b
@@ -1060,4 +1060,143 @@ ai_chance = { factor = 0}
 add_political_power = -50
 
 }
+}
+
+# Destroy the Ottomans!
+
+country_event = {
+id = bulgaria.129
+title = bulgaria.129.t
+desc = bulgaria.129.d
+fire_only_once = yes
+trigger = {
+tag = GRE
+owns_state = 952
+BRU\ = { exists = yes }
+
+}
+immediate = { hidden_effect = { ENG = { end_puppet = OTT } } } 
+picture = GFX_picture_bosnian_revolt
+option = {
+ name = bulgaria.129.a
+ai_chance = { factor = 95}
+declare_war_on = {
+    target = OTT
+    type = annex_everything
+}
+
+}
+
+
+
+option = {
+ name = bulgaria.129.b
+ai_chance = { factor = 5}
+
+
+add_political_power = -50
+
+}
+}
+
+# Destroy the Ottomans!
+
+country_event = {
+id = bulgaria.130
+title = bulgaria.130.t
+desc = bulgaria.130.d
+fire_only_once = yes
+trigger = {
+tag = TUR
+owns_state = 1003
+BRU = { exists = yes }
+
+}
+immediate = { hidden_effect = { ENG = { end_puppet = OTT } } }
+picture = GFX_picture_bosnian_revolt
+option = {
+ name = bulgaria.130.a
+ai_chance = { factor = 95}
+declare_war_on = {
+    target = OTT
+    type = annex_everything
+}
+
+}
+
+
+
+option = {
+ name = bulgaria.130.b
+ai_chance = { factor = 5}
+
+
+add_political_power = -50
+
+}
+}
+
+# Ottoman Mobilization
+
+country_event = {
+id = bulgaria.131
+title = bulgaria.131.t
+desc = bulgaria.131.d
+fire_only_once = yes
+trigger = {
+tag = OTT
+OR = { has_war_with = TUR
+has_war_with = GRE
+}
+
+
+}
+picture = GFX_picture_bosnian_revolt
+option = {
+ name = bulgaria.131.a
+ai_chance = { factor = 95}
+
+add_ideas = scraping_the_barrel
+add_manpower = 50000
+
+341 = { create_unit = {
+    division = "name = \"1. Piyade Tümeni\" division_template = \"Piyade Tümeni\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+    owner = OTT
+}
+}
+
+341 = { create_unit = {
+    division = "name = \"2. Piyade Tümeni\" division_template = \"Piyade Tümeni\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+    owner = OTT
+}
+}
+
+341 = { create_unit = {
+    division = "name = \"3. Piyade Tümeni\" division_template = \"Piyade Tümeni\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+    owner = OTT
+}
+}
+
+341 = { create_unit = {
+    division = "name = \"4. Piyade Tümeni\" division_template = \"Piyade Tümeni\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+    owner = OTT
+}
+}
+341 = { create_unit = {
+    division = "name = \"1. Süvari Tümeni\" division_template = \"Süvari Tümeni\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+    owner = OTT
+}
+}
+341 = { create_unit = {
+    division = "name = \"2. Süvari Tümeni\" division_template = \"Süvari Tümeni\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+    owner = OTT
+}
+}
+
+
+
+}
+
+
+
 }
