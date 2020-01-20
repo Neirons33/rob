@@ -44,7 +44,7 @@ puppet = AGR
 
 create_country_leader = {
 	name = "Radola Gajda"
-	desc = "POLITICS_FRANKLIN_DELANO_ROOSEVELT_DESC"
+	desc = "POLITICS_RADOLA_GAJDA_DESC"
 	picture = "radola_gajda.tga"
 	expire = "1960.1.1"
 	ideology = pelekist_subtype

@@ -2335,7 +2335,19 @@ spriteTypes = {
 		name = "GFX_idea_RSR_nevskoye_design_bureau"
 		texturefile = "gfx/interface/ideas/RSR_nevskoye_design_bureau.dds"
 	}
-	
+	###LEGION STATE IDEAS
+	spriteType = {
+		name = "GFX_idea_LES_army"
+		texturefile = "gfx/interface/ideas/LES_army.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_LES_discontent"
+		texturefile = "gfx/interface/ideas/LES_discontent.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_LES_risk_of_famine"
+		texturefile = "gfx/interface/ideas/LES_risk_of_famine.tga"
+	}
 	### HUNGARIAN IDEAS
 	
 	spriteType = {

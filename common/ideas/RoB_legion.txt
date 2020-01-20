@@ -4,7 +4,7 @@ country = {
 
 
 	LES_disorganised_army = {
-		picture = GFX_idea_minority_troubles	
+		picture = LES_army	
 		allowed = {
 		always = no
 		}
@@ -157,7 +157,7 @@ LES_Fiercest_Infantry = {
 
 }
    LES_Discontent = {
-   picture = GFX_idea_minority_troubles	
+   picture = LES_discontent	
    allowed = {
        always = no
      }
@@ -675,7 +675,7 @@ LES_Fiercest_Infantry = {
    }
 }
 	LES_Risk_of_Famine = {
-   picture = GFX_idea_minority_troubles	
+   picture = LES_risk_of_famine	
    allowed = {
        always = no
      }
@@ -693,7 +693,7 @@ LES_Fiercest_Infantry = {
 
 }
   LES_Risk_of_Famine_2 = {
-   picture = GFX_idea_minority_troubles 
+   picture = LES_risk_of_famine 
    allowed = {
        always = no
      }
@@ -711,7 +711,7 @@ LES_Fiercest_Infantry = {
 
 }
   LES_Risk_of_Famine_3 = {
-   picture = GFX_idea_minority_troubles 
+   picture = LES_risk_of_famine 
    allowed = {
        always = no
      }

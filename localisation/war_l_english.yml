@@ -10,6 +10,7 @@
  WAR_NAME_ITA_ETH:0 "Italian War on Ethiopia"
  WAR_NAME_SER_BOS:0 "Bosnian Uprising of 1934"
  WAR_NAME_GER_BAV:0 "South German Pelekist Revolt"
+ WAR_NAME_GER_BDB:0 "North German Ludendorfist Uprising"
  WAR_NAME_MON_IRK:0 "Buryatian War"
  WAR_NAME_TAJ_TRS:0 "Second Basmachi Revolt"
  WAR_NAME_BUL_GRE:0 "Third Balkan War"
@@ -17,3 +18,4 @@
  WAR_NAME_RAJ_BRJ:0 "Indian Unification War"
  WAR_NAME_KAZ_KZR:0 "Kazakh Revolution"
  WAR_NAME_KHV_TMS:0 "Khivan Revolt"
+ WAR_NAME_TOW_BWR:0 "Scramble for Siberia"

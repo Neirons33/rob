@@ -31,7 +31,7 @@ add_ideas = {
  civil_war_attrition_2
 }
 
-create_faction = "Union of Romanovs"
+create_faction = "Romanov Russia"
 add_to_faction = BWR
 add_to_faction = KRW
 add_to_faction = BRW

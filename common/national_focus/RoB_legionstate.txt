@@ -382,7 +382,7 @@ focus_tree = {
 	#Focus for ...devotes of the thunderer...
 	focus = {
 		id = LES_sonsofperun
-		icon = GFX_focus_LIT_unitedasshield
+		icon = GFX_focus_LES_devotees_of_perun
 		x = 6
 		y = 1
 		cost = 1
@@ -2090,13 +2090,16 @@ focus_tree = {
 	#Focus for The Hour Has Come...
 	focus = {
 		id = LES_thehourhascome
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LES_the_hour_has_come
 		x = 6
 		y = 0
 		cost = 5
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 1
+		}
+		available = {
+		 date > 2002.1.1
 		}
 		completion_reward = {
 		LES = { country_event = { id = legion.1 days = 1 } }
@@ -2287,7 +2290,7 @@ focus_tree = {
 	#Focus for ...We sing the love of danger...
 	focus = {
 		id = LES_wesingtheloveofdanger
-		icon = GFX_goal_unknown
+		icon = GFX_focus_LES_we_sing_the_love_of_danger
 		x = 9
 		y = 1
 		cost = 1
@@ -2313,7 +2316,7 @@ focus_tree = {
 	#Focus for ...Warriors of Christ...
 	focus = {
 		id = LES_warriorsofchrist
-		icon = GFX_focus_LIT_clericalpelekism
+		icon = GFX_focus_LES_warriors_of_christ
 		x = 3
 		y = 1
 		cost = 1
