@@ -613,6 +613,8 @@ TUR = { transfer_state = 339 }
 TUR = { transfer_state = 989 }
 TUR = { transfer_state = 990 }
 TUR = { transfer_state = 991 }
+TUR = { transfer_state = 341 }
+
 976 = { add_core_of = ALB }
 1013 = { add_core_of = ALB }
 ALB = { transfer_state = 976 }
@@ -818,6 +820,7 @@ ai_chance = { factor = 95}
 white_peace = GRE
 TUR = { white_peace = GRE }
 ALB = { white_peace = GRE }
+TUR = { transfer_state = 341 }
 
 184 = { add_core_of = BUL }
 731 = { add_core_of = BUL }
@@ -1072,7 +1075,7 @@ fire_only_once = yes
 trigger = {
 tag = GRE
 owns_state = 952
-BRU\ = { exists = yes }
+BRU = { exists = yes }
 
 }
 immediate = { hidden_effect = { ENG = { end_puppet = OTT } } } 
