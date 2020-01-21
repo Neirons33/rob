@@ -11,33 +11,43 @@ ADR = { exists = yes }
 
  }
  complete_effect = {
-SWI = { annex_country = {
+every_country = 
+{ 
+limit = { owns_state = 151 } annex_country = {
     target = LIE
     transfer_troops = yes
 }
 }
-FRA = { annex_country = {
+every_country = 
+{ 
+limit = { owns_state = 821 } annex_country = {
     target = MCO
     transfer_troops = yes
 }
 }
-ITA = { annex_country = {
+every_country = 
+{ 
+limit = { owns_state = 161 } annex_country = {
     target = SMR
     transfer_troops = yes
 }
 }
-ITA = { annex_country = {
+every_country = 
+{ 
+limit = { owns_state = 2 } annex_country = {
     target = VCT
     transfer_troops = yes
 }
 }
-CAT = { annex_country = {
+every_country = 
+{ 
+limit = { owns_state = 1152 } annex_country = {
     target = ADR
     transfer_troops = yes
 }
-}
 
  }
+}
  ai_will_do = {
   base = 200
  }
