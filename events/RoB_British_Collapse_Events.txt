@@ -195,7 +195,7 @@ add_political_power = -10
 }
 }
 
-# Dervish State wants Somaliland
+# Dervish State wants Somaliland - Changed to Warsangali independence
 
 country_event = {
 id = bces.105
@@ -203,7 +203,7 @@ title = bces.105.t
 desc = bces.105.d
 fire_only_once = yes
 trigger = {
-tag = DRV
+tag = ENG
 ENG = { has_cosmetic_tag = ENG_navy }
 }
 picture = GFX_picture_bosnian_revolt
@@ -211,11 +211,18 @@ option = {
  name = bces.105.a
 ai_chance = { factor = 99}
 
-transfer_state = 269
-269 = { add_core_of = DRV }
-add_opinion_modifier = {
+SOM = { transfer_state = 269 }
+269 = { add_core_of = SOM }
+SOM = { add_opinion_modifier = {
     target = ENG
     modifier = minor_colony_seized
+}
+}
+SOM = { load_oob = "SOM_1936" }
+hidden_effect = {
+DRV = { 
+puppet = SOM
+}
 }
 
 
