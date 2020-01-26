@@ -1,4 +1,7 @@
-﻿capital = 559
+capital = 269
+# Somalia is the Warsangali Sultanate
+
+oob = "SOM_1936"
 
 # Starting tech
 set_technology = {
@@ -11,7 +14,7 @@ set_politics = {
 	ruling_party = reactionary
 	last_election = "1926.6.7"
 	election_frequency = 72
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
 	national_socialist = 0
@@ -23,4 +26,19 @@ set_popularities = {
 	authoritharian = 12
 	reactionary = 78
 	pelekist = 0
+}
+
+add_ideas = {
+limited_conscription
+}
+
+create_country_leader = {
+	name = "Mohamoud Ali Shire"
+	desc = ""
+	picture = "Portrait_Ethiopia_Haile_Selassie.dds"
+	expire = "1965.1.1"
+	ideology = reactionary_subtype
+	traits = {
+		#
+	}
 }

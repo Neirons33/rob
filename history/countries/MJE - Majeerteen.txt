@@ -29,6 +29,11 @@ set_popularities = {
 }
 
 give_guarantee = DRV
+give_guarantee = HBO
+
+add_ideas = {
+limited_conscription
+}
 
 create_country_leader = {
 	name = "Iyasu I"

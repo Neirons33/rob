@@ -28,6 +28,14 @@ set_popularities = {
 	pelekist = 0
 }
 
+give_guarantee = MJE
+give_guarantee = DRV
+
+add_ideas = {
+limited_conscription
+}
+
+
 create_country_leader = {
 	name = "Ali Yusuf Kenadid"
 	desc = ""
