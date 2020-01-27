@@ -38,6 +38,22 @@ ideas = {
 			}
    
    }
+   BEL_immient_collapse = {
+   allowed = {
+       always = no
+     }
+	 allowed_civil_war = {
+				always = yes
+			}
+     removal_cost = -1
+	 picture = GFX_idea_famine_of_1933
+	 
+	 modifier = {
+			stability_weekly = -0.03	
+
+			}
+   
+   }
    BEL_native_ignorance = {
    allowed = {
        always = no
