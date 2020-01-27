@@ -1,8 +1,10 @@
-capital = 6
+capital = 295
+
+oob = "BEL_1934"
 
 
-set_research_slots = 3
-set_stability = 0.25
+set_research_slots = 2
+set_stability = 0.3
 set_war_support = 0.5
 
 set_technology = {
@@ -23,7 +25,6 @@ set_technology = {
 		BEL_kingdom_in_exile
 		BEL_british_dominance
 		BEL_native_ignorance
-		BEL_loose_control
 	}
 
 set_politics = {
@@ -47,7 +48,6 @@ set_popularities = {
 
 
 set_convoys = 80
-set_stability = 0.75
 
 create_country_leader = {
 	name = "Leopold III of Belgium"
