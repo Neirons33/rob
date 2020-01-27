@@ -187,6 +187,7 @@ country_event = {
    SPR = { white_peace = POR }
    SPR = { transfer_state = 171 }
    SPR = { transfer_state = 1162 }
+IF = { limit = { POR = { owns_state = 297 } } transfer_state = 297 }
    ai_chance = {
 			factor = 40
 		}
@@ -195,13 +196,25 @@ country_event = {
    name = "And Their Colonies..."
    SPR = { white_peace = POR }
    add_stability =-0.05
+
    SPR = { transfer_state = 171 }
-   SPR = { transfer_state = 178 }
    SPR = { transfer_state = 1162 }
-   SPR = { transfer_state = 178 }
-   SPR = { transfer_state = 697 }
-   SPR = { transfer_state = 698 }
-   SPR = { transfer_state = 702 }
+IF = { limit = { POR = { owns_state = 702 } } transfer_state = 702 }
+IF = { limit = { POR = { owns_state = 296 } } transfer_state = 296 }
+IF = { limit = { POR = { owns_state = 297 } } transfer_state = 297 }
+IF = { limit = { POR = { owns_state = 540 } } transfer_state = 540 }
+IF = { limit = { POR = { owns_state = 544 } } transfer_state = 544 }
+IF = { limit = { POR = { owns_state = 1251 } } transfer_state = 1251 }
+IF = { limit = { POR = { owns_state = 770 } } transfer_state = 770 }
+IF = { limit = { POR = { owns_state = 771 } } transfer_state = 771 }
+IF = { limit = { POR = { owns_state = 1245 } } transfer_state = 1245 }
+IF = { limit = { POR = { owns_state = 321 } } transfer_state = 321 }
+IF = { limit = { POR = { owns_state = 425 } } transfer_state = 425 }
+IF = { limit = { POR = { owns_state = 326 } } transfer_state = 326 }
+IF = { limit = { POR = { owns_state = 729 } } transfer_state = 729 }
+IF = { limit = { POR = { owns_state = 721 } } transfer_state = 721 }
+IF = { limit = { POR = { owns_state = 705 } } transfer_state = 705 }
+
    ai_chance = {
 			factor = 60
 		}
@@ -213,16 +226,25 @@ country_event = {
    add_stability =-0.1
    SPR = { transfer_state = 171 }
    SPR = { transfer_state = 1162 }
-   SPR = { transfer_state = 178 }
-   SPR = { transfer_state = 697 }
-   SPR = { transfer_state = 698 }
-   SPR = { transfer_state = 702 }
    SPR = { transfer_state = 180 }
-   SPR = { transfer_state = 540 }
-   SPR = { transfer_state = 544 }
-   SPR = { transfer_state = 321 }
-   SPR = { transfer_state = 770 }
-   SPR = { transfer_state = 771 }
+
+IF = { limit = { POR = { owns_state = 702 } } transfer_state = 702 }
+IF = { limit = { POR = { owns_state = 296 } } transfer_state = 296 }
+IF = { limit = { POR = { owns_state = 297 } } transfer_state = 297 }
+IF = { limit = { POR = { owns_state = 540 } } transfer_state = 540 }
+IF = { limit = { POR = { owns_state = 544 } } transfer_state = 544 }
+IF = { limit = { POR = { owns_state = 1251 } } transfer_state = 1251 }
+IF = { limit = { POR = { owns_state = 770 } } transfer_state = 770 }
+IF = { limit = { POR = { owns_state = 771 } } transfer_state = 771 }
+IF = { limit = { POR = { owns_state = 1245 } } transfer_state = 1245 }
+IF = { limit = { POR = { owns_state = 321 } } transfer_state = 321 }
+IF = { limit = { POR = { owns_state = 425 } } transfer_state = 425 }
+IF = { limit = { POR = { owns_state = 326 } } transfer_state = 326 }
+IF = { limit = { POR = { owns_state = 729 } } transfer_state = 729 }
+IF = { limit = { POR = { owns_state = 721 } } transfer_state = 721 }
+IF = { limit = { POR = { owns_state = 705 } } transfer_state = 705 }
+
+
    ai_chance = {
 			factor = 80
 		}
@@ -235,16 +257,24 @@ country_event = {
    SPR = { white_peace = POR }
    SPR = { transfer_state = 171 }
    SPR = { transfer_state = 1162 }
-   SPR = { transfer_state = 178 }
-   SPR = { transfer_state = 697 }
-   SPR = { transfer_state = 698 }
-   SPR = { transfer_state = 702 }
    SPR = { transfer_state = 180 }
-   SPR = { transfer_state = 540 }
-   SPR = { transfer_state = 544 }
-   SPR = { transfer_state = 321 }
-   SPR = { transfer_state = 770 }
-   SPR = { transfer_state = 771 }
+
+IF = { limit = { POR = { owns_state = 702 } } transfer_state = 702 }
+IF = { limit = { POR = { owns_state = 296 } } transfer_state = 296 }
+IF = { limit = { POR = { owns_state = 297 } } transfer_state = 297 }
+IF = { limit = { POR = { owns_state = 540 } } transfer_state = 540 }
+IF = { limit = { POR = { owns_state = 544 } } transfer_state = 544 }
+IF = { limit = { POR = { owns_state = 1251 } } transfer_state = 1251 }
+IF = { limit = { POR = { owns_state = 770 } } transfer_state = 770 }
+IF = { limit = { POR = { owns_state = 771 } } transfer_state = 771 }
+IF = { limit = { POR = { owns_state = 1245 } } transfer_state = 1245 }
+IF = { limit = { POR = { owns_state = 321 } } transfer_state = 321 }
+IF = { limit = { POR = { owns_state = 425 } } transfer_state = 425 }
+IF = { limit = { POR = { owns_state = 326 } } transfer_state = 326 }
+IF = { limit = { POR = { owns_state = 729 } } transfer_state = 729 }
+IF = { limit = { POR = { owns_state = 721 } } transfer_state = 721 }
+IF = { limit = { POR = { owns_state = 705 } } transfer_state = 705 }
+
    ai_chance = {
 			factor = 100
 		}

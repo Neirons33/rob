@@ -12,8 +12,12 @@ title = bces.100.t
 desc = bces.100.d
 fire_only_once = yes
 trigger = {
+OR = { 
 tag = POR
+tag = SPR
+}
 ENG = { has_cosmetic_tag = ENG_navy }
+owns_state = 540
 }
 picture = GFX_picture_bosnian_revolt
 option = {
