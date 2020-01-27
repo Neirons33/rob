@@ -1,4 +1,4 @@
-capital = 10766
+capital = 1247
 
 oob = "KVU_1936"
 # Republic in name
