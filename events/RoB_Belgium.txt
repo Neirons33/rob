@@ -80,7 +80,7 @@ mean_time_to_happen = { days = 50 }
 
 
 option = {
-name = "God Have Mercy"
+name = belgium.102.a
 
 hidden_effect = { 
 KGO = { transfer_state = 1242 }
