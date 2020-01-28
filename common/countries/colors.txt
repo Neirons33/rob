@@ -40,6 +40,34 @@ MJE = {
 	color = rgb { 105 51 9 }
 	color_ui = rgb { 105 51 9 }
 }
+ASK = {
+	color = rgb { 21 36 47 }
+	color_ui = rgb { 21 46 47 }
+}
+SKK = {
+	color = rgb { 122 154 207 }
+	color_ui = rgb { 122 154 207 }
+}
+KGO = {
+	color = rgb { 105 119 157 }
+	color_ui = rgb { 105 119 157 }
+}
+KVU = {
+	color = rgb { 168 177 119 }
+	color_ui = rgb { 168 177 119 }
+}
+KTG = {
+	color = rgb { 153 50 30 }
+	color_ui = rgb { 153 50 30 }
+}
+UBG = {
+	color = rgb { 136 143 153 }
+	color_ui = rgb { 136 143 153 }
+}
+STY = {
+	color = rgb { 115 79 39 }
+	color_ui = rgb { 115 79 39 }
+}
 FRA = {
 	color = rgb { 36 114 146 }
 	color_ui = rgb { 36 114 146 }
