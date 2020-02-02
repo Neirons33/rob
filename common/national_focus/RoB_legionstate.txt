@@ -122,6 +122,180 @@ focus_tree = {
 		}
 	}
 
+	#Focus for Removing the shackels 
+	focus = {
+		id = LES_removingtheshackels
+		icon = GFX_goal_unknown
+		x = 52
+		y = 10
+		cost = 5
+		mutually_exclusive = { focus = LES_enforcemotherhood }
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_liberationofwomen focus = LES_guardiansofyouth }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Removing the shackels_2
+	focus = {
+		id = LES_removingtheshackels_2
+		icon = GFX_goal_unknown
+		x = 51
+		y = 11
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_removingtheshackels }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Removing the shackels_3
+	focus = {
+		id = LES_removingtheshackels_3
+		icon = GFX_goal_unknown
+		x = 53
+		y = 11
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_removingtheshackels }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Enforce Motherhood
+	focus = {
+		id = LES_enforcemotherhood
+		icon = GFX_goal_unknown
+		x = 56
+		y = 10
+		cost = 5
+		mutually_exclusive = { focus = LES_removingtheshackels }
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_patriarchaltraditions focus = LES_guardiansofyouth }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Enforce Motherhood_2
+	focus = {
+		id = LES_enforcemotherhood_2
+		icon = GFX_goal_unknown
+		x = 55
+		y = 11
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_enforcemotherhood }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Enforce Motherhood_3
+	focus = {
+		id = LES_enforcemotherhood_3
+		icon = GFX_goal_unknown
+		x = 57
+		y = 11
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_enforcemotherhood }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for ZZZZ
+	focus = {
+		id = LES_ZZZZ
+		icon = GFX_goal_unknown
+		x = 56
+		y = 12
+		cost = 5
+		mutually_exclusive = { focus = LES_affirmitiveaction }
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_enforcemotherhood_2 focus = LES_enforcemotherhood_3 }
+		prerequisite = { focus = LES_removingtheshackels_2 focus = LES_removingtheshackels_3 }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for ZZZZ_2
+	focus = {
+		id = LES_ZZZZ_2
+		icon = GFX_goal_unknown
+		x = 55
+		y = 13
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_ZZZZ }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for ZZZZ_3
+	focus = {
+		id = LES_ZZZZ_3
+		icon = GFX_goal_unknown
+		x = 57
+		y = 13
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_ZZZZ }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Affirmitive Action
+	focus = {
+		id = LES_affirmitiveaction
+		icon = GFX_goal_unknown
+		x = 52
+		y = 12
+		cost = 5
+		mutually_exclusive = { focus = LES_ZZZZ }
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_enforcemotherhood_2 focus = LES_enforcemotherhood_3 }
+		prerequisite = { focus = LES_removingtheshackels_2 focus = LES_removingtheshackels_3 }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Affirmitive Action_2
+	focus = {
+		id = LES_affirmitiveaction_2
+		icon = GFX_goal_unknown
+		x = 51
+		y = 13
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_affirmitiveaction }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Affirmitive Action_3
+	focus = {
+		id = LES_affirmitiveaction_3
+		icon = GFX_goal_unknown
+		x = 53
+		y = 13
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_affirmitiveaction }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 	#Focus for Follow the Example of Middle ages
 	focus = {
 		id = LES_followtheexampleofmiddleages
@@ -355,7 +529,7 @@ focus_tree = {
 		id = LES_onwards
 		icon = GFX_goal_unknown
 		x = 39
-		y = 11
+		y = 15
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { 
@@ -693,6 +867,186 @@ focus_tree = {
 		add_ideas = {
 		LES_eugenics
 		}
+		}
+	}
+
+	#Focus for Banish aliens
+	focus = {
+		id = LES_banishaliens
+		icon = GFX_goal_unknown
+		x = 46
+		y = 10
+		cost = 5
+		mutually_exclusive = { focus = LES_integreatehteunwilling }
+		available_if_capitulated = yes
+		prerequisite = { 
+		focus = LES_racialeugenics
+		focus = LES_reshapingofaconstruct
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Banish aliens_2
+	focus = {
+		id = LES_banishaliens_2
+		icon = GFX_goal_unknown
+		x = 45
+		y = 11
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_banishaliens}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Banish aliens_3
+	focus = {
+		id = LES_banishaliens_3
+		icon = GFX_goal_unknown
+		x = 47
+		y = 11
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_banishaliens}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Integrate the Unwilling
+	focus = {
+		id = LES_integreatehteunwilling
+		icon = GFX_goal_unknown
+		x = 42
+		y = 10
+		cost = 5
+		mutually_exclusive = { focus = LES_banishaliens }
+		available_if_capitulated = yes
+		prerequisite = { 
+		focus = LES_spiritoverbody
+		focus = LES_reshapingofaconstruct
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Integrate the Unwilling_2
+	focus = {
+		id = LES_integreatehteunwilling_2
+		icon = GFX_goal_unknown
+		x = 41
+		y = 11
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_integreatehteunwilling }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Integrate the Unwilling_3
+	focus = {
+		id = LES_integreatehteunwilling_3
+		icon = GFX_goal_unknown
+		x = 43
+		y = 11
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_integreatehteunwilling }
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+
+	#Focus for Genetic Engineering
+	focus = {
+		id = LES_geneticengineering
+		icon = GFX_goal_unknown
+		x = 46
+		y = 12
+		cost = 5
+		mutually_exclusive = { focus = LES_XXXX }
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_integreatehteunwilling_2 focus = LES_integreatehteunwilling_3}
+		prerequisite = { focus = LES_banishaliens_2 focus = LES_banishaliens_3 }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Genetic Engineering_2
+	focus = {
+		id = LES_geneticengineering_2
+		icon = GFX_goal_unknown
+		x = 45
+		y = 13
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_geneticengineering}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Genetic Engineering_3
+	focus = {
+		id = LES_geneticengineering_3
+		icon = GFX_goal_unknown
+		x = 47
+		y = 13
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_geneticengineering}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for XXXX
+	focus = {
+		id = LES_XXXX
+		icon = GFX_goal_unknown
+		x = 42
+		y = 12
+		cost = 5
+		mutually_exclusive = { focus = LES_geneticengineering }
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_integreatehteunwilling_2 focus = LES_integreatehteunwilling_3}
+		prerequisite = { focus = LES_banishaliens_2 focus = LES_banishaliens_3 }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for XXXX_2
+	focus = {
+		id = LES_XXXX_2
+		icon = GFX_goal_unknown
+		x = 41
+		y = 13
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_XXXX }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for XXXX_3
+	focus = {
+		id = LES_XXXX_3
+		icon = GFX_goal_unknown
+		x = 43
+		y = 13
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_XXXX }
+		ai_will_do = {
+			factor = 1
 		}
 	}
 
@@ -3366,6 +3720,186 @@ focus_tree = {
 		}
 	}
 
+	#Focus for Autonomus Municipal districts
+	focus = {
+		id = LES_municipals
+		icon = GFX_goal_unknown
+		x = 32
+		y = 10
+		cost = 5
+		available_if_capitulated = yes
+		mutually_exclusive = { focus = LES_directrule }
+		prerequisite = { 
+		focus = LES_confederation
+		focus = LES_eastandwest }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for municipals_2
+	focus = {
+		id = LES_municipals_2
+		icon = GFX_goal_unknown
+		x = 31
+		y = 11
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_municipals }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for municipals_3
+	focus = {
+		id = LES_municipals_3
+		icon = GFX_goal_unknown
+		x = 33
+		y = 11
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_municipals }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Direct Rule
+	focus = {
+		id = LES_directrule
+		icon = GFX_goal_unknown
+		x = 36
+		y = 10
+		cost = 5
+		available_if_capitulated = yes
+		mutually_exclusive = { focus = LES_municipals }
+		prerequisite = { 
+		focus = LES_unitarypolitics
+		focus = LES_eastandwest }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Direct Rule_2
+	focus = {
+		id = LES_directrule_2
+		icon = GFX_goal_unknown
+		x = 35
+		y = 11
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_directrule }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Direct Rule_3
+	focus = {
+		id = LES_directrule_3
+		icon = GFX_goal_unknown
+		x = 37
+		y = 11
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_directrule }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Grant Privilleges To Citys
+	focus = {
+		id = LES_cityprivilliges
+		icon = GFX_goal_unknown
+		x = 32
+		y = 12
+		cost = 5
+		available = { NOT = { has_completed_focus = LES_unitarypolitics } }
+		available_if_capitulated = yes
+		mutually_exclusive = { focus = LES_equalinburden }
+		prerequisite = { focus = LES_municipals_2 focus = LES_municipals_3 }
+		prerequisite = { focus = LES_directrule_2 focus = LES_directrule_3 }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Grant Privilleges To Citys_2
+	focus = {
+		id = LES_cityprivilliges_2
+		icon = GFX_goal_unknown
+		x = 31
+		y = 13
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_cityprivilliges }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Grant Privilleges To Citys_3
+	focus = {
+		id = LES_cityprivilliges_3
+		icon = GFX_goal_unknown
+		x = 33
+		y = 13
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_cityprivilliges }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Equal in Burden
+	focus = {
+		id = LES_equalinburden
+		icon = GFX_goal_unknown
+		x = 36
+		y = 12
+		cost = 5
+		available = { NOT = { has_completed_focus = LES_confederation } }
+		available_if_capitulated = yes
+		mutually_exclusive = { focus = LES_cityprivilliges }
+		prerequisite = { focus = LES_municipals_2 focus = LES_municipals_3 }
+		prerequisite = { focus = LES_directrule_2 focus = LES_directrule_3 }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Equal in Burden_2
+	focus = {
+		id = LES_equalinburden_2
+		icon = GFX_goal_unknown
+		x = 35
+		y = 13
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_equalinburden }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Equal in Burden_3
+	focus = {
+		id = LES_equalinburden_3
+		icon = GFX_goal_unknown
+		x = 37
+		y = 13
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_equalinburden }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 	#Focus for Socialism With Slavic Characteristics
 	focus = {
 		id = LES_socialismwithslaviccharacteristics
@@ -3403,6 +3937,189 @@ focus_tree = {
 		add_ideas = {
 		LES_corporations
 		}
+		}
+	}
+
+	#Focus for Economical centres
+	focus = {
+		id = LES_economicalcentres
+		icon = GFX_goal_unknown
+		x = 23
+		y = 10
+		cost = 5
+		mutually_exclusive = { focus = LES_spreadoutindustry }
+		available_if_capitulated = yes
+		prerequisite = { 
+		focus = LES_socialismwithslaviccharacteristics
+		focus = LES_followtheexampleofmiddleages }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Economical centres_2
+	focus = {
+		id = LES_economicalcentres_2
+		icon = GFX_goal_unknown
+		x = 22
+		y = 11
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_economicalcentres }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Economical centres_3
+	focus = {
+		id = LES_economicalcentres_3
+		icon = GFX_goal_unknown
+		x = 24
+		y = 11
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_economicalcentres }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+	#Focus for Spread out industry
+	focus = {
+		id = LES_spreadoutindustry
+		icon = GFX_goal_unknown
+		x = 27
+		y = 10
+		cost = 5
+		mutually_exclusive = { focus = LES_economicalcentres }
+		available_if_capitulated = yes
+		prerequisite = { 
+		focus = LES_divinecorporations
+		focus = LES_followtheexampleofmiddleages 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+	#Focus for Spread out industry_2
+	focus = {
+		id = LES_spreadoutindustry_2
+		icon = GFX_goal_unknown
+		x = 26
+		y = 11
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_spreadoutindustry }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Spread out industry_3
+	focus = {
+		id = LES_spreadoutindustry_3
+		icon = GFX_goal_unknown
+		x = 28
+		y = 11
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_spreadoutindustry }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Maximize Profit
+	focus = {
+		id = LES_maximizeprofit
+		icon = GFX_goal_unknown
+		x = 23
+		y = 12
+		cost = 5
+		available = { NOT = { has_completed_focus = LES_divinecorporations } }
+		mutually_exclusive = { focus = LES_ecologicalmeasures }
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_economicalcentres_2 focus = LES_economicalcentres_3 }
+		prerequisite = { focus = LES_spreadoutindustry_2 focus = LES_spreadoutindustry_3 }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Maximize Profit_2
+	focus = {
+		id = LES_maximizeprofit_2
+		icon = GFX_goal_unknown
+		x = 22
+		y = 13
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_maximizeprofit }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Maximize Profit_3
+	focus = {
+		id = LES_maximizeprofit_3
+		icon = GFX_goal_unknown
+		x = 24
+		y = 13
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_maximizeprofit }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Ecological Measures
+	focus = {
+		id = LES_ecologicalmeasures
+		icon = GFX_goal_unknown
+		x = 27
+		y = 12
+		cost = 5
+		available = { NOT = { has_completed_focus = LES_socialismwithslaviccharacteristics } }
+		mutually_exclusive = { focus = LES_maximizeprofit }
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_economicalcentres_2 focus = LES_economicalcentres_3 }
+		prerequisite = { focus = LES_spreadoutindustry_2 focus = LES_spreadoutindustry_3 }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Ecological Measures_2
+	focus = {
+		id = LES_ecologicalmeasures_2
+		icon = GFX_goal_unknown
+		x = 26
+		y = 13
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_ecologicalmeasures }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Ecological Measures_3
+	focus = {
+		id = LES_ecologicalmeasures_3
+		icon = GFX_goal_unknown
+		x = 28
+		y = 13
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_ecologicalmeasures }
+		ai_will_do = {
+			factor = 1
 		}
 	}
 
@@ -3500,18 +4217,16 @@ focus_tree = {
 		LES = { country_event = { id = legion.7 days = 1 } }
 		}
 	}
+
 	#Focus for Begin Preperations
 	focus = {
 		id = LES_beginpreperations
 		icon = GFX_goal_unknown
 		x = 34
-		y = 10
+		y = 14
 		cost = 5
-		prerequisite = { 
-			focus = LES_unitarypolitics 
-			focus = LES_confederation 
-			focus = LES_eastandwest 
-		}
+		prerequisite = { focus = LES_cityprivilliges_2 focus = LES_cityprivilliges_3 }
+		prerequisite = { focus = LES_equalinburden_2 focus = LES_equalinburden_3 }
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 1
@@ -3520,19 +4235,17 @@ focus_tree = {
 		add_political_power = 50
 		}
 	}
-		#Focus for The Course is Set
+	
+	#Focus for The Course is Set
 	focus = {
 		id = LES_thecourseisset
 		icon = GFX_goal_unknown
 		x = 25
-		y = 10
+		y = 14
 		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { 
-			focus = LES_socialismwithslaviccharacteristics 
-			focus = LES_divinecorporations 
-			focus = LES_followtheexampleofmiddleages 
-		}
+		prerequisite = { focus = LES_ecologicalmeasures_2 focus = LES_ecologicalmeasures_3 }
+		prerequisite = { focus = LES_maximizeprofit_2 focus = LES_maximizeprofit_2 }
 		ai_will_do = {
 			factor = 1
 		}
@@ -3540,19 +4253,17 @@ focus_tree = {
 		add_stability = 0.03
 		}
 	}
+
 	#Focus for The Matter is Resolved
 	focus = {
 		id = LES_thematterisresolved
 		icon = GFX_goal_unknown
 		x = 44
-		y = 10
+		y = 14
 		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { 
-			focus = LES_spiritoverbody 
-			focus = LES_reshapingofaconstruct
-			focus = LES_racialeugenics
-		}
+		prerequisite = { focus = LES_geneticengineering_2 focus = LES_geneticengineering_3}
+		prerequisite = { focus = LES_XXXX_2 focus = LES_XXXX_3 }
 		ai_will_do = {
 			factor = 1
 		}
@@ -3560,19 +4271,17 @@ focus_tree = {
 		add_stability = 0.03
 		}
 	}
+
 	#Focus for Women Pacified
 	focus = {
 		id = LES_womenpacified
 		icon = GFX_goal_unknown
 		x = 54
-		y = 10
+		y = 14
 		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { 
-			focus = LES_liberationofwomen 
-			focus = LES_guardiansofyouth
-			focus = LES_patriarchaltraditions
-		}
+		prerequisite = { focus = LES_ZZZZ_2 focus = LES_ZZZZ_3}
+		prerequisite = { focus = LES_affirmitiveaction_2 focus = LES_affirmitiveaction_3 }
 		ai_will_do = {
 			factor = 1
 		}
@@ -3580,6 +4289,7 @@ focus_tree = {
 		add_stability = 0.03
 		}
 	}
+
 
 #End of focuses 
  }
