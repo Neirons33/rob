@@ -91,17 +91,6 @@ if = {
 }
 
 
-
-
-
-
-1932.1.1 = {
-
-	
-
-	
-
-
 set_convoys = 200
 
 
@@ -126,7 +115,7 @@ set_popularities = {
 create_country_leader = {
 	name = "Pelekist Triumvirate"
 	desc = "POLITICS_BENITO_MUSSOLINI_DESC"
-	picture = "Portrait_Italy_Benito_Mussolini.dds"
+	picture = "ITA_Pelekist_Triumviarate.tga"
 	expire = "1965.1.1"
 	ideology = pelekist_subtype
 	traits = {
@@ -137,7 +126,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Arturo Labriola"
 	desc = "POLITICS_BENITO_MUSSOLINI_DESC"
-	picture = "Portrait_Rome_Ivanoe_Bonomi.tga"
+	picture = "ITA_Arturo_Labriola.tga"
 	expire = "1965.1.1"
 	ideology = social_democracy_subtype
 	traits = {
@@ -159,7 +148,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Italian Officers"
 	desc = "POLITICS_BENITO_MUSSOLINI_DESC"
-	picture = "Portrait_Italy_Vittorio_Emmanuele.tga"
+	picture = "ITA_Italian_Officers.tga"
 	expire = "1965.1.1"
 	ideology = authoritharian_subtype
 	traits = {	
@@ -189,7 +178,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Italian Officers"
 	desc = "POLITICS_BENITO_MUSSOLINI_DESC"
-	picture = "GFX_portrait_ita_palmiro_togliatti"
+	picture = "ITA_Italian_Officers.tga"
 	expire = "1965.1.1"
 	ideology = military_junta
 	traits = {
@@ -200,7 +189,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Luigi Sturzo"
 	desc = "POLITICS_BENITO_MUSSOLINI_DESC"
-	picture = "GFX_portrait_ita_palmiro_togliatti"
+	picture = "ITA_Luigi_Sturzo.tga"
 	expire = "1965.1.1"
 	ideology = conservative_subtype
 	traits = {

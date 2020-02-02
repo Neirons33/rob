@@ -6,6 +6,7 @@
  rosenberg_victory:0 "Alfred Rosenberg has been elected!"
  kaiser_controls_everything:0 "Willhelm III reigns supreme!"
  democratic_elections:0 "Prussia has been liberalized!"
+ PRS_tt_1:0 "We Need to Hold More Than §G50%§! of Seats in Reichstag"
  ###United Kingdom
  ENG_civil_war:0 "English Civil War Has Started"
  ###Soviets
@@ -54,9 +55,9 @@
  lit_tt_7:0 "§RWe Will Plan Out Raids Against Prussians!§!"
 
  ###Legion
- les_tt_1:0 "We will unlock Pagan parts of the tree"
- les_tt_2:0 "We will unlock Futurist parts of the tree"
- les_tt_3:0 "We will unlock Christian parts of the tree"
+ les_tt_1:0 "§BWe will unlock Pagan parts of the tree§!"
+ les_tt_2:0 "§RWe will unlock Futurist parts of the tree§!"
+ les_tt_3:0 "§GWe will unlock Christian parts of the tree§!"
  ###Scripted Triggers
  minister_available:0 "Minister Available For This Government Type"
  democratic_aligned_government:0 "Government is Democratic Aligned"

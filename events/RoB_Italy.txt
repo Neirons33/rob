@@ -137,7 +137,6 @@ set_politics = {
 ruling_party = pelekist
 elections_allowed = no
 }
-load_focus_tree = italy_pelekist
 }
 option = { ###UIS Victory
 name = republican_italy.6.b
@@ -151,7 +150,6 @@ set_politics = {
 ruling_party = socialist
 elections_allowed = no
 }
-load_focus_tree = italy_socialist
 set_cosmetic_tag = ITA_socialist
 }
 option = { ###PDSI Victory
@@ -604,7 +602,6 @@ create_country_leader = {
 	}
 }
 add_cosmetic_tag = SIC_civil_war
-load_focus_tree = italy_army_tree
 }
 }
 ITA = { country_event = { id = republican_italy.26 days = 5 } }
@@ -644,7 +641,6 @@ create_country_leader = {
 	}
 }
 add_cosmetic_tag = SIC_civil_war
-load_focus_tree = italy_army_tree
 add_popularity = { ideology = authoritharian popularity = 0.75 }
 set_politics = {
  ruling_party = authoritharian
@@ -732,9 +728,6 @@ hidden_effect = {
 }
 ITA = { declare_war_on = { type = annex_everything target = PIE } }
 set_country_flag = ITA_civil_war_pelekists
-PIE = {
- load_focus_tree = ita
-}
 }
 
 }
@@ -804,7 +797,7 @@ name = republican_italy.31.a
 create_country_leader = {
 	name = "Julius Evola"
 	desc = ""
-	picture = "Julius Evola.tga"
+	picture = "ITA_Julius_Evola.tga"
 	expire = "1953.3.1"
 	ideology = pagan_pelekism
 	traits = {
@@ -829,7 +822,7 @@ name = republican_italy.32.a
 create_country_leader = {
 	name = "Pietro La Fontaine"
 	desc = ""
-	picture = "Pietro La Fontaine.tga"
+	picture = "ITA_Pierro_La_Fontaine.tga"
 	expire = "1953.3.1"
 	ideology = christian_pelekism
 	traits = {
@@ -854,7 +847,7 @@ name = republican_italy.33.a
 create_country_leader = {
 	name = "Filipo Tommasi Marrineti"
 	desc = ""
-	picture = "Filipo Tommasi Marrineti.tga"
+	picture = "ITA_Fillipo_Tommaso_Marrineti.tga"
 	expire = "1953.3.1"
 	ideology = futuristic_pelekism
 	traits = {

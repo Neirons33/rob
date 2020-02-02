@@ -226,6 +226,7 @@ focus_tree = {
 		OR = { has_government = conservative
 		 has_government = social_liberal
 		}
+		NOT = { has_completed_focus = PRS_getridofreactionaryelements }
 		}
 		prerequisite = { 
 			focus = PRS_ddpvictory 
@@ -400,6 +401,7 @@ focus_tree = {
 		 has_government = social_democracy
 		 has_government = social_liberal
 		}
+		NOT = { has_completed_focus = PRS_supporttheprussiannobility }
 		}
 		prerequisite = { 
 			focus = PRS_spdvictory 
@@ -2275,6 +2277,21 @@ focus_tree = {
 		OR = {
 		 has_government = social_democracy
 		 has_government = social_liberal
+		 }
+        custom_trigger_tooltip = {
+		tooltip = PRS_tt_1
+		OR = {
+		check_variable = {
+         var = party_popularity@social_democracy
+         value = 0.5
+         compare = greater_than_or_equals
+           }
+		check_variable = {
+         var = party_popularity@social_liberal
+         value = 0.5
+         compare = greater_than_or_equals
+           }
+		 }
 		 }
 		}
 		prerequisite = { focus = PRS_getridofreactionaryelements }
