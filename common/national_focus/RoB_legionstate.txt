@@ -2719,17 +2719,11 @@ focus_tree = {
 		id = LES_readyforwar
 		icon = GFX_focus_PRS_prepare_for_war
 		x = 73
-		y = 3
+		y = 4
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { 
-			focus = LES_fieldscavenging 
-		}
-		prerequisite = { 
-			focus = LES_amosinforeveryman 
-		}
-		prerequisite = { 
-			focus = LES_raiddemocratammunitiondepots 
+			focus = LES_amosinforeveryman
 		}
 		ai_will_do = {
 		base = 2
@@ -2739,9 +2733,7 @@ focus_tree = {
       	}
 		}
 		completion_reward = {
-		remove_ideas = {
-		LES_disorganised_army
-		}
+		remove_ideas = { LES_disorganised_army }
 		}
 	}
 
@@ -2766,12 +2758,36 @@ focus_tree = {
 		}
 	}
 
+	#Focus for Rapid Response Team
+	focus = {
+		id = LES_rapidresponseteam
+		icon = GFX_goal_unknown
+		x = 45
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = LES_elitescouts }
+		prerequisite = { focus = LES_trenchexperts }
+		prerequisite = { focus = LES_radiooperators }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_tech_bonus = {
+	      name = specialforces
+	      bonus = 1.0
+	      uses = 1
+	      technology = special_forces
+           } 
+		}
+	}
+
 	#Focus for Siberian Commandos
 	focus = {
 		id = LES_siberiancommandos
 		icon = GFX_goal_unknown
 		x = 45
-		y = 3
+		y = 4
 		cost = 5
 		available = {
  		AND = {
@@ -2780,21 +2796,13 @@ focus_tree = {
 		}
 		available_if_capitulated = yes
 		prerequisite = { 
-			focus = LES_elitescouts 
-		}
-		prerequisite = { 
-			focus = LES_trenchexperts 
-		}
-		prerequisite = { 
-			focus = LES_radiooperators 
+			focus = LES_rapidresponseteam
 		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-		add_ideas = {
-		LES_siberian_commandos
-		}
+		add_ideas = { LES_siberian_commandos }
 		}
 	}
 
@@ -2804,7 +2812,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		x = 73
 		y = 1
-		cost = 5
+		cost = 1
 		available_if_capitulated = yes
 		prerequisite = { focus = LES_legionsarmy }
 		ai_will_do = {
@@ -2815,9 +2823,7 @@ focus_tree = {
       	}
 		}
 		completion_reward = {
-		add_ideas = {
-		LES_rifles
-		}
+		add_political_power = 15
 		}
 	}
 
@@ -2826,10 +2832,14 @@ focus_tree = {
 		id = LES_amosinforeveryman
 		icon = GFX_goal_unknown
 		x = 73
-		y = 2
+		y = 3
 		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { focus = LES_thearmoryisempty }
+		prerequisite = { 
+			focus = LES_fieldscavenging 
+			focus = LES_raiddemocratammunitiondepots
+			focus = LES_standartiserifles 
+		}
 		ai_will_do = {
 		base = 2
      	modifier = {
@@ -2846,6 +2856,28 @@ focus_tree = {
 	}
 }
 
+	#Focus for Standartise Rilfes
+	focus = {
+		id = LES_standartiserifles
+		icon = GFX_goal_unknown
+		x = 73
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus =  LES_thearmoryisempty
+		}
+		ai_will_do = {
+		base = 2
+     	modifier = {
+      	factor = 1000
+      	has_war = yes
+      	}
+		}
+		completion_reward = {
+		add_ideas = { LES_rifles}
+	}
+}
 	#Focus for Reach Krasnoyarsk
 	focus = {
 		id = LES_rebuildingtranssiberianrailway
