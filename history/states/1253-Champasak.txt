@@ -4,7 +4,7 @@ state={
 	history={
 		owner = FIC
 		add_core_of = FIC
-		add_claims_by = SIA
+		add_claim_by = SIA
 
 		buildings = {
 			infrastructure = 1

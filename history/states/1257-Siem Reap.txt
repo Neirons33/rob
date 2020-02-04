@@ -4,6 +4,7 @@ state={
 	history={
 		owner = FIC
 		add_core_of = FIC
+		add_claim_by = SIA
 		victory_points = {
 			10177 1 
 		}
