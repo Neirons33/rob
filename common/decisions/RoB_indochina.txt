@@ -34,7 +34,7 @@ CAM = { exists = yes }
     var = FIC_zhuang_unrest
     value = FIC_zhuang_unrest_v
   }
-
+custom_effect_tooltip = FIC_indochinese_revolts_tt	
  }
  }
 
@@ -42,7 +42,9 @@ CAM = { exists = yes }
 	fire_only_once = yes
 
 	 cost = 50
-
+  ai_will_do = {
+	base = 200
+	}
 	 available = {
 	   always = yes
 has_country_flag = FIC_unrest
@@ -65,6 +67,8 @@ has_country_flag = FIC_unrest
     var = FIC_zhuang_unrest
     value = -5
   }
+custom_effect_tooltip = FIC_arrest_indochinese_leadership_tt	
+
 
  }
  }
@@ -72,7 +76,9 @@ has_country_flag = FIC_unrest
  FIC_hang_suspects_of_treason = {
 	fire_only_once = yes
 	 cost = 100
-
+  ai_will_do = {
+	base = 200
+	}
 	 available = {
 	   always = yes
 has_country_flag = FIC_unrest
@@ -112,13 +118,17 @@ has_country_flag = FIC_unrest
     value = -15
   }
 
+custom_effect_tooltip = FIC_hang_suspects_of_treason_tt	
+
  }
  }
 
  FIC_spread_pro_french_propaganda = {
 	fire_only_once = yes
 	 cost = 100
-
+  ai_will_do = {
+	base = 200
+	}
 	 available = {
 	   OR = { 
 check_variable = {
@@ -155,6 +165,8 @@ has_country_flag = FIC_unrest
     var = FIC_zhuang_unrest_v
     value = -1
   }
+custom_effect_tooltip = FIC_spread_pro_french_propaganda_tt	
+
 
  }
  }
@@ -162,7 +174,9 @@ has_country_flag = FIC_unrest
  FIC_martial_law = {
 	fire_only_once = yes
 	 cost = 100
-
+  ai_will_do = {
+	base = 200
+	}
 	 available = {
 	   OR = { 
 check_variable = {
@@ -215,6 +229,8 @@ has_country_flag = FIC_unrest
     var = FIC_zhuang_unrest
     value = 15
   }
+custom_effect_tooltip = FIC_martial_law_tt	
+
 
  }
  }
@@ -222,7 +238,9 @@ has_country_flag = FIC_unrest
 
  FIC_patrol_vietnam = {
 	 cost = 50
-
+  ai_will_do = {
+	base = 200
+	}
 	 available = {
 	   always = yes
 has_country_flag = FIC_unrest
@@ -234,13 +252,17 @@ has_country_flag = FIC_unrest
     var = FIC_vietnamese_unrest
     value = -10
   }
+custom_effect_tooltip = FIC_patrol_vietnam_tt	
+
 add_manpower = -5000
   }
  }
 
  FIC_patrol_laos = {
 	 cost = 30
-
+  ai_will_do = {
+	base = 200
+	}
 	 available = {
 	   always = yes
 has_country_flag = FIC_unrest
@@ -252,13 +274,17 @@ has_country_flag = FIC_unrest
     var = FIC_laotian_unrest
     value = -10
   }
+custom_effect_tooltip = FIC_patrol_laos_tt	
+
 add_manpower = -5000
 
   }
  }
  FIC_patrol_cambodia = {
 	 cost = 30
-
+  ai_will_do = {
+	base = 200
+	}
 	 available = {
 	   always = yes
 has_country_flag = FIC_unrest
@@ -270,13 +296,17 @@ has_country_flag = FIC_unrest
     var = FIC_khmer_unrest
     value = -10
   }
+custom_effect_tooltip = FIC_patrol_cambodia_tt	
+
 add_manpower = -5000
 
   }
  }
  FIC_patrol_zhuang = {
 	 cost = 30
-
+  ai_will_do = {
+	base = 200
+	}
 	 available = {
 	   always = yes
 has_country_flag = FIC_unrest
@@ -288,6 +318,8 @@ has_country_flag = FIC_unrest
     var = FIC_zhuang_unrest
     value = -10
   }
+custom_effect_tooltip = FIC_patrol_zhuang_tt	
+
 add_manpower = -5000
 
   }
@@ -295,7 +327,9 @@ add_manpower = -5000
 
  FIC_arrest_vietnamese_leadership = {
 	 cost = 50
-
+  ai_will_do = {
+	base = 200
+	}
 	 available = {
 	   always = yes
 has_country_flag = FIC_unrest
@@ -307,12 +341,16 @@ has_country_flag = FIC_unrest
     var = FIC_vietnamese_unrest_v
     value = -1
   }
+custom_effect_tooltip = FIC_arrest_vietnamese_leadership_tt
+
   }
  }
 
  FIC_arrest_laotian_leadership = {
 	 cost = 30
-
+  ai_will_do = {
+	base = 200
+	}
 	 available = {
 	   always = yes
 has_country_flag = FIC_unrest
@@ -324,12 +362,16 @@ has_country_flag = FIC_unrest
     var = FIC_laotian_unrest_v
     value = -1
   }
+custom_effect_tooltip = FIC_arrest_laotian_leadership_tt	
+
   }
  }
 
  FIC_arrest_khmer_leadership = {
 	 cost = 30
-
+  ai_will_do = {
+	base = 200
+	}
 	 available = {
 	   always = yes
 has_country_flag = FIC_unrest
@@ -341,12 +383,16 @@ has_country_flag = FIC_unrest
     var = FIC_khmer_unrest_v
     value = -1
   }
+custom_effect_tooltip = FIC_arrest_khmer_leadership_tt	
+
   }
  }
 
  FIC_arrest_zhuang_leadership = {
 	 cost = 30
-
+  ai_will_do = {
+	base = 200
+	}
 	 available = {
 	   always = yes
 has_country_flag = FIC_unrest
@@ -358,11 +404,16 @@ has_country_flag = FIC_unrest
     var = FIC_zhuang_unrest_v
     value = -1
   }
+custom_effect_tooltip = FIC_arrest_zhuang_leadership_tt
+
   }
  }
 
  FIC_reorganise_vietnam = {
 cost = 50
+  ai_will_do = {
+	base = 200
+	}
 fire_only_once = yes
 	 available = {
 	   always = yes
@@ -376,6 +427,8 @@ has_country_flag = FIC_unrest
     var = FIC_vietnamese_unrest
     value = -30
   }
+custom_effect_tooltip = FIC_reorganise_vietnam_tt	
+
 add_stability = -0.25
 add_manpower = -50000
 
@@ -386,6 +439,10 @@ add_manpower = -50000
 
  FIC_surrender_lao_lands_to_siam = {
 fire_only_once = yes
+cost = 50
+  ai_will_do = {
+	base = 200
+	}
 	 available = {
 	owns_state = 1256
 	SIA = { exists = yes }
@@ -404,6 +461,8 @@ SIA = { transfer_state = 1253 }
     var = FIC_laotian_unrest
     value = -30
   }
+custom_effect_tooltip = FIC_surrender_lao_lands_to_siam_tt	
+
 
 
 
@@ -412,7 +471,10 @@ SIA = { transfer_state = 1253 }
 
  FIC_surrender_khmer_lands_to_siam = {
 fire_only_once = yes
-
+cost = 50
+  ai_will_do = {
+	base = 200
+	}
 	 available = {
 	owns_state = 1257
 	SIA = { exists = yes }
@@ -429,6 +491,7 @@ SIA = { transfer_state = 1258 }
     var = FIC_khmer_unrest
     value = -30
   }
+custom_effect_tooltip = FIC_surrender_khmer_lands_to_siam_tt	
 
 
   }
@@ -436,6 +499,9 @@ SIA = { transfer_state = 1258 }
 
  FIC_vietnamese_victory = {
 fire_only_once = yes
+  ai_will_do = {
+	base = 200
+	}
 	 available = {
 check_variable = {
     FIC_vietnamese_unrest < 30
@@ -454,6 +520,7 @@ has_country_flag = FIC_unrest
     var = FIC_vietnamese_unrest
     value = 0
 }
+custom_effect_tooltip = FIC_vietnamese_victory_tt	
 
 
   }
@@ -461,6 +528,9 @@ has_country_flag = FIC_unrest
 
  FIC_laotian_victory = {
 fire_only_once = yes
+  ai_will_do = {
+	base = 200
+	}
 	 available = {
 check_variable = {
     FIC_laotian_unrest < 30
@@ -479,13 +549,17 @@ has_country_flag = FIC_unrest
     var = FIC_laotian_unrest
     value = 0
 }
+custom_effect_tooltip = FIC_laotian_victory_tt	
+
 
   }
  }
 
  FIC_khmer_victory = {
 fire_only_once = yes
-
+  ai_will_do = {
+	base = 200
+	}
 	 available = {
 check_variable = {
     FIC_khmer_unrest < 30
@@ -504,6 +578,7 @@ has_country_flag = FIC_unrest
     var = FIC_khmer_unrest
     value = 0
 }
+custom_effect_tooltip = FIC_khmer_victory_tt	
 
 
   }
@@ -511,7 +586,9 @@ has_country_flag = FIC_unrest
 
  FIC_zhuang_victory = {
 fire_only_once = yes
-
+  ai_will_do = {
+	base = 200
+	}
 
 	 available = {
 check_variable = {
@@ -531,6 +608,8 @@ has_country_flag = FIC_unrest
     var = FIC_zhuang_unrest
     value = 0
 }
+custom_effect_tooltip = FIC_zhuang_victory_tt	
+
 
 
   }
