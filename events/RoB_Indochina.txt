@@ -113,7 +113,10 @@ declare_war_on = {
     type = annex_everything
 }
 VIN = { load_oob = "VIN_1936" }
+hidden_effect = { 
+FIC = { load_oob = "FIC_GAR" }
 
+}
 }
 }
 
@@ -284,5 +287,64 @@ declare_war_on = {
 }
 ZHU = { load_oob = "ZHU_1936" }
 
+}
+}
+
+###French Aid Arrives
+country_event = {
+id = indochina.105
+title = indochina.105.t
+desc = indochina.105.d
+fire_only_once = yes
+trigger = { 
+
+tag = FIC
+has_war = yes
+NOT = { FRA = { has_war = yes } }
+
+}
+option = {
+name = indochina.105.a
+FIC = { load_oob = "FIC_AID" }
+
+}
+}
+
+###France Destroyed
+country_event = {
+id = indochina.106
+title = indochina.106.t
+desc = indochina.106.d
+fire_only_once = yes
+trigger = { 
+
+tag = FIC
+NOT = { FRA = { exists = yes } }
+
+}
+option = {
+name = indochina.106.a
+hidden_effect = {
+ set_country_flag = VIN_revolt
+  add_to_variable = {
+    var = FIC_vietnamese_unrest
+    value = 80
+  }
+  add_to_variable = {
+    var = FIC_laotian_unrest
+    value = 80
+  }
+  add_to_variable = {
+    var = FIC_khmer_unrest
+    value = 80
+  }
+  add_to_variable = {
+    var = FIC_zhuang_unrest
+    value = 80
+  }
+
+}
+
+}
 }
 }
