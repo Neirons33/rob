@@ -4,7 +4,9 @@ state={
 	history={
 		owner = FIC
 		add_core_of = FIC
-
+victory_points = {
+7075 1
+}
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1

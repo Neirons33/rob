@@ -5,6 +5,12 @@ state={
 		owner = FIC
 		add_core_of = FIC
 		add_core_of = SIA
+		victory_points = {
+		10438 1
+		}
+		victory_points = {
+		7516 1
+		}
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
