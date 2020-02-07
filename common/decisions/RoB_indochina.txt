@@ -16,7 +16,7 @@ CAM = { exists = yes }
 	   always = no
 	 }
 	is_good = no
-	days_mission_timeout = 60
+	days_mission_timeout = 40
 	timeout_effect = {
   add_to_variable = {
     var = FIC_vietnamese_unrest
@@ -45,6 +45,7 @@ CAM = { exists = yes }
 
 	 available = {
 	   always = yes
+has_country_flag = FIC_unrest
 	 }
 	is_good = yes
 	complete_effect = {
@@ -74,6 +75,7 @@ CAM = { exists = yes }
 
 	 available = {
 	   always = yes
+has_country_flag = FIC_unrest
 	 }
 	is_good = yes
 	complete_effect = {
@@ -132,6 +134,8 @@ check_variable = {
     FIC_zhuang_unrest > 70
 }
 		}
+has_country_flag = FIC_unrest
+
 	 }
 	is_good = yes
 	complete_effect = {
@@ -174,6 +178,8 @@ check_variable = {
     FIC_zhuang_unrest > 80
 }
 		}
+has_country_flag = FIC_unrest
+
 	 }
 	is_good = yes
 	complete_effect = {
@@ -219,6 +225,8 @@ check_variable = {
 
 	 available = {
 	   always = yes
+has_country_flag = FIC_unrest
+
 	 }
 	is_good = yes
 	complete_effect = {
@@ -235,6 +243,8 @@ add_manpower = -5000
 
 	 available = {
 	   always = yes
+has_country_flag = FIC_unrest
+
 	 }
 	is_good = yes
 	complete_effect = {
@@ -251,6 +261,8 @@ add_manpower = -5000
 
 	 available = {
 	   always = yes
+has_country_flag = FIC_unrest
+
 	 }
 	is_good = yes
 	complete_effect = {
@@ -267,6 +279,8 @@ add_manpower = -5000
 
 	 available = {
 	   always = yes
+has_country_flag = FIC_unrest
+
 	 }
 	is_good = yes
 	complete_effect = {
@@ -284,6 +298,8 @@ add_manpower = -5000
 
 	 available = {
 	   always = yes
+has_country_flag = FIC_unrest
+
 	 }
 	is_good = yes
 	complete_effect = {
@@ -299,6 +315,8 @@ add_manpower = -5000
 
 	 available = {
 	   always = yes
+has_country_flag = FIC_unrest
+
 	 }
 	is_good = yes
 	complete_effect = {
@@ -314,6 +332,8 @@ add_manpower = -5000
 
 	 available = {
 	   always = yes
+has_country_flag = FIC_unrest
+
 	 }
 	is_good = yes
 	complete_effect = {
@@ -329,6 +349,8 @@ add_manpower = -5000
 
 	 available = {
 	   always = yes
+has_country_flag = FIC_unrest
+
 	 }
 	is_good = yes
 	complete_effect = {
@@ -344,6 +366,8 @@ cost = 50
 fire_only_once = yes
 	 available = {
 	   always = yes
+has_country_flag = FIC_unrest
+
 	 }
 	is_good = yes
 	complete_effect = {
@@ -365,6 +389,8 @@ fire_only_once = yes
 	 available = {
 	owns_state = 1256
 	SIA = { exists = yes }
+has_country_flag = FIC_unrest
+
 	 }
 	is_good = yes
 	complete_effect = {
@@ -390,6 +416,8 @@ fire_only_once = yes
 	 available = {
 	owns_state = 1257
 	SIA = { exists = yes }
+has_country_flag = FIC_unrest
+
 	 }
 	is_good = yes
 	complete_effect = {
@@ -412,6 +440,8 @@ fire_only_once = yes
 check_variable = {
     FIC_vietnamese_unrest < 30
 }
+has_country_flag = FIC_unrest
+
 	 }
 	is_good = yes
 	complete_effect = {
@@ -435,6 +465,8 @@ fire_only_once = yes
 check_variable = {
     FIC_laotian_unrest < 30
 }
+has_country_flag = FIC_unrest
+
 	 }
 	is_good = yes
 	complete_effect = {
@@ -458,6 +490,8 @@ fire_only_once = yes
 check_variable = {
     FIC_khmer_unrest < 30
 }
+has_country_flag = FIC_unrest
+
 	 }
 	is_good = yes
 	complete_effect = {
@@ -483,6 +517,8 @@ fire_only_once = yes
 check_variable = {
     FIC_zhuang_unrest < 30
 }
+has_country_flag = FIC_unrest
+
 	 }
 	is_good = yes
 	complete_effect = {
