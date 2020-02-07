@@ -56,12 +56,34 @@ units = {
 		start_equipment_factor = 0.5
 	}
 	division = {
+		name = "Luang Phrabang Militia"
+		location = 7075
+		division_template = "Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division = {
 		name = "Southern Militia"
 		location = 1592
 		division_template = "Militia"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 	}
+	division = {
+		name = "Isen Militia"
+		location = 7516
+		division_template = "Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Isen Militia"
+		location = 10438
+		division_template = "Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+
 
 
 
@@ -70,7 +92,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = infantry_equipment_0
-			creator = "CAM"
+			creator = "LAO"
 		}
 		requested_factories = 1
 		progress = 0.28

@@ -36,29 +36,36 @@ division_template = {
 units = {
 	#TRS Army
 	division = {
-		name = "1st Viet Infantry"
-		location = 4075
+		name = "1st Vietnamese Infantry"
+		location = 1185
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.5
 	}
 	division = {
-		name = "2nd Viet Infantry"
-		location = 4075
+		name = "2nd Vietnamese Infantry"
+		location = 10129
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.5
 	}
 	division = {
-		name = "3rd Viet Infantry"
-		location = 1248
+		name = "3rd Vietnamese Infantry"
+		location = 12075
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.5
 	}
 	division = {
-		name = "4th Viet Infantry"
-		location = 10180
+		name = "4th Vietnamese Infantry"
+		location = 4119
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "5th Vietnamese Infantry"
+		location = 4255
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.5
@@ -71,36 +78,64 @@ units = {
 		start_equipment_factor = 0.5
 	}
 	division = {
-		name = "Saigon Defectors"
-		location = 10232
+		name = "Vinh Militia"
+		location = 4397
 		division_template = "Militia"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 	}
 	division = {
-		name = "Central Militia"
+		name = "Hue Militia"
 		location = 4379
 		division_template = "Militia"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 	}
 	division = {
-		name = "1st Northern Militia"
-		location = 9948
+		name = "Northern Militia"
+		location = 7015
 		division_template = "Militia"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 	}
 	division = {
-		name = "2nd Northern Militia"
-		location = 9988
+		name = "Saigon Militia"
+		location = 7238
 		division_template = "Militia"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 	}
 	division = {
-		name = "Cham Legion"
-		location = 10137
+		name = "Southern Militia"
+		location = 4223
+		division_template = "Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Highland Militia"
+		location = 12109
+		division_template = "Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Highland Militia"
+		location = 12176
+		division_template = "Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Northern Militia"
+		location = 9529
+		division_template = "Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Central Militia"
+		location = 7280
 		division_template = "Militia"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
