@@ -3083,7 +3083,7 @@ ai_will_do = {
  factor = 1
  } 
 completion_reward = {
- set_cosmetic_tag = TRS_USSR
+ set_cosmetic_tag = SOV_SOV
  every_state = {
     limit = { 
 	OR = {
