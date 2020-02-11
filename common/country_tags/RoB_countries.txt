@@ -39,6 +39,12 @@ RMR = "countries/Romanian Republic.txt"
 TIG = "countries/Transylvanian Iron Guard.txt"
 SZK = "countries/Szekely.txt"
 OTT = "countries/Ottomans.txt"
+ECA = "countries/Estonian Communist Assembly.txt"
+ELP = "countries/Estonian Liberal Pact.txt"
+ELA = "countries/Estonian Liberation Army.txt"
+LPR = "countries/Latgallian Peoples Republic.txt"
+LDF = "countries/Latvian Democratic Front.txt"
+LNC = "countries/Latvian National Council.txt"
 
 ##America##
 GRL = "countries/Greenland.txt"
