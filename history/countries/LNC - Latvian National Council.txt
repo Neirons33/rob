@@ -58,9 +58,9 @@ set_popularities = {
 create_country_leader = {
 	name = "Gustavs Celmiņš"
 	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	picture = "LNC_Gustavs_Celmins.tga"
 	expire = "1965.1.1"
-	ideology = pelekism_subtype
+	ideology = pelekist_subtype
 	traits = {
 		#
 	}

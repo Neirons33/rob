@@ -899,20 +899,20 @@ SUD = {
 	color_ui = rgb { 106 156 152 }
 }
 LNC = {
-    color = rgb { 66 49 71 }
-	color_ui = rgb { 66 49 71 }
+    color = rgb { 76 56 82 }
+	color_ui = rgb { 76 56 82 }
 }
 LDF = {
     color = rgb { 125 62 57 }
 	color_ui = rgb { 125 62 57 }
 }
 LPR = {
-    color = rgb { 87 17 36 }
-	color_ui = rgb { 87 17 36 }
+    color = rgb { 145 12 12 }
+	color_ui = rgb { 145 12 12 }
 }
 ELA = {
-    color = rgb { 10 4 71 }
-	color_ui = rgb { 13 23 48 }
+    color = rgb { 13 4 110 }
+	color_ui = rgb { 13 4 110 }
 }
 ELP = {
     color = rgb { 75 137 150 }

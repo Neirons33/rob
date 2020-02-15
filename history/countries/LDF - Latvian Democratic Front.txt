@@ -12,7 +12,7 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	national_socialist = 8
+	national_socialist = 0
 	socialist = 0
 	democratic_socialist = 0
 	social_democracy = 45
@@ -27,7 +27,7 @@ set_popularities = {
 create_country_leader = {
 	name = "Pauls Kalniņš"
 	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	picture = "LDF_Pauls_Kalnins.tga"
 	expire = "1965.1.1"
 	ideology = social_democracy_subtype
 	traits = {
@@ -45,7 +45,7 @@ create_country_leader = {
 	}
 }
 create_country_leader = {
-	name = "LDF Nacionālatriotiskais Spārns"
+	name = "LDF Nacionālpatriotiskais Spārns"
 	desc = ""
 	picture = "GFX_portrait_lat_fricis_menders"
 	expire = "1965.1.1"

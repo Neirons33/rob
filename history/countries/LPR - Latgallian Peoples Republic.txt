@@ -12,34 +12,34 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	national_socialist = 8
-	socialist = 0
-	democratic_socialist = 0
-	social_democracy = 45
-	social_liberal = 22
-	conservative = 22
-	authoritharian = 11
+	national_socialist = 32
+	socialist = 44
+	democratic_socialist = 14
+	social_democracy = 0
+	social_liberal = 0
+	conservative = 5
+	authoritharian = 5
 	reactionary = 0
 	pelekist = 0
 }
 
 
 create_country_leader = {
-	name = "Pauls Kalniņš"
+	name = "Jūlijs Daniševskis"
 	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	picture = "LPR_Julius_Janisovics.tga"
 	expire = "1965.1.1"
-	ideology = social_democracy_subtype
+	ideology = marxism
 	traits = {
 		#
 	}
 }
 create_country_leader = {
-	name = "Kārlis Ulmanis"
+	name = "Alfons Noviks"
 	desc = ""
 	picture = "GFX_portrait_lat_fricis_menders"
 	expire = "1965.1.1"
-	ideology = conservative_subtype
+	ideology = vlaslovism
 	traits = {
 		#
 	}

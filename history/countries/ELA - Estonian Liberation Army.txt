@@ -12,7 +12,7 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	national_socialist = 8
+	national_socialist = 0
 	socialist = 0
 	democratic_socialist = 0
 	social_democracy = 0
