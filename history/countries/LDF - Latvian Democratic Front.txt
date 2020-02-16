@@ -26,7 +26,7 @@ set_popularities = {
 
 create_country_leader = {
 	name = "Pauls Kalniņš"
-	desc = ""
+	desc = "POLITICS_PAULS_KALNINS_DESC"
 	picture = "LDF_Pauls_Kalnins.tga"
 	expire = "1965.1.1"
 	ideology = social_democracy_subtype

@@ -26,7 +26,7 @@ set_popularities = {
 
 create_country_leader = {
 	name = "Jūlijs Daniševskis"
-	desc = ""
+	desc = "POLITICS_JULIJS_DANISEVKIS_DESC"
 	picture = "LPR_Julius_Janisovics.tga"
 	expire = "1965.1.1"
 	ideology = marxism

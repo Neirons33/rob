@@ -368,6 +368,16 @@ country_event = {
  
  option = {
   name = "There isn't a place for me anymore..."
+  create_country_leader = {
+	name = "Baltic Assembly"
+	desc = "POLITICS_UBD_COUNCIL_DESC"
+	picture = "EST_Ubd_Council.tga"
+	expire = "1965.1.1"
+	ideology = reactionary_subtype
+	traits = {
+		#
+	}
+}
   LNC = { transfer_state = 190 }
   LNC = { transfer_state = 881 }
   LNC = { transfer_state = 1010 }
