@@ -86,8 +86,25 @@ focus_tree = {
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = FER_kamchatka }
+		available = { 
+		owns_state = 637
+		controls_state = 637
+}
 		ai_will_do = {
 			factor = 25
+		}
+		completion_reward = {
+		637 = { add_manpower = 10000 }
+		637 = { add_resource = {
+    type = oil
+    amount = 10
+}
+}
+		637 = { add_resource = {
+    type = steel
+    amount = 5
+}
+}
 		}
 	}
 
@@ -100,8 +117,31 @@ focus_tree = {
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = FER_kamchatka }
+		available = {
+		owns_state = 562
+		controls_state = 562
+		}
 		ai_will_do = {
 			factor = 25
+		}
+		completion_reward = {
+		562 = { add_extra_state_shared_building_slots = 1 }
+
+				562 = { add_building_construction = {
+    type = dockyard
+    level = 1
+    instant_build = yes
+}
+		}
+562 = { add_building_construction = {
+    type = naval_base
+    level = 1
+    instant_build = yes
+    province = 12551
+}
+}
+
+
 		}
 	}
 
@@ -197,8 +237,25 @@ focus_tree = {
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = FER_expandtheyakutskarsenal }
+		available = {
+		owns_state = 982
+		controls_state = 982
+		NOT = { owns_state = 575 }
+		}
 		ai_will_do = {
 			factor = 25
+		}
+		completion_reward = {
+		982 = { add_building_construction = {
+    type = bunker
+    level = 1
+    instant_build = yes
+    province = {
+        all_provinces = yes
+        limit_to_border = yes
+    }
+}
+}
 		}
 	}
 
@@ -211,8 +268,24 @@ focus_tree = {
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = FER_yakutsk }
+		available = { 
+		owns_state = 574
+		controls_state = 574
+		}
 		ai_will_do = {
 			factor = 25
+		}
+		completion_reward = {
+		574 = { add_extra_state_shared_building_slots = 1 }
+
+				574 = { add_building_construction = {
+    type = arms_factory
+    level = 1
+    instant_build = yes
+}
+		}
+
+
 		}
 	}
 
@@ -225,8 +298,21 @@ focus_tree = {
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = FER_bodaybo }
+		available = {
+		owns_state = 565
+		controls_state = 565
+		}
 		ai_will_do = {
 			factor = 25
+		}
+		completion_reward = {
+		565 = { add_building_construction = {
+    type = bunker
+    level = 1
+    instant_build = yes
+    province = 10583
+}
+}
 		}
 	}
 
@@ -239,8 +325,21 @@ focus_tree = {
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = FER_bodayboyakutskroad }
+		available = {
+		num_of_factories > 8
+		owns_state = 574
+		controls_state = 574
+		}
 		ai_will_do = {
 			factor = 20
+		}
+		completion_reward = {
+		574 = { add_building_construction = {
+    type = infrastructure
+    level = 2
+    instant_build = yes
+}
+}
 		}
 	}
 
@@ -253,8 +352,29 @@ focus_tree = {
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = FER_okhotskyakutskroad }
+		available = {
+		num_of_factories > 5
+		owns_state = 637
+		controls_state = 637
+		owns_state = 562
+		controls_state = 562
+		}
 		ai_will_do = {
 			factor = 25
+		}
+		completion_reward = {
+		637 = { add_building_construction = {
+    type = infrastructure
+    level = 1
+    instant_build = yes
+}
+}
+		562 = { add_building_construction = {
+    type = infrastructure
+    level = 1
+    instant_build = yes
+}
+}
 		}
 	}
 
@@ -283,6 +403,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 25
 		}
+		completion_reward = {
+		add_political_power = 50
+		}
 	}
 
 	#Focus for Bodaybo
@@ -294,8 +417,18 @@ focus_tree = {
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = FER_thethreeoblasts }
+		available = {
+		owns_state = 565
+		controls_state = 565
+		owns_state = 982
+		controls_state = 982
+		}
 		ai_will_do = {
 			factor = 25
+		}
+		completion_reward = {
+		565 = { add_extra_state_shared_building_slots = 1 }
+		982 = { add_extra_state_shared_building_slots = 1 }
 		}
 	}
 
@@ -308,8 +441,16 @@ focus_tree = {
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = FER_thethreeoblasts }
+		available = {
+		owns_state = 574
+		controls_state = 574
+
+		}
 		ai_will_do = {
 			factor = 25
+		}
+		completion_reward = {
+		574 = { add_extra_state_shared_building_slots = 2 }
 		}
 	}
 
@@ -322,8 +463,18 @@ focus_tree = {
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = FER_thethreeoblasts }
+		available = {
+		owns_state = 562
+		controls_state = 562
+		owns_state = 637
+		controls_state = 637
+		}
 		ai_will_do = {
 			factor = 25
+		}
+		completion_reward = {
+		562 = { add_extra_state_shared_building_slots = 1 }
+		637 = { add_extra_state_shared_building_slots = 1 }
 		}
 	}
 
@@ -409,8 +560,28 @@ focus_tree = {
 		prerequisite = { 
 			focus = FER_bodaybo 
 		}
+		available = {
+		owns_state = 574
+		controls_state = 574
+		owns_state = 565
+		controls_state = 565
+		}
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		574 = { add_building_construction = {
+    type = infrastructure
+    level = 1
+    instant_build = yes
+}
+}
+		565 = { add_building_construction = {
+    type = infrastructure
+    level = 1
+    instant_build = yes
+}
+}
 		}
 	}
 
@@ -428,8 +599,28 @@ focus_tree = {
 		prerequisite = { 
 			focus = FER_kamchatka 
 		}
+		available = {
+		owns_state = 574
+		controls_state = 574
+		owns_state = 562
+		controls_state = 562
+		}
 		ai_will_do = {
 			factor = 25
+		}
+		completion_reward = {
+		574 = { add_building_construction = {
+    type = infrastructure
+    level = 1
+    instant_build = yes
+}
+}
+		562 = { add_building_construction = {
+    type = infrastructure
+    level = 1
+    instant_build = yes
+}
+}
 		}
 	}
 
@@ -442,9 +633,23 @@ focus_tree = {
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = FER_bodaybo }
+		available = {
+		owns_state = 565
+		controls_state = 565
+		}
 		ai_will_do = {
 			factor = 25
 		}
+		completion_reward = {
+		565 = { add_extra_state_shared_building_slots = 1 }
+		565 = { add_building_construction = {
+    type = industrial_complex
+    level = 1
+    instant_build = yes
+}
+		}
+}
+
 	}
 
 	#Focus for Farming the Land
@@ -470,9 +675,32 @@ focus_tree = {
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = FER_yakutsk }
+		available = {
+		owns_state = 574
+		controls_state = 574
+		}
 		ai_will_do = {
 			factor = 25
 		}
+		completion_reward = {
+		574 = { add_extra_state_shared_building_slots = 1 }
+		574 = { add_building_construction = {
+    type = industrial_complex
+    level = 1
+    instant_build = yes
+}
+		}
+		574 = { add_building_construction = {
+    type = infrastructure
+    level = 1
+    instant_build = yes
+}
+		}
+
+
+
+}
+
 	}
 
 	#Focus for Southern Siberian Railroad
@@ -1159,9 +1387,29 @@ focus_tree = {
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = FER_kamchatka }
+		available = {
+		owns_state = 637
+		controls_state = 637
+		}
 		ai_will_do = {
 			factor = 25
 		}
+completion_reward = {
+637 = { add_building_construction = {
+    type = naval_base
+    level = 1
+    instant_build = yes
+    province = 1863
+}
+}
+637 = { add_building_construction = {
+    type = infrastructure
+    level = 1
+    instant_build = yes
+}
+}
+
+}
 	}
 
 	#Focus for The Far East
