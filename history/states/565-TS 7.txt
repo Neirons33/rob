@@ -3,7 +3,7 @@ state={
 	id=565
 	name="STATE_565" # Bodaybo
 	manpower = 195325
-	state_category = rural
+	state_category = pastoral
 	resources={
 		steel=10 # was: 32
 		chromium=5 # was: 12
@@ -13,6 +13,10 @@ state={
 		owner = FER
 		buildings = {
 			infrastructure = 1
+			industrial_complex = 1
+		}
+		victory_points = {	
+		10583 1
 		}
 		add_core_of = FER
 	}

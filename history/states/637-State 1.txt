@@ -11,10 +11,7 @@ state={
 				naval_base = 1
 
 			}
-			1863 = {
-				naval_base = 1
 
-			}
 
 		}
 		add_core_of = FER
