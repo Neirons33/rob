@@ -100,7 +100,7 @@ focus_tree = {
 		}
 		completion_reward = {
 		 add_ideas = {
-		  PRS_corporatism
+		  PRS_vydunas_corporatism
 		 }
 		}
 	}
@@ -432,7 +432,7 @@ focus_tree = {
 		}
 		completion_reward = {
 		 add_ideas = {
-		  PRS_workersrights
+		  PRS_social_workersrights
 		 }
 		}
 	}
@@ -1489,7 +1489,7 @@ focus_tree = {
 		}
 		completion_reward = {
 		 add_ideas = {
-		  PRS_pereniallism
+		  PRS_rosenberg_pereniallism
 		 }
 		}
 	}

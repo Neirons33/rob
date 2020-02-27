@@ -933,7 +933,7 @@ GER_local_defense = {
  
  }
  
-   GER_volksmilitia = {
+   GER_new_volksmilitia = {
  picture = GFX_idea_rampant_corruption
  allowed = {
        always = no

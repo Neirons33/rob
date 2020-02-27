@@ -1473,7 +1473,7 @@ focus_tree = {
 
 	#Focus for Reeducation Camps
 	focus = {
-		id = GER_reeducationcamps
+		id = GER_re_educationcamps
 		icon = GFX_focus_SOV_form_camps
 		x = 65
 		y = 2

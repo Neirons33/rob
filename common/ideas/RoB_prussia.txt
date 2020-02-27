@@ -234,7 +234,7 @@ ideas = {
 }
  
  }
-   PRS_pereniallism = {
+   PRS_rosenberg_pereniallism = {
    picture = GFX_idea_prussian_high_command
    allowed = {
        always = no
@@ -281,7 +281,7 @@ ideas = {
     }
  
  }
-    PRS_corporatism = {
+    PRS_vydunas_corporatism = {
    picture = GFX_idea_prussian_high_command
    allowed = {
        always = no
@@ -378,7 +378,7 @@ ideas = {
  
  }
  
-    PRS_workersrights = {
+    PRS_social_workersrights = {
    picture = GFX_idea_prussian_high_command
    allowed = {
        always = no

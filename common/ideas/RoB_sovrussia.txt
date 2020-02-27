@@ -733,7 +733,7 @@ ideas = {
   }
   
 ####BUKHARIN
-       market_socialism = {
+       SOV_bukharin_market_socialism = {
   allowed = {
        always = no
      }

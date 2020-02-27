@@ -1100,7 +1100,7 @@ random_owned_controlled_state = {
 		}
 		completion_reward = {
 		 add_ideas = {
-		  GER_volksmilitia
+		  GER_new_volksmilitia
 		 }
 		}
 	}

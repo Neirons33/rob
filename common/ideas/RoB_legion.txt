@@ -647,7 +647,7 @@ LES_Fiercest_Infantry = {
    industrial_capacity_factory = 0.15
    }
 }
-   LES_guardiansofyouth = {
+   LES_young_guardiansofyouth = {
    picture = GFX_idea_minority_troubles 
    allowed = {
        always = no

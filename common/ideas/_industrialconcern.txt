@@ -70,7 +70,7 @@ ideas = {
    }
   }
   
-  PRS_claas = {
+  PRS_eco_claas = {
    designer = yes
    allowed = { original_tag = PRS }
    picture=  PRS_claas

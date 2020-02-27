@@ -90,7 +90,7 @@ focus_tree = {
 		completion_reward = {
 		add_stability = 0.05
 		add_ideas  ={
-		LES_guardiansofyouth
+		LES_young_guardiansofyouth
 		}
 		}
 	}

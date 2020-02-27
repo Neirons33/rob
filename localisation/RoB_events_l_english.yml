@@ -187,7 +187,6 @@
  bolshevik_russia.92.d:0 "While the strike is over the unrest remains. Thus under comrade Zinoviev’s orders the red army has been ordered to mobilize and deal with it. The battalions are already at work with dealing with it!"
  bolshevik_russia.93.d:0 "With the unrest furthering, members of the Communist Youth have been armed and sent to deal with it, after a quick course on shooting of course. While actually they are meant to just stand and look pretty, they have actually intervened and stopped crimes that were going on. Interestingly they are even permitted to take their weapons to school. So teachers can see rows of armed schoolboys march to school..."
  bolshevik_russia.94.d:0 "With the strike gone and the red guard and red youth mobilized. Zinoviev has effectively destroyed the fear in the streets, and even then the red guard and youth both work in coordination to make sure there remains no more chances of bombs going off."
- 
  russian_war.0.d:0 "Vasily Tarasovich, a Soviet soldier, had survived massive clashes on the border with the Russian Democratic Republic. His entire sector had suddenly been attacked by the Russian Democratic Republic and suffered huge loses, Vasily Tarasovich was simply sitting in his trench before they were bombarded by a hail of artillery shells. The hero ran to an MG gun and lit fire towards the enemy. Despite getting hit numerous times he still held and continued fire. It is thought his position would have been taken if it was not him, he bled out after the engagement. Other positions were not as fated as his one… The question remains of revenge."
  russian_war.1.d:0 "The socialist cowards have started an offensive against our brave men, pushing many back from their initial positions and barely holding their sector our men are bloodied, and all thanks to the cowardice of the socialists. We are left with only two solutions, either reinforce the front and contest them or retreat."
  russian_war.2.d:0 "Our glorious socialist forces launched a counterattack which slaughtered them. Now these cowards have fled the sector leaving it for us. Local socialists from the sector are joining our troops as we loot the area."
@@ -337,6 +336,7 @@
  prussia.25.d:0 "Rosenberg was sitting at his working desk, and slowly drinking his evening tea, as a paper folder grabbed his attention. It was relativily old, with the date being 1926.06.03. In it, was a collection with his writtings on Christianity and European Paganism, dating back to his work in the newspaper of Thule Gesellschaft. He was getting more and more immersed and disconnected from the outside world, the longer he read his own writtings. \n\nIt was already morning, when he finally put down the papers, which had bothered him all night. He woke up few hours later, feeling unsatissfied with his sleep, and decided to go out for a walk. Upon returining, all doubts had left his head, and vision for Germanic State was clearer than ever before."
  prussia.26.d:0 "It was a slow midday in the Prussian State, only getting interupted by a occasional car passing by. At the same time, the Prussian Pelekist Council was full with life - every last one of Rosenberg's comrades was summoned in capital, to discuss important matters of state \n\n"My fellow warriors!",Rosenberg exclaimed,"The time has come to finally bring back that, which was stolen from us! Today, right here, I propose the creation of entirely new Aryan aristocracy!" The audience was buzzing like a massive bee swarm, only calmed by Rosenberg himself. "As such, all old titles of the degredated Prussian reactionaries will be abolished, giving a way for a new form of goverment. A one by Aryans, for Aryans!"\n\nThe proposal was passed with 120-0, with everyone being in full support of Rosenberg's idea. In practice, this will mean a Neo-Feudal system, led by local nobles, who will be picked out of the Prussian Pelekist Council, and who will have to adhere to mythical, thousands of years old rites, found in works such as Rigaveda and Bhagavad Gita."
  prussia.27.d:0 "It was a dark, and cool night, as suddenly, a fire was lit, enlightening the black Prussian woods.Drums stared beating, and a group of 27 Lithuanians stood in a circle, with the fire, full of fire and energy, burning in the middle. They were all dressed in white robes, with only one of them having a red belt, decorated with Baltic symbols. It was Vydūnas. He stepped closer to fire, carrying a bowl with milk, honey, and rye bread. He slowly put it all in the fire, as other continued their ancient song. The fire sparkled, and the food slowly burned. Vydūnas looked up, right into midnight sky. \n\nEveryone was waiting for him to get ready, and start his speech. After a brief period, Vydūnas opened his mouth."Thousands of years ago, we were stripped from our spirituality, our rulling class was destroyed, and we were left wandering in the dark. No more, I tell you, as the Aryan has finnaly found his way to light again. For no longer will we be led by disgusting forms of government, created by human falsehoods - the power will return to the hands of Aryan Heroes and Philosophers!"\n\n Pelekist Council was promptly disbanded, and a Council of Brammans, refering to the name of old Baltic Priests, was put in it's place. Dovas Zaunius alongside 25 other members of Lithuanian-Prussian origin, now make up the main governing body of Rytprūsija."
+ 
  ###ENG
  united_kingdom.0.t:0 "United Kingdom in 1934"
  united_kingdom.0.d:0 ""
@@ -359,12 +359,10 @@
  united_kingdom.5.a:0 "Conservative Party Victory!"
  united_kingdom.5.b:0 "Conservative Party Victory!"
  united_kingdom.5.c:0 "USF Victory!"
- united_kingdom.5.d:0 "Labour Party Achieves Slim Victory!"
+ united_kingdom.5.f:0 "Labour Party Achieves Slim Victory!"
  united_kingdom.5.e:0 "Labour Party Victory!"
- 
- 
- ###AUS
 
+###AUS
 rob_austria.1.t:0 "Engelbert Dollfuss Disolves All Parties"
 rob_austria.1.d:0 "Today in a shocking turn of events Austria has turned into a complete dictatorship. All political parties except the fascist "Fatherland Front" party have been banned. With absolutely no opposition politically, the need for change brewing in Austria must be done through more civilian and most likely....violent means."
 rob_austria.1.a:0 "A necessary step"
@@ -502,7 +500,7 @@ france.1.t:0 "Third French Republic in 1934"
  france.25.t:0 "The French Civil War!"
  france.25.d:0 ""
  france.25.a:0 "Aux armes, citoyens!"
-
+ 
  ###RAJ & BRJ
  raj.101.t:0 "Collapse of the Indian Coalition"
  raj.101.d:0 "The British loyalists have been pushed back to the Islands. With them being no threat to our glorious nation, the coalition has no purpose in existing. Several states have already seceeded from the union and more will be sure to come. With the coalition about to fall, where shall we go?"
@@ -718,7 +716,7 @@ france.1.t:0 "Third French Republic in 1934"
  spartakus_germany.13.a:0 "National Bolshevik Faction Has Achieved Victory"
  spartakus_germany.13.b:0 "Luxembourgist Faction Has Achieved Victory"
  spartakus_germany.13.c:0 "Democratic Coallition Faction Has Achieved Victory"
- spartakus_germany.13.d:0 "National Bolsheviks and Luxembourgists Create Coallition"
+ spartakus_germany.13.f:0 "National Bolsheviks and Luxembourgists Create Coallition"
  spartakus_germany.13.e:0 "Democratic Socialists and Luxembourgists Create Coallition"
  spartakus_germany.14.t:0 "The Southern Flame"
  spartakus_germany.14.d:0 "After the ashes of the first civil war have settled, it appears the embers of conflict are yet to subside. Pelekist military groups have taken strongholds in various German cities and factories. The partisan militias have seized valuable arms and supplies, enough for a full blown war. While many of the army and civilians have turned their backs on their own nation, there is still remnants of the military and workers ready to die for the proletariat. \n\nThese Pelekist have betrayed our revolution, and with that it is time to make haste at their utmost destruction. "
@@ -923,14 +921,13 @@ france.1.t:0 "Third French Republic in 1934"
  legion.23.d:0 ""
  legion.23.a:0 ""
  
- 
  ###Belarusia
  belarusia.20.d:0 "With the Russian Soviet Republic already dealing with our own problems, comrades from the west have arrived, requesting weapons and ammunition, 50 000 rifles and ammo. They explain that it is needed to defeat the capitalists who have occupied and raised western Belarus, and that this show of support will be awarded handsomely with support of their own..."
  
  ###Askari
  bces.122.a:0 "The Lion of Africa has returned to its habitat."
  
-  ###Belgium-Congo
+ ###Belgium-Congo
  belgium.100.t:0 "British Support Ceases"
  belgium.100.d:0 "Britain has fallen into Civil War, and with it, the British Garrison in our country has departed both back to Britain and eastwards to other British colonies. The natives in the interior will surely realize the sudden disapearance of their local garrisons, and will undoubdedly attemp to take matters into their own hands. The final fate of the Belgian Empire may soon arrive..."
  belgium.100.a:0 "Belgium Shall Stand Tall!"
@@ -940,3 +937,18 @@ france.1.t:0 "Third French Republic in 1934"
  belgium.102.t:0 "A Declaration of Independence"
  belgium.102.d:0 "Reports from Banningville claim the entire garrison was slaughtered by savage Natives, and the local government has collapse. In its place, the Natives have declared a free Kongolese Republic, with immediate action to destroy us. Similarly, regions across the Kongo have taken to declare their own independence, citing harsh treatment and military rule. The Belgian Kongo, as of today, is dead."
  belgium.102.a:0 "May God have Mercy."
+ 
+ #Third Reich Civil War event
+ third_reich.1.t:0 "The Civil War Begins"
+ third_reich.1.d:0 "For too long us Germans have been completely on the edge of being whiped out by judio-bolshivism, luckly for us their hand of cards will help ours! Recently communists and socialists alike have risen up against Eingelbert. If we make a move now in building up this civil war, we might have a chance of finally reuniting the German peoples."
+ third_reich.1.a:0 "Ein Volk, ein Reich, ein Führer!"
+
+ third_reich.2.t:0 "The Civil War Ends"
+ third_reich.2.d:0 "Mien Fuhrer, the final traces of communist and austro fascist resistance have finally been crushed. Vienna is ours along with the nearly the rest of Austria. One must recommend to you though that you play your next hand of cards carefully, many Austrians workers still sympathize with the wretched socialists and communists."
+ third_reich.2.a:0 "Ein Endsieg"
+
+ #aftermath/what to do with badies
+ third_reich.3.t:0 "What To Do With Fascists"
+ third_reich.3.d:0 "Mien Fuhrer, what shall we do with the many fascists prisoners which we have obtained throughout this war? Many are willing to fight for the glory of a new Germanic empire."
+ third_reich.3.a:0 "We can't risk it, kill them or imprision them!"
+ third_reich.3.b:0 "They are of the same blood fool, if they will cooperate, then so will I!"
