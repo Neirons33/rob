@@ -1,21 +1,23 @@
+
 state={
 	id=947
 	name="STATE_947"
+	impassable = yes
 
 	history={
-		owner = ENG
+		owner = SAU
 		buildings = {
-			infrastructure = 3
+			infrastructure = 1
 
 		}
-		add_core_of = JOR
+		add_core_of = SAU
 
 	}
 
 	provinces={
-		1544 4440 4562 4603 
+		1544 1631 4440 4562 4603 4951 7970 8101 10815 10901 12455 
 	}
-	manpower=410000
+	manpower=73000
 	buildings_max_level_factor=1.000
 	state_category=pastoral
 }

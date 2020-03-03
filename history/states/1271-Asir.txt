@@ -1,12 +1,11 @@
-
 state={
-	id=948
-	name="STATE_948"
+	id=1271
+	name="STATE_1271"
 
 	history={
 		owner = SAU
 		victory_points = {
-			12758 1 
+			8073 1 
 		}
 		buildings = {
 			infrastructure = 2
@@ -17,9 +16,10 @@ state={
 	}
 
 	provinces={
-		2090 4981 7934 10748 10835 12758
+		1923 5006 8073 10786 
 	}
-	manpower=381000
+	manpower=249582
 	buildings_max_level_factor=1.000
 	state_category=pastoral
+
 }

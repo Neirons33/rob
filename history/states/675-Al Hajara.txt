@@ -4,19 +4,19 @@ state={
 	name="STATE_675"
 
 	history={
-		owner = IRQ
+		owner = SAU
 		buildings = {
 			infrastructure = 1
 
 		}
-		add_core_of = IRQ
+		add_core_of = SAU
 
 	}
 
 	provinces={
-		1631 4951 10744 12879 
+		2057 4974 5058 10744 10850 12749 12879 
 	}
-	manpower=81042
+	manpower=51042
 	buildings_max_level_factor=1.000
 	state_category=wasteland
 }
