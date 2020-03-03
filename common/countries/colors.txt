@@ -890,6 +890,18 @@ KZR = {
     color = rgb { 106 156 152 }
 	color_ui = rgb { 106 156 152 }
 }
+JBS = {
+    color = rgb { 199 121 86 }
+	color_ui = rgb { 199 121 86 }
+}
+HJZ = {
+    color = rgb { 134 158 114 }
+	color_ui = rgb { 134 158 114 }
+}
+ASR = {
+    color = rgb { 124 156 156 }
+	color_ui = rgb { 124 156 156 }
+}
 SIL = {
     color = rgb { 47 50 55 }
 	color_ui = rgb { 106 156 152 }
