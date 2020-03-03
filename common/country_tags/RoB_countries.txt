@@ -127,6 +127,11 @@ PNJ = "countries/Panjab.txt"
 FIC = "countries/Indochina.txt"
 ZHU = "countries/Zhuang.txt"
 
+###Middle East
+JBS = "countries/Hail.txt"
+ASR = "countries/Asir.txt"
+HJZ = "countries/Hejaz.txt"
+
 ###German
 BDB = "countries/Brandenburg.txt"
 MSZ = "countries/Mecklenburg_Strelitz.txt"
