@@ -5,12 +5,12 @@ state={
 	impassable = yes
 
 	history={
-		owner = SAU
+		owner = JBS
 		buildings = {
 			infrastructure = 1
 
 		}
-		add_core_of = SAU
+		add_core_of = JBS
 
 	}
 
@@ -19,5 +19,5 @@ state={
 	}
 	manpower=73000
 	buildings_max_level_factor=1.000
-	state_category=pastoral
+	state_category=wasteland
 }
