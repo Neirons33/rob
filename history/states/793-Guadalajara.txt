@@ -1,23 +1,25 @@
-
 state={
-	id=1168
-	name="STATE_1168"
+	id=793
+	name="STATE_793"
 
 	history={
 		owner = SPR
+		victory_points = {
+			3945 1 
+		}
 		buildings = {
 			infrastructure = 6
+			industrial_complex = 1
 
 		}
 		add_core_of = SPR
-		add_core_of = AND
 
 	}
 
-	provinces={
-		879 3810 9891 
+	provinces={ 
+q		793
 	}
-	manpower=488862
+	manpower=527697
 	buildings_max_level_factor=1.000
 	state_category=rural
 }

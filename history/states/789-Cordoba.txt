@@ -1,27 +1,26 @@
 
 state={
-	id=1164
-	name="STATE_1164"
+	id=789
+	name="STATE_789"
 
 	history={
-		owner = BSQ
+		owner = SPR
 		victory_points = {
-			740 3 
+			875 3 
 		}
 		buildings = {
 			infrastructure = 6
-			arms_factory = 1
 			industrial_complex = 1
 
 		}
-		add_core_of = BSQ
+		add_core_of = SPR
 
 	}
 
 	provinces={
-		738 9703 11688 
+		875 950 3871 6744 7198 10111 12083 
 	}
-	manpower=364147
+	manpower=1428513
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category=town
 }

@@ -1,6 +1,8 @@
+
 state={
 	id=1156
 	name="STATE_1156"
+
 	history={
 		owner = SPR
 		buildings = {
@@ -13,7 +15,7 @@ state={
 	}
 
 	provinces={
-		832 942 3835 11807 11812 
+		832 888 942 3835 9757 11742 11807 11812 
 	}
 	manpower=292619
 	buildings_max_level_factor=1.000
