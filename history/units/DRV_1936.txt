@@ -48,7 +48,7 @@ units = {
 	division = {
 		name = "Warsangali Volunteers"
 		location = 12814
-		division_template = "Baluchi Princely Infantry"
+		division_template = "Dervish Infantry"
 		start_experience_factor = 0.3
 	}
 }
